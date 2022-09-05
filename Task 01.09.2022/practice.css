@@ -9,7 +9,7 @@ h2::first-letter {
 .contain {
   height: 100vh;
   width: 100%;
-  background-image: url(/Task\ 01.09.2022/);
+  background-image: url(Images/business.webp);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -121,7 +121,7 @@ h3 {
 .port1 .box-container2 {
   display: inline-flex;
   margin: 0px 5px;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .port1 img {
   width: 100px;
@@ -129,7 +129,7 @@ h3 {
   float: left;
 }
 .port2 h3 {
-  margin-top: 30%;
+  margin-top: 14%;
   margin-bottom: 3%;
   text-decoration: underline;
 }
@@ -154,17 +154,15 @@ h3 {
 }
 .single-line {
   cursor: pointer;
-  /* float: left; */
-  /* justify-items: center; */
   margin-top: 5%;
   width: 94%;
   padding: 3%;
   position: absolute;
-  background-color:lightblue;
+  background-color: dodgerblue;
   flex: content;
   justify-items: center;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .s1 {
@@ -173,4 +171,63 @@ h3 {
   padding: 1%;
   position: relative;
   background-color: transparent;
+  color: aliceblue;
+  font-size: large;
+}
+.port3 h3 {
+  margin-top: 14%;
+  margin-bottom: 3%;
+  text-decoration: underline;
+}
+.port3 pre,
+h3 {
+  text-align: center;
+}
+.port3 .box-container4 {
+  /* display: inline; */
+  margin: 0px 5px;
+  margin-top: 0%;
+  padding: 10%;
+}
+.BASIC1 {
+  position: relative;
+  background-color: black;
+  color: aliceblue;
+  padding: 10%;
+  width: 80%;
+  text-align: center;
+}
+.BASIC0 {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.Com {
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.single {
+  cursor: pointer;
+  margin-top: 25%;
+  width: 94%;
+  padding: 3%;
+  position: absolute;
+  background-color: dodgerblue;
+  flex: content;
+  justify-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.s2 {
+  cursor: pointer;
+  display: inline;
+  padding: 1%;
+  position: relative;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: large;
 }
