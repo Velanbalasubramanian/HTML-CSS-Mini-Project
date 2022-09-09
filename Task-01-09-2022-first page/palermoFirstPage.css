@@ -3,12 +3,8 @@
   padding: 0;
 }
 .container {
-  /* margin-left: 125px;
-  margin-right: 125px; */
   max-width: 1250px;
-  margin:0 auto;
-  display: grid;
-  
+  margin: 0 auto;
 }
 .firstsection {
   background-color: black;
@@ -61,16 +57,20 @@
   font-size: 16px;
   color: #ddd;
   text-decoration: none;
-  margin-left: 50px;
-  margin-right: 50px;
-  
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .header2 i {
   color: lightgreen;
-  
+  padding-right: 5px;
 }
-.header3 {
-  color: #ddd;
+.header3 i {
+  color: lightgreen;
+  padding-right: 5px;
+}
+.header3 a {
+  text-decoration: none;
+  color: white;
 }
 .header4 {
   display: flex;
@@ -78,12 +78,12 @@
 .header6 {
   color: lightgreen;
   margin-right: 15px;
-  margin-left:15px;
+  margin-left: 15px;
 }
 .header5 {
   color: aliceblue;
   margin-right: 15px;
-  /* margin-left: 15px; */
+  margin-left: 15px;
 }
 
 h2::first-letter {
@@ -96,10 +96,10 @@ h2::first-letter {
   margin: auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: white;
   padding-top: 2%;
   padding-bottom: 2%;
-  /* padding-left: 5px; */
 }
 .navbar a {
   float: left;
@@ -109,12 +109,15 @@ h2::first-letter {
   padding: 14px 16px;
   text-decoration: none;
 }
+.fa {
+  padding-left: 10px;
+}
 .dropdown0 {
   display: inline-flex;
-  margin-left: 24%;
+  padding-left: 100px;
+
 }
 .dropdown {
-  /* float: left; */
   overflow: hidden;
   color: black;
 }
@@ -128,7 +131,6 @@ h2::first-letter {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  display: flex;
 }
 
 .navbar a:hover,
@@ -160,17 +162,16 @@ h2::first-letter {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropbtn1 a{
+.dropbtn1 a {
   background-color: dodgerblue;
   border: none;
   color: white;
   border-radius: 30px;
   text-decoration: none;
   padding: 10px 20px;
-  
 }
 .dropbtn1 {
-  list-style-type:none;
+  list-style-type: none;
   display: inline-block;
 }
 h2 {
@@ -180,7 +181,7 @@ h2 {
 .contain {
   height: 600px;
   width: 100%;
-  background-image: url(Images/background\ image.jpg);
+  background-image: url(background\ image.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -197,17 +198,17 @@ h2 {
 .content h1 {
   font-variant: small-caps;
 }
-.arrow-icons1{
-margin-left: 4%;
-margin-top: 15%;
-color: white;
-font-size:40px ;
+.arrow-icons1 {
+  margin-left: 4%;
+  margin-top: 15%;
+  color: white;
+  font-size: 40px;
 }
-.arrow-icons2{
-    margin-left: 85%;
-    margin-top: 15%;
-    color: green;
-    font-size:40px ;
+.arrow-icons2 {
+  margin-left: 85%;
+  margin-top: 15%;
+  color: green;
+  font-size: 40px;
 }
 
 .button0 {
