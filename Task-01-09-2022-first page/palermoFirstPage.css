@@ -184,14 +184,14 @@ h2 {
   background-image: url(background\ image.jpg);
   background-position: center;
   background-size: cover;
-  display: flex;
+  display:flex;
 }
-
 .content {
   color: white;
   position: absolute;
   top: 40%;
   left: 8%;
+  justify-content: space-between;
   /* -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
 }
