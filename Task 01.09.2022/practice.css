@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 h2::first-letter {
@@ -11,8 +12,9 @@ h2::first-letter {
   width: 100%;
   background-image: url(Images/business.webp);
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   position: relative;
+
 }
 .navbar {
   width: 100%;
@@ -28,6 +30,7 @@ h2 {
 }
 nav {
   flex: 1;
+ 
   padding-left: 40px;
 }
 nav ul li {
