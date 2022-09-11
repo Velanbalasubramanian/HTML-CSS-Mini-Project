@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Heebo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
 }
 .container {
   max-width: 1250px;
@@ -8,38 +11,41 @@
 }
 .firstsection {
   background-color: black;
-  padding: 5px;
+  padding: 3px;
 }
 .header1 {
   display: flex;
 }
 .headerdropdown {
-  display: inline-flex;
+  display: inline-block;
+  position: relative;
 }
 .dropbtn2 {
   background-color: dodgerblue;
-  width: 150px;
-  border-radius: 2%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 15px;
   color: white;
+  padding-left: 30px;
+  border: none;
 }
 .dropbtn2 i {
-  padding: 1% 10%;
+  padding: 0px 30px;
 }
 .dropdown-content1 {
   display: none;
-  position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content1 a {
   float: none;
   color: black;
-  padding: 1px 16px;
+  padding: 10px 6px;
   text-decoration: none;
   display: block;
   text-align: left;
+  min-width: 148px;
 }
 
 .dropdown-content1 a:hover {
@@ -48,13 +54,15 @@
 
 .headerdropdown:hover .dropdown-content1 {
   display: block;
+  position: absolute;
 }
 .cont {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header2 a {
-  font-size: 16px;
   color: #ddd;
   text-decoration: none;
   margin-left: 40px;
@@ -70,20 +78,20 @@
 }
 .header3 a {
   text-decoration: none;
-  color: white;
+  color: #ddd;
 }
 .header4 {
   display: flex;
 }
 .header6 {
   color: lightgreen;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .header5 {
   color: aliceblue;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 h2::first-letter {
@@ -100,22 +108,23 @@ h2::first-letter {
   background-color: white;
   padding-top: 2%;
   padding-bottom: 2%;
+  white-space: normal;
 }
 .navbar a {
   float: left;
-  font-size: 16px;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 .fa {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .dropdown0 {
   display: inline-flex;
-  padding-left: 100px;
-
+}
+.CONTACT {
+  margin-right: 50px;
 }
 .dropdown {
   overflow: hidden;
@@ -123,7 +132,6 @@ h2::first-letter {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
   border: none;
   outline: none;
   color: black;
@@ -166,9 +174,14 @@ h2::first-letter {
   background-color: dodgerblue;
   border: none;
   color: white;
-  border-radius: 30px;
+  border-radius: 60px;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
+}
+.dropbtn1 a:hover {
+  background-color: white;
+  color: dodgerblue;
+  border: outset dodgerblue;
 }
 .dropbtn1 {
   list-style-type: none;
@@ -178,37 +191,63 @@ h2 {
   cursor: pointer;
   font-size: 30px;
 }
-.contain {
-  height: 600px;
-  width: 100%;
-  background-image: url(background\ image.jpg);
+.bg-image {
+  background-image: url(/background\ image.jpg);
   background-position: center;
   background-size: cover;
-  display:flex;
 }
-.content {
-  color: white;
+.bg-image-one{
+  padding-top: 100px;
+  padding-left: 137px;
+}
+.bg-content-two{
+  text-align: left;
+  position: relative;
+}
+.bg-content-two p{
+
+ font-family: "Heebo", sans-serif;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  opacity: 1;
+}
+.bg-content-two h1{
+  font-family: "Heebo";
+  /* line-height: 60px; */
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 38px;
+  border-style: none;
+  margin: 0px;
+  white-space: normal;
+  /* width: 950px; */
+  opacity: 1;
+}
+
+.arrow-icons{
+position: relative;
+ 
+
+}
+.arrow-icons1{
+  transform: translate(-50px,-50px);
+  display: inline-flex;
+  /* margin-bottom: 20px; */
   position: absolute;
-  top: 40%;
-  left: 8%;
-  justify-content: space-between;
-  /* -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); */
+ 
 }
-.content h1 {
-  font-variant: small-caps;
+.arrow-icons2{
+  color:white;
+ /* margin-left: -1px; */
+
 }
-.arrow-icons1 {
-  margin-left: 4%;
-  margin-top: 15%;
-  color: white;
-  font-size: 40px;
-}
-.arrow-icons2 {
-  margin-left: 85%;
-  margin-top: 15%;
+.arrow-icons3{
   color: green;
-  font-size: 40px;
+  /* margin-left:1250px; */
+  
+  
 }
 
 .button0 {
@@ -218,8 +257,12 @@ h2 {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 20px;
-  margin: 0% 1%;
-  margin-top: 3%;
+  /* margin: 0% 1%;
+  margin-top: 0%; */
+  opacity: 1;
+  font-family: "Merriweather Sans";
+  white-space: normal;
+  letter-spacing: normal;
 }
 .button1 {
   background-color: white;
@@ -229,5 +272,8 @@ h2 {
   cursor: pointer;
   border-radius: 20px;
   margin: 0% 1%;
-  margin-top: 3%;
+  margin-top: 1%;
+  font-family: "Merriweather Sans";
+  white-space: normal;
+  letter-spacing: normal;
 }
