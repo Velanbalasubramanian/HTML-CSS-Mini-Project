@@ -95,7 +95,7 @@
   margin-left: 10px;
 }
 
-h2::first-letter {
+.navbar-title::first-letter {
   color: red;
 }
 
@@ -173,6 +173,7 @@ h2::first-letter {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .dropbtn1 a {
   background-color: dodgerblue;
   border: none;
@@ -184,8 +185,10 @@ h2::first-letter {
 .dropbtn1 a:hover {
   background-color: white;
   color: dodgerblue;
-  border: outset dodgerblue;
+  border-radius: 60px;
+  border: 2px solid dodgerblue;
 }
+
 .dropbtn1 {
   list-style-type: none;
   display: inline-block;
@@ -195,24 +198,24 @@ h2 {
   font-size: 30px;
 }
 .bg-image {
-  background-image: url(/background\ image1.jpg);
+  background-image: url(Image/background\ image1.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
   height: 580px;
 }
-.bg-image::before{
+.bg-image::before {
   content: " ";
-position: absolute;
-opacity: 0.6;
-top: 0px;
-bottom: 0px;
-left: 0px;
-right: 0px;
-background-color:	rgb(16,16,16);
+  position: absolute;
+  opacity: 0.6;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgb(16, 16, 16);
 }
 .bg-image-one {
-    padding-top: 180px;
+  padding-top: 180px;
   padding-bottom: 50px;
 }
 .bg-content-two {
@@ -224,7 +227,7 @@ background-color:	rgb(16,16,16);
   font-style: italic;
   color: rgb(255, 255, 255);
   font-size: 20px;
-  font-weight:normal;
+  font-weight: normal;
   padding-bottom: 30px;
 }
 .bg-content-two h1 {
@@ -237,40 +240,38 @@ background-color:	rgb(16,16,16);
   margin: 0px;
   white-space: normal;
   line-height: 60px;
-  
 }
 
-i.fas.fa-circle-arrow-left{
+i.fas.fa-circle-arrow-left {
   position: absolute;
-    top: 50%;
-    left: 5%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-40%, -40%);
-    color: white;
-    height: 50px;
-    width: 40px;  
-    font-size: 40px; 
-    cursor: pointer;
-    line-height: 50px;
-  }
+  top: 50%;
+  left: 5%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-40%, -40%);
+  color: white;
+  height: 50px;
+  width: 40px;
+  font-size: 40px;
+  cursor: pointer;
+  line-height: 50px;
+}
 
-i.fas.fa-circle-arrow-right{
+i.fas.fa-circle-arrow-right {
   position: absolute;
-    top: 50%;
-    right: 4%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-40%, -40%);
-    color: lightgreen;
-    height: 50px;
-    width: 40px;  
-    font-size: 40px; 
-    cursor: pointer;
-    line-height: 50px;
-   
+  top: 50%;
+  right: 4%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-40%, -40%);
+  color: lightgreen;
+  height: 50px;
+  width: 40px;
+  font-size: 40px;
+  cursor: pointer;
+  line-height: 50px;
 }
 
 .button0 {
-  background-color:lightgreen;
+  background-color: lightgreen;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -295,4 +296,297 @@ i.fas.fa-circle-arrow-right{
   font-family: "Merriweather Sans";
   white-space: normal;
   letter-spacing: normal;
+}
+
+.Sec-title {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+.Sec-title h2 {
+  font-size: 26px;
+  color: black;
+  font-weight: 700;
+  padding-bottom: 0px;
+  text-transform: uppercase;
+}
+.separeter-line {
+  position: relative;
+  margin-top: 10px;
+}
+
+.line-one {
+  position: relative;
+  height: 1px;
+  width: 28px;
+  left: 9px;
+  margin: auto;
+  margin-bottom: 1px;
+  background-color: #54be73;
+}
+
+.separeter-line .line-one::before {
+  position: absolute;
+  content: "";
+  left: -9px;
+  top: 0px;
+  height: 1px;
+  width: 7px;
+  background-color: #54be73;
+}
+
+.separeter-line .line-one::after {
+  position: absolute;
+  content: "";
+  right: -9px;
+  top: 0px;
+  height: 1px;
+  width: 7px;
+  background-color: #54be73;
+}
+
+.separeter-line .line-two {
+  position: relative;
+  height: 1px;
+  width: 28px;
+  left: 9px;
+  margin: auto;
+  background-color: #54be73;
+}
+
+.separeter-line .line-two::before {
+  position: absolute;
+  content: "";
+  left: -9px;
+  top: 0px;
+  height: 1px;
+  width: 7px;
+  background-color: #54be73;
+}
+
+.separeter-line .line-two::after {
+  position: absolute;
+  content: "";
+  right: -9px;
+  top: 0px;
+  height: 1px;
+  width: 7px;
+  background-color: #54be73;
+}
+.text {
+  position: relative;
+  color: #777777;
+  font-size: 16px;
+ text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.title-box {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+}
+.title-box1 {
+  position: relative;
+}
+.image-box {
+  position: relative;
+  padding: 10px;
+}
+.image-box img {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.lower-box {
+  position: relative;
+  padding: 10px;
+}
+.icon-box {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #207fdd;
+}
+.icon-box span{
+  font-size: 40px;
+}
+.separeter-line1 {
+  position: relative;
+  margin-top: 20px;
+}
+.line-one1 {
+  position: relative;
+  height: 1px;
+  width: 28px;
+  left: 9px;
+  margin-bottom: 1px;
+  background-color: #54be73;
+}
+ .line-one1::before {
+  position: absolute;
+  content: "";
+  left: -9px;
+  top: 0px;
+  height: 1px;
+  width: 7px;
+  background-color: #54be73;
+}
+.line-two1 {
+  position: relative;
+  height: 1px;
+  width: 28px;
+  left: 9px;
+  margin-bottom: 1px;
+  background-color: #54be73;
+}
+ .line-two1::before {
+  position: absolute;
+  content: "";
+  left: -9px;
+  top: 0px;
+  height: 1px;
+  width: 7px;
+  background-color: #54be73;
+}
+.text1 {
+  position: relative;
+  color: #777777;
+  font-size: 16px;
+/* width: 480px; */
+  margin-top: 25px;
+  margin-bottom: 0px;
+  line-height: 25px;
+  
+}
+.SALES-EFFECTIVENESS a{
+  text-decoration: none;
+color: black;
+}
+/* SMALL SIZE FIRST IMAGE */
+.title-head{
+display: flex;
+padding-top: 40px;
+
+}
+.title-box2 {
+  position: relative;
+  display: flex;
+  /* width: 33.333%; */
+  /* display: flex; */
+}
+.image-box2 {
+  position: relative;
+  padding: 15px;
+}
+.image-box2 img {
+  position: relative;
+  /* display: block; */
+}
+.lower-box2 {
+  position: relative;
+  padding-top: 20px;
+
+}
+/* .icon-box2 {
+  position: absolute;
+  right: 100px;
+  top: 25px;
+  color: #207fdd;
+}
+.icon-box2 span{
+  font-size: 50px;
+} */
+.separeter-line1 {
+  position: relative;
+  margin-top: 10px;
+}
+
+.line-one1 {
+  position: relative;
+  height: 1px;
+  width: 28px;
+  left: 9px;
+  margin-bottom: 1px;
+  background-color: #54be73;
+}
+
+.separeter-line1 .line-one1::before {
+  position: absolute;
+  content: "";
+  left: -9px;
+  top: 0px;
+  height: 1px;
+  width: 7px;
+  background-color: #54be73;
+}
+
+.separeter-line1 .line-two1 {
+  position: relative;
+  height: 1px;
+  width: 28px;
+  left: 9px;
+  background-color: #54be73;
+}
+
+.separeter-line1 .line-two1::before {
+  position: absolute;
+  content: "";
+  left: -9px;
+  top: 0px;
+  height: 1px;
+  width: 7px;
+  background-color: #54be73;
+}
+
+.text2 {
+  position: relative;
+  color: #777777;
+  font-size: 16px;
+/* width: 480px; */
+  padding-top: 22px;
+  padding-bottom: 0px;
+  line-height: 25px;
+}
+.SALES-EFFECTIVENESS2 a{
+  position: relative;
+  text-decoration: none;
+color: black;
+}
+.counter-head{
+  background-image: url(Image/background\ image1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+margin-top: 90px;
+}
+.counter-head1{
+display: flex;
+justify-content:space-between;
+text-align: center;
+padding-top: 50px;
+padding-bottom: 50px;
+color: white;
+position: relative;
+}
+.icon-search i{
+  font-size: 30px;
+}
+.count-text{
+  font-size: 30px;
+}
+.count-outer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.counter-head::before{
+  position: absolute;
+  content:" ";
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: .8;
+  background-color:dodgerblue;
 }
