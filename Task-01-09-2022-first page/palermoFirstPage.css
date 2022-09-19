@@ -463,7 +463,11 @@ i.fas.fa-circle-arrow-right {
   margin-top: 25px;
   margin-bottom: 0px;
   line-height: 25px;
+  text-align: left;
   
+}
+.SALES-EFFECTIVENESS h1{
+  text-align: left;
 }
 .SALES-EFFECTIVENESS a{
   text-decoration: none;
