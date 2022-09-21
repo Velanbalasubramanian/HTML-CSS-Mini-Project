@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 .dropbtn2 {
-  background-color: dodgerblue;
+  background-color: #207fdd;
   padding: 5px;
   padding-left: 28px;
   width: 20px;
@@ -162,17 +162,17 @@
   display: block;
 }
 .dropbtn1 a {
-  background-color: dodgerblue;
+  background-color: #207fdd;
   border: none;
   color: white;
   border-radius: 60px;
   text-decoration: none;
   padding: 12px 25px;
-  border: 1px solid dodgerblue;
+  border: 1px solid #207fdd;
 }
 .dropbtn1 a:hover {
   background-color: white;
-  color: dodgerblue;
+  color: #207fdd;
   border-radius: 60px;
 }
 
@@ -213,21 +213,20 @@
 .bg-content-two p {
   /* font-family: sans-serif; */
   font-style: italic;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: normal;
+  color: #eaeced;
+  font-weight:400;
   padding-bottom: 30px;
 }
 .bg-content-two h1 {
   /* font-family: "Heebo";*/
-  color: rgb(255, 255, 255);
+  color: #fefffe;
   letter-spacing: 0px;
   font-weight: 500;
-  font-size: 38px;
+  font-size: 40px;
   border-style: none;
   margin: 0px;
   white-space: normal;
-  line-height: 60px;
+  line-height: 55px;
 }
 
 i.fa.fa-circle-arrow-left{
@@ -251,7 +250,7 @@ i.fa.fa-circle-arrow-right {
   right: 4%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-40%, -40%);
-  color: lightgreen;
+  color: #54be74;
   height: 50px;
   width: 40px;
   font-size: 40px;
@@ -261,9 +260,9 @@ i.fa.fa-circle-arrow-right {
 }
 
 .button0 {
-  background-color: lightgreen;
+  background-color: #54be74;
   border: none;
-  color: white;
+  color: #ffffff;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 20px;
@@ -275,7 +274,7 @@ i.fa.fa-circle-arrow-right {
 }
 
 .button1 {
-  background-color: white;
+  background-color: #ffffff;
   border: none;
   color: black;
   padding: 10px 20px;
@@ -369,7 +368,7 @@ i.fa.fa-circle-arrow-right {
 }
 .text {
   position: relative;
-  color: #777777;
+  color: #868686;
   font-size: 16px;
  text-align: center;
   padding-top: 20px;
@@ -445,7 +444,7 @@ i.fa.fa-circle-arrow-right {
 }
 .text1 {
   position: relative;
-  color: #777777;
+  color: #858585;
   font-size: 16px;
 /* width: 480px; */
   margin-top: 25px;
@@ -543,7 +542,7 @@ padding-top: 40px;
 
 .text2 {
   position: relative;
-  color: #777777;
+  color: #858585;
   font-size: 16px;
 /* width: 480px; */
   padding-top: 22px;
@@ -577,20 +576,20 @@ color: white;
 position: relative;
 }
 .icon-search i{
-  font-size: 30px;
-
+  font-size: 25px;
 }
 .count-text{
   font-size: 30px;
-  font-weight: bold;
+  font-weight:600;
+  color: #fffdfe;
 }
 .counter-title{
-  font-weight:normal;
+  font-weight:300;
   font-size: 15px;
 }
 .count-outer{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .counter-head::before{
   position: absolute;
@@ -600,7 +599,7 @@ position: relative;
   left: 0px;
   right: 0px;
   opacity: .8;
-  background-color:dodgerblue;
+  background-color:#2e86dd;
 }
 
 /* WHAT WE DO STARTING */
@@ -705,7 +704,7 @@ padding-bottom: 25px;
 }
 .team-text-title{
   position: relative;
-  color: #777777;
+  color: #878787;
   font-size: 16px;
  text-align: center;
   padding-top: 20px;
@@ -725,7 +724,7 @@ position: relative;
   left: 0px;
   right: 0px;
   opacity: .8;
-  background-color: lightgray;
+  background-color: #fbfbfb;
 }
 .members-four{
 display: flex;
@@ -733,7 +732,7 @@ justify-content:space-evenly;
 margin-bottom: 250px;
 }
 .members-four-img1{
-width: 280px;
+width: 290px;
 height: 250px;
 }
 .member-details{
@@ -753,12 +752,12 @@ font-size: 16px;
   font-style: italic;
 }
 .members-four1{
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 
 }
 /* OUR TEAM THIRD START */
   .members-four-img2{
-  width: 280px;
+  width: 290px;
   height: 250px;
   /* display:block; */
   }
@@ -779,7 +778,7 @@ font-size: 16px;
     line-height: 30px;
   }
   .members-four2{
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
   }
   .members-third-img-icon {
     position: relative;
@@ -799,7 +798,7 @@ font-size: 16px;
     position: absolute; 
             transition: 0.7s ease; 
             opacity: 0; 
-	          width: 280px; 
+	          width: 290px; 
             height: 0%; 
             top: 0%; 
             left: 0px; 
@@ -882,8 +881,8 @@ border: 2px solid #e7e7e7;
   position: relative;
   padding: 20px 0px;
   text-align: center;
-  color: #c1c1c1;
-  border: 2px solid #e7e7e7;
+  color: #919191;
+  border: 2px solid #ebebeb;
 }
 .lower-price-box ul{
   position: relative;
@@ -911,7 +910,7 @@ line-height: 25px;
   border-radius: 30px;
   text-decoration: none;
   color: white;
-  background-color: black; 
+  background-color: #333333; 
 }
 .price-btn1{
   cursor: pointer;
@@ -920,7 +919,7 @@ line-height: 25px;
   border-radius: 30px;
   text-decoration: none;
   color: white;
-  background-color: dodgerblue; 
+  background-color: #207fdd; 
 }
 .month{
   color: lightgreen;
@@ -959,10 +958,10 @@ line-height: 25px;
 .price-sentence{
   text-align: left;
   justify-content: center;
-  padding: 40px;
+  padding: 35px;
   width: 75%;
   line-height: 25px;
-  color: white;
+  color: #e1f2f5;
 }
 .price-head1{
   display: flex;
@@ -973,6 +972,9 @@ line-height: 25px;
 .price-sentence h3{
 padding-top:25px;
 line-height: 25px;
+}
+.price-sentence span{
+  font-style:italic;
 }
 .price-sentence p{
 font-weight:200;
@@ -990,7 +992,7 @@ margin: auto;
 .Price-vertical{
   position: relative;
 top: 45%;
-color: whitesmoke;
+color: #8fc2fb;
 }
 .Price-vertical::after{
   content: "  ";
@@ -1001,7 +1003,7 @@ color: whitesmoke;
   right:0px;
   width: 5%;
   height:60px;
-  border-right: 2px solid  whitesmoke;
+  border-right: 2px solid  #8fc2fb;
 }
 .Price-vertical::before{
   content: "  ";
@@ -1011,7 +1013,7 @@ color: whitesmoke;
   right:0px;
   width: 5%;
   height:60px;
-  border-right: 2px solid  whitesmoke;
+  border-right: 2px solid  #8fc2fb;
 }
 /* PRICING PLAN END */
 /* LATEST BLOG START */
@@ -1094,12 +1096,17 @@ color: #777777;
 }
 .latest-btn{
   background-color: white;
-  border:3px solid green;
+  border:2px solid #54be73;
   color: black;
   padding: 10px 30px;
   display: inline-block;
   cursor: pointer;
   font-size: medium;
+  border-radius: 25px;
+}
+.latest-btn:hover{
+  background-color: #54be73;
+  color: white;
   border-radius: 25px;
 }
 
@@ -1164,16 +1171,17 @@ form.example button {
   /* float: left; */
   width: 15%;
   padding: 10px;
-  background: #2196F3;
+  background: #207fdd;
   color: white;
   font-size: 15px;
   border: 1px solid grey;
-  border-left: none;
+  border: none;
+  outline: none;
   cursor: pointer;
 }
 
 form.example button:hover {
-  background: #0b7dda;
+  background: #2196F3;
 }
 .keep-up-body{
  text-align: center;
@@ -1201,7 +1209,7 @@ form.example button:hover {
 }
 /* FOOTER START */
 .footer{
-  background-color: black;
+  background-color: #1e1e1e;
 }
 .footer-title::first-letter {
   color: lightgreen;
@@ -1221,34 +1229,33 @@ text-decoration: none;
 }
 .footer2 a{
   display: block;
-  color: #777777;
+  color:#b8b8b8;
 text-decoration: none;
 line-height: 45px;
 }
 .footer2 a:hover{
   color: lightgreen;
 }
-.footer2 i{
-padding: 5px;
+.footer2 span{
+  padding-left: 15px;
 }
 .footer-body{
   display: flex;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  /* padding:50px; */
 }
 .footer1{
   width: 35%;
-  color: #777777;
+  color:#b8b8b8;
   line-height:35px;
 }
 .footer1 span{
-  padding: 10px;
+  padding: 15px;
+  color:#b8b8b8;
 }
 .footer2{
   width: 25%;
-  color: #777777;
   text-align:left;
   padding-left: 70px;
 }
@@ -1306,13 +1313,13 @@ color: white;
 }
 /* FOOTER END */
 .copyrights-head{
-  background-color: dodgerblue;
+  background-color: #207fdd;
 }
 .copyrights{
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  color: white;
+  color: #eaf4fa;
 }
 .copyrights i{
   font-size:larger;
