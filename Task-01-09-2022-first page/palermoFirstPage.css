@@ -398,7 +398,7 @@ i.fa.fa-circle-arrow-right {
 }
 .icon-box {
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: 10px;
   color: #207fdd;
 }
@@ -986,6 +986,32 @@ font-weight:200;
   width: 50%;
 padding-left: 40px;
 margin: auto;
+}
+.Price-vertical{
+  position: relative;
+top: 45%;
+color: whitesmoke;
+}
+.Price-vertical::after{
+  content: "  ";
+  position: absolute;
+  top: 16px;
+  bottom: 0px;
+  left: 0px;
+  right:0px;
+  width: 5%;
+  height:60px;
+  border-right: 2px solid  whitesmoke;
+}
+.Price-vertical::before{
+  content: "  ";
+  position: absolute;
+  bottom:16px;
+  left: 0px;
+  right:0px;
+  width: 5%;
+  height:60px;
+  border-right: 2px solid  whitesmoke;
 }
 /* PRICING PLAN END */
 /* LATEST BLOG START */
