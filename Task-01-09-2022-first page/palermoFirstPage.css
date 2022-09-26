@@ -563,7 +563,7 @@ i.fa.fa-angle-left,
 }
 
 .counter-head {
-  background-image: url(Image/background\image1.jpg);
+  background-image: url(Image/background\ image1.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -944,7 +944,7 @@ li {
   font-size: 20px;
 }
 .price-head {
-  background-image: url(Image/background\image1.jpg);
+  background-image: url(Image/background\ image1.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
