@@ -73,7 +73,7 @@ a {
 }
 .home-section .icon-box {
   position: relative;
-  padding: 30px 20px;
+  padding: 30px 20px 30px 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 100%;
   text-align: center;
@@ -97,10 +97,6 @@ a {
   font-size: 20px;
   line-height: 26px;
   color: #fff;
-}
-.about-img {
-  width: 100%;
-  height: 90%;
 }
 .about h3 {
   font-weight: 700;
@@ -570,3 +566,93 @@ position: relative;
 .footer-bottom-content span {
   color: #ffc451;
 }
+
+/* MOBILE */
+@media (min-width:320px) and (max-width: 480px)  {
+   /* HOME SECTION */
+   .navbar-brand {
+    font-size: 25px;
+}
+.home-content h1 {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 45px;
+}
+.home-content h2 {
+font-size: 14px;
+}
+   .home-section .icon-box {
+    padding: 30px 20px 30px 20px;
+    width: 60%;
+    margin: 0 auto;
+  }
+.home-section .icon-box h3 {
+  font-weight: 600;
+  padding: 8.5px;
+  font-size: 15px;
+  line-height: 18px;
+}
+  /* Team */
+ .team .card{
+    margin: 0 auto;
+  }
+}
+/* TABLET */
+@media (min-width:481px) and (max-width: 768px)  {
+   /* HOME SECTION */
+   .home-content h1 {
+    font-weight: 500;
+}
+.home-content h2 {
+  font-size: 21px;
+}
+    .home-section .icon-box {
+      padding: 30px 20px 30px 20px;
+      width: 60%;
+    margin: auto;
+    }
+  .home-section .icon-box h3 {
+    font-weight: 600;
+    padding: 8.5px;
+    font-size: 15px;
+    line-height: 18px;
+}
+   /* Team */
+  .team .card{
+     margin: 0 auto;
+   }
+ }
+ /* LAPTOP */
+ @media (min-width:769px) and (max-width: 1024px)  {
+  /* HOME SECTION */
+  .home-content h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+.home-content h2 {
+  font-size: 21px;
+}
+  .home-section .icon-box {
+    padding: 30px 20px 30px 20px;
+  }
+  .home-section .icon-box h3 {
+    font-weight: 600;
+    padding: 8.5px;
+    font-size: 15px;
+    line-height: 18px;
+}
+   /* Team */
+  .team .card{
+     margin: 0 auto;
+   }
+   .team .card-body h5{
+    font-size: 1.1rem;
+   }
+ }
+ /* LAPTOP LARGE  */
+ @media (min-width:1025px) and (max-width: 1200px)  {
+  /* Team */
+  .team .card{
+     margin: 0 auto;
+   }
+ }
