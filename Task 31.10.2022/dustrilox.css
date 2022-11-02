@@ -607,84 +607,50 @@ footer {
   padding-right: 20px;
 }
 
-.team-img {
+/* TEAM */
+.team-r-comm .overlay {
   position: relative;
+  width: 25%;
 }
-.team-content h5 {
-  font-size: 24px;
-  color: white;
-}
-.team-img img {
-  position: relative;
-  height: auto;
-  max-width: 100%;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-.team__img::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  background: var(--tp-heading-primary);
-  width: 100%;
-  height: 340px;
-  -webkit-clip-path: polygon(0 0, 0 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 0 0, 100% 100%, 0% 100%);
-  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  visibility: hidden;
+.team-r-comm .middle {
+  transition: 0.5s ease;
   opacity: 0;
-}
-.team__content {
-  position: absolute;
-  bottom: 0;
-  left: 40px;
-  visibility: hidden;
-  opacity: 0;
-}
-.team-content span {
-  position: absolute;
-  font-size: 14px;
-  color: grey;
-  display: inline-block;
-}
-/* .overlay {
-    position: absolute;
-    transition: 0.7s ease;
-    opacity: 0;
-    width: 290px;
-    height: 0%;
-    top: 0%;
-    left: 0px;
-    background-color: dodgerblue;
-} */
-.team-social {
   position: absolute;
   top: 50%;
-  left: 40px;
-  visibility: hidden;
-  opacity: 0;
-}
-.team__social a {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  color: blue;
-  background: white;
-  border-radius: 6px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  display: inline-block;
+  left: 48%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  transition: 0.3s;
+  justify-content: space-between;
+}
+.team-r-comm .overlay:hover .middle {
+  opacity: 1;
+}
+.team-r-comm .overlay .team-content {
+  color: white;
+}
+
+.team-r-comm .team-social i {
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  padding: 5px;
+}
+.team-r-comm .team-social i:hover {
+  background-color: #de2021;
+  color: white;
 }
 .team-r-comm {
   padding-left: 0;
   padding-right: 0;
 }
-
+.team-r-comm .over-img {
+  position: relative;
+  width: 307px;
+  height: auto;
+}
+/* .team-r-comm .team-social{
+  
+} */
 /* PROCEESS */
 .process {
   margin-top: 80px;
@@ -836,9 +802,9 @@ footer {
 .form-control {
   line-height: 2;
 }
-.input-group-text{
-  background-color:white!important;
-    border: none!important;
+.input-group-text {
+  background-color: white !important;
+  border: none !important;
 }
 .footer-top .footer-newsletter form input[type="submit"] {
   position: absolute;
@@ -885,9 +851,9 @@ footer {
 .footer-bottom p {
   margin-bottom: 0;
 }
-.footer-bottom-one span{
+.footer-bottom-one span {
   color: #de2021;
 }
-.footer-minus{
+.footer-minus {
   color: #de2021;
 }
