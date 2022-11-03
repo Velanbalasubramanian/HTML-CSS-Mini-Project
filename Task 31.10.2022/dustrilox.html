@@ -24,90 +24,131 @@
   <body>
     <section class="home-section">
       <div class="container">
-        <header id="header" class="header-area fixed-top scroll">
+        <!-- NAVBAR START -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scroll"
+        >
           <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-2 col-md-6 col-6">
-                <div class="logo-area">
-                  <div class="logo">
-                    <img
-                      src="/Images/logo-white.png"
-                      alt="logo"
-                      class="img-fluid"
-                    />
-                  </div>
+            <a class="navbar-brand" href="#"
+              ><img src="/Images/logo-white.png" class="img-fluid"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul
+                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px;"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarScrollingDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Home<i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Home1</a></li>
+                    <li><a class="dropdown-item" href="#">Home2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarScrollingDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services<i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">Services1</a></li>
+                    <li><a class="dropdown-item" href="#">Services2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarScrollingDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages<i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">Pages</a></li>
+                    <li><a class="dropdown-item" href="#">Pages1</a></li>
+                    <li><a class="dropdown-item" href="#">Pages2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarScrollingDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    News<i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">News</a></li>
+                    <li><a class="dropdown-item" href="#">News1</a></li>
+                    <li><a class="dropdown-item" href="#">News2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <div class="header-info f-right">
+                <div class="info-item info-item-right">
+                  <span>Phone Number</span>
+                  <h5><a href="#">786 686 350 36</a></h5>
                 </div>
-              </div>
-              
-              <div class="col-lg-6 col-md-6 col-6">
-                <div class="nav-area nav-padding">
-                  <div class="navbar-menu">
-                    <nav id="nav-menu" style="display: block;">
-                      <div id="nav-main-menu">
-                        <div class="dropdown">
-                          <a href="#" class="nav-links"
-                            >Home <i class="bi bi-chevron-down"></i
-                          ></a>
-                          <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                          <a href="#" class="nav-links"
-                            >Services <i class="bi bi-chevron-down"></i
-                          ></a>
-                          <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                          <a href="#" class="nav-links"
-                            >Pages <i class="bi bi-chevron-down"></i
-                          ></a>
-                          <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                          <a href="#" class="nav-links"
-                            >News <i class="bi bi-chevron-down"></i
-                          ></a>
-                          <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
-                        </div>
-                        <a href="#" class="nav-links">Contact</a>
-                      </div>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 d-none d-lg-block">
-                <div class="header-info f-right">
-                  <div class="info-item info-item-right">
-                    <span>Phone Number</span>
-                    <h5><a href="#">8668635036</a></h5>
-                  </div>
 
-                  <div class="info-item">
-                    <span>Free Consultancy </span>
-                    <h5>
-                      <a href="#">info@webmail.com</a>
-                    </h5>
-                  </div>
+                <div class="info-item">
+                  <span>Free Consultancy </span>
+                  <h5>
+                    <a href="#">info@webmail.com</a>
+                  </h5>
                 </div>
               </div>
             </div>
           </div>
-        </header>
+        </nav>
+        <!-- NAVBAR END -->
 
         <div class="home-content">
           <div class="row">
@@ -129,7 +170,7 @@
         </div>
         <footer>
           <div class="row ho-foot">
-            <div class="col-lg-3 sm-button d-flex">
+            <div class="col-lg-3 col-md-3 sm-button d-flex">
               <div class="sm-services__icon">
                 <span><i class="bi bi-collection-play"></i></span>
               </div>
@@ -138,7 +179,7 @@
                 <h4>Industrial Business</h4>
               </div>
             </div>
-            <div class="col-lg-3 sm-button d-flex">
+            <div class="col-lg-3 col-md-3 sm-button d-flex">
               <div class="sm-services__icon">
                 <span><i class="bi bi-collection-play"></i></span>
               </div>
@@ -147,7 +188,7 @@
                 <h4>Industrial Business</h4>
               </div>
             </div>
-            <div class="col-lg-3 sm-button d-flex">
+            <div class="col-lg-3 col-md-3 sm-button d-flex">
               <div class="sm-services__icon">
                 <span><i class="bi bi-collection-play"></i></span>
               </div>
@@ -156,7 +197,7 @@
                 <h4>Industrial Business</h4>
               </div>
             </div>
-            <div class="col-lg-3 sm-button d-flex">
+            <div class="col-lg-3 col-md-3 sm-button d-flex">
               <div class="sm-services__icon">
                 <span><i class="bi bi-collection-play"></i></span>
               </div>
@@ -172,10 +213,32 @@
     <section class="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 about-img text-center">
-            <img src="/Images/about-1.jpg" class="img-fluid" />
+          <div class="col-lg-6 col-md-6 about-img text-center">
+            <div class="ab-small-con1">
+              <div class="ab-list-icon1">
+              <div class="ab-small-icon1">
+                <img src="/Images/picon-1.png" class="img-con1">
+              </div></div>
+            <div class="ab-list-content">
+            <span>5000+</span>
+            <h5>Projects Done</h5>
+            </div>
+            </div>
+            <img src="/Images/about-1.jpg" class="img-fluid ab-im-one" />
+            <div class="ab-small-con">
+<div class="ab-small-con2">
+  <div class="ab-list-icon2">
+  <div class="ab-small-icon1">
+    <img src="/Images/picon-1.png" class="img-con1">
+  </div></div>
+<div class="ab-list-content1">
+<span>3300+</span>
+<h5>Happy Customer</h5>
+</div>
+</div>
+            </div>
           </div>
-          <div class="col-lg-6 about-img">
+          <div class="col-lg-6 col-md-6 about-img">
             <div class="ab-left-content">
               <div class="about__wrapp">
                 <h2 class="section__title">
@@ -223,7 +286,7 @@
                   <span>SERVICES</span>
                 </div>
               </div>
-              <p class="ser-text mb-45">
+              <p class="ser-text">
                 Our mission is to provide quality English language instruction a
                 variety of courses to international and local students in a
                 professional and supportive atmosphere .
@@ -467,90 +530,110 @@
         <div class="row">
           <div class="team-r-comm d-flex">
             <div class="overlay">
-              <img src="/Images/team0.jpg" alt="Avatar" class="image-fluid over-img">
+              <img
+                src="/Images/team0.jpg"
+                alt="Avatar"
+                class="image-fluid over-img"
+              />
               <div class="middle">
-                 <div class="team-social">
-                    <a href="#"><i class="bi bi-plus"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-github"></i></a>
-                    <a href="#"><i class="bi bi-youtube"></i></a>
-                  </div>
-                  <div class="team-content">
-                    <span>Head of Idea</span>
-                    <h5>Alonso D.Dowson</h5>
-                  </div>
+                <div class="team-social">
+                  <a href="#"><i class="bi bi-plus"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+                <div class="team-content">
+                  <span>Head of Idea</span>
+                  <h5>Alonso D.Dowson</h5>
+                </div>
               </div>
             </div>
-            
+
             <div class="overlay">
-                <img src="/Images/team-2.jpg" alt="Avatar" class="image-fluid over-img">
-                <div class="middle">
-                   <div class="team-social">
-                      <a href="#"><i class="bi bi-plus"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-github"></i></a>
-                      <a href="#"><i class="bi bi-youtube"></i></a>
-                    </div>
-                    <div class="team-content">
-                      <span>Head of Idea</span>
-                      <h5>Alonso D.Dowson</h5>
-                    </div>
+              <img
+                src="/Images/team-2.jpg"
+                alt="Avatar"
+                class="image-fluid over-img"
+              />
+              <div class="middle">
+                <div class="team-social">
+                  <a href="#"><i class="bi bi-plus"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
                 </div>
-              </div>
-            
-              <div class="overlay">
-                <img src="/Images/team0.jpg" alt="Avatar" class="image-fluid over-img">
-                <div class="middle">
-                   <div class="team-social">
-                      <a href="#"><i class="bi bi-plus"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-github"></i></a>
-                      <a href="#"><i class="bi bi-youtube"></i></a>
-                    </div>
-                    <div class="team-content">
-                      <span>Head of Idea</span>
-                      <h5>Alonso D.Dowson</h5>
-                    </div>
-                </div>
-              </div>
-            
-              <div class="overlay">
-                <img src="/Images/team-2.jpg" alt="Avatar" class="image-fluid over-img">
-                <div class="middle">
-                   <div class="team-social">
-                      <a href="#"><i class="bi bi-plus"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-github"></i></a>
-                      <a href="#"><i class="bi bi-youtube"></i></a>
-                    </div>
-                    <div class="team-content">
-                      <span>Head of Idea</span>
-                      <h5>Alonso D.Dowson</h5>
-                    </div>
-                </div>
-              </div>
-            
-              <div class="overlay">
-                <img src="/Images/team0.jpg" alt="Avatar" class="image-fluid over-img">
-                <div class="middle">
-                   <div class="team-social">
-                      <a href="#"><i class="bi bi-plus"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-github"></i></a>
-                      <a href="#"><i class="bi bi-youtube"></i></a>
-                    </div>
-                    <div class="team-content ">
-                      <span>Head of Idea</span>
-                      <h5>Alonso D.Dowson</h5>
-                    </div>
+                <div class="team-content">
+                  <span>Head of Idea</span>
+                  <h5>Alonso D.Dowson</h5>
                 </div>
               </div>
             </div>
+
+            <div class="overlay">
+              <img
+                src="/Images/team0.jpg"
+                alt="Avatar"
+                class="image-fluid over-img"
+              />
+              <div class="middle">
+                <div class="team-social">
+                  <a href="#"><i class="bi bi-plus"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+                <div class="team-content">
+                  <span>Head of Idea</span>
+                  <h5>Alonso D.Dowson</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay">
+              <img
+                src="/Images/team-2.jpg"
+                alt="Avatar"
+                class="image-fluid over-img"
+              />
+              <div class="middle">
+                <div class="team-social">
+                  <a href="#"><i class="bi bi-plus"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+                <div class="team-content">
+                  <span>Head of Idea</span>
+                  <h5>Alonso D.Dowson</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay">
+              <img
+                src="/Images/team0.jpg"
+                alt="Avatar"
+                class="image-fluid over-img"
+              />
+              <div class="middle">
+                <div class="team-social">
+                  <a href="#"><i class="bi bi-plus"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+                <div class="team-content">
+                  <span>Head of Idea</span>
+                  <h5>Alonso D.Dowson</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -844,7 +927,9 @@
                     privacy.your information is safe.
                   </p>
                   <form action="" class="input-group">
-                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <span class="input-group-text"
+                      ><i class="bi bi-envelope"></i
+                    ></span>
                     <input type="email" placeholder="Email address" />
                     <input type="submit" value="Subscribe" />
                   </form>
@@ -866,17 +951,16 @@
           </div>
         </div>
         <div class="footer-bottom d-flex">
-          <div class="footer-bottom-one"> 
-          <p>Copyright & Design By <span> @ThemePure </span> - 2022</p>
-           </div>
-           <div class="footer-bottom-cont">
+          <div class="footer-bottom-one">
+            <p>Copyright & Design By <span> @ThemePure </span> - 2022</p>
+          </div>
+          <div class="footer-bottom-cont">
             <ul>
               <li>Faq</li>
               <li>Careers</li>
               <li>Refund Policy</li>
             </ul>
-           </div>
-          
+          </div>
         </div>
       </div>
     </section>

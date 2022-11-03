@@ -1,0 +1,42 @@
+/* TEAM */
+.team-r-comm .overlay {
+    position: relative;
+    width: 25%;
+  }
+  .team-r-comm .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: space-between;
+  }
+  .team-r-comm .overlay:hover .middle {
+    opacity: 1;
+  }
+  .team-r-comm .overlay .team-content {
+    color: white;
+  }
+  
+  .team-r-comm .team-social i {
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .team-r-comm .team-social i:hover {
+    background-color: #de2021;
+    color: white;
+  }
+  .team-r-comm {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .team-r-comm .over-img {
+    position: relative;
+    width: 303px;
+    height: auto;
+  }
+  
