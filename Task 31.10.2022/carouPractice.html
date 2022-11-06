@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/carouPractice.css" />
+    <title>CarouselPractice</title>
+</head>
+<body>
+    <section class="home-section">
+        <div class="container">
+            <!-- NAVBAR START -->
+            <nav
+              class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scroll"
+            >
+              <div class="container">
+                <a class="navbar-brand" href="#"
+                  ><img src="/Images/logo-white.png" class="img-fluid"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarScroll"
+                  aria-controls="navbarScroll"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul
+                    class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                    style="--bs-scroll-height: 100px;"
+                  >
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        id="navbarScrollingDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Home<i class="bi bi-chevron-down"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarScrollingDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Home1</a></li>
+                        <li><a class="dropdown-item" href="#">Home2</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        id="navbarScrollingDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Services<i class="bi bi-chevron-down"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarScrollingDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Services</a></li>
+                        <li><a class="dropdown-item" href="#">Services1</a></li>
+                        <li><a class="dropdown-item" href="#">Services2</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        id="navbarScrollingDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Pages<i class="bi bi-chevron-down"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarScrollingDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Pages</a></li>
+                        <li><a class="dropdown-item" href="#">Pages1</a></li>
+                        <li><a class="dropdown-item" href="#">Pages2</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        id="navbarScrollingDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        News<i class="bi bi-chevron-down"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarScrollingDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">News</a></li>
+                        <li><a class="dropdown-item" href="#">News1</a></li>
+                        <li><a class="dropdown-item" href="#">News2</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <div class="header-info f-right">
+                    <div class="info-item info-item-right">
+                      <span>Phone Number</span>
+                      <h5><a href="#">786 686 350 36</a></h5>
+                    </div>
+    
+                    <div class="info-item">
+                      <span>Free Consultancy </span>
+                      <h5>
+                        <a href="#">info@webmail.com</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- NAVBAR END -->
+    </div>
+    <div class="home-conten-common">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <div class="row ho-foot">
+                <div class="col-lg-3 col-md-3 col-sm-2 sm-button d-flex">
+                  <div class="sm-services__icon">
+                    <span><i class="bi bi-collection-play"></i></span>
+                  </div>
+                  <div class="sm-services__text">
+                    <span>Service 01</span>
+                    <h4>Industrial Business</h4>
+                    <span data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></span>
+                  </div>  
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-2 sm-button d-flex">
+                  <div class="sm-services__icon">
+                    <span><i class="bi bi-collection-play"></i></span>
+                  </div>
+                  <div class="sm-services__text">
+                    <span>Service 01</span>
+                    <h4>Industrial Business</h4>
+                    <span data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></span>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-2 sm-button d-flex">
+                  <div class="sm-services__icon">
+                    <span><i class="bi bi-collection-play"></i></span>
+                  </div>
+                  <div class="sm-services__text">
+                    <span>Service 01</span>
+                    <h4>Industrial Business</h4>
+                    <span data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></span>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-2 sm-button d-flex">
+                  <div class="sm-services__icon">
+                    <span><i class="bi bi-collection-play"></i></span>
+                  </div>
+                  <div class="sm-services__text">
+                    <span>Service 01</span>
+                    <h4>Industrial Business</h4>
+                    <span data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></span>
+                  </div>
+                </div>
+              </div>  
+             
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="home-content">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="home-content1">
+                        <span>Industrial</span>
+                        <h2 class="home-content-head">Metal Works</h2>
+                        <div class="home-content-btn">
+                          <a href="#" class="home-content-btn1"
+                            >Our Services <i class="bi bi-chevron-right"></i
+                          ></a>
+                          <a href="#" class="home-content-btn2">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="home-content">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="home-content1">
+                        <span>Industrial</span>
+                        <h2 class="home-content-head">Metal Works</h2>
+                        <div class="home-content-btn">
+                          <a href="#" class="home-content-btn1"
+                            >Our Services <i class="bi bi-chevron-right"></i
+                          ></a>
+                          <a href="#" class="home-content-btn2">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="home-content">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="home-content1">
+                        <span>Industrial</span>
+                        <h2 class="home-content-head">Metal Works</h2>
+                        <div class="home-content-btn">
+                          <a href="#" class="home-content-btn1"
+                            >Our Services <i class="bi bi-chevron-right"></i
+                          ></a>
+                          <a href="#" class="home-content-btn2">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="home-content">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="home-content1">
+                        <span>Industrial</span>
+                        <h2 class="home-content-head">Metal Works</h2>
+                        <div class="home-content-btn">
+                          <a href="#" class="home-content-btn1"
+                            >Our Services <i class="bi bi-chevron-right"></i
+                          ></a>
+                          <a href="#" class="home-content-btn2">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="carousel-control-prev" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <i class="bi bi-arrow-left-short" aria-hidden="true"></i>
+               
+              </span>
+              <span class="carousel-control-next" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+    </div>
+    </section>
+</body>
+</html>

@@ -24,7 +24,7 @@
   <body>
     <section class="home-section">
       <div class="container">
-        <!-- NAVBAR START -->
+   
         <nav
           class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scroll"
         >
@@ -148,7 +148,7 @@
             </div>
           </div>
         </nav>
-        <!-- NAVBAR END -->
+      
 
         <div class="home-content">
           <div class="row">
@@ -347,14 +347,17 @@
                 <span>Industry,Manufacturing</span>
                 <h5>Genvar Eco Park</h5>
                 <div class="ser-info">
-                  <p>
-                    <span><i class="bi bi-plus"></i></span> Project Details
-                  </p>
+                  <a href="#">
+                    <span><i class="bi bi-plus"></i></span>Project Details
+                  </a>
+                </div>
+                <div class="flat-icon-indu">
+                  <i class="bi bi-funnel"></i>
                 </div>
               </div>
-              <div class="flat-icon-indus">
+              <!-- <div class="flat-icon-indus">
                 <i class="bi bi-funnel"></i>
-              </div>
+              </div> -->
             </div>
             <div class="col-lg-3 col-md-3 bnr-slide-height">
               <div class="ser-img-border"></div>
@@ -398,8 +401,13 @@
     </section>
     <section class="features">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row align-items-start">
+          <div
+            class="col-lg-6 nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
             <div class="features-con-right">
               <div class="features__wrapp">
                 <h2 class="features__title">
@@ -414,34 +422,69 @@
               <div class="features-list">
                 <ul>
                   <li class="features-list-in">
-                    <a href="#">
+                    <a
+                      class="features-list-in1"
+                      id="v-pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home"
+                      role="tab"
+                      aria-controls="v-pills-home"
+                      aria-selected="true"
+                    >
                       Banking &amp; finance solutions
                       <span class="fea__icon"
                         ><i class="bi bi-arrow-right"></i
                       ></span>
                     </a>
                   </li>
-
+  
                   <li class="features-list-in">
-                    <a href="#">
+                    <a
+                      class="features-list-in1"
+                      id="v-pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-profile"
+                      aria-selected="false"
+                    >
                       Ecommend resources relevant
                       <span class="fea__icon1"
                         ><i class="bi bi-arrow-right"></i
                       ></span>
                     </a>
                   </li>
-
                   <li class="features-list-in">
-                    <a href="#">
+                    <a
+                      class="features-list-in1"
+                      id="v-pills-messages-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-messages"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-messages"
+                      aria-selected="false"
+                    >
                       Speed up the wireframing process
                       <span class="fea__icon2"
                         ><i class="bi bi-arrow-right"></i
                       ></span>
                     </a>
                   </li>
-
+  
                   <li class="features-list-in">
-                    <a href="#">
+                    <a
+                      href="#"
+                      class="features-list-in1"
+                      id="v-pills-settings-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-settings"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-settings"
+                      aria-selected="false"
+                    >
                       Loved by people across
                       <span class="fea__icon3"
                         ><i class="bi bi-arrow-right"></i
@@ -452,9 +495,43 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 fea-cols-lis">
-            <i class="bi bi-play-fill"></i>
-            <img src="/Images/about-1.jpg" class="img-fluid fea-image" />
+          <div class="col-lg-6 d-flex tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active fea-cols-lis"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <i class="bi bi-play-fill"></i>
+              <img src="/Images/about-1.jpg" class="img-fluid fea-image" />
+            </div>
+            <div
+              class="tab-pane fade fea-cols-lis"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              <i class="bi bi-play-fill"></i>
+              <img src="/Images/about-1.jpg" class="img-fluid fea-image" />
+            </div>
+            <div
+              class="tab-pane fade fea-cols-lis"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+            >
+              <i class="bi bi-play-fill"></i>
+              <img src="/Images/about-1.jpg" class="img-fluid fea-image" />
+            </div>
+            <div
+              class="tab-pane fade fea-cols-lis"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+              <i class="bi bi-play-fill"></i>
+              <img src="/Images/about-1.jpg" class="img-fluid fea-image" />
+            </div>
           </div>
         </div>
       </div>
@@ -867,38 +944,38 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                   <h5>Main Links</h5>
                   <ul>
-                    <li><i class="bi bi-dash"></i><span>Company</span></li>
-                    <li><i class="bi bi-dash"></i> <span>Careers</span></li>
-                    <li><i class="bi bi-dash"></i><span>Press Media</span></li>
-                    <li><i class="bi bi-dash"></i><span>Our Blog</span></li>
+                    <li><i class="bi bi-dash"></i><a>Company</a></li>
+                    <li><i class="bi bi-dash"></i> <a>Careers</a></li>
+                    <li><i class="bi bi-dash"></i><a>Press Media</a></li>
+                    <li><i class="bi bi-dash"></i><a>Our Blog</a></li>
                     <li>
-                      <i class="bi bi-dash"></i> <span>Privacy Policy</span>
+                      <i class="bi bi-dash"></i> <a>Privacy Policy</a>
                     </li>
-                    <li><i class="bi bi-dash"></i> <span>Pricing</span></li>
+                    <li><i class="bi bi-dash"></i> <a>Pricing</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-2 col-md-3 footer-services footer-links">
                   <h5>Other Pages</h5>
                   <ul>
-                    <li><i class="bi bi-dash"></i> <span>History</span></li>
-                    <li><i class="bi bi-dash"></i> <span>Team</span></li>
-                    <li><i class="bi bi-dash"></i><span>Clients</span></li>
+                    <li><i class="bi bi-dash"></i> <a>History</a></li>
+                    <li><i class="bi bi-dash"></i> <a>Team</a></li>
+                    <li><i class="bi bi-dash"></i><a>Clients</a></li>
                     <li>
-                      <i class="bi bi-dash"></i> <span>Testimonials</span>
+                      <i class="bi bi-dash"></i> <a>Testimonials</a>
                     </li>
-                    <li><i class="bi bi-dash"></i> <span>Get Quote</span></li>
+                    <li><i class="bi bi-dash"></i> <a>Get Quote</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-2 col-md-3 footer-services footer-links">
                   <h5>Our Services</h5>
                   <ul>
                     <li>
-                      <i class="bi bi-dash"></i> <span>Manufacturing</span>
+                      <i class="bi bi-dash"></i> <a>Manufacturing</a>
                     </li>
-                    <li><i class="bi bi-dash"></i><span>Engineering</span></li>
-                    <li><i class="bi bi-dash"></i><span>Construction</span></li>
-                    <li><i class="bi bi-dash"></i><span>Shipping</span></li>
-                    <li><i class="bi bi-dash"></i> <span>Rennovation</span></li>
+                    <li><i class="bi bi-dash"></i><a>Engineering</a></li>
+                    <li><i class="bi bi-dash"></i><a>Construction</a></li>
+                    <li><i class="bi bi-dash"></i><a>Shipping</a></li>
+                    <li><i class="bi bi-dash"></i> <a>Rennovation</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 footer-newsletter">
@@ -938,9 +1015,9 @@
           </div>
           <div class="footer-bottom-cont">
             <ul>
-              <li>Faq</li>
-              <li>Careers</li>
-              <li>Refund Policy</li>
+              <li><a href="#">Faq</a> </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Refund Policy</a></li>
             </ul>
           </div>
         </div>

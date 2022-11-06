@@ -1,0 +1,332 @@
+/* NAVBAR START*/
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-brand img {
+    width: 150px;
+    padding-top: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    padding-left: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #de2021;
+  }
+  .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav-link {
+    color: #aeaeae;
+    padding-left: 35px !important;
+  }
+  .nav-link:hover {
+    color: white;
+  }
+  .nav-link i {
+    padding-left: 5px;
+    font-size: smaller;
+  }
+  
+  .header-info {
+    display: flex;
+    color: white;
+  }
+  .f-right {
+    float: right;
+  }
+  .header-info .info-item-right {
+    margin-right: 40px;
+  }
+  .header-info .info-item span {
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 500;
+    color: grey;
+  }
+  .info-item h5 a {
+    font-size: smaller;
+    color: white;
+    text-decoration: none;
+  }
+  .dropdown-menu[data-bs-popper] {
+    top: 160%;
+    left: 30px;
+    margin-top: 0;
+  }
+  .dropdown-menu {
+  --bs-dropdown-padding-y: 0rem;
+  }
+  .dropdown-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .navbar-brand img {
+      padding: 15px;
+    }
+    .nav-link {
+      padding-left: 5px !important;
+    }
+    .header-info .info-item-right {
+      margin-right: 30px;
+    }
+  }
+  /* NAVBAR END*/
+  .home-content1 span {
+    position: relative;
+    font-size: 40px;
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+  }
+  .home-content1{
+    position: relative;
+  }
+  .home-content-head {
+    font-size: 80px;
+    color: white;
+  }
+  .home-content-btn {
+    padding-top: 5px;
+  }
+  .home-content-btn a{
+    text-decoration: none;
+  }
+  .home-content-btn1 {
+    display: inline-block;
+    overflow: hidden;
+    background-color: #de2021;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 25px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+  }
+  .home-content-btn1:hover{
+   background-color:white;
+   color: #de2021;
+  }
+  .home-content-btn1 i {
+    font-size: 10px;
+  }
+  .home-content-btn2 {
+    display: inline-block;
+    overflow: hidden;
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+    border-radius: 5px;
+    margin-left: 35px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 32px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    opacity: 0.8;
+  }
+  .home-content-btn2:hover{
+    background-color:white;
+    color: #de2021;
+   }
+   .bi.bi-arrow-left-short,
+.bi.bi-arrow-right-short {
+    padding-left: 6px;
+    padding-right: 6px;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: rgba(29, 28, 28, 0.562);
+  color: white;
+}
+.bi.bi-arrow-left-short {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.bi.bi-arrow-right-short {
+  position: absolute;
+  top: 50%;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+}
+.carousel-control-next, .carousel-control-prev {
+opacity: 1;
+}
+.scroll {
+    background-color: rgba(19, 18, 18, 0.7) !important;
+  }
+  .home-content{
+    background-image:url(/Images/bg\ img.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    z-index: 1;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .home-content::before{
+    content: " ";
+    position: absolute;
+    opacity: 0.7;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+  }
+  .carousel-indicators{
+    margin-bottom:-10px;
+        margin-right: 0%;
+       margin-left: 0%;
+  }
+  .sm-services__icon {
+    margin-right: 15px;
+  }
+  .sm-services__icon i {
+    font-size: 50px;
+    color: orangered;
+  }
+  .sm-services__text span {
+    font-size: 14px;
+    color: grey;
+    display: inline-block;
+    padding-top: 14px;
+  }
+  .sm-services__text h4 {
+    color: white;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+  .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 200px;
+    height: 4px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: #b90606;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: none;
+    transition: opacity .6s ease;
+}
+/* MOBILE */
+@media (min-width:320px) and (max-width: 480px){
+ 
+  .navbar-brand img {
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.home-content {
+  background-image: url(/Images/bg\ img.jpg);
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.home-content1 span {
+  font-size: 25px;
+}
+.home-content-head {
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
+}
+.bi.bi-arrow-left-short {
+  top: 45%;
+}
+.bi.bi-arrow-right-short {
+  top: 45%;
+}
+
+.home-content-btn1 {
+    height: 45px;
+    line-height: 45px;
+    padding: 0px 20px;
+}
+.home-content-btn2 {
+  height: 45px;
+  line-height: 45px;
+  padding: 0px 28px;
+}
+  .carousel-indicators [data-bs-target] {
+    width: 160px;
+}
+.sm-services__icon {
+  margin-right: 5px;
+}
+.sm-services__text h4 {
+  font-size: 20px;
+  line-height: 1;
+}
+.sm-services__icon i {
+  font-size: 30px;
+}
+.carousel-indicators {
+  margin-bottom: -60px;
+  margin-right: 0%;
+  margin-left: 15%;
+}
+.ho-foot{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.sm-services__text span {
+  padding-top: 0px;
+}
+}
+
+/* TABLET */
+@media (min-width:481px) and (max-width: 768px)  {
+  .navbar-brand img {
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+  .carousel-indicators [data-bs-target] {
+    width: 160px;
+}
+.sm-services__icon {
+  margin-right: 10px;
+}
+.sm-services__text h4 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+.sm-services__icon i {
+  font-size: 35px;
+}
+.d-flex {
+  display: block!important;
+}
+.sm-services__text span {
+  padding-top: 0px;
+}
+}
+/* LAPTOP */
+@media (min-width:769px) and (max-width: 1024px)  {
+  .carousel-indicators [data-bs-target] {
+    width: 160px;
+}
+.sm-services__icon {
+  margin-right: 14px;
+}
+}
