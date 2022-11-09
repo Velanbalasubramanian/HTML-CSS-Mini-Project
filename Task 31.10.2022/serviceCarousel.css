@@ -1,0 +1,27 @@
+.cards-wrapp{
+    display: flex;
+}
+.card{
+    margin:0.5em;
+}
+.service-lis {
+    padding-bottom: 10px;
+  }
+  .service-lis ul{
+    padding-left: 0;
+    color: #808080c7;
+  }
+  .service-lis ul li {
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  .sr-button a{
+    color: #808080c7;
+  }
+  .sr-button a:hover{
+    color: #de2021;
+  }
+  
+  a{
+    text-decoration: none;
+  }
