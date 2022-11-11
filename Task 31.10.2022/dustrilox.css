@@ -1950,7 +1950,4 @@ padding-top: 35px;
 }
 /*4K  */
 @media (min-width:1441px) and (max-width: 2560px)  {
-.fea-cols-lis i {
-  right: 23%;
-}
 }
