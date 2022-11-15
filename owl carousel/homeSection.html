@@ -158,6 +158,9 @@
 </nav>
 <!-- NAVBAR END -->
         </div>
+       
+
+        
         <div id="sync1" class="owl-carousel owl-theme">
             <div class="item">
                 <div class="home-content">
@@ -232,7 +235,7 @@
                   </div>
             </div>
         </div>
-      
+        <div class="container">
         <div id="sync2" class="owl-carousel">
             <div class="item">
                 <div class="sm-button">
@@ -287,6 +290,7 @@
                   </div>
             </div>
         </div>
+      </div>
     </section>
 
      <!-- jQuery -->
@@ -310,7 +314,7 @@ sync1.owlCarousel({
     dots: false,
     loop: true,
     responsiveRefreshRate: 200,
-    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"> <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg>'],
+    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
 }).on('changed.owl.carousel', syncPosition);
 
 sync2
@@ -338,10 +342,6 @@ sync2
     }).on('changed.owl.carousel', syncPosition2);
 
 function syncPosition(el) {
-    //if you set loop to false, you have to restore this next line
-    //var current = el.item.index;
-
-    //if you disable loop you have to comment this block
     var count = el.item.count - 1;
     var current = Math.round(el.item.index - (el.item.count / 2) - .5);
 
