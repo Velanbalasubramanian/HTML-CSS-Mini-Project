@@ -22,6 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -53,7 +54,7 @@
    </button>
    <div class="collapse navbar-collapse" id="navbarScroll">
      <ul
-       class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+       class="navbar-nav me-auto my-2 my-lg-0"
        style="--bs-scroll-height: 100px;"
      >
        <li class="nav-item dropdown">
@@ -314,7 +315,7 @@ sync1.owlCarousel({
     dots: false,
     loop: true,
     responsiveRefreshRate: 200,
-    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+    navText: ['<i class="fa fa-light fa-arrow-left"></i>','<i class="fa fa-light fa-arrow-right"></i>'],
 }).on('changed.owl.carousel', syncPosition);
 
 sync2
@@ -324,16 +325,19 @@ sync2
     .owlCarousel({
         items:4,
         dots: false,
-        nav: true,
+        nav: false,
         smartSpeed: 200,
         slideSpeed: 500,
         slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
         responsive: {
           0: {
-            items: 1
+            items: 2
           },
           768: {
-            items: 3
+            items: 4
+          },
+          1024:{
+            items:4
           },
           1440: {
             items: 4
@@ -386,3 +390,4 @@ sync2.on("click", ".owl-item", function(e) {
 });
     </script>
 </body>
+
