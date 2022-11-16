@@ -60,3 +60,38 @@
     padding-left: 0px!important;
     padding-right: 0px!important;
   }
+
+
+  /* MOBILE */
+@media (min-width:320px) and (max-width: 480px){
+  .middle:before {
+    clip-path: polygon(0 45%, 0% 100%, 100% 100%);
+}
+  .middle .team-social {
+    top: 260px;
+    left: 75px;
+    
+  }
+}
+/* TABLET */
+@media (min-width:481px) and (max-width: 768px)  {
+  .middle:before {
+    clip-path: polygon(0 45%, 0% 100%, 100% 100%);
+}
+.middle .team-social {
+  top: 160px;
+  left: 26px;
+  /* display: none; */
+}
+}
+
+/* LAPTOP */
+@media (min-width:769px) and (max-width: 1024px)  {
+  .middle:before {
+    clip-path: polygon(0 45%, 0% 100%, 100% 100%);
+}
+.middle .team-social {
+  top: 220px;
+  left: 60px;
+}
+}

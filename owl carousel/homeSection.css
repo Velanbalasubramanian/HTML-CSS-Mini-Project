@@ -1,3 +1,4 @@
+/* HOME SECTION START */
 /* NAVBAR START*/
 .navbar {
     padding-top: 0;
@@ -204,9 +205,6 @@
     margin-bottom: 0;
 }
 
-
-
-
   #sync2 .item h1 {
     font-size: 18px;
   }
@@ -407,8 +405,4 @@ img, svg {
   
 }
 
-
-
-
-
-
+/* HOME SECTION END */

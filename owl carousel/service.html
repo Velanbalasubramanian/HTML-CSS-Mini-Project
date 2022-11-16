@@ -59,7 +59,7 @@
           <div class="col-lg-6">
             <div class="owl-carousel">
               <div class="item">
-                <div class="card" style="width: 18rem;">
+                <div class="card" >
                   <div class="card-body">
                     <h5 class="services__title">Strategy</h5>
                     <div class="service-lis">
@@ -78,7 +78,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <div class="card-body">
                       <h5 class="services__title">Assesment</h5>
                       <div class="service-lis">
@@ -97,7 +97,7 @@
                   </div>
               </div>
               <div class="item"> 
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                 <div class="card-body">
                   <h5 class="services__title">Development</h5>
                   <div class="service-lis">
@@ -115,7 +115,7 @@
                 </div>
               </div></div>
               <div class="item">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <div class="card-body">
                       <h5 class="services__title">Strategy</h5>
                       <div class="service-lis">
@@ -134,7 +134,7 @@
                   </div>
               </div>
               <div class="item">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <div class="card-body">
                       <h5 class="services__title">Strategy</h5>
                       <div class="service-lis">
@@ -156,6 +156,7 @@
           </div>
         </div>
       </div>
+      
     </section>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -172,7 +173,21 @@
           nav: false,
           items: 2,
           autoplay: true,
-          stagepadding:200
+          stagepadding:200,
+          responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1024:{
+            items:2
+          },
+          1440: {
+            items: 2
+          }
+        }
         });
         var owl = $(".owl-carousel");
         owl.owlCarousel();
