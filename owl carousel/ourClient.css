@@ -1,0 +1,43 @@
+.client-pages .client-logo .item {
+    /* transition: transform 200ms cubic-bezier(.785, .135, .15, .86), box-shadow 200ms cubic-bezier(.785, .135, .15, .86);
+    margin-bottom: 15px;
+    background-color: #fff;
+    margin: 10px; */
+    padding: 30px;
+    /* border: 1px solid #efeeee;
+    background-color:#ddd; */
+}
+.client-pages .client-logo .item:hover {
+    /* -ms-transform: translateY(-5px);
+    transform: translateY(-5px); */
+}
+.client-pages .client-logo img {
+    width: 100px;
+    margin: 0 auto;
+    opacity: 0.8;
+    filter: grayscale(100%);
+}
+.client-pages{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.client-pages .client-logo img:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+    filter: grayscale(0);
+}
+.brand-title span {
+    position: absolute;
+    padding-right: 5px;
+    background-color: white;
+    padding-left: 5px;
+    color: #de2021;
+    margin-top: -12px;
+    margin-left: -63px;
+    z-index: 1;
+  }
+  .pages-slide{
+    position: relative;
+    border-top: 0.5px solid #80808030;
+    border-bottom:0.5px solid#80808030;
+  }

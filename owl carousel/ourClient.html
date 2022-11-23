@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="ourClient.css" />
+    <title>Our-Client</title>
+  </head>
+<body>
+    <section class="client-pages ">
+        <div class="container">
+            <div class="brand-title text-center">
+                <span>Happy Sponsor</span>
+              </div>
+     <div class="row pages-slide">
+    <div class="owl-carousel owl-theme client-logo " id="client-logo">
+      
+      <div class="item  ">
+         <a href="#"><img src="http://preata.com/home/assets/images/client/ict.jpg" class="img-responsive" alt="client-logo"></a>
+                        </div>
+      
+      <div class="item ">
+         <a href="#"><img src="http://preata.com/home/assets/images/client/a2i.jpg" class="img-responsive" alt="client-logo"></a>
+                        </div>
+      
+       <div class="item ">
+         <a href="#"><img src="http://preata.com/home/assets/images/client/basis.jpg" class="img-responsive" alt="client-logo"></a>
+                        </div>
+      
+       <div class="item ">
+          <a href="#"><img src="http://preata.com/home/assets/images/client/digital-world.jpg" class="img-responsive" alt="client-logo"></a>
+                        </div>
+      
+       <div class="item">
+          <a href="#"><img src="http://preata.com/home/assets/images/client/idb.jpg" class="img-responsive" alt="client-logo"></a>
+                        </div>
+      
+       <div class="item">
+           <a href="#"><img src="http://preata.com/home/assets/images/client/unicef.jpg" class="img-responsive" alt="client-logo"></a>
+                        </div>
+                    </div>
+                </div>
+    
+          
+        </div>
+    </section>
+
+     <!-- jQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+     <!-- JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- PAGES OUR CLIENT -->
+     <script>
+        $('.client-logo').owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: false,
+            nav: false,
+            autoplay: true,
+            navText: ["<i class='icofont icofont-thin-left'></i>", "<i class='icofont icofont-thin-right'></i>"],
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 4
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+     </script>
+</body>
