@@ -1,0 +1,96 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <style>
+        #button{
+	font-size:25px;
+	color:gray;
+	}
+input[type=radio]{
+display:none;}
+
+input[type=radio]+label:before{
+content:"";
+display:inline-block;
+border:2px solid green;
+border-radius:100%;
+width:21px;
+height:20px;
+margin-right:11px;
+ cursor:pointer;
+}
+
+input[type=radio]:checked+label:before{
+content:"";
+background:black;
+display:inline-block;
+border-right:10.5px solid green;
+border-radius:100%;
+width:21px;
+height:20px;
+margin-right:11px;
+cursor:pointer;}
+
+#f1{
+
+font-size:50px;
+}
+
+label{
+ cursor:pointer;
+}
+
+#f2{
+cursor:pointer;
+  font-size:30px;
+}
+#btn{
+  text-decoration:none;
+  border:2px solid black;
+  padding:10px;
+  font-size:20px;
+  cursor:pointer;
+  
+}
+
+     </style> 
+
+      </head>
+    
+    <body>
+    
+    
+    <div>
+    <center>
+    
+    <p id="button"> Radio button validation and design</p<hr>
+    <div id="f1">
+    <input type="radio" id="radio1" name="radiobox"><label for="radio1">male</label></br>
+    <input type="radio" id="radio2" name="radiobox"><label for="radio2">female</label></br></div></br>
+    <center><a  onclick="submit()" id="btn">submit</a></center>
+        
+    </div>
+
+<script>
+    function submit(){
+  var a=document.getElementById("radio1");
+  var b=document.getElementById("radio2");
+  if(a.checked==false && b.checked==false){
+  alert("select gender");
+  return false;
+  }
+  if(a.checked==true){
+    alert("you are a male");
+  }
+  else{
+    alert("you are a female");
+  }
+  }
+</script>
+
+</body>
+
+
+    </html
