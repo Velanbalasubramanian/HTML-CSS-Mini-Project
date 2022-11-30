@@ -1584,7 +1584,16 @@ background-size:cover!important;
 .input-group-text {
   background-color: white !important;
   border: none !important;
+ 
 }
+.input-group input:focus::placeholder{
+  color: transparent;
+
+}
+.input-group input{
+  caret-color: red;
+}
+
 .footer-top .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
