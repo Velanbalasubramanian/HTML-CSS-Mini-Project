@@ -1,0 +1,36 @@
+.outerbox{
+    background-color: bisque;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    width: 200px;
+    height: 150px;
+    background-color: blueviolet;
+    border: 2px solid white;
+}
+.container{
+    display: flex;
+  flex-direction: row;
+}
+p{
+    padding: 10px;
+}
+.para1{
+    background-color: aquamarine;
+    flex:1;
+    order: 2;
+}
+.para2{
+    background-color: darksalmon;
+    flex:1;
+    order: 3;
+}
+.para3{
+    background-color: cornsilk;
+    flex:1; 
+    order: 1;
+}
