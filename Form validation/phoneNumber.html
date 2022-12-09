@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone number with country code</title>
+   <link rel="stylesheet" href="/demo.css">
+   <link rel="stylesheet" href="/intlTelInput.css">
+</head>
+<body>                                                                                           
+    <h1>phone number validation</h1>
+<form action="#">
+    <input type="tel" id="phone" placeholder="Phone Number">
+    <button type="submit">submit</button>
+</form>
+<script src="/intlTelInput.js"></script>
+<script>
+    var input = document.querySelector("#phone");
+    window.intltelInput(input,{});
+</script>
+</body>
+</html>
