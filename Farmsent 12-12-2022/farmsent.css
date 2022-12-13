@@ -1,0 +1,214 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    background-color:#231F1B;
+}
+/* HOME SECTION START */
+.theme-switch .bi-brightness-high{
+    font-size: 18px;
+    padding-right: 10px;
+}
+.theme-switch .bi-moon{
+    font-size: 18px;
+    background-color: #E7D3C6;
+    border-radius: 100%;
+    padding: 2px;
+}
+  .theme-switch {
+       background: #645C49; 
+       border-radius: 25px; 
+       position: relative;
+       height: 35px;
+    width: 80px;
+     }
+.nav-icon-dropdown{
+    margin-left: 50px;
+}
+.home-content h5{
+    color: var(--unnamed-color-ffffff);
+text-align: left;
+font: normal normal 600 50px/60px Be Vietnam Pro;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+padding-top: 315px;
+}
+.home-content p{
+text-align: left;
+font: normal normal 300 26px/42px Be Vietnam Pro;
+letter-spacing: 0px;
+color: #E7D3C6;
+opacity: 1;
+padding-bottom: 30px;
+}
+.home-content a{
+  background-color: #E7D3C6;
+    border-radius: 30px;
+opacity: 1;
+width: 175px;
+height: 60px;
+text-decoration: none;
+padding: 15px 36px;
+color: black;
+
+}
+.home-content-color img{
+    padding-left: 384px;
+    padding-top: 225px;
+    padding-bottom: 244px;
+}
+.ho-common{
+position: relative;
+}
+.home-content-icon{
+    position: absolute;
+    padding-top: 350px;
+    left: 0px;
+}
+.home-content-icon img{
+    padding-top: 20px;
+}
+/* HOME SECTION END */
+/* FOOD START */
+.food h2{
+    text-align: center;
+    font: normal normal 600 34px/80px Be Vietnam Pro;
+    letter-spacing: 0px;
+    color: #E7D3C6;
+    opacity: 1;
+    padding-bottom: 108px;
+}
+.food-img{
+    padding-bottom: 51px;
+}
+.food-content h5,span{
+letter-spacing: 0px;
+color: #E7D3C6;
+}
+.food-content p{
+letter-spacing: 0px;
+color: #FFFFFF;
+}
+.food-content{
+    padding-bottom: 174px;
+}
+/* FOOD END */
+/* ECOSYSTEM START */
+.ecosystem h2{
+    text-align: center;
+    font: normal normal 600 34px/80px Be Vietnam Pro;
+    letter-spacing: 0px;
+    color: #E7D3C6;
+    opacity: 1;
+    padding-bottom: 129px;
+}
+
+.eco-second p{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    line-height: 26px;
+    font-size: 20px;
+    padding-bottom: 61px;
+}
+.eco-second h4{
+letter-spacing: 0px;
+color: #E7D3C6;
+line-height: 30px;
+font-size: 24px;
+opacity: 1;
+padding-bottom: 12px;
+}
+.eco-image{
+    position: absolute;
+}
+.eco-image1{
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    
+}
+.eco-img{
+    position: relative;
+}
+/* ECOSYSTEM END */
+/* OUR PRESENCE START*/
+.our-presence{
+    padding-top: 149px;
+}
+.our-presence h2{
+text-align: center;
+font: normal normal 600 34px/80px Be Vietnam Pro;
+letter-spacing: 0px;
+color: #E7D3C6;
+opacity: 1;
+padding-bottom: 108px;
+}
+
+/* OUR PRESENCE END*/
+/* ROADMAP START */
+.roadmap{
+    padding-top: 175px;
+}
+.roadmap h2{
+    padding-bottom: 89px;
+text-align: center;
+font: normal normal 600 34px/80px Be Vietnam Pro;
+letter-spacing: 0px;
+color: #E7D3C6;
+opacity: 1;
+}
+.roadmap h5{
+font: normal normal 600 32px/40px Be Vietnam Pro;
+letter-spacing: 0px;
+color: #E7D3C6;
+opacity: 1;
+}
+.map-img-22{
+border-radius: 50%;
+background: #AC7046 0% 0% no-repeat padding-box;
+width: 85px;
+height: 85px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.map-img1-22{
+    border-radius:50%;
+    border: 1px solid #E7D3C6;
+    background: transparent;
+    width: 85px;
+height: 85px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.map-content-2022 h5{
+font: normal normal 600 24px/30px Be Vietnam Pro;
+letter-spacing: 0px;
+color: #E7D3C6;
+margin-top: 25px;
+}
+.map-content-2022 p{
+letter-spacing: 0px;
+color: #E7D3C6;
+}
+.map-2022{
+    padding-bottom: 112px;
+}
+.map-2023{
+    padding-bottom: 175px;
+}
+/* ROADMAP END */
+/* OUR TEAM START */
+.our-team h2{
+text-align: center;
+font: normal normal 600 34px/80px Be Vietnam Pro;
+letter-spacing: 0px;
+color: #E7D3C6;
+opacity: 1;
+}
+/* OUR TEAM END */
