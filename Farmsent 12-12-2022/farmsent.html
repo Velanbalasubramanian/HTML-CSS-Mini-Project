@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmsent</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -36,7 +40,11 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="/images-FC/Group 1.svg" alt="farmsent" />
+            <img
+              src="/images-FC/Group 1.svg"
+              class="img-fluid"
+              alt="farmsent"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -66,22 +74,30 @@
       </nav>
 
       <div class="container">
-        <ul class="home-content-icon">
-          <li>
-            <a href="#"> <img src="images-FC/Group 1275.svg" /> </a>
-          </li>
-          <li>
-            <a href="#"> <img src="images-FC/Group 1276.svg" /> </a>
-          </li>
-          <li>
-            <a href="#"><img src="images-FC/Group 1277.svg" /> </a>
-          </li>
-          <li>
-            <a href="#"> <img src="/images-FC/Group 1278.svg" /> </a>
-          </li>
-        </ul>
         <div class="row ho-common">
-          <div class="col-5 home-content">
+          <ul class="home-content-icon">
+            <li>
+              <a href="#">
+                <img src="images-FC/Group 1275.svg" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images-FC/Group 1276.svg" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images-FC/Group 1277.svg" class="img-fluid" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/images-FC/Group 1278.svg" class="img-fluid" />
+              </a>
+            </li>
+          </ul>
+          <div class="col-5 col-md-6 home-content">
             <h5>World's First Farmers Blockchain</h5>
             <p>
               A blockchain platform for farmers and producers where they can
@@ -89,8 +105,11 @@
             </p>
             <a href="#">Whitelist</a>
           </div>
-          <div class="col-7 home-content-color">
-            <img src="/images-FC/Group 2.svg" />
+          <div class="col-7 col-md-6 d-flex justify-content-evenly">
+            <img
+              src="/images-FC/Group 2.svg"
+              class="home-content-color img-fluid"
+            />
           </div>
         </div>
       </div>
@@ -98,57 +117,39 @@
     <section class="food">
       <div class="container">
         <h2>Ensuring Food Security</h2>
-        <div class="row food-row">
-          <div class="col">
-            <div class="row">
-              <div class="col-2"></div>
-              <div class="col-6">
-                <div class="food-img">
-                  <img src="/images-FC/Group 1282.png" />
-                </div>
-                <div class="food-content">
-                  <h5>Problem:</h5>
-                  <span> - </span>
-                  <p>
-                    Farmland is unused since no funding is available to farmers
-                  </p>
-                </div>
-              </div>
-              <div class="col-4"></div>
+        <div class="row food-row justify-content-center">
+          <div class="col-lg-4 col-md-4">
+            <div class="food-img text-center">
+              <img src="/images-FC/Group 1282.png" class="img-fluid" />
+            </div>
+            <div class="food-content">
+              <h5>Problem:</h5>
+              <span> - </span>
+              <p>
+                Farmland is unused since no funding is available to farmers
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="row">
-              <div class="col-2"></div>
-              <div class="col-5">
-                <div class="food-img">
-                  <img src="/images-FC/Group 1281.png" />
-                </div>
-                <div class="food-content">
-                  <h5>Problem:</h5>
-                  <span> - </span>
-                  <p>Food inflation is at its peak</p>
-                </div>
-              </div>
-              <div class="col-5"></div>
+          <div class="col-lg-4 col-md-4">
+            <div class="food-img text-center">
+              <img src="/images-FC/Group 1281.png" class="img-fluid" />
+            </div>
+            <div class="food-content">
+              <h5>Problem:</h5>
+              <span> - </span>
+              <p>Food inflation is at its peak</p>
             </div>
           </div>
-          <div class="col">
-            <div class="row">
-              <div class="col-2"></div>
-              <div class="col-5">
-                <div class="food-img">
-                  <img src="/images-FC/Group 1282.png" />
-                </div>
-                <div class="food-content">
-                  <h5>Problem:</h5>
-                  <span> - </span>
-                  <p>
-                    1/3 of the world's population lacked sufficient food in 2020
-                  </p>
-                </div>
-              </div>
-              <div class="col-5"></div>
+          <div class="col-lg-4 col-md-4">
+            <div class="food-img text-center">
+              <img src="/images-FC/Group 1282.png" class="img-fluid" />
+            </div>
+            <div class="food-content">
+              <h5>Problem:</h5>
+              <span> - </span>
+              <p>
+                1/3 of the world's population lacked sufficient food in 2020
+              </p>
             </div>
           </div>
         </div>
@@ -158,30 +159,24 @@
       <div class="container">
         <h2>Ecosystem</h2>
         <div class="row">
-          <div class="col-6 eco-img">
-            <img src="/images-FC/Path 1418.svg" class="eco-image" />
-            <img src="/images-FC/Group 1333.png" class="eco-image1" />
+          <div class="col-lg-6 col-md-6 eco-img">
+            <img src="/images-FC/Path 1418.svg" class="eco-image img-fluid" />
+            <img src="/images-FC/Group 1333.png" class="eco-image1 img-fluid" />
           </div>
-          <div class="col-6 eco-second">
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-6">
-                <p>
-                  Our platform is built on an ecosystem of blockchain for
-                  farmers and producers where they can securely supply goods
-                  directly to the consumers.
-                </p>
-                <h4>Fair Future Contract (FFC) -</h4>
-                <p>
-                  Fair Future Contract or FFC is a contract that doesnt lock the
-                  farmers. The farmers utilizing the FFC get to sell at the
-                  prevalent market price and not at the price determined months
-                  ago. Under FFC Farmsent arranges a soft contract that is not
-                  binding and in favor of the farmers.
-                </p>
-              </div>
-              <div class="col-3"></div>
-            </div>
+          <div class="col-lg-6 col-md-6 eco-second">
+            <p>
+              Our platform is built on an ecosystem of blockchain for farmers
+              and producers where they can securely supply goods directly to the
+              consumers.
+            </p>
+            <h4>Fair Future Contract (FFC) -</h4>
+            <p>
+              Fair Future Contract or FFC is a contract that doesnt lock the
+              farmers. The farmers utilizing the FFC get to sell at the
+              prevalent market price and not at the price determined months ago.
+              Under FFC Farmsent arranges a soft contract that is not binding
+              and in favor of the farmers.
+            </p>
           </div>
         </div>
       </div>
@@ -189,7 +184,7 @@
     <section class="our-presence">
       <div class="container">
         <h2>Our presence</h2>
-        <a href="#"><img src="/images-FC/Frame.svg" alt="" /></a>
+        <a href="#"><img src="/images-FC/Frame.svg" class="img-fluid" /></a>
       </div>
     </section>
     <section class="roadmap">
@@ -197,129 +192,344 @@
         <h2>Roadmap</h2>
         <h5>2022</h5>
         <div class="row map-2022">
+          <h3 class="roadmap-dot">.</h3>
           <div class="col">
-            <div class="row">
-              <div class="col-6"></div>
-              <div class="col-6">
-                <div class="map-img-22">
-                  <img src="/images-FC/ruler.svg" />
-                </div>
-                <div class="map-content-2022">
-                  <h5>Q1:</h5>
-                  <p>Concept & Architecture</p>
-                </div>
+            <div class="road-map-com1">
+              <div class="map-img-22">
+                <img src="/images-FC/ruler.svg" class="img-fluid road-im" />
+              </div>
+              <div class="map-content-2022">
+                <h5>Q1:</h5>
+                <p>Concept & Architecture</p>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-6">
-                <div class="map-img-22">
-                  <img src="/images-FC/padlock.svg" />
-                </div>
-                <div class="map-content-2022">
-                  <h5>Q2:</h5>
-                  <p>Private Round</p>
-                </div>
+            <div class="road-map-com2">
+              <div class="map-img-22">
+                <img src="/images-FC/padlock.svg" class="img-fluid road-im" />
               </div>
-              <div class="col-3"></div>
+              <div class="map-content-2022">
+                <h5>Q2:</h5>
+                <p>Private Round</p>
+              </div>
             </div>
           </div>
+
           <div class="col">
-            <div class="row">
-              <div class="col-8">
+            <div class="road-map-com3">
               <div class="map-img-22">
-                <img src="/images-FC/Icon.svg" />
+                <img src="/images-FC/Icon.svg" class="img-fluid road-im" />
               </div>
               <div class="map-content-2022">
                 <h5>Q3:</h5>
                 <p>Further Development & Country Partnerships</p>
               </div>
             </div>
-            </div>
           </div>
+
           <div class="col">
-            <div class="map-img1-22">
-              <img src="/images-FC/space-rocket-launch.svg" />
-            </div>
-            <div class="map-content-2022">
-              <h5>Q4:</h5>
-              <p>Alpha Completed</p>
+            <div class="road-map-com4">
+              <div class="map-img1-22">
+                <img
+                  src="/images-FC/space-rocket-launch.svg"
+                  class="img-fluid road-im"
+                />
+              </div>
+              <div class="map-content-2022">
+                <h5>Q4:</h5>
+                <p>Alpha Completed</p>
+              </div>
             </div>
           </div>
+          <h3 class="roadmap-dot1">.</h3>
         </div>
 
         <h5>2023</h5>
         <div class="row map-2023">
+          <h3 class="roadmap-dot2">.</h3>
           <div class="col">
-            <div class="row">
-              <div class="col-6"></div>
-              <div class="col-6">
-                <div class="map-img1-22">
-                  <img src="/images-FC/editing.svg" />
-                </div>
-                <div class="map-content-2022">
-                  <h5>Q1:</h5>
-                  <p>
-                    Public Round - Onboarding Clients - Marketing | Fair Future
-                    Contracts
-                  </p>
-                </div>
+            <div class="road-map-com5">
+              <div class="map-img-23">
+                <img src="/images-FC/editing.svg" class="img-fluid" />
+              </div>
+              <div class="map-content-2023">
+                <h5>Q1:</h5>
+                <p>
+                  Public Round - Onboarding Clients - Marketing | Fair Future
+                  Contracts
+                </p>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="row">
-              <div class="col-5"></div>
-              <div class="col-7">
-                <div class="map-img1-22">
-                  <img src="/images-FC/tractor.svg" />
-                </div>
+            <div class="road-map-com6">
+              <div class="map-img-23">
+                <img src="/images-FC/tractor.svg" class="img-fluid" />
+              </div>
 
-                <div class="map-content-2022">
-                  <h5>Q2:</h5>
-                  <p>Fertilizers & agricultural equipment</p>
-                </div>
+              <div class="map-content-2023">
+                <h5>Q2:</h5>
+                <p>Fertilizers & agricultural equipment</p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-9">
-                <div class="map-img1-22">
-                  <img src="/images-FC/market-analysis.svg" />
-                </div>
-                <div class="map-content-2022">
-                  <h5>Q3:</h5>
-                  <p>Market Expansion</p>
-                </div>
+            <div class="road-map-com7">
+              <div class="map-img-23">
+                <img src="/images-FC/market-analysis.svg" class="img-fluid" />
+              </div>
+              <div class="map-content-2023">
+                <h5>Q3:</h5>
+                <p>Market Expansion</p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="row">
-              <div class="col-2"></div>
-              <div class="col-10">
-                <div class="map-img1-22">
-                  <img src="/images-FC/nft (1).svg" />
-                </div>
-                <div class="map-content-2022">
-                  <h5>Q4:</h5>
-                  <p>NFT Bidding</p>
-                </div>
+            <div class="road-map-com8">
+              <div class="map-img-23">
+                <img src="/images-FC/nft (1).svg" class="img-fluid" />
+              </div>
+              <div class="map-content-2023">
+                <h5>Q4:</h5>
+                <p>NFT Bidding</p>
               </div>
             </div>
           </div>
+          <h3 class="roadmap-dot3">.</h3>
         </div>
       </div>
     </section>
     <section class="our-team">
       <div class="container">
         <h2>Our Team</h2>
+        <div class="row our-common">
+          <div class="col-lg-2 col-md-2 our-first">
+            <h5>Founders</h5>
+          </div>
+          <div class="col-lg-6 col-md-6 d-flex">
+            <div class="our-team-img">
+              <img src="/images-FC/Rectangle 43.png" class="img-fluid" />
+            </div>
+            <div class="our-team-img">
+              <img
+                src="/images-FC/Rectangle 49.png"
+                class="our-team-im img-fluid"
+              />
+            </div>
+            <div class="our-team-img">
+              <img
+                src="/images-FC/Rectangle 50.png"
+                class="our-team-im img-fluid"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 our-frst-content">
+            <div class="d-flex justify-content-between">
+              <div class="our-first-title">
+                <h5>Yog Shrusti</h5>
+                <span>-</span>
+              </div>
+              <div class="team-icon">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+            <span class="our-team-ceo">Co-Founder / CEO</span>
+            <p class="our-content-right">
+              A leading technopreneur in the Middle East with 25 years of
+              experience in information technology and digital media, Yog brings
+              a unique combination of business acumen, technical knowhow, and
+              online strategy to the Farmsent team.
+            </p>
+          </div>
+        </div>
+
+        <div class="our-team2-row">
+          <div class="row our-common2">
+            <div class="col-2 our-second">
+              <h5>Team members</h5>
+            </div>
+
+            <div class="col-6 d-flex">
+              <div class="our-team-img">
+                <img
+                  src="/images-FC/Rectangle 51.png"
+                  class="our-team-im img-fluid"
+                />
+              </div>
+              <div class="our-team-img">
+                <img
+                  src="/images-FC/Rectangle 52.png"
+                  class="our-team-im img-fluid"
+                />
+              </div>
+              <div class="our-team-img">
+                <img
+                  src="/images-FC/Rectangle 53.png"
+                  class="our-team-im img-fluid"
+                />
+              </div>
+              <div class="our-team-img">
+                <img
+                  src="/images-FC/Rectangle 60.png"
+                  class="our-team-im img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-6 d-flex te-our2">
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 54.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 55.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 56.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-6 d-flex te-our2">
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 57.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 58.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 59.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-team3-row">
+          <div class="row our-common2">
+            <div class="col-2 our-second">
+              <h5>Advisors</h5>
+            </div>
+
+            <div class="col-6 d-flex">
+              <div class="our-team-img">
+                <img
+                  src="/images-FC/Rectangle 61.png"
+                  class="our-team-im img-fluid"
+                />
+              </div>
+              <div class="our-team-img">
+                <img
+                  src="/images-FC/Rectangle 62.png"
+                  class="our-team-im img-fluid"
+                />
+              </div>
+              <div class="our-team-img">
+                <img
+                  src="/images-FC/Rectangle 67.png"
+                  class="our-team-im img-fluid"
+                />
+              </div>
+              <div class="our-team-img">
+                <img
+                  src="/images-FC/Rectangle 63.png"
+                  class="our-team-im img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-6 d-flex  te-our2">
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 64.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 65.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+              <div class="our-team-img1">
+                <img
+                  src="/images-FC/Rectangle 66.png"
+                  class="our-team-im1 img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <h2>Partners and Investors</h2>
+        <div class="row justify-content-center text-center d-flex">
+          <div class="col">
+            <a href="#"><img src="/images-FC/Group 1313.png" class="img-fluid" /></a>
+          </div>
+          <div class="col">
+            <a href="#"><img src="/images-FC/Group 1315.png" class="img-fluid" /></a>
+          </div>
+          <div class="col">
+            <a href="#"><img src="/images-FC/Group 1318.png" class="img-fluid" /></a>
+          </div>
+          <div class="col">
+            <a href="#"><img src="/images-FC/Group 1319.png" class="img-fluid" /></a>
+          </div>
+          <div class="col">
+            <a href="#"><img src="/images-FC/Group 1322.png" class="img-fluid" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row footer-row1">
+          <div class="col-7">
+            <div class="footer1 d-flex">
+              <div class="foot-img">
+                <img src="/images-FC/Group 1.svg" />
+              </div>
+              <div class="footer-title">
+                <p><span>|</span>World’s First Farmer’s Blockchain</p>
+              </div>
+            </div>
+            <p class="footer-ex">© Farmsent FZCO | All Rights Reserved</p>
+          </div>
+          <div class="col-5 footer2">
+            <a href="#"><button>Download Whitepaper</button></a>
+            <p>Contact us <span>-</span></p>
+            <span>info@farmsent.io</span>
+          </div>
+        </div>
       </div>
     </section>
   </body>
