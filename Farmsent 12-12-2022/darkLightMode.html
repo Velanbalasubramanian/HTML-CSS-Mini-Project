@@ -15,15 +15,15 @@
     />
   </head>
   <body>
-    <div id="toggle">
-      <i class="indicator">
-        <i class="bi bi-brightness-high"></i>
+    <div id="tog">
+      <div class="move-mode">
         <i class="bi bi-moon"></i></i>
+        <i class="bi bi-brightness-high"></i>
     </div>
 
     <script>
       const body = document.querySelector("body");
-      const toggle = document.getElementById("toggle");
+      const toggle = document.getElementById("tog");
       toggle.onclick = function () {
         toggle.classList.toggle("active");
         body.classList.toggle("active");

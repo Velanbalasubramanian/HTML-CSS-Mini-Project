@@ -4,34 +4,96 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #231f1b;
+  background: #f8f8f8;
 }
+/* :root {
+  --primary-color:#edf2fc;
+  --Secondary--color:#212121;
+
+} */
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+body {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+}
+body.active {
+  background: #2b2b2b;
+}
+#tog.active .move-mode .bi-moon {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+}
+#tog .move-mode .bi-moon {
+  display: none;
+}
+
+#tog.active .move-mode  .bi-brightness-high  {
+  display: none;
+}
+
+#tog .move-mode .bi-brightness-high  {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+}
+
+#tog {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 35px;
+  border-radius: 160px;
+  background: #645c49;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+/* #tog.active {
+  background: #fff;
+  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+    inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+} */
+#tog .move-mode {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, #e7d3c6, #645c49);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+#tog.active .move-mode {
+  left: 50px;
+  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+    inset 0 4px 4px rgba(255, 255, 255, 1),
+    inset 0 -4px 4px rgba(255, 255, 255, 1);
+}
+
 /* HOME SECTION START */
 .home-section{
   padding-top: 30px;
-}
-.theme-switch .bi-brightness-high {
-  font-size: 18px;
-  padding-right: 10px;
-}
-.theme-switch .bi-moon {
-  font-size: 18px;
-  background-color: #e7d3c6;
-  border-radius: 100%;
-  padding: 2px;
-}
-.theme-switch {
-  background: #645c49;
-  border-radius: 25px;
-  position: relative;
-  height: 35px;
-  width: 80px;
 }
 .nav-icon-dropdown {
   margin-left: 50px;
 }
 .home-content h5 {
-  color: var(--unnamed-color-ffffff);
   text-align: left;
   font: normal normal 600 50px/60px Be Vietnam Pro;
   letter-spacing: 0px;
@@ -96,7 +158,7 @@ body {
   }
   .home-content-color {
     padding-top: 200px;
-    padding-bottom: 220px;
+    padding-bottom: 160px;
   }
 }
 @media screen and (max-width: 991px) {

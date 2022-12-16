@@ -27,7 +27,7 @@
       referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="farmsent.css" />
   </head>
-  <body>
+  <body class="light-mode">
     <section class="home-section">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -51,16 +51,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <div class="nav-icon-common ms-auto d-flex">
-              <div class="nav-mode">
-                <button type="button" class="theme-switch">
+              <div id="tog">
+                <div class="move-mode">
+                  <i class="bi bi-moon"></i></i>
                   <i class="bi bi-brightness-high"></i>
-                  <i class="bi bi-moon"></i>
-                </button>
               </div>
+            </div>
               <div class="nav-icon-dropdown">
                 <a href="#"><img src="/images-FC/Group 3.png" class="img-fluid" /></a>
               </div>
-            </div>
           </div>
         </div>
       </nav>
@@ -89,7 +88,7 @@
               </a>
             </li>
           </ul>
-          <div class="col-5 col-md-6 home-content">
+          <div class="col-lg-5 col-md-6 home-content">
             <h5>World's First Farmers Blockchain</h5>
             <p>
               A blockchain platform for farmers and producers where they can
@@ -97,7 +96,7 @@
             </p>
             <a href="#">Whitelist</a>
           </div>
-          <div class="col-7 col-md-6 d-flex justify-content-evenly">
+          <div class="col-lg-7 col-md-6 d-flex justify-content-evenly">
             <img
               src="/images-FC/Group 2.png"
               class="home-content-color img-fluid"
@@ -524,5 +523,15 @@
         </div>
       </div>
     </section>
+
+<!-- DARK MODE & LIGHT MODE Script -->
+    <script>
+      const body = document.querySelector("body");
+      const toggle = document.getElementById("tog");
+      toggle.onclick = function () {
+        toggle.classList.toggle("active");
+        body.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>
