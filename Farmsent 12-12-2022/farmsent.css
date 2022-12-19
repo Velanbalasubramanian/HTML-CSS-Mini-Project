@@ -45,6 +45,7 @@ body {
   .light-logo{
   display:none;
 }
+
 .dark-logo{
   display: none;
 }
@@ -53,7 +54,68 @@ body {
   display:block;
 }
 
+.menu-light{
+  display: none;
+}
+[data-theme="dark"]  
+  .menu-light{
+  display:block;
+}
 
+.menu-dark{
+  display: block;
+}
+[data-theme="dark"]  
+  .menu-dark{
+  display:none;
+}
+.home-light{
+  display: block;
+}
+[data-theme="dark"]  
+  .home-light{
+  display:none;
+}
+
+.home-dark{
+  display: none;
+}
+[data-theme="dark"]  
+  .home-dark{
+  display:block;
+}
+
+/* ECOSYSTEM */
+.eco-light{
+  display: block;
+}
+[data-theme="dark"]  
+  .eco-light{
+  display:none;
+}
+.eco-dark{
+  display: none;
+}
+[data-theme="dark"]  
+  .eco-dark{
+  display:block;
+}
+
+/* PARTNERS AND INVESTORS */
+.partners-light{
+  display: block;
+}
+[data-theme="dark"]  
+  .partners-light{
+  display:none;
+}
+.partners-dark{
+  display: none;
+}
+[data-theme="dark"]  
+.partners-dark{
+  display:block;
+}
 /* Toggle dark mode and light mode css START */
 .switch-tog {
   position: relative;
@@ -1069,6 +1131,10 @@ color: black;
 }
 .team-icon {
   color: white;
+  color: var(--h5-color );
+}
+.team-icon .bi-linkedin{
+  padding-right: 16px;
 }
 .our-team-ceo {
   text-align: left;
