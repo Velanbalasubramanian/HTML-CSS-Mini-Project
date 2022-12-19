@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+button{
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.navbar, .burger, .menu , .background {
+    position: fixed;
+}
+.background{
+    z-index: 1;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    background:green;
+    transition: 0.5s;
+}
+.navbar-burger{
+    z-index: 3;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: grid;
+    width: 72px;
+    height: 72px;
+    background-image: url(/images-FC/Group\ 3333333.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    padding-left: 20px;
+    padding-right: 72px;
+    background: #19191c;
+    color: #f9f9f9;
+}
+.navbar > button{
+    font-size: 28px;
+}
+.navbar-logo {
+    height:25px;
+}
+.menu{
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.menu > a{
+    color: #f9f9f9;
+    font-size: 32px;
+}
+/* Styles.CSS (magic parts) */
+body.open  .background{
+    filter: blur(20px);
+}
+body.open .burger{
+    background-image: url(/images-FC/close.png);
+}
+body.open .menu{
+    opacity: 1;
+    visibility: visible;
+}
+@keyframes appear{
+    0% {
+        opacity: 0;
+        translate: 0 50px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body.open .menu > a {
+    animation: appear 0.3s both;
+}
+

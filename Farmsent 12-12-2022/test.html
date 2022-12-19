@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR ASIDE</title>
+    <link rel="stylesheet" href="/test.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+      integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="background"></div>
+    <nav class="navbar home-content">
+        <h5>Software Engineer</h5>
+        <img src="/images-FC/Group 1.png" class="navbar-logo">
+        <button class="navbar-burger" class="togglemenu()"></button>
+    </nav>
+    <nav class="menu">
+        <a href="#" style="animation-delay: 0.1s">Home</a>
+    </nav>
+    <h5>I'm a Blockchain Developer</h5>
+    <label class="switch-tog">
+      <input type="checkbox" id="togge" name="toggle-bar" >
+      <span class="slider-round"> 
+      <i class="bi bi-brightness-high"></i> 
+       <i class="bi bi-moon"></i></i>
+      </span>
+    </label>
+        <script>
+            // const body = document.querySelector("body");
+      const toggle = document.getElementById("togge");
+      toggle.addEventListener( "change", () => {
+         if ( toggle.checked ) {
+            switchTheme(1);
+         } else {
+            switchTheme(2);
+         }
+      });
+
+
+      function switchTheme(mode) {
+        if(mode == 1) {
+          console.log('light mode')
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          console.log('dark mode')
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+
+      }
+
+         
+        </script>
+</body>
+</html>

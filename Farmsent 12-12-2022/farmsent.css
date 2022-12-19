@@ -3,31 +3,154 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background: #f8f8f8;
-}
-/* :root {
-  --primary-color:#edf2fc;
-  --Secondary--color:#212121;
+/** Dynamic css loading on dark and light mode */
 
-} */
+body {
+  background: var(--body-background);
+}
+:root {
+  --body-background: #E6DAD3;
+  --h5-color : black;
+  --home-content-h5 : #60311B; 
+  --h2-color : black;
+  --p-color : #231F1B;
+  --eco-second-h4 :#60311B;
+  --map-content-2022-h5 : #231F1B;
+  --map-2022-before : 1px solid #231F1B;
+  --map-img1-22 : #E7D3C6; 
+  --a-background-color : #3f3b3b;
+  --a1-color : #fff;
+
+}
+
+[data-theme="dark"] {
+  --body-background : #2b2b2b;
+  --h5-color: #FFFFFF;
+  --home-content-h5 :#ffffff;
+  --h2-color : #e7d3c6;
+  --p-color :  #FFFFFF; 
+  --eco-second-h4 :#E7D3C6;
+  --map-content-2022-h5 : #E7D3C6;
+  --map-2022-before :1px solid#e7d3c6;
+  --map-img1-22 : #231f1b; 
+  --a-background-color : #e7d3c6; 
+  --a1-color : black;
+ 
+}
+
+.light-logo{
+  display: block;
+}
+[data-theme="dark"]  
+  .light-logo{
+  display:none;
+}
+.dark-logo{
+  display: none;
+}
+[data-theme="dark"]  
+  .dark-logo{
+  display:block;
+}
+
+
+/* Toggle dark mode and light mode css START */
+.switch-tog {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 34px;
+}
+
+.switch-tog input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #645c49;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider-round i{
+  position: absolute;
+}
+.slider-round .bi-brightness-high{
+  top: 5px;
+  left: 8px;
+  font-size: 16px;
+}
+.slider-round .bi-moon{
+  top: 5px;
+  right: 8px;
+  font-size: 16px;
+}
+input:checked + .slider-round {
+  background-color: #645c49;
+}
+
+input:focus + .slider-round {
+  box-shadow: 0 0 1px #645c49;
+}
+
+input:checked + .slider-round:before {
+  /* -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px); */
+  transform: translateX(31px);
+}
+
+/* Rounded sliders */
+.slider-round {
+  border-radius: 21px;
+}
+
+.slider-round:before {
+  border-radius: 50%;
+}
+/* Toggle dark mode and light mode css END*/
+
+/* [data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --h5-color: red;
+  --body-background : #2b2b2b;
+}
+
 :root {
   --primary-color: #302AE6;
   --secondary-color: #536390;
   --font-color: #424242;
   --bg-color: #fff;
   --heading-color: #292922;
+  --h5-color: black;
+  --body-background: #f8f8f8;
 }
-body {
-  --primary-color: #9A97F3;
-  --secondary-color: #818cab;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
-  --heading-color: #818cab;
+h5 {
+  color: var(--h5-color);
 }
-body.active {
-  background: #2b2b2b;
-}
+
 #tog.active .move-mode .bi-moon {
   text-align: center;
   display: block;
@@ -59,11 +182,6 @@ body.active {
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
     inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
 }
-/* #tog.active {
-  background: #fff;
-  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
-    inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.05);
-} */
 #tog .move-mode {
   position: absolute;
   top: 3px;
@@ -84,7 +202,7 @@ body.active {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
     inset 0 4px 4px rgba(255, 255, 255, 1),
     inset 0 -4px 4px rgba(255, 255, 255, 1);
-}
+} */
 
 /* HOME SECTION START */
 .home-section{
@@ -97,7 +215,7 @@ body.active {
   text-align: left;
   font: normal normal 600 50px/60px Be Vietnam Pro;
   letter-spacing: 0px;
-  color: #ffffff;
+  color: var(--home-content-h5);    
   opacity: 1;
   padding-top: 315px;
 }
@@ -105,19 +223,22 @@ body.active {
   text-align: left;
   font: normal normal 300 26px/42px Be Vietnam Pro;
   letter-spacing: 0px;
-  color: #e7d3c6;
+  color: #e7d3c6; 
+  color: var(--eco-second-h4 ); 
   opacity: 1;
   padding-bottom: 30px;
 }
 .home-content a {
   background-color: #e7d3c6;
+background-color: var(--a-background-color);
+color: black;
+  color: var(--a1-color)!important; 
   border-radius: 30px;
   opacity: 1;
   width: 175px;
   height: 60px;
   text-decoration: none;
   padding: 15px 36px;
-  color: black;
 }
 .home-content-color {
   padding-top: 225px;
@@ -188,35 +309,41 @@ body.active {
     padding-top: 270px;
   }
   .home-content-color {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
+  
+
+
+
 }
 @media screen and (max-width: 640px) {
   .home-content h5 {
-    /* font: normal normal 600 20px/30px Be Vietnam Pro; */
     font: normal normal 600 20px/30px Be Vietnam Pro;
-    padding-top: 240px;
+    padding-top: 140px;
   }
   .home-content p {
-    /* font: normal normal 300 14px/18px Be Vietnam Pro; */
     font: normal normal 300 16px/24px Be Vietnam Pro;
     padding-bottom: 15px;
   }
   .home-content-color {
-    padding-top: 130px;
-    padding-bottom: 40px;
+    /* padding-top: 130px;
+    padding-bottom: 40px; */ 
+    display: none;
   }
   .home-content a {
     padding: 9px 20px;
   }
 }
 @media screen and (max-width: 480px) {
+  .home-content h5 {
+    padding-top: 120px;
+}
 }
 @media screen and (max-width: 320px) {
   .home-content h5 {
     font: normal normal 600 17px/28px Be Vietnam Pro;
-    padding-top: 150px;
+    padding-top: 70px;
   }
   .home-content p {
     font: normal normal 300 16px/21px Be Vietnam Pro;
@@ -226,6 +353,7 @@ body.active {
     padding-top: 60px;
     padding-bottom: 0px;
   }
+  
 }
 /* HOME SECTION END */
 /* FOOD START */
@@ -236,6 +364,7 @@ body.active {
   color: #e7d3c6;
   opacity: 1;
   padding-bottom: 108px;
+  color: var(--h2-color);
 }
 .food-img {
   padding-bottom: 51px;
@@ -243,14 +372,17 @@ body.active {
 .food-content h5 {
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--eco-second-h4 );
 }
 .food-content span {
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--eco-second-h4 );
 }
 .food-content p {
   letter-spacing: 0px;
   color: #ffffff;
+  color: var(--p-color); 
 }
 .food-content {
   padding-bottom: 174px;
@@ -282,6 +414,12 @@ body.active {
   }
 }
 @media screen and (max-width: 768px) {
+  .food h2 {
+    padding-bottom: 60px;
+}
+.food-content {
+  padding-bottom: 80px;
+}
 }
 @media screen and (max-width: 640px) {
   .food-content {
@@ -318,6 +456,9 @@ body.active {
     padding-right: 88px;
     padding-left: 30px;
   }
+  .food {
+    padding-top: 45px;
+}
 }
 
 /* FOOD END */
@@ -329,6 +470,7 @@ body.active {
   color: #e7d3c6;
   opacity: 1;
   padding-bottom: 129px;
+  color: var(--h2-color);
 }
 
 .eco-second p {
@@ -338,10 +480,12 @@ body.active {
   line-height: 26px;
   font-size: 20px;
   padding-bottom: 61px;
+  color: var(--p-color); 
 }
 .eco-second h4 {
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--eco-second-h4); 
   line-height: 30px;
   font-size: 24px;
   opacity: 1;
@@ -366,9 +510,9 @@ body.active {
 
 
 @media screen and (max-width: 1340px) {
-    
-    
-    
+  .our-content-right {
+    padding-right: 78px !important;
+} 
 }
 @media screen and (max-width: 1199px) {
     .eco-image {
@@ -394,6 +538,9 @@ body.active {
   .eco-second p {
     padding-bottom: 35px;
   }
+  .our-content-right {
+    padding-right: 18px !important;
+}
 }
 @media screen and (max-width: 991px) {
   .eco-image1 {
@@ -417,12 +564,14 @@ body.active {
   .ecosystem h2 {
     padding-bottom: 100px;
   }
+  .our-content-right {
+    padding-right: 18px !important;
+}
 }
 @media screen and (max-width: 768px) {
-    .eco-img {
-        display: none;
-      }
-     
+  .ecosystem h2 {
+    padding-bottom: 80px;
+  }
 }
 @media screen and (max-width: 640px) {
   .eco-second {
@@ -459,6 +608,14 @@ body.active {
   opacity: 1;
   padding-bottom: 108px;
   padding-top: 189px;
+  color: var(--h2-color);
+}
+
+@media screen and (max-width: 768px) {
+  .our-presence h2 {
+    padding-bottom: 40px;
+    padding-top: 80px;
+  }
 }
 @media screen and (max-width: 640px) {
   .our-presence h2 {
@@ -479,11 +636,13 @@ body.active {
   letter-spacing: 0px;
   color: #e7d3c6;
   opacity: 1;
+  color: var(--h2-color);
 }
 .roadmap h5 {
   font: normal normal 600 32px/40px Be Vietnam Pro;
   letter-spacing: 0px;
-  color: #e7d3c6;
+  /* color: #e7d3c6; */
+  color: var( --map-content-2022-h5); 
   opacity: 1;
 }
 .map-img-22 {
@@ -498,7 +657,9 @@ body.active {
 .map-img1-22 {
   border-radius: 50%;
   border: 1px solid #e7d3c6;
+  border: var( --map-2022-before );
   background: #231f1b;
+  background: var(--map-img1-22);
   width: 85px;
   height: 85px;
   display: flex;
@@ -508,7 +669,9 @@ body.active {
 .map-img-23 {
   border-radius: 50%;
   border: 1px solid #e7d3c6;
+  border: var( --map-2022-before );
   background: #231f1b;
+  background: var(--map-img1-22);
   width: 85px;
   height: 85px;
   display: flex;
@@ -520,11 +683,13 @@ body.active {
   font: normal normal 600 24px/30px Be Vietnam Pro;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var( --map-content-2022-h5); 
   margin-top: 25px;
 }
 .map-content-2022 p {
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var( --p-color); 
   font-size: 24px;
   line-height: 30px;
 }
@@ -532,11 +697,13 @@ body.active {
   font: normal normal 600 24px/30px Be Vietnam Pro;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var( --map-content-2022-h5); 
   margin-top: 25px;
 }
 .map-content-2023 p {
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var( --p-color); 
   font-size: 24px;
   line-height: 30px;
 }
@@ -552,6 +719,7 @@ body.active {
   content: "";
   position: absolute;
   border-top: 1px solid #e7d3c6;
+  border-top: var( --map-2022-before );
   /* left: 52px; */
   width: 100%;
   top: 45px;
@@ -565,6 +733,7 @@ body.active {
   content: "";
   position: absolute;
   border-top: 1px solid #e7d3c6;
+  border-top: var( --map-2022-before );
   /* left: 52px; */
   width: 100%;
   top: 45px;
@@ -573,26 +742,26 @@ body.active {
 .map-2022 .roadmap-dot {
   font-size: 47px;
   left: -14px;
-  color: #e7d3c6;
+  color: #AC7045;
   position: absolute;
 }
 .map-2022 .roadmap-dot1 {
   font-size: 47px;
   text-align: end;
-  color: #e7d3c6;
+  color: #AC7045;
   position: absolute;
   right: -15px;
 }
 .map-2023 .roadmap-dot2 {
   font-size: 47px;
   left: -14px;
-  color: #e7d3c6;
+  color: #AC7045;
   position: absolute;
 }
 .map-2023 .roadmap-dot3 {
   font-size: 47px;
   text-align: end;
-  color: #e7d3c6;
+  color: #AC7045;
   position: absolute;
   right: -15px;
 }
@@ -739,6 +908,12 @@ body.active {
     .map-content-2022 {
         display: none;
     }
+    .roadmap {
+      padding-top: 80px;
+    }
+    .map-2023 {
+      padding-bottom: 80px;
+    }
   }
 @media screen and (max-width: 640px) {
   .roadmap {
@@ -816,7 +991,7 @@ body.active {
     padding-top: 60px;
   }
   .roadmap h2 {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
   .map-2022::before {
     display: none;
@@ -864,11 +1039,13 @@ body.active {
   color: #e7d3c6;
   opacity: 1;
   padding-bottom: 108px;
+  color: var(--h2-color);
 }
 .our-first h5 {
   text-align: left;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--h5-color); 
   opacity: 1;
 }
 .our-frst-content h5 {
@@ -876,6 +1053,7 @@ body.active {
   font: normal normal normal 24px/30px Segoe UI;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--h5-color); 
   opacity: 1;
 }
 .our-frst-content .our-first-title span {
@@ -883,6 +1061,7 @@ body.active {
   font: normal normal normal 24px/30px Segoe UI;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--h5-color); 
   opacity: 1;
 }
 .our-team-img {
@@ -896,6 +1075,7 @@ body.active {
   font: italic normal 300 20px/27px Segoe UI;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--h5-color); 
   opacity: 1;
 }
 .our-team-im {
@@ -908,14 +1088,17 @@ body.active {
   font: normal normal 300 20px/26px Segoe UI;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--p-color); 
   opacity: 1;
   padding-top: 16px;
+  padding-right: 131px;
 }
 /* SECOND ROW START */
 .our-second h5 {
   text-align: left;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--h5-color); 
   opacity: 1;
 }
 .our-team-im1 {
@@ -933,6 +1116,14 @@ body.active {
 }
 .our-team3-row {
   padding-bottom: 175px;
+}
+@media screen and (max-width: 768px) {
+  .our-team h2 {
+    padding-bottom: 80px;
+  }
+  .our-team3-row {
+    padding-bottom: 80px;
+  }
 }
 @media screen and (max-width: 640px) {
   .our-frst-content {
@@ -987,6 +1178,12 @@ body.active {
   color: #e7d3c6;
   opacity: 1;
   padding-bottom: 81px;
+  color: var(--h2-color);
+}
+@media screen and (max-width: 768px) {
+  .partners h2 {
+    padding-bottom: 70px;
+  }
 }
 @media screen and (max-width: 640px) {
   .partners h2 {
@@ -1015,6 +1212,7 @@ body.active {
 .footer-title {
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--p-color); 
   padding-bottom: 149px;
 }
 .footer-title span {
@@ -1033,24 +1231,30 @@ body.active {
   text-align: left;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--p-color); 
   line-height: 16px;
 }
 .footer2 a button {
   border-radius: 30px;
   text-align: left;
   background: #e7d3c6;
+  background-color: var(--a-background-color);
+color: black;
+  color: var(--a1-color)!important; 
   font: normal normal normal 22px/28px Be Vietnam Pro;
   letter-spacing: 0px;
   color: #231f1b;
   opacity: 1;
   padding: 16px 29px 16px 30px;
   margin-bottom: 56px;
+  border: 0;
 }
 .footer2 p {
   text-align: left;
   font: normal normal normal 24px/30px Segoe UI;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--p-color); 
   opacity: 1;
 }
 .footer2 span {
@@ -1058,6 +1262,7 @@ body.active {
   font: normal normal 300 20px/35px Segoe UI;
   letter-spacing: 0px;
   color: #e7d3c6;
+  color: var(--p-color); 
   opacity: 1;
 }
 @media screen and (max-width: 1024px) {
@@ -1086,10 +1291,16 @@ body.active {
   }
   .footer-title p {
     margin-top: 10px;
+    color: var(--p-color);
   }
   .footer2 a button {
     font: normal normal normal 19px/24px Be Vietnam Pro;
     margin-bottom: 56px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 80px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1146,7 +1357,7 @@ body.active {
     padding: 8px 10px 10px 22px;
   }
   .footer-title {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
   .footer2 span {
     padding-left: 8px;
@@ -1156,4 +1367,11 @@ body.active {
     font: normal normal normal 16px/0px Segoe UI;
     padding-left: 10px;
 }
+.footer-title p {
+  margin-top: 0px;
+  font-size: 15px;
+  line-height: 1.5;
+  padding-top: 10px;
 }
+}
+
