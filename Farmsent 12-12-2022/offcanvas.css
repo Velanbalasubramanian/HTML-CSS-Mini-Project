@@ -1,0 +1,338 @@
+body {
+    background: var(--body-background);
+  }
+  :root {
+    --body-background: #E6DAD3;
+    --h5-color : black;
+    --home-content-h5 : #60311B; 
+    --h2-color : black;
+    --p-color : #231F1B;
+    --eco-second-h4 :#60311B;
+    --map-content-2022-h5 : #231F1B;
+    --map-2022-before : 1px solid #231F1B;
+    --map-img1-22 : #E7D3C6; 
+    --a-background-color : #3f3b3b;
+    --a1-color : #fff;
+  
+  }
+  
+  [data-theme="dark"] {
+    --body-background : #2b2b2b;
+    --h5-color: #FFFFFF;
+    --home-content-h5 :#ffffff;
+    --h2-color : #e7d3c6;
+    --p-color :  #FFFFFF; 
+    --eco-second-h4 :#E7D3C6;
+    --map-content-2022-h5 : #E7D3C6;
+    --map-2022-before :1px solid#e7d3c6;
+    --map-img1-22 : #231f1b; 
+    --a-background-color : #e7d3c6; 
+    --a1-color : black;
+   
+  }
+  
+  .light-logo{
+    display: block;
+  }
+  [data-theme="dark"]  
+    .light-logo{
+    display:none;
+  }
+  
+  .dark-logo{
+    display: none;
+  }
+  [data-theme="dark"]  
+    .dark-logo{
+    display:block;
+  }
+  
+  .menu-light{
+    display: none;
+  }
+  [data-theme="dark"]  
+    .menu-light{
+    display:block;
+  }
+  
+  .menu-dark{
+    display: block;
+  }
+  [data-theme="dark"]  
+    .menu-dark{
+    display:none;
+  }
+  .home-light{
+    display: block;
+  }
+  [data-theme="dark"]  
+    .home-light{
+    display:none;
+  }
+  
+  .home-dark{
+    display: none;
+  }
+  [data-theme="dark"]  
+    .home-dark{
+    display:block;
+  }
+  
+  /* ECOSYSTEM */
+  .eco-light{
+    display: block;
+  }
+  [data-theme="dark"]  
+    .eco-light{
+    display:none;
+  }
+  .eco-dark{
+    display: none;
+  }
+  [data-theme="dark"]  
+    .eco-dark{
+    display:block;
+  }
+  
+  /* PARTNERS AND INVESTORS */
+  .partners-light{
+    display: block;
+  }
+  [data-theme="dark"]  
+    .partners-light{
+    display:none;
+  }
+  .partners-dark{
+    display: none;
+  }
+  [data-theme="dark"]  
+  .partners-dark{
+    display:block;
+  }
+  /* Toggle dark mode and light mode css START */
+  .switch-tog {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 34px;
+    margin-right: 50px;
+  }
+  
+  .switch-tog input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider-round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #645c49;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider-round:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider-round i{
+    position: absolute;
+  }
+  .slider-round .bi-brightness-high{
+    top: 5px;
+    left: 8px;
+    font-size: 16px;
+  }
+  .slider-round .bi-moon{
+    top: 5px;
+    right: 8px;
+    font-size: 16px;
+  }
+  input:checked + .slider-round {
+    background-color: #645c49;
+  }
+  
+  input:focus + .slider-round {
+    box-shadow: 0 0 1px #645c49;
+  }
+  
+  input:checked + .slider-round:before {
+    transform: translateX(31px);
+  }
+  
+  /* Rounded sliders */
+  .slider-round {
+    border-radius: 21px;
+  }
+  
+  .slider-round:before {
+    border-radius: 50%;
+  }
+  /* HOME SECTION START */
+  .home-section{
+    padding-top: 30px;
+  }
+  /* .nav-icon-dropdown {
+    margin-left: 50px;
+  } */
+  .home-content h5 {
+    text-align: left;
+    font: normal normal 600 50px/60px Be Vietnam Pro;
+    letter-spacing: 0px;
+    color: var(--home-content-h5);    
+    opacity: 1;
+    padding-top: 315px;
+  }
+  .home-content p {
+    text-align: left;
+    font: normal normal 300 26px/42px Be Vietnam Pro;
+    letter-spacing: 0px;
+    color: #e7d3c6; 
+    color: var(--eco-second-h4 ); 
+    opacity: 1;
+    padding-bottom: 30px;
+  }
+  .home-content a {
+    background-color: #e7d3c6;
+  background-color: var(--a-background-color);
+  color: black;
+    color: var(--a1-color)!important; 
+    border-radius: 30px;
+    opacity: 1;
+    width: 175px;
+    height: 60px;
+    text-decoration: none;
+    padding: 15px 36px;
+  }
+  .home-content-color {
+    padding-top: 225px;
+    padding-bottom: 244px;
+  }
+  .ho-common {
+    position: relative;
+  }
+  .home-content-icon {
+    position: absolute;
+    padding-top: 350px;
+    right: 75px;
+  }
+  .home-content-icon li {
+    list-style: none;
+  }
+  .home-content-icon img {
+    padding-top: 20px;
+  }
+  .btn-menu{
+    border: none;
+  }
+  @media screen and (max-width: 1440px) {
+    .home-content-icon {
+      padding-top: 350px;
+      right: 50px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .home-content h5 {
+      font: normal normal 600 38px/55px Be Vietnam Pro;
+      padding-top: 290px;
+    }
+    .home-content p {
+      font: normal normal 300 19px/37px Be Vietnam Pro;
+      padding-bottom: 30px;
+    }
+    .home-content-icon {
+      padding-top: 320px;
+      right: 35px;
+    }
+    .home-content-color {
+      padding-top: 200px;
+      padding-bottom: 160px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .home-content h5 {
+      font: normal normal 600 27px/45px Be Vietnam Pro;
+      padding-top: 290px;
+    }
+    .home-content p {
+      font: normal normal 300 15px/30px Be Vietnam Pro;
+      padding-bottom: 30px;
+    }
+    .home-content-icon {
+      padding-top: 320px;
+      right: 75px;
+    }
+    .home-content-color {
+      padding-top: 180px;
+      padding-bottom: 200px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .home-content-icon {
+      display: none;
+    }
+    .home-content h5 {
+      font: normal normal 600 32px/45px Be Vietnam Pro;
+      padding-top: 270px;
+    }
+    .home-content-color {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+    
+  
+  
+  
+  }
+  @media screen and (max-width: 640px) {
+    .home-content h5 {
+      font: normal normal 600 20px/30px Be Vietnam Pro;
+      padding-top: 140px;
+    }
+    .home-content p {
+      font: normal normal 300 16px/24px Be Vietnam Pro;
+      padding-bottom: 15px;
+    }
+    .home-content-color {
+      /* padding-top: 130px;
+      padding-bottom: 40px; */ 
+      display: none;
+    }
+    .home-content a {
+      padding: 9px 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .home-content h5 {
+      padding-top: 120px;
+  }
+  }
+  @media screen and (max-width: 320px) {
+    .home-content h5 {
+      font: normal normal 600 17px/28px Be Vietnam Pro;
+      padding-top: 70px;
+    }
+    .home-content p {
+      font: normal normal 300 16px/21px Be Vietnam Pro;
+      padding-bottom: 12px;
+    }
+    .home-content-color {
+      padding-top: 60px;
+      padding-bottom: 0px;
+    }
+    
+  }
+  /* HOME SECTION END */
+ 
