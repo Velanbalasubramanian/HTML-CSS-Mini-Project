@@ -122,6 +122,7 @@ body {
   display: inline-block;
   width: 65px;
   height: 34px;
+  margin-right: 50px;
 }
 
 .switch-tog input { 
@@ -175,8 +176,6 @@ input:focus + .slider-round {
 }
 
 input:checked + .slider-round:before {
-  /* -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px); */
   transform: translateX(31px);
 }
 
@@ -188,91 +187,13 @@ input:checked + .slider-round:before {
 .slider-round:before {
   border-radius: 50%;
 }
-/* Toggle dark mode and light mode css END*/
-
-/* [data-theme="dark"] {
-  --primary-color: #9A97F3;
-  --secondary-color: #818cab;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
-  --heading-color: #818cab;
-  --h5-color: red;
-  --body-background : #2b2b2b;
-}
-
-:root {
-  --primary-color: #302AE6;
-  --secondary-color: #536390;
-  --font-color: #424242;
-  --bg-color: #fff;
-  --heading-color: #292922;
-  --h5-color: black;
-  --body-background: #f8f8f8;
-}
-h5 {
-  color: var(--h5-color);
-}
-
-#tog.active .move-mode .bi-moon {
-  text-align: center;
-  display: block;
-  font-size: 20px;
-}
-#tog .move-mode .bi-moon {
-  display: none;
-}
-
-#tog.active .move-mode  .bi-brightness-high  {
-  display: none;
-}
-
-#tog .move-mode .bi-brightness-high  {
-  text-align: center;
-  display: block;
-  font-size: 20px;
-}
-
-#tog {
-  position: relative;
-  display: block;
-  width: 80px;
-  height: 35px;
-  border-radius: 160px;
-  background: #645c49;
-  transition: 0.5s;
-  cursor: pointer;
-  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
-    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-}
-#tog .move-mode {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(to bottom, #e7d3c6, #645c49);
-  border-radius: 50%;
-  transform: scale(0.9);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-    inset 0 4px 4px rgba(255, 255, 255, 0.2),
-    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
-  transition: 0.5s;
-}
-#tog.active .move-mode {
-  left: 50px;
-  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
-    inset 0 4px 4px rgba(255, 255, 255, 1),
-    inset 0 -4px 4px rgba(255, 255, 255, 1);
-} */
-
 /* HOME SECTION START */
 .home-section{
   padding-top: 30px;
 }
-.nav-icon-dropdown {
+/* .nav-icon-dropdown {
   margin-left: 50px;
-}
+} */
 .home-content h5 {
   text-align: left;
   font: normal normal 600 50px/60px Be Vietnam Pro;
@@ -320,6 +241,73 @@ color: black;
 .home-content-icon img {
   padding-top: 20px;
 }
+.btn-menu{
+  border: none;
+}
+/* OFFCANVAS */
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 350px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  /* background: #040b14; */
+  overflow-y: auto;
+}
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  /* width: 130px;
+  border: 8px solid #2c2f3f;border-radius: 50%; */
+}
+#header .profile h1 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+#header .profile .social-links a{
+  font-size: 18px;
+  display: inline-block;
+  background-color: #2c2f3f;
+  color: #e7d3c6;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 37px;
+  margin-right: 5px;
+}
+.nav-menu {
+  padding: 30px 0 0 0;
+}
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+  list-style: none;
+}
+.nav-menu ul li a{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.nav-menu a i{
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
 @media screen and (max-width: 1440px) {
   .home-content-icon {
     padding-top: 350px;
@@ -347,20 +335,20 @@ color: black;
 @media screen and (max-width: 991px) {
   .home-content h5 {
     font: normal normal 600 27px/45px Be Vietnam Pro;
-    padding-top: 290px;
+    padding-top: 260px;
   }
   .home-content p {
     font: normal normal 300 15px/30px Be Vietnam Pro;
     padding-bottom: 30px;
   }
   .home-content-icon {
-    padding-top: 320px;
+    padding-top: 265px;
     right: 75px;
   }
-  .home-content-color {
+  /* .home-content-color {
     padding-top: 180px;
     padding-bottom: 200px;
-  }
+  } */
 }
 @media screen and (max-width: 768px) {
   .home-content-icon {
@@ -368,7 +356,7 @@ color: black;
   }
   .home-content h5 {
     font: normal normal 600 32px/45px Be Vietnam Pro;
-    padding-top: 270px;
+    padding-top: 146px;
   }
   .home-content-color {
     padding-top: 90px;
@@ -387,11 +375,6 @@ color: black;
   .home-content p {
     font: normal normal 300 16px/24px Be Vietnam Pro;
     padding-bottom: 15px;
-  }
-  .home-content-color {
-    /* padding-top: 130px;
-    padding-bottom: 40px; */ 
-    display: none;
   }
   .home-content a {
     padding: 9px 20px;
@@ -415,8 +398,16 @@ color: black;
     padding-top: 60px;
     padding-bottom: 0px;
   }
-  
+  .nav-icon-common{
+    padding-top: 15px;
+    margin-left: 0px!important;
+  }
+  .switch-tog {
+    margin-right: 180px;
 }
+}
+/* HOME SECTION END */
+
 /* HOME SECTION END */
 /* FOOD START */
 .food h2 {
@@ -1368,6 +1359,12 @@ color: black;
   .footer {
     padding-top: 80px;
   }
+  .footer-title {
+    padding-bottom: 30px;
+}
+.footer2 a button {
+  margin-bottom: 10px;
+}
 }
 @media screen and (max-width: 640px) {
   .footer {
@@ -1414,13 +1411,10 @@ color: black;
   .footer1 {
     border-right: none;
   }
-  .footer2 {
-    display: contents;
-  }
   .footer2 a button {
     font: normal normal normal 12px/15px Be Vietnam Pro;
-    margin-bottom: 0px;
-    padding: 8px 10px 10px 22px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
   }
   .footer-title {
     padding-bottom: 0px;
@@ -1431,7 +1425,7 @@ color: black;
   }
   .footer2 p {
     font: normal normal normal 16px/0px Segoe UI;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 .footer-title p {
   margin-top: 0px;

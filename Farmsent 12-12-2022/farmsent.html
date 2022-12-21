@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="farmsent.css" />
   </head>
   <body>
-    <section class="home-section">
+    <section class="home-section" id="home">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -55,17 +55,67 @@
                 <i class="bi bi-moon"></i>
               </span>
             </label>
-            <div class="nav-icon-dropdown">
-              <a href="#">
-                <img
+            <button
+              class="btn btn-menu p-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <span class="nav-icon-dropdown"
+                ><img
                   src="/images/Group3light.svg"
                   class="img-fluid menu-light" />
                 <img src="/images/Group3dark.png" class="img-fluid menu-dark"
-              /></a>
-            </div>
+              /></span>
+            </button>
           </div>
         </div>
       </nav>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close ms-auto"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <header id="header">
+              <div class="profile">
+                  <div class="flex-column">
+                      <img src="images/light-logo.png" alt="profile-img">
+                      <h1 class="profile-heading">Alex smigit th</h1>
+                      <div class="social-links text-center mt-3">
+                           <a href="#"><i class="bi bi-instagram"></i></a>   
+                           <a href="#"><i class="bi bi-twitter"></i></a>
+                           <a href="#"><i class="bi bi-facebook"></i></a>
+                           <a href="#"><i class="bi bi-skype"></i></a>
+                           <a href="#"><i class="bi bi-linkedin"></i></a>
+                      </div>
+                  </div>
+                  <nav id="navbar" class="nav-menu navbar">
+                      <ul>
+                          <li><a href="#home" class="nav-link scrollto active">Home</a></li>
+                          <li><a href="#ensuring-food" class="nav-link scrollto active"> Food</a></li>
+                          <li><a href="#eco" class="nav-link scrollto active">Ecosystem</a></li>
+                          <li><a href="#our-pre" class="nav-link scrollto active">Our Presence</a></li>
+                          <li><a href="#road-map" class="nav-link scrollto active">Roadmap</a></li>
+                          <li><a href="#team-our" class="nav-link scrollto active"> Our Team</a></li>
+                          <li><a href="#part-invest" class="nav-link scrollto active">Partners and Investors</a></li>
+                          <li><a href="#farm-footer" class="nav-link scrollto active">Footer</a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </header>
+      </div>
+      </div>
       <div class="container">
         <div class="row ho-common">
           <ul class="home-content-icon">
@@ -111,7 +161,7 @@
         </div>
       </div>
     </section>
-    <section class="food">
+    <section class="food" id="ensuring-food">
       <div class="container">
         <h2>Ensuring Food Security</h2>
         <div class="row food-row justify-content-center">
@@ -152,7 +202,7 @@
         </div>
       </div>
     </section>
-    <section class="ecosystem">
+    <section class="ecosystem" id="eco">
       <div class="container">
         <h2>Ecosystem</h2>
         <div class="row">
@@ -192,13 +242,13 @@
         </div>
       </div>
     </section>
-    <section class="our-presence">
+    <section class="our-presence" id="our-pre">
       <div class="container">
         <h2>Our presence</h2>
         <a href="#"><img src="/images/Frame.png" class="img-fluid" /></a>
       </div>
     </section>
-    <section class="roadmap">
+    <section class="roadmap" id="road-map">
       <div class="container">
         <h2>Roadmap</h2>
         <h5>2022</h5>
@@ -313,7 +363,7 @@
         </div>
       </div>
     </section>
-    <section class="our-team">
+    <section class="our-team" id="team-our">
       <div class="container">
         <h2>Our Team</h2>
         <div class="row our-common">
@@ -499,7 +549,7 @@
         </div>
       </div>
     </section>
-    <section class="partners">
+    <section class="partners" id="part-invest">
       <div class="container">
         <h2>Partners and Investors</h2>
         <div class="row justify-content-center text-center d-flex">
@@ -551,10 +601,10 @@
         </div>
       </div>
     </section>
-    <section class="footer">
+    <section class="footer" id="farm-footer">
       <div class="container">
         <div class="row footer-row1">
-          <div class="col-7">
+          <div class="col-lg-7 col-md-6  col-sm-12">
             <div class="footer1 d-flex">
               <a class="navbar-brand" href="#">
                 <img
@@ -574,7 +624,7 @@
             </div>
             <p class="footer-ex">© Farmsent FZCO | All Rights Reserved</p>
           </div>
-          <div class="col-5 footer2">
+          <div class="col-lg-5 col-md-6 col-sm-12 footer2">
             <a href="#"><button>Download Whitepaper</button></a>
             <p>Contact us <span>-</span></p>
             <span>info@farmsent.io</span>
