@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NAVBAR ASIDE</title>
+    <title>Login Page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -36,12 +36,24 @@
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
+              src="/images/light-logo.png"
+              class="img-fluid light-logo"
+              alt="farmsent"
+            />
+            <img
               src="/images/dark-logo.png"
               class="img-fluid dark-logo"
               alt="farmsent"
             />
           </a>
           <div class="nav-icon-common ms-auto d-flex">
+            <label class="switch-tog">
+              <input type="checkbox" id="togge" name="toggle-bar" />
+              <span class="slider-round">
+                <i class="bi bi-brightness-high"></i>
+                <i class="bi bi-moon"></i>
+              </span>
+            </label>
             <button
               class="btn btn-menu p-0"
               type="button"
@@ -52,9 +64,9 @@
               <span class="nav-icon-dropdown"
                 ><img
                   src="/images/Group3light.svg"
-                  class="img-fluid menu-light"
-                />
-              </span>
+                  class="img-fluid menu-light" />
+                <img src="/images/Group3dark.png" class="img-fluid menu-dark"
+              /></span>
             </button>
           </div>
         </div>
@@ -161,7 +173,7 @@
           </li>
         </ul>
         <div class="row ho-common">
-          <div class="col-lg-6 col-md-12 home-content">
+          <div class="col-lg-6 col-md-6 home-content">
             <h5>Decentralized Farmer’s Network</h5>
             <p>
               A platform built on an ecosystem of blockchain for farmers and
@@ -169,8 +181,8 @@
               consumers.
             </p>
           </div>
-          <div class="col-lg-6 col-md-12 home-content-color">
-            <div class="home-content2 ms-auto">
+          <div class="col-lg-6 col-md-6 home-content-color">
+            <div class="home-content2">
               <h5>Request Whitepaper</h5>
               <span>-</span>
               <form
@@ -209,145 +221,23 @@
       </div>
     </section>
     <script>
-        const form = document.getElementById("form")
-        const username = document.getElementById("username")
-        const email = document.getElementById("email")
-        const tel = document.getElementById("tel")
-
-        form.addEventListener('submit', e =>{
-            e.preventDefault();
-            checkInput();
-        });
-
-        function checkInput(){
-            const usernameValue = username.value.trim();
-            const emailValue = email.value.trim();
-            const telValue = tel.value.trim();
-            //  username
-            if(usernameValue === ''){
-                setError(username, 'Username Cannot Be Blank');
-            }
-            else{
-                setSuccess(username);
-            }
-            //  email
-            if(emailValue === ''){
-                setError(email, 'Email ID Cannot Be Blank');
-            }
-            else if(!isEmail(emailValue)){
-                setError(email, 'Not a valid Email');
-            }
-            else{
-                setSuccess(email);
-            }
-            // password
-            if(telValue === ''){
-                setError(tel, 'Phone Number Cannot Be Blank');
-            }
-            else{
-                setSuccess(tel);
-            }
+      const toggle = document.getElementById("togge");
+      toggle.addEventListener("change", () => {
+        if (toggle.checked) {
+          switchTheme(1);
+        } else {
+          switchTheme(2);
         }
-
-        function setError(input, message){
-            const form2three = input.parentElement;
-            const small = form2three.querySelector('small');
-            form2three.className = 'form2three error';
-            small.innerText = message;
-        }
-        function setSuccess(input){
-            const form2three = input.parentElement; 
-            form2three.className = 'form2three success';
-        }
-        function isEmail(email){
-            return  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
-        }
-    </script>
-    <!-- <script>
-      form.addEventListener("Request Whitepaper", (e) => {
-        e.preventDefault();
-        validateForm();
       });
-      // Defining a function to display error message
-      function printError(elemId, hintMsg) {
-        document.getElementById(elemId).innerHTML = hintMsg;
-      }
-
-      // Defining a function to validate form
-      function validateForm() {
-        // Retrieving the values of form elements
-        var name = document.contactForm.name.value;
-        var email = document.contactForm.email.value;
-        var mobile = document.contactForm.mobile.value;
-
-        // Defining error variables with a default value
-        var nameErr = (emailErr = mobileErr = true);
-
-        // Validate name
-        if (name == "") {
-          printError("nameErr", "Please enter your name");
+      function switchTheme(mode) {
+        if (mode == 1) {
+          console.log("dark mode");
+          document.documentElement.setAttribute("data-theme", "dark");
         } else {
-          var regex = /^[a-zA-Z\s]+$/;
-          if (regex.test(name) === false) {
-            printError("nameErr", "Please enter a valid name");
-          } else {
-            printError("nameErr", "");
-            nameErr = false;
-          }
-        }
-
-        // Validate email address
-        if (email == "") {
-          printError("emailErr", "Please enter your email address");
-        } else {
-          // Regular expression for basic email validation
-          var regex = /^\S+@\S+\.\S+$/;
-          if (regex.test(email) === false) {
-            printError("emailErr", "Please enter a valid email address");
-          } else {
-            printError("emailErr", "");
-            emailErr = false;
-          }
-        }
-
-        // Validate mobile number
-        if (mobile == "") {
-          printError("mobileErr", "Please enter your mobile number");
-        } else {
-          var regex = /^[1-9]\d{9}$/;
-          if (regex.test(mobile) === false) {
-            printError(
-              "mobileErr",
-              "Please enter a valid 10 digit mobile number"
-            );
-          } else {
-            printError("mobileErr", "");
-            mobileErr = false;
-          }
-        }
-
-        // Prevent the form from being submitted if there are any errors
-        if ((nameErr || emailErr || mobileErr) == true) {
-          return false;
-        } else {
-          // Creating a string from input data for preview
-          var dataPreview =
-            "You've entered the following details: \n" +
-            "Full Name: " +
-            name +
-            "\n" +
-            "Email Address: " +
-            email +
-            "\n" +
-            "Mobile Number: " +
-            mobile +
-            "\n";
-
-          // Display input data in a dialog box before submitting the form
-          alert(dataPreview);
-          return false;
+          console.log("light mode");
+          document.documentElement.setAttribute("data-theme", "light");
         }
       }
-    </script> -->
+    </script>
   </body>
 </html>
