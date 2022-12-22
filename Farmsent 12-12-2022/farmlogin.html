@@ -220,7 +220,64 @@
         </div>
       </div>
     </section>
+    <!-- FORM VALIDATION -->
     <script>
+        const form = document.getElementById("form")
+        const username = document.getElementById("username")
+        const email = document.getElementById("email")
+        const tel = document.getElementById("tel")
+
+        form.addEventListener('submit', e =>{
+            e.preventDefault();
+            checkInput();
+        });
+
+        function checkInput(){
+            const usernameValue = username.value.trim();
+            const emailValue = email.value.trim();
+            const telValue = tel.value.trim();
+            //  username
+            if(usernameValue === ''){
+                setError(username, 'Username Cannot Be Blank');
+            }
+            else{
+                setSuccess(username);
+            }
+            //  email
+            if(emailValue === ''){
+                setError(email, 'Email ID Cannot Be Blank');
+            }
+            else if(!isEmail(emailValue)){
+                setError(email, 'Not a valid Email');
+            }
+            else{
+                setSuccess(email);
+            }
+            // password
+            if(telValue === ''){
+                setError(tel, 'Phone Number Cannot Be Blank');
+            }
+            else{
+                setSuccess(tel);
+            }
+        }
+
+        function setError(input, message){
+            const form2three = input.parentElement;
+            const small = form2three.querySelector('small');
+            form2three.className = 'form2three error';
+            small.innerText = message;
+        }
+        function setSuccess(input){
+            const form2three = input.parentElement; 
+            form2three.className = 'form2three success';
+        }
+        function isEmail(email){
+            return  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
+        }
+    </script>
+     <!-- DARK MODE & LIGHT MODE Script -->
+     <script>
       const toggle = document.getElementById("togge");
       toggle.addEventListener("change", () => {
         if (toggle.checked) {
