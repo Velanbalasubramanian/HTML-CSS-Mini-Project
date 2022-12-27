@@ -1,0 +1,90 @@
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 0;
+    margin-right: 10px;
+}
+.form-label{
+    font-weight: 700;
+}
+.btn-light{
+    border: 1px solid #e1dddd;
+    margin-left: 30px;
+    padding: 8px 40px 8px 40px;
+    font-weight: 600;
+}
+.btn-success{
+    padding: 8px 40px 8px 40px;
+    font-weight: 600;
+}
+.form-btn{
+    display: flex;
+    justify-content: end;
+}
+/* form{
+    padding-top: 72px;
+} */
+.bg-img{
+background-image: url(/img/bg1.jpg);
+background-size: cover;
+width: 295px;
+height: 850px;
+}
+.form-select-lg{
+    border: 1px solid #e1dddd;
+}
+.column1{
+    padding-left: 65px;
+}
+.payment{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+label .endd{
+    font-weight: 400;
+}
+.form-meal{
+    display: flex;
+    justify-content: space-between;
+}
+.form-control-lg {
+    border-radius: 5px;
+}
+.form-select-lg{
+    border-radius: 5px;
+}
+label .star{
+    color: red;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color:#198754;
+    position: relative;
+}
+.progress span{
+    /* border: 2px solid green; */
+    position: absolute;
+    padding: 3px 5px 5px 5px;
+    margin-top: -10px;
+    margin-left: 455px;
+    color: white;
+    background-color: #198754;
+    font-weight: 800;
+    border-radius: 5px;
+}
+.progress{
+    height: 6px;
+}
+.sr-only .bi-chevron-left{
+padding-right: 10px;
+}
+.sr-only .bi-chevron-right{
+    padding-left: 10px;
+    }
