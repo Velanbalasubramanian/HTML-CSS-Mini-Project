@@ -29,6 +29,16 @@ background-image: url(/img/bg1.jpg);
 background-size: cover;
 width: 295px;
 height: 850px;
+position: relative;
+}
+.img-cont {
+ position: absolute;   
+ color: white;
+ top: 350px;
+ left: 35px;
+}
+.img-cont h3{
+    font-weight: 800;
 }
 .form-select-lg{
     border: 1px solid #e1dddd;
@@ -87,4 +97,91 @@ padding-right: 10px;
 }
 .sr-only .bi-chevron-right{
     padding-left: 10px;
+    }
+
+
+
+    @media screen and (max-width: 1199px) {
+        .bg-img {
+            width: 240px;
+            height: 850px;
+        }
+        .img-cont h3 {
+            font-size: larger;
+            margin: 0px;
+        }
+        .img-cont h5 {
+            font-size: large;
+            margin: 0px;
+        }
+        .img-cont {
+            left: 26px;
+    }
+    .form-inline label, .form-inline input {
+        margin-right: 6px;
+    }
+    .progress span {
+        margin-left: 280px;
+    }
+}
+    @media screen and (max-width: 991px) {
+.bg-img{
+    display: none;
+}
+    }
+    @media screen and (max-width: 768px) {
+
+    }
+    @media screen and (max-width: 640px) {
+        .column1 {
+            padding-left: 0px;
+        }
+        .progress span {
+            margin-left: 215px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .column1 {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .progress span {
+            margin-left: 130px;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .progress span {
+            margin-left: 50px;
+        }
+        .progress {
+            margin-top: 20px;
+        }
+        .form-label {
+            font-size: small;
+        }
+        .form-inline label, .form-inline input {
+            margin-right: 0px;
+            font-size: 12px;
+        }
+        select option{
+            font-size: small;
+        }
+        .form-select-lg {
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;        
+            font-size: 15px;
+        }
+        
+        .btn-success {
+            padding: 8px 20px 8px 20px;
+            font-weight: 600;
+        }
+        .btn-light {
+            padding: 8px 20px 8px 20px;
+            font-weight: 600;
+        }
+        .form-btn {
+            display: flex;
+            justify-content: center;
+        }
     }
