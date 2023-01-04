@@ -318,7 +318,7 @@ nav {
     width: 45px;
     height: 45px;
     top: 75px;
-}
+  }
 }
 @media screen and (max-width: 1024px) {
   nav {
@@ -446,7 +446,7 @@ nav {
 @media screen and (max-width: 768px) {
   .home-sec {
     margin-bottom: 50px;
-}
+  }
   .home-content .para1 {
     font-size: 25px;
     text-align: left;
@@ -533,24 +533,20 @@ nav {
   }
   .para2 {
     padding-bottom: 20px;
-}
-.anchor-right:after {
-  left: 0%;
-  top: 30px;
-}
-.home-content1 {
-  padding-top: 60px;
-}
-.anchor-right {
-  font-size: 14px;
-}
-.home-sec {
-  margin-bottom: 50px;
-}
-
-
-
-
+  }
+  .anchor-right:after {
+    left: 0%;
+    top: 30px;
+  }
+  .home-content1 {
+    padding-top: 60px;
+  }
+  .anchor-right {
+    font-size: 14px;
+  }
+  .home-sec {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 480px) {
   .star1 {
@@ -605,7 +601,7 @@ nav {
 @media screen and (max-width: 320px) {
   .home-sec {
     margin-bottom: 30px;
-}
+  }
   .home-content .para1 {
     font-size: 18px;
     text-align: left;
@@ -683,8 +679,8 @@ nav {
   top: -75px;
   left: 10px;
 }
-.ho-flui2{
-  padding-left: calc(var(--bs-gutter-x) * .0);
+.ho-flui2 {
+  padding-left: calc(var(--bs-gutter-x) * 0);
 }
 .ho-footer2 p span {
   position: relative;
@@ -701,7 +697,7 @@ nav {
   position: relative;
 }
 .us-heading h1 {
-  font-family: 'Michroma';
+  font-family: "Michroma";
   font-style: normal;
   font-weight: 400;
   font-size: 120px;
@@ -709,12 +705,20 @@ nav {
   letter-spacing: -0.005em;
   opacity: 0.25;
   border: 2px solid;
-  background: linear-gradient(200.16deg, #FFFFFF -29.31%, rgba(255, 255, 255, 0) 82.32%);
-border-image-source: linear-gradient(200.16deg, #FFFFFF -29.31%, rgba(255, 255, 255, 0) 82.32%);
--webkit-background-clip: text;
--webkit-text-stroke: 3px transparent;
-position: relative;
-padding-bottom: 25px;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
+  padding-bottom: 25px;
 }
 .us-heading h5 {
   position: absolute;
@@ -762,7 +766,6 @@ padding-bottom: 25px;
   color: #f5d255;
   padding-left: 5px;
 }
-
 
 .us-head {
   font-family: "Michroma";
@@ -954,8 +957,8 @@ padding-bottom: 25px;
   justify-content: right;
   align-items: center;
 }
-.explore-head h1{
-  font-family: 'Michroma';
+.explore-head h1 {
+  font-family: "Michroma";
   font-style: normal;
   font-weight: 400;
   font-size: 120px;
@@ -963,16 +966,24 @@ padding-bottom: 25px;
   letter-spacing: -0.005em;
   opacity: 0.25;
   border: 2px solid;
-  background: linear-gradient(200.16deg, #FFFFFF -29.31%, rgba(255, 255, 255, 0) 82.32%);
-border-image-source: linear-gradient(200.16deg, #FFFFFF -29.31%, rgba(255, 255, 255, 0) 82.32%);
--webkit-background-clip: text;
--webkit-text-stroke: 3px transparent;
-position: relative;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
 }
-.explore-head1{
+.explore-head1 {
   display: flex;
   justify-content: space-between;
-  align-items: end; 
+  align-items: end;
 }
 .explore-head .explore-head-h5 {
   position: absolute;
@@ -1005,8 +1016,8 @@ position: relative;
   letter-spacing: -0.005em;
   padding-bottom: 70px;
 }
-.token-based-img h1{
-  font-family: 'Michroma';
+.token-based-img h1 {
+  font-family: "Michroma";
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
@@ -1014,11 +1025,19 @@ position: relative;
   letter-spacing: -0.005em;
   opacity: 0.25;
   border: 2px solid;
-  background: linear-gradient(200.16deg, #FFFFFF -29.31%, rgba(255, 255, 255, 0) 82.32%);
-border-image-source: linear-gradient(200.16deg, #FFFFFF -29.31%, rgba(255, 255, 255, 0) 82.32%);
--webkit-background-clip: text;
--webkit-text-stroke: 3px transparent;
-position: relative;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
 }
 .eco-star {
   position: absolute;
@@ -1027,7 +1046,7 @@ position: relative;
 }
 .eco-star1 {
   position: absolute;
-  right:75px;
+  right: 75px;
   bottom: 170px;
 }
 .eco-sys-col h5 {
@@ -1097,13 +1116,36 @@ position: relative;
 }
 /* NFT BASED */
 .nft-section {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 .nft-based-img {
   position: relative;
   text-align: center;
   letter-spacing: -0.005em;
-  padding-bottom: 50px;
+  padding-bottom: 65px;
+}
+.nft-based-img h1 {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+  opacity: 0.25;
+  border: 2px solid;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
 }
 .nft-star {
   position: absolute;
@@ -1168,12 +1210,35 @@ position: relative;
   position: relative;
   text-align: center;
   letter-spacing: -0.005em;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
+}
+.upcoming-img h1 {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+  opacity: 0.25;
+  border: 2px solid;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
 }
 .upcoming-star {
   position: absolute;
-  top: 75px;
-  left: 190px;
+  top: 110px;
+  left: 170px;
 }
 .upcoming-star1 {
   position: absolute;
@@ -1192,8 +1257,8 @@ position: relative;
   background-clip: text;
   text-fill-color: transparent;
   position: absolute;
-  top: 50px;
-  left: 345px;
+  top: 92px;
+  left: 330px;
 }
 .upcoming-img1 {
   padding-top: 30px;
@@ -1452,7 +1517,7 @@ position: relative;
 
 .def-starend-img {
   position: absolute;
-  bottom: -70px;
+  bottom: -115px;
 }
 .def-starstart-img {
   position: absolute;
@@ -1461,7 +1526,30 @@ position: relative;
 }
 .defi-solutions1 {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 60px;
+}
+.defi-solutions1 h1 {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+  opacity: 0.25;
+  border: 2px solid;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
 }
 .defi-row {
   padding-top: 80px;
@@ -1539,12 +1627,35 @@ position: relative;
   position: relative;
   text-align: center;
 }
+.industry-head h1 {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+  opacity: 0.25;
+  border: 2px solid;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
+}
 .industry-section {
-  padding-bottom: 85px;
+  padding-bottom: 50px;
 }
 .industry-starend-img {
   position: absolute;
-  bottom: -15px;
+  bottom: -20px;
   right: 40px;
 }
 .industry-starstart-img {
@@ -1631,18 +1742,41 @@ position: relative;
   text-align: center;
   letter-spacing: -0.005em;
 }
+.roadmap-img h1 {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+  opacity: 0.25;
+  border: 2px solid;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
+}
 .road-ro {
   padding-top: 80px;
 }
 .roadmap-star {
   position: absolute;
-  top: 75px;
-  left: 40px;
+  top: 100px;
+  left: 75px;
 }
 .roadmap-star1 {
   position: absolute;
-  right: 40px;
-  top: -10px;
+  right: 100px;
+  top: 0px;
 }
 .roadmap-img h5 {
   font-family: "Michroma";
@@ -1653,8 +1787,8 @@ position: relative;
   text-align: center;
   color: #ffffff;
   position: absolute;
-  top: 50px;
-  left: 432px;
+  top: 90px;
+  left: 440px;
 }
 
 .roadmap-quarter1 h5 {
@@ -1736,9 +1870,32 @@ position: relative;
   text-align: left;
   letter-spacing: -0.005em;
 }
+.ourteam-img h1 {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+  opacity: 0.25;
+  border: 2px solid;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
+}
 .ourteam-star {
   position: absolute;
-  top: -110px;
+  top: -70px;
   left: 160px;
 }
 .ourteam-star1 {
@@ -1755,8 +1912,8 @@ position: relative;
   text-align: center;
   color: #ffffff;
   position: absolute;
-  top: 50px;
-  left: -8px;
+  top: 90px;
+  left: 0px;
 }
 .ourteam-img p {
   font-family: "Epilogue";
@@ -1843,7 +2000,7 @@ position: relative;
 .overlay:hover .middle {
   opacity: 1;
 }
-.middle .team-content h5{
+.middle .team-content h5 {
   position: absolute;
   top: 135px;
   left: 55px;
@@ -1894,15 +2051,45 @@ position: relative;
   text-align: left;
   letter-spacing: -0.005em;
 }
+.ourblog-img h1 {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+  opacity: 0.25;
+  border: 2px solid;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ourblog-two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .ourblog-star {
   position: absolute;
-  top: -80px;
-  left: 15px;
+  top: -60px;
+  left: 30px;
 }
 .ourblog-star1 {
   position: absolute;
-  right: 400px;
-  top: -20px;
+  right: -90px;
+  top: 40px;
 }
 .ourblog-img h5 {
   font-family: "Michroma";
@@ -1913,8 +2100,8 @@ position: relative;
   text-align: center;
   color: #d9d9d9;
   position: absolute;
-  top: 50px;
-  left: -8px;
+  top: 95px;
+  left: 15px;
 }
 .blog-anchor-right {
   position: relative;
@@ -1925,7 +2112,6 @@ position: relative;
   font-size: 18px;
   line-height: 22px;
   text-decoration: none;
-  margin-left: 440px;
 }
 .blog-arrow-right {
   padding-left: 10px;
@@ -2002,19 +2188,42 @@ position: relative;
 }
 
 /* MEDIA SECTION */
-.media-sec {
-  /* padding-top: 85px; */
-}
 .media-head h5 {
   font-family: "Michroma";
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
   line-height: 117%;
-  text-align: center;
   color: #d9d9d9;
-  padding-top: 132px;
-  padding-bottom: 100px;
+  position: absolute;
+  left: 37%;
+  bottom: 32%;
+}
+.media-head h1 {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+  opacity: 0.25;
+  border: 2px solid;
+  background: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  border-image-source: linear-gradient(
+    200.16deg,
+    #ffffff -29.31%,
+    rgba(255, 255, 255, 0) 82.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  position: relative;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 .media-head {
   position: relative;
@@ -2026,13 +2235,13 @@ position: relative;
 }
 .media-star {
   position: absolute;
-  top: 125px;
+  top: 150px;
   left: 100px;
 }
 .media-star1 {
   position: absolute;
   right: 160px;
-  top: 75px;
+  top: 80px;
 }
 .media-two h5 {
   font-family: "Michroma";
@@ -2147,6 +2356,8 @@ position: relative;
   border-left: none;
   border-top: none;
   border-radius: 0px;
+  color: #d9d9d9;
+  font-size: larger;
 }
 ::placeholder {
   font-family: "Exo 2";
@@ -2343,7 +2554,7 @@ position: relative;
   .ho-footer2 p {
     font-size: 30px;
     padding-top: 55px;
-}
+  }
   .ho-high-content {
     position: relative;
     padding-left: 0px;
@@ -2406,8 +2617,13 @@ position: relative;
   /* NFT BASED STAR */
   .nft-star {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 50px;
+    left: 0px;
+  }
+  .nft-star1 {
+    position: absolute;
+    right: 0px;
+    bottom: 160px;
   }
 
   /* UPCOMING */
@@ -2519,15 +2735,6 @@ position: relative;
   }
 
   /* OUR BLOG */
-  .blog-anchor-right {
-    margin-left: 290px;
-  }
-  .ourblog-star {
-    top: -65px;
-  }
-  .ourblog-star1 {
-    right: 280px;
-  }
   #customers-testimonials2 .blog-col1 h5 {
     font-size: 22px;
   }
@@ -2535,30 +2742,46 @@ position: relative;
     padding-right: 0px;
     font-size: 15px;
   }
+  .ourblog-img h1 {
+    font-size: 110px;
+  }
+  .ourblog-img h5 {
+    font-size: 30px;
+    top: 90px;
+    left: 30px;
+  }
+  .ourblog-two {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
 
   /* MEDIA */
   .media-img {
     left: 320px;
+  }
+  .media-head h5 {
+    left: 35%;
   }
 }
 @media screen and (max-width: 1199px) {
   /* HO-FOOTER2 */
   .ho-footer2 p {
     font-size: 29px;
-}
+  }
   .ho-high-content .double-line {
     top: -50px;
   }
 
   /* WHY US */
- 
+
   .us-heading h1 {
     font-size: 91px;
   }
   .us-heading h5 {
     left: 60px;
     top: 65px;
-}
+  }
   .us-head {
     font-size: 15px;
     padding-left: 58px;
@@ -2607,7 +2830,7 @@ position: relative;
     font-size: 28px;
     bottom: 12px;
     left: 50px;
-}
+  }
   .explore-head1 p {
     font-size: 16px;
     padding-left: 20px;
@@ -2639,6 +2862,8 @@ position: relative;
     padding-top: 0px;
     padding-right: 0px;
   }
+
+  /* NFT  */
   .nft-star {
     left: 0px;
   }
@@ -2648,11 +2873,17 @@ position: relative;
   }
 
   /* UPCOMING */
+  .upcoming-img h1 {
+    font-size: 100px;
+  }
   .upcoming-img h5 {
-    left: 140px;
+    left: 190px;
+    font-size: 30px;
+    top: 80px;
   }
   .upcoming-star {
-    left: 30px;
+    left: 20px;
+    top: 100px;
   }
   .upcoming-star1 {
     right: 20px;
@@ -2707,11 +2938,12 @@ position: relative;
     left: 43%;
   }
   .def-starend-img {
-    left: 30px;
-    bottom: -70px;
+    left: 0px;
+    bottom: -115px;
   }
   .def-starstart-img {
     right: -250px;
+    top: -40px;
   }
 
   .multidefi-img h5 {
@@ -2784,7 +3016,7 @@ position: relative;
   .team-social .bi-facebook {
     padding-right: 5px;
   }
-  .middle .team-content h5{
+  .middle .team-content h5 {
     left: 40px;
     top: 110px;
   }
@@ -2796,18 +3028,19 @@ position: relative;
   }
 
   /* OUR BLOG */
-  .ourblog-star {
-    top: -80px;
-  }
-  .blog-anchor-right {
-    margin-left: 110px;
-  }
   .ourblog-img h5 {
-    left: 0px;
+    left: 24px;
+    font-size: 25px;
+    top: 70px;
   }
-  .ourblog-star1 {
-    right: 210px;
-    top: 10px;
+  .ourblog-star {
+    position: absolute;
+    top: -40px;
+    left: 30px;
+  }
+
+  .ourblog-img h1 {
+    font-size: 90px;
   }
   #customers-testimonials2 .blog-col1 h5 {
     font-size: 18px;
@@ -2841,6 +3074,9 @@ position: relative;
   .read-span1 {
     top: 20px;
   }
+  .media-head h5 {
+    left: 32%;
+  }
 
   /* LETS */
   ::placeholder {
@@ -2868,22 +3104,27 @@ position: relative;
     top: -35px;
   }
 
+  /* WHY US */
+  .highligher1 {
+    padding-top: 70px;
+  }
+
   /* EXPLORE */
   .explore-head .explore-head-h5 {
     font-size: 26px;
     bottom: 15px;
     left: 65px;
-}
-.token-based-img {
-  padding-bottom: 60px;
-}
-.explore-row {
-  padding-bottom: 60px;
-}
-.eco-star1 {
-  right: 0px;
-  bottom: 140px;
-}
+  }
+  .token-based-img {
+    padding-bottom: 60px;
+  }
+  .explore-row {
+    padding-bottom: 60px;
+  }
+  .eco-star1 {
+    right: 0px;
+    bottom: 140px;
+  }
 
   /* NFT BASED */
   .accordion-body {
@@ -2894,15 +3135,49 @@ position: relative;
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  /* DEFI */
+  .defi-row {
+    padding-top: 65px;
+  }
 
-  /* MEDIA */
-  .media-img {
-    left: 245px;
+  /* INDUSTRY */
+  .industry-row {
+    padding-top: 65px;
+  }
+  .industry-section {
+    padding-bottom: 50px;
+  }
+
+  /* ROADMAP */
+  .roadmap-img h1 {
+    font-size: 100px;
+  }
+  .roadmap-img h5 {
+    left: 300px;
+    top: 78px;
+    font-size: 28px;
+  }
+
+  /* OUR TEAM */
+  .ourteam-img h1 {
+    font-size: 100px;
+  }
+  .ourteam-img h5 {
+    font-size: 28px;
     top: 75px;
   }
+  .ourteam-star {
+    top: -60px;
+  }
+
+  /* MEDIA */
+  .media-head h1 {
+    font-size: 100px;
+  }
   .media-head h5 {
-    padding-top: 120px;
-    padding-bottom: 70px;
+    left: 37%;
+    font-size: 26px;
+    bottom: 34%;
   }
   .read-span {
     top: 20px;
@@ -2916,13 +3191,19 @@ position: relative;
     top: 20px;
     right: 40px;
   }
-  .lets-in.g-5, .gx-5 {
-    --bs-gutter-x: 2rem;
+
+  /* OUR BLOG */
+  .blog-col1 {
+    padding-top: 70px;
   }
 
   /* LETS */
   ::placeholder {
     font-size: 22px;
+  }
+  .lets-in.g-5,
+  .gx-5 {
+    --bs-gutter-x: 2rem;
   }
 
   /* FOOTER */
@@ -2940,21 +3221,21 @@ position: relative;
   /* WHY US */
   .why-us {
     padding-top: 40px;
-}
+  }
   .why-us2 {
     display: flex;
     justify-content: end;
     align-items: center;
-}
+  }
   .us-heading h1 {
     font-size: 67px;
     padding-bottom: 10px;
-}
-.us-heading h5 {
-  left: 45px;
-  font-size: 22px;
-  top: 50px;
-}
+  }
+  .us-heading h5 {
+    left: 45px;
+    font-size: 22px;
+    top: 50px;
+  }
   .us-head {
     font-size: 13px;
     padding-left: 0px;
@@ -3047,18 +3328,18 @@ position: relative;
   }
   .explore-head h1 {
     font-size: 70px;
-}
-.token-based-img h1 {
-  font-size: 40px;
-}
-.token-based-img {
-  padding-bottom: 50px;
-}
-.explore-head .explore-head-h5 {
-  font-size: 20px;
-  top: 55px;
-  left: 35px;
-}
+  }
+  .token-based-img h1 {
+    font-size: 40px;
+  }
+  .token-based-img {
+    padding-bottom: 50px;
+  }
+  .explore-head .explore-head-h5 {
+    font-size: 20px;
+    top: 55px;
+    left: 35px;
+  }
   .explore-head1 p {
     font-size: 12px;
     padding-left: 0px;
@@ -3093,10 +3374,21 @@ position: relative;
     padding-bottom: 0px;
   }
   .explore {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 
   /* NFT BASED */
+
+  .nft-based-img h1 {
+    font-size: 40px;
+  }
+  .nft-based-img {
+    padding-bottom: 55px;
+  }
+  .nft-star1 {
+    right: 0px;
+    bottom: 120px;
+  }
   .accordion-button {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -3114,11 +3406,11 @@ position: relative;
 
   .upcoming-star1 {
     right: 0px;
-    bottom: 160px;
+    bottom: 130px;
   }
   .upcoming-star {
     left: 0px;
-    top: 70px;
+    top: 90px;
   }
   .upcoming-img h5 {
     left: 50px;
@@ -3181,7 +3473,10 @@ position: relative;
   /* DEFI SOLUTIONS */
   .defi-section {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+  }
+  .defi-solutions1 {
+    padding-top: 50px;
   }
   .defi-anchor-right {
     padding-left: 0px;
@@ -3200,19 +3495,22 @@ position: relative;
     top: 66px;
   }
   .def-starstart-img {
-    right: -160px;
-    top: -30px;
+    right: -130px;
+    top: -20px;
+  }
+  .defi-solutions1 h1 {
+    font-size: 40px;
   }
   .defi-anchor-right {
     padding-left: 17px;
     font-size: 12px;
   }
   .defi-row {
-    padding-top: 60px;
+    padding-top: 50px;
   }
   .def-starend-img {
     left: 0px;
-    bottom: -70px;
+    bottom: -100px;
   }
   .multidefi-img h5 {
     padding-top: 10px;
@@ -3229,19 +3527,22 @@ position: relative;
   /* INDUSTRY SOLUTIONS */
   .industry-starstart-img {
     left: 0px;
-    top: -45px;
+    top: 0px;
   }
   .industry-starend-img {
     right: 0px;
-    bottom: -30px;
+    bottom: 0px;
   }
   .industry-row {
-    padding-top: 60px;
+    padding-top: 50px;
   }
   .industry-img h5 {
     font-size: 14px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .industry-head h1 {
+    font-size: 40px;
   }
   .no-code h5 {
     padding: 80px 0px 30px 0px;
@@ -3251,13 +3552,14 @@ position: relative;
     font-size: 14px;
   }
   .industry-section {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 
   /* ROADMAP */
   .roadmap-img h5 {
-    left: 148px;
-    font-size: 32px;
+    left: 175px;
+    top: 78px;
+    font-size: 28px;
   }
   .road-ro {
     padding-top: 60px;
@@ -3292,6 +3594,10 @@ position: relative;
   .roadmap-sec {
     padding-bottom: 60px;
   }
+  .roadmap-star {
+    top: 90px;
+    left: 0px;
+  }
 
   /* OUR TEAM */
   .team-img-col2 {
@@ -3300,10 +3606,14 @@ position: relative;
   .ourteam-middle {
     padding-top: 25px;
   }
+  .ourteam-img h1 {
+    font-size: 80px;
+    line-height: 90%;
+  }
   .ourteam-img h5 {
-    font-size: 32px;
-    top: 40px;
-    left: -15px;
+    font-size: 26px;
+    top: 46px;
+    left: 0px;
   }
   .ourteam-img p {
     word-spacing: 0px;
@@ -3312,7 +3622,7 @@ position: relative;
     padding-bottom: 15px;
   }
   .ourteam-star1 {
-    right: -20px;
+    right: 0px;
     bottom: 0px;
   }
   .team-anchor-right {
@@ -3320,796 +3630,826 @@ position: relative;
   }
   .team-social .bi-facebook {
     padding-right: 0px;
-}
-.team-social .bi-linkedin {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.team-social i {
-  color: #ffffff;
-  font-size: 12px;
-}
-.middle .team-social {
-  bottom: 0px;
-  left: 34px;
-}
-.middle .team-content h5 {
-  left: 30px;
-  top: 75px;
-  font-size: 14px;
-}
-.middle .team-social::before {
-  bottom: 25px;
-}
+  }
+  .team-social .bi-linkedin {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .team-social i {
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .middle .team-social {
+    bottom: 0px;
+    left: 34px;
+  }
+  .middle .team-content h5 {
+    left: 30px;
+    top: 75px;
+    font-size: 14px;
+  }
+  .middle .team-social::before {
+    bottom: 25px;
+  }
   /* BLOG */
   .blog-sec {
     padding-top: 60px;
   }
   .ourblog-star {
-    top: -40px;
+    top: -35px;
     left: 0px;
-}
-.ourblog-star1 {
-  right: 0px;
-  top: 5px;
-}
-.blog-anchor-right {
-  margin-left: 520px;
-  font-size: 14px;
-}
-.blog-anchor-right:after {
-  top: 30px;
-}
-.blog-col1 {
-  padding-top: 60px;
-}
+  }
+  .ourblog-star1 {
+    right: -40px;
+    top: 15px;
+  }
+  .blog-col1 {
+    padding-top: 60px;
+  }
+  .ourblog-img h1 {
+    font-size: 60px;
+  }
+  .ourblog-img h5 {
+    left: 30px;
+    font-size: 16px;
+    top: 48px;
+  }
 
-/* MEDIA */
-.media-head h5 {
-  padding-top: 95px;
-  padding-bottom: 60px;
-}
-.media-img {
-  left: 115px;
-  top: 40px;
-}
-.media-star {
-  left: 0px;
-  top: 100px;
-}
-.media-star1 {
-  right: 0px;
-  top: 40px;
-}
-.media-two h5 {
-  font-size: 22px;
-  padding-bottom: 10px;
-  padding-top: 40px;
-}
-.media-two p {
-  padding-right: 0px;
-  font-size: 14px;
-  padding-bottom: 15px;
-}
-.read-span1 {
-  top: 20px;
-  right: 0px;
-}
-.media-readnum p {
-  top: 25px;
-  right: 25px;
-}
-.read-span {
-  top: 20px;
-  right: 75px;
-}
-.media1-anchor-right {
-  font-size: 15px;
-  padding-bottom: 12px;
-}
+  /* MEDIA */
+  .media-head h1 {
+    font-size: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .media-head h5 {
+    left: 35%;
+    bottom: 26%;
+    font-size: 22px;
+  }
+  .media-star {
+    left: 0px;
+    top: 100px;
+  }
+  .media-star1 {
+    right: 0px;
+    top: 40px;
+  }
+  .media-two h5 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+  .media-two p {
+    padding-right: 0px;
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .read-span1 {
+    top: 20px;
+    right: 0px;
+  }
+  .media-readnum p {
+    top: 25px;
+    right: 25px;
+  }
+  .read-span {
+    top: 20px;
+    right: 75px;
+  }
+  .media1-anchor-right {
+    font-size: 15px;
+    padding-bottom: 12px;
+  }
 
-/* LETS */
+  /* LETS */
 
-.lets-sec {
-  padding-top: 60px;
-}
-.lets-one p {
-  font-size: 40px;
-  line-height: 40px;
-  text-align: left;
-}
-::placeholder {
-  font-size: 18px;
-}
-.lets-in3 button {
-  padding: 10px 25px 10px 25px;
-  font-size: 16px;
-}
-.lets-in.g-5, .gx-5 {
-  --bs-gutter-x: 2rem;
-}
+  .lets-sec {
+    padding-top: 60px;
+  }
+  .lets-one p {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+  ::placeholder {
+    font-size: 18px;
+  }
+  .lets-in3 button {
+    padding: 10px 25px 10px 25px;
+    font-size: 16px;
+  }
+  .lets-in.g-5,
+  .gx-5 {
+    --bs-gutter-x: 2rem;
+  }
 
-/* FOOTER-SECTION */
-.footer-sec {
-  margin-top: 60px;
-}
-.footer-cone {
-  padding-top: 60px;
-}
-.footer-one p {
+  /* FOOTER-SECTION */
+  .footer-sec {
+    margin-top: 60px;
+  }
+  .footer-cone {
+    padding-top: 60px;
+  }
+  .footer-one p {
     font-size: 14px;
     padding-top: 30px;
     padding-bottom: 35px;
     word-spacing: 0px;
     padding-right: 0px;
-}
-.footer-two ul li {
-  padding-bottom: 5px;
-}
-.footer-two ul li a {
-  font-size: 14px;
-}
-.footer-three ul li a {
-  font-size: 14px;
-}
-.footer-three ul li {
+  }
+  .footer-two ul li {
+    padding-bottom: 5px;
+  }
+  .footer-two ul li a {
+    font-size: 14px;
+  }
+  .footer-three ul li a {
+    font-size: 14px;
+  }
+  .footer-three ul li {
     padding-bottom: 8px;
-}
-.footer-anchor-right {
-  font-size: 12px;
-  padding-bottom: 10px;
-  margin-left: -7px;
-}
-.footer-anchor-end {
-  font-size: 12px;
-  padding-right: 0px;
-}
-.footer-end-head span {
-  font-size: 14px;
-}
+  }
+  .footer-anchor-right {
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-left: -7px;
+  }
+  .footer-anchor-end {
+    font-size: 12px;
+    padding-right: 0px;
+  }
+  .footer-end-head span {
+    font-size: 14px;
+  }
 
-.lets-anchor-right {
+  .lets-anchor-right {
     font-size: 15px;
     padding-bottom: 12px;
-}
-
-
-
+  }
 }
 @media screen and (max-width: 768px) {
   /* HO-FOOTER2 */
   .ho-footer2 p {
     font-size: 17px;
-}
-.ho-high-content .double-line {
-  top: -20px;
-}
-.ho-footer2 p {
-  font-size: 19px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 50px;
+  }
+  .ho-high-content .double-line {
+    top: -20px;
+  }
+  .ho-footer2 p {
+    font-size: 19px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
     padding-bottom: 55px;
-}
+  }
 
-/* WHY US */
-.why-us {
-  padding-top: 50px;
-}
-.star-down-us {
-  left: 35px;
-}
-.us-col1 p {
-  padding-top: 10px;
-}
-.highligher1 {
-  padding-top: 50px;
-}
+  /* WHY US */
+  .why-us {
+    padding-top: 50px;
+  }
+  .star-down-us {
+    left: 35px;
+  }
+  .us-col1 p {
+    padding-top: 10px;
+  }
+  .highligher1 {
+    padding-top: 50px;
+  }
 
-/* LAUNCH */
+  /* LAUNCH */
 
-.launch-crypto .h5-launch {
-  padding-top: 50px;
-  padding-bottom: 55px;
-}
-.launch-star-sm {
-  right: 0px;
-  bottom: 130px;
-}
-.launch-star-lg {
-  left: 0px;
-  top: 100px;
-}
-.launch-col .connect-wallet {
-  padding-bottom: 15px;
-}
-.launch-col .exchange-token {
-  padding-bottom: 15px;
-}
-.launch-col .start-listing {
-  padding-bottom: 15px;
-}
+  .launch-crypto .h5-launch {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+  .launch-star-sm {
+    right: 0px;
+    bottom: 130px;
+  }
+  .launch-star-lg {
+    left: 0px;
+    top: 100px;
+  }
+  .launch-col .connect-wallet {
+    padding-bottom: 15px;
+  }
+  .launch-col .exchange-token {
+    padding-bottom: 15px;
+  }
+  .launch-col .start-listing {
+    padding-bottom: 15px;
+  }
 
-/* EXPLORE */
-.explore-row {
-  padding-bottom: 50px;
-}
-.explore {
-  padding-bottom: 50px;
-}
+  /* EXPLORE */
+  .explore-row {
+    padding-bottom: 50px;
+  }
+  .explore {
+    padding-bottom: 50px;
+  }
 
-/* NFT BASED */
-.accordion-button {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 13px;
-  padding-left: 8px;
-    padding-right: 8px;
-}
-.accordion-body {
-  padding: 8px;
-  font-size: 11px;
-}
-.nft-section {
-  padding-bottom: 50px;
-}
-
-/* UP COMING */
-.upcoming-star1 {
-  right: 0px;
-  bottom: 140px;
-}
-.upcoming-star {
-  left: 0px;
-  top: 65px;
-}
-.upcoming-img {
-  padding-bottom: 20px;
-}
-.upcoming-col2 p {
-  font-size: 14px;
-  padding-top: 50px;
-}
-.upcoming-img1 {
-  padding-top: 0px;
-}
-.upcoming-img2 {
-  padding-top: 0px;
-}
-.yellow-starh5 {
-  padding-left: 0px;
-}
-
-/* INFINITY SECTION */
-.infinity-section {
-  padding-top: 50px;
-}
-.anchor-right2 {
-  padding-top: 20px;
-}
-.anchor-right2:after {
-  left: 0%;
-  top: 65%;
-}
-.infinity-heading {
-  padding-bottom: 65px;
-}
-
-/* DEFI SOLUTIONS */
-.defi-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.defi-anchor-right {
-  padding-left: 45px;
-  font-size: 12px;
-  padding-top: 25px;
-}
-.defi-anchor-right:after {
-  left: 23%;
-  top: 55px;
-}
-.def-starstart-img {
-  right: -180px;
-  top: -30px;
-}
-.defi-row {
-  padding-top: 50px;
-}
-
-/* INDUSTRY SOLUTIONS */
-.industry-section {
-  padding-bottom: 50px;
-}
-
-/* ROADMAP */
-.road-ro {
-  padding-top: 50px;
-}
-.roadmap-quarter1 h5 {
-  font-size: 16px;
-  padding-bottom: 15px;
-  text-align: center;
-  margin-left: 0px;
-}
-.roadmap-quarter1 .roadmap-dot-img1 {
-  /* right: 40px; */
-  display: none;
-}
-.roadmap-quarter1 .roadmap-dot-img2 {
-  /* left: 40px; */
-  display: none;
-}
-.roadmap-quarter1 .roadmap-dot-img3 {
-  /* right: 40px; */
-  display: none;
-}
-.roadmap-quarter1 .roadmap-dot-img4 {
-  /* left: 40px; */
-  display: none;
-}
-.roadmap-dot-line {
-  /* width: 96px;
-  right: -60px; */
-  display: none;
-}
-.roadmap-imgul ul {
-  margin-bottom: 0;
-  padding-top: 15px;
-}
-.roadmap-imgul ul li {
-  font-size: 13px;
-}
-
-/* OUR TEAM */
-.ourteam-sec {
-  padding-top: 50px;
-}
-.ourteam-img p {
-  word-spacing: 0px;
-  padding-top: 15px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  font-size: 14px;
-}
-.ourteam-img h5 {
-  font-size: 24px;
-  top: 45px;
-  left: 0px;
-}
-.ourteam-star1 {
-  right: 0px;
-  bottom: 0px;
-}
-.team-anchor-right:after {
-  top: 30px;
-}
-.team-anchor-right {
-  font-size: 14px;
-}
-
-/* BLOG */
-.blog-sec {
-  padding-top: 50px;
-}
-.blog-col1 {
-  padding-top: 50px;
-}
-#customers-testimonials2 .blog-col1 h5 {
-  font-size: 16px;
-  padding-top: 18px;
+  /* NFT BASED */
+  .accordion-button {
+    padding-top: 8px;
     padding-bottom: 8px;
-}
-#customers-testimonials2 .blog-col1 p {
-  padding-bottom: 0px;
-  font-size: 13px;
-}
-#customers-testimonials2 .blog1-anchor-right {
-padding-bottom: 12px;
-}
+    font-size: 13px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .accordion-body {
+    padding: 8px;
+    font-size: 11px;
+  }
+  .nft-section {
+    padding-bottom: 50px;
+  }
 
-/* MEDIA */
+  /* UP COMING */
+  .upcoming-img h1 {
+    font-size: 70px;
+  }
+  .upcoming-img h5 {
+    left: 155px;
+    font-size: 21px;
+    top: 55px;
+  }
+  .upcoming-star1 {
+    right: 0px;
+    bottom: 65px;
+  }
+  .upcoming-star {
+    left: 0px;
+    top: 65px;
+  }
+  .upcoming-img {
+    padding-bottom: 20px;
+  }
+  .upcoming-col2 p {
+    font-size: 14px;
+    padding-top: 50px;
+  }
+  .upcoming-img1 {
+    padding-top: 0px;
+  }
+  .upcoming-img2 {
+    padding-top: 0px;
+  }
+  .yellow-starh5 {
+    padding-left: 0px;
+  }
 
-.media-head h5 {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  font-size: 28px;
-}
-.media-img {
-  left: 85px;
-  top: 30px;
-}
-.media-two h5 {
-  font-size: 20px;
-  padding-bottom: 0px;
-  padding-top: 40px;
-}
-.read-span {
-  top: 0px;
-  right: 75px;
-}
-.media-readnum p {
-  top: 6px;
-  right: 25px;
-}
-.read-span1 {
+  /* INFINITY SECTION */
+  .infinity-section {
+    padding-top: 50px;
+  }
+  .anchor-right2 {
+    padding-top: 20px;
+  }
+  .anchor-right2:after {
+    left: 0%;
+    top: 65%;
+  }
+  .infinity-heading {
+    padding-bottom: 65px;
+  }
+
+  /* DEFI SOLUTIONS */
+  .defi-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .defi-anchor-right {
+    padding-left: 45px;
+    font-size: 12px;
+    padding-top: 25px;
+  }
+  .defi-anchor-right:after {
+    left: 23%;
+    top: 55px;
+  }
+  .def-starstart-img {
+    right: -180px;
+    top: -30px;
+  }
+  .defi-row {
+    padding-top: 50px;
+  }
+
+  /* INDUSTRY SOLUTIONS */
+  .industry-section {
+    padding-bottom: 50px;
+  }
+
+  /* ROADMAP */
+  .road-ro {
+    padding-top: 50px;
+  }
+  .roadmap-quarter1 h5 {
+    font-size: 16px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .roadmap-img h1 {
+    font-size: 70px;
+  }
+  .roadmap-img h5 {
+    left: 225px;
+    top: 55px;
+    font-size: 20px;
+  }
+  .roadmap-star {
+    top: 60px;
+    left: 0px;
+  }
+  .roadmap-quarter1 .roadmap-dot-img1 {
+    /* right: 40px; */
+    display: none;
+  }
+  .roadmap-quarter1 .roadmap-dot-img2 {
+    /* left: 40px; */
+    display: none;
+  }
+  .roadmap-quarter1 .roadmap-dot-img3 {
+    /* right: 40px; */
+    display: none;
+  }
+  .roadmap-quarter1 .roadmap-dot-img4 {
+    /* left: 40px; */
+    display: none;
+  }
+  .roadmap-dot-line {
+    /* width: 96px;
+  right: -60px; */
+    display: none;
+  }
+  .roadmap-imgul ul {
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
+  .roadmap-imgul ul li {
+    font-size: 13px;
+  }
+
+  /* OUR TEAM */
+  .ourteam-sec {
+    padding-top: 50px;
+  }
+  .ourteam-img p {
+    word-spacing: 0px;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+  }
+  .ourteam-img h5 {
+    font-size: 24px;
+    top: 48px;
+    left: 0px;
+  }
+  .ourteam-star1 {
+    right: 0px;
+    bottom: 0px;
+  }
+  .team-anchor-right:after {
+    top: 30px;
+  }
+  .team-anchor-right {
+    font-size: 14px;
+  }
+
+  /* BLOG */
+  .blog-sec {
+    padding-top: 50px;
+  }
+  .blog-col1 {
+    padding-top: 50px;
+  }
+  #customers-testimonials2 .blog-col1 h5 {
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 8px;
+  }
+  #customers-testimonials2 .blog-col1 p {
+    padding-bottom: 0px;
+    font-size: 13px;
+  }
+  #customers-testimonials2 .blog1-anchor-right {
+    padding-bottom: 12px;
+  }
+
+  /* MEDIA */
+
+  .media-two h5 {
+    font-size: 20px;
+    padding-bottom: 0px;
+    padding-top: 40px;
+  }
+  .read-span {
+    top: 0px;
+    right: 75px;
+  }
+  .media-readnum p {
+    top: 6px;
+    right: 25px;
+  }
+  .read-span1 {
     top: 0px;
     right: 0px;
-}
+  }
 
-/* LETS */
-.lets-sec {
-  padding-top: 50px;
-}
-.lets-one p {
-  font-size: 35px;
-  line-height: 38px;
-}
-.lets-in2 {
-  padding-top: 60px;
-  padding-bottom: 50px;
-}
-.lets-in3 button {
-  padding: 8px 20px 8px 20px;
-  font-size: 15px;
-}
-.lets-anchor-right {
-  font-size: 14px;
-  padding-bottom: 10px;
-}
+  /* LETS */
+  .lets-sec {
+    padding-top: 50px;
+  }
+  .lets-one p {
+    font-size: 35px;
+    line-height: 38px;
+  }
+  .lets-in2 {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .lets-in3 button {
+    padding: 8px 20px 8px 20px;
+    font-size: 15px;
+  }
+  .lets-anchor-right {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
 
-/* FOOTER */
-.footer-sec {
-  margin-top: 50px;
-}
-.footer-cone {
-  padding-top: 50px;
-}
-.footer-one p {
-  font-size: 14px;
-  padding-top: 30px;
-  padding-bottom: 15px;
-  word-spacing: 0px;
-  padding-right: 0px;
-}
-.footer-end-head {
-  padding-top: 20px;
-  padding-bottom: 12px;
-}
-
-
+  /* FOOTER */
+  .footer-sec {
+    margin-top: 50px;
+  }
+  .footer-cone {
+    padding-top: 50px;
+  }
+  .footer-one p {
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    word-spacing: 0px;
+    padding-right: 0px;
+  }
+  .footer-end-head {
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
 }
 @media screen and (max-width: 640px) {
-/* HO-FOOTER2 */
-.ho-footer2 p {
-  font-size: 16px;
-  padding-top: 40px;
-  padding-bottom: 45px;
-}
-.ho-high-content .double-line {
-  top: -15px;
-}
+  /* HO-FOOTER2 */
+  .ho-footer2 p {
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  .ho-high-content .double-line {
+    top: -15px;
+  }
 
-/* WHY US */
-.why-us {
-  padding-top: 40px;
-}
-.highligher1 {
-  padding-top: 40px;
-}
-.star-down-us {
-  left: 60px;
-}
+  /* WHY US */
+  .why-us {
+    padding-top: 40px;
+  }
+  .highligher1 {
+    padding-top: 40px;
+  }
+  .star-down-us {
+    left: 60px;
+  }
 
-/* LAUNCH */
-.launch-crypto .h5-launch {
-  padding-top: 40px;
-  padding-bottom: 45px;
-  font-size: 26px;
-}
-.launch-star-sm {
-  right: 0px;
-  bottom: 100px;
-}
-.launch-star-lg {
-  left: 0px;
-  top: 80px;
-}
-.ellipse-dot {
-  display: none;
-}
-.exchange-dot {
-display: none;
-}
-.exchange-dot1 {
-  display: none;
+  /* LAUNCH */
+  .launch-crypto .h5-launch {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    font-size: 26px;
+  }
+  .launch-star-sm {
+    right: 0px;
+    bottom: 100px;
+  }
+  .launch-star-lg {
+    left: 0px;
+    top: 80px;
+  }
+  .ellipse-dot {
+    display: none;
+  }
+  .exchange-dot {
+    display: none;
+  }
+  .exchange-dot1 {
+    display: none;
   }
   .start-listing-dot {
     display: none;
-}
-.exchange-dot1-line {
-  display: none;
-}
-.ellipse-dot-line {
-  display: none;
-}
-.launch-col h5 {
-  font-size: 15px;
-  padding-bottom: 0px;
-}
+  }
+  .exchange-dot1-line {
+    display: none;
+  }
+  .ellipse-dot-line {
+    display: none;
+  }
+  .launch-col h5 {
+    font-size: 15px;
+    padding-bottom: 0px;
+  }
 
-/* EXPLORE */
-.explore {
-  padding-bottom: 40px;
-}
-.explore-head h1 {
-  font-size: 50px;
-}
-.explore-head .explore-head-h5 {
-  font-size: 16px;
-  top: 54px;
-  left: 25px;
-}
-.token-based-img h1 {
-  font-size: 34px;
-}
-.explore-row {
-  padding-bottom: 40px;
-}
-.token-based-img {
-  padding-bottom: 40px;
-}
-.eco-star1 {
-  right: 0px;
-  bottom: 110px;
-}
-.eco-star {
-  left: 0px;
-  top: 30px;
-}
-.eco-sys-col p {
-  font-size: 13px;
-}
-.token-generator {
-  padding-bottom: 10px;
-}
+  /* EXPLORE */
+  .explore {
+    padding-bottom: 40px;
+  }
+  .explore-head h1 {
+    font-size: 50px;
+  }
+  .explore-head .explore-head-h5 {
+    font-size: 16px;
+    top: 54px;
+    left: 25px;
+  }
+  .token-based-img h1 {
+    font-size: 34px;
+  }
+  .explore-row {
+    padding-bottom: 40px;
+  }
+  .token-based-img {
+    padding-bottom: 40px;
+  }
+  .eco-star1 {
+    right: 0px;
+    bottom: 110px;
+  }
+  .eco-star {
+    left: 0px;
+    top: 30px;
+  }
+  .eco-sys-col p {
+    font-size: 13px;
+  }
+  .token-generator {
+    padding-bottom: 10px;
+  }
 
-/* NFT BASED */
-.nft-star1 {
-  right: 0px;
-  bottom: 108px;
-}
-.nft-star {
-  left: 0px;
-  top: 30px;
-}
-.nft-based-img {
-  padding-bottom: 40px;
-}
-.accordion{
-  padding-top: 30px;
-}
-.accordion-item {
-  margin-bottom: 20px;
-}
-.nft-section {
-  padding-bottom: 40px;
-}
+  /* NFT BASED */
+  .nft-based-img h1 {
+    font-size: 34px;
+  }
+  .nft-star1 {
+    right: 0px;
+    bottom: 108px;
+  }
+  .nft-star {
+    left: 0px;
+    top: 30px;
+  }
+  .nft-based-img {
+    padding-bottom: 40px;
+  }
+  .accordion {
+    padding-top: 30px;
+  }
+  .accordion-item {
+    margin-bottom: 20px;
+  }
+  .nft-section {
+    padding-bottom: 40px;
+  }
 
-/* UPCOMING */
+  /* UPCOMING */
+  .upcoming-img h5 {
+    left: 100px;
+    font-size: 18px;
+    top: 57px;
+  }
+  .upcoming-star {
+    left: 0px;
+    top: 60px;
+  }
+  .upcoming-star1 {
+    right: 0px;
+    bottom: 90px;
+  }
+  .upcoming-col2 p {
+    padding-top: 40px;
+  }
 
-.upcoming-img h5 {
-  left: 100px;
-  font-size: 18px;
-  top: 40px;
-}
-.upcoming-star {
-  left: 0px;
-  top: 60px;
-}
-.upcoming-star1 {
-  right: 0px;
-  bottom: 110px;
-}
-.upcoming-col2 p {
-  padding-top: 40px;
-}
+  /* INFINITY */
+  .infinity-section {
+    padding-top: 40px;
+  }
+  .infinity-head p {
+    font-size: 9px;
+  }
+  .infinity-head h5 {
+    font-size: 26px;
+  }
+  .anchor-right2 {
+    font-size: 10px;
+  }
+  .owl-carousel .owl-item .vector-built-img1 {
+    padding-left: 124px;
+    padding-top: 15px;
+  }
+  .owl-carousel .owl-item .vector-built-img {
+    padding-left: 80px;
+  }
+  .built-arrow-p {
+    padding-right: 19px;
+  }
+  .infinity-heading {
+    padding-bottom: 40px;
+  }
 
-/* INFINITY */
-.infinity-section {
-  padding-top: 40px;
-}
-.infinity-head p {
-  font-size: 9px;
-}
-.infinity-head h5 {
-  font-size: 26px;
-}
-.anchor-right2 {
-  font-size: 10px;
-}
-.owl-carousel .owl-item .vector-built-img1 {
-  padding-left: 124px;
-  padding-top: 15px;
-}
-.owl-carousel .owl-item .vector-built-img {
-  padding-left: 80px;
-}
-.built-arrow-p {
-  padding-right: 19px;
-}
-.infinity-heading {
-  padding-bottom: 40px;
-}
+  /* DEFI SOLUTIONS */
+  .defi-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .defi-head h5 {
+    font-size: 17px;
+  }
+  .def-starstart-img {
+    right: -160px;
+    top: -23px;
+  }
+  .def-starend-img {
+    left: 0px;
+    bottom: -80px;
+  }
+  .defi-solutions1 {
+    padding-top: 40px;
+  }
+  .defi-solutions1 h1 {
+    font-size: 34px;
+  }
+  .defi-row {
+    padding-top: 40px;
+  }
 
-/* DEFI SOLUTIONS */
-.defi-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.defi-head h5 {
-  font-size: 17px;
-}
-.def-starstart-img {
-  right: -160px;
-  top: -23px;
-}
-.def-starend-img {
-  left: 0px;
-  bottom: -20px;
-}
-.defi-solutions1 {
-  padding-top: 40px;
-}
+  /* INDUSTRY */
+  .industry-starstart-img {
+    left: 0px;
+    top: -10px;
+  }
+  .industry-starend-img {
+    right: 0px;
+    bottom: -10px;
+  }
+  .industry-head h1 {
+    font-size: 34px;
+  }
+  .industry-row {
+    padding-top: 40px;
+  }
+  .no-code h5 {
+    padding: 80px 53px 30px 0px;
+    font-size: 12px;
+  }
+  .industry-section {
+    padding-bottom: 40px;
+  }
 
-/* INDUSTRY */
-.industry-starstart-img {
-  left: 0px;
-  top: -32px;
-}
-.industry-starend-img {
-  right: 0px;
-  bottom: -28px;
-}
-.industry-row {
-  padding-top: 50px;
-}
-.no-code h5 {
-  padding: 80px 53px 30px 0px;
-  font-size: 12px;
-}
-.roadmap-img h5 {
-  left: 100px;
-  font-size: 26px;
-  top: 40px;
-}
-.roadmap-star1 {
-  right: 0px;
-  top: -25px;
-}
-.roadmap-star {
-  top: 55px;
-  left: 0px;
-}
-.roadmap-imgul {
-  display: flex;
-  justify-content: left;
-}
-.roadmap-quarter1 .roadmap-dot-img1 {
-  display: none;
-}
-.roadmap-dot-line {
-  display: none;
-}
-.roadmap-quarter1 .roadmap-dot-img3 {
- display: none;
-}
-.roadmap-quarter1 .roadmap-dot-img2 {
-  display: none;
-}
-.roadmap-quarter1 .roadmap-dot-img4 {
-  display: none;
-}
-.roadmap-quarter1 h5 {
-  font-size: 15px;
-  padding-bottom: 15px;
-  padding-top: 20px;
-  text-align: left;
-  margin-left: 40px;
-}
+  /* ROAD MAP */
 
-/* OUR TEAM */
-.ourteam-sec {
-  padding-top: 40px;
-}
-.ourteam-star {
-  top: -40px;
-}
-.team-nest-co{
-  padding-top: 100px;
-}
-.middle .team-content h5 {
-  left: 60px;
-  top: 128px;
-  font-size: 14px;
-}
-.middle .team-social {
-  bottom: 22px;
-  left: 65px;
-}
+  .road-ro {
+    padding-top: 40px;
+  }
+  .roadmap-img h5 {
+    left: 142px;
+    font-size: 19px;
+    top: 55px;
+  }
+  .roadmap-imgul {
+    display: flex;
+    justify-content: left;
+  }
+  .roadmap-quarter1 .roadmap-dot-img1 {
+    display: none;
+  }
+  .roadmap-dot-line {
+    display: none;
+  }
+  .roadmap-quarter1 .roadmap-dot-img3 {
+    display: none;
+  }
+  .roadmap-quarter1 .roadmap-dot-img2 {
+    display: none;
+  }
+  .roadmap-quarter1 .roadmap-dot-img4 {
+    display: none;
+  }
+  .roadmap-quarter1 h5 {
+    font-size: 15px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .roadmap-sec {
+    padding-bottom: 50px;
+  }
 
-/* OUR BLOG */
-.blog-sec {
-  padding-top: 40px;
-}
-.ourblog-img h5 {
-  left: 50px;
-  font-size: 24px;
-}
-.blog-anchor-right {
-  margin-left: 355px;
-  font-size: 14px;
-}
-.ourblog-star1 {
- display: none;
-}
+  /* OUR TEAM */
+  .ourteam-sec {
+    padding-top: 40px;
+  }
+  .ourteam-star {
+    top: -40px;
+  }
+  .team-nest-co {
+    padding-top: 100px;
+  }
+  .middle .team-content h5 {
+    left: 60px;
+    top: 128px;
+    font-size: 14px;
+  }
+  .middle .team-social {
+    bottom: 22px;
+    left: 65px;
+  }
 
-#customers-testimonials2 .blog-col1 h5 {
+  /* OUR BLOG */
+  .blog-sec {
+    padding-top: 40px;
+  }
+  .ourblog-star1 {
+    display: none;
+  }
+  .blog-anchor-right {
+    font-size: 14px;
+  }
+  .blog-anchor-right:after {
+    top: 30px;
+  }
+  #customers-testimonials2 .blog-col1 h5 {
     font-size: 15px;
     padding-top: 18px;
     padding-bottom: 8px;
-}
-.media-img {
-  left: 10px;
-  top: 25px;
-}
-.media-head h5 {
-  font-size: 22px;
-}
+  }
 
-/* LETS */
-.lets-in2 {
-  padding-top: 40px;
-  padding-bottom: 50px;
-}
-.lets-one p {
-  font-size: 32px;
-  padding-bottom: 20px;
-}
-.lets-in.g-5, .gx-5 {
-  --bs-gutter-x: 0rem;
-}
-.footer-sec {
-  margin-top: 40px;
-}
-.footer-cone {
-  padding-top: 40px;
-}
+  /* MEDIA */
+  .media-head h1 {
+    font-size: 60px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .media-head h5 {
+    left: 33%;
+    bottom: 30%;
+    font-size: 18px;
+  }
+  .media-star {
+    left: 0px;
+    top: 90px;
+  }
 
-/* FOOTER */
-.footer-one p {
-  padding-bottom: 0px;
-  padding-right: 0px;
-}
-.footer-cone {
+  /* LETS */
+  .lets-in2 {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .lets-one p {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  .lets-in.g-5,
+  .gx-5 {
+    --bs-gutter-x: 0rem;
+  }
+  .footer-sec {
+    margin-top: 40px;
+  }
+  .footer-cone {
+    padding-top: 40px;
+  }
+
+  /* FOOTER */
+  .footer-one p {
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  .footer-cone {
     padding-top: 10px;
-}
-.footer-arrow-read {
-  padding-top: 0px;
-}
-.footer-fournest {
-  text-align: center;
-  justify-content: space-around;
-  display: flex;
-  padding-top: 0px;
-  padding-bottom: 15px;
-}
-.footer-end-head {
-  padding-top: 10px;
-  padding-bottom: 0px;
-}
-
-
+  }
+  .footer-arrow-read {
+    padding-top: 0px;
+  }
+  .footer-fournest {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 15px;
+  }
+  .footer-end-head {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
 }
 @media screen and (max-width: 480px) {
   /* HO FOOTER2 */
@@ -4117,510 +4457,545 @@ display: none;
     font-size: 12px;
     padding-top: 30px;
     padding-bottom: 35px;
-}
- 
-/* WHY US */
-.why-us {
-  padding-top: 30px;
-}
-/* .anchor-right1 {
-  font-size: 13px;
-  padding-left: 285px;
-}
-.anchor-right1:after {
-  left: 68%;
-  top: 25px;
-} */
-.us-ro1 {
-  padding-top: 30px;
-}
-.star-top-us {
-  right: 10px;
-}
-.highligher1 {
-  padding-top: 30px;
-}
+  }
 
-/* LAUNCH */
-.launch-crypto .h5-launch {
-  padding-top: 30px;
-  padding-bottom: 40px;
-  font-size: 22px;
-}
-.launch-col p {
-  padding-right: 100px;
-  padding-left: 100px;
-  font-size: 14px;
-}
+  /* WHY US */
+  .why-us {
+    padding-top: 30px;
+  }
+  .us-ro1 {
+    padding-top: 30px;
+  }
+  .star-top-us {
+    right: 10px;
+  }
+  .highligher1 {
+    padding-top: 30px;
+  }
 
-/* EXPORE */
-.explore {
-  padding-bottom: 30px;
-}
-.explore-head {
-  justify-content: space-evenly;
-}
-.explore-head .explore-head-h5 {
-  font-size: 16px;
-  top: 40px;
-  left: 150px;
-}
-.explore-row {
-  padding-bottom: 30px;
-}
-.eco-star1 {
-  right: 0px;
-  bottom: 85px;
-}
-.token-based-img {
-  padding-bottom: 30px;
-}
-.token-based-img h1 {
-  font-size: 26px;
-}
-.explor-two{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.explore-head1 p {
-  font-size: 13px;
-}
+  /* LAUNCH */
+  .launch-crypto .h5-launch {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 22px;
+  }
+  .launch-col p {
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: 14px;
+  }
 
-/* NFT  */
-.nft-star1 {
-  right: 0px;
-  bottom: 105px;
-}
-.nft-based-img {
-  padding-bottom: 30px;
-}
-.nft-section {
-  padding-bottom: 30px;
-}
+  /* EXPORE */
+  .explore {
+    padding-bottom: 30px;
+  }
+  .explore-head {
+    justify-content: space-evenly;
+  }
+  .explore-head .explore-head-h5 {
+    font-size: 16px;
+    top: 40px;
+    left: 150px;
+  }
+  .explore-row {
+    padding-bottom: 30px;
+  }
+  .eco-star1 {
+    right: 0px;
+    bottom: 85px;
+  }
+  .token-based-img {
+    padding-bottom: 30px;
+  }
+  .token-based-img h1 {
+    font-size: 26px;
+  }
+  .explor-two {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .explore-head1 p {
+    font-size: 13px;
+  }
 
-/* UPCOMING */
+  /* NFT  */
+  .nft-based-img h1 {
+    font-size: 28px;
+  }
+  .nft-star1 {
+    right: 0px;
+    bottom: 80px;
+  }
+  .nft-based-img {
+    padding-bottom: 30px;
+  }
+  .nft-section {
+    padding-bottom: 30px;
+  }
 
-.upcoming-img {
-  padding-bottom: 0px;
-}
-.upcoming-star {
-  left: 0px;
-  top: 50px;
-}
-.upcoming-star1 {
-  right: 0px;
-  bottom: 60px;
-}
-.upcoming-col2 p {
-  padding-top: 30px;
-}
+  /* UPCOMING */
 
-/* INFINITY CHAIN */
-.infinity-head h5 {
-  font-size: 22px;
-}
-.anchor-right2 {
-  font-size: 10px;
-  margin-left: -52px;
-  padding-top: 5px;
-}
-.anchor-right2:after {
-  left: 0%;
-  top: 50%;
-}
-.owl-carousel .owl-item .vector-built-img {
-  padding-left: 280px;
-  top: 0px;
-}
-.owl-carousel .owl-item .vector-built-img1 {
-  padding-left: 320px;
-  padding-top: 15px;
-}
-.owl-theme .owl-nav {
-  display: none;
-}
+  .upcoming-img {
+    padding-bottom: 0px;
+  }
+  .upcoming-star {
+    left: 0px;
+    top: 50px;
+  }
+  .upcoming-star1 {
+    right: 0px;
+    bottom: 28px;
+  }
+  .upcoming-col2 p {
+    padding-top: 30px;
+  }
+  .upcoming-img h1 {
+    font-size: 50px;
+  }
+  .upcoming-img h5 {
+    left: 100px;
+    font-size: 14px;
+    top: 41px;
+  }
 
-/* DEFI SOLUTION */
-.defi-head h5 {
-  font-size: 14px;
-}
-.def-starstart-img {
-  right: -160px;
-  top: -5px;
-}
-.defi-solutions1 {
-  padding-top: 30px;
-}
-.defi-row {
-  padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.defi-section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+  /* INFINITY CHAIN */
+  .infinity-head h5 {
+    font-size: 22px;
+  }
+  .anchor-right2 {
+    font-size: 10px;
+    margin-left: -52px;
+    padding-top: 5px;
+  }
+  .anchor-right2:after {
+    left: 0%;
+    top: 50%;
+  }
+  .owl-carousel .owl-item .vector-built-img {
+    padding-left: 280px;
+    top: 0px;
+  }
+  .owl-carousel .owl-item .vector-built-img1 {
+    padding-left: 320px;
+    padding-top: 15px;
+  }
+  .owl-theme .owl-nav {
+    display: none;
+  }
 
-/* INDUSTRY */
-.industry-row {
-  padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.industry-section {
-  padding-bottom: 30px;
-}
+  /* DEFI SOLUTION */
+  .defi-head h5 {
+    font-size: 14px;
+  }
+  .def-starstart-img {
+    right: -160px;
+    top: -5px;
+  }
+  .defi-solutions1 {
+    padding-top: 20px;
+  }
+  .defi-row {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .defi-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .defi-solutions1 h1 {
+    font-size: 28px;
+  }
+  .def-starend-img {
+    left: 0px;
+    bottom: -60px;
+  }
 
-/* ROADMAP */
-.roadmap-img h5 {
-  left: 95px;
-  font-size: 22px;
-  top: 35px;
-}
-.road-ro {
-  padding-top: 30px;
-}
-.roadmap-sec {
-  padding-bottom: 30px;
-}
+  /* INDUSTRY */
+  .industry-row {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .industry-section {
+    padding-bottom: 20px;
+  }
+  .industry-head h1 {
+    font-size: 28px;
+  }
 
-/* OUR TEAM */
-.ourteam-star {
-  top: -20px;
-}
-.team-img-col2 {
-  margin-top: 20px;
-}
-.team-nest-co {
-  padding-top: 49px;
-}
-.team-img-col3 {
-  margin-top: 20px;
-}
-.middle .team-content h5 {
-  left: 210px;
-  top: 145px;
-  font-size: 14px;
-}
-.middle .team-social {
-  bottom: 22px;
-  left: 215px;
-}
-.middle .team-social::before {
-  bottom: 30px;
-}
+  /* ROADMAP */
+  .roadmap-img h5 {
+    left: 142px;
+    font-size: 14px;
+    top: 42px;
+  }
+  .road-ro {
+    padding-top: 20px;
+  }
+  .roadmap-sec {
+    padding-bottom: 30px;
+  }
+  .roadmap-img h1 {
+    font-size: 47px;
+  }
 
-/* OUR BLOG */
-.ourblog-img h5 {
-  left: 55px;
-  top: 40px;
-  font-size: 18px;
-}
-.ourblog-star {
-display: none;
-}
-.blog-anchor-right {
-  margin-left: 290px;
-  font-size: 13px;
-}
-.blog-anchor-right:after {
-  top: 25px;
-}
-.blog-col1 {
-  padding-top: 40px;
-}
-.blog-col1 {
-  padding-top: 40px;
-  padding-left: 35px;
-  padding-right: 30px;
-}
+  /* OUR TEAM */
+  .ourteam-sec {
+    padding-top: 20px;
+  }
+  .ourteam-img h1 {
+    font-size: 65px;
+    line-height: 90%;
+  }
+  .ourteam-img h5 {
+    font-size: 22px;
+    top: 40px;
+    left: 0px;
+  }
+  .ourteam-star {
+    top: -20px;
+    left: 90px;
+  }
+  .team-img-col2 {
+    margin-top: 20px;
+  }
+  .team-nest-co {
+    padding-top: 49px;
+  }
+  .team-img-col3 {
+    margin-top: 20px;
+  }
+  .middle .team-content h5 {
+    left: 210px;
+    top: 145px;
+    font-size: 14px;
+  }
+  .middle .team-social {
+    bottom: 22px;
+    left: 215px;
+  }
+  .middle .team-social::before {
+    bottom: 30px;
+  }
 
-/* MEDIA */
-.media-img {
-  left: 0px;
-  top: 25px;
-}
-.media-star1 {
-  right: 0px;
-  top: 0px;
-}
+  /* OUR BLOG */
+  .blog-sec {
+    padding-top: 30px;
+  }
+  .ourblog-img h5 {
+    left: 20px;
+    top: 40px;
+    font-size: 14px;
+  }
+  .ourblog-star {
+    display: none;
+  }
+  .ourblog-img h1 {
+    font-size: 50px;
+  }
+  .blog-col1 {
+    padding-top: 40px;
+  }
+  .blog-col1 {
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 30px;
+  }
 
-/* LETS TALK */
-.lets-sec {
-  padding-top: 30px;
-}
-.lets-in1{
-  padding-top: 20px;
-}
-.lets-one p {
-  font-size: 30px;
-  padding-bottom: 10px;
-}
-.lets-in2 {
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
-.footer-anchor-right {
-  font-size: 12px;
-  padding-bottom: 5px;
-  margin-left: 0px;
-}
+  /* MEDIA */
+  .media-head h1 {
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .media-head h5 {
+    left: 33%;
+    bottom: 26%;
+    font-size: 16px;
+  }
+  .media-star1 {
+    right: 0px;
+    top: 0px;
+  }
 
-.footer-fournest {
-    padding-bottom: 8px;
-}
-.footer-fournest i {
+  /* LETS TALK */
+  .lets-sec {
+    padding-top: 30px;
+  }
+  .lets-in1 {
+    padding-top: 20px;
+  }
+  .lets-one p {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .lets-in2 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .footer-anchor-right {
+    font-size: 12px;
+    padding-bottom: 5px;
+    margin-left: 0px;
+  }
+
+  .footer-fournest {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .footer-fournest i {
     color: #d9d9d9;
     padding-top: 10px;
+  }
+  .footer-end-head span {
+    font-size: 14px;
+    line-height: 200%;
 }
-.lets-in.g-5, .gx-5 {
-  --bs-gutter-x: 0rem;
-}
-
+  .lets-in.g-5,
+  .gx-5 {
+    --bs-gutter-x: 0rem;
+  }
 }
 @media screen and (max-width: 320px) {
   .ho-footer2 p {
     font-size: 8px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.ho-high-content .double-line {
-  top: -5px;
-}
+  }
+  .ho-high-content .double-line {
+    top: -5px;
+  }
 
-/* WHY US */
+  /* WHY US */
 
-.why-us {
-  padding-top: 20px;
-}
-.us-heading h1 {
-  font-size: 45px;
-  padding-bottom: 0px;
-}
-.us-heading h5 {
-  left: 35px;
-  font-size: 18px;
-  top: 35px;
-}
-.anchor-right1 {
-  font-size: 14px;
-}
-.anchor-right1:after {
-  top: 30px
-}
-.us-ro1 {
-  padding-top: 20px;
-}
-.star-top-us {
- display: none;
-}
-.star-down-us {
-  display: none;
-}
-.highligher1 {
-  padding-top: 20px;
-}
+  .why-us {
+    padding-top: 20px;
+  }
+  .us-heading h1 {
+    font-size: 45px;
+    padding-bottom: 0px;
+  }
+  .us-heading h5 {
+    left: 35px;
+    font-size: 18px;
+    top: 35px;
+  }
+  .anchor-right1 {
+    font-size: 14px;
+  }
+  .anchor-right1:after {
+    top: 30px;
+  }
+  .us-ro1 {
+    padding-top: 20px;
+  }
+  .star-top-us {
+    display: none;
+  }
+  .star-down-us {
+    display: none;
+  }
+  .highligher1 {
+    padding-top: 20px;
+  }
 
-/* LAUNCH  */
-.launch-crypto .h5-launch {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  font-size: 15px;
-}
-.launch-star-sm {
-  display: none;
-}
-.launch-star-lg {
- display: none;
-}
-.launch-col p {
-  padding-right: 0px;
-  padding-left: 0px;
-  font-size: 12px;
-}
-.launch-col .connect-wallet {
-  padding-bottom: 0px;
-}
-.launch-col .exchange-token {
-  padding-bottom: 0px;
-}
+  /* LAUNCH  */
+  .launch-crypto .h5-launch {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 15px;
+  }
+  .launch-star-sm {
+    display: none;
+  }
+  .launch-star-lg {
+    display: none;
+  }
+  .launch-col p {
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 12px;
+  }
+  .launch-col .connect-wallet {
+    padding-bottom: 0px;
+  }
+  .launch-col .exchange-token {
+    padding-bottom: 0px;
+  }
 
-/* EXPLORE */
-.explore {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-.explore-head .explore-head-h5 {
-  font-size: 16px;
-  top: 40px;
-  left: 70px;
-}
-.eco-star1 {
-  display: none;
-}
-.eco-star {
- display: none;
-}
-.explore-row {
-  padding-bottom: 20px;
-}
-.token-based-img {
-  padding-bottom: 20px;
-}
-.explor-two {
-  padding-left: 0px;
-  padding-right: 0px;
-}
+  /* EXPLORE */
+  .explore {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .explore-head .explore-head-h5 {
+    font-size: 16px;
+    top: 40px;
+    left: 70px;
+  }
+  .eco-star1 {
+    display: none;
+  }
+  .eco-star {
+    display: none;
+  }
+  .explore-row {
+    padding-bottom: 20px;
+  }
+  .token-based-img {
+    padding-bottom: 20px;
+  }
+  .explor-two {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-/* NFT */
-.nft-star1 {
- display: none;
-}
-.nft-star {
-  display: none;
-}
-.nft-based-img {
-  padding-bottom: 20px;
-}
+  /* NFT */
+  .nft-star1 {
+    display: none;
+  }
+  .nft-star {
+    display: none;
+  }
+  .nft-based-img {
+    padding-bottom: 20px;
+  }
+  .nft-section {
+    padding-bottom: 20px;
+  }
 
-/* UPCOMING */
-.upcoming-star1 {
-  display: none;
-}
-.upcoming-star {
-  display: none;
-}
-.upcoming-img h5 {
-  left: 35px;
-  font-size: 13px;
-  top: 18px;
-}
-.upcoming-col-img, .text-start {
-  text-align: center!important;
-}
-.upcoming-col2 p {
-  padding-top: 20px;
-}
-.yellow-starh5 h5 {
-  font-size: 16px;
-}
+  /* UPCOMING */
+  .upcoming-star1 {
+    display: none;
+  }
+  .upcoming-star {
+    display: none;
+  }
+  .upcoming-img h5 {
+    left: 46px;
+    font-size: 11px;
+    top: 30px;
+  }
+  .upcoming-img h1 {
+    font-size: 38px;
+  }
+  .upcoming-col-img,
+  .text-start {
+    text-align: center !important;
+  }
+  .upcoming-col2 p {
+    padding-top: 20px;
+  }
+  .yellow-starh5 h5 {
+    font-size: 16px;
+  }
 
-/* INFINITY */
-.infinity-head p {
-  font-size: 11px;
-}
-.anchor-right2 {
-display: none;
-}
-.infinity-heading {
-  padding-bottom: 20px;
-}
+  /* INFINITY */
+  .infinity-head p {
+    font-size: 11px;
+  }
+  .anchor-right2 {
+    display: none;
+  }
+  .infinity-heading {
+    padding-bottom: 20px;
+  }
 
-/* DEFI SOLUTIONS */
-.defi-anchor-right {
- display: none;
-}
-.def-starend-img {
-  display: none;
-}
-.defi-solutions1 {
-  padding-top: 20px;
-}
-.defi-row {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.defi-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.def-starstart-img {
-  display: none;
-}
+  /* DEFI SOLUTIONS */
+  .defi-anchor-right {
+    display: none;
+  }
+  .def-starend-img {
+    display: none;
+  }
+  .defi-solutions1 {
+    padding-top: 20px;
+  }
+  .defi-row {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .defi-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .def-starstart-img {
+    display: none;
+  }
 
-/* INDUSTRIAL SOLUTIONS */
-.industry-starstart-img {
- display: none;
-}
-.industry-starend-img {
-display: none;
-}
+  /* INDUSTRIAL SOLUTIONS */
+  .industry-starstart-img {
+    display: none;
+  }
+  .industry-starend-img {
+    display: none;
+  }
 
-/* ROADMAP */
-.roadmap-star1 {
-  display: none;
-}
-.roadmap-star {
-  display: none;
-}
-.roadmap-img h5 {
-  left: 25px;
-  font-size: 18px;
-  top: 25px;
-}
-.road-ro {
-  padding-top: 20px;
-}
+  /* ROADMAP */
+  .roadmap-star1 {
+    display: none;
+  }
+  .roadmap-star {
+    display: none;
+  }
+  .roadmap-img h5 {
+    left: 25px;
+    font-size: 18px;
+    top: 25px;
+  }
+  .road-ro {
+    padding-top: 20px;
+  }
 
-/* OUR TEAM */
-.ourteam-sec {
-  padding-top: 20px;
-}
-.ourteam-star {
-display: none;
-}
-.ourteam-star1 {
-  display: none;
-}
-.team-nest-co {
-  padding-top: 35px;
-}
-.middle .team-content h5 {
-  left: 135px;
-  top: 145px;
-  font-size: 14px;
-}
-.middle .team-social {
-  bottom: 22px;
-  left: 135px;
-}
+  /* OUR TEAM */
+  .ourteam-sec {
+    padding-top: 20px;
+  }
+  .ourteam-star {
+    display: none;
+  }
+  .ourteam-star1 {
+    display: none;
+  }
+  .team-nest-co {
+    padding-top: 35px;
+  }
+  .middle .team-content h5 {
+    left: 135px;
+    top: 145px;
+    font-size: 14px;
+  }
+  .middle .team-social {
+    bottom: 22px;
+    left: 135px;
+  }
 
-/* OUR BLOG */
-.ourblog-img h5 {
-  left: 28px;
-  top: 25px;
-  font-size: 14px;
-}
-.blog-anchor-right {
-  margin-left: 130px;
-  font-size: 12px;
-}
-.blog-anchor-right:after {
-  top: 22px;
-}
+  /* OUR BLOG */
+  .blog-anchor-right {
+    font-size: 12px;
+  }
+  .blog-anchor-right:after {
+    top: 25px;
+  }
 
-/* MEDIA */
-.media-star1 {
- display: none;
+  /* MEDIA */
+  .media-star1 {
+    display: none;
+  }
+  .media-star {
+    display: none;
+  }
+  .media-two h5 {
+    padding-top: 20px;
+  }
+  .media-head h5 {
+    left: 24%;
+  }
+
+  .footer-end-head span {
+    font-size: 12px;
+    line-height: 250%;
 }
-.media-star {
-  display: none;
- }
- .media-head h5 {
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
-.media-two h5 {
-  padding-top: 20px;
-}
-
-.footer-end-head span {
-  font-size: 12px;
-}
-
-
-
-
-
 }
