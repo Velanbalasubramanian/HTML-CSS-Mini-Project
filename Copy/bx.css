@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: radial-gradient(#303030 1px, transparent 1px);
+  background-color: #1e1e1e;
+  background-size: 30px 30px;
+}
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navbar {
+  border-bottom: 0.75px solid #d9d9d9;
+  margin: 24px 59px 0px 60px;
+}
+.nav-link.first-link {
+  margin-left: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.navbar-brand {
+  margin-right: 0px;
+}
+.nav-link {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 147%;
+  margin-left: 80px;
+  color: #ffffff;
+  padding: 0px;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: rgba(78, 31, 163);
+}
+.nav-btn a {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #d9d9d9;
+  text-decoration: none;
+  background: rgba(78, 31, 163, 0.3);
+  border: 1px solid #4e1fa3;
+  border-radius: 8px;
+  padding: 12px 28px 11px 28px;
+}
+.nav-btn a:hover {
+  color: rgba(78, 31, 163);
+  background: #d9d9d9;
+}
+
+/* BANNER SECTION */
+.banner{
+    position: relative;
+}
+.banner::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(/images/home-img1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+    
+
+}
+.banner-common {
+  position: relative;
+}
+.banner-content {
+  position: relative;
+  padding-top: 109px;
+  /* text-align: end; */
+}
+.banner-content .para-one {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 116%;
+  color: #ffffff;
+  position: relative;
+}
+.banner-content .para-one span {
+  background: linear-gradient(89.98deg, #f5d255 -3.37%, #36e7c4 99.98%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.banner-content .para-two {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 132%;
+  letter-spacing: 0.02em;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  padding-top: 22px;
+  padding-bottom: 38px;
+}
+.banner-content .banner-star {
+  position: absolute;
+  left: -35px;
+  top: 44px;
+}
+.banner-img {
+  position: relative;
+  padding-top: 76px;
+}
+.banner-img .ellipse {
+  position: absolute;
+  background: #4e1fa3;
+  opacity: 0.7;
+  filter: blur(150px);
+  transform: rotate(177.74deg);
+  width: 221.85px;
+  height: 217.98px;
+  left: 195.27px;
+  top: 224.34px;
+}
+
+.banner-img .main-img {
+  position: absolute;
+}
+.banner-img .star-four {
+  position: absolute;
+  position: absolute;
+  right: 40px;
+  top: 73px;
+}
+.banner-content .line {
+  border-bottom: 0.75px solid rgba(217, 217, 217, 0.5);
+  width: 380px;
+  height: 0px;
+  left: 0px;
+  position: absolute;
+  padding-top: 6px;
+}
+.banner-anchor-right {
+  position: relative;
+  color: #d9d9d9;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 16px;
+}
+.banner-arrow-right {
+  padding-left: 10px;
+}
+.banner-anchor-right:hover {
+  color: #f5d255;
+  border-bottom: 1px solid #f5d255;
+}
+.banner-arrow {
+  position: relative;
+  padding-bottom: 300px;
+}
+.star-two{
+    position: absolute;
+    left: 400px;
+    top: 20px;
+}
