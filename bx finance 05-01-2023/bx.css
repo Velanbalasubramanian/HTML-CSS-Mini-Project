@@ -10,10 +10,10 @@ body {
   background-color: #1e1e1e;
   background-repeat: repeat;
 }
-.container-fluid {
+/* .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
-}
+} */
 .navbar {
   border-bottom: 0.75px solid #d9d9d9;
   margin: 24px 59px 0px 60px;
@@ -59,8 +59,13 @@ body {
   padding: 12px 28px 11px 28px;
 }
 .nav-btn a:hover {
-  color: rgba(78, 31, 163);
-  background: #d9d9d9;
+  /* color: rgba(78, 31, 163);
+  background: #d9d9d9; */
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 43 58 / var(--tw-bg-opacity)) transparent;
+  --tw-shadow: 0 0 0 0 #562caf inset, 0 0 .625rem .25rem #562caf;
+  --tw-shadow-colored: inset 0 0 0 0 var(--tw-shadow-color), 0 0 .625rem .25rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 /* BANNER SECTION */
@@ -123,7 +128,7 @@ body {
 }
 .banner-img {
   position: relative;
-  padding-top: 76px;
+  padding-top: 75px;
 }
 .banner-img .ellipse {
   position: absolute;
@@ -175,6 +180,27 @@ body {
   left: 400px;
   top: 15px;
 }
+
+.banner-img .main-img{
+  transition: 0.5s all ease-in-out;
+}
+.banner-img .main-img:hover,
+.banner-img .main-img:focus {
+  transform: scale(1.1);
+}
+
+
+
+/* .nft-based-im img{
+  padding: 15px;
+  transition: 0.5s all ease-in-out;
+}
+.nft-based-im img:hover, 
+.nft-based-im img:focus    {
+  transform: scale(1.1);
+}  */
+
+
 
 @media screen and (max-width: 1440px) {
   .banner-content .banner-star {
@@ -590,6 +616,15 @@ body {
   border-bottom: 1px solid #d9d9d9;
   transform: rotate(90deg);
 }
+.us-col2 .why-im-two{
+  transition: 0.5s all ease-in-out;
+}
+.us-col2 .why-im-two:hover,
+.us-col2 .why-im-two:focus {
+  transform: scale(1.1);
+}
+
+
 
 /* LAUNCH SECTION */
 .launch-ro {
@@ -931,6 +966,7 @@ body {
   font-size: 18px;
   line-height: 135%;
   letter-spacing: 0.01em;
+
 }
 
 .accordion {
@@ -949,13 +985,15 @@ body {
 .accordion-button::after {
   background-image: url(/Images/Vector.png);
 }
-
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #191a1e;
+}
 .accordion-item {
   margin-bottom: 21px;
   background-color: transparent;
+  background: rgba(48, 48, 48, 0.1);
   border-radius: 8px !important;
   border: 1px solid #191a1e;
-  background: rgba(48, 48, 48, 0.1);
 }
 .accordion-item:hover {
   border: 1px solid #4e1fa3;
@@ -976,6 +1014,14 @@ body {
 .nft-based-row {
   padding-bottom: 80px;
 }
+.nft-based-im img{
+  padding: 15px;
+  transition: 0.5s all ease-in-out;
+}
+.nft-based-im img:hover, 
+.nft-based-im img:focus    {
+  transform: scale(1.1);
+} 
 
 /* UPCOMING */
 .upcoming-img {
@@ -1029,8 +1075,10 @@ body {
   background-clip: text;
   text-fill-color: transparent;
   position: absolute;
-  top: 92px;
-  left: 330px;
+  top: 95px;
+  left: 0;
+  right: 25px;
+  bottom: 0;
 }
 .upcoming-img1 {
   padding-top: 30px;
@@ -1503,7 +1551,10 @@ body {
 }
 
 /* ROADMAP */
-
+/* .road-head{
+  padding-right: calc(var(--bs-gutter-x) * .0);
+    padding-left: calc(var(--bs-gutter-x) * .0);
+} */
 
 .roadmap-quarter1 h5 {
   position: relative;
@@ -1679,8 +1730,11 @@ justify-content: center;
   background-clip: text;
   text-fill-color: transparent;
   position: absolute;
-  top: 92px;
-  left: 440px;
+  top: 90px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
 }
 
 /* OUR TEAM */
@@ -1838,7 +1892,7 @@ justify-content: center;
   font-size: 18px;
 }
 .team-social i:hover {
-  color: #f5d255;
+  color: #4E1FA3;
 }
 .team-social .bi-linkedin {
   padding-left: 15px;
@@ -1847,6 +1901,50 @@ justify-content: center;
 .team-social .bi-facebook {
   padding-right: 15px;
 }
+
+/* BOTTOM IMAGE */
+.middle .team-content-one h5 {
+  position: absolute;
+  top: 160px;
+  left: 55px;
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.middle .team-social-one {
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 35px;
+}
+.middle .team-social-one::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  left: -5%;
+  right: -5%;
+  bottom: 40px;
+  border-bottom: 0.5px solid #ffffff;
+}
+.team-social-one i {
+  color: #ffffff;
+  font-size: 18px;
+}
+.team-social-one i:hover {
+  color: #4E1FA3;
+}
+.team-social-one .bi-linkedin {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.team-social-one .bi-facebook {
+  padding-right: 15px;
+}
+
 .our-nest-team .row{
   --bs-gutter-x: -50px;
     /* --bs-gutter-y: -40px; */
@@ -2213,8 +2311,13 @@ padding-bottom: 7px;
   line-height: 22px;
 }
 .lets-in3 button:hover {
-  background-color: #d9d9d9;
-  color: #4e1fa3;
+  /* background-color: #d9d9d9;
+  color: #4e1fa3; */
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 43 58 / var(--tw-bg-opacity)) transparent;
+  --tw-shadow: 0 0 0 0 #562caf inset, 0 0 .625rem .25rem #562caf;
+  --tw-shadow-colored: inset 0 0 0 0 var(--tw-shadow-color), 0 0 .625rem .25rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .lets-in3 {
   display: flex;
@@ -2325,7 +2428,7 @@ padding-bottom: 7px;
 }
 
 .footer-fournest i {
-  color: #000000;
+  color: #1C2226;
   font-size: medium;
   background-color: #d9d9d9;
   padding: 4px 7px 4px 7px;
@@ -2378,6 +2481,140 @@ padding-bottom: 7px;
 }
 .footer-anchor-end:hover {
   color: #f5d255;
+}
+
+
+@media screen and (max-width: 1440px) {
+ /* SECTION-TWO */
+ .section-two::before {
+  top: 75px;
+}
+.section-two h2 {
+  padding: 56px 0px;
+}
+
+
+  /* WHY US */
+  .us-heading h1{
+left: -55px;
+font-size: 110px;
+  }
+  
+  
+  /* EXPLORE */
+  .explore-head h1 {
+    left: -55px;
+    font-size: 110px;
+    top: -75px;
+  }
+
+  /* UPCOMING */
+  .upcoming-img h1 {
+    font-size: 110px;
+  }
+  .upcoming-img h5 {
+    font-size: 32px;
+    top: 85px;
+    right: 12px;
+}
+
+ /* BX INFINITY CHAIN */
+ .infinity-head p {
+  font-size: 17px;
+ }
+
+ /* DEFI SOLUTIONS */
+ .defi-head p {
+  font-size: 17px;
+ }
+
+ /* ROAD MAP */
+ .roadmap-heading h1 {
+  font-size: 110px;
+ }
+ .roadmap-heading h5 {
+  font-size: 32px;
+  top: 85px;
+  left: 4px;
+}
+
+  /* OUR TEAM */
+  .our-nest-team .row {
+    --bs-gutter-x: 0px;
+}
+.middle .team-content-one h5 {
+  left: 60px;
+}
+.middle .team-social-one {
+  left: 43px;
+}
+.middle .team-content h5 {
+  left: 60px;
+}
+.middle .team-social {
+  left: 43px;
+}
+.ourteam-img h1 {
+  font-size: 110px;
+}
+.ourteam-img h5 {
+  font-size: 32px;
+  top: 85px;
+}
+
+/* OUR BLOG */
+.ourblog-img h1 {
+  font-size: 110px;
+}
+.ourblog-img h5 {
+  font-size: 32px;
+  top: 85px;
+}
+
+#customers-testimonials2 .blog-col1 p {
+    font-size: 15px;
+}
+
+
+
+  /* MEDIA */
+  .media-im-common {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.media-head h1 {
+  font-size: 110px;
+}
+.media-head h5 {
+  font-size: 32px;
+}
+
+
+
+
+}
+@media screen and (max-width: 1340px) {
+
+}
+@media screen and (max-width: 1199px) {
+ 
+  
+}
+@media screen and (max-width: 1024px) {
+ 
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 640px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
 }
 
 
