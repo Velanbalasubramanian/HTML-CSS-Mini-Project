@@ -224,6 +224,12 @@ body {
     left: -20px;
     top: 30px;
   }
+  .banner-content .line {
+    border-bottom: 0.75px solid rgba(217, 217, 217, 0.5);
+    width: 310px;
+    height: 0px;
+    position: absolute;
+}
   .nav-link {
     margin-left: 65px;
   }
@@ -989,7 +995,7 @@ body {
   border-top: 1px solid #191a1e;
 }
 .accordion-item {
-  margin-bottom: 21px;
+  margin-bottom: 24px;
   background-color: transparent;
   background: rgba(48, 48, 48, 0.1);
   border-radius: 8px !important;
@@ -1015,7 +1021,6 @@ body {
   padding-bottom: 80px;
 }
 .nft-based-im img{
-  padding: 15px;
   transition: 0.5s all ease-in-out;
 }
 .nft-based-im img:hover, 
@@ -2527,6 +2532,16 @@ font-size: 110px;
  .defi-head p {
   font-size: 17px;
  }
+ 
+.multidefi-img p {
+    text-align-last: left;
+}
+.no-code h5 {
+  font-size: 16px;
+  padding: 85px 65px 35px 15px;
+  margin-bottom: 7px;
+}
+ 
 
  /* ROAD MAP */
  .roadmap-heading h1 {
@@ -2595,11 +2610,501 @@ font-size: 110px;
 
 }
 @media screen and (max-width: 1340px) {
+/* SECTION-TWO */
+.section-two h2 {
+  padding: 50px 0px;
+  font-size: 30px;
+}
+.section-two::before {
+  top: 70px;
+}
+
+/* WHY US */
+.us-heading h1 {
+  left: -35px;
+  font-size: 100px;
+}
+.why-us {
+  padding-top: 125px;
+}
+.star-top-us {
+  top: 10px;
+  right: 40px;
+}
+.star-down-us {
+  bottom: 40px;
+  left: 100px;
+}
+.why-us-ro {
+  padding-bottom: 70px;
+}
+
+/* LAUNCH CRYPTO */
+.launch-crypto .h5-launch {
+  font-size: 32px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.launch-ro {
+  padding-bottom: 70px;
+}
+
+/* EXPLORE */
+.explore-head h1 {
+  left: -20px;
+  font-size: 100px;
+  top: -65px;
+}
+.explore-head .explore-head-h5 {
+  font-size: 32px;
+}
+.explore-head1 p {
+    padding-right: 0px;
+}
+.token-based-img h1 {
+  font-size: 55px;
+}
+.eco-star1 {
+  bottom: 145px;
+}
+
+/* NFT BASED */
+.nft-based-img h1 {
+  font-size: 55px;
+}
+.nft-star1 {
+  bottom: 145px;
+}
+.accordion-item {
+  margin-bottom: 20px;
+}
+.accordion-button {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 16px;
+}
+
+.accordion-body {
+    padding: 18px;
+font-size: 16px;
+}
+.nft-based-row {
+  padding-bottom: 70px;
+}
+
+/* UPCOMING */
+.upcoming-img h1 {
+  font-size: 100px;
+}
+.upcoming-img h5 {
+  font-size: 28px;
+  top: 82px;
+  right: 5px;
+}
+.upcoming-img2 {
+  padding-top: 80px;
+}
+.upcoming-img1 {
+  padding-top: 20px;
+}
+.upcoming-col2 p {
+  padding-top: 50px;
+}
+
+/* INFINITY */
+.infinity-section {
+  padding-top: 96px;
+}
+.infinity-head p {
+  font-size: 16px;
+}
+.infinity-head h5 {
+  font-size: 30px;
+}
+#customers-testimonials1.owl-loaded {
+  padding-bottom: 40px;
+}
+
+/* DEFI */
+.defi-section {
+  padding-top: 70px;
+}
+.defi-head h5 {
+  font-size: 30px;
+}
+.defi-head p {
+  font-size: 16px;
+}
+.def-starstart-img {
+  top: -40px;
+}
+.defi-solutions1 h1 {
+  font-size: 55px;
+}
+.defi-card {
+  padding-top: 70px;
+}
+
+.multidefi-img p {
+    text-align-last: left;
+}
+.multidefi-img {
+  padding: 20px;
+}
+
+/* INDUSTRIAL SOLUTIONS */
+.Ind-ro {
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+.no-code h5 {
+  font-size: 16px;
+}
+
+.industry-img {
+  padding: 21px;
+}
+
+/* ROADMAP */
+.roadmap-heading h1 {
+    font-size: 100px;
+}
+.roadmap-heading h5 {
+  font-size: 30px;
+  top: 80px;
+  left: 0px;
+}
+.roadmap-imgul {
+  padding-bottom: 70px;
+}
+
+/* OUR TEAM */
+.ourteam-img h1 {
+  font-size: 100px;
+}
+.ourteam-img h5 {
+  font-size: 30px;
+  top: 80px;
+}
+.team-ro {
+  padding-bottom: 70px;
+}
+
+/* BLOG */
+.blog-sec {
+  padding-top: 70px;
+}
+.blog-col1 {
+  padding-top: 90px;
+  padding-bottom: 75px;
+}
+.ourblog-img h1 {
+  font-size: 100px;
+}
+.ourblog-img h5 {
+  font-size: 30px;
+  top: 75px;
+}
+#customers-testimonials2 .blog-col1 h5 {
+  font-size: 22px;
+  padding-top: 22px;
+}
+
+/* MEDIA */
+.media-head h1 {
+  font-size: 100px;
+  padding-bottom: 70px;
+}
+.media-head h5 {
+  font-size: 30px;
+}
+.mediacol-im {
+  padding-bottom: 70px;
+}
+
+/* LETS */
+.lets-sec {
+  padding-top: 70px;
+}
+.lets-r {
+  padding-bottom: 70px;
+}
 
 }
 @media screen and (max-width: 1199px) {
- 
-  
+  /* SECTION-TWO */
+  .section-two {
+    padding-top: 140px;
+    padding-bottom: 70px;
+}
+/* WHY US */
+.us-heading h1 {
+  left: -35px;
+  font-size: 85px;
+  top: -65px;
+}
+.us-heading h5 {
+  font-size: 28px;
+  padding-bottom: 25px;
+}
+.us-heading h5 {
+  font-size: 28px;
+  padding-bottom: 18px;
+}
+.us-col1 p {
+  padding-top: 18px;
+}
+
+/* LAUNCH */
+.launch-col p {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* EXPLORE */
+.explore-head h1 {
+  left: -20px;
+  font-size: 90px;
+  top: -60px;
+}
+.token-based-img h1 {
+  font-size: 50px;
+}
+.eco-star {
+  left: 0px;
+}
+.eco-star1 {
+  right: 0px;
+}
+
+/* EXPLORE */
+.explore-head .explore-head-h5 {
+  font-size: 28px;
+}
+.eco-sys-col {
+  padding: 17px;
+}
+.eco-sys-col p {
+  font-size: 14px;
+}
+.eco-sys-col h5 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+/* NFT */
+.nft-based-img h1 {
+  font-size: 50px;
+}
+.nft-star {
+  left: 0px;
+}
+.nft-star1 {
+  right: 0px;
+}
+.accordion-button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 14px;
+}
+.accordion-body {
+  padding: 14px;
+  font-size: 14px;
+}
+.accordion-item {
+  margin-bottom: 15px;
+}
+
+/* UPCOMING */
+.upcoming-img h1 {
+  font-size: 90px;
+}
+.upcoming-img h5 {
+  font-size: 25px;
+  top: 70px;
+  right: 0px;
+}
+.upcoming-star {
+  top: 90px;
+  left: 90px;
+}
+.upcoming-star1 {
+  right: 90px;
+  bottom: 90px;
+}
+
+/* INFINITY */
+.infinity-head p {
+  font-size: 14px;
+}
+.infinity-head h5 {
+  font-size: 28px;
+}
+.built-arrow-p {
+  font-size: 14px;
+}
+.built-arrow1-h5 {
+  font-size: 16px;
+}
+.built-arrow-h5 {
+    font-size: 16px;
+}
+.built-arrow0-h5 {
+  font-size: 16px;
+}
+.infinity-heading {
+  padding-bottom: 65px;
+}
+.infinity-section {
+  padding-top: 86px;
+}
+
+/* DEFI */
+.defi-head h5 {
+  font-size: 28px;
+}
+.defi-head p {
+  font-size: 14px;
+}
+.defi-solutions1 h1 {
+  font-size: 50px;
+}
+
+/* ROADMAP */
+.roadmap-heading h1 {
+  font-size: 90px;
+}
+.roadmap-heading h5 {
+  font-size: 28px;
+  top: 70px;
+  left: 0px;
+}
+.roadmap-heading h5 {
+  font-size: 28px;
+  top: 70px;
+  left: 0px;
+}
+.roadmap-quarter1 h5 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+#customers-testimonials3 .owl-item .roadmap-quarter1 .roadmap-dot3 {
+  top: 8px;
+  right: -90px;
+}
+#customers-testimonials3 .owl-item .roadmap-quarter1 .roadmap-dot {
+  top: 8px;
+  right: 85px;
+}
+.customers-testimonials3 .owl-item .roadmap-quarter1 .roadmap-dot1 {
+  right: -90px;
+}
+#customers-testimonials3 .owl-item .roadmap-quarter1 .roadmap-dot5 {
+  right: -90px;
+}
+#customers-testimonials3 .owl-item .roadmap-quarter1 .roadmap-dot2 {
+  right: 80px;
+
+}
+#customers-testimonials3 .owl-item .roadmap-quarter1 .roadmap-dot1 {
+  right: -90px;
+}
+#customers-testimonials3 .owl-item .roadmap-quarter1 .roadmap-dot4 {
+    right: 83px;
+}
+.roadmap-dot-line {
+  width: 145px;
+  right: -70px;
+}
+.roadmap-imgul ul li {
+  font-size: 14px;
+}
+
+/* OUR TEAM */
+.ourteam-img h1 {
+  font-size: 90px;
+}
+.ourteam-img h5 {
+  font-size: 28px;
+  top: 70px;
+}
+.ourteam-img p {
+  padding-bottom: 40px;
+  padding-top: 25px;
+}
+.ourteam-star1 {
+  right: 0px;
+  bottom: -15px;
+}
+.ourteam-star {
+  top: -30px;
+  left: 120px;
+}
+.our-nest-team .row {
+  --bs-gutter-x: 20px;
+}
+
+/* OUR BLOG */
+.ourblog-img h1 {
+  font-size: 90px;
+}
+.ourblog-img h5 {
+  font-size: 26px;
+  top: 70px;
+}
+.ourblog-star {
+  top: -40px;
+  left: 0px;
+}
+.blog-col1 {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+#customers-testimonials2 .blog-col1 p {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#customers-testimonials2 .blog-col1 h5 {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/* MEDIA */
+.media-head h1 {
+  font-size: 90px;
+}
+.media-head h5 {
+  font-size: 28px;
+  left: 36%;
+}
+
+/* LETS */
+.lets-one p {
+  font-size: 40px;
+}
+.form-control {
+  font-size: 26px;
+}
+.lets-in2 {
+  padding-top: 70px;
+}
+
+/* FOOTER */
+.footer-sec {
+  margin-top: 70px;
+}
+.footer-two ol, ul {
+    padding-left: 0rem;
+}
+.footer-arrow-read {
+  margin: 0px auto 0px 0px;
+}
+.footer-fournest {
+  padding-top: 10px;
+}
+
+
 }
 @media screen and (max-width: 1024px) {
  
