@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title> Timeline road map</title>
+    <link rel="stylesheet" href="/roadmap.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container-fluid">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+         
+            <div class="roadmap-quarter1">
+            <span class="roadmap-dot"></span>
+            <div class="roadmap-hfive">
+            <h5>Quarter 1</h5>
+          </div>
+            <span class="roadmap-dot1"></span>
+            <span class="roadmap-dot-line"></span>
+            <div class="roadmap-imgul">
+              <span>1</span>
+              <ul>
+                <li>Product Development.</li>
+                <li>Landing Page</li>
+                <li>Socials & Community</li>
+                <li>Marketing Campaign Plan</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-quarter1">
+            <span class="roadmap-dot2"></span>
+            <div class="roadmap-hfive"> 
+            <h5>Quarter 2</h5>
+          </div>
+            <span class="roadmap-dot3"></span>
+            <span class="roadmap-dot-line"></span>
+            <div class="roadmap-imgul">
+              <span>2</span>
+              <ul>
+                <li>Landing Page Launch</li>
+                <li>Token Sale Launch (Private Sale)</li>
+                <li>BX Product Launch (Migrator, Token Generator)</li>
+                <li>500 Telegram Members</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-quarter1">
+            <span class="roadmap-dot4"></span>
+            <div class="roadmap-hfive"> 
+            <h5>Quarter 3</h5>
+          </div>
+            <span class="roadmap-dot5"></span>
+            <span class="roadmap-dot-line"></span>
+            <div class="roadmap-imgul">
+              <span>3</span>
+              <ul>
+                <li>VC Pitch and Investments</li>
+                <li>
+                  BX Product Launch (Token Launchpad, Airdrops, token Locker
+                </li>
+                <li>Token Sale (Presale)</li>
+                <li>1000 Telegram Members</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- 1st SLIDER -->
+    <!--  TIMELINE SCRIPT -->
+    <script>
+      $(".owl-carousel").owlCarousel({
+        items: 3,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        margin: 20,
+        nav: true,
+        rewind: true,
+        dots: false,
+        navText: [""],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          1024: {
+            items: 3,
+          },
+          1440: {
+            items: 3,
+          },
+          1600: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
