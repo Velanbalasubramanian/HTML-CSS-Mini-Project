@@ -74,8 +74,11 @@
           </div>
         </div>
       </nav>
+      <div id="customers-testimonials4" class="owl-carousel">
 
+     
       <div class="container">
+        <div class="item">
         <div class="banner-common">
           <div class="row">
             <div class="col-lg-7 col-md-7">
@@ -108,10 +111,10 @@
                     alt="star-two"
                     class="star-two img-fluid"
                   />
-                  <div class="media-readnum">
-                    <span class="read-span">02</span>
+                  <div class="banner-readnum">
+                    <span class="banner-span">02</span>
                     <p></p>
-                    <span class="read-span1">03</span>
+                    <span class="banner-span1">03</span>
                     </div>
                 </div>
               </div>
@@ -138,6 +141,9 @@
           </div>
         </div>
       </div>
+
+      </div>
+    </div>
     </section>
     <section class="section-two">
       <div class="container-fluid">
@@ -1528,8 +1534,9 @@
           <h5>News  &  Events</h5>
 
         </div>
-
-        <div class="row mediacol-im">
+        <div id="customers-testimonials5" class="owl-carousel">
+          <div class="item">
+          <div class="row mediacol-im">
           <div class="col-lg-6 col-md-6">
         <!-- <img src="/Images/media1.png" alt="mediacol-img" class="img-fluid "> -->
         <div class="media-im-common">
@@ -1569,6 +1576,9 @@
         
         </div>
         </div>
+
+      </div>
+      </div>
 
         <div class="span-line-us">
           <span class="dot-line-us"></span>
@@ -1795,5 +1805,77 @@
         });
       });
     </script>
+
+    <!-- BANNER SECTION -->
+    <script>
+      jQuery(document).ready(function($) {
+    "use strict";
+    $('#customers-testimonials4').owlCarousel( {
+        loop: true,
+        items: 3,
+        margin: 30,
+        autoplay: true,
+        dots:false,
+        nav:false,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        responsive: {
+          0: {
+            items: 1
+          },
+          640:{
+            items:1
+          },
+          768: {
+            items: 1
+          },
+          1024: {
+            items: 1
+          },
+          1440: {
+            items: 1
+          }
+        }
+      });
+    });
+    </script>
+
+    <!-- MEDIA -->
+    <script>
+      jQuery(document).ready(function($) {
+    "use strict";
+    $('#customers-testimonials5').owlCarousel( {
+        loop: true,
+        items: 3,
+        margin: 30,
+        autoplay: true,
+        dots:false,
+        nav:false,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        responsive: {
+          0: {
+            items: 1
+          },
+          640:{
+            items:1
+          },
+          768: {
+            items: 1
+          },
+          1024: {
+            items: 1
+          },
+          1440: {
+            items: 1
+          }
+        }
+      });
+    });
+    </script>
+
+
   </body>
 </html>

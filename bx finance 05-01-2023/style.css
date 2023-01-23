@@ -71,7 +71,7 @@ nav .container-fluid {
 /* BANNER SECTION */
 .banner {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 180px;
 }
 .banner::before {
   position: absolute;
@@ -121,11 +121,11 @@ nav .container-fluid {
   padding-bottom: 54px;
   margin-bottom: 0;
 }
-.banner-content .banner-star {
+/* .banner-content .banner-star {
   position: absolute;
   left: -40px;
   top: 30px;
-}
+} */
 .banner-img {
   position: relative;
   padding-top: 75px;
@@ -165,9 +165,9 @@ nav .container-fluid {
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 16px;
 }
-.banner-arrow-right {
+/* .banner-arrow-right {
   padding-left: 10px;
-}
+} */
 .banner-anchor-right:hover {
   color: #f5d255;
   border-bottom: 1px solid #f5d255;
@@ -175,12 +175,6 @@ nav .container-fluid {
 .banner-arrow {
   position: relative;
 }
-.star-two {
-  position: absolute;
-  left: 400px;
-  top: 15px;
-}
-
 .banner-img .main-img{
   transition: 0.5s all ease-in-out;
 }
@@ -189,7 +183,76 @@ nav .container-fluid {
   transform: scale(1.1);
 }
 
+.banner-readnum {
+  /* padding-top: 88px; */
+  position: relative;
+}
+.banner-readnum p {
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: 33px;
+  top: 93px;
+  background: #d9d9d9;
+}
 
+.banner-span {
+  position: absolute;
+  top: 88px;
+  color: #d9d9d9;
+  left: 0px;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 99.33%;
+  letter-spacing: -0.025em;
+}
+
+.banner-span1 {
+  position: absolute;
+  top: 88px;
+  color: #d9d9d9;
+  left: 90px;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 99.33%;
+  letter-spacing: -0.025em;
+}
+
+/* owl-carousel */
+#customers-testimonials4 .banner-star{
+  display: inline;
+  width: auto;
+  position: absolute;
+    left: 0;
+    top: 30px;
+}
+#customers-testimonials4 .star-one{
+  display: inline;
+  width: auto;
+}
+#customers-testimonials4 .banner-img  img{
+  display: inline;
+  width: auto;
+}
+#customers-testimonials4 .item{
+  padding-bottom: 200px;
+}
+#customers-testimonials4 .banner-arrow-right {
+  padding-left: 10px;
+  display: inline;
+  width: auto;
+}
+#customers-testimonials4 .star-two {
+  position: absolute;
+  left: 400px;
+  top: 15px;
+  display: inline;
+  width: auto;
+}
 
 /* .nft-based-im img{
   padding: 15px;
@@ -300,16 +363,16 @@ nav .container-fluid {
     height: 220px;
   }
   .banner {
-    padding-bottom: 260px;
+    padding-bottom: 200px;
   }
   .banner-img .ellipse {
-    left: 192.27px;
+    left: 185.27px;
     top: 200.34px;
   }
 }
 @media screen and (max-width: 1024px) {
   .banner {
-    padding-bottom: 200px;
+    padding-bottom: 180px;
   }
   .banner::before {
     height: 180px;
@@ -355,13 +418,13 @@ nav .container-fluid {
     left: 270px;
     top: 25px;
   }
-  .banner-img .ellipse {
-    left: 85px;
-    top: 120px;
-  }
   .nav-btn {
     padding-bottom: 20px;
   }
+  .banner-img .ellipse {
+    left: 60px;
+    top: 120px;
+}
 }
 @media screen and (max-width: 768px) {
   /* .banner {
@@ -373,6 +436,23 @@ nav .container-fluid {
 .banner-content .para-one {
   font-size: 30px;
   padding-bottom: 12px;
+}
+.banner-span {
+  position: absolute;
+  top: 55px;
+}
+.banner-readnum p {
+  width: 40px;
+  left: 23px;
+  top: 60px;
+}
+.banner-span1 {
+  top: 55px;
+  color: #d9d9d9;
+  left: 70px;
+}
+.banner-img {
+  padding-top: 100px;
 }
 
 
@@ -404,9 +484,9 @@ nav .container-fluid {
   font-size: 16px;
   padding-bottom: 8px;
 }
-.banner-img {
+/* .banner-img {
   padding-top: 60px;
-}
+} */
 .banner {
   padding-bottom: 190px;
 }
@@ -436,9 +516,9 @@ nav .container-fluid {
   font-size: 14px;
   padding-bottom: 6px;
 }
-.banner-img {
+/* .banner-img {
   padding-top: 40px;
-}
+} */
 .star-two {
   left: 240px;
   top: 0px;
@@ -450,6 +530,21 @@ nav .container-fluid {
 
 }
 @media screen and (max-width: 320px) {
+  .banner-img .ellipse {
+    left: 38px;
+    top: 152px;
+}
+.star-one {
+  display: none;
+}
+.banner-content .para-one {
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+.star-two {
+display: none;
+}
+
 }
 
 /* section-2  */
@@ -2200,6 +2295,7 @@ justify-content: center;
   border-image-source: linear-gradient( 200.16deg, #ffffff -29.31%, rgba(255, 255, 255, 0) 82.32% );
   -webkit-background-clip: text;
   -webkit-text-stroke: 3px transparent;
+  /* -webkit-text-fill-color: black; */
   position: relative;
   text-align: center;
   padding-top: 50px;
@@ -2277,7 +2373,7 @@ justify-content: center;
   position: absolute;
   width: 40px;
   height: 1px;
-  right: 90px;
+  right:25px;
   top: 21px;
   background: #d9d9d9;
 }
@@ -2286,7 +2382,7 @@ justify-content: center;
   position: absolute;
   top: 15px;
   color: #d9d9d9;
-  right: 135px;
+  right: 78px;
   font-family: "Epilogue";
   font-style: normal;
   font-weight: 700;
@@ -2299,7 +2395,7 @@ justify-content: center;
   position: absolute;
   top: 15px;
   color: #d9d9d9;
-  right: 70px;
+  right: 0px;
   font-family: "Epilogue";
   font-style: normal;
   font-weight: 700;
@@ -2320,10 +2416,14 @@ justify-content: center;
 }
 .media-im-common{
   display: flex;
-  justify-content: left;
+  justify-content: center ;
   text-align: center;
 }
-
+#customers-testimonials5 .media1-arrow-right{
+  padding-left: 10px;
+  display: inline;
+  width: auto;
+}
 
 /* LETS FORM SECTION */
 .lets-sec {
@@ -2670,11 +2770,6 @@ font-size: 110px;
 
 
   /* MEDIA */
-  .media-im-common {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
 .media-head h1 {
   font-size: 110px;
 }
@@ -3261,7 +3356,11 @@ font-size: 16px;
 
 }
 @media screen and (max-width: 1024px) {
- 
+
+  /* LETS */
+  .lets-r .gx-5{
+    --bs-gutter-x: 1rem;
+  }
 }
 @media screen and (max-width: 991px) {
   .section-two h2 {
@@ -3784,6 +3883,7 @@ font-size: 16px;
 .lets-r {
   padding-bottom: 60px;
 }
+
 .lets-in2 {
   padding-top: 60px;
   padding-bottom: 50px;
@@ -4783,7 +4883,7 @@ display: none;
 }
 .us-heading h1 {
   left: 0px;
-  font-size: 40px;
+  font-size: 45px;
   top: -36px;
 }
 .why-us-ro {
@@ -4815,7 +4915,7 @@ display: none;
 }
 .explore-head h1 {
   left: 0px;
-  font-size: 40px;
+  font-size: 45px;
   top: -29px;
 }
 .explore-row {
@@ -4828,7 +4928,7 @@ display: none;
   padding: 10px;
 }
 .token-based-img h1 {
-  font-size: 20px;
+  font-size: 22px;
 }
 .eco-star1 {
   display: none;
@@ -4842,7 +4942,7 @@ display: none;
 
 /* NFT */
 .nft-based-img h1 {
-  font-size: 20px;
+  font-size: 22px;
 }
 .nft-star {
   display: none;
@@ -4869,11 +4969,11 @@ display: none;
   display: grid;
 }
 .upcoming-img h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 .upcoming-img h5 {
   font-size: 14px;
-  top: 29px;
+  top: 35px;
   right: 0px;
 }
 .upcoming-star {
@@ -4905,7 +5005,7 @@ display: none;
  display: none;
 }
 .defi-solutions1 h1 {
-  font-size: 22px;
+  font-size: 25px;
 }
 .def-starend-img {
   display: none;
@@ -4932,7 +5032,7 @@ display: none;
 
 /* INDUSTRY */
 .industry-head h1 {
-  font-size: 22px;
+  font-size: 25px;
 }
 .industry-starstart-img {
   display: none;
@@ -4960,11 +5060,11 @@ display: none;
 
 /* ROADMAP */
 .roadmap-heading h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 .roadmap-heading h5 {
   font-size: 16px;
-  top: 30px;
+  top: 35px;
   left: 0px;
 }
 .roadmap-star {
@@ -4989,7 +5089,7 @@ display: none;
 }
 .ourteam-img h5 {
   font-size: 17px;
-  top: 32px;
+  top: 35px;
 }
 .ourteam-img p {
   padding-bottom: 0px;
@@ -5012,6 +5112,9 @@ display: none;
 .team-ro {
   padding-bottom: 40px;
 }
+.ourteam-img h1 {
+  font-size: 55px;
+}
 
 /* OUR BLOG */
 .blog-sec {
@@ -5033,13 +5136,13 @@ display: none;
 
 /* MEDIA */
 .media-head h1 {
-  font-size: 50px;
+  font-size: 55px;
   padding-bottom: 30px;
   padding-top: 30px;
 }
 .media-head h5 {
   font-size: 16px;
-  left: 29%;
+  left: 24%;
   bottom: 22%;
 }
 .media-star1 {
@@ -5089,6 +5192,40 @@ display: none;
 
 }
 @media screen and (max-width: 320px) {
+  /* EXOLORE */
+  .token-based-img h1 {
+    font-size: 21px;
+}
+
+/* UPCOMING */
+.upcoming-img h1 {
+  font-size: 40px;
+}
+.upcoming-img h5 {
+  top: 30px;
+  right: 0px;
+}
+
+/* ROAD MAP */
+.roadmap-heading h1 {
+  font-size: 36px;
+}
+
+/* DEFI */
+.defi-solutions1 h1 {
+  font-size: 23px;
+}
+/* INDUSTRY */
+.industry-head h1 {
+  font-size: 18px;
+}
+
+/* OUR BLOG */
+.ourblog-img h1 {
+  font-size: 38px;
+}
+
+
 }
 
 
