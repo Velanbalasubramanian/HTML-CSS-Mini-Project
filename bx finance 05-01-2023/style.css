@@ -5,7 +5,7 @@
 }
 body {
   /* background: radial-gradient(#303030 1px, transparent 1px); */
-  background-image: url(images/bg\dot\single.png);
+  background-image: url(images/bg\ dot\ single.png);
   background-size: auto;
   background-color: #1e1e1e;
   background-repeat: repeat;
@@ -84,7 +84,7 @@ nav .container-fluid {
   background-size: cover;
   background-position: center top;
   width: 100%;
-  height: 400px;
+  height: 365px;
   bottom: 0;
 }
 .banner-common {
@@ -143,7 +143,7 @@ nav .container-fluid {
   width: 221.85px;
   height: 217.98px;
   right: 100.27px;
-  top: 223.34px;
+  top: 175.34px;
   z-index: -1;
 }
 /* .banner-img .star-four {
@@ -188,7 +188,7 @@ nav .container-fluid {
 }
 
 .banner-readnum {
-  /* padding-top: 88px; */
+  /* margin-top: 88px; */
   position: relative;
 }
 .banner-readnum p {
@@ -251,7 +251,7 @@ nav .container-fluid {
 }
 
 #customers-testimonials4 .item {
-  padding-bottom: 200px;
+  padding-bottom: 120px;
 }
 #customers-testimonials4 .banner-arrow-right {
   padding-left: 10px;
@@ -274,17 +274,37 @@ nav .container-fluid {
 .nft-based-im img:focus    {
   transform: scale(1.1);
 }  */
+@media screen and (max-width: 6144px) {
+  .banner::before {
+    height: 1000px;
+  }
 
+}
+@media screen and (max-width: 4608px) {
+  .banner::before {
+    height: 800px;
+  }
+
+}
+@media screen and (max-width: 3072px) {
+  .banner::before {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 2304px) {
+  .banner::before {
+    height: 500px;
+  }
+
+}
 @media screen and (max-width: 1920px) {
   .banner {
     position: relative;
     padding-bottom: 200px;
   }
-
-  /* 
-#customers-testimonials4 .item {
-    padding-bottom: 60px;
-} */
+  .banner::before {
+    height: 370px;
+  }
 }
 @media screen and (max-width: 1440px) {
   .banner-content .banner-star {
@@ -299,9 +319,6 @@ nav .container-fluid {
   }
   .banner::before {
     height: 330px;
-  }
-  #customers-testimonials4 .item {
-    padding-bottom: 180px;
   }
   .banner {
     padding-bottom: 180px;
@@ -354,7 +371,7 @@ nav .container-fluid {
     top: 20px;
   }
   #customers-testimonials4 .item {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -367,7 +384,7 @@ nav .container-fluid {
     padding: 0px 0px 20px;
   }
   #customers-testimonials4 .item {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
   .nav-btn a {
     font-size: 15px;
@@ -447,7 +464,7 @@ nav .container-fluid {
     top: 15px;
   }
   #customers-testimonials4 .item {
-    padding-bottom: 130px;
+    padding-bottom: 100px;
   }
 
   /* .banner-img .ellipse {
@@ -510,8 +527,8 @@ nav .container-fluid {
     width: 180.85px;
     height: 198.98px;
     filter: blur(60px);
-    top: 130.34px;
-  }
+    top: 105.34px;
+}
   .banner-span {
     top: 70px;
   }
@@ -522,6 +539,13 @@ nav .container-fluid {
   .banner-span1 {
     top: 70px;
   }
+  .banner::before {
+    height: 200px;
+}
+#customers-testimonials4 .item {
+  padding-bottom: 70px;
+}
+
 }
 @media screen and (max-width: 768px) {
   .banner::before {
@@ -559,7 +583,7 @@ nav .container-fluid {
     padding-bottom: 150px;
   }
   #customers-testimonials4 .item {
-    padding-bottom: 65px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -596,7 +620,7 @@ nav .container-fluid {
     padding-bottom: 130px;
   }
   #customers-testimonials4 .item {
-    padding-bottom: 45px;
+    padding-bottom: 35px;
   }
   .banner-img::after {
     right: 79px;
@@ -625,7 +649,7 @@ nav .container-fluid {
     width: 160.85px;
     height: 168.98px;
     filter: blur(140px);
-    top: 269.34px;
+    top: 222.34px;
   }
   .banner-content .para-one {
     font-size: 32px;
@@ -638,7 +662,7 @@ nav .container-fluid {
     padding-bottom: 120px;
   }
   #customers-testimonials4 .item {
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -691,7 +715,7 @@ nav .container-fluid {
     padding: 0px 0px 10px;
   }
   #customers-testimonials4 .item {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
   .banner::before {
     height: 90px;
@@ -719,7 +743,7 @@ display : none;
     height: 80px;
   }
   #customers-testimonials4 .item {
-    padding-bottom: 8px;
+    padding-bottom: 0px;
   }
   .banner-span {
     position: absolute;
