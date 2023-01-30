@@ -3,6 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
+body{
+  font-family: Be Vietnam Pro;
+}
+h1,h2,h3,h4,h5,p{
+  letter-spacing: 0;
+}
+/* NAVBAR START */
 nav .container-fluid {
   margin-left: 139px;
   margin-right: 139px;
@@ -30,172 +40,62 @@ nav .container-fluid {
 .nav-item {
   padding-right: 70px;
   font-size: 18px;
-  font-weight: normal normal medium;
   color: #494e68;
-  font-family: Be Vietnam Pro;
+  font-family: medium;
   line-height: 42px;
 }
 .bttn-icon .bttn-link {
   text-decoration: none;
-  /* text-align: left; */
-  font: normal normal 600 18px/23px Be Vietnam Pro;
-  letter-spacing: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
   color: #e8d3c6;
-  /* opacity: 1; */
-  background: #60311b 0% 0% no-repeat padding-box;
+  background: #60311b;
   border-radius: 10px;
   padding: 15px 29px 14px 30px;
 }
-
+.bttn-icon .bttn-link:hover{
+  background-color: #e8d3c6;
+  color: #60311b;  
+}
 .bttn-icon i {
   color: #60311b;
   font-size: 24px;
   padding-left: 38px;
 }
+.bttn-icon i:hover{
+  color: #e8d3c6;
+}
 .nav-link {
   border-bottom: 1px solid transparent;
 }
-.nav-link:focus,
-.nav-link:hover {
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
   color: #60311b;
   border-bottom: 1px solid #60311b;
 }
 
-@media screen and (max-width: 1600px) {
-  .navbar-brand {
-    --bs-navbar-brand-margin-end: 131px;
-  }
-  .nav-item {
-    padding-right: 55px;
-  }
-  .bttn-icon i {
-    padding-left: 30px;
-  }
-  .bttn-icon .bttn-link {
-    padding: 11px 19px 10px 20px;
-  }
-  nav .container-fluid {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 26px;
-  }
+.nav-link:hover {
+  color: #60311b;
+  border-bottom: 1px solid #60311b;
 }
-@media screen and (max-width: 1440px) {
-  .navbar-brand {
-    --bs-navbar-brand-margin-end: 81px;
-  }
-  .nav-item {
-    padding-right: 40px;
-  }
-  .bttn-icon i {
-    padding-left: 22px;
-  }
-  .bttn-icon .bttn-link {
-    padding: 9px 17px 8px 18px;
-  }
-}
-@media screen and (max-width: 1340px) {
-  .navbar-brand {
-    --bs-navbar-brand-margin-end: 71px;
-  }
-  .nav-item {
-    padding-right: 30px;
-  }
-  .bttn-icon .bttn-link {
-    padding: 8px 15px 7px 14px;
-    font: normal normal 600 16px/23px Be Vietnam Pro;
-  }
-  .bttn-icon i {
-    padding-left: 18px;
-  }
-  nav .container-fluid {
-    margin-left: 99px;
-    margin-right: 99px;
-    margin-top: 18px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  nav .container-fluid {
-    margin-left: 69px;
-    margin-right: 69px;
-    margin-top: 16px;
-  }
-  .navbar-brand {
-    --bs-navbar-brand-margin-end: 61px;
-  }
-  .nav-item {
-    padding-right: 20px;
-  }
-  .bttn-icon .bttn-link {
-    padding: 7px 14px 6px 13px;
-    font: normal normal 600 15px/23px Be Vietnam Pro;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .navbar-brand {
-    --bs-navbar-brand-margin-end: 41px;
-  }
-  .nav-item {
-    padding-right: 15px;
-  }
-  .bttn-icon i {
-    padding-left: 12px;
-  }
-  .bttn-icon .bttn-link {
-    padding: 6px 13px 5px 12px;
-    font: normal normal 600 15px/23px Be Vietnam Pro;
-  }
-}
-@media screen and (max-width: 991px) {
-  nav .container-fluid {
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-top: 16px;
-  }
-  .nav-item {
-    padding-top: 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  nav .container-fluid {
-    margin-left: 39px;
-    margin-right: 39px;
-    margin-top: 14px;
-  }
-}
-@media screen and (max-width: 640px) {
-  nav .container-fluid {
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 14px;
-  }
-}
-@media screen and (max-width: 480px) {
-  nav .container-fluid {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 12px;
-  }
-  .navbar-brand img {
-    width: 150px;
-    height: 30px;
-  }
-}
+/* NAVBAR END */
 
 .banner-content {
   padding-top: 195px;
   padding-bottom: 137px;
 }
 .banner-content h1 {
-  font: normal normal 600 58px/72px Be Vietnam Pro;
-  letter-spacing: 0px;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 72px;
   color: #60311b;
   padding-bottom: 20px;
   margin-bottom: 0px;
 }
 .banner-content p {
-  font: normal normal 300 28px/42px Be Vietnam Pro;
-  letter-spacing: 0px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
   color: #231f1b;
   padding-bottom: 40px;
   margin-bottom: 0rem;
@@ -208,20 +108,28 @@ nav .container-fluid {
   padding-right: 30px;
 }
 .banner-content-bttn .Seller-bttn button {
-  font: normal normal normal 22px/33px Be Vietnam Pro;
-  letter-spacing: 0px;
+  font-size: 22px;
+  line-height: 33px;
   color: #ffffff;
-  background: #ac7046 0% 0% no-repeat padding-box;
+  background: #ac7046;
   border-radius: 10px;
   padding: 17px 78px 17px 23px;
   position: relative;
-  border: none;
+  border: 1px solid transparent;
+}
+.banner-content-bttn .Seller-bttn button:hover{
+background: #ac70451a;
+color: #ac7045;
+border: 1px solid #ac7045;
+}
+.banner-content-bttn .Seller-bttn button:hover i{
+  background: #ac7046;
+  color: #e8d3c6;
 }
 .banner-content-bttn .Seller-bttn button i {
   position: absolute;
-  background: #e8d3c6 0% 0% no-repeat padding-box;
-  opacity: 1;
-  top: 14px;
+  background: #e8d3c6;
+  top: 12px;
   right: 8px;
   font-size: 40px;
   color: #60311b;
@@ -232,24 +140,25 @@ nav .container-fluid {
   justify-content: center;
   align-items: center;
 }
-.banner-content-bttn .Buyer-bttn {
-  text-decoration: none;
-}
 .banner-content-bttn .Buyer-bttn button {
-  font: normal normal normal 22px/33px Be Vietnam Pro;
-  letter-spacing: 0px;
+  font-size: 22px;
+  line-height: 33px;
   color: #ac7045;
-  background: #ac70451a 0% 0% no-repeat padding-box;
+  background: #ac70451a;
   border: 1px solid #ac7045;
   border-radius: 10px;
   padding: 17px 77px 17px 23px;
   position: relative;
 }
+.banner-content-bttn .Buyer-bttn button:hover{
+  background: #ac7046;
+  color: #ffffff;
+}
 .banner-content-bttn .Buyer-bttn button i {
   position: absolute;
-  background: #ac7046 0% 0% no-repeat padding-box;
+  background: #ac7046;
   opacity: 1;
-  top: 14px;
+  top: 12px;
   right: 8px;
   font-size: 40px;
   color: #e8d3c6;
@@ -260,32 +169,43 @@ nav .container-fluid {
   justify-content: center;
   align-items: center;
 }
+.banner-content-bttn .Buyer-bttn button:hover i{
+  color: #60311b;
+  background: #e8d3c6;
+}
 
 /* FOOD */
 .food-title h2 {
-  font: normal normal 600 46px/58px Be Vietnam Pro;
-  letter-spacing: 0px;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 58px;
   color: #60311b;
   margin-bottom: 0;
   padding-bottom: 10px;
 }
 .food-title p {
-  font: normal normal 300 28px/42px Be Vietnam Pro;
-  letter-spacing: 0px;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 42px;
   color: #231f1b;
   margin-bottom: 0;
 }
 .food-title-bttn a button {
   position: relative;
-  background: #ac7046 0% 0% no-repeat padding-box;
+  background: #ac7046;
   border-radius: 26px;
-  font: normal normal normal 22px/33px Be Vietnam Pro;
-  letter-spacing: 0px;
+  font-size: 22px;
+  line-height: 33px;
   color: #ffffff;
   padding: 12px 59px 12px 22px;
   border: none;
-  text-align: left;
-  text-decoration: none;
+}
+.food-title-bttn a button:hover{
+  background-color: #e8d3c6;
+  color:#ac7046;
+}
+.food-title-bttn a button:hover i{
+  color: #60311b;
 }
 .food-title-bttn a button i {
   position: absolute;
@@ -308,10 +228,10 @@ nav .container-fluid {
   padding-bottom: 20px;
 }
 .food-items-two a {
-  font: normal normal 300 28px/42px Be Vietnam Pro;
-  letter-spacing: 0px;
   color: #ffffff;
-  text-decoration: none;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
 }
 .food-items-one {
   padding: 34px 0px 0px 0px;
@@ -327,13 +247,17 @@ nav .container-fluid {
 /* SHOP */
 .shop-title h2 {
   text-align: center;
-  font: normal normal 600 46px/58px Be Vietnam Pro;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 58px;
   color: #60311b;
   margin-bottom: 10px;
 }
 .shop-title p {
   text-align: center;
-  font: normal normal 300 28px/42px Be Vietnam Pro;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
   color: #231f1b;
   margin-bottom: 60px;
 }
@@ -348,7 +272,9 @@ nav .container-fluid {
   padding: 20px;
 }
 .shop-items .card-body .card-title {
-  font: normal normal 600 20px/44px Be Vietnam Pro;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 44px;
   color: #231f1b;
   margin-bottom: 0px;
 }
@@ -356,7 +282,9 @@ nav .container-fluid {
   padding-bottom: 12px;
 }
 .shop-client h5 {
-  font: normal normal 300 16px/36px Be Vietnam Pro;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
   color: #000000;
   padding-left: 10px;
   padding-right: 10px;
@@ -369,7 +297,9 @@ nav .container-fluid {
 }
 .shop-progrs .shop-qlity {
   text-align: left;
-  font: normal normal 300 16px/36px Be Vietnam Pro;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
   color: #000000;
   margin-bottom: 0;
 }
@@ -377,7 +307,9 @@ nav .container-fluid {
   font-weight: bold;
 }
 .shop-progrs .shop-pro span {
-  font: normal normal medium 16px/36px Be Vietnam Pro;
+  font-size: 16px;
+  line-height: 36px;
+  font-family: medium;
   color: #231f1b;
 }
 .shop-pro .progress .progress-bar {
@@ -392,7 +324,7 @@ nav .container-fluid {
   padding-bottom: 12px;
 }
 .shop-detail h5 {
-  font: normal normal bold 20px/36px Be Vietnam Pro;
+  font: bold 20px/36px Be Vietnam Pro;
   color: #60311b;
   margin-bottom: 0;
 }
@@ -402,7 +334,7 @@ nav .container-fluid {
   align-items: center;
 }
 .shop-detail .shop-flag span {
-  font: normal normal bold 16px/36px Be Vietnam Pro;
+  font: bold 16px/36px Be Vietnam Pro;
   color: #231f1b;
 }
 
@@ -423,14 +355,20 @@ nav .container-fluid {
 
 .shop-title-bttn a button {
     position: relative;
-    background: #ac7046 0% 0% no-repeat padding-box;
+    background: #ac7046;
     border-radius: 26px;
-    font: normal normal normal 22px/33px Be Vietnam Pro;
-    letter-spacing: 0px;
+    font-size: 22px;
+    line-height: 33px;
     color: #ffffff;
     padding: 12px 59px 12px 22px;
     border: none;
-    text-decoration: none;
+  }
+  .shop-title-bttn a button:hover{
+    background-color: #e8d3c6;
+    color:#ac7046;
+  }
+  .shop-title-bttn a button:hover i{
+    color: #60311b;
   }
   .shop-title-bttn a button i {
     position: absolute;
@@ -447,28 +385,37 @@ nav .container-fluid {
   /* ABOUT-US */
 
   .about-title h2 {
-    font: normal normal 600 46px/58px Be Vietnam Pro;
-    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 58px;
     color: #60311b;
     margin-bottom: 0;
     padding-bottom: 10px;
   }
   .about-title p {
-    font: normal normal 300 28px/42px Be Vietnam Pro;
-    letter-spacing: 0px;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
     color: #231f1b;
     margin-bottom: 0;
   }
   .about-title-bttn a button {
     position: relative;
-    background: #ac7046 0% 0% no-repeat padding-box;
+    background: #ac7046;
     border-radius: 26px;
-    font: normal normal normal 22px/33px Be Vietnam Pro;
-    letter-spacing: 0px;
+    font-size: 22px;
+    line-height: 33px;
     color: #ffffff;
     padding: 12px 59px 12px 22px;
     border: none;
     text-decoration: none;
+  }
+  .about-title-bttn a button:hover{
+    background-color: #e8d3c6;
+    color:#ac7046;
+  }
+  .about-title-bttn a button:hover i{
+    color: #60311b;
   }
   .about-title-bttn a button i {
     position: absolute;
@@ -489,7 +436,9 @@ nav .container-fluid {
     background-color: #231F1B;
   }
   .about-content-first h5{
-    font: normal normal 300 22px/42px Be Vietnam Pro;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 42px;
     color: #231F1B;
     margin-bottom: 15px;
   }
@@ -503,21 +452,22 @@ nav .container-fluid {
     padding: 36px 60px 45px 34px;
   }
   .about-content-first h3{
-    text-align: left;
-    font: normal normal 600 36px/48px Be Vietnam Pro;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
     color: #60311B;
     padding-bottom: 30px;
     margin-bottom: 0;
   }
   .about-content-first p{
-    text-align: left;
-    font: normal normal 300 22px/36px Be Vietnam Pro;
-    letter-spacing: 0px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 36px;
     color: #231F1B;
     margin-bottom: 0;
   }
   .about-bttn-one{
-    background: #231F1B 0% 0% no-repeat padding-box;
+    background: #231F1B;
     padding-top:24px;
     padding-bottom: 24px;
     text-align: center;
@@ -525,12 +475,19 @@ nav .container-fluid {
   .about-bttn-one a button{
     position: relative;
     background-color: transparent;
-    text-align: right;
-    font: normal normal normal 22px/33px Be Vietnam Pro;
-    letter-spacing: 0px;
+    font-size: 22px;
+    line-height: 33px;
     color: #FFFFFF;
-    opacity: 1;
     border: none;
+  }
+  .about-bttn-one:hover{
+    background: #F9F3EF;
+  }
+  .about-bttn-one:hover a button{
+    color: #231F1B;
+  }
+  .about-bttn-one:hover i{
+    color: #231F1B;
   }
   .about-bttn-one a button i{
     color: #F9F3EF;
@@ -545,26 +502,30 @@ nav .container-fluid {
     padding: 36px 60px 45px 34px;
   }
   .about-content-two h5{
-    font: normal normal 300 22px/42px Be Vietnam Pro;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 42px;
     color: #E7D3C6;
     margin-bottom: 15px;
   }
   .about-content-two h3{
-    text-align: left;
-    font: normal normal 600 36px/48px Be Vietnam Pro;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
     color: #E7D3C6;
     padding-bottom: 30px;
     margin-bottom: 0;
   }
   .about-content-two p{
-    text-align: left;
-    font: normal normal 300 22px/36px Be Vietnam Pro;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 36px;
     color: #E7D3C6;
     margin-bottom: 0;
   }
 
   .about-bttn-two{
-    background: #F9F3EF 0% 0% no-repeat padding-box;
+    background: #F9F3EF;
     padding-top:24px;
     padding-bottom: 24px;
     text-align: center;
@@ -572,13 +533,21 @@ nav .container-fluid {
   .about-bttn-two a button{
     position: relative;
     background-color: transparent;
-    text-align: right;
-    font: normal normal normal 22px/33px Be Vietnam Pro;
-    letter-spacing: 0px;
+    font-size: 22px;
+    line-height: 33px;
     color: #231F1B;
-    opacity: 1;
     border: none;
   }
+  .about-bttn-two:hover{
+    background: #231F1B;
+  }
+  .about-bttn-two:hover a button{
+    color: #FFFFFF;
+  }
+  .about-bttn-two:hover i{
+    color: #FFFFFF;
+  }
+
   .about-bttn-two a button i{
     color: #231F1B;
     position: absolute;
@@ -589,39 +558,53 @@ nav .container-fluid {
 
 
   /* CONTACT */
-  .contact{
+  .wallet{
     background-color: #F9F3EF;
   }
-  .contact-title h5{
+  .wallet-title h5{
     margin-bottom: 0;
     text-align: center;
-    font: normal normal 300 28px/42px Be Vietnam Pro;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 300;
     color: #231F1B;
     padding-top: 174px;
   }
-  .contact-title p{
+  .wallet-title p{
     margin-bottom: 81px;
     text-align: center;
-    font: normal normal 600 46px/58px Be Vietnam Pro;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 58px;
     color: #60311B;
     padding-top: 10px;
   }
-  .contact-one h5{
+  .wallet-one h5{
     margin-bottom: 0;
     text-align: center;
-    font: normal normal 600 36px/58px Be Vietnam Pro;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 58px;
     color: #60311B;
     padding-top: 57px;
     padding-bottom: 18px;
   }
-  .contact-one p{
+  .wallet-one p{
     text-align: center;
-    font: normal normal 300 24px/36px Be Vietnam Pro;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
     color: #231F1B;
     margin-bottom: 100px;
   }
-  .contact-common .row{
+  .wallet-common .row{
     border-bottom: 1.5px solid #ccc4c4;
+  }
+
+/* CONTACT */
+  .contact{
+    background-color: #F9F3EF;
+    background-image: url(image/contact-bg.png);
   }
   .contact-end{
     padding-top: 95px;
@@ -630,14 +613,16 @@ nav .container-fluid {
     padding-top: 85px;
   }
   .contact-end-two h3{
-    text-align: left;
-    font: normal normal 600 46px/58px Be Vietnam Pro;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 58px;
     color: #60311B;
     margin-bottom: 15px;
   }
   .contact-end-two p{
-    text-align: left;
-    font: normal normal 300 24px/36px Be Vietnam Pro;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
     color: #231F1B;
     margin-bottom: 40px;
   }
@@ -650,38 +635,37 @@ nav .container-fluid {
   /* FOOTER */
   .footer{
     background-color: #231F1B;
+    padding-bottom: 75px;
   }
   .footer-common{
     padding-top: 189px
   }
   .footer-content h5{
-    text-align: left;
-    font: normal normal 600 30px/54px Be Vietnam Pro;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 54px;
     color: #FFFFFF;
-    margin-bottom: 15px;
     padding-top: 58px
   }
-  .footer-content a span{
-    text-align: left;
-    font: normal normal normal 26px/44px Be Vietnam Pro;
-    color: #FFFFFF;
-  }
   .footer-content a{
-    text-decoration: none;
+    font-size: 26px;
+    line-height: 44px;
+    color: #FFFFFF;
   }
   .footer-content ul{
     padding-top: 62px;
     padding-left: 0;
+    margin-bottom: 0;
   }
-  .footer-content ul li{
-    text-align: left;
-    font: normal normal normal 24px/54px Be Vietnam Pro;
+  .footer-content ul li a{
+    font-size: 24px;
+    line-height: 54px;
     color: #FFFFFF;
     list-style: none;
   }
-  /* .footer-content ul li:hover{
+  .footer-content ul li a:hover{
     color: #60311b;
-  } */
+  }
   .footer-icon ul{
     padding-left: 0;
     display: flex;
@@ -693,23 +677,233 @@ nav .container-fluid {
     color: #E8D3C6;
     padding-right: 60px;
   }
-  .footer-icon ul li .bi-telegram{
+  .footer-icon ul .icon-last{
     padding-right: 0;
   }
   .footer-icon{
-    padding-bottom:76px;
+    padding-bottom:65px;
   }
+  .footer-icon li img{
+    transition: 1s ease;
+  }
+  .footer-icon li img:hover{
+    transition: 1s ease;
+    transform: scale(0.8);
+  }
+
   .footer-two-para h5{
-    text-align: left;
     font-size: 30px;
     line-height: 54px;
-    font-family: normal normal medium Be Vietnam Pro ;
     color: #FFFFFF;
     margin-bottom: 15px;
   }
   .footer-two-para p{
-    text-align: left;
-    font: normal normal 300 26px/40px Be Vietnam Pro;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 40px;
     color: #FFFFFF;
-    margin-bottom: 39px;
+    margin-bottom: 45px;
+  }
+
+
+  .footer-content-two .footer-for form {
+    background: #fff;
+    padding: 18px 0 17px 30px;
+    border-radius: 15px;
+    width: 70%;
+    font-size: 20px;
+    line-height: 40px;
+    color: #979797;
+  }
+  
+  .footer-content-two .footer-for form input[type="email"] {
+    border: 0;
+    width: 100%;
+    outline: none;
+  
+  }
+  .footer-for{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-for a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #F9F3EF;
+    background: #AC7046;
+    border-radius: 15px;
+    padding: 18px 38px 17px 38px;
+  }
+  .footer-for a:hover{
+    background-color: #F9F3EF;
+    color: #AC7046;
+  }
+  .footer-to-end ul{
+    padding-top: 59px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+  }
+  .footer-to-end ul li{
+    font-size: 22px;
+    line-height: 54px;
+    color: #FFFFFF;
+  }
+  .footer-to-end ul li:hover{
+    color: #60311b;
+  }
+  .footer-to-end ul a{
+    padding-right: 60px;
+  }
+  .footer-to-end ul .privcy{
+    padding-right: 0;
+  }
+
+
+  @media screen and (max-width: 1600px) {
+    /* NAVBAR START  */
+    .navbar-brand {
+      --bs-navbar-brand-margin-end: 125px;
+    }
+    .nav-item {
+      padding-right: 55px;
+    }
+    .bttn-icon i {
+      padding-left: 30px;
+    }
+    .bttn-icon .bttn-link {
+      padding: 11px 19px 10px 20px;
+    }
+    nav .container-fluid {
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-top: 30px;
+    }
+    /* NAVBAR END  */
+
+
+  }
+  @media screen and (max-width: 1440px) {
+    /* NAVBAR START  */
+    nav .container-fluid {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .navbar-brand {
+      --bs-navbar-brand-margin-end: 115px;
+    }
+    .bttn-icon .bttn-link {
+      padding: 9px 17px 8px 18px;
+    }
+    /* NAVBAR END  */
+  }
+  @media screen and (max-width: 1340px) {
+    /* NAVBAR START  */
+    /* .navbar-brand {
+      --bs-navbar-brand-margin-end: 71px;
+    } */
+    /* .nav-item {
+      padding-right: 30px;
+    } */
+    /* .bttn-icon .bttn-link {
+      padding: 8px 15px 7px 14px;
+      font: normal normal 600 16px/23px Be Vietnam Pro;
+    } */
+    /* .bttn-icon i {
+      padding-left: 18px;
+    } */
+    /* nav .container-fluid {
+      margin-left: 99px;
+      margin-right: 99px;
+      margin-top: 18px;
+    } */
+    /* NAVBAR END  */
+  }
+  @media screen and (max-width: 1199px) {
+    /* NAVBAR START  */
+    nav .container-fluid {
+      margin-left: 69px;
+      margin-right: 69px;
+      margin-top: 16px;
+    }
+    .navbar-brand {
+      --bs-navbar-brand-margin-end: 61px;
+    }
+    .nav-item {
+      padding-right: 20px;
+    }
+    .bttn-icon .bttn-link {
+      padding: 7px 14px 6px 13px;
+      font-size: 15px;
+    }
+    /* NAVBAR END  */
+  }
+  @media screen and (max-width: 1024px) {
+    /* NAVBAR START  */
+    .navbar-brand {
+      --bs-navbar-brand-margin-end: 41px;
+    }
+    .nav-item {
+      padding-right: 15px;
+    }
+    .bttn-icon i {
+      padding-left: 12px;
+    }
+    .bttn-icon .bttn-link {
+      padding: 6px 13px 5px 12px;
+    }
+    /* NAVBAR END  */
+  }
+  @media screen and (max-width: 991px) {
+    /* NAVBAR START  */
+    nav .container-fluid {
+      margin-left: 45px;
+      margin-right: 45px;
+      margin-top: 16px;
+    }
+    .nav-item {
+      padding-top: 15px;
+    }
+    /* NAVBAR END  */
+  }
+  @media screen and (max-width: 768px) {
+    /* NAVBAR START  */
+    nav .container-fluid {
+      margin-left: 39px;
+      margin-right: 39px;
+      margin-top: 14px;
+    }
+    /* NAVBAR END  */
+  }
+  @media screen and (max-width: 640px) {
+    /* NAVBAR START  */
+    nav .container-fluid {
+      margin-left: 35px;
+      margin-right: 35px;
+      margin-top: 14px;
+    }
+    /* NAVBAR END  */
+  }
+  @media screen and (max-width: 575px) {
+
+  }
+  @media screen and (max-width: 480px) {
+    /* NAVBAR START  */
+    nav .container-fluid {
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 12px;
+    }
+    .navbar-brand img {
+      width: 150px;
+      height: 30px;
+    }
+    /* NAVBAR END  */
+  }
+  @media screen and (max-width: 320px) {
+
   }
