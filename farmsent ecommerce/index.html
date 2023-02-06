@@ -20,12 +20,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="banner">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img src="image/logo-dark.jpg" alt="logo-dark" />
@@ -76,13 +81,11 @@
             they can directly supply.
           </p>
           <div class="banner-content-bttn">
-            <a href="#" class="Seller-bttn"
-              ><button>
-                Join as Seller<i class="bi bi-arrow-right-short"></i></button
+            <a href="#" class="btn Seller-bttn">
+              Join as Seller<i class="bi bi-arrow-right-short"></i
             ></a>
-            <a href="#" class="Buyer-bttn"
-              ><button>
-                Join as Buyer<i class="bi bi-arrow-right-short"></i></button
+            <a href="#" class="btn Buyer-bttn">
+              Join as Buyer<i class="bi bi-arrow-right-short"></i
             ></a>
           </div>
         </div>
@@ -97,16 +100,18 @@
               <p>Just about any food item and more!</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 food-title-n d-flex justify-content-end align-self-center">
+          <div
+            class="col-lg-6 col-md-6 col-sm-6 food-title-n d-flex justify-content-end align-self-center"
+          >
             <div class="food-title-bttn">
-              <a href="#"
-                ><button>See All<i class="bi bi-arrow-right-short"></i></button
-              ></a>
+              <a href="#" class="btn">See All<i class="bi bi-arrow-right-short"></i></a>
             </div>
           </div>
         </div>
         <div class="food-items">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-5">
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-5"
+          >
             <div class="col">
               <div class="food-detail">
                 <div
@@ -151,7 +156,11 @@
                 <div
                   class="food-items-one d-flex justify-content-center align-item-center"
                 >
-                  <img src="image/bean-grains.svg" class="img-fluid" alt="pulses" />
+                  <img
+                    src="image/bean-grains.svg"
+                    class="img-fluid"
+                    alt="pulses"
+                  />
                 </div>
                 <div class="food-items-two text-center">
                   <a href="#">Pulses</a>
@@ -164,331 +173,439 @@
                 <div
                   class="food-items-one d-flex justify-content-center align-item-center"
                 >
-                  <img src="image/grains-sack.svg" class="img-fluid" alt="grains" />
+                  <img
+                    src="image/grains-sack.svg"
+                    class="img-fluid"
+                    alt="grains"
+                  />
                 </div>
                 <div class="food-items-two text-center">
                   <a href="#">Grains</a>
                 </div>
               </div>
             </div>
-
           </div>
-         </div>
-
+        </div>
       </div>
     </section>
     <section class="shop">
       <div class="container">
-        <div class="shop-title"> 
-         <h2>We offer best</h2>
-         <p>Best Farming Goods we provide to market</p>
+        <div class="shop-title">
+          <h2>We offer best</h2>
+          <p>Best Farming Goods we provide to market</p>
         </div>
         <div class="shop-offer">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="shop-items"> 
-            <div class="card">
-              <img src="image/turmeric.png" class="card-img-top img-fluid" alt="turmeric">
-              <div class="card-body">
-                <h5 class="card-title">Turmeric extract 95%</h5>
-                <div class="shop-client">
-                  <img src="image/DavidCardona.png" alt="client">
-                  <h5>DavidCardona</h5>
-                  <img src="image/tick.png" alt="tick">
-                </div>
-
-                <div class="shop-progrs">
-                  <div class="shop-pro">
-                    <span>150</span>
-                    <div class="progress" style="height:9px; width: 75%;">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="shop-items">
+                <div class="card">
+                  <img
+                    src="image/turmeric.png"
+                    class="card-img-top img-fluid"
+                    alt="turmeric"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Turmeric extract 95%</h5>
+                    <div class="shop-client">
+                      <img src="image/DavidCardona.png" class="img-fluid" alt="client" />
+                      <h5>DavidCardona</h5>
+                      <img src="image/tick.png" alt="tick" />
                     </div>
-                    <span>0</span>
-                  </div>
-                  <h5 class="shop-qlity">Quality Left : <span>25 Tons</span></h5>
-                </div>
 
-                <div class="shop-detail">
-                  <h5>$135/Ton</h5>
-                  <div class="shop-flag">
-                    <img src="image/flag.png" alt="flag">
-                    <span>CN</span>
+                    <div class="shop-progrs">
+                      <div class="shop-pro">
+                        <span>150</span>
+                        <div class="progress" style="height: 9px; width: 80%;">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 85%;"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <span>0</span>
+                      </div>
+                      <h5 class="shop-qlity">
+                        Quality Left : <span>25 Tons</span>
+                      </h5>
+                    </div>
+
+                    <div class="shop-detail">
+                      <h5>$135/Ton</h5>
+                      <div class="shop-flag">
+                        <img src="image/flag.png" class="img-fluid" alt="flag" />
+                        <span>CN</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
             </div>
-          </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="shop-items"> 
-            <div class="card">
-              <img src="image/premium Rice.png" class="card-img-top img-fluid" alt="rice">
-              <div class="card-body">
-                <h5 class="card-title">Premium Rice flour</h5>
-                <div class="shop-client">
-                  <img src="image/DavidCardona.png" alt="client">
-                  <h5>John doe</h5>
-                  <img src="image/tick.png" alt="tick">
-                </div>
-
-                <div class="shop-progrs">
-                  <div class="shop-pro">
-                    <span>80</span>
-                    <div class="progress" style="height:9px; width: 75%;">
-                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="col-lg-3 col-md-6">
+              <div class="shop-items">
+                <div class="card">
+                  <img
+                    src="image/premium Rice.png"
+                    class="card-img-top img-fluid"
+                    alt="rice"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Premium Rice flour</h5>
+                    <div class="shop-client">
+                      <img src="image/DavidCardona.png" class="img-fluid" alt="client" />
+                      <h5>John doe</h5>
+                      <img src="image/tick.png" alt="tick" />
                     </div>
-                    <span>0</span>
-                  </div>
-                  <h5 class="shop-qlity">Quality Left : <span>15 Tons</span></h5>
-                </div>
 
-                <div class="shop-detail">
-                  <h5>$300/Ton</h5>
-                  <div class="shop-flag">
-                    <img src="image/flag.png" alt="flag">
-                    <span>JP</span>
+                    <div class="shop-progrs">
+                      <div class="shop-pro">
+                        <span>80</span>
+                        <div class="progress" style="height: 9px; width: 80%;">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 95%;"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <span>0</span>
+                      </div>
+                      <h5 class="shop-qlity">
+                        Quality Left : <span>15 Tons</span>
+                      </h5>
+                    </div>
+
+                    <div class="shop-detail">
+                      <h5>$300/Ton</h5>
+                      <div class="shop-flag">
+                        <img src="image/flag.png" class="img-fluid" alt="flag" />
+                        <span>JP</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
             </div>
-          </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="shop-items"> 
-            <div class="card">
-              <img src="image/toor dal.png" class="card-img-top img-fluid" alt="turmeric">
-              <div class="card-body">
-                <h5 class="card-title">Toor dal / Pigeon peas</h5>
-                <div class="shop-client">
-                  <img src="image/DavidCardona.png" alt="client">
-                  <h5>Jai Doe</h5>
-                  <img src="image/tick.png" alt="tick">
-                </div>
-
-                <div class="shop-progrs">
-                  <div class="shop-pro">
-                    <span>200</span>
-                    <div class="progress" style="height:9px; width: 75%;">
-                      <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="col-lg-3 col-md-6">
+              <div class="shop-items">
+                <div class="card">
+                  <img
+                    src="image/toor dal.png"
+                    class="card-img-top img-fluid"
+                    alt="turmeric"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Toor dal / Pigeon peas</h5>
+                    <div class="shop-client">
+                      <img src="image/DavidCardona.png" class="img-fluid" alt="client" />
+                      <h5>Jai Doe</h5>
+                      <img src="image/tick.png" alt="tick" />
                     </div>
-                    <span>0</span>
-                  </div>
-                  <h5 class="shop-qlity">Quality Left : <span>100 Tons</span></h5>
-                </div>
 
-                <div class="shop-detail">
-                  <h5>$35/Ton</h5>
-                  <div class="shop-flag">
-                    <img src="image/flag.png" alt="flag">
-                    <span>IN</span>
+                    <div class="shop-progrs">
+                      <div class="shop-pro">
+                        <span>200</span>
+                        <div class="progress" style="height: 9px; width: 80%;">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 35%;"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <span>0</span>
+                      </div>
+                      <h5 class="shop-qlity">
+                        Quality Left : <span>100 Tons</span>
+                      </h5>
+                    </div>
+
+                    <div class="shop-detail">
+                      <h5>$35/Ton</h5>
+                      <div class="shop-flag">
+                        <img src="image/flag.png" class="img-fluid" alt="flag" />
+                        <span>IN</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
             </div>
-          </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="shop-items"> 
-            <div class="card">
-              <img src="image/wholesale Cardamom.png" class="card-img-top img-fluid" alt="Cardamom">
-              <div class="card-body">
-                <h5 class="card-title">Wholesale Cardamom</h5>
-                <div class="shop-client">
-                  <img src="image/DavidCardona.png" alt="client">
-                  <h5>Hector</h5>
-                  <img src="image/tick.png" alt="tick">
-                </div>
-
-                <div class="shop-progrs">
-                  <div class="shop-pro">
-                    <span>180</span>
-                    <div class="progress" style="height:9px; width: 75%;">
-                      <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="col-lg-3 col-md-6">
+              <div class="shop-items">
+                <div class="card">
+                  <img
+                    src="image/wholesale Cardamom.png"
+                    class="card-img-top img-fluid"
+                    alt="Cardamom"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Wholesale Cardamom</h5>
+                    <div class="shop-client">
+                      <img src="image/DavidCardona.png" class="img-fluid" alt="client" />
+                      <h5>Hector</h5>
+                      <img src="image/tick.png" alt="tick" />
                     </div>
-                    <span>0</span>
-                  </div>
-                  <h5 class="shop-qlity">Quality Left : <span>100 Tons</span></h5>
-                </div>
 
-                <div class="shop-detail">
-                  <h5>$135/Ton</h5>
-                  <div class="shop-flag">
-                    <img src="image/flag.png" alt="flag">
-                    <span>CL</span>
+                    <div class="shop-progrs">
+                      <div class="shop-pro">
+                        <span>180</span>
+                        <div class="progress" style="height: 9px; width: 80%;">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 40%;"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <span>0</span>
+                      </div>
+                      <h5 class="shop-qlity">
+                        Quality Left : <span>100 Tons</span>
+                      </h5>
+                    </div>
+
+                    <div class="shop-detail">
+                      <h5>$135/Ton</h5>
+                      <div class="shop-flag">
+                        <img src="image/flag.png" class="img-fluid" alt="flag" />
+                        <span>CL</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
             </div>
-          </div>
-          </div>
 
-          <!-- SECOND COLUMN -->
-          <div class="col-lg-3 col-md-6">
-            <div class="shop-it">
-            <div class="shop-items"> 
-            <div class="card">
-              <img src="image/ceylon-tea.png" class="card-img-top img-fluid" alt="ceylon-tea">
-              <div class="card-body">
-                <h5 class="card-title">Premium ceylon tea</h5>
-                <div class="shop-client">
-                  <img src="image/DavidCardona.png" alt="client">
-                  <h5>DavidCardona</h5>
-                  <img src="image/tick.png" alt="tick">
-                </div>
+            <!-- SECOND COLUMN -->
+            <div class="col-lg-3 col-md-6">
+              <div class="shop-it">
+                <div class="shop-items">
+                  <div class="card">
+                    <img
+                      src="image/ceylon-tea.png"
+                      class="card-img-top img-fluid"
+                      alt="ceylon-tea"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Premium ceylon tea</h5>
+                      <div class="shop-client">
+                        <img src="image/DavidCardona.png" class="img-fluid" alt="client" />
+                        <h5>DavidCardona</h5>
+                        <img src="image/tick.png" alt="tick" />
+                      </div>
 
-                <div class="shop-progrs">
-                  <div class="shop-pro">
-                    <span>150</span>
-                    <div class="progress" style="height:9px; width: 75%;">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="shop-progrs">
+                        <div class="shop-pro">
+                          <span>150</span>
+                          <div
+                            class="progress"
+                            style="height: 9px; width: 80%;"
+                          >
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 85%;"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <span>0</span>
+                        </div>
+                        <h5 class="shop-qlity">
+                          Quality Left : <span>25 Tons</span>
+                        </h5>
+                      </div>
+
+                      <div class="shop-detail">
+                        <h5>$135/Ton</h5>
+                        <div class="shop-flag">
+                          <img src="image/flag.png" class="img-fluid" alt="flag" />
+                          <span>CN</span>
+                        </div>
+                      </div>
                     </div>
-                    <span>0</span>
-                  </div>
-                  <h5 class="shop-qlity">Quality Left : <span>25 Tons</span></h5>
-                </div>
-
-                <div class="shop-detail">
-                  <h5>$135/Ton</h5>
-                  <div class="shop-flag">
-                    <img src="image/flag.png" alt="flag">
-                    <span>CN</span>
                   </div>
                 </div>
+              </div>
+            </div>
 
+            <div class="col-lg-3 col-md-6">
+              <div class="shop-it">
+                <div class="shop-items">
+                  <div class="card">
+                    <img
+                      src="image/assorted-dried trop.png"
+                      class="card-img-top img-fluid"
+                      alt="assorted-dried trop"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Assorted dried trop...</h5>
+                      <div class="shop-client">
+                        <img src="image/DavidCardona.png" class="img-fluid" alt="client" />
+                        <h5>John doe</h5>
+                        <img src="image/tick.png" alt="tick" />
+                      </div>
+
+                      <div class="shop-progrs">
+                        <div class="shop-pro">
+                          <span>180</span>
+                          <div
+                            class="progress"
+                            style="height: 9px; width: 80%;"
+                          >
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 32%;"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <span>0</span>
+                        </div>
+                        <h5 class="shop-qlity">
+                          Quality Left : <span>55 Tons</span>
+                        </h5>
+                      </div>
+
+                      <div class="shop-detail">
+                        <h5>$300/Ton</h5>
+                        <div class="shop-flag">
+                          <img src="image/flag.png" class="img-fluid" alt="flag" />
+                          <span>JP</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="shop-it">
+                <div class="shop-items">
+                  <div class="card">
+                    <img
+                      src="image/black-beans.png"
+                      class="card-img-top img-fluid"
+                      alt="black-beans"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Black Kidney Beans</h5>
+                      <div class="shop-client">
+                        <img src="image/DavidCardona.png" class="img-fluid" alt="client" />
+                        <h5>Jai Doe</h5>
+                        <img src="image/tick.png" alt="tick" />
+                      </div>
+
+                      <div class="shop-progrs">
+                        <div class="shop-pro">
+                          <span>200</span>
+                          <div
+                            class="progress"
+                            style="height: 9px; width: 80%;"
+                          >
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 65%;"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <span>0</span>
+                        </div>
+                        <h5 class="shop-qlity">
+                          Quality Left : <span>100 Tons</span>
+                        </h5>
+                      </div>
+
+                      <div class="shop-detail">
+                        <h5>$35/Ton</h5>
+                        <div class="shop-flag">
+                          <img src="image/flag.png" class="img-fluid" alt="flag" />
+                          <span>IN</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="shop-it">
+                <div class="shop-items">
+                  <div class="card">
+                    <img
+                      src="image/wheat.png"
+                      class="card-img-top img-fluid"
+                      alt="wheat"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Wheat</h5>
+                      <div class="shop-client">
+                        <img src="image/DavidCardona.png" class="img-fluid" alt="client" />
+                        <h5>Hector</h5>
+                        <img src="image/tick.png" alt="tick" />
+                      </div>
+
+                      <div class="shop-progrs">
+                        <div class="shop-pro">
+                          <span>180</span>
+                          <div
+                            class="progress"
+                            style="height: 9px; width: 80%;"
+                          >
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 95%;"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <span>0</span>
+                        </div>
+                        <h5 class="shop-qlity">
+                          Quality Left : <span>100 Tons</span>
+                        </h5>
+                      </div>
+
+                      <div class="shop-detail">
+                        <h5>$135/Ton</h5>
+                        <div class="shop-flag">
+                          <img src="image/flag.png" class="img-fluid" alt="flag" />
+                          <span>CL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="shop-it">
-            <div class="shop-items"> 
-            <div class="card">
-              <img src="image/assorted-dried trop.png" class="card-img-top img-fluid" alt="assorted-dried trop">
-              <div class="card-body">
-                <h5 class="card-title">Assorted dried trop...</h5>
-                <div class="shop-client">
-                  <img src="image/DavidCardona.png" alt="client">
-                  <h5>John doe</h5>
-                  <img src="image/tick.png" alt="tick">
-                </div>
-
-                <div class="shop-progrs">
-                  <div class="shop-pro">
-                    <span>180</span>
-                    <div class="progress" style="height:9px; width: 75%;">
-                      <div class="progress-bar" role="progressbar" style="width: 32%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>0</span>
-                  </div>
-                  <h5 class="shop-qlity">Quality Left : <span>55 Tons</span></h5>
-                </div>
-
-                <div class="shop-detail">
-                  <h5>$300/Ton</h5>
-                  <div class="shop-flag">
-                    <img src="image/flag.png" alt="flag">
-                    <span>JP</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
+        <div class="shop-title-bttn text-center">
+          <a href="#" class="btn">See All<i class="bi bi-arrow-right-short"></i></a>
         </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="shop-it">
-            <div class="shop-items"> 
-            <div class="card">
-              <img src="image/black-beans.png" class="card-img-top img-fluid" alt="black-beans">
-              <div class="card-body">
-                <h5 class="card-title">Black Kidney Beans</h5>
-                <div class="shop-client">
-                  <img src="image/DavidCardona.png" alt="client">
-                  <h5>Jai Doe</h5>
-                  <img src="image/tick.png" alt="tick">
-                </div>
-
-                <div class="shop-progrs">
-                  <div class="shop-pro">
-                    <span>200</span>
-                    <div class="progress" style="height:9px; width: 75%;">
-                      <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>0</span>
-                  </div>
-                  <h5 class="shop-qlity">Quality Left : <span>100 Tons</span></h5>
-                </div>
-
-                <div class="shop-detail">
-                  <h5>$35/Ton</h5>
-                  <div class="shop-flag">
-                    <img src="image/flag.png" alt="flag">
-                    <span>IN</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="shop-it">
-            <div class="shop-items"> 
-            <div class="card">
-              <img src="image/wheat.png" class="card-img-top img-fluid" alt="wheat">
-              <div class="card-body">
-                <h5 class="card-title">Wheat</h5>
-                <div class="shop-client">
-                  <img src="image/DavidCardona.png" alt="client">
-                  <h5>Hector</h5>
-                  <img src="image/tick.png" alt="tick">
-                </div>
-
-                <div class="shop-progrs">
-                  <div class="shop-pro">
-                    <span>180</span>
-                    <div class="progress" style="height:9px; width: 75%;">
-                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>0</span>
-                  </div>
-                  <h5 class="shop-qlity">Quality Left : <span>100 Tons</span></h5>
-                </div>
-
-                <div class="shop-detail">
-                  <h5>$135/Ton</h5>
-                  <div class="shop-flag">
-                    <img src="image/flag.png" alt="flag">
-                    <span>CL</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="shop-title-bttn text-center">
-        <a href="#"
-          ><button>See All<i class="bi bi-arrow-right-short"></i></button
-        ></a>
-      </div>
       </div>
     </section>
     <section class="about-us">
@@ -500,11 +617,11 @@
               <p>Best Farming Goods we provide to market</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-4 food-title-n d-flex justify-content-end align-self-center">
+          <div
+            class="col-lg-6 col-md-4 food-title-n d-flex justify-content-end align-self-center"
+          >
             <div class="about-title-bttn">
-              <a href="#"
-                ><button>About Us<i class="bi bi-arrow-right-short"></i></button
-              ></a>
+              <a href="#" class="btn">About Us<i class="bi bi-arrow-right-short"></i></a>
             </div>
           </div>
         </div>
@@ -512,40 +629,50 @@
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <div class="about-detail-one">
-                  <img src="image/seller.png" class="img-fluid" alt="seller">
-                   <div class="about-content-one">
-                    <div class="about-content-first">
-                      <h5>Benefit as Seller</h5>
-                      <h3>Join Farmsent today and directly supply goods to your consumers.</h3>
-                      <p>that will help to facilitate food trade and food security around the world. We will leverage blockchain to make sure the interests of farmers from all over the globe will be protected in the way they deserve.</p>
-                    </div>
+                <img src="image/seller.png" class="img-fluid" alt="seller" />
+                <div class="about-content-one">
+                  <div class="about-content-first">
+                    <h5>Benefit as Seller</h5>
+                    <h3>
+                      Join Farmsent today and directly supply goods to your
+                      consumers.
+                    </h3>
+                    <p>
+                      that will help to facilitate food trade and food security
+                      around the world. We will leverage blockchain to make sure
+                      the interests of farmers from all over the globe will be
+                      protected in the way they deserve.
+                    </p>
                   </div>
-                  <div class="about-bttn-one">
-                    <a href="#">
-                      <button>Join Now<i class="bi bi-arrow-right-short"></i></button>
-                    </a>
-                  </div>
+                </div>
+                <div class="about-bttn-one">
+                  <a href="#">Join Now<i class="bi bi-arrow-right-short"></i></a>
+                </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
               <div class="about-detail-two">
-                  <img src="image/buyer.png" class="img-fluid" alt="buyer">
-                   <div class="about-content-one">
-                    <div class="about-content-two">
-                      <h5>Benefit as Buyer</h5>
-                      <h3>Join Farmsent today and buy your products directly from Farmers.</h3>
-                      <p>that will help to facilitate food trade and food security around the world. We will leverage blockchain to make sure the interests of farmers from all over the globe will be protected in the way they deserve.</p>
-                    </div>
+                <img src="image/buyer.png" class="img-fluid" alt="buyer" />
+                <div class="about-content-one">
+                  <div class="about-content-two">
+                    <h5>Benefit as Buyer</h5>
+                    <h3>
+                      Join Farmsent today and buy your products directly from
+                      Farmers.
+                    </h3>
+                    <p>
+                      that will help to facilitate food trade and food security
+                      around the world. We will leverage blockchain to make sure
+                      the interests of farmers from all over the globe will be
+                      protected in the way they deserve.
+                    </p>
                   </div>
-                  <div class="about-bttn-two">
-                    <a href="#">
-                      <button>Join Now<i class="bi bi-arrow-right-short"></i></button>
-                    </a>
-                  </div>
+                </div>
+                <div class="about-bttn-two">
+                  <a href="#">Join Now<i class="bi bi-arrow-right-short"></i></a>
+                </div>
               </div>
             </div>
-         
-
           </div>
         </div>
       </div>
@@ -554,61 +681,83 @@
       <div class="container">
         <div class="wallet-title">
           <h5>How We Works</h5>
-          <p>Farmsent is a decentralized platform <br> for farmers and wholesalers.</p>
+          <p>
+            Farmsent is a decentralized platform <br />
+            for farmers and wholesalers.
+          </p>
         </div>
         <div class="wallet-common">
-        <div class="row">
-          <div class="col-lg-4 col-md-4">
-            <div class="wallet-one text-center">
-              <img src="image/to-do-list.png" class="img-fluid" alt="to-do-list">
-              <h5>List Ready?</h5>
-              <p>Choose from a wide range of essential products.</p>
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <div class="wallet-one text-center">
+                <img
+                  src="image/to-do-list.png"
+                  class="img-fluid"
+                  alt="to-do-list"
+                />
+                <h5>List Ready?</h5>
+                <p>Choose from a wide range <br> of essential products.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-4">
-            <div class="wallet-one text-center">
-              <img src="image/wallet.png" class="img-fluid" alt="wallet">
-              <h5>Connect to Wallet</h5>
-              <p>Our delivery will be at your door Fast and Secure</p>
+            <div class="col-lg-4 col-md-4">
+              <div class="wallet-one text-center">
+                <img src="image/wallet.png" class="img-fluid" alt="wallet" />
+                <h5>Connect to Wallet</h5>
+                <p>Our delivery will be at your <br> door Fast and Secure</p>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-4">
-            <div class="wallet-one text-center">
-              <img src="image/box.png" class="img-fluid" alt="to-do-list">
-              <h5>All Set</h5>
-              <p>Boom! You'll never have to wait for Essentials again</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      </div>
-    </section>
-    <section class="contact">
-      <div class="container">
-      <div class="contact-end" >
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <img src="image/download.png" alt="download" class="img-fluid">
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="contact-end-two">
-              <h3>Download the <br> Farmsent mobile app.</h3>
-              <p>Lean into that proplem translating our <br> vision of having a market leading platform</p>
-              <div class="contact-app">
-                 <!-- <div class="contact-app-one">
-                  <a href="#"><i class="bi bi-apple"></i>  </a>
-                 </div> -->
-                  <a href="#"><img src="image/app-store.svg" class="img-fluid app-store" alt="app-store"></a> 
-                  <a href="#"><img src="image/google-play.svg" class="img-fluid google-play" alt="google-play"></a>  
+            <div class="col-lg-4 col-md-4">
+              <div class="wallet-one text-center">
+                <img src="image/box.png" class="img-fluid" alt="to-do-list" />
+                <h5>All Set</h5>
+                <p>Boom! You'll never have to <br> wait for Essentials again</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="contact-end">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <img src="image/download.png" alt="download" class="img-fluid" />
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="contact-end-two">
+                <h3>
+                  Download the <br />
+                  Farmsent mobile app.
+                </h3>
+                <p>
+                  Lean into that proplem translating our <br />
+                  vision of having a market leading platform
+                </p>
+                <div class="contact-app">
+                  <!-- <div class="contact-app-one">
+                  <a href="#"><i class="bi bi-apple"></i>  </a>
+                 </div> -->
+                  <a href="#"
+                    ><img
+                      src="image/app-store.svg"
+                      class="img-fluid app-store"
+                      alt="app-store"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="image/google-play.svg"
+                      class="img-fluid google-play"
+                      alt="google-play"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="footer">
       <div class="container">
@@ -616,16 +765,16 @@
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <div class="footer-content">
-                <img src="image/logo-light.svg" alt="logo" class="img-fluid">
+                <img src="image/logo-light.svg" alt="logo" class="img-fluid" />
                 <h5>Contact Us:</h5>
                 <a href="#">hello@farmsent.io</a>
                 <ul>
                   <li><a href="#">Products</a></li>
-                   <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                     <li><a href="#">About Us</a></li>
-                      <li><a href="#">Contact</a></li>
-                       <li><a href="#">Profile</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Profile</a></li>
                 </ul>
               </div>
             </div>
@@ -633,41 +782,107 @@
               <div class="footer-content-two">
                 <div class="footer-icon">
                   <ul>
-                    <a href="#"><li><img src="image/facebook.png" class="img-fluid" alt="facebook"></li></a>
-                    <a href="#"><li><img src="image/twitter.png" class="img-fluid" alt="twitter"></li></a>
-                    <a href="#"><li><img src="image/linked-in.png" class="img-fluid" alt="linked-in"></li></a>
-                    <a href="#"><li class="icon-last"><img src="image/telegram.png" class="img-fluid" alt="telegram"></li></a>
+                    <a href="#"
+                      ><li>
+                        <img
+                          src="image/facebook.png"
+                          class="img-fluid"
+                          alt="facebook"
+                        /></li
+                    ></a>
+                    <a href="#"
+                      ><li>
+                        <img
+                          src="image/twitter.png"
+                          class="img-fluid"
+                          alt="twitter"
+                        /></li
+                    ></a>
+                    <a href="#"
+                      ><li>
+                        <img
+                          src="image/linked-in.png"
+                          class="img-fluid"
+                          alt="linked-in"
+                        /></li
+                    ></a>
+                    <a href="#"
+                      ><li class="icon-last">
+                        <img
+                          src="image/telegram.png"
+                          class="img-fluid"
+                          alt="telegram"
+                        /></li
+                    ></a>
                   </ul>
                 </div>
                 <div class="footer-two-para">
                   <h5>Keep Updated</h5>
-                  <p>Join our mailing list to stay in the loop with our newest feature releases and tips and tricks.</p>
+                  <p>
+                    Join our mailing list to stay in the loop with our newest
+                    feature releases and tips and tricks.
+                  </p>
                 </div>
                 <div class="footer-for">
-                <form action="#">
-                  <input type="email" placeholder="Enter your Email Address"/>
-                </form>
-                <a href="#">Sign Up</a>
-              </div>
-              <div class="footer-to-end">
-              <ul>
-                <a href="#"><li>Terms of use</li></a>
-                <a href="#"><li>Copyright</li></a>
-                <a href="#" class="privcy"><li>Privacy Policy</li></a>
-              </ul>
-            </div>
+                  <form action="#">
+                    <input
+                      type="email"
+                      placeholder="Enter your Email Address"
+                    />
+                  </form>
+                  <a href="#">Sign Up</a>
                 </div>
-                  
-
-
+                <div class="footer-to-end">
+                  <ul>
+                    <li> <a href="#">Terms of use</a></li>
+                    <li> <a href="#">Copyright</a></li>
+                    <li> <a href="#" class="privcy">Privacy Policy</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+          <!-- Back to top button -->
+          <button
+          type="button"
+          class="btn btn-floating btn-lg"
+          id="btn-back-to-top"
+          >
+          <i class="fas fa-arrow-up"></i>
+          </button>
         </div>
       </div>
     </section>
+
+    <!-- Back to top button -->
+    <script>
+      //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+
+
   </body>
 </html>
-
-
-                   
