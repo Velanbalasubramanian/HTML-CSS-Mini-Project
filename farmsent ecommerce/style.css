@@ -18,11 +18,9 @@ p {
   letter-spacing: 0;
 }
 /* NAVBAR START */
-/* .sticky-top{
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
+.fixed-top {
+  box-shadow: 0 0 5px #0000005e;
+}
 nav .container-fluid {
   margin-left: 139px;
   margin-right: 139px;
@@ -36,7 +34,7 @@ nav .container-fluid {
   background-color: white;
 }
 .navbar-brand {
-  --bs-navbar-brand-margin-end: 171px;
+  /* --bs-navbar-brand-margin-end: 171px; */
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -90,6 +88,16 @@ nav .container-fluid {
   color: #60311b;
   border-bottom: 2px solid #60311b;
 }
+.navbar-toggler:focus {
+  box-shadow: 0 0 0;
+}
+.navbar-toggler:hover{
+  background: #60311b;
+  /* color: #e8d3c6; */
+}
+.navbar-toggler-icon:hover{
+  filter: invert(1);
+}
 /* NAVBAR END */
 
 .banner-content {
@@ -119,7 +127,6 @@ nav .container-fluid {
 .banner-content-bttn .Seller-bttn {
   color: #ffffff;
   background: #ac7046;
-  border: 1px solid transparent;
   padding: 17px 78px 17px 23px;
   position: relative;
   border-radius: 10px;
@@ -128,13 +135,12 @@ nav .container-fluid {
   margin-right: 30px;
 }
 .banner-content-bttn .Seller-bttn:hover {
-  background: #ac70451a;
-  color: #ac7045;
-  border: 1px solid #ac7045;
+  background: #60311b;
+  color: #e8d3c6;
 }
 .banner-content-bttn .Seller-bttn:hover i {
-  background: #ac7046;
-  color: #e8d3c6;
+  background: #e8d3c6;
+  color: #60311b;
 }
 .banner-content-bttn .Seller-bttn i {
   position: absolute;
@@ -162,8 +168,8 @@ nav .container-fluid {
   font-size: 22px;
 }
 .banner-content-bttn .Buyer-bttn:hover {
-  background: #ac7046;
-  color: #ffffff;
+  background: #60311b;
+  color: #e8d3c6;
 }
 .banner-content-bttn .Buyer-bttn i {
   position: absolute;
@@ -182,8 +188,8 @@ nav .container-fluid {
   align-items: center;
 }
 .banner-content-bttn .Buyer-bttn:hover i {
-  color: #60311b;
   background: #e8d3c6;
+  color: #60311b;
 }
 
 /* FOOD */
@@ -213,11 +219,11 @@ nav .container-fluid {
   border: none;
 }
 .food-title-bttn a:hover {
-  background-color: #e8d3c6;
-  color: #ac7046;
+  background: #60311b;
+  color: #e8d3c6;
 }
 .food-title-bttn a:hover i {
-  color: #60311b;
+  color: #e8d3c6;
 }
 .food-title-bttn a i {
   position: absolute;
@@ -232,7 +238,8 @@ nav .container-fluid {
 }
 .food-detail {
   background: #231f1b;
-  opacity: 1;
+  width: 200px;
+  height: 200px;
 }
 .food-items-two {
   padding-top: 24px;
@@ -380,11 +387,11 @@ nav .container-fluid {
   border: none;
 }
 .shop-title-bttn a:hover {
-  background-color: #e8d3c6;
-  color: #ac7046;
+  background: #60311b;
+  color: #e8d3c6;
 }
 .shop-title-bttn a:hover i {
-  color: #60311b;
+  color: #e8d3c6;
 }
 .shop-title-bttn a i {
   position: absolute;
@@ -427,11 +434,11 @@ nav .container-fluid {
   text-decoration: none;
 }
 .about-title-bttn a:hover {
-  background-color: #e8d3c6;
-  color: #ac7046;
+  background: #60311b;
+  color: #e8d3c6;
 }
 .about-title-bttn a:hover i {
-  color: #60311b;
+  color: #e8d3c6;
 }
 .about-title-bttn a i {
   position: absolute;
@@ -668,6 +675,9 @@ nav .container-fluid {
   line-height: 33px;
   color: #ffffff;
 }
+.footer-content a:hover{
+  color: #ac7046;;
+}
 .footer-content ul {
   padding-top: 62px;
   padding-left: 0;
@@ -681,7 +691,7 @@ nav .container-fluid {
   list-style: none;
 }
 .footer-content ul li a:hover {
-  color: #60311b;
+  color: #ac7046;
 }
 .footer-icon ul {
   padding-left: 0;
@@ -752,8 +762,8 @@ nav .container-fluid {
   padding: 18px 38px 17px 38px;
 }
 .footer-for a:hover {
-  background-color: #f9f3ef;
-  color: #ac7046;
+  background: #60311b;
+  color: #e8d3c6;
 }
 .footer-to-end ul {
   padding-top: 59px;
@@ -769,7 +779,7 @@ nav .container-fluid {
   color: #ffffff;
 }
 .footer-to-end ul li a:hover {
-  color: #60311b;
+  color: #ac7046;
 }
 .footer-to-end ul a {
   padding-right: 60px;
@@ -789,15 +799,15 @@ nav .container-fluid {
   border: none;
 }
 #btn-back-to-top:hover {
-  background-color: #e8d3c6;
-  color: #ac7046;
+  background: #60311b;
+  color: #e8d3c6;
 }
 
 @media screen and (max-width: 1600px) {
   /* NAVBAR START  */
-  .navbar-brand {
+  /* .navbar-brand {
     --bs-navbar-brand-margin-end: 125px;
-  }
+  } */
   .nav-item {
     padding-right: 55px;
   }
@@ -816,9 +826,9 @@ nav .container-fluid {
     margin-left: 50px;
     margin-right: 50px;
   }
-  .navbar-brand {
+  /* .navbar-brand {
     --bs-navbar-brand-margin-end: 115px;
-  }
+  } */
   .bttn-icon .bttn-link {
     padding: 13px 27px 12px 28px;
   }
@@ -863,9 +873,9 @@ nav .container-fluid {
 }
 @media screen and (max-width: 1340px) {
   /* NAVBAR */
-  .navbar-brand {
+  /* .navbar-brand {
     --bs-navbar-brand-margin-end: 60px;
-  }
+  } */
   .nav-item {
     padding-right: 45px;
   }
@@ -1032,9 +1042,9 @@ nav .container-fluid {
     padding-right: 25px;
     font-size: 14px;
   }
-  .navbar-brand {
+  /* .navbar-brand {
     --bs-navbar-brand-margin-end: 40px;
-  }
+  } */
   nav .container-fluid {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1127,12 +1137,12 @@ nav .container-fluid {
   .food-items {
     padding-top: 45px;
   }
-  .food-items-two {
+  /* .food-items-two {
     padding-top: 20px;
     padding-bottom: 16px;
-  }
+  } */
   .food-items-one {
-    padding: 20px 0px 0px 0px;
+    padding: 14px 0px 0px 0px;
   }
   .food-items-two a {
     font-size: 22px;
@@ -1144,7 +1154,18 @@ nav .container-fluid {
   .gx-5 {
     --bs-gutter-x: 2rem;
   }
-
+  .food-detail {
+    width: 150px;
+    height: 150px;
+  }
+  .food-items-one img {
+    width: 70px;
+    height: 70px;
+  }
+  .food-items-two {
+    padding-top: 16px;
+    padding-bottom: 0px;
+  }
   /* SHOP */
   .shop-title h2 {
     font-size: 40px;
@@ -1334,9 +1355,9 @@ nav .container-fluid {
 }
 @media screen and (max-width: 1024px) {
   /* NAVBAR START  */
-  .navbar-brand {
+  /* .navbar-brand {
     --bs-navbar-brand-margin-end: 41px;
-  }
+  } */
   .nav-item {
     padding-right: 15px;
   }
@@ -1362,7 +1383,7 @@ nav .container-fluid {
     --bs-gutter-x: 2rem;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   /* NAVBAR START  */
   nav .container-fluid {
     margin-top: 16px;
@@ -1371,7 +1392,7 @@ nav .container-fluid {
   .nav-item {
     padding-top: 15px;
   }
- 
+
   /* NAVBAR END  */
   /* BANNER CONTENT */
   .banner-content {
@@ -1410,15 +1431,38 @@ nav .container-fluid {
     top: 6px;
     font-size: 36px;
   }
-  .food-items .g-5, .gx-5 {
+  .food-items .g-5,
+  .gx-5 {
     --bs-gutter-x: 2rem;
   }
-  .food-items-two {
-    padding-top: 12px;
+  /* .food-items-two {
+    padding-top: 8px;
     padding-bottom: 8px;
-  }
-  .food-items-one {
+  } */
+  /* .food-items-one {
     padding: 12px 0px 0px 0px;
+  } */
+  .food-items-two {
+    padding-top: 18px;
+  }
+  .food-items-one img {
+    width: 60px;
+    height: 60px;
+  }
+  .food-items-two a {
+    font-size: 18px;
+  }
+  .food-title-bttn a {
+    font-size: 18px;
+  }
+  .food-title-bttn a i {
+    top: 8px;
+    right: 10px;
+    font-size: 36px;
+  }
+  .food-detail {
+    width: 144px;
+    height: 144px;
   }
 
   /* SHOP */
@@ -1630,7 +1674,7 @@ nav .container-fluid {
   nav .container-fluid {
     margin-top: 14px;
     margin-bottom: 14px;
-}
+  }
   /* NAVBAR END  */
   /* BANNER CONTENT */
   .banner-content {
@@ -1699,7 +1743,19 @@ nav .container-fluid {
     right: 2px;
     font-size: 32px;
   }
-  
+  .food-items .g-5,
+  .gx-5 {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
+  }
+  .food-items .g-5,
+  .gx-5 {
+    --bs-gutter-x: 2rem;
+  }
+  .food-items-two a {
+    font-size: 16px;
+  }
+
   /* SHOP */
   .shop-items .card-body {
     padding: 12px;
@@ -1767,14 +1823,15 @@ nav .container-fluid {
   /* WALLET */
   .wallet-title p {
     font-size: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .wallet-one p {
     margin-bottom: 35px;
+    line-height: 22px;
   }
   .wallet-one h5 {
     font-size: 18px;
-    padding-top: 8px;
+    padding-top: 0px;
   }
 
   .contact-end {
@@ -1794,12 +1851,9 @@ nav .container-fluid {
     padding-top: 0px;
     padding-bottom: 20px;
   }
-  .contact-end .row{
+  .contact-end .row {
     flex-direction: column-reverse;
   }
-
-
-
 }
 @media screen and (max-width: 640px) {
   /* NAVBAR START  */
@@ -1809,9 +1863,31 @@ nav .container-fluid {
     margin-top: 14px;
   }
   /* NAVBAR END  */
- 
+
+  /* FOOD */
+  .food-items-two {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .food-items .g-5, .gx-5 {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+  .food-detail {
+     width: 130px; 
+     height: 130px;
+  }
+
+  /* WALLET */
+  .wallet-one img{
+    width: 76px;
+    height: 76px;
+  }
+
+
+
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   nav .container-fluid {
     margin-left: 15px;
     margin-right: 15px;
@@ -1859,7 +1935,8 @@ nav .container-fluid {
     font-size: 15px;
   }
   .food-items {
-    padding-top: 30px;
+    padding-top: 25px;
+    /* padding: 25px 40px 0px 40px; */
   }
   .food-items-two a {
     font-size: 16px;
@@ -1867,9 +1944,27 @@ nav .container-fluid {
   .food {
     padding-bottom: 102px;
   }
-  .food-items .g-5, .gx-5 {
+  .food-items .g-5,
+  .gx-5 {
     --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
   }
+  .food .food-title-n {
+    justify-content: left !important;
+  }
+  .food-title p {
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 25px;
+  }
+  /* .food-detail {
+    width: 100%;
+    height: auto;
+  } */
+  .food-items .row .col{
+    
+  }
+
 
   /* SHOP */
   .shop-title h2 {
@@ -1905,9 +2000,9 @@ nav .container-fluid {
     font-size: 30px;
   }
   .about-common {
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 95px;
-  }  
+  }
   .about-content-first h5 {
     font-size: 16px;
   }
@@ -1934,6 +2029,12 @@ nav .container-fluid {
     top: -4px;
     left: 85px;
     font-size: 32px;
+  }
+  .about-us .food-title-n {
+    justify-content: left !important;
+  }
+  .about-title p {
+    padding-bottom: 25px;
   }
 
   /* WALLET */
@@ -1978,8 +2079,6 @@ nav .container-fluid {
   .footer {
     padding-bottom: 55px;
   }
-
-
 }
 @media screen and (max-width: 480px) {
   /* NAVBAR START  */
@@ -2005,103 +2104,190 @@ nav .container-fluid {
   }
   .banner-content {
     padding-top: 102px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
+
   .banner-content-bttn .Seller-bttn {
-    padding: 8px 30px 8px 8px;
+    padding: 5px 32px 5px 8px;
     font-size: 14px;
     margin-right: 14px;
   }
   .banner-content-bttn .Seller-bttn i {
-    top: 11px;
-    left: 100px;
+    top: 6px;
+    left: 101px;
     font-size: 24px;
     height: 25px;
     width: 24px;
   }
   .banner-content-bttn .Buyer-bttn {
-    padding: 8px 30px 8px 8px;
+    padding: 5px 32px 5px 8px;
     font-size: 14px;
   }
   .banner-content-bttn .Buyer-bttn i {
-    top: 11px;
-    left: 100px;
+    top: 6px;
+    left: 101px;
     font-size: 24px;
   }
+
+  /* FOOD */
+  .food {
+    padding-bottom: 72px;
+  }
+  .food-items .g-5,
+  .gx-5 {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+  .food-items-one img {
+    width: 40px;
+    height: 40px;
+  }
+  .food-items-two a {
+    font-size: 15px;
+  }
+  .food-items-two {
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+  /* SHOP */
+  .shop {
+    padding-bottom: 62px;
+    }
+  .shop-title p {
+    font-size: 14px;
+}
+
+  /* ABOUT */
   .about-title-bttn a {
     font-size: 14px;
   }
   .about-title-bttn a {
     font-size: 14px;
-    margin-top: 30px;
-}
-.about-common {
-  padding-bottom: 80px;
-}
-.about-title h2 {
-  font-size: 20px;
-}
-.about-title p {
-  font-size: 14px;
-}
+    margin-top: 20px;
+  }
+  .about-common {
+    padding-bottom: 60px;
+  }
+  .about-title h2 {
+    font-size: 20px;
+  }
+  .about-title p {
+    font-size: 14px;
+    padding-bottom: 0px;
+  }
+  .about-bttn-one a {
+    font-size: 16px;
+  }
+  .about-bttn-two a {
+    font-size: 16px;
+  }
+  .about-bttn-one a i {
+    top: -4px;
+    left: 75px;
+    font-size: 30px;
+  }
+  .about-bttn-two a i {
+    top: -4px;
+    left: 75px;
+    font-size: 30px;
+  }
 
-/* WALLET */
-.wallet-title h5 {
-  font-size: 18px;
-  padding-top: 80px;
-}
-.wallet-title p {
-  font-size: 16px;
-  margin-bottom: 35px;
-  line-height: 26px;
-}
-.contact-end-two h3 {
-  font-size: 26px;
-}
-.footer-two-para p {
-  margin-bottom: 15px;
-}
-.footer-content-two .footer-for form {
-  width: 68%;
-}
-.footer-to-end ul li a {
-  padding-right: 24px;
-  font-size: 14px;
-}
+  /* WALLET */
+  .wallet-title h5 {
+    font-size: 18px;
+    padding-top: 60px;
+  }
+  .wallet-title p {
+    font-size: 16px;
+    margin-bottom: 35px;
+    line-height: 26px;
+  }
+  .contact-end-two h3 {
+    font-size: 26px;
+  }
 
-
+  /* FOOTER */
+  .footer-two-para p {
+    margin-bottom: 15px;
+  }
+  .footer-content-two .footer-for form {
+    padding: 6px 0px 6px 6px;
+    font-size: 14px;
+    width: 68%;
+    margin-right: 12px;
+  }
+  .footer-for {
+    justify-content: left;
+  }
+  .footer-to-end ul li a {
+    padding-right: 22px;
+    font-size: 14px;
+  }
+  .footer-content img {
+    width: 200px;
+    height: 40px;
+  }
+  .footer-icon li img {
+    width: auto;
+    height: 25px;
+  }
+  .footer-common {
+    padding-top: 50px;
+  }
+  .btn-group-lg>.btn, .btn-lg {
+    --bs-btn-padding-y: 0.3rem;
+    --bs-btn-padding-x: 0.8rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-border-radius: 0.5rem;
+  }
+  .footer-for a {
+    font-size: 14px;
+    padding: 6px 15px 6px 15px;
+  }
+  
 
 }
 @media screen and (max-width: 320px) {
   .banner-content {
-    padding-top: 92px;
-    padding-bottom: 60px;
+    padding-top: 102px;
+    padding-bottom: 40px;
   }
-  .banner-content-bttn .Seller-bttn {
-    padding: 8px 35px 8px 10px;
-  }
-  .banner-content-bttn .Seller-bttn i {
-    top: 9px;
-    left: 104px;
-  }
-  .banner-content-bttn .Buyer-bttn {
-    padding: 8px 35px 8px 10px;
-    font-size: 14px;
-  }
-  .banner-content-bttn .Buyer-bttn i {
-    top: 9px;
-    left: 104px;
-  }
+  /* FOOD */
   .food-title-bttn a {
-    font-size: 15px;
-    margin-top: 20px; 
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 5px 36px 5px 12px;
+  }
+  .food-title-bttn a i {
+    top: 5px;
+    right: 2px;
+    font-size: 30px;
   }
   .food-items {
-    padding-top: 25px;
+    padding-top: 20px;
   }
   .food {
-    padding-bottom: 72px;
+    padding-bottom: 50px;
   }
+  .food-title p {
+    padding-bottom: 0px;
+    line-height: 0px;
+  }
+  .food-items-one {
+    padding: 8px 0px 0px 0px;
+  }
+  .food-items-two {
+    padding-top: 6px;
+  }
+  .food-items-one img {
+    width: 35px;
+    height: 35px;
+  }
+  .food-items-two a {
+    font-size: 14px;
+  }
+  
+  /* SHOP */
   .shop-title h2 {
     font-size: 26px;
   }
@@ -2110,13 +2296,59 @@ nav .container-fluid {
     margin-bottom: 15px;
   }
   .shop {
-    padding-bottom: 72px;
+    padding-bottom: 42px;
+  }
+  .shop-detail h5 {
+    font-size: 14px;
+  }
+  .shop-title-bttn a {
+    font-size: 14px;
+    padding: 5px 36px 5px 12px;
+  }
+  .shop-title-bttn a i {
+    top: 5px;
+    right: 4px;
+    font-size: 29px;
   }
 
   /* ABOUT */
+  .about-title h2 {
+    line-height: 40px;
+  }
   .about-common {
     padding-bottom: 70px;
   }
+  .about-title p {
+    padding-bottom: 0px;
+  }
+  .about-title-bttn a {
+    margin-top: 15px;
+    padding: 5px 36px 5px 12px;
+  }
+  .about-common {
+    padding-top: 20px;
+  }
+  .about-title-bttn a i {
+    top: 5px;
+    font-size: 29px;
+  }
+  .about-bttn-one a {
+    font-size: 15px;
+  }
+  .about-bttn-two a {
+    font-size: 15px;
+  }
+  .about-bttn-two a i {
+    top: -4px;
+    left: 70px;
+    font-size: 29px;
+  }
+  .about-bttn-one a i {
+    top: -4px;
+    left: 70px;
+    font-size: 29px;
+  }
+  /* WALLET */
   .wallet-title h5 {
     padding-top: 70px;
   }
@@ -2164,10 +2396,13 @@ nav .container-fluid {
   }
   .footer-content-two .footer-for form {
     font-size: 14px;
+    margin-right: 10px;
   }
   .footer-to-end ul li a {
     padding-right: 20px;
   }
-
+  .footer-icon ul li {
+    padding-right: 40px;
+  }
 
 }
