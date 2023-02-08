@@ -1947,7 +1947,7 @@ nav .container-fluid {
   .food-items .g-5,
   .gx-5 {
     --bs-gutter-x: 1rem;
-    --bs-gutter-y: 1rem;
+    --bs-gutter-y: 3rem;
   }
   .food .food-title-n {
     justify-content: left !important;
@@ -1961,8 +1961,13 @@ nav .container-fluid {
     width: 100%;
     height: auto;
   } */
+  .food-detail {
+    width: auto;
+    height: auto;
+  }
   .food-items .row .col{
-    
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
 
@@ -2136,7 +2141,7 @@ nav .container-fluid {
   .food-items .g-5,
   .gx-5 {
     --bs-gutter-x: 1rem;
-    --bs-gutter-y: 1rem;
+    --bs-gutter-y: 2rem;
   }
   .food-items-one img {
     width: 40px;
@@ -2145,10 +2150,15 @@ nav .container-fluid {
   .food-items-two a {
     font-size: 15px;
   }
-  .food-items-two {
+  /* .food-items-two {
     padding-top: 8px;
     padding-bottom: 0px;
+  } */
+  .food-items .row .col {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
   /* SHOP */
   .shop {
     padding-bottom: 62px;
@@ -2273,11 +2283,12 @@ nav .container-fluid {
     padding-bottom: 0px;
     line-height: 0px;
   }
-  .food-items-one {
+  /* .food-items-one {
     padding: 8px 0px 0px 0px;
-  }
+  } */
   .food-items-two {
     padding-top: 6px;
+    padding-bottom: 6px;
   }
   .food-items-one img {
     width: 35px;
@@ -2286,7 +2297,11 @@ nav .container-fluid {
   .food-items-two a {
     font-size: 14px;
   }
-  
+  .food-items .row .col {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   /* SHOP */
   .shop-title h2 {
     font-size: 26px;
