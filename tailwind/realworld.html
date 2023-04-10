@@ -14,12 +14,12 @@
     <nav class="p-8 bg-gray-200"> 
       <div class="container mx-auto 2xl:max-w-6xl xl:max-w-7xl">
         <div class="flex flex-wrap">
-          <a href="index.html">
+          <a href="index.html" class="my-auto sm:mb-0 mb-3">
             <img src="./images/realworld.png" class="lg:w-64 w-48" alt="logo" />
           </a>
 
           <div
-            class="ml-auto flex"
+            class="ml-auto my-auto"
           >
           <ul class="hidden lg:flex font-medium text-md">
             <li class="pr-5 my-auto">
@@ -58,19 +58,7 @@
               >
             </li>
           </ul>
-
-           <!-- md VIEW -->
-        <div class="hidden">
-          <ul class="lg:hidden font-bold text-gray-600 mx-auto">
-            <li class="mt-1"><a class="py-4" href="">Home</a></li>
-            <li class="mt-1"><a class="py-4" href="">About</a></li>
-            <li class="mt-1"><a class="py-4" href="">Services</a></li>
-            <li class="mt-1"><a class="py-4" href="">Portfolio</a></li>
-            <li class="mt-1"><a class="py-4" href="">About</a></li>
-          </ul>
-        </div>
-        <!-- md VIEW -->
-        <button class="lg:hidden border border-green-800 rounded-lg px-2 py-2 mr-2 hover:border-gray-50 hover:bg-gray-50">
+        <button class="lg:hidden border border-green-800 rounded-lg px-2 py-2 mr-2 hover:border-gray-50 hover:bg-gray-50" onclick="menuClick()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -86,7 +74,8 @@
             />
           </svg>
         </button>
-
+      </div>
+      
         <div class="border border-green-800 rounded-lg font-medium text-md hover:text-gray-600 lg:px-8 px-5 py-2 text-center flex" onclick="toggleModal()">
           <span>Connect Wallet</span>
         </div>
@@ -110,7 +99,17 @@
             </button>
           </div> -->
           </div>
-
+           <!-- md VIEW -->
+       <div class="hidden flex" id="mobileMenu">
+        <ul class="lg:hidden font-bold text-gray-600 mx-auto">
+          <li class="py-2"><a  href="">Home</a></li>
+          <li class="py-2"><a  href="">Services</a></li>
+          <li class="py-2"><a  href="">Portfolio</a></li>
+          <li class="py-2"><a  href="">About</a></li>
+          <li class="py-2"><a  href="">About</a></li>
+        </ul>
+      </div>
+      <!-- md VIEW -->
         
 
           <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modal">
@@ -146,7 +145,7 @@
             </div>
           </div>
 
-        </div>
+       
       </div>
     </nav>
     <section class="p-6 bg-gray-300">
@@ -247,11 +246,103 @@
         </div>
       </div>
     </section>
+
+    <!-- CAROUSEL -->
+    <section>
+        <div class="relative">
+          
+            <ul id="slider">
+              <li class="h-[50vh] relative">
+                <img src="./images/images1.jpg" class="h-full w-full object-cover" alt="">
+                <div class="absolute top-0 left-0 h-full w-full flex">
+                  <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Some big heading</h2>
+                </div>
+              </li>
+              <li class="h-[50vh] relative hidden">
+                <img src="./images/images2.jpg" class="h-full w-full object-cover" alt="">
+                <div class="absolute top-0 left-0 h-full w-full flex">
+                  <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Some big heading</h2>
+                </div>
+              </li>
+              <li class="h-[50vh] relative hidden">
+                <img src="./images/images3.jpg" class="h-full w-full object-cover" alt="">
+                <div class="absolute top-0 left-0 h-full w-full flex">
+                  <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Some big heading</h2>
+                </div>
+              </li>
+            </ul>
+          
+          <div class="absolute px-5 top-0 left-0 w-full h-full flex">
+            <div class="my-auto w-full flex justify-between">
+              <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>              
+              </button>
+              <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+                
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Connect wallet MODAL -->
     <script>
       function toggleModal() {
   document.getElementById('modal').classList.toggle('hidden')
 }
     </script>
+
+<!-- NAVBAR -->
+<script>
+  function menuClick() {
+    var menu = document.getElementById('mobileMenu');
+    if (menu.classList.contains('hidden')) {
+     menu.classList.remove('hidden');
+    } else {
+      menu.classList.add('hidden');
+    }
+  }
+</script>
+
+<!-- CAROUSEL -->
+<script>
+  currentSlideID = 1;
+  sliderElement = document.getElementById('slider');
+  totalSlides = sliderElement.childElementCount;
+
+
+  function next() {
+    if (totalSlides < currentSlideID) {
+      currentSlideID++;
+      showSlide()
+    }
+  }
+  function prev() {
+    if (currentSlideID > 1){
+      currentSlideID--;
+      showSlide()
+    }
+  }
+
+  function showSlide() {
+    slides = document.getElementById('slider').getElementByTagName('li');
+    for (let index = 0; index < totalSlides; index++) {
+      const element = slides[index];
+      if (currentSlideID===index+1){
+        element.classList.remove('hidden')
+      }else{
+        element.classList.add('hidden')
+      }
+    }
+  }
+</script>
+
+
 
   </body>
 </html>
