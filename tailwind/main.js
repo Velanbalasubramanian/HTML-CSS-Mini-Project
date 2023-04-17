@@ -8,12 +8,14 @@ currentSlideID = 1;
       currentSlideID++;
       showSlide()
     }
+    console.log(1);
   }
   function prev() {
     if (currentSlideID > 1){
       currentSlideID--;
       showSlide()
     }
+    console.log(1);
   }
 
   function showSlide() {

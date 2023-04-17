@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Realworld</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Carousel</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+  />
   </head>
   <body>
     <!-- CAROUSEL -->
@@ -35,12 +38,12 @@
           
           <div class="absolute px-5 top-0 left-0 w-full h-full flex">
             <div class="my-auto w-full flex justify-between">
-              <button  class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg" onclick="prev()">
+              <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                 </svg>              
               </button>
-              <button class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg"  onclick="next()">
+              <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -51,9 +54,10 @@
         </div>
     </section>
 
+   
 <!-- CAROUSEL -->
-<script src="carousel.js"></script>
 
+<script src="./main.js"></script>
 
 
   </body>
