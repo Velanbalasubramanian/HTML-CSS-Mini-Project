@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind css</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .bg-primary {
+          @apply bg-gradient-to-br 
+                from-purple-100 
+                to-pink-100 
+                via-cyan-100;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="w-full h-screen bg-gradient-to-br from-purple-100 to pink-100 via-cyan-100 p-12"
+    >
+      <div class="prose prose-lg">
+        <h1>Hi,I'm sri</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          eligendi ullam praesentium molestias perferendis, mollitia distinctio
+          sit nobis veritatis sint.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magnam
+          unde ipsum quas atque totam pariatur beatae, nulla veritatis
+          consequatur excepturi recusandae voluptas aperiam nobis quae! Sint aut
+          itaque assumenda!
+          <a href=""><strong>Complete Guide to CSS Flex & Grid.</strong> </a>
+        </p>
+      </div>
+      <div class="mt-12">
+        <a
+          href=""
+          class="px-8 py-3 rounded-md bg-[#1DA1F2] shadow-md-shadow-[#1DA1F2]/40 text-white hover:bg-sky-700"
+          >Follow on Twitter</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
