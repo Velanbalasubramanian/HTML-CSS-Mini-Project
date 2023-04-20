@@ -49,3 +49,12 @@
 .owl-nav button:focus {
     outline: none;
 }
+
+#customers-testimonials5 .owl-dots {
+  text-align: center;
+  padding-top: 0px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
