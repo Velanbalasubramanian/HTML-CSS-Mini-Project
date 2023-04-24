@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .owl-nav button.owl-prev {
+    left: 0;
+  }
+  .owl-nav button.owl-next {
+    right: 0;
+  }
+  
+  #customers-testimonials4 .owl-dots {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 3px;
+  }
+  .owl-dots button.owl-dot.active {
+    background-color: #000;
+  }
+  .owl-dots button.owl-dot:focus {
+    outline: none;
+  }
+  .owl-nav button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.38) !important;
+  }
+  /* span {
+      font-size: 70px;    
+      position: relative;
+      top: -5px;
+  } */
+  .owl-nav button:focus {
+      outline: none;
+  }
+  
+  #customers-testimonials5 .owl-dots {
+    text-align: center;
+    padding-top: 0px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+  
+  
+  /* accordian plus minus method ONE */
+  
+  label:after {
+    content: '\f055';
+    position: absolute;
+    right: 1em;
+    color: #000;
+    font-family: "FontAwesome"
+  }
+  
+  input:checked + label:after {
+    content: '\f056';
+    line-height: .8em;
+  }
+  
+  /* accordian plus minus method TWO "i - tag html use"
+  .fa-plus-circle{
+    display: block;
+  }
+  input:checked ~ .fa-plus-circle{
+    display: none;
+  }
+  .fa-minus-circle{
+    display: none;
+  }
+  input:checked ~ .fa-minus-circle{
+    display: block;
+  } */
+  
+  .accordion__content{
+    max-height: 0em;
+    transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  }
+  input[name='panel']:checked ~ .accordion__content {
+    max-height: 50em;
+  }
+  
