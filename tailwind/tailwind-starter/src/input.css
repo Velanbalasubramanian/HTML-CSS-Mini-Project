@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .owl-nav button {
     position: absolute;
     top: 50%;
@@ -99,3 +98,4 @@
     max-height: 50em;
   }
   
+

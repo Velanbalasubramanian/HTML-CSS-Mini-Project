@@ -1,79 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratice</title>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-  <link rel="stylesheet" href="output.css">
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
     <nav class="p-8 bg-gray-200">
-        <div class="mx-auto 2xl:max-w-6xl xl:max-w-7xl">
-          <div class="flex flex-wrap">
-            <a href="index.html" class="my-auto sm:mb-0 mb-3">
-              <img src="/images/realworld.png" class="lg:w-64 w-48" alt="logo" />
-            </a>
-  
-            <div class="ml-auto my-auto">
-              <ul class="hidden lg:flex font-medium text-md">
-                <li class="pr-5 my-auto">
-                  <a class="px-3 py-2 hover:text-gray-600" href="">Home</a>
-                </li>
-                <li class="pr-5 my-auto">
-                  <a class="px-3 py-2 hover:text-gray-600" href="">About</a>
-                </li>
-                <li class="pr-5 my-auto">
-                  <a class="px-3 py-2 hover:text-gray-600" href="">Services</a>
-                </li>
-                <li class="pr-5 my-auto">
-                  <a class="px-3 py-2 hover:text-gray-600" href="">Portfolio</a>
-                </li>
-                <li class="pr-5 my-auto">
-                  <a class="px-3 py-2 hover:text-gray-600" href="">About</a>
-                </li>
-              </ul>
-              <button
-                class="lg:hidden border border-green-800 rounded-lg px-2 py-2 mr-2 hover:border-gray-50 hover:bg-gray-50"
-                onclick="menuClick()"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-              </button>
-            </div>
-  
-            <div
-              class="border border-green-800 rounded-lg font-medium text-md hover:text-gray-600 lg:px-8 px-5 py-2 text-center flex"
-              onclick="toggleModal()"
+      <div class="mx-auto 2xl:max-w-6xl xl:max-w-7xl">
+        <div class="flex flex-wrap">
+          <a href="index.html" class="my-auto sm:mb-0 mb-3">
+            <img src="/images/realworld.png" class="lg:w-64 w-48" alt="logo" />
+          </a>
+
+          <div class="ml-auto my-auto">
+            <ul class="hidden lg:flex font-medium text-md">
+              <li class="pr-6 my-auto">
+                <a class="hover:text-gray-600" href="">Home</a>
+              </li>
+
+            
+              <li class="pr-5 my-auto ">
+                <a class="hover:text-gray-600 flex" href="">
+                  <span class="pr-1">About</span>
+                  <svg
+                    class="fill-current h-4 w-4 m-auto"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              
+
+              <li class="pr-5 my-auto">
+                <a class="hover:text-gray-600 flex" href="">
+                  <span class="pr-1">Services</span>
+                  <svg
+                    class="fill-current h-4 w-4 m-auto"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="pr-6 my-auto">
+                <a class="hover:text-gray-600" href="">Portfolio</a>
+              </li>
+              <li class="pr-6 my-auto">
+                <a class="hover:text-gray-600" href="">About</a>
+              </li>
+            </ul>
+            <button
+              class="lg:hidden border border-green-800 rounded-lg px-2 py-2 mr-2 hover:border-gray-50 hover:bg-gray-50"
+              onclick="menuClick()"
             >
-              <span>Connect Wallet</span>
-            </div>
-            <!-- <div class="border border-green-800 rounded-lg font-medium text-md hover:text-gray-600 lg:px-8 px-2 lg:py-2 py-0  text-center flex" onclick="toggleModal()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="border border-green-800 rounded-lg font-medium text-md hover:text-gray-600 lg:px-8 px-5 py-2 text-center flex"
+            onclick="toggleModal()"
+          >
+            <span>Connect Wallet</span>
+          </div>
+          <!-- <div class="border border-green-800 rounded-lg font-medium text-md hover:text-gray-600 lg:px-8 px-2 lg:py-2 py-0  text-center flex" onclick="toggleModal()">
               <span class="hidden lg:block">Connect Wallet</span>
               <button class="lg:hidden my-auto">
                 <svg
@@ -92,482 +119,586 @@
                 </svg>
               </button>
             </div> -->
-          </div>
-          <!-- md VIEW -->
-          <div class="hidden" id="mobileMenu">
-            <ul class="lg:hidden font-bold text-gray-600 mx-auto">
-              <li class="py-2"><a href="">Home</a></li>
-              <li class="py-2"><a href="">Services</a></li>
-              <li class="py-2"><a href="">Portfolio</a></li>
-              <li class="py-2"><a href="">About</a></li>
-              <li class="py-2"><a href="">About</a></li>
-            </ul>
-          </div>
-          <!-- md VIEW -->
-  
+        </div>
+        <!-- md VIEW -->
+        <div class="hidden" id="mobileMenu">
+          <ul class="lg:hidden font-bold text-gray-600 mx-auto">
+            <li class="py-2"><a href="">Home</a></li>
+            <li class="py-2"><a href="">Services</a></li>
+            <li class="py-2"><a href="">Portfolio</a></li>
+            <li class="py-2"><a href="">About</a></li>
+            <li class="py-2"><a href="">About</a></li>
+          </ul>
+        </div>
+        <!-- md VIEW -->
+
+        <div
+          class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+          id="modal"
+        >
           <div
-            class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
-            id="modal"
+            class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0"
           >
             <div
-              class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+              class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-headline"
             >
-              <div
-                class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="modal-headline"
-              >
-                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-8">
-                  <div class="py-3">
-                    <img
-                      src="/images/realworld.png"
-                      class="lg:w-full w-48"
-                      alt="logo"
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-8">
+                <div class="py-3">
+                  <img
+                    src="/images/realworld.png"
+                    class="lg:w-full w-48"
+                    alt="logo"
+                  />
+                </div>
+                <button onclick="toggleModal()" class="absolute right-2 top-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
+                  </svg>
+                </button>
+                <h3
+                  class="text-2xl font-semibold text-gray-600 md:py-5 py-3 text-center"
+                >
+                  Signin
+                </h3>
+                <a
+                  href=""
+                  class="flex justify-between p-3 border border-black rounded-2xl mb-3"
+                  >MetaMask
+                  <div>
+                    <img src="/images/metamask.svg" alt="metamask" />
                   </div>
-                  <button onclick="toggleModal()" class="absolute right-2 top-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </button>
-                  <h3
-                    class="text-2xl font-semibold text-gray-600 md:py-5 py-3 text-center"
-                  >
-                    Signin
-                  </h3>
-                  <a
-                    href=""
-                    class="flex justify-between p-3 border border-black rounded-2xl mb-3"
-                    >MetaMask
-                    <div>
-                      <img src="/images/metamask.svg" alt="metamask" />
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    class="flex justify-between p-3 border border-black rounded-2xl"
-                    >Wallet Connect
-                    <div>
-                      <img src="/images/walletconnect.svg" alt="walletconnect" />
-                    </div>
-                  </a>
-                </div>
+                </a>
+                <a
+                  href=""
+                  class="flex justify-between p-3 border border-black rounded-2xl"
+                  >Wallet Connect
+                  <div>
+                    <img src="/images/walletconnect.svg" alt="walletconnect" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </nav>
-      <section class="p-6 bg-gray-300">
-        <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
-          <div class="py-16">
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-              <div class="bg-gray-50 rounded-md p-10 shadow-lg">
-                <div class="text-center">
-                  <img
-                    src="/images/create-collection-one.png"
-                    alt="create-collection-one"
-                    class="mb-6"
-                  />
-                  <a
-                    class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
-                    href=""
-                  >
-                    Connect Wallet
-                  </a>
-                </div>
+      </div>
+    </nav>
+    <section class="p-6 bg-gray-300">
+      <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
+        <div class="py-16">
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+              <div class="text-center">
+                <img
+                  src="/images/create-collection-one.png"
+                  alt="create-collection-one"
+                  class="mb-6"
+                />
+                <a
+                  class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
+                  href=""
+                >
+                  Connect Wallet
+                </a>
               </div>
-              <div class="bg-gray-50 rounded-md p-10 shadow-lg">
-                <div class="text-center">
-                  <img
-                    src="/images/edit-collection-two.png"
-                    alt="edit-collection-two"
-                    class="mb-6"
-                  />
-                  <a
-                    class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
-                    href=""
-                  >
-                    Connect Wallet
-                  </a>
-                </div>
+            </div>
+            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+              <div class="text-center">
+                <img
+                  src="/images/edit-collection-two.png"
+                  alt="edit-collection-two"
+                  class="mb-6"
+                />
+                <a
+                  class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
+                  href=""
+                >
+                  Connect Wallet
+                </a>
               </div>
-              <div class="bg-gray-50 rounded-md p-10 shadow-lg">
-                <div class="text-center">
-                  <img
-                    src="/images/create-nft-three.png"
-                    alt="create-nft-three"
-                    class="mb-6"
-                  />
-                  <a
-                    class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
-                    href=""
-                  >
-                    Connect Wallet
-                  </a>
-                </div>
+            </div>
+            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+              <div class="text-center">
+                <img
+                  src="/images/create-nft-three.png"
+                  alt="create-nft-three"
+                  class="mb-6"
+                />
+                <a
+                  class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
+                  href=""
+                >
+                  Connect Wallet
+                </a>
               </div>
-              <div class="bg-gray-50 rounded-md p-10 shadow-lg">
-                <div class="text-center">
-                  <img
-                    src="/images/edit-nft-four.png"
-                    alt="edit-nft-four"
-                    class="mb-6"
-                  />
-                  <a
-                    class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
-                    href=""
-                  >
-                    Connect Wallet
-                  </a>
-                </div>
+            </div>
+            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+              <div class="text-center">
+                <img
+                  src="/images/edit-nft-four.png"
+                  alt="edit-nft-four"
+                  class="mb-6"
+                />
+                <a
+                  class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
+                  href=""
+                >
+                  Connect Wallet
+                </a>
               </div>
-              <div class="bg-gray-50 rounded-md p-10 shadow-lg">
-                <div class="text-center">
-                  <img
-                    src="/images/burn-nft-six.png"
-                    alt="burn-nft-five"
-                    class="mb-6"
-                  />
-                  <a
-                    class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
-                    href=""
-                  >
-                    Connect Wallet
-                  </a>
-                </div>
+            </div>
+            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+              <div class="text-center">
+                <img
+                  src="/images/burn-nft-six.png"
+                  alt="burn-nft-five"
+                  class="mb-6"
+                />
+                <a
+                  class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
+                  href=""
+                >
+                  Connect Wallet
+                </a>
               </div>
-              <div class="bg-gray-50 rounded-md p-10 shadow-lg">
-                <div class="text-center">
-                  <img
-                    src="/images/burn-nft-six.png"
-                    alt="burn-nft-six"
-                    class="mb-6"
-                  />
-                  <a
-                    class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
-                    href=""
-                  >
-                    Connect Wallet
-                  </a>
-                </div>
+            </div>
+            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+              <div class="text-center">
+                <img
+                  src="/images/burn-nft-six.png"
+                  alt="burn-nft-six"
+                  class="mb-6"
+                />
+                <a
+                  class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
+                  href=""
+                >
+                  Connect Wallet
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="p-6 bg-[#f3f6f9]">
-        <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
-          <div class="py-24">
-            <h4 class="text-2xl font-sans text-[#767676] pb-4 text-center">Case Study</h4>
-            <p class="text-4xl text-[#192a44] font-bold pb-8 text-center">
-              We love transforming product ideas to digital realities
-            </p>
-            <div class="bg-[#23418e] rounded-2xl">
-              <div id="customers-testimonials4" class="owl-carousel">
-                <div class="item">
-                  <div class="grid grid-cols-12 px-8 pt-8 transition-all ease-in-out" >
-                    <div class="col-span-12 md:col-span-6">
-                      <img src="/images/our-park.png" alt="our-park" />
-                    </div>
-  
-                    <div class="col-span-12 md:col-span-6">
-                    <div class="px-10">
-                      <h4 class="text-2xl font-sans text-[#fff8f8]">Eatzilla</h4>
-                      <h2 class="text-3xl font-bold text-[#fff8f8] pb-6">
-                        Eatzilla, an end-to-end food delivery solution
-                      </h2>
-                      <p class="text-xl font-sans font-semibold text-[#fff8f8]">
-                        Power your food delivery startup with a highly
-                        customizable, prebuilt app solution that works seamlessly.
-                      </p>
-                      <div class="flex justify-between pt-12">
-                        <div>
-                          <p class="text-xl font-semibold text-[#fff8f8] pb-3">
-                            Country
-                          </p>
-                          <h4 class="text-xl font-medium text-[#fff8f8]">
-                            India
-                          </h4>
-                        </div>
-                        <div>
-                          <p class="text-xl font-semibold text-[#fff8f8] pb-3">
-                            This is a Sparkout product
-                          </p>
-                          <h4 class="text-xl font-medium text-[#fff8f8]">
-                            Delivery Dispatch Solution
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="grid grid-cols-12 px-8 pt-8 transition-all ease-in-out" >
-                    <div class="col-span-12 md:col-span-6">
-                      <img src="/images/our-park.png" alt="our-park" />
-                    </div>
-  
-                    <div class="col-span-12 md:col-span-6">
-                    <div class="px-10">
-                      <h4 class="text-2xl font-sans text-[#fff8f8]">Eatzilla</h4>
-                      <h2 class="text-3xl font-bold text-[#fff8f8] pb-6">
-                        Eatzilla, an end-to-end food delivery solution
-                      </h2>
-                      <p class="text-xl font-sans font-semibold text-[#fff8f8]">
-                        Power your food delivery startup with a highly
-                        customizable, prebuilt app solution that works seamlessly.
-                      </p>
-                      <div class="flex justify-between pt-12">
-                        <div>
-                          <p class="text-xl font-semibold text-[#fff8f8] pb-3">
-                            Country
-                          </p>
-                          <h4 class="text-xl font-medium text-[#fff8f8]">
-                            India
-                          </h4>
-                        </div>
-                        <div>
-                          <p class="text-xl font-semibold text-[#fff8f8] pb-3">
-                            This is a Sparkout product
-                          </p>
-                          <h4 class="text-xl font-medium text-[#fff8f8]">
-                            Delivery Dispatch Solution
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
+      </div>
+    </section>
+    <section class="p-6 bg-[#f3f6f9]">
+      <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
         <div class="py-24">
-          <div class="text-center">
-            <h4 class="text-2xl font-sans text-[#767676] pb-4">Case Study</h4>
-            <p class="text-4xl text-[#192a44] font-bold pb-8">
-              We love transforming product ideas to digital realities
-            </p>
-          </div>
-          <div class="relative">
-            <div id="customers-testimonials5" class="owl-carousel">
+          <h4 class="text-2xl font-sans text-[#767676] pb-4 text-center">
+            Case Study
+          </h4>
+          <p class="text-4xl text-[#192a44] font-bold pb-8 text-center">
+            We love transforming product ideas to digital realities
+          </p>
+          <div class="bg-[#23418e] rounded-2xl">
+            <div id="customers-testimonials4" class="owl-carousel">
               <div class="item">
-                <img src="/images/images4.jpg" alt="our-park" class="relative" />
                 <div
-                  class="absolute w-full h-full top-0 left-0 bg-neutral-500/[.50]"
-                ></div>
+                  class="grid grid-cols-12 px-8 pt-8 transition-all ease-in-out"
+                >
+                  <div class="col-span-12 md:col-span-6">
+                    <img src="/images/our-park.png" alt="our-park" />
+                  </div>
+
+                  <div class="col-span-12 md:col-span-6">
+                    <div class="px-10">
+                      <h4 class="text-2xl font-sans text-[#fff8f8]">
+                        Eatzilla
+                      </h4>
+                      <h2 class="text-3xl font-bold text-[#fff8f8] pb-6">
+                        Eatzilla, an end-to-end food delivery solution
+                      </h2>
+                      <p class="text-xl font-sans font-semibold text-[#fff8f8]">
+                        Power your food delivery startup with a highly
+                        customizable, prebuilt app solution that works
+                        seamlessly.
+                      </p>
+                      <div class="flex justify-between pt-12">
+                        <div>
+                          <p class="text-xl font-semibold text-[#fff8f8] pb-3">
+                            Country
+                          </p>
+                          <h4 class="text-xl font-medium text-[#fff8f8]">
+                            India
+                          </h4>
+                        </div>
+                        <div>
+                          <p class="text-xl font-semibold text-[#fff8f8] pb-3">
+                            This is a Sparkout product
+                          </p>
+                          <h4 class="text-xl font-medium text-[#fff8f8]">
+                            Delivery Dispatch Solution
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-  
               <div class="item">
-                <img src="/images/images5.jpg" alt="our-park" class="relative" />
                 <div
-                  class="absolute w-full h-full top-0 left-0 bg-neutral-500/[.50]"
-                ></div>
-              </div>
-  
-              <div class="item">
-                <img src="/images/images6.jpg" alt="our-park" class="relative" />
-                <div
-                  class="absolute w-full h-full top-0 left-0 bg-neutral-500/[.50]"
-                ></div>
-              </div>
-            </div>
-            <div
-              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-neutral-50"
-            >
-              <div class="grid grid-cols-2">
-                <h2 class="text-center uppercase text-6xl my-auto">Search for</h2>
-                <p class="uppercase text-center">
-                  LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
-                  INDUSTRY. LOREM IPSUM HAS BEEN THE INDUSTRY'S STANDARD DUMMY
-                  TEXT EVER SINCE THE 1500S, WHEN AN UNKNOWN PRINTER TOOK A GALLEY
-                  OF TYPE AND SCRAMBLED IT TO MAKE A TYPE SPECIMEN BOOK. IT HAS
-                  SURVIVED NOT ONLY FIVE CENTURIES, BUT ALSO THE LEAP INTO
-                  ELECTRONIC TYPESETTING, REMAINING ESSENTIALLY UNCHANGED
-                </p>
+                  class="grid grid-cols-12 px-8 pt-8 transition-all ease-in-out"
+                >
+                  <div class="col-span-12 md:col-span-6">
+                    <img src="/images/our-park.png" alt="our-park" />
+                  </div>
+
+                  <div class="col-span-12 md:col-span-6">
+                    <div class="px-10">
+                      <h4 class="text-2xl font-sans text-[#fff8f8]">
+                        Eatzilla
+                      </h4>
+                      <h2 class="text-3xl font-bold text-[#fff8f8] pb-6">
+                        Eatzilla, an end-to-end food delivery solution
+                      </h2>
+                      <p class="text-xl font-sans font-semibold text-[#fff8f8]">
+                        Power your food delivery startup with a highly
+                        customizable, prebuilt app solution that works
+                        seamlessly.
+                      </p>
+                      <div class="flex justify-between pt-12">
+                        <div>
+                          <p class="text-xl font-semibold text-[#fff8f8] pb-3">
+                            Country
+                          </p>
+                          <h4 class="text-xl font-medium text-[#fff8f8]">
+                            India
+                          </h4>
+                        </div>
+                        <div>
+                          <p class="text-xl font-semibold text-[#fff8f8] pb-3">
+                            This is a Sparkout product
+                          </p>
+                          <h4 class="text-xl font-medium text-[#fff8f8]">
+                            Delivery Dispatch Solution
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="bg-gray-400 py-24 px-6">
-        <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
-          <div class="grid grid-cols-12 gap-10">
-            <div class="col-span-12 md:col-span-6">
+      </div>
+    </section>
+    <section>
+      <div class="py-24">
+        <div class="text-center">
+          <h4 class="text-2xl font-sans text-[#767676] pb-4">Case Study</h4>
+          <p class="text-4xl text-[#192a44] font-bold pb-8">
+            We love transforming product ideas to digital realities
+          </p>
+        </div>
+        <div class="relative">
+          <div id="customers-testimonials5" class="owl-carousel">
+            <div class="item">
+              <img src="/images/images4.jpg" alt="our-park" class="relative" />
+              <div
+                class="absolute w-full h-full top-0 left-0 bg-neutral-500/[.50]"
+              ></div>
+            </div>
+
+            <div class="item">
+              <img src="/images/images5.jpg" alt="our-park" class="relative" />
+              <div
+                class="absolute w-full h-full top-0 left-0 bg-neutral-500/[.50]"
+              ></div>
+            </div>
+
+            <div class="item">
+              <img src="/images/images6.jpg" alt="our-park" class="relative" />
+              <div
+                class="absolute w-full h-full top-0 left-0 bg-neutral-500/[.50]"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-neutral-50"
+          >
+            <div class="grid grid-cols-2">
+              <h2 class="text-center uppercase text-6xl my-auto">Search for</h2>
+              <p class="uppercase text-center">
+                LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+                INDUSTRY. LOREM IPSUM HAS BEEN THE INDUSTRY'S STANDARD DUMMY
+                TEXT EVER SINCE THE 1500S, WHEN AN UNKNOWN PRINTER TOOK A GALLEY
+                OF TYPE AND SCRAMBLED IT TO MAKE A TYPE SPECIMEN BOOK. IT HAS
+                SURVIVED NOT ONLY FIVE CENTURIES, BUT ALSO THE LEAP INTO
+                ELECTRONIC TYPESETTING, REMAINING ESSENTIALLY UNCHANGED
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-400 py-24 px-6">
+      <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
+        <div class="grid grid-cols-12 gap-10">
+          <div class="col-span-12 md:col-span-6">
             <img src="/images/nft-image.png" alt="images" class="" />
           </div>
           <div class="col-span-12 md:col-span-6">
-  
-            <div class="accordion" data-accordion="collapse" data-accordion="open">
+            <div
+              class="accordion"
+              data-accordion="collapse"
+              data-accordion="open"
+            >
               <!--  Panel 1  -->
               <div class="pb-8 relative sm:w-full xs:w-40">
-                <input type="checkbox" name="panel" id="panel-1" class="hidden">
+                <input
+                  type="checkbox"
+                  name="panel"
+                  id="panel-1"
+                  class="hidden"
+                />
                 <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
-                <label for="panel-1" class="relative block bg-white text-black p-4 shadow border-grey rounded-xl">Panel 1</label>
+                <label
+                  for="panel-1"
+                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  >Panel 1</label
+                >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
-                  <p class="accordion__body p-4" id="panel1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.</p>
+                  <p class="accordion__body p-4" id="panel1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iusto possimus at a cum saepe molestias modi illo facere
+                    ducimus voluptatibus praesentium deleniti fugiat ab error
+                    quia sit perspiciatis velit necessitatibus.
+                  </p>
                 </div>
               </div>
               <!-- Panel 2 -->
               <div class="pb-8 relative sm:w-full xs:w-40">
-                <input type="checkbox" name="panel" id="panel-2" class="hidden">
-                 <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
+                <input
+                  type="checkbox"
+                  name="panel"
+                  id="panel-2"
+                  class="hidden"
+                />
+                <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
-                <label for="panel-2" class="relative block bg-white text-black p-4 shadow border-grey rounded-xl">Panel 2</label>
+                <label
+                  for="panel-2"
+                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  >Panel 2</label
+                >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
-                  <p class="accordion__body p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.</p>
+                  <p class="accordion__body p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iusto possimus at a cum saepe molestias modi illo facere
+                    ducimus voluptatibus praesentium deleniti fugiat ab error
+                    quia sit perspiciatis velit necessitatibus.
+                  </p>
                 </div>
               </div>
               <!--  Panel 3  -->
               <div class="pb-8 relative sm:w-full xs:w-40">
-                <input type="checkbox" name="panel" id="panel-3" class="hidden">
-                 <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
+                <input
+                  type="checkbox"
+                  name="panel"
+                  id="panel-3"
+                  class="hidden"
+                />
+                <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
-                <label for="panel-3" class="relative block bg-white text-black p-4 shadow border-grey rounded-xl">Panel 3</label>
+                <label
+                  for="panel-3"
+                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  >Panel 3</label
+                >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
-                  <p class="accordion__body p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.</p>
+                  <p class="accordion__body p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iusto possimus at a cum saepe molestias modi illo facere
+                    ducimus voluptatibus praesentium deleniti fugiat ab error
+                    quia sit perspiciatis velit necessitatibus.
+                  </p>
                 </div>
               </div>
               <!--  Panel 4  -->
               <div class="pb-8 relative sm:w-full xs:w-40">
-                <input type="checkbox" name="panel" id="panel-4" class="hidden">
-                 <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
+                <input
+                  type="checkbox"
+                  name="panel"
+                  id="panel-4"
+                  class="hidden"
+                />
+                <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
-                <label for="panel-4" class="relative block bg-white text-black p-4 shadow border-grey rounded-xl">Panel 4</label>
+                <label
+                  for="panel-4"
+                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  >Panel 4</label
+                >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
-                  <p class="accordion__body p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.</p>
+                  <p class="accordion__body p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iusto possimus at a cum saepe molestias modi illo facere
+                    ducimus voluptatibus praesentium deleniti fugiat ab error
+                    quia sit perspiciatis velit necessitatibus.
+                  </p>
                 </div>
               </div>
               <!--  Panel 5  -->
               <div class="pb-8 relative sm:w-full xs:w-40">
-                <input type="checkbox" name="panel" id="panel-5" class="hidden">
-                 <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
+                <input
+                  type="checkbox"
+                  name="panel"
+                  id="panel-5"
+                  class="hidden"
+                />
+                <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
-                <label for="panel-5" class="relative block bg-white text-black p-4 shadow border-grey rounded-xl">Panel 5</label>
+                <label
+                  for="panel-5"
+                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  >Panel 5</label
+                >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
-                  <p class="accordion__body p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.</p>
+                  <p class="accordion__body p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iusto possimus at a cum saepe molestias modi illo facere
+                    ducimus voluptatibus praesentium deleniti fugiat ab error
+                    quia sit perspiciatis velit necessitatibus.
+                  </p>
                 </div>
               </div>
             </div>
-  
-  
-            
-          </div>
           </div>
         </div>
-      </section>
-  
-      <!-- Connect wallet MODAL -->
-      <script>
-        function toggleModal() {
-          document.getElementById("modal").classList.toggle("hidden");
+      </div>
+    </section>
+    <section class="p-20 text-white">
+      <div
+        class="py-10 rounded-3xl shadow-xl bg-gradient-to-br from-green-400 hover:from-purple-500 via-orange-300 to-red-300"
+      >
+        <div class="flex">
+          <div class="w-2/3 px-10">
+            <h2 class="text-4xl font-extrabold">Some Offer</h2>
+            <p class="pt-4 pb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              temporibus unde sed debitis commodi voluptates pariatur, veritatis
+              delectus sunt iusto?
+            </p>
+            <a
+              href=""
+              class="bg-yellow-500 text-white font-bold px-3 py-2 rounded-md"
+              >Read More</a
+            >
+          </div>
+          <div class="w-1/3 px-10 flex">
+            <img src="/images/burn-nft-five.png" class="w-32 mx-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect wallet MODAL -->
+    <script>
+      function toggleModal() {
+        document.getElementById("modal").classList.toggle("hidden");
+      }
+    </script>
+
+    <!-- NAVBAR -->
+    <script>
+      function menuClick() {
+        var menu = document.getElementById("mobileMenu");
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
         }
-      </script>
-  
-      <!-- NAVBAR -->
-      <script>
-        function menuClick() {
-          var menu = document.getElementById("mobileMenu");
-          if (menu.classList.contains("hidden")) {
-            menu.classList.remove("hidden");
-          } else {
-            menu.classList.add("hidden");
-          }
-        }
-      </script>
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  
-      <!-- OWL  -->
-      <script>
-        $(document).ready(function ($) {
-          $("#customers-testimonials4").owlCarousel({
-            loop: true,
-            items: 1,
-            margin: 30,
-            autoplay: true,
-            dots: true,
-            nav: false,
-            autoplayTimeout: 8500,
-            smartSpeed: 450,
-            // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-            responsive: {
-              0: {
-                items: 1,
-              },
-              640: {
-                items: 1,
-              },
-              768: {
-                items: 1,
-              },
-              1024: {
-                items: 1,
-              },
-              1280: {
-                items: 1,
-              },
-              1540: {
-                items: 1.5,
-              },
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- OWL  -->
+    <script>
+      $(document).ready(function ($) {
+        $("#customers-testimonials4").owlCarousel({
+          loop: true,
+          items: 1,
+          margin: 30,
+          autoplay: true,
+          dots: true,
+          nav: false,
+          autoplayTimeout: 8500,
+          smartSpeed: 450,
+          // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+          responsive: {
+            0: {
+              items: 1,
             },
-          });
-        });
-      </script>
-      <script>
-        $(document).ready(function ($) {
-          $("#customers-testimonials5").owlCarousel({
-            loop: true,
-            items: 1,
-            margin: 0,
-            autoplay: true,
-            dots: true,
-            nav: false,
-            autoplayTimeout: 8500,
-            smartSpeed: 450,
-            // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-            responsive: {
-              0: {
-                items: 1,
-              },
-              640: {
-                items: 1,
-              },
-              768: {
-                items: 1,
-              },
-              1024: {
-                items: 1,
-              },
-              1280: {
-                items: 1,
-              },
-              1540: {
-                items: 1,
-              },
+            640: {
+              items: 1,
             },
-          });
+            768: {
+              items: 1,
+            },
+            1024: {
+              items: 1,
+            },
+            1280: {
+              items: 1,
+            },
+            1540: {
+              items: 1.5,
+            },
+          },
         });
-      </script>
-</body>
+      });
+    </script>
+    <script>
+      $(document).ready(function ($) {
+        $("#customers-testimonials5").owlCarousel({
+          loop: true,
+          items: 1,
+          margin: 0,
+          autoplay: true,
+          dots: true,
+          nav: false,
+          autoplayTimeout: 8500,
+          smartSpeed: 450,
+          // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+          responsive: {
+            0: {
+              items: 1,
+            },
+            640: {
+              items: 1,
+            },
+            768: {
+              items: 1,
+            },
+            1024: {
+              items: 1,
+            },
+            1280: {
+              items: 1,
+            },
+            1540: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
 </html>
