@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.hoverable:hover .mega-menu {
+  display: block;
+}
 
+.mega-menu {
+  display: none;
+  right: 0;
+  top: 50px;
+  position: absolute;
+  text-align: center;
+}
 
 .owl-nav button {
     position: absolute;
