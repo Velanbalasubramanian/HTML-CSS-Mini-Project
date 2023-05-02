@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
+  <body class="dark:bg-gray-900 dark:text-gray-100">
     <nav class="">
       <div class="container mx-auto p-5">
         <div class="flex flex-wrap">
@@ -50,7 +50,7 @@
                 </ul>
               </li>
 
-              <li class="hoverable relative">
+              <li class="hoverable relative my-auto">
                 <a href="" class="px-4 py-7">
                   Services
                 </a>
@@ -177,6 +177,23 @@
               <li class="my-auto">
                 <a class="hover:text-gray-600 pl-4 pr-6 py-7" href="">About</a>
               </li>
+              <div class="relative flex font-semibold">
+              
+                <input onclick="onModeButtonClick()" class="absolute opacity-0" type="radio" id="lightMode" name="theme" value="Light">
+                <label
+                  class="dark:bg-opacity-25 border-purple-600 w-20 cursor-pointer border-t border-l border-b text-center py-2 rounded-l-3xl"
+                  for="lightMode">Light</label>
+  
+                <input onclick="onModeButtonClick()" class="absolute opacity-0" type="radio" id="defaultMode" name="theme" value="Default">
+                <label
+                  class="dark:bg-opacity-25 border-purple-600 w-20 cursor-pointer border text-center py-2"
+                  for="defaultMode">Default</label>
+  
+                <input onclick="onModeButtonClick()" class="absolute opacity-0" type="radio" id="darkMode" name="theme" value="Dark">
+                <label
+                  class=" dark:bg-opacity-25 border-purple-600 w-20 cursor-pointer border-t border-r border-b text-center py-2 rounded-r-3xl"
+                  for="darkMode">Dark</label>
+              </div>
             </ul>
             <button
               class="lg:hidden border border-green-800 rounded-lg px-2 py-2 mr-2 hover:border-gray-50 hover:bg-gray-50"
@@ -715,12 +732,10 @@
       </div>
     </section>
     <section class="p-6 bg-gray-300">
-      <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
+      <div class="mx-auto 2xl:max-w-6xl">
         <div class="py-16">
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div
-              class="bg-gray-50 rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group"
-            >
+            <div class="bg-gray-50 rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group">
               <div class="text-center">
                 <img src="/images/iPhone-xr.png" alt="iPhone-xr" class="mb-6" />
               </div>
@@ -899,13 +914,13 @@
       </div>
     </section>
     <section class="py-10">
-      <div class="mx-auto 2xl:max-w-5xl xl:max-w-4xl">
+      <div class="mx-auto 2xl:max-w-5xl xl:max-w-4xl p-10">
         <h2 class="text-center font-extrabold text-2xl">PRICING PLANS</h2>
         <p class="text-center text-[#777777] pt-5">
           The ship set ground on the shore that this group would somehow form a
           family that's the way.
         </p>
-        <div class="grid grid-cols-3 pt-10 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 pt-10 gap-8">
          
             <div class="group hover:translate-y-2 transition duration-300">
               <div class="text-center bg-gray-700 group-hover:bg-[#3b82f6] p-10 rounded-t-lg">
@@ -926,41 +941,93 @@
             </div>
           
           
-            <div class="">
-              <div class="text-center bg-black p-10 rounded-t-lg">
+            <div class="group hover:translate-y-2 transition duration-300">
+              <div class="text-center bg-gray-700 group-hover:bg-[#3b82f6] p-10 rounded-t-lg">
                 <h4 class="text-white font-bold text-xl">PROFESSIONAL</h4>
-                <h3 class="text-white font-bold text-6xl py-4">$59</h3>
-                <span class="text-green-400">Monthly</span>
+                <h3 class="text-white font-bold text-6xl py-4 ">$59</h3>
+                <span class="text-green-300">Monthly</span>
               </div>
               <div class="p-8 shadow-2xl text-center rounded-b-lg">
                 <ul class="text-lg text-[#777777] mb-5">
                   <li class="py-2">Sales Effectiveness</li>
                   <li class="py-2">Leadership Development</li>
                   <li class="py-2">Personal Effectiveness</li>
-                  <li class="py-2">Presentation Skills</li>
-                  <li class="py-2 text-[#c1c1c1] line-through">Negotiation Training</li>
+                  <li class="py-2 line-through text-[#c1c1c1] group-hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600 group-hover:line-through">Presentation Skills</li>
+                  <li class="py-2 group-hover:text-transparent text-[#c1c1c1] line-through bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600">Negotiation Training</li>
                 </ul>
-                <a href="" class="bg-gray-700 text-base text-white p-2 rounded-2xl">SIGN UP</a>
+                <a href="" class="bg-gray-700 group-hover:bg-[#3b82f6] text-base text-white p-2 rounded-2xl">SIGN UP</a>
               </div>
             </div>
          
           
-            <div class="">
-              <div class="text-center bg-black p-10 rounded-t-lg">
+            <div class="group hover:translate-y-2 transition duration-300">
+              <div class="text-center bg-gray-700 group-hover:bg-[#3b82f6] p-10 rounded-t-lg">
                 <h4 class="text-white font-bold text-xl">ULTIMATE</h4>
-                <h3 class="text-white font-bold text-6xl py-4">$89</h3>
-                <span class="text-green-400">Monthly</span>
+                <h3 class="text-white font-bold text-6xl py-4 ">$89</h3>
+                <span class="text-green-300">Monthly</span>
               </div>
               <div class="p-8 shadow-2xl text-center rounded-b-lg">
                 <ul class="text-lg text-[#777777] mb-5">
                   <li class="py-2">Sales Effectiveness</li>
                   <li class="py-2">Leadership Development</li>
                   <li class="py-2">Personal Effectiveness</li>
-                  <li class="py-2">Presentation Skills</li>
-                  <li class="py-2">Negotiation Training</li>
+                  <li class="py-2 line-through text-[#c1c1c1] group-hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600 group-hover:line-through">Presentation Skills</li>
+                  <li class="py-2 group-hover:text-transparent text-[#c1c1c1] line-through bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600">Negotiation Training</li>
                 </ul>
-                <a href="" class="bg-gray-700 text-base text-white p-2 rounded-2xl">SIGN UP</a>
+                <a href="" class="bg-gray-700 group-hover:bg-[#3b82f6] text-base text-white p-2 rounded-2xl">SIGN UP</a>
               </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="py-10">
+      <div class="mx-auto 2xl:max-w-5xl xl:max-w-4xl p-5">
+        <h2 class="text-center font-extrabold text-2xl pb-3">WHAT WE DO</h2>
+        <div class="relative h-0.5 w-7 m-auto mb-0.5 bg-[#54be73] before:content-[''] before:absolute before:h-0.5 before:w-4 before:bg-[#54be73] before:right-8 after:content-[''] after:absolute after:h-0.5 after:w-4 after:bg-[#54be73] after:left-8"></div>
+        <div class="relative h-0.5 w-7 m-auto mb-0.5 bg-[#54be73] before:content-[''] before:absolute before:h-0.5 before:w-4 before:bg-[#54be73] before:right-8 after:content-[''] after:absolute after:h-0.5 after:w-4 after:bg-[#54be73] after:left-8"></div>
+        <p class="text-center text-[#777777] pt-4">
+          The ship set ground on the shore that this group would somehow form a
+          family that's the way.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 pt-10 gap-8">
+         
+            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg">
+              <div class="p-10"> 
+                <i class="fas fa-chess-knight text-[#1e90ff] text-6xl pb-6"></i>
+                <h2 class="text-lg font-bold pb-3">OUR UNIQUE APPROACH</h2>
+               
+                  <div class="relative h-0.5 w-7 m-auto mb-0.5 bg-[#54be73] before:content-[''] before:absolute before:h-0.5 before:w-4 before:bg-[#54be73] before:right-8 after:content-[''] after:absolute after:h-0.5 after:w-4 after:bg-[#54be73] after:left-8"></div>
+                  <div class="relative h-0.5 w-7 m-auto mb-0.5 bg-[#54be73] before:content-[''] before:absolute before:h-0.5 before:w-4 before:bg-[#54be73] before:right-8 after:content-[''] after:absolute after:h-0.5 after:w-4 after:bg-[#54be73] after:left-8"></div>
+                
+                <p class="pt-4">The ship set ground on the shore that this group would somehow form a family that is we all became to the brady bunch.</p>
+              </div>
+            </div>
+          
+          
+            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg">
+              <div class="p-10">
+                <i class="fa fa-bar-chart text-[#1e90ff] text-6xl pb-6"></i>
+                <h2 class="text-lg font-bold pb-3">OUR VALUES</h2>
+                
+                  <div class="relative h-0.5 w-7 m-auto mb-0.5 bg-[#54be73] before:content-[''] before:absolute before:h-0.5 before:w-4 before:bg-[#54be73] before:right-8 after:content-[''] after:absolute after:h-0.5 after:w-4 after:bg-[#54be73] after:left-8"></div>
+                  <div class="relative h-0.5 w-7 m-auto mb-0.5 bg-[#54be73] before:content-[''] before:absolute before:h-0.5 before:w-4 before:bg-[#54be73] before:right-8 after:content-[''] after:absolute after:h-0.5 after:w-4 after:bg-[#54be73] after:left-8"></div>
+                
+                <p class="pt-4">The ship set ground on the shore that this group would somehow form a family that is we all became to the brady bunch.</p>
+              </div>
+            </div>
+         
+          
+            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg">
+              <div class="p-10">
+                <i class="fa-solid fa-bullseye text-[#1e90ff] text-6xl pb-6"></i>
+                <h2 class="text-lg font-bold pb-3">METHODOLOGY</h2>
+                
+                  <div class="relative h-0.5 w-7 m-auto mb-0.5 bg-[#54be73] before:content-[''] before:absolute before:h-0.5 before:w-4 before:bg-[#54be73] before:right-8 after:content-[''] after:absolute after:h-0.5 after:w-4 after:bg-[#54be73] after:left-8"></div>
+                  <div class="relative h-0.5 w-7 m-auto mb-0.5 bg-[#54be73] before:content-[''] before:absolute before:h-0.5 before:w-4 before:bg-[#54be73] before:right-8 after:content-[''] after:absolute after:h-0.5 after:w-4 after:bg-[#54be73] after:left-8"></div>
+                
+                <p class="pt-4">The ship set ground on the shore that this group would somehow form a family that is we all became to the brady bunch.</p>
+              </div> 
             </div>
           
         </div>
@@ -1060,5 +1127,6 @@
         });
       });
     </script>
+    <script src="main.js"></script>
   </body>
 </html>
