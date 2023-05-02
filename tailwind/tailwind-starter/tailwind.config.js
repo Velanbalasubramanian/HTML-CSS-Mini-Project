@@ -4,19 +4,15 @@ module.exports = {
     enabled:false,
     content: ["./dist/*.{html,js}"],
   },
-  darkMode: 'media',
+  darkMode: "class",
   theme: {
     extend: {},
     container: {
       center: true,
   },
   variants: {
-    extend: {
-      display:['dark'],
-      opacity:['dark'],
-    }
+    extend: {},
   },
- 
   plugins: [],
 }
 }

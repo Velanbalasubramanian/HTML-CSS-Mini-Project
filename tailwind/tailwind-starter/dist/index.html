@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head class="dark">
+<html lang="en" class="dark">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,12 +20,13 @@
     />
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="dark:bg-gray-900 dark:text-gray-100">
+  <body class="dark:bg-gray-800 dark:text-gray-200">
     <nav class="">
       <div class="container mx-auto p-5">
         <div class="flex flex-wrap">
           <a href="index.html" class="my-auto sm:mb-0 mb-3">
-            <img src="/images/realworld.png" class="lg:w-64 w-48" alt="logo" />
+            <img src="/images/realworld.png" class="dark:hidden lg:w-64 w-48" alt="logo" />
+            <img src="/images/logo-dark.png" class="hidden dark:block lg:w-64 w-48" alt="logo" />
           </a>
 
           <div class="ml-auto my-auto relative">
@@ -50,7 +51,7 @@
                 </ul>
               </li>
 
-              <li class="hoverable relative my-auto">
+              <li class="hoverable relative my-auto hover:text-gray-600">
                 <a href="" class="px-4 py-7">
                   Services
                 </a>
@@ -175,25 +176,22 @@
                 <a class="hover:text-gray-600 px-4 py-7" href="">Portfolio</a>
               </li>
               <li class="my-auto">
-                <a class="hover:text-gray-600 pl-4 pr-6 py-7" href="">About</a>
+                <a class="hover:text-gray-600 px-4 py-7" href="">About</a>
               </li>
-              <div class="relative flex font-semibold">
-              
-                <input onclick="onModeButtonClick()" class="absolute opacity-0" type="radio" id="lightMode" name="theme" value="Light">
-                <label
-                  class="dark:bg-opacity-25 border-purple-600 w-20 cursor-pointer border-t border-l border-b text-center py-2 rounded-l-3xl"
-                  for="lightMode">Light</label>
-  
-                <input onclick="onModeButtonClick()" class="absolute opacity-0" type="radio" id="defaultMode" name="theme" value="Default">
-                <label
-                  class="dark:bg-opacity-25 border-purple-600 w-20 cursor-pointer border text-center py-2"
-                  for="defaultMode">Default</label>
-  
-                <input onclick="onModeButtonClick()" class="absolute opacity-0" type="radio" id="darkMode" name="theme" value="Dark">
-                <label
-                  class=" dark:bg-opacity-25 border-purple-600 w-20 cursor-pointer border-t border-r border-b text-center py-2 rounded-r-3xl"
-                  for="darkMode">Dark</label>
+
+              <div class="pr-4 my-auto">
+                <input type="checkbox" name="" id="checkbox" class="hidden" />
+                <label for="checkbox">
+                  <i class="fa-sharp fa-regular fa-moon"></i>
+                  <i class="fa-regular fa-sun"></i>
+                  <!-- <div class="w-5 h-5 flex items-center bg-gray-300 rounded-full">
+                    <div class="w-5 h-5 bg-white rounded-full shadow switch-ball"></div>
+                    
+                  </div> -->
+                
+                </label>
               </div>
+
             </ul>
             <button
               class="lg:hidden border border-green-800 rounded-lg px-2 py-2 mr-2 hover:border-gray-50 hover:bg-gray-50"
@@ -319,16 +317,21 @@
         </div>
       </div>
     </nav>
-    <section class="p-6 bg-gray-300">
+    <section class="p-6">
       <div class="container mx-auto lg:p-7">
         <div class="py-16">
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+            <div class="bg-gray-200 dark:bg-gray-50 rounded-md p-10 shadow-lg">
               <div class="text-center">
                 <img
                   src="/images/create-collection-one.png"
                   alt="create-collection-one"
-                  class="mb-6 mx-auto"
+                  class="mb-6 mx-auto dark:hidden"
+                />
+                <img
+                  src="/images/edit-nft-four.png"
+                  alt="edit-nft-four"
+                  class="mb-6 mx-auto hidden dark:block"
                 />
                 <a
                   class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
@@ -338,7 +341,7 @@
                 </a>
               </div>
             </div>
-            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+            <div class="bg-gray-200 dark:bg-gray-50 rounded-md p-10 shadow-lg">
               <div class="text-center">
                 <img
                   src="/images/edit-collection-two.png"
@@ -353,7 +356,7 @@
                 </a>
               </div>
             </div>
-            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+            <div class="bg-gray-200 dark:bg-gray-50 rounded-md p-10 shadow-lg">
               <div class="text-center">
                 <img
                   src="/images/create-nft-three.png"
@@ -368,12 +371,17 @@
                 </a>
               </div>
             </div>
-            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+            <div class="bg-gray-200 dark:bg-gray-50 rounded-md p-10 shadow-lg">
               <div class="text-center">
                 <img
                   src="/images/edit-nft-four.png"
                   alt="edit-nft-four"
-                  class="mb-6 mx-auto"
+                  class="mb-6 mx-auto dark:hidden"
+                />
+                <img
+                  src="/images/create-collection-one.png"
+                  alt="create-collection-one"
+                  class="mb-6 mx-auto hidden dark:block"
                 />
                 <a
                   class="text-gray-100 text-md bg-green-800 lg:px-4 md:px-3 px-6 py-2 rounded-lg hover:text-green-800 hover:bg-gray-300"
@@ -383,7 +391,7 @@
                 </a>
               </div>
             </div>
-            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+            <div class="bg-gray-200 dark:bg-gray-50 rounded-md p-10 shadow-lg">
               <div class="text-center">
                 <img
                   src="/images/burn-nft-six.png"
@@ -398,7 +406,7 @@
                 </a>
               </div>
             </div>
-            <div class="bg-gray-50 rounded-md p-10 shadow-lg">
+            <div class="bg-gray-200 dark:bg-gray-50 rounded-md p-10 shadow-lg">
               <div class="text-center">
                 <img
                   src="/images/burn-nft-six.png"
@@ -417,16 +425,16 @@
         </div>
       </div>
     </section>
-    <section class="p-6 bg-[#f3f6f9]">
-      <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
+    <section class="p-6">
+      <div class="mx-auto 2xl:max-w-6xl xl:max-w-5xl">
         <div class="py-24">
-          <h4 class="text-2xl font-sans text-[#767676] pb-4 text-center">
+          <h4 class="text-2xl font-sans text-[#767676] dark:text-[#fffbfb] pb-4 text-center">
             Case Study
           </h4>
-          <p class="text-4xl text-[#192a44] font-bold pb-8 text-center">
+          <p class="text-4xl text-[#192a44] dark:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold pb-8 text-center">
             We love transforming product ideas to digital realities
           </p>
-          <div class="bg-[#23418e] rounded-2xl">
+          <div class="bg-[#23418e] dark:bg-[#86b4c3] rounded-2xl">
             <div id="customers-testimonials4" class="owl-carousel">
               <div class="item">
                 <div
@@ -522,8 +530,8 @@
     <section>
       <div class="py-24">
         <div class="text-center">
-          <h4 class="text-2xl font-sans text-[#767676] pb-4">Case Study</h4>
-          <p class="text-4xl text-[#192a44] font-bold pb-8">
+          <h4 class="text-2xl font-sans text-[#767676] dark:text-[#fffbfb] pb-4">Case Study</h4>
+          <p class="text-4xl text-[#192a44] dark:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-green-400 font-bold pb-8">
             We love transforming product ideas to digital realities
           </p>
         </div>
@@ -570,7 +578,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-gray-400 py-24 px-6">
+    <section class="py-24 px-6">
       <div class="mx-auto 2xl:max-w-5xl xl:max-w-6xl">
         <div class="grid sm:grid-cols-12 grid-cols-6 gap-10">
           <div class="col-span-6 flex">
@@ -583,7 +591,7 @@
               data-accordion="open"
             >
               <!--  Panel 1  -->
-              <div class="pb-8 relative">
+              <div class="pb-8 relative final-acc">
                 <input
                   type="checkbox"
                   name="panel"
@@ -592,11 +600,7 @@
                 />
                 <!-- <i class="fa fa-plus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i>
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
-                <label
-                  for="panel-1"
-                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
-                  >Panel 1</label
-                >
+                <label for="panel-1" class="relative block bg-gray-200 text-black p-4 shadow border-grey rounded-xl" >Panel 1</label>
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
                   <p class="accordion__body p-4" id="panel1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -607,7 +611,7 @@
                 </div>
               </div>
               <!-- Panel 2 -->
-              <div class="pb-8 relative">
+              <div class="pb-8 relative final-acc">
                 <input
                   type="checkbox"
                   name="panel"
@@ -618,7 +622,7 @@
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
                 <label
                   for="panel-2"
-                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  class="relative block bg-gray-200 text-black p-4 shadow border-grey rounded-xl"
                   >Panel 2</label
                 >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
@@ -631,7 +635,7 @@
                 </div>
               </div>
               <!--  Panel 3  -->
-              <div class="pb-8 relative">
+              <div class="pb-8 relative final-acc">
                 <input
                   type="checkbox"
                   name="panel"
@@ -642,7 +646,7 @@
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
                 <label
                   for="panel-3"
-                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  class="relative block bg-gray-200 text-black p-4 shadow border-grey rounded-xl"
                   >Panel 3</label
                 >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
@@ -655,7 +659,7 @@
                 </div>
               </div>
               <!--  Panel 4  -->
-              <div class="pb-8 relative">
+              <div class="pb-8 relative final-acc">
                 <input
                   type="checkbox"
                   name="panel"
@@ -666,7 +670,7 @@
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
                 <label
                   for="panel-4"
-                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  class="relative block bg-gray-200 text-black p-4 shadow border-grey rounded-xl"
                   >Panel 4</label
                 >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
@@ -679,7 +683,7 @@
                 </div>
               </div>
               <!--  Panel 5  -->
-              <div class="pb-8 relative">
+              <div class="pb-8 relative final-acc">
                 <input
                   type="checkbox"
                   name="panel"
@@ -690,7 +694,7 @@
                 <i class="fa fa-minus-circle absolute right-5 top-4 z-10 text-xl" aria-hidden="true"></i> -->
                 <label
                   for="panel-5"
-                  class="relative block bg-white text-black p-4 shadow border-grey rounded-xl"
+                  class="relative block bg-gray-200 text-black p-4 shadow border-grey rounded-xl"
                   >Panel 5</label
                 >
                 <div class="accordion__content overflow-hidden bg-grey-lighter">
@@ -731,17 +735,17 @@
         </div>
       </div>
     </section>
-    <section class="p-6 bg-gray-300">
+    <section class="p-6">
       <div class="mx-auto 2xl:max-w-6xl">
         <div class="py-16">
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div class="bg-gray-50 rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group">
+            <div class="bg-gray-200 dark:bg-white rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group">
               <div class="text-center">
                 <img src="/images/iPhone-xr.png" alt="iPhone-xr" class="mb-6" />
               </div>
 
               <div
-                class="bg-purple-800 p-4 rounded-xl group-hover:bg-green-400"
+                class="bg-purple-800 dark:bg-green-400 p-4 rounded-xl group-hover:bg-green-400 dark:group-hover:bg-yellow-300"
               >
                 <h2
                   class="text-2xl font-semibold text-white group-hover:text-blue-500"
@@ -756,10 +760,7 @@
                   <span class="text-sm text-white group-hover:text-red-700"
                     >$1099,00</span
                   >
-                  <a
-                    class="bg-slate-700 text-white group-hover:bg-white group-hover:text-slate-700 p-1 rounded-2xl"
-                    href=""
-                  >
+                  <a class="bg-slate-700 text-white group-hover:bg-white group-hover:text-slate-700 p-1 rounded-2xl" href="" >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -768,24 +769,17 @@
                       stroke="currentColor"
                       class="w-7 h-7"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 6v12m6-6H6"
-                      /></svg
-                  ></a>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg></a>
                 </div>
               </div>
             </div>
-            <div
-              class="bg-gray-50 rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group"
-            >
+            <div class="bg-gray-200 dark:bg-white rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group" >
               <div class="text-center">
                 <img src="/images/iPhone-11.png" alt="iPhone-11" class="mb-6" />
               </div>
 
               <div
-                class="bg-purple-800 p-4 rounded-xl group-hover:bg-green-400"
+                class="bg-purple-800 dark:bg-green-400 p-4 rounded-xl group-hover:bg-green-400 dark:group-hover:bg-yellow-300"
               >
                 <h2
                   class="text-2xl font-semibold text-white group-hover:text-blue-500"
@@ -800,36 +794,19 @@
                   <span class="text-sm text-white group-hover:text-red-700"
                     >$699,00</span
                   >
-                  <a
-                    class="bg-slate-700 text-white group-hover:bg-white group-hover:text-slate-700 p-1 rounded-2xl"
-                    href=""
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-7 h-7"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 6v12m6-6H6"
-                      /></svg
-                  ></a>
+                  <a class="bg-slate-700 text-white group-hover:bg-white group-hover:text-slate-700 p-1 rounded-2xl" href="" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7" >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg></a>
                 </div>
               </div>
             </div>
-            <div
-              class="bg-gray-50 rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group"
-            >
+            <div class="bg-gray-200 dark:bg-white rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group" >
               <div class="text-center">
                 <img src="/images/iPhone-xr.png" alt="iPhone-xr" class="mb-6" />
               </div>
 
               <div
-                class="bg-purple-800 p-4 rounded-xl group-hover:bg-green-400"
+                class="bg-purple-800 dark:bg-green-400 p-4 rounded-xl group-hover:bg-green-400 dark:group-hover:bg-yellow-300"
               >
                 <h2
                   class="text-2xl font-semibold text-white group-hover:text-blue-500"
@@ -844,36 +821,19 @@
                   <span class="text-sm text-white group-hover:text-red-700"
                     >$599,00</span
                   >
-                  <a
-                    class="bg-slate-700 text-white group-hover:bg-white group-hover:text-slate-700 p-1 rounded-2xl"
-                    href=""
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-7 h-7"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 6v12m6-6H6"
-                      /></svg
-                  ></a>
+                  <a class="bg-slate-700 text-white group-hover:bg-white group-hover:text-slate-700 p-1 rounded-2xl" href="" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7" >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg></a>
                 </div>
               </div>
             </div>
-            <div
-              class="bg-gray-50 rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group"
-            >
+            <div class="bg-gray-200 dark:bg-white rounded-md p-5 shadow-lg hover:translate-y-2 hover:shadow-xl transition duration-300 group">
               <div class="text-center">
                 <img src="/images/iPhone-se.png" alt="iPhone-se" class="mb-6" />
               </div>
 
               <div
-                class="bg-purple-800 p-4 rounded-xl group-hover:bg-green-400"
+                class="bg-purple-800 dark:bg-green-400 p-4 rounded-xl group-hover:bg-green-400 dark:group-hover:bg-yellow-300"
               >
                 <h2
                   class="text-2xl font-semibold text-white group-hover:text-blue-500"
@@ -888,24 +848,10 @@
                   <span class="text-sm text-white group-hover:text-red-700"
                     >$399,00</span
                   >
-                  <a
-                    class="bg-slate-700 text-white group-hover:bg-white group-hover:text-slate-700 p-1 rounded-2xl"
-                    href=""
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-7 h-7"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 6v12m6-6H6"
-                      /></svg
-                  ></a>
+                  <a class="bg-slate-700 text-white group-hover:bg-white group-hover:text-slate-700 p-1 rounded-2xl" href="" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7" >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg
+></a>
                 </div>
               </div>
             </div>
@@ -923,12 +869,12 @@
         <div class="grid grid-cols-1 md:grid-cols-3 pt-10 gap-8">
          
             <div class="group hover:translate-y-2 transition duration-300">
-              <div class="text-center bg-gray-700 group-hover:bg-[#3b82f6] p-10 rounded-t-lg">
+              <div class="text-center bg-gray-700 group-hover:bg-[#3b82f6] dark:group-hover:bg-yellow-300 p-10 rounded-t-lg">
                 <h4 class="text-white font-bold text-xl">BASIC</h4>
                 <h3 class="text-white font-bold text-6xl py-4 ">$39</h3>
-                <span class="text-green-300">Monthly</span>
+                <span class="text-green-300 dark:text-green-500">Monthly</span>
               </div>
-              <div class="p-8 shadow-2xl text-center rounded-b-lg">
+              <div class="p-8 shadow-2xl text-center rounded-b-lg bg-gray-50">
                 <ul class="text-lg text-[#777777] mb-5">
                   <li class="py-2">Sales Effectiveness</li>
                   <li class="py-2">Leadership Development</li>
@@ -936,7 +882,7 @@
                   <li class="py-2 line-through text-[#c1c1c1] group-hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600 group-hover:line-through">Presentation Skills</li>
                   <li class="py-2 group-hover:text-transparent text-[#c1c1c1] line-through bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600">Negotiation Training</li>
                 </ul>
-                <a href="" class="bg-gray-700 group-hover:bg-[#3b82f6] text-base text-white p-2 rounded-2xl">SIGN UP</a>
+                <a href="" class="bg-gray-700 group-hover:bg-[#3b82f6] dark:group-hover:bg-yellow-300 text-base text-white p-2 rounded-2xl">SIGN UP</a>
               </div>
             </div>
           
@@ -947,7 +893,7 @@
                 <h3 class="text-white font-bold text-6xl py-4 ">$59</h3>
                 <span class="text-green-300">Monthly</span>
               </div>
-              <div class="p-8 shadow-2xl text-center rounded-b-lg">
+              <div class="p-8 shadow-2xl text-center rounded-b-lg bg-gray-50">
                 <ul class="text-lg text-[#777777] mb-5">
                   <li class="py-2">Sales Effectiveness</li>
                   <li class="py-2">Leadership Development</li>
@@ -966,7 +912,7 @@
                 <h3 class="text-white font-bold text-6xl py-4 ">$89</h3>
                 <span class="text-green-300">Monthly</span>
               </div>
-              <div class="p-8 shadow-2xl text-center rounded-b-lg">
+              <div class="p-8 shadow-2xl text-center rounded-b-lg bg-gray-50">
                 <ul class="text-lg text-[#777777] mb-5">
                   <li class="py-2">Sales Effectiveness</li>
                   <li class="py-2">Leadership Development</li>
@@ -992,7 +938,7 @@
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 pt-10 gap-8">
          
-            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg">
+            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg bg-gray-100">
               <div class="p-10"> 
                 <i class="fas fa-chess-knight text-[#1e90ff] text-6xl pb-6"></i>
                 <h2 class="text-lg font-bold pb-3">OUR UNIQUE APPROACH</h2>
@@ -1005,7 +951,7 @@
             </div>
           
           
-            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg">
+            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg bg-gray-100">
               <div class="p-10">
                 <i class="fa fa-bar-chart text-[#1e90ff] text-6xl pb-6"></i>
                 <h2 class="text-lg font-bold pb-3">OUR VALUES</h2>
@@ -1018,7 +964,7 @@
             </div>
          
           
-            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg">
+            <div class="group hover:translate-y-2 transition duration-300 text-center border rounded-lg bg-gray-100">
               <div class="p-10">
                 <i class="fa-solid fa-bullseye text-[#1e90ff] text-6xl pb-6"></i>
                 <h2 class="text-lg font-bold pb-3">METHODOLOGY</h2>
@@ -1086,7 +1032,7 @@
               items: 1,
             },
             1540: {
-              items: 1.5,
+              items: 1,
             },
           },
         });

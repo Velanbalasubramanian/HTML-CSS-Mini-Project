@@ -5,7 +5,23 @@
 .hoverable:hover .mega-menu {
   display: block;
 }
-
+#checkbox:checked + label .fa-moon{
+  display: block;
+}
+label .fa-moon{
+  display: none;
+}
+#checkbox:checked + label .fa-sun{
+  display: none;
+}
+label .fa-sun{
+  display: block;
+}
+/* #checkbox:checked + label .switch-ball{   DARK MODE CSS
+  background-color: white;
+  transform: translateX(19px);
+  transition: transform 0.3s linear;
+} */
 .mega-menu {
   display: none;
   right: 0;
@@ -75,7 +91,7 @@
   
   /* accordian plus minus method ONE */
   
-  label:after {
+  .final-acc label:after {
     content: '\f055';
     position: absolute;
     right: 1em;
@@ -83,7 +99,7 @@
     font-family: "FontAwesome"
   }
   
-  input:checked + label:after {
+  .final-acc input:checked + label:after {
     content: '\f056';
     line-height: .8em;
   }
