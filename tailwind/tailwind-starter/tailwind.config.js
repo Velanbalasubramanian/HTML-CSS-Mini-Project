@@ -9,10 +9,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: theme => ({
-        'image-one': "url('images/realworld.png')",
-        'image-two': "url('/images/logo-dark.png')",
-    }),
+    //   backgroundImage: theme => ({
+    //     'image-one': "url('images/realworld.png')",
+    //     'image-two': "url('/images/logo-dark.png')",
+    // }),
     colors: {
       'cyan': colors.cyan,
       'teal': colors.teal
@@ -22,9 +22,9 @@ module.exports = {
       center: true,
   },
   variants: {
-    extend: {
-      backgroundImage: ['dark'],
-    },
+    // extend: {
+    //   backgroundImage: ['dark'],
+    // },
   },
   plugins: [],
 }
