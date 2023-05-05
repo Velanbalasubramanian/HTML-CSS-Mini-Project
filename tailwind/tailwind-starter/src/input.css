@@ -125,14 +125,24 @@ label .fa-sun{
   input[name='panel']:checked ~ .accordion__content {
     max-height: 50em;
   }
-  
+  input[name='panel']:checked ~ .accordion__content:active{
+    background-color: cyan;
+    
+  }
 
   .black{
     position:fixed;
     top:0;
+    left: 0;
+    right: 0;
     background:rgb();
     width:100%;
     height:80px;
+  }
+  @media (max-width: 432px) {
+    .black{
+      height:110px;
+    }
   }
   .blue{
     position:fixed;
@@ -161,3 +171,4 @@ label .fa-sun{
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
