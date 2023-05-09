@@ -22,7 +22,8 @@
     
   </head>
   <body class="dark:bg-gray-800 dark:text-gray-200">
-    <nav class="fixed z-10 container mx-auto  p-5 black">
+    <header class="fixed z-10 black">
+    <nav class="container mx-auto p-5">
       <div>
         <div class="flex flex-wrap justify-center items-center">
           <a href="" class="my-auto">
@@ -322,6 +323,7 @@
         </div>
       </div>
     </nav>
+  </header>
     <section class="p-6">
       <div class="container mx-auto lg:p-7">
         <div class="sm:py-16 py-24">
@@ -875,7 +877,7 @@
           <div class="group hover:translate-y-2 transition duration-300">
             <div class="text-center bg-gray-700 group-hover:bg-[#3b82f6] dark:group-hover:bg-yellow-300 p-10 rounded-t-lg" >
               <h4 class="text-white font-bold text-xl">BASIC</h4>
-              <h3 class="text-white font-bold text-6xl py-4">$39</h3>
+              <h3 class="text-white font-bold text-6xl py-4 counter" data-count="21035">0</h3>
               <span class="text-green-300 dark:text-green-500">Monthly</span>
             </div>
             <div class="p-8 shadow-2xl text-center rounded-b-lg bg-gray-50">
@@ -907,7 +909,7 @@
               class="text-center bg-gray-700 group-hover:bg-[#3b82f6] p-10 rounded-t-lg dark:group-hover:bg-yellow-300"
             >
               <h4 class="text-white font-bold text-xl">PROFESSIONAL</h4>
-              <h3 class="text-white font-bold text-6xl py-4">$59</h3>
+              <h3 class="text-white font-bold text-6xl py-4 counter" data-count="8025">0</h3>
               <span class="text-green-300">Monthly</span>
             </div>
             <div class="p-8 shadow-2xl text-center rounded-b-lg bg-gray-50">
@@ -939,7 +941,7 @@
               class="text-center bg-gray-700 group-hover:bg-[#3b82f6] p-10 rounded-t-lg dark:group-hover:bg-yellow-300"
             >
               <h4 class="text-white font-bold text-xl">ULTIMATE</h4>
-              <h3 class="text-white font-bold text-6xl py-4">$89</h3>
+              <h3 class="text-white font-bold text-6xl py-4 counter" data-count="625">0</h3>
               <span class="text-green-300">Monthly</span>
             </div>
             <div class="p-8 shadow-2xl text-center rounded-b-lg bg-gray-50">
@@ -1054,9 +1056,7 @@
     <section class="antialiased">
       <div class="flex w-full justify-center items-center py-20">
        
-        <div
-          class="flex flex-col md:flex-row md:space-x-6 md-space-y-0 space-y-6 bg-cyan-700 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden"
-        >
+        <div class="flex flex-col md:flex-row md:space-x-6 md-space-y-0 space-y-6 bg-cyan-700 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
           <div class="flex flex-col space-y-8 justify-between">
             <div>
               <h1 class="font-bold text-4xl tracking-wide">Contact Us</h1>
@@ -1101,9 +1101,7 @@
           <div class="relative">
             <div class="absolute z-0 w-40 h-40 bg-teal-300 rounded-full -right-28 -top-28"></div>
             <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-28"></div>
-            <div
-              class="relative bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80"
-            >
+            <div class="relative bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80" >
               <form action="" class="flex flex-col space-y-4">
                 <div>
                   <label for="" class="text-sm">Your name</label>
@@ -1150,6 +1148,84 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="py-24 bg-slate-400">
+  
+      <div class="relative z-0">
+      <div class="flex items-center justify-center pb-24 relative">
+        <img src="/images/waving-hand.png" alt="waving-hand" class="pr-5">
+        <h2 class="text-6xl text-[#ffff]">We love to hear from you</h2>
+      </div>
+      
+      <img src="/images/three-d.png" alt="" class="absolute right-28 -top-20 z-10">
+      <div class="flex justify-center items-center relative">
+    <div class="flex flex-col md:flex-row md:space-x-6 space-x-0 md:space-y-0 space-y-6 w-full bg-[#1E1E1E] max-w-6xl rounded-3xl px-14 py-24">
+     
+      <div class="w-full">
+        <div class="">
+          <h3 class="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-yellow-800">Get In Touch</h3>
+          <p class="text-[#ffff] text-lg pt-1 pr-32">Any question? Reach out to us and we’ll get back to you shortly.</p>
+        </div>
+        <div class="flex flex-col pt-20 pb-14 space-y-6">
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="contract-outline" class="text-teal-300 text-4xl"></ion-icon>
+            <a href=""><span class="text-[#ffff] text-2xl">contact@blockchainx.tech</span></a>
+            
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="logo-skype" class="text-teal-300 text-4xl"></ion-icon>
+            <a href=""><span class="text-[#ffff] text-2xl">Join us on Skype</span></a>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="logo-instagram" class="text-teal-300 text-4xl"></ion-icon>
+            <a href=""><span class="text-[#ffff] text-2xl">Join us on Instagram</span></a>
+          </div>
+        </div>
+        <div class="">
+          <h4 class="text-green-500 text-base">Follow us on</h4>
+          <div class="flex pt-1 space-x-5 items-center">
+           <a href=""><img src="/images/frame-insta.png" alt="frame-insta" class="w-24 h-12"></a>
+           <a href=""><img src="/images/frame-linked.png" alt="frame-linked" class="w-24 h-12"></a>
+           <a href=""><img src="/images/frame-twitter.png" alt="frame-twitter" class="w-24 h-12"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative w-full">
+        
+        <form action="" class="space-y-5">
+            <div class="">
+              <input type="text" class="border-b-[1px] bg-transparent focus-visible:outline-none caret-[#ffff] w-full placeholder:text-gray-500 placeholder:text-xl py-[14px] text-[#ffff]" placeholder="Enter Your name*"> 
+            </div>
+            <div class="">
+              <input type="email" class="border-b-[1px] bg-transparent focus-visible:outline-none caret-[#ffff] w-full placeholder:text-gray-500 placeholder:text-xl py-[14px] text-[#ffff]" placeholder="Enter Your Email*"> 
+            </div>
+            <div class="">
+              <input type="text" class="border-b-[1px] bg-transparent focus-visible:outline-none caret-[#ffff] w-full placeholder:text-gray-500 placeholder:text-xl py-[14px] text-[#ffff]" placeholder="Skype ID"> 
+            </div>
+            <div class="">
+              <input type="tel" class="border-b-[1px] bg-transparent focus-visible:outline-none caret-[#ffff] w-full placeholder:text-gray-500 placeholder:text-xl py-[14px] text-[#ffff]" maxlength="10" placeholder="Enter Your Phone Number*"> 
+            </div>
+            <div class="">
+              <input type="text" class="border-b-[1px] bg-transparent focus-visible:outline-none caret-[#ffff] w-full placeholder:text-gray-500 placeholder:text-xl py-[14px] text-[#ffff]" placeholder="Country"> 
+            </div>
+            <div class="">
+              <input type="url" class="border-b-[1px] bg-transparent focus-visible:outline-none caret-[#ffff] w-full placeholder:text-gray-500 placeholder:text-xl py-[14px] text-[#ffff]" placeholder="Website"> 
+            </div>
+            <div class="">
+              <textarea name="comment" id="" cols="5" rows="2" placeholder="Description" class="border-b-[1px] bg-transparent focus-visible:outline-none caret-[#ffff] w-full placeholder:text-gray-500 placeholder:text-xl py-[14px] text-[#ffff]"></textarea>
+               
+            </div>
+        </form>
+        
+          <button class="text-[#ffff] text-lg mt-24 bg-[#F5D255] bg-opacity-10 py-2 px-8 border border-[#F5D255] rounded-lg hover:bg-[#F5D255] hover:text-black">Submit</button>
+        
+      </div>
+
+    </div>
+  
+  </div>
+</div>
     </section>
     <!-- Footer -->
     <footer class="bg-[#c6c6c680] dark:bg-[#a1a1a129]">
@@ -1352,6 +1428,34 @@
 	  }
   })
 })
+    </script>
+
+    <!-- COUNTERS -->
+    <script>
+      // select the element
+const counters = document.querySelectorAll('.counter');
+
+// iterate through all the counter elements
+counters.forEach(counter => {
+  // function to increment the counter
+  function updateCount() {
+    const target = +counter.getAttribute('data-count');
+    const count = +counter.innerHTML;
+
+    const inc = Math.floor((target - count) / 100);
+
+    if (count < target && inc > 0) {
+      counter.innerHTML = (count + inc);
+      // repeat the function
+      setTimeout(updateCount, 1);
+    }
+    // if the count not equal to target, then add remaining count
+    else {
+      counter.innerHTML = target;
+    }
+  }
+  updateCount();
+});
     </script>
   </body>
 </html>

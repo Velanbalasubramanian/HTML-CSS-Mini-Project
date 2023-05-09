@@ -125,10 +125,6 @@ label .fa-sun{
   input[name='panel']:checked ~ .accordion__content {
     max-height: 50em;
   }
-  input[name='panel']:checked ~ .accordion__content:active{
-    background-color: cyan;
-    
-  }
 
   .black{
     position:fixed;
