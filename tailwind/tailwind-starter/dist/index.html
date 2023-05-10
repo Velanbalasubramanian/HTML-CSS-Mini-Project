@@ -47,7 +47,7 @@
                 <a href="" class="px-4 py-7">
                   About
                 </a>
-                <ul
+                <!-- <ul
                   class="absolute bg-gray-400 hidden group-hover:block rounded-xl w-32"
                 >
                   <li class="px-3 py-2">
@@ -56,14 +56,15 @@
                   <li class="px-3 py-2">
                     <a href="" class="hover:text-slate-100">About-Two</a>
                   </li>
-                </ul>
+                </ul> -->
               </li>
 
               <li class="hoverable relative my-auto hover:text-gray-600">
                 <a href="" class="px-4 py-7">
                   Services
                 </a>
-                <div class="p-6 mega-menu shadow-xl bg-gray-400 rounded">
+                <div class="p-6 mega-menu shadow-xl bg-gray-400 rounded absolute">
+                  <div class="top before:absolute before:content-[''] before:right-[35px] before:top-[-9px] before:border-[10px] border-solid border-[#b4b4b4] before:border-r-transparent before:border-t-transparent before:border-b-[#b4b4b4] before:border-l-[#b4b4b4] before:rotate-[135deg]  "></div>
                   <div class="container w-full flex justify-center">
                     <ul class="px-4 w-full pb-6 pt-6 lg:pt-3">
                       <div class="flex items-center">
@@ -220,10 +221,7 @@
             </button>
           </div>
 
-          <div
-            class="border border-green-800 rounded-lg font-medium text-md hover:text-gray-600 lg:px-8 px-5 py-2 text-center flex"
-            onclick="toggleModal()"
-          >
+          <div class="border border-green-800 rounded-lg font-medium text-md hover:text-gray-600 lg:px-8 px-5 py-2 text-center flex cursor-pointer" onclick="toggleModal()">
             <span>Connect Wallet</span>
           </div>
 
@@ -259,10 +257,7 @@
         </div>
         <!-- md VIEW -->
 
-        <div
-          class="fixed z-10 overflow-y-auto top-15 w-full left-0 hidden"
-          id="modal"
-        >
+        <div class="fixed z-10 overflow-y-auto top-15 w-full left-0 hidden" id="modal" >
           <div
             class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0"
           >
@@ -1149,36 +1144,36 @@
         </div>
       </div>
     </section>
-    <section class="py-24 bg-slate-400">
+    <section class="md:py-24 py-14">
   
-      <div class="relative z-0">
-      <div class="flex items-center justify-center pb-24 relative">
+      <div class="relative z-0 container">
+      <div class="flex items-center justify-center md:pb-24 pb-14 relative">
         <img src="/images/waving-hand.png" alt="waving-hand" class="pr-5">
-        <h2 class="text-6xl text-[#ffff]">We love to hear from you</h2>
+        <h2 class="2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-pink-600">We love to hear from you</h2>
       </div>
       
-      <img src="/images/three-d.png" alt="" class="absolute right-28 -top-20 z-10">
+      <img src="/images/three-d.png" alt="" class="absolute xl:right-28 md:right-0 -top-20 md:z-10 lg:w-80 w-0">
       <div class="flex justify-center items-center relative">
-    <div class="flex flex-col md:flex-row md:space-x-6 space-x-0 md:space-y-0 space-y-6 w-full bg-[#1E1E1E] max-w-6xl rounded-3xl px-14 py-24">
+    <div class="flex flex-col-reverse md:flex-row md:space-x-6 space-x-0 md:space-y-0 space-y-6 w-full bg-[#1E1E1E] max-w-6xl rounded-3xl sm:px-14 px-8 md:py-24 py-14">
      
       <div class="w-full">
-        <div class="">
-          <h3 class="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-yellow-800">Get In Touch</h3>
-          <p class="text-[#ffff] text-lg pt-1 pr-32">Any question? Reach out to us and we’ll get back to you shortly.</p>
+        <div class="md:pt-0 pt-12">
+          <h3 class="sm:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-yellow-800">Get In Touch</h3>
+          <p class="text-[#ffff] text-lg pt-1 lg:pr-32 pr-0">Any question? Reach out to us and we’ll get back to you shortly.</p>
         </div>
-        <div class="flex flex-col pt-20 pb-14 space-y-6">
+        <div class="flex flex-col md:pt-20 pt-10 md:pb-14 pb-10 space-y-6">
           <div class="inline-flex space-x-2 items-center">
             <ion-icon name="contract-outline" class="text-teal-300 text-4xl"></ion-icon>
-            <a href=""><span class="text-[#ffff] text-2xl">contact@blockchainx.tech</span></a>
+            <a href=""><span class="text-[#ffff] sm:text-2xl text-lg">contact@blockchainx.tech</span></a>
             
           </div>
           <div class="inline-flex space-x-2 items-center">
             <ion-icon name="logo-skype" class="text-teal-300 text-4xl"></ion-icon>
-            <a href=""><span class="text-[#ffff] text-2xl">Join us on Skype</span></a>
+            <a href=""><span class="text-[#ffff] sm:text-2xl text-lg">Join us on Skype</span></a>
           </div>
           <div class="inline-flex space-x-2 items-center">
             <ion-icon name="logo-instagram" class="text-teal-300 text-4xl"></ion-icon>
-            <a href=""><span class="text-[#ffff] text-2xl">Join us on Instagram</span></a>
+            <a href=""><span class="text-[#ffff] sm:text-2xl text-lg">Join us on Instagram</span></a>
           </div>
         </div>
         <div class="">
@@ -1218,7 +1213,7 @@
             </div>
         </form>
         
-          <button class="text-[#ffff] text-lg mt-24 bg-[#F5D255] bg-opacity-10 py-2 px-8 border border-[#F5D255] rounded-lg hover:bg-[#F5D255] hover:text-black">Submit</button>
+          <button class="text-[#ffff] text-lg md:mt-24 mt-14 bg-[#F5D255] bg-opacity-10 py-2 px-8 border border-[#F5D255] rounded-lg hover:bg-[#F5D255] hover:text-black">Submit</button>
         
       </div>
 

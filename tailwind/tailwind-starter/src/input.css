@@ -79,6 +79,7 @@ label .fa-sun{
       outline: none;
   }
   
+  /* HORIZONTAL VIEW
   #customers-testimonials5 .owl-dots {
     text-align: center;
     padding-top: 0px;
@@ -86,8 +87,14 @@ label .fa-sun{
     bottom: 20px;
     left: 0;
     right: 0;
-  }
+  } */
   
+  #customers-testimonials5 .owl-dots {
+    position: absolute;
+    top: 48%;
+    right: 0;
+    transform: rotate(90deg);
+}
   
   /* accordian plus minus method ONE */
   
@@ -168,3 +175,17 @@ label .fa-sun{
   background: #555; 
 }
 
+/* 
+  navbar arrow hover before css style
+  .top:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  box-sizing: border-box;
+  border: 10px solid #b4b4b4;
+  border-color: transparent transparent #b4b4b4 #b4b4b4;
+  transform-origin: 0 0;
+  transform: rotate(135deg);
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.13);
+} */
