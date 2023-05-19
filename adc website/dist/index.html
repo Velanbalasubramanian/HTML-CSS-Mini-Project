@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADC Website</title>
+    <link rel="stylesheet" href="output.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="relative before:content-[''] before:absolute before:h-[80%] 2xl:before:w-[70%] before:w-[75%] before:right-0 before:top-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-bl-3xl">  
+
+      <header class="">
+<nav class="bg-white dark:bg-gray-900 w-full z-10">
+  <div class="container flex flex-wrap items-center justify-between mx-auto 2xl:pt-[35px] 2xl:px-11 xl:pt-[30px] md:px-5 pt-[20px] px-4 z-10">
+  <a href="" class="flex items-center">
+      <img src="/images/logo.png" class="xl:w-64 lg:w-52 md:w-48 w-44" alt="Logo">
+  </a>
+  <div class="flex md:order-2 sm:mt-0 mt-1">
+      
+        <button type="button" class="text-white bg-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl lg:mr-0 mr-4 z-10">Get started</button>
+     
+      <button data-collapse-toggle="navbar-sticky" type="button" onclick="menuClick()" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 z-10" aria-controls="navbar-sticky" aria-expanded="false">
+        <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+  </div>
+  <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="flex flex-col p-4 md:p-0 mt-4 lg:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+      <li class="relative">
+        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue" aria-current="page">Home</a>
+      </li>
+      <li class="relative">
+        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue" aria-current="page">How it Works</a>
+      </li>
+      <li class="relative">
+        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] hover:before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue" aria-current="page">Data Service Brokers</a>
+      </li>
+      <li class="relative">
+        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue" aria-current="page">How to access</a>
+      </li>
+      <li class="relative">
+        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-[#002d61] font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-[#002d61]" aria-current="page">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <!-- md VIEW -->
+  <div class="hidden" id="mobileMenu">
+    <ul class="lg:hidden font-bold text-gray-600 ">
+      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">Home</a></li>
+      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">How it Works</a></li>
+      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">Data Service Brokers</a></li>
+      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">How to access</a></li>
+      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">Contact</a></li>
+    </ul>
+  </div>
+  <!-- md VIEW -->
+</nav>
+</header>
+
+<div class="container mx-auto pt-28">
+  <div class="grid md:grid-cols-2 grid-cols-1 2xl:max-w-7xl xl:max-w-5xl max-w-3xl mx-auto z-10">
+    
+    <div class="my-auto z-10">
+        <h1 class="text-zblue 2xl:text-5xl xl:text-4xl text-3xl font-poppins font-medium pb-9">The Australian Death Check is a new data cleansing service that is the only official source.</h1>
+        <p class="xl:text-2xl text-xl pb-12">The Australian Death Notification Service allows families to notify relevant organisations.</p>
+        <button type="button" class="text-white bg-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl lg:mr-0 mr-4">Get started</button>
+    </div>
+    <div class="z-10">
+      <img src="/images/data-one.png" class="w-[801px]" alt="matched-data">
+    </div>
+  </div>
+  
+</div>
+</section>
+    
+   
+ <!-- NAVBAR -->
+ <script>
+  function menuClick() {
+    var menu = document.getElementById("mobileMenu");
+    if (menu.classList.contains("hidden")) {
+      menu.classList.remove("hidden");
+    } else {
+      menu.classList.add("hidden");
+    }
+  }
+</script>
+   
+  </body>
+</html>
