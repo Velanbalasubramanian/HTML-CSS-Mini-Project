@@ -6,87 +6,599 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADC Website</title>
     <link rel="stylesheet" href="output.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <section class="relative before:content-[''] before:absolute before:h-[80%] 2xl:before:w-[70%] before:w-[75%] before:right-0 before:top-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-bl-3xl">  
+  <body class="font-pop">
+    <section class=" relative before:content-[''] before:absolute before:h-[75%] 2xl:before:w-[75%] before:w-[75%] before:right-0 before:top-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-bl-hoborder" >
+      <header>
+        <nav
+          class="flex flex-wrap items-center justify-between mx-auto 2xl:pt-[35px] 2xl:px-11 xl:pt-[30px] md:px-5 pt-[20px] px-4"
+        >
+          <div class="flex items-center">
+            <a href="">
+              <img
+                src="/images/logo.svg"
+                class="xl:w-64 lg:w-52 md:w-48 w-44"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              class="text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl z-10 lg:block hidden"
+            >
+              Get started
+            </button>
 
-      <header class="">
-<nav class="bg-white dark:bg-gray-900 w-full z-10">
-  <div class="container flex flex-wrap items-center justify-between mx-auto 2xl:pt-[35px] 2xl:px-11 xl:pt-[30px] md:px-5 pt-[20px] px-4 z-10">
-  <a href="" class="flex items-center">
-      <img src="/images/logo.png" class="xl:w-64 lg:w-52 md:w-48 w-44" alt="Logo">
-  </a>
-  <div class="flex md:order-2 sm:mt-0 mt-1">
-      
-        <button type="button" class="text-white bg-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl lg:mr-0 mr-4 z-10">Get started</button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              onclick="menuClick()"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 z-10"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 lg:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+            >
+              <li class="relative">
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue"
+                  aria-current="page"
+                  >How it Works</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] hover:before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue"
+                  aria-current="page"
+                  >Data Service Brokers</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue"
+                  aria-current="page"
+                  >How to access</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-[#002d61] font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-[#002d61]"
+                  aria-current="page"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- md VIEW -->
+        <div class="hidden" id="mobileMenu">
+          <ul class="lg:hidden font-bold text-gray-600">
+            <li class="py-2 flex">
+              <a
+                href=""
+                class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
+                >Home</a
+              >
+            </li>
+            <li class="py-2 flex">
+              <a
+                href=""
+                class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
+                >How it Works</a
+              >
+            </li>
+            <li class="py-2 flex">
+              <a
+                href=""
+                class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
+                >Data Service Brokers</a
+              >
+            </li>
+            <li class="py-2 flex">
+              <a
+                href=""
+                class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
+                >How to access</a
+              >
+            </li>
+            <li class="py-2 flex">
+              <a
+                href=""
+                class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
+                >Contact</a
+              >
+            </li>
+            <li class="py-2 flex">
+              <button
+              type="button"
+              class="mx-auto text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl"
+            >
+              Get started
+            </button>
+            </li>
+          </ul>
+         
+        </div>
+        <!-- md VIEW -->
+      </header>
+
+      <div class="lg:pt-28 sm:pt-24 pt-16 lg:px-44 md:px-36 sm:px-32 px-6">
+      <div class="container mx-auto">
+        <div class="grid lg:grid-cols-2 grid-cols-1 mx-auto z-10" >
+          <div class="my-auto z-10">
+            <h1
+              class="text-zblue 2xl:text-5xl xl:text-4xl sm:text-3xl text-2xl font-medium xl:pb-9 lg:pb-7 pb-5"
+            >
+              The Australian Death Check is a new data cleansing service that is
+              the only official source.
+            </h1>
+            <p class="xl:text-2xl sm:text-xl text-lg xl:pb-12 lg:pb-10 pb-8">
+              The Australian Death Notification Service allows families to
+              notify relevant organisations.
+            </p>
+            <button
+              type="button"
+              class="text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl"
+            >
+              Get started
+            </button>
+          </div>
+          <div class="z-10 lg:pt-0 pt-8">
+            <img
+              src="/images/data-one.png"
+              class="w-[801px]"
+              alt="matched-data"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
      
-      <button data-collapse-toggle="navbar-sticky" type="button" onclick="menuClick()" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 z-10" aria-controls="navbar-sticky" aria-expanded="false">
-        <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-      </button>
-  </div>
-  <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul class="flex flex-col p-4 md:p-0 mt-4 lg:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-      <li class="relative">
-        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue" aria-current="page">Home</a>
-      </li>
-      <li class="relative">
-        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue" aria-current="page">How it Works</a>
-      </li>
-      <li class="relative">
-        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] hover:before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue" aria-current="page">Data Service Brokers</a>
-      </li>
-      <li class="relative">
-        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-zblue" aria-current="page">How to access</a>
-      </li>
-      <li class="relative">
-        <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-[#002d61] font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full focus:before:w-full before:top-[-52px] before:bg-[#002d61]" aria-current="page">Contact</a>
-      </li>
-    </ul>
-  </div>
-  </div>
-  <!-- md VIEW -->
-  <div class="hidden" id="mobileMenu">
-    <ul class="lg:hidden font-bold text-gray-600 ">
-      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">Home</a></li>
-      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">How it Works</a></li>
-      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">Data Service Brokers</a></li>
-      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">How to access</a></li>
-      <li class="py-2 flex"><a href="" class="mx-auto text-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]">Contact</a></li>
-    </ul>
-  </div>
-  <!-- md VIEW -->
-</nav>
-</header>
+    </section>
 
-<div class="container mx-auto pt-28">
-  <div class="grid md:grid-cols-2 grid-cols-1 2xl:max-w-7xl xl:max-w-5xl max-w-3xl mx-auto z-10">
-    
-    <div class="my-auto z-10">
-        <h1 class="text-zblue 2xl:text-5xl xl:text-4xl text-3xl font-poppins font-medium pb-9">The Australian Death Check is a new data cleansing service that is the only official source.</h1>
-        <p class="xl:text-2xl text-xl pb-12">The Australian Death Notification Service allows families to notify relevant organisations.</p>
-        <button type="button" class="text-white bg-zblue font-poppins font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl lg:mr-0 mr-4">Get started</button>
+    <section class="relative before:content-[''] before:absolute before:h-[78%] 2xl:before:w-[75%] before:w-[75%] before:left-0 before:bottom-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-br-brdar before:rounded-tr-brdar">
+      <div class="lg:py-28 sm:py-24 py-16 lg:px-44 md:px-36 sm:px-32 px-6 ">
+        <div class="container mx-auto">
+          <div class="flex">
+          <img src="/images/arrow-right.svg" alt="arrow" class="h-5 w-9 my-auto">
+          <h2 class="text-4xl text-zblack pl-7">What it is all about</h2>
+        </div>
+          <div class="grid grid-cols-3 gap-12 mx-auto" >
+            <div class="col-span-2 z-10">
+              <div class="space-y-7 w-5/6 z-10 pt-6">
+              <h3 class="text-4xl font-medium text-zblue">
+                The only official source The Australian Death Check is a new data cleansing service.
+              </h3>
+              <p class="text-2xl">
+                The Australian Death Check allows businesses to cleanse customer
+                data against over 3 million official government death records for
+                the first time.
+              </p>
+            </div>
+            </div>
+
+            <div class="z-10">
+              <div class="shadow-2xl rounded-xl bg-white h-full flex flex-col">
+                <div class="px-10 py-11 space-y-9">
+                <img src="/images/minutes.svg" alt="minutes">
+                <p class="text-2xl">
+                  Bulk cleanses against over 3 million national death records in minutes
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="z-10">
+              <div class="shadow-2xl rounded-xl bg-white h-full flex flex-col">
+                <div class="px-10 py-11 space-y-9">
+                <img src="/images/tick.svg" alt="minutes">
+                <p class="text-2xl">
+                  A joint initiative from the state and territory registries that offers a single source of truth.
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="z-10">
+              <div class="shadow-2xl rounded-xl bg-white h-full flex flex-col">
+                <div class="px-10 py-11 space-y-9">
+                <img src="/images/lock.svg" alt="minutes">
+                <p class="text-2xl">
+                  Secure system that adheres to data protection law and regulations.
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="z-10">
+              <div class="shadow-2xl rounded-xl bg-white h-full flex flex-col">
+                <div class="px-10 py-11 space-y-9">
+                <img src="/images/up-to-date.svg" alt="minutes">
+                <p class="text-2xl">
+                  Gives immediate access to the most up-to-date death data in Australia.
+                </p>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative before:content-[''] before:absolute before:h-[72%] 2xl:before:w-[73%] before:w-[75%] before:right-0 before:bottom-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-tl-brdar before:rounded-bl-brdar">
+      <div class="lg:pt-28 lg:pb-20 sm:pt-24 pt-16 lg:px-44 md:px-36 sm:px-32 px-6">
+        <div class="container mx-auto">
+          <div class="text-center pb-28">
+          <h2 class="text-4xl text-zblack">How it Works</h2>
+          <h3 class="text-[40px] font-medium text-zblue">
+            We Focus on our Subscribers as we know <br> everything else will follow
+          </h3>
+        </div>
+      
+          
+            <div class="grid grid-cols-12 mx-auto gap-8" >
+              <div class="col-span-5 z-10">
+                <img
+                  src="/images/how-its-work.svg"
+                  class="w-[801px]"
+                  alt="matched-data"
+                />
+              </div>
+              <div class="col-span-7  z-10">
+                <div class="space-y-14">
+               <div class="flex space-x-14">
+                <div class="h-[90px] w-[90px] bg-opacity-[0.15] bg-[#002d61] py-7 px-10 rounded-xl">
+                  <span class=" text-3xl">1</span>
+                </div>
+                <div>
+                  <h4 class="text-[40px] font-medium text-zblue">Set or Create Mapper</h4>
+                  <p class="text-zblack text-2xl pt-5">
+                    A joint initiative from the state and territory registries, the Death Check offers commercial organisations the opportunity to cleanse customer
+                  </p>
+                </div>
+               </div>
+
+               <div class="flex space-x-14">
+                <div class="h-[90px] w-[90px] bg-opacity-[0.15] bg-[#002d61] py-7 px-10 rounded-xl">
+                  <span class=" text-3xl">2</span>
+                </div>
+                <div>
+                  <h4 class="text-[40px] font-medium text-zblue">Single or Bulk Search</h4>
+                  <p class="text-zblack text-2xl pt-5">
+                    Government agencies can apply to use the Death Check, or, alternatively, can enquire about the Fact of Death service, which is a government-only service.
+                  </p>
+                </div>
+               </div>
+
+               <div class="flex space-x-14">
+                <div class="h-[90px] w-[90px] bg-opacity-[0.15] bg-[#002d61] py-7 px-10 rounded-xl">
+                  <span class=" text-3xl">3</span>
+                </div>
+                <div>
+                  <h4 class="text-[40px] font-medium text-zblue">Check your Results</h4>
+                  <p class="text-zblack text-2xl pt-5">
+                    The Australian Death Check allows businesses to cleanse customer data against over 3 million official government death records for the first time.
+                  </p>
+                </div>
+               </div>
+              </div>
+              </div>
+            </div>
+          
+        
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="lg:py-28 sm:pt-24 pt-16 lg:px-44 md:px-36 sm:px-32 px-6">
+        <div class="container mx-auto">
+          
+          <div class="grid grid-cols-12 mx-auto z-10" >
+            
+            <div class="col-span-6 space-y-8 my-auto z-10">
+
+              <div class="flex">
+                <img src="/images/arrow-right.svg" alt="arrow" class="h-5 w-9 my-auto">
+                <h2 class="text-4xl text-zblack pl-7">Data Service Brokers</h2>
+              </div>
+
+              <h1 class="text-zblue 2xl:text-[40px] xl:text-4xl sm:text-3xl text-2xl font-medium" >
+              The Australian Death Check is a ground
+              -breaking new service designed to
+              complement existing data
+              </h1>
+              <p class="xl:text-2xl sm:text-xl text-lg">
+                The Australian Death Check will help your clients to drive efficiencies,reduce costs and minimise risk. Using an API to seamlessly integrate into your own applications, the Australian Death Check accesses over 3 million national death records (updated daily) and returns results in minutes.
+              </p>
+             
+            </div>
+            <div class="col-span-6 z-10">
+              <img
+                src="/images/data-service-brokers.png"
+                class="lg:pt-0 pt-8"
+                alt="data-service-brokers"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative">
+      <div class="lg:px-44 md:px-36 sm:px-32 px-6">
+        <div class="container mx-auto">
+          <div class="bg-[#002d61] bg-opacity-[.06] px-[60px] py-[94px] rounded-hobo">
+          <div class="max-w-[60%] mx-auto">
+          <div class="text-center pb-20">
+            <h2 class="text-4xl text-zblack pb-3.5">Stay ahead of the game</h2>
+            <h3 class="text-[40px] font-medium text-zblue">
+              Become a Data Service Broker for the Australian Death Check, and benefit from
+            </h3>
+          </div>
+        </div>
+          <div class="grid grid-cols-12 gap-10 mx-auto" >
+            
+            <div class="col-span-4 z-10">
+              <div class="shadow-3xl rounded-xl h-full flex flex-col bg-white">
+                <div class="px-10 py-11 space-y-9 ">
+                <img src="/images/location.svg" alt="location" class="w-24 h-24">
+                <p class="text-2xl">
+                  Access to the only official source of national death data in Australia.
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-span-4 z-10">
+              <div class="shadow-3xl rounded-xl h-full flex flex-col bg-white">
+                <div class="px-10 py-11 space-y-9 ">
+                <img src="/images/tick.svg" alt="tick" class="w-24 h-24">
+                <p class="text-2xl">
+                  Being positioned at the forefront of contemporary data integrity best practice.
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-span-4 z-10">
+              <div class="shadow-3xl rounded-xl h-full flex flex-col bg-white">
+                <div class="px-10 py-11 space-y-9 ">
+                <img src="/images/download.svg" alt="download" class="w-24 h-24">
+                <p class="text-2xl">
+                  Opportunities to increase your customer base to new organisations / markets.
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-span-4 z-10">
+              <div class="shadow-3xl rounded-xl h-full flex flex-col bg-white">
+                <div class="px-10 py-11 space-y-9">
+                <img src="/images/contact.svg" alt="contact" class="w-24 h-24">
+                <p class="text-2xl">
+                  An increase in revenue from your existing customer base.
+                </p>
+              </div>
+              </div>
+            </div>
+
+           
+
+            <div class="col-span-4 z-10">
+              <div class="shadow-3xl rounded-xl h-full flex flex-col bg-white">
+                <div class="px-10 py-11 space-y-9">
+                <img src="/images/phone.svg" alt="phone" class="w-24 h-24">
+                <p class="text-2xl">
+                  Dedicated support / account management from the Registry.
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-span-4 z-10">
+              <div class="shadow-3xl rounded-xl h-full flex flex-col bg-white">
+                <div class="px-10 py-11 space-y-9">
+                <img src="/images/dollar.svg" alt="dollar" class="w-24 h-24">
+                <p class="text-2xl">
+                  A tiered pricing model, with no restrictions on your retail price.
+                </p>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative ">
+      <div class="py-36 lg:px-44 md:px-36 sm:px-32 px-6 ">
+        <div class="container mx-auto">
+          <div class="max-w-[70%] mx-auto">
+          <div class="text-center pb-20">
+            <h2 class="text-4xl text-zblack pb-4">How to access</h2>
+            <h3 class="text-[40px] font-medium text-zblue">
+              Businesses and government agencies can request access to the Australian Death Check through an approved Data Service Broker.
+            </h3>
+          </div>
+        </div>
+          <div class="grid grid-cols-12 gap-16 mx-auto" >
+            
+            <div class="col-span-6">
+              <div class="rounded-xl h-full flex flex-col bg-zbl">
+                <div class="px-10 py-11 space-y-9 ">
+                <img src="/images/tick.svg" alt="tick" class="w-32 h-32">
+                <h2 class="text-4xl font-medium text-zblue">Can you afford not to?</h2>
+                <p class="text-2xl">
+                  When a business uses inaccurate customer data,things can go wrong—quickly. In some cases, reputational damage can be irreparable—customer trust is broken, and financial loss inevitable.
+                </p>
+                <p class="text-2xl">
+                 The Australian Death Check will help you to maintain the accuracy of your data.
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-span-6">
+              <div class="rounded-xl h-full flex flex-col bg-zbl">
+                <div class="px-10 py-11 space-y-9 ">
+                <img src="/images/contact.svg" alt="contact" class="w-32 h-32">
+                <h2 class="text-4xl font-medium text-zblue">Take responsibility</h2>
+                <p class="text-2xl">
+                  By actively cleansing your customer information and identifying deceased persons, you will protect your brand, improve customer experience and save money.
+                </p>
+                <p class="text-2xl">
+                  You’ll also remove a burden from bereaved families, who will no longer need to notify your business about the death of a loved one.
+                </p>
+              </div>
+              </div>
+            </div> 
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative ">
+      <div class="lg:px-44 md:px-36 sm:px-32 px-6 ">
+        <div class="container mx-auto">
+          <div class="bg-zblue px-24 py-20 rounded-3xl  relative before:content-[''] before:absolute before:h-[100%] 2xl:before:w-[35%] before:right-0 before:bottom-0 before:lg:bg-zbopa before:rounded-tl-hobornine before:rounded-bl-hobornine before:rounded-br-3xl before:rounded-tr-3xl">
+            <div class="">
+          <div class="grid grid-cols-12 mx-auto">
+            <div class="col-span-8">
+              <h4 class="text-[40px] text-white pb-5">Find out how to access</h4>
+              <p class="text-white text-[34px]">
+                Request access to the Australian Death Check through an approved Data Service Broker.
+              </p>
+            </div>
+            <div class="col-span-4 flex justify-end">
+              <div class="my-auto z-10">
+              <button
+              type="button"
+              class="text-zblue bg-white font-medium 2xl:text-[28px] xl:text-[18px] text-[16px] 2xl:w-[281px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[91px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl"
+            >
+              Get started
+            </button>
+          </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="">
+      <div class="lg:py-28 sm:py-24 py-16 lg:px-44 md:px-36 sm:px-32 px-6">
+        <div class="container mx-auto">
+          <div class="grid lg:grid-cols-2 grid-cols-1 mx-auto z-10" >
+            <div class="my-auto z-10">
+              <h1 class="text-zblue 2xl:text-[40px] xl:text-4xl sm:text-3xl text-2xl font-medium pb-5" >
+              Need assistance with your Australian Death Check product and services?
+              </h1>
+              <p class="xl:text-2xl sm:text-xl text-lg pb-12">
+                We'll get you the help you need.
+              </p>
+              <button
+                type="button"
+                class="text-white bg-zblue font-medium text-[28px] w-[281px] h-[93px] rounded-xl"
+              >
+              Contact Us
+              </button>
+              <div class="pt-[75px] space-y-12">
+                <div class="flex">
+                  <img src="/images/map-pin.svg" alt="" class="pr-[30px]">
+                  <p class="text-2xl">
+                    Level 5, 1 Southbank Blvd Southbank Melbourne, Victoria 3006. Australia.
+                  </p>
+                </div>
+                <div class="flex">
+                  <img src="/images/mail.svg" alt="mail" class="pr-[30px]">
+                  <p class="text-2xl">
+                    support@deathcheck.com
+                  </p>
+                </div>
+                <div class="flex">
+                  <img src="/images/phone-call.svg" alt="phone-call" class="pr-[30px]">
+                  <p class="text-2xl">
+                    +1 866 272 3003 
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="lg:pt-0 pt-8 my-auto">
+              <img
+                src="/images/contact-us.png"
+                class=""
+                alt="contact-us"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-zbl px-11 py-9">
+      <div class="flex justify-between items-center">
+      <img src="/images/logo.svg" alt="logo" class="w-[355px] h-[74px]">
+      <p class="text-[28px]">
+        © Copyright 2021. Phillips & Cohen Associates, Ltd.
+      </p>
+      <div class="flex space-x-4">
+        <img src="/images/twitter.png" alt="twitter" class="w-8 h-9 rounded-md">
+        <img src="/images/facebook.png" alt="facebook" class="w-8 h-9 rounded-md">
+        <img src="/images/linked-in.png" alt="linked-in" class="w-8 h-9 rounded-md">
+        <img src="/images/instagram.png" alt="instagram" class="w-8 h-9 rounded-md">
+      </div>
     </div>
-    <div class="z-10">
-      <img src="/images/data-one.png" class="w-[801px]" alt="matched-data">
-    </div>
-  </div>
-  
-</div>
-</section>
-    
-   
- <!-- NAVBAR -->
- <script>
-  function menuClick() {
-    var menu = document.getElementById("mobileMenu");
-    if (menu.classList.contains("hidden")) {
-      menu.classList.remove("hidden");
-    } else {
-      menu.classList.add("hidden");
-    }
-  }
-</script>
-   
+    </footer>
+    <!-- NAVBAR -->
+    <script>
+      function menuClick() {
+        var menu = document.getElementById("mobileMenu");
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
+        }
+      }
+    </script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="105" viewBox="0 0 105 105">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#002d61;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="Group_950" transform="translate(-1313 -1135)">
+        <circle id="Ellipse_9" cx="52.5" cy="52.5" r="52.5" fill="#002d61" opacity="0.15" transform="translate(1313 1135)"/>
+        <g id="Icon_feather-clock" transform="translate(1339.354 1161.354)">
+            <path id="Path_531" d="M48.779 25.889A22.889 22.889 0 1 1 25.889 3a22.889 22.889 0 0 1 22.89 22.889z" class="cls-2"/>
+            <path id="Path_532" d="M18 9v13.734l9.156 4.578" class="cls-2" transform="translate(7.889 3.156)"/>
+        </g>
+    </g>
+</svg>

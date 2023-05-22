@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="105" viewBox="0 0 105 105">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#002d61;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="Group_959" transform="translate(-262 -4909)">
+        <circle id="Ellipse_55" cx="52.5" cy="52.5" r="52.5" fill="#002d61" opacity="0.15" transform="translate(262 4909)"/>
+        <g id="Icon_feather-users" transform="translate(288.943 4945.32)">
+            <path id="Path_538" d="M31.086 33.595V29.9a7.4 7.4 0 0 0-7.4-7.4H8.9a7.4 7.4 0 0 0-7.4 7.4v3.7" class="cls-2" transform="translate(9.595 -.311)"/>
+            <path id="Path_539" d="M22.293 11.9a7.4 7.4 0 1 1-7.4-7.4 7.4 7.4 0 0 1 7.4 7.4z" class="cls-2" transform="translate(10.991 -4.5)"/>
+            <path id="Path_540" d="M35.547 33.549v-3.7A7.4 7.4 0 0 0 30 22.7" class="cls-2" transform="translate(16.228 -.265)"/>
+            <path id="Path_543" d="M30 33.549v-3.7a7.4 7.4 0 0 1 5.547-7.149" class="cls-2" transform="translate(-30 -.265)"/>
+            <path id="Path_541" d="M24 4.695a7.4 7.4 0 0 1 0 14.331" class="cls-2" transform="translate(14.831 -4.455)"/>
+            <path id="Path_542" d="M29.562 4.695a7.4 7.4 0 0 0 0 14.331" class="cls-2" transform="translate(-16.618 -4.455)"/>
+        </g>
+    </g>
+</svg>

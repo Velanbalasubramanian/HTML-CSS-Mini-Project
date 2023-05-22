@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="685" height="678" viewBox="0 0 685 678">
+    <defs>
+        <filter id="Rectangle_221" width="418" height="413" x="0" y="265" filterUnits="userSpaceOnUse">
+            <feOffset dy="8"/>
+            <feGaussianBlur result="blur" stdDeviation="10"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_220" width="176" height="177" x="0" y="170" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-2" stdDeviation="10"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_232" width="418" height="410" x="267" y="58" filterUnits="userSpaceOnUse">
+            <feOffset dy="8"/>
+            <feGaussianBlur result="blur-3" stdDeviation="10"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_231" width="176" height="176" x="267" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-4" stdDeviation="10"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-7{fill:#002d61}.cls-13,.cls-18,.cls-9{fill:none}.cls-9{stroke:#fff}.cls-10,.cls-3,.cls-6,.cls-8{fill:#fff}.cls-4{fill:#4d4d4d;font-size:13px}.cls-10,.cls-14,.cls-4,.cls-5{font-family:Poppins-Regular,Poppins}.cls-14,.cls-5{fill:#555}.cls-10,.cls-5,.cls-8{font-size:12px}.cls-6{stroke:#cbcbcb}.cls-8{font-family:Poppins-Medium,Poppins;font-weight:500}.cls-13,.cls-9{stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}.cls-13{stroke:#555}.cls-14{font-size:14px}.cls-16{opacity:.5}.cls-17{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_917" transform="translate(-161 -2383)">
+        <g id="Group_906" transform="translate(4919 -2249)">
+            <circle id="Ellipse_10" cx="275" cy="275" r="275" fill="#002d61" opacity="0.1" transform="translate(-4690 4706)"/>
+            <g id="Ellipse_11" fill="none" stroke="#fff" stroke-dasharray="20" stroke-width="4px" transform="translate(-4626 4770)">
+                <circle cx="211" cy="211" r="211" class="cls-17"/>
+                <circle cx="211" cy="211" r="209" class="cls-18"/>
+            </g>
+        </g>
+        <g id="Group_913" transform="translate(1016 -414)">
+            <g id="Group_914" transform="translate(0 20)">
+                <g id="Group_918" transform="translate(-1011 -326)">
+                    <g filter="url(#Rectangle_221)" transform="translate(156 3103)">
+                        <rect id="Rectangle_221-2" width="358" height="353" class="cls-3" rx="15" transform="translate(30 287)"/>
+                    </g>
+                    <g id="Group_918-2" transform="translate(0 -5)">
+                        <text id="Advance_Search" class="cls-4" transform="translate(311 3708)">
+                            <tspan x="-106.912" y="0">Advance Search</tspan>
+                        </text>
+                        <text id="Name" class="cls-5" transform="translate(204 3433)">
+                            <tspan x="0" y="0">Name</tspan>
+                        </text>
+                        <text id="Date_of_Birth" class="cls-5" transform="translate(204 3516)">
+                            <tspan x="0" y="0">Date of Birth</tspan>
+                        </text>
+                        <text id="State" class="cls-5" transform="translate(204 3601)">
+                            <tspan x="0" y="0">State</tspan>
+                        </text>
+                        <text id="Sur_Family_Name" class="cls-5" transform="translate(373 3433)">
+                            <tspan x="0" y="0">Sur / Family Name</tspan>
+                        </text>
+                        <text id="Date_of_Death" class="cls-5" transform="translate(373 3516)">
+                            <tspan x="0" y="0">Date of Death</tspan>
+                        </text>
+                        <text id="Postal_Code" class="cls-5" transform="translate(373 3601)">
+                            <tspan x="0" y="0">Postal Code</tspan>
+                        </text>
+                        <g id="Rectangle_222" class="cls-6" transform="translate(204 3445)">
+                            <rect width="153" height="38" class="cls-17" rx="4"/>
+                            <rect width="152" height="37" x=".5" y=".5" class="cls-18" rx="3.5"/>
+                        </g>
+                        <g id="Rectangle_226" class="cls-6" transform="translate(204 3530)">
+                            <rect width="153" height="38" class="cls-17" rx="4"/>
+                            <rect width="152" height="37" x=".5" y=".5" class="cls-18" rx="3.5"/>
+                        </g>
+                        <g id="Rectangle_228" class="cls-6" transform="translate(204 3615)">
+                            <rect width="153" height="38" class="cls-17" rx="4"/>
+                            <rect width="152" height="37" x=".5" y=".5" class="cls-18" rx="3.5"/>
+                        </g>
+                        <g id="Rectangle_224" class="cls-6" transform="translate(373 3445)">
+                            <rect width="153" height="38" class="cls-17" rx="4"/>
+                            <rect width="152" height="37" x=".5" y=".5" class="cls-18" rx="3.5"/>
+                        </g>
+                        <g id="Rectangle_225" class="cls-6" transform="translate(373 3530)">
+                            <rect width="153" height="38" class="cls-17" rx="4"/>
+                            <rect width="152" height="37" x=".5" y=".5" class="cls-18" rx="3.5"/>
+                        </g>
+                        <g id="Rectangle_227" class="cls-6" transform="translate(373 3615)">
+                            <rect width="153" height="38" class="cls-17" rx="4"/>
+                            <rect width="152" height="37" x=".5" y=".5" class="cls-18" rx="3.5"/>
+                        </g>
+                        <rect id="Rectangle_229" width="107" height="41" class="cls-7" rx="5" transform="translate(419 3683)"/>
+                        <text id="Search" class="cls-8" transform="translate(452 3708)">
+                            <tspan x="0" y="0">Search</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group_907" transform="translate(-825 2977.366)">
+                    <g filter="url(#Rectangle_220)" transform="translate(-30 -200.37)">
+                        <rect id="Rectangle_220-2" width="116" height="117" class="cls-7" rx="15" transform="translate(30 200)"/>
+                    </g>
+                    <g id="Icon_feather-user" transform="translate(42 20.618)">
+                        <path id="Path_536" d="M38.364 34.636v-4.045a8.091 8.091 0 0 0-8.091-8.091H14.091A8.091 8.091 0 0 0 6 30.591v4.045" class="cls-9" transform="translate(-6 1.773)"/>
+                        <path id="Path_537" d="M28.182 12.591A8.091 8.091 0 1 1 20.091 4.5a8.091 8.091 0 0 1 8.091 8.091z" class="cls-9" transform="translate(-3.909 -4.5)"/>
+                    </g>
+                    <text id="Single_Search" class="cls-10" transform="translate(58 91.634)">
+                        <tspan x="-40.71" y="0">Single Search</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group_912" transform="translate(-615.317 2819)">
+                <g filter="url(#Rectangle_232)" transform="translate(-239.68 -22)">
+                    <rect id="Rectangle_232-2" width="358" height="350" class="cls-3" rx="15" transform="translate(297 80)"/>
+                </g>
+                <g id="Group_911" transform="translate(75.512 81.805)">
+                    <g id="Rectangle_233" fill="#fff" stroke="#cbcbcb" stroke-dasharray="5" transform="translate(-.195 .195)">
+                        <rect width="322" height="158" class="cls-17" rx="4"/>
+                        <rect width="321" height="157" x=".5" y=".5" class="cls-18" rx="3.5"/>
+                    </g>
+                    <g id="Group_909" transform="translate(68.805 26.195)">
+                        <text id="Drag_and_Drop_a_File" fill="#555" font-family="Poppins-Regular, Poppins" font-size="18px" transform="translate(92 100.963)">
+                            <tspan x="-91.62" y="0">Drag and Drop a File</tspan>
+                        </text>
+                        <g id="Icon_feather-upload-cloud" transform="translate(62.927)">
+                            <path id="Path_544" d="M36.312 30.156L24.156 18 12 30.156" class="cls-13" transform="translate(9.29 9.344)"/>
+                            <path id="Path_545" d="M18 18v27.351" class="cls-13" transform="translate(15.446 9.344)"/>
+                            <path id="Path_546" d="M60.435 51.267a15.195 15.195 0 0 0-7.263-28.536h-3.83A24.312 24.312 0 1 0 7.586 44.915" class="cls-13" transform="translate(-1.492 -4.503)"/>
+                            <path id="Path_547" d="M36.312 30.156L24.156 18 12 30.156" class="cls-13" transform="translate(9.29 9.344)"/>
+                        </g>
+                    </g>
+                    <g id="Rectangle_234" class="cls-6" transform="translate(-.195 184.195)">
+                        <rect width="273" height="51" class="cls-17" rx="4"/>
+                        <rect width="272" height="50" x=".5" y=".5" class="cls-18" rx="3.5"/>
+                    </g>
+                    <text id="Mapper-1" class="cls-14" transform="translate(15.805 215.195)">
+                        <tspan x="0" y="0">Mapper-1</tspan>
+                    </text>
+                    <text id="ADD" class="cls-14" transform="translate(320.805 215.195)">
+                        <tspan x="-29.232" y="0">ADD</tspan>
+                    </text>
+                    <g id="Icon_feather-arrow-down" transform="translate(248.037 207.195)">
+                        <path id="Path_549" fill="none" stroke="#a2a2a2" stroke-linecap="round" stroke-linejoin="round" d="M17.206 18l-4.853 4.853L7.5 18" transform="translate(-7.5 -18)"/>
+                    </g>
+                    <rect id="Rectangle_235" width="107" height="41" class="cls-7" rx="5" transform="translate(214.805 261.195)"/>
+                    <text id="Search-2" class="cls-8" transform="translate(247.805 286.195)">
+                        <tspan x="0" y="0">Search</tspan>
+                    </text>
+                    <g id="Group_910" transform="translate(0 271.634)">
+                        <text id="Ignore_First_Row" class="cls-4" transform="translate(125.805 13.561)">
+                            <tspan x="-101.478" y="0">Ignore First Row</tspan>
+                        </text>
+                        <g id="Rectangle_236" class="cls-6" transform="translate(-.195 1.561)">
+                            <rect width="15" height="14" class="cls-17" rx="2"/>
+                            <rect width="14" height="13" x=".5" y=".5" class="cls-18" rx="1.5"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group_908" transform="translate(0 -2)">
+                    <g filter="url(#Rectangle_231)" transform="translate(-239.68 -20)">
+                        <rect id="Rectangle_231-2" width="116" height="116" class="cls-7" rx="15" transform="translate(297 30)"/>
+                    </g>
+                    <g id="Icon_feather-users" transform="translate(86.317 31.02)">
+                        <path id="Path_538" d="M35.183 35.131v-4.21a8.421 8.421 0 0 0-8.421-8.421H9.921A8.421 8.421 0 0 0 1.5 30.921v4.21" class="cls-9" transform="translate(11.131 2.762)"/>
+                        <path id="Path_539" d="M24.341 12.921a8.421 8.421 0 1 1-8.42-8.421 8.421 8.421 0 0 1 8.42 8.421z" class="cls-9" transform="translate(13.552 -4.5)"/>
+                        <path id="Path_540" d="M36.316 35.052v-4.21A8.421 8.421 0 0 0 30 22.7" class="cls-9" transform="translate(22.63 2.841)"/>
+                        <path id="Path_543" d="M30 35.052v-4.21a8.421 8.421 0 0 1 6.316-8.142" class="cls-9" transform="translate(-30 2.841)"/>
+                        <path id="Path_541" d="M24 4.7a8.421 8.421 0 0 1 0 16.31" class="cls-9" transform="translate(20.209 -4.421)"/>
+                        <path id="Path_542" d="M30.332 4.7a8.421 8.421 0 0 0 0 16.315" class="cls-9" transform="translate(-15.596 -4.421)"/>
+                    </g>
+                    <text id="Bulk_Search" class="cls-10" transform="translate(115.317 102)">
+                        <tspan x="-34.704" y="0">Bulk Search</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+        <g id="Group_915" class="cls-16" transform="translate(3632 -1235)">
+            <circle id="Ellipse_12" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3648)"/>
+            <circle id="Ellipse_21" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3671.75)"/>
+            <circle id="Ellipse_26" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3695.5)"/>
+            <circle id="Ellipse_31" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3719.25)"/>
+            <circle id="Ellipse_36" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3743)"/>
+            <circle id="Ellipse_13" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3648)"/>
+            <circle id="Ellipse_20" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3671.75)"/>
+            <circle id="Ellipse_25" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3695.5)"/>
+            <circle id="Ellipse_30" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3719.25)"/>
+            <circle id="Ellipse_35" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3743)"/>
+            <circle id="Ellipse_14" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3648)"/>
+            <circle id="Ellipse_19" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3671.75)"/>
+            <circle id="Ellipse_24" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3695.5)"/>
+            <circle id="Ellipse_29" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3719.25)"/>
+            <circle id="Ellipse_34" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3743)"/>
+            <circle id="Ellipse_15" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3648)"/>
+            <circle id="Ellipse_18" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3671.75)"/>
+            <circle id="Ellipse_23" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3695.5)"/>
+            <circle id="Ellipse_28" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3719.25)"/>
+            <circle id="Ellipse_33" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3743)"/>
+            <circle id="Ellipse_16" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3648)"/>
+            <circle id="Ellipse_17" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3671.75)"/>
+            <circle id="Ellipse_22" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3695.5)"/>
+            <circle id="Ellipse_27" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3719.25)"/>
+            <circle id="Ellipse_32" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3743)"/>
+        </g>
+        <g id="Group_916" class="cls-16" transform="translate(4157 -698)">
+            <circle id="Ellipse_12-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3648)"/>
+            <circle id="Ellipse_21-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3671.75)"/>
+            <circle id="Ellipse_26-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3695.5)"/>
+            <circle id="Ellipse_31-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3719.25)"/>
+            <circle id="Ellipse_36-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3441 3743)"/>
+            <circle id="Ellipse_13-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3648)"/>
+            <circle id="Ellipse_20-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3671.75)"/>
+            <circle id="Ellipse_25-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3695.5)"/>
+            <circle id="Ellipse_30-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3719.25)"/>
+            <circle id="Ellipse_35-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3417.25 3743)"/>
+            <circle id="Ellipse_14-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3648)"/>
+            <circle id="Ellipse_19-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3671.75)"/>
+            <circle id="Ellipse_24-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3695.5)"/>
+            <circle id="Ellipse_29-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3719.25)"/>
+            <circle id="Ellipse_34-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3393.5 3743)"/>
+            <circle id="Ellipse_15-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3648)"/>
+            <circle id="Ellipse_18-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3671.75)"/>
+            <circle id="Ellipse_23-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3695.5)"/>
+            <circle id="Ellipse_28-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3719.25)"/>
+            <circle id="Ellipse_33-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3369.75 3743)"/>
+            <circle id="Ellipse_16-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3648)"/>
+            <circle id="Ellipse_17-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3671.75)"/>
+            <circle id="Ellipse_22-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3695.5)"/>
+            <circle id="Ellipse_27-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3719.25)"/>
+            <circle id="Ellipse_32-2" cx="2.5" cy="2.5" r="2.5" class="cls-7" transform="translate(-3346 3743)"/>
+        </g>
+        <circle id="Ellipse_37" cx="4" cy="4" r="4" class="cls-7" transform="translate(597 3050)"/>
+        <circle id="Ellipse_39" cx="4" cy="4" r="4" class="cls-7" transform="translate(377 2427)"/>
+        <circle id="Ellipse_40" cx="4" cy="4" r="4" class="cls-7" transform="translate(775 2880)"/>
+    </g>
+</svg>

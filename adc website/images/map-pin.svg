@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.122" height="41.149" viewBox="0 0 34.122 41.149">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#002d61;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px}
+        </style>
+    </defs>
+    <g id="Icon_feather-map-pin" transform="translate(-3.25 -.25)">
+        <path id="Path_567" d="M36.122 17.311c0 12.3-15.811 22.838-15.811 22.838S4.5 29.608 4.5 17.311a15.811 15.811 0 1 1 31.622 0z" class="cls-1"/>
+        <path id="Path_568" d="M24.041 15.77a5.27 5.27 0 1 1-5.27-5.27 5.27 5.27 0 0 1 5.27 5.27z" class="cls-1" transform="translate(1.541 1.541)"/>
+    </g>
+</svg>
