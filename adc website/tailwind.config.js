@@ -34,8 +34,14 @@ module.exports = {
         'hobo':'40px',
       },
       lineHeight: {
-        'exline': '3.5rem',
-      }
+        'xs': '1.5rem',
+        'sm': '2rem',
+        'lg': '42px',
+        'llg': '51px',
+        'xl': '58px',
+        'xxl': '65px',
+        
+      },
     },
    
   variants: {
