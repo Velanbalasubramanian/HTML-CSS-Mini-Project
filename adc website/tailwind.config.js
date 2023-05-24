@@ -1,5 +1,4 @@
-/** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin'); 
+/** @type {import('tailwindcss').Config} */ 
 const colors = require('tailwindcss/colors')
 module.exports = {
   important: true,
@@ -46,6 +45,9 @@ module.exports = {
       backgroundImage: {
         'how-to-acc': "url('/images/how-to-access.png')",
       },
+      borderWidth: {
+        '12': '10px',
+      }
     },
    
   variants: {

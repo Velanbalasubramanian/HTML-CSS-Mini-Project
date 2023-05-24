@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADC Website</title>
     <link rel="stylesheet" href="output.css" />
+    <script src="main.js"></script>
   </head>
   <body class="font-pop">
-    <section class="relative lg:before:content-[''] before:absolute before:h-[80%] 2xl:before:w-[73%] before:w-[70%] before:right-0 before:top-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-bl-hoborder z-0">
-      <header class="">
+    <section class="relative lg:before:content-[''] before:absolute before:h-[80%] 2xl:before:w-[73%] before:w-[70%] before:right-0 before:top-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-bl-hoborder section" id="home">
+      <header class="fixed top-0 left-0 right-0 w-full black">
         <nav
-          class=" flex flex-wrap items-center justify-between mx-auto 2xl:pt-[35px] 2xl:px-11 xl:pt-[30px] md:px-5 pt-[20px] px-4"
+          class="flex flex-wrap items-center justify-between 2xl:py-[35px] 2xl:px-11 xl:py-[30px] md:px-5 py-[20px] px-4 z-10"
         >
           <div class="flex items-center">
             <a href="">
@@ -22,13 +23,15 @@
               />
             </a>
           </div>
-          <div class="flex md:order-2">
+          <div class="flex md:order-2 z-10">
+            <a href="">
             <button
               type="button"
-              class="text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl z-10 lg:block hidden"
+              class="text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl z-10 lg:block hidden hover:text-zblue hover:bg-transparent hover:border-zblue hover:border-2"
             >
               Get started
             </button>
+          </a>
 
             <button
               data-collapse-toggle="navbar-sticky"
@@ -54,46 +57,44 @@
             </button>
           </div>
 
-          <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="">
-            <ul
-              class="flex flex-col p-4 md:p-0 mt-4 lg:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
-            >
+          <div class="items-center justify-end hidden w-full lg:flex md:w-auto md:order-1" >
+            <ul class="flex flex-col p-4 md:p-0 mt-4 lg:flex-row md:space-x-8 md:mt-0 md:border-0" >
               <li class="relative">
                 <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-zblue"
+                  href="#home"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-zblue nav-lin active"
                   aria-current="page"
                   >Home</a
                 >
               </li>
               <li class="relative">
                 <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-zblue"
+                  href="#how-its-works"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-zblue nav-lin"
                   aria-current="page"
                   >How it Works</a
                 >
               </li>
               <li class="relative">
                 <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-zblue"
+                  href="#data-Service-brokers"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-zblue nav-lin"
                   aria-current="page"
                   >Data Service Brokers</a
                 >
               </li>
               <li class="relative">
                 <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-zblue"
+                  href="#how-to-access"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-zblue nav-lin"
                   aria-current="page"
                   >How to access</a
                 >
               </li>
               <li class="relative">
                 <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 md:p-0 text-[#002d61] font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-[#002d61]"
+                  href="#contact-us"
+                  class="block py-2 pl-3 pr-4 md:p-0 text-[#002d61] font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] before:content-[''] before:absolute before:h-0.5 hover:before:w-full before:top-[-52px] before:bg-[#002d61] nav-lin"
                   aria-current="page"
                   >Contact</a
                 >
@@ -103,38 +104,38 @@
         </nav>
         <!-- md VIEW -->
         <div class="hidden" id="mobileMenu">
-          <ul class="lg:hidden font-bold text-gray-600">
+          <ul class="lg:hidden font-bold text-gray-600 bg-gray-300 h-full">
             <li class="py-2 flex">
               <a
-                href=""
+                href="#home"
                 class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
                 >Home</a
               >
             </li>
             <li class="py-2 flex">
               <a
-                href=""
+                href="#how-its-works"
                 class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
                 >How it Works</a
               >
             </li>
             <li class="py-2 flex">
               <a
-                href=""
+                href="#data-Service-brokers"
                 class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
                 >Data Service Brokers</a
               >
             </li>
             <li class="py-2 flex">
               <a
-                href=""
+                href="#how-to-access"
                 class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
                 >How to access</a
               >
             </li>
             <li class="py-2 flex">
               <a
-                href=""
+                href="#contact-us"
                 class="mx-auto text-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px]"
                 >Contact</a
               >
@@ -142,7 +143,7 @@
             <li class="py-2 flex">
               <button
                 type="button"
-                class="mx-auto text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl"
+                class="mx-auto text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl hover:text-zblue hover:bg-transparent hover:border-zblue hover:border-2"
               >
                 Get started
               </button>
@@ -152,7 +153,7 @@
         <!-- md VIEW -->
       </header>
 
-      <div class="lg:pt-28 sm:pt-20 pt-12 lg:px-44 md:px-36 sm:px-24 px-6">
+      <div class="2xl:pt-56 xl:pt-44 lg:pt-36 sm:pt-28 pt-24 lg:px-44 md:px-36 sm:px-24 px-6 mx-auto z-0">
         <div class="container mx-auto">
           <div class="grid lg:grid-cols-2 grid-cols-1 mx-auto z-10 lg:gap-8 gap-10">
             <div class="my-auto z-10">
@@ -170,12 +171,12 @@
               </p>
               <button
                 type="button"
-                class="text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl"
+                class="text-white bg-zblue font-medium 2xl:text-[22px] xl:text-[18px] text-[16px] 2xl:w-[189px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[67px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl hover:text-zblue hover:bg-transparent hover:border-zblue hover:border-2"
               >
                 Get started
               </button>
             </div>
-            <div class="z-10">
+            <div class="z-0">
               <img
                 src="/images/data-one.png"
                 class="w-[801px]"
@@ -187,10 +188,10 @@
       </div>
     </section>
 
-    <section class="relative lg:before:content-[''] before:absolute 2xl:before:h-[77%] lg:before:h-[82%] 2xl:before:w-[72%] before:w-[75%] before:left-0 before:bottom-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-br-brdar before:rounded-tr-brdar">
+    <section class="relative lg:before:content-[''] before:absolute 2xl:before:h-[77%] lg:before:h-[82%] 2xl:before:w-[72%] before:w-[75%] before:left-0 before:bottom-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-br-brdar before:rounded-tr-brdar section" id="home">
       <div class="lg:py-28 sm:py-20 py-14 lg:px-44 md:px-36 sm:px-24 px-6">
-        <div class="container mx-auto">
-          <div class="flex">
+        <div class="container mx-auto z-0">
+          <div class="flex ">
             <img
               src="/images/arrow-right.svg"
               alt="arrow"
@@ -281,7 +282,7 @@
       </div>
     </section>
 
-    <section class="relative before:content-[''] before:absolute 2xl:before:h-[74%] before:h-[80%] 2xl:before:w-[70%] before:w-[70%] before:right-0 before:bottom-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-tl-brdar before:rounded-bl-brdar">
+    <section class="relative before:content-[''] before:absolute 2xl:before:h-[74%] before:h-[80%] 2xl:before:w-[70%] before:w-[70%] before:right-0 before:bottom-0 before:lg:bg-[#002d61] before:lg:bg-opacity-[.06] before:rounded-tl-brdar before:rounded-bl-brdar section" id="how-its-works">
       <div class="lg:pt-28 lg:pb-20 sm:pt-14 pt-0 lg:px-44 md:px-36 sm:px-24 px-6">
         <div class="container mx-auto">
           <div class="text-center lg:pb-28 sm:pb-16 pb-10">
@@ -308,7 +309,7 @@
               <div class="lg:space-y-14 sm:space-y-10 space-y-8">
                 <div class="flex sm:flex-nowrap flex-wrap sm:justify-normal justify-center lg:space-x-10 sm:space-x-8 space-x-0" >
                   <div
-                    class="md:h-[90px] sm:h-[70px] h-[50px] md:w-[90px] sm:w-[70px] w-[55px] md:py-7 sm:py-5 py-3 md:px-10 sm:px-8 px-6 bg-opacity-[0.15] bg-[#002d61] rounded-xl"
+                    class="md:h-[90px] sm:h-[70px] h-[50px] md:w-[90px] sm:w-[70px] w-[55px] md:py-7 sm:py-5 py-3 md:px-10 sm:px-8 px-6 bg-opacity-[0.15] bg-[#002d61] rounded-xl hover:bg-zblue flex justify-center items-center"
                   >
                     <span class="md:text-3xl sm:text-2xl text-lg">1</span>
                   </div>
@@ -330,7 +331,7 @@
 
                 <div class="flex sm:flex-nowrap flex-wrap sm:justify-normal justify-center lg:space-x-10 sm:space-x-8 space-x-0" >
                   <div
-                    class="md:h-[90px] sm:h-[70px] h-[50px] md:w-[90px] sm:w-[70px] w-[55px] md:py-7 sm:py-5 py-3 md:px-10 sm:px-8 px-6 bg-opacity-[0.15] bg-[#002d61] rounded-xl"
+                    class="md:h-[90px] sm:h-[70px] h-[50px] md:w-[90px] sm:w-[70px] w-[55px] md:py-7 sm:py-5 py-3 md:px-10 sm:px-8 px-6 bg-[#002d61] rounded-xl border-12 flex justify-center items-center"
                   >
                     <span class="md:text-3xl sm:text-2xl text-lg">2</span>
                   </div>
@@ -352,7 +353,7 @@
 
                 <div class="flex sm:flex-nowrap flex-wrap sm:justify-normal justify-center lg:space-x-10 sm:space-x-8 space-x-0" >
                   <div
-                    class="md:h-[90px] sm:h-[70px] h-[50px] md:w-[90px] sm:w-[70px] w-[55px] md:py-7 sm:py-5 py-3 md:px-10 sm:px-8 px-6 bg-opacity-[0.15] bg-[#002d61] rounded-xl"
+                    class="md:h-[90px] sm:h-[70px] h-[50px] md:w-[90px] sm:w-[70px] w-[55px] md:py-7 sm:py-5 py-3 md:px-10 sm:px-8 px-6 bg-opacity-[0.15] bg-[#002d61] rounded-xl hover:bg-zblue flex justify-center items-center"
                   >
                     <span class="md:text-3xl sm:text-2xl text-lg">3</span>
                   </div>
@@ -378,7 +379,7 @@
       </div>
     </section>
 
-    <section class="">
+    <section class="section" id="data-Service-brokers">
       <div class="lg:py-40 sm:py-24 py-16 lg:px-44 md:px-36 sm:px-24 px-6">
         <div class="container mx-auto">
           <div class="grid lg:grid-cols-5 grid-cols-1 mx-auto z-10 gap-8">
@@ -422,7 +423,7 @@
       </div>
     </section>
 
-    <section class="relative">
+    <section class="relative section" id="data-Service-brokers">
       <div class="lg:px-44 md:px-36 sm:px-24 px-6">
         <div class="container mx-auto">
           <div
@@ -567,7 +568,7 @@
       </div>
     </section>
 
-    <section class="relative">
+    <section class="relative section" id="how-to-access">
       <div
         class="xl:py-36 lg:py-28 sm:py-24 py-16 lg:px-44 md:px-36 sm:px-24 px-6"
       >
@@ -656,7 +657,7 @@
       </div>
     </section>
 
-    <section class="relative">
+    <section class="relative section" id="how-to-access">
       <div class="lg:px-44 md:px-36 sm:px-24 px-6">
         <div class="container mx-auto">
           <div
@@ -695,7 +696,7 @@
       </div>
     </section>
 
-    <section class="">
+    <section class="section" id="contact-us">
       <div class="lg:py-[150px] sm:py-24 py-16 lg:px-44 md:px-36 sm:px-24 px-6">
         <div class="container mx-auto">
           <div class="grid lg:grid-cols-5 grid-cols-1 mx-auto z-10">
@@ -711,7 +712,7 @@
               </p>
               <button
                 type="button"
-                class="text-white bg-zblue font-medium 2xl:text-[28px] xl:text-[18px] text-[16px] 2xl:w-[281px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[91px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl"
+                class="text-white bg-zblue font-medium 2xl:text-[28px] xl:text-[18px] text-[16px] 2xl:w-[281px] xl:w-[179px] sm:w-[130px] w-[120px] 2xl:h-[91px] xl:h-[57px] sm:h-[40px] h-[40px] rounded-xl hover:text-zblue hover:bg-transparent hover:border-zblue hover:border-2"
               >
                 Contact Us
               </button>
@@ -772,26 +773,39 @@
           © Copyright 2021. Phillips & Cohen Associates, Ltd.
         </p>
         <div class="flex space-x-4 lg:justify-normal justify-center">
-          <img
+          <a href="">
+            <img
             src="/images/twitter.png"
             alt="twitter"
-            class="lg:w-8 w-6 lg:h-9 h-7 rounded-md"
+            class="xl:w-full w-7 rounded-md"
+            title="twitter"
           />
-          <img
+          </a>
+          <a href="">
+            <img
             src="/images/facebook.png"
             alt="facebook"
-            class="lg:w-8 w-6 lg:h-9 h-7 rounded-md"
+            class="xl:w-full w-7 rounded-md"
+            title="facebook"
           />
-          <img
+          </a>
+          <a href="">
+            <img
             src="/images/linked-in.png"
             alt="linked-in"
-            class="lg:w-8 w-6 lg:h-9 h-7 rounded-md"
+            class="xl:w-full w-7 rounded-md"
+            title="linked-in"
           />
-          <img
+          </a>
+          <a href="">
+            <img
             src="/images/instagram.png"
             alt="instagram"
-            class="lg:w-8 w-6 lg:h-9 h-7 rounded-md"
+            class="xl:w-full w-7 rounded-md"
+            title="instagram"
           />
+          </a>
+          
         </div>
       </div>
     </footer>
@@ -806,6 +820,55 @@
         }
       }
     </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+  // NAVBAR scroll  
+  $(document).ready(function() {
+        $(window).scroll(function() {
+          if($(this).scrollTop() > 5) { 
+              $('.black').addClass('text');
+          } else {
+              $('.black').removeClass('text');
+          }
+        });
+});
+</script>
+
+<script> 
+
+//navbar active with scroll li
+var sections = $('.section')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+  
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight();
+    
+    if (cur_pos >= top && cur_pos <= bottom) {
+      if(!$(this).hasClass("active")) {
+        nav.find('a').removeClass('active');
+        sections.removeClass('active');
+      
+        $(this).addClass('active');
+        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      }
+    }
+  });
+});
+
+</script>
+
+<!-- //navbar active only li
+<script>    
+    $(".nav-lin").click(function() {
+        $('.nav-lin').removeClass('active');
+        $(this).addClass("active");
+    });
+</script> -->
 
   </body>
 </html>
