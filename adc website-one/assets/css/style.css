@@ -1,221 +1,1334 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI';
-    list-style-type: none;
-  }
-    a{
-    text-decoration: none;
-  }
-  .common-ho .bg-body-ter{
-    background-color: #222b54;
-  }
-  .common-ho .navbar .container-fluid{
-    padding-left: 140px;
-    padding-right: 48px;
-    padding-top: 31px;
-    padding-bottom: 30px;
-  }
-  .com-anc li .nav-link{
-    font-size: 24px;
-    line-height: 32px;
-    width: 172px;
-    height: 63px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.common-ho .bg-body-ter {
+  background-color: #222b54;
+}
+.common-ho .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.common-ho .navbar .container-fluid {
+  padding-left: 140px;
+  padding-right: 48px;
+  padding-top: 31px;
+  padding-bottom: 30px;
+}
+.com-anc li .nav-link {
+  font-size: 24px;
+  line-height: 32px;
+  width: 172px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
 
-.com-anc li .nav-link:hover, .com-anc li .nav-link.active {
-	background-color: white;
-    color: #222b54 !important;
+.com-anc li .nav-link:hover,
+.com-anc li .nav-link.active {
+  background-color: white;
+  color: #222b54 !important;
 }
 .banner-sec .container {
-    padding-top: 73px;
-    padding-bottom: 128px;
+  padding-top: 73px;
+  padding-bottom: 128px;
 }
-.banner-content h1{
-    font-size: 76px;
-    line-height: 76px;
-    font-weight: 600;
-    color: #222b54;
-    padding-bottom: 32px;
+.banner-content h1 {
+  font-size: 76px;
+  line-height: 76px;
+  font-weight: 600;
+  color: #222b54;
+  padding-bottom: 32px;
+  margin-bottom: 0;
 }
-.banner-content p{
-    font-size: 35px;
-    line-height: 54px;
-    color: #1f5078;
+.banner-content p {
+  font-size: 35px;
+  line-height: 54px;
+  color: #1f5078;
 }
-
-.solution{
-    background-color: #e7f3ff;
-    border-radius: 22px;
+.banner-content {
+  width: 85%;
 }
-.solution-title{
-    padding-top: 87px;
-    padding-bottom: 88px;
+.solution {
+  background-color: #e7f3ff;
+  border-radius: 22px;
 }
-.solution-title h2{
-    font-size: 59px;
-    font-weight: 600;
-    color: #092349;
+.solution-title {
+  padding-top: 87px;
+  padding-bottom: 88px;
 }
-.solution-two{
-    background-color: white;
-    padding: 30px 68px 40px 71px;
+.solution-title h2 {
+  font-size: 59px;
+  font-weight: 600;
+  color: #092349;
+  margin-bottom: 0;
 }
-.solution-two p{
-    font-size: 33px;
-    line-height: 58px;
-    color: #00357b;
+.solution-two {
+  background-color: white;
+  padding: 30px 68px 40px 71px;
+  border-left: 10px solid #d6e8ff;
 }
-.pay-less{
-    padding: 45px 32px 19px 32px;
-    border-radius: 32px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.solution-two p {
+  font-size: 33px;
+  line-height: 58px;
+  color: #00357b;
+  margin-bottom: 0;
 }
-.pay-less img{
-    width: 76px;
-    height: 78px;
+.pay-less {
+  padding: 45px 32px 0px 32px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.pay-less h3{
-    color: #00357b;
-    font-size: 37px;
-    font-weight: 600;
-    padding-top: 22px;
-    padding-bottom: 22px;
+.pay-less img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
 }
-.pay-less p{
-    font-size: 23px;
-    color: #1f5078;
-    line-height: 36px;
-    padding-bottom: 23px;
+.pay-less h3 {
+  color: #00357b;
+  font-size: 37px;
+  font-weight: 600;
+  padding-top: 22px;
+  margin-bottom: 0;
 }
-.pay-less hr{
-    border: solid 3px #62a1c5;
+.pay-less p {
+  font-size: 23px;
+  color: #1f5078;
+  line-height: 36px;
 }
-.solution-card{
-    padding-top: 135px;
-    padding-bottom: 106px;
+.pay-less hr {
+  border: solid 3px #62a1c5;
+}
+.solution-card {
+  padding-top: 135px;
+  padding-bottom: 106px;
 }
 
 /* DEBT */
-.debt-settle{
-    padding-top: 108px;
-    padding-bottom: 120px;
-    position: relative;
+.debt-settle {
+  padding-top: 108px;
+  padding-bottom: 120px;
+  position: relative;
 }
-.debt-title h2{
-    font-size: 60px;
-    color: #092349;
-    font-weight: 600;
-    padding-bottom: 98px;
+.debt-title h2 {
+  font-size: 60px;
+  color: #092349;
+  font-weight: 600;
+  padding-bottom: 98px;
+  margin-bottom: 0;
 }
 
-.steps-to-debt p{
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 600;
-    padding-top: 40px;
+.steps-to-debt p {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  padding-top: 40px;
+  margin-bottom: 0;
 }
-.steps-to-debt{
-    border-radius: 12px;
-    height: 100%;
+.steps-to-debt {
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 35px 30px;
+  width: 90%;
+}
+.steps-to-debt img {
+  width: 75px;
+  height: 75px;
+}
+.debt-before {
+  position: relative;
+}
+.debt-before::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  top: 17%;
+  left: 10%;
+  z-index: -1;
+  background: url(../../assets/images/steps-to-debt.png) no-repeat;
+}
+.our-client {
+  padding-bottom: 120px;
+}
+.client-title h2 {
+  font-size: 60px;
+  color: #092349;
+  font-weight: 600;
+  padding-bottom: 80px;
+  margin-bottom: 0;
+}
+.client-detail-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e7f3ff;
+  padding: 20px;
+}
+.client-detail h4 {
+  color: #00357b;
+  font-size: 37px;
+  font-weight: 600;
+}
+.client-detail h5 {
+  font-size: 23px;
+  color: #1f5078;
+}
+.client-ples i {
+  font-size: 45px;
+}
+.client-common .client-photos {
+  width: 100%;
+}
+#customers-testimonials2 .owl-dots.disabled .owl-nav.disabled {
+  display: block !important;
+  color: #092349;
+}
+
+#customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot.owl-nav {
+  position: absolute;
+  left: -4%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #092349 !important;
+  font-size: x-large !important;
+}
+#customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #00357b !important;
+  color: white;
+}
+
+.owl-carousel .owl-nav button.owl-next i,
+.owl-carousel .owl-nav button.owl-prev i,
+.owl-carousel button.owl-dot {
+  padding: 10px;
+}
+
+#customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot.owl-nav {
+  position: absolute;
+  right: -8%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #092349 !important;
+  font-size: x-large !important;
+}
+
+#customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: #00357b !important;
+  color: white;
+}
+.clients-full-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #092349;
+  padding: 10px;
+}
+
+.clients-full-view .clients-id h2 {
+  color: #cbd6e2;
+  font-size: 37px;
+  font-weight: 600;
+}
+
+.clients-full-view .clients-id h3 {
+  font-size: 23px;
+  color: #cbd6e2;
+}
+
+.clients-close-icon .close {
+  font-size: 50px;
+  color: #e7f3ff;
+  background-color: rgb(0, 53, 123, 0);
+  border: none;
+}
+
+.clients-close-icon .close:hover {
+  color: white;
+}
+.client-main-para p {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  padding: 40px 20px 0px 20px;
+}
+.client-experience h4 {
+  color: #cbd6e2;
+  font-size: 23px;
+}
+.client-experience {
+  padding: 20px;
+}
+.client-social-details {
+  background-color: #092349;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.client-main-para {
+  padding-bottom: 200px;
+}
+.clients-social-id a {
+  padding-right: 20px;
+  text-decoration: none;
+}
+.client-full .row {
+  --bs-gutter-x: 0rem;
+}
+.footer {
+  background-color: #092349;
+}
+.footer {
+  padding: 85px 0px;
+}
+.footer-logo img {
+  width: 270px;
+  height: 62px;
+}
+.contact-us h4 {
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 34px;
+  margin-bottom: 0;
+}
+.contact-details ul li a span {
+  font-size: 21px;
+  line-height: 35px;
+  color: white;
+  padding-left: 26px;
+}
+.contact-details ul li a {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+}
+.contact-details ul li a img {
+  width: 25px;
+  height: 25px;
+}
+.contact-details ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.contact-us-one h4 {
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 34px;
+  margin-bottom: 0;
+}
+.contact-details-one ul li a {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+}
+.contact-details-one ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.contact-details-one ul li a span {
+  color: #cbd6e2;
+  font-size: 21px;
+  line-height: 35px;
+  padding-left: 28px;
+}
+.contact-details-one ul li a img {
+  width: 25px;
+  height: 25px;
+}
+.contact-us-one {
+  padding: 0px 100px;
+  border-right: solid 1px #7c98b6;
+}
+.contact-us {
+  padding-left: 100px;
+}
+.contact-footer {
+  padding-top: 90px;
+}
+.contact-footer p {
+  font-size: 26px;
+  text-align: center;
+  color: #cbd6e2;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .navbar .navlogo img {
+    width: 360px;
+  }
+  .common-ho .navbar .container-fluid {
+    padding: 12px 12px;
+  }
+  .com-anc li .nav-link {
+    width: 150px;
+    font-size: 22px;
+    height: 56px;
+  }
+  .banner-content h1 {
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+  .banner-content p {
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+  .banner-content {
+    width: 80%;
+  }
+  .banner-sec .container {
+    padding-top: 73px;
+    padding-bottom: 100px;
+  }
+  .solution-title h2 {
+    font-size: 45px;
+    margin-bottom: 0;
+  }
+  .solution-two p {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .solution-two {
+    padding: 30px;
+    border-left: 6px solid #d6e8ff;
+  }
+  .solution-title {
+    padding-bottom: 50px;
+  }
+  .solution-content .row {
+    align-items: center;
+  }
+  .pay-less h3 {
+    color: #00357b;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 15px;
+  }
+  .pay-less {
+    padding: 30px 30px 0px 30px;
+  }
+  .pay-less p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .pay-less hr {
+    border: solid 3px #62a1c5;
+    margin: 12px 0;
+  }
+  .debt-settle {
+    padding-top: 100px;
+  }
+  .debt-title h2 {
+    font-size: 45px;
+    padding-bottom: 70px;
+  }
+  .debt-before::before {
+    width: 80%;
+    top: 15%;
+    left: 9%;
+  }
+  .steps-to-debt p {
+    padding-top: 30px;
+  }
+  .client-title h2 {
+    font-size: 45px;
+    padding-bottom: 70px;
+  }
+  .client-ples i {
+    font-size: 35px;
+  }
+  .client-detail h5 {
+    font-size: 18px;
+  }
+  .client-detail h4 {
+    font-size: 26px;
+  }
+  .client-detail-common {
+    padding: 15px;
+  }
+  .our-client {
+    padding-bottom: 100px;
+  }
+  .solution-card {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer {
+    padding: 50px 0px 40px 0px;
+  }
+  .contact-footer {
+    padding-top: 30px;
+  }
+  .contact-footer p {
+    font-size: 24px;
+  }
+  .clients-full-view .clients-id h2 {
+    font-size: 30px;
+  }
+  .clients-full-view .clients-id h3 {
+    font-size: 20px;
+    color: #cbd6e2;
+  }
+  .client-main-para p {
+    font-size: 18px;
+  }
+  .client-experience h4 {
+    font-size: 20px;
+  }
+  .client-main-para {
+    padding-bottom: 203px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot.owl-nav {
+    bottom: -20%;
+    left: 0%;
+    border: 4px solid #092349 !important;
+    font-size: large !important;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot.owl-nav {
+    right: -3%;
+    bottom: -20%;
+    border: 4px solid #092349 !important;
+    font-size: large !important;
+  }
+  .steps-to-debt {
+    padding: 25px 20px 10px 20px;
+  }
+  .steps-to-debt p {
+    padding-top: 30px;
+  }
+  .debt-before::before {
+    width: 85%;
+    height: 85%;
+    top: 10%;
+  }
+  .pay-less hr {
+    margin: 10px 0 !important;
+  }
+  .contact-footer {
+    padding-top: 40px;
+  }
+  .client-main-para {
+    padding-bottom: 143px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .banner-content h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .banner-content {
+    width: 85%;
+  }
+  .banner-content p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .banner-sec .container {
+    padding-bottom: 80px;
+  }
+  .solution-title h2 {
+    font-size: 40px;
+  }
+  .solution-title {
+    padding-top: 80px;
+  }
+  .solution-two p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .pay-less h3 {
+    font-size: 26px;
+    padding-top: 10px;
+  }
+  .pay-less hr {
+    border: solid 2px #62a1c5;
+  }
+  .pay-less {
+    padding: 20px 20px 0px 20px;
+  }
+  .pay-less p {
+    line-height: 28px;
+  }
+  .solution-card {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .debt-settle {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .debt-title h2 {
+    font-size: 40px;
+    padding-bottom: 60px;
+  }
+  .client-title h2 {
+    font-size: 40px;
+    padding-bottom: 60px;
+  }
+  .client-detail h4 {
+    font-size: 24px;
+  }
+  .client-detail-common {
+    padding: 12px;
+  }
+  .client-ples i {
+    font-size: 30px;
+  }
+  .owl-carousel .owl-nav button.owl-next i,
+  .owl-carousel .owl-nav button.owl-prev i,
+  .owl-carousel button.owl-dot {
+    padding: 6px;
+  }
+  .our-client {
+    padding-bottom: 100px;
+  }
+  .contact-us-one h4 {
+    padding-bottom: 25px;
+  }
+  .contact-details {
+    padding-bottom: 20px;
+  }
+  .contact-us h4 {
+    padding-bottom: 25px;
+  }
+  .contact-footer {
+    padding-top: 0px;
+  }
+  .steps-to-debt p {
+    padding-top: 15px;
+  }
+  .debt-before::before {
+    top: 10%;
+    left: 5%;
+  }
+  .client-detail h5 {
+    font-size: 16px;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot.owl-nav {
+    border: 3px solid #092349 !important;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot.owl-nav {
+    border: 3px solid #092349 !important;
+  }
+  .footer-logo img {
+    width: 220px;
+  }
+  .contact-details-one ul li a span {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 22px;
+  }
+  .contact-details-one ul li a img {
+    width: 22px;
+    height: 22px;
+  }
+  .contact-details ul li a img {
+    width: 22px;
+    height: 22px;
+  }
+  .contact-details ul li a span {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 22px;
+  }
+  .contact-us {
+    padding-left: 70px;
+  }
+  .contact-footer p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1198px) {
+  .client-main-para {
+    padding-bottom: 58px;
+  }
+  .clients-full-view .clients-id h2 {
+    font-size: 28px;
+  }
+  .clients-full-view .clients-id h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar .navlogo img {
+    width: 320px;
+  }
+  .com-anc li .nav-link {
+    width: 130px;
+    height: 50px;
+  }
+  .banner-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 25px;
+  }
+  .banner-content p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .banner-sec .container {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+  .solution-title {
+    padding-top: 70px;
+  }
+  .solution-title h2 {
+    font-size: 34px;
+  }
+  .solution-two {
+    padding: 25px;
+    border-left: 5px solid #d6e8ff;
+  }
+  .solution-two p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .solution-card {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .pay-less h3 {
+    font-size: 24px;
+  }
+  .pay-less p {
+    line-height: 26px;
+    font-size: 18px;
+  }
+  .pay-less img {
+    width: 60px;
+    height: 60px;
+  }
+  .debt-title h2 {
+    font-size: 34px;
+    padding-bottom: 50px;
+  }
+  .steps-to-debt img {
+    width: 60px;
+    height: 60px;
+  }
+  .steps-to-debt p {
+    font-size: 16px;
+  }
+  .debt-before::before {
+    top: 15%;
+    left: 0%;
+  }
+  .debt-settle {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .client-title h2 {
+    font-size: 34px;
+    padding-bottom: 50px;
+  }
+  .client-detail h4 {
+    font-size: 22px;
+  }
+  .client-detail-common {
+    padding: 10px;
+  }
+  .client-ples i {
+    font-size: 28px;
+  }
+  .our-client {
+    padding-bottom: 80px;
+  }
+  .contact-us {
+    padding-left: 40px;
+  }
+  .contact-us-one h4 {
+    font-size: 20px;
+  }
+  .contact-us h4 {
+    font-size: 20px;
+  }
+  .contact-details-one ul li a span {
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 16px;
+  }
+  .contact-details-one ul li a {
+    padding-bottom: 20px;
+  }
+  .contact-details-one ul li a img {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-details ul li a img {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-details ul li a span {
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 16px;
+  }
+  .contact-footer p {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 40px 0px 30px 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .common-ho .navbar-toggler {
+    background-color: white !important;
+  }
+  .common-ho .navbar-toggler:hover {
+    background-color: #a4c2e0 !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  .com-anc li .nav-link {
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+  }
+  .common-ho nav .navbar-nav li {
+    padding-top: 10px;
+  }
+  .banner-sec .container {
+    padding-bottom: 70px;
+    padding-top: 50px;
+  }
+  .banner-content {
+    padding-bottom: 30px;
+  }
+  .banner-content h1 {
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 15px;
+  }
+  .solution-imgs {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    padding: 35px 30px;
-    width:90%;
-}
-.steps-to-debt img{
-    width: 75px;
-    height: 75px;
-}
-.debt-before{
-    position: relative;
-}
-.debt-before::before{
-    content: '';
-    position: absolute;
+  }
+  .solution-content .row {
+    flex-direction: column-reverse;
+  }
+  .solution-two {
+    margin-bottom: 30px;
+  }
+  .solutioncal {
+    padding-bottom: 25px;
+  }
+  .solution-card {
+    padding-bottom: 50px;
+  }
+  .pay-less hr {
+    border: solid 1px #62a1c5;
+  }
+  .steps-to-debt {
     width: 100%;
-    height: 100%;
-    top:20%;
-    left: 2%;
-    z-index: -1;
-    background: url(../../assets/images/steps-to-debt.png) no-repeat;
-}
-.our-client{
-    padding-top: 108px;
-    padding-bottom: 120px;
-    background-color: #e7f3ff;
-}
-.client-title h2{
-    font-size: 60px;
-    color: #092349;
-    font-weight: 600;
-    padding-bottom: 98px;
-}
-.client-detail-common{
+  }
+  .debtcal {
+    padding-bottom: 25px;
+  }
+  .debt-before::before {
+    display: none;
+  }
+  .debt-settle {
+    padding-bottom: 60px;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot.owl-nav {
+    bottom: -15%;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot.owl-nav {
+    bottom: -15%;
+  }
+  .contact-us-one {
+    padding: 30px 0px 0px 0px;
+    border-right: none;
+  }
+  .contact-us {
+    padding: 30px 0px 0px 40px;
+  }
+  .contact-details ul li a {
+    padding-bottom: 20px;
+  }
+  .contact-footer p {
+    font-size: 16px;
+  }
+  .contact-us h4 {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .contact-us-one h4 {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .client-images {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: white;
+  }
+  .client-main-para {
+    padding-bottom: 10px;
+  }
+  .client-main-para p {
+    padding: 20px 20px 0px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .navlogo img {
+    width: 280px;
+  }
+  .banner-content h1 {
+    font-size: 30px;
+    line-height: 34px;
+    padding-bottom: 12px;
+  }
+  .banner-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .solution-title h2 {
+    font-size: 26px;
+  }
+  .banner-sec .container {
+    padding-bottom: 60px;
+  }
+  .solution-title {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .solution-two p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .solution-two {
     padding: 20px;
+    border-left: 4px solid #d6e8ff;
+  }
+  .solution-card {
+    padding-top: 60px;
+  }
+  .pay-less h3 {
+    font-size: 18px;
+  }
+  .pay-less p {
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .pay-less img {
+    width: 50px;
+    height: 50px;
+  }
+  .pay-less {
+    padding: 15px 15px 0px 15px;
+  }
+  .debt-settle {
+    padding-bottom: 50px;
+    padding-top: 60px;
+  }
+  .debt-title h2 {
+    font-size: 26px;
+    padding-bottom: 40px;
+  }
+  .steps-to-debt {
+    padding: 15px 15px 10px 15px;
+  }
+  .steps-to-debt img {
+    width: 50px;
+    height: 50px;
+  }
+  .steps-to-debt p {
+    font-size: 15px;
+  }
+  .client-title h2 {
+    font-size: 26px;
+    padding-bottom: 40px;
+  }
+  .client-detail h4 {
+    font-size: 18px;
+  }
+  .client-detail h5 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot.owl-nav {
+    bottom: -10%;
+    left: 3%;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot.owl-nav {
+    bottom: -10%;
+    right: -2%;
+  }
+  .contact-us {
+    padding: 30px 0px 0px 60px;
+  }
+  .contact-us-one h4 {
+    font-size: 17px;
+    padding-bottom: 18px;
+  }
+  .contact-us h4 {
+    font-size: 17px;
+    padding-bottom: 18px;
+  }
+  .contact-details ul li a span {
+    font-size: 15px;
+    padding-left: 14px;
+  }
+  .contact-details ul li a {
+    padding-bottom: 15px;
+  }
+  .contact-details-one ul li a span {
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 14px;
+  }
+  .contact-details-one ul li a img {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-details ul li a img {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-footer p {
+    font-size: 15px;
+  }
+  .footer {
+    padding: 20px 0px 20px 0px;
+  }
+  .contact-details-one ul li a {
+    padding-bottom: 15px;
+  }
+  .clients-full-view {
+    padding: 5px 10px 5px 10px;
+  }
+  .client-experience {
+    padding: 10px;
+  }
+  .client-social-details .clients-social-id a img {
+    width: 18px;
+    height: 18px;
+  }
 }
-.client-detail h4{
-    color: #00357b;
-    font-size: 37px;
-    font-weight: 600;
-}
-.client-detail h5{
-    font-size: 23px;
-    color: #1f5078;
-}
-.client-ples i{
-    font-size: 45px;
-}
-.client-common .client-photos{
+@media screen and (max-width: 575px) {
+  .common-ho .navbar-toggler {
+    padding: 2px 4px !important;
+  }
+  .navbar .navlogo img {
+    width: 250px;
+  }
+  .common-ho .navbar .container-fluid {
+    padding: 10px 10px;
+  }
+  .com-anc li .nav-link {
+    font-size: 16px;
+    width: 80px;
+    height: 35px;
+  }
+  .navbar-toggler-icon {
+    width: 1.3em !important;
+    height: 1.3em !important;
+  }
+  .banner-content h1 {
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+  .banner-content p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .banner-content {
     width: 100%;
-}
-
-.footer{
-    background-color: #092349;
-}
-.contact-us h4{
-    font-size: 23px;
-    color: white;
-    padding-bottom: 35px;
-}
-.contact-para p{
-    font-size: 21px;
-    line-height:35px;
-    color: #cbd6e2;
-}
-.contact-para a{
-    font-size: 21px;
-    line-height:35px;
-    color: #cbd6e2;
-    text-decoration: none;
-}
-.contact-para{
-    padding-left: 25px;
-}
-.contact-social a{
-    font-size: 21px;
-    line-height:35px;
-    color: white;
-    text-decoration: none;
-}
-.contact-social{
-    padding-left: 25px;
-}
-.contact-details{
+  }
+  .solution-title h2 {
+    font-size: 22px;
+  }
+  .banner-sec .container {
+    padding-bottom: 50px;
+    padding-top: 40px;
+  }
+  .solution-title {
+    padding-top: 50px;
     padding-bottom: 30px;
+  }
+  .solution-two p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .solution-two {
+    padding: 15px;
+    border-left: 3px solid #d6e8ff;
+  }
+  .solution-two {
+    margin-bottom: 20px;
+  }
+  .pay-less hr {
+    margin: 6px 0 !important;
+  }
+  .solution-card {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .pay-less h3 {
+    font-size: 17px;
+  }
+  .pay-less p {
+    font-size: 15px;
+  }
+  .pay-less hr {
+    border: solid 0.5px #62a1c5;
+  }
+  .debt-settle {
+    padding-bottom: 40px;
+    padding-top: 50px;
+  }
+  .debt-title h2 {
+    font-size: 22px;
+    padding-bottom: 35px;
+  }
+  .steps-to-debt img {
+    width: 45px;
+    height: 45px;
+  }
+  .client-title h2 {
+    font-size: 22px;
+    padding-bottom: 35px;
+  }
+  .owl-carousel .owl-nav button.owl-next i,
+  .owl-carousel .owl-nav button.owl-prev i,
+  .owl-carousel button.owl-dot {
+    padding: 3px;
+  }
+  .client-detail h4 {
+    font-size: 17px;
+  }
+  .client-detail h5 {
+    font-size: 14px;
+  }
+  .our-client {
+    padding-bottom: 50px;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot.owl-nav {
+    border: 2px solid #092349 !important;
+    font-size: small !important;
+    bottom: -7%;
+    right: -2%;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot.owl-nav {
+    border: 2px solid #092349 !important;
+    font-size: small !important;
+    bottom: -7%;
+    left: 2%;
+  }
+  .contact-us-one h4 {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .contact-us h4 {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .contact-us {
+    padding: 20px 0px 0px 0px;
+  }
+  .contact-details {
+    padding-bottom: 0px;
+  }
+  .contact-details ul li a span {
+    padding-left: 12px;
+  }
+  .contact-details-one ul li a span {
+    padding-left: 12px;
+  }
+  .clients-full-view .clients-id h2 {
+    font-size: 22px;
+  }
+  .clients-full-view .clients-id h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .clients-full-view {
+    padding: 0px 10px 0px 10px;
+  }
+  .client-main-para p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .client-experience h4 {
+    font-size: 16px;
+  }
+  .client-social-details .clients-social-id a img {
+    width: 16px;
+    height: 16px;
+  }
+  .clients-social-id a {
+    padding-right: 15px;
+  }
+  .clients-close-icon .close {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar .navlogo img {
+    width: 214px;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot.owl-nav {
+    bottom: -10%;
+    right: -2%;
+    border: 1px solid #092349 !important;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot.owl-nav {
+    border: 1px solid #092349 !important;
+    bottom: -10%;
+    left: 3%;
+  }
+  .banner-content h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .banner-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .solution-title {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .solution-title h2 {
+    font-size: 18px;
+  }
+  .solution-two p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .solution-card {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .debt-settle {
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+  .pay-less h3 {
+    font-size: 16px;
+  }
+  .pay-less p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .debt-title h2 {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+  .pay-less img {
+    width: 45px;
+    height: 45px;
+  }
+  .steps-to-debt p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+  .steps-to-debt img {
+    width: 40px;
+    height: 40px;
+  }
+  .client-title h2 {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .client-ples i {
+    font-size: 20px;
+  }
+  .contact-details-one ul li a span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .contact-us-one h4 {
+    font-size: 15px;
+    padding-bottom: 12px;
+  }
+  .contact-us h4 {
+    font-size: 15px;
+    padding-bottom: 12px;
+  }
+  .contact-details ul li a span {
+    padding-left: 12px;
+    font-size: 14px;
+  }
+  .client-main-para p {
+    padding: 5px 5px 0px 5px;
+    margin-bottom: 0;
+  }
+  .client-experience h4 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .clients-full-view .clients-id h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .clients-full-view .clients-id h3 {
+    font-size: 14px;
+  }
+  .clients-close-icon .close {
+    font-size: 35px;
+  }
 }
