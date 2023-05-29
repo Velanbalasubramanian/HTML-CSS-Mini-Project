@@ -510,6 +510,12 @@ a {
   .client-main-para {
     padding-bottom: 203px;
   }
+  .contact-details ul li a span {
+    padding-left: 20px;
+  }
+  .contact-details-one ul li a span {
+    padding-left: 20px;
+  }
 }
 @media screen and (max-width: 1440px) {
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
@@ -658,7 +664,6 @@ a {
   .contact-details-one ul li a span {
     font-size: 18px;
     line-height: 30px;
-    padding-left: 22px;
   }
   .contact-details-one ul li a img {
     width: 22px;
@@ -671,7 +676,6 @@ a {
   .contact-details ul li a span {
     font-size: 18px;
     line-height: 30px;
-    padding-left: 22px;
   }
   .contact-us {
     padding-left: 70px;
