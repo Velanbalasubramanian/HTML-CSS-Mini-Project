@@ -31,10 +31,11 @@ a {
 }
 
 .com-anc li .nav-link:hover,
-.com-anc li .nav-link.active {
+.com-anc li .nav-link.active{
   background-color: white;
   color: #222b54 !important;
 }
+
 .banner-sec .container {
   padding-top: 260px;
   padding-bottom: 128px;
@@ -58,6 +59,8 @@ a {
 .solution {
   background-color: #e7f3ff;
   border-radius: 22px;
+  margin-right: 48px;
+    margin-left: 48px;
 }
 .solution-title {
   padding-top: 87px;
@@ -90,8 +93,8 @@ a {
   transition: ease-in .3s;
 }
 .pay-less:hover {
-  background: rgba(78,31,163,.1);
   border: 1px solid #62a1c5;
+  transform: translate(0, -5px);
 }
 .pay-less img {
   width: 76px;
@@ -149,7 +152,8 @@ a {
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  padding: 35px 30px;
+  /* padding: 35px 30px; */
+  padding: 35px 40px 65px 40px;
   width: 90%;
   transition: ease-in .3s;
 }
@@ -201,6 +205,10 @@ a {
 }
 .client-ples i {
   font-size: 45px;
+  color: #00357b;
+}
+.client-ples i:hover{
+  color: #68a5eb;
 }
 .client-common .client-photos {
   width: 100%;
@@ -381,7 +389,7 @@ a {
   padding-left: 100px;
 }
 .contact-footer {
-  padding-top: 90px;
+  padding-top: 60px;
 }
 .contact-footer p {
   font-size: 26px;
@@ -389,10 +397,7 @@ a {
   color: #cbd6e2;
   margin-bottom: 0;
 }
-.pay-less:hover {
-  border: 1px solid #562caf;
-  transform: translate(0, -5px);
-}
+
 .contact-details-one ul li a span:hover{
   color: #b7bdc4;
 }
@@ -413,14 +418,14 @@ a {
     height: 56px;
   }
   .banner-content h1 {
-    font-size: 54px;
-    line-height: 60px;
-    margin-bottom: 0;
-  }
+    font-size: 50px;
+    line-height: 55px;
+    padding-bottom: 20px;
+}
   .banner-content p {
-    font-size: 26px;
-    line-height: 40px;
-    margin-bottom: 0;
+    font-size: 22px; 
+    line-height: 32px; 
+    margin-bottom: 0; 
   }
   .banner-content {
     width: 80%;
@@ -429,13 +434,15 @@ a {
     padding-top: 200px;
     padding-bottom: 100px;
 }
+  .steps-to-debt {
+    padding: 35px 30px;
+  }
   .solution-title h2 {
-    font-size: 45px;
-    margin-bottom: 0;
+    font-size: 40px;
   }
   .solution-two p {
-    font-size: 26px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 32px;
   }
   .solution-two {
     padding: 30px;
@@ -448,10 +455,8 @@ a {
     align-items: center;
   }
   .pay-less h3 {
-    color: #00357b;
-    font-size: 30px;
-    font-weight: 600;
-    padding-top: 15px;
+    font-size: 24px;
+    padding-top: 12px;
   }
   .pay-less {
     padding: 30px 30px 0px 30px;
@@ -467,7 +472,7 @@ a {
     padding-top: 100px;
   }
   .debt-title h2 {
-    font-size: 45px;
+    font-size: 40px;
     padding-bottom: 70px;
   }
   .debt-before::before {
@@ -477,9 +482,10 @@ a {
   }
   .steps-to-debt p {
     padding-top: 30px;
+    font-size: 18px;
   }
   .client-title h2 {
-    font-size: 45px;
+    font-size: 40px;
     padding-bottom: 70px;
   }
   .client-ples i {
@@ -489,13 +495,19 @@ a {
     font-size: 18px;
   }
   .client-detail h4 {
-    font-size: 26px;
+    font-size: 24px;
   }
   .client-detail-common {
     padding: 15px;
   }
   .our-client {
     padding-bottom: 100px;
+  }
+  .contact-us-one h4 {
+    font-size: 22px;
+  }
+  .contact-us h4 {
+    font-size: 22px;
   }
   .solution-card {
     padding-top: 100px;
@@ -505,10 +517,10 @@ a {
     padding: 50px 0px 40px 0px;
   }
   .contact-footer {
-    padding-top: 30px;
+    padding-top: 10px;
   }
   .contact-footer p {
-    font-size: 24px;
+    font-size: 20px;
   }
   .clients-full-view .clients-id h2 {
     font-size: 30px;
@@ -550,6 +562,10 @@ a {
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.owl-nav {
     right: -6%;
   }
+ .solution {
+    margin-right: 32px;
+    margin-left: 32px;
+  }
 }
 @media screen and (max-width: 1440px) {
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
@@ -569,21 +585,16 @@ a {
     font-size: large !important;
   }
   .steps-to-debt {
-    padding: 25px 20px 10px 20px;
-  }
-  .steps-to-debt p {
-    padding-top: 30px;
+    padding: 25px 20px 25px 20px;
   }
   .debt-before::before {
-    width: 85%;
-    height: 85%;
-    top: 10%;
+    width: 80%;
+    height: 90%;
+    top: 8%;
+    left: 7%;
   }
   .pay-less hr {
     margin: 10px 0 !important;
-  }
-  .contact-footer {
-    padding-top: 40px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -594,32 +605,21 @@ a {
 @media screen and (max-width: 1280px) {
   .banner-content h1 {
     font-size: 45px;
-    line-height: 55px;
+    line-height: 50px;
   }
   .banner-content {
     width: 85%;
-  }
-  .banner-content p {
-    font-size: 24px;
-    line-height: 35px;
   }
   .banner-sec .container {
     padding-bottom: 80px;
     padding-top: 170px;
   }
-  .solution-title h2 {
-    font-size: 40px;
-  }
   .solution-title {
     padding-top: 80px;
   }
-  .solution-two p {
-    font-size: 24px;
-    line-height: 35px;
-  }
-  .pay-less h3 {
-    font-size: 26px;
-    padding-top: 10px;
+  .solution {
+    margin-right: 16px;
+    margin-left: 16px;
   }
   .pay-less hr {
     border: solid 2px #62a1c5;
@@ -639,15 +639,10 @@ a {
     padding-bottom: 100px;
   }
   .debt-title h2 {
-    font-size: 40px;
     padding-bottom: 60px;
   }
   .client-title h2 {
-    font-size: 40px;
     padding-bottom: 60px;
-  }
-  .client-detail h4 {
-    font-size: 24px;
   }
   .client-detail-common {
     padding: 12px;
@@ -675,11 +670,9 @@ a {
   .contact-us h4 {
     padding-bottom: 25px;
   }
-  .contact-footer {
-    padding-top: 20px;
-  }
   .steps-to-debt p {
     padding-top: 15px;
+    font-size: 16px;
   }
   .debt-before::before {
     top: 10%;
@@ -732,11 +725,6 @@ a {
     padding-bottom: 20px;
     font-size: 21px;
   }
-  .debt-before::before {
-    top: 33%;
-    left: 0%;
-    height: 65%;
-  }
 }
 @media screen and (max-width: 1024px) {
   .navbar .navlogo img {
@@ -748,8 +736,6 @@ a {
   }
   .banner-content h1 {
     font-size: 40px;
-    line-height: 50px;
-    padding-bottom: 25px;
   }
   .banner-content p {
     font-size: 21px;
@@ -778,7 +764,7 @@ a {
     padding-bottom: 70px;
   }
   .pay-less h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .pay-less p {
     line-height: 26px;
@@ -795,9 +781,6 @@ a {
   .steps-to-debt img {
     width: 60px;
     height: 60px;
-  }
-  .steps-to-debt p {
-    font-size: 16px;
   }
   .debt-before::before {
     top: 15%;
@@ -1004,6 +987,7 @@ a {
   }
   .pay-less {
     padding: 15px 15px 0px 15px;
+    border-radius: 15px;
   }
   .debt-settle {
     padding-bottom: 50px;
@@ -1014,7 +998,7 @@ a {
     padding-bottom: 40px;
   }
   .steps-to-debt {
-    padding: 15px 15px 10px 15px;
+    padding: 15px 15px 15px 15px;
   }
   .steps-to-debt img {
     width: 50px;
@@ -1022,6 +1006,7 @@ a {
   }
   .steps-to-debt p {
     font-size: 15px;
+    line-height: 22px;
   }
   .client-title h2 {
     font-size: 26px;
@@ -1078,9 +1063,6 @@ a {
   .footer {
     padding: 20px 0px 20px 0px;
   }
-  .contact-footer {
-    padding-top: 15px;
-  }
   .clients-full-view {
     padding: 5px 10px 5px 10px;
   }
@@ -1090,6 +1072,10 @@ a {
   .client-social-details .clients-social-id a img {
     width: 18px;
     height: 18px;
+  }
+  .solution {
+    margin-right: 8px;
+    margin-left: 8px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1210,11 +1196,9 @@ a {
   }
   .contact-us-one h4 {
     font-size: 16px;
-    padding-bottom: 15px;
   }
   .contact-us h4 {
     font-size: 16px;
-    padding-bottom: 15px;
   }
   .contact-us {
     padding: 15px 0px 0px 0px;

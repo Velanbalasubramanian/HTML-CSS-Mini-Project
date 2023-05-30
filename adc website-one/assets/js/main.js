@@ -1,9 +1,9 @@
-$(document).ready(function () {
-    $("ul li a").click(function () {
-      $("li a").removeClass("active");
-      $(this).addClass("active");
-    });
-  });
+$( '.common-ho .navbar-nav li a' ).on( 'click', function () {
+  
+	$( '.common-ho .navbar-nav' ).find( 'li a.active' ).removeClass( 'active' );
+	$( this ).parent( 'a' ).addClass( 'active' );
+});
+
 
   $(document).ready(function () {
     $("#customers-testimonials2").owlCarousel({
