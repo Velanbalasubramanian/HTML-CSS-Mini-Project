@@ -15,9 +15,7 @@ a {
   padding-top: 0;
   padding-bottom: 0;
 }
-.common-ho .navbar .container-fluid {
-  padding-left: 140px;
-  padding-right: 48px;
+.common-ho .navbar .container{
   padding-top: 31px;
   padding-bottom: 30px;
 }
@@ -38,7 +36,7 @@ a {
   color: #222b54 !important;
 }
 .banner-sec .container {
-  padding-top: 73px;
+  padding-top: 260px;
   padding-bottom: 128px;
 }
 .banner-content h1 {
@@ -88,6 +86,12 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  border: 1px solid transparent;
+  transition: ease-in .3s;
+}
+.pay-less:hover {
+  background: rgba(78,31,163,.1);
+  border: 1px solid #62a1c5;
 }
 .pay-less img {
   width: 76px;
@@ -147,6 +151,10 @@ a {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   padding: 35px 30px;
   width: 90%;
+  transition: ease-in .3s;
+}
+.steps-to-debt:hover{
+  background-color: #e7f3ff !important;
 }
 .steps-to-debt img {
   width: 75px;
@@ -209,7 +217,7 @@ a {
   left: -4%;
   bottom: 0%;
   transform: translate(-50%, -50%);
-  border: 4px solid #092349 !important;
+  border: 3px solid #092349 !important;
   font-size: x-large !important;
 }
 #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
@@ -231,7 +239,7 @@ a {
   right: -8%;
   bottom: 0%;
   transform: translate(-50%, -50%);
-  border: 4px solid #092349 !important;
+  border: 3px solid #092349 !important;
   font-size: x-large !important;
 }
 
@@ -306,7 +314,6 @@ a {
 }
 .footer-logo img {
   width: 270px;
-  height: 62px;
 }
 .contact-us h4 {
   font-size: 23px;
@@ -382,13 +389,23 @@ a {
   color: #cbd6e2;
   margin-bottom: 0;
 }
-
+.pay-less:hover {
+  border: 1px solid #562caf;
+  transform: translate(0, -5px);
+}
+.contact-details-one ul li a span:hover{
+  color: #b7bdc4;
+}
+.contact-details ul li a span:hover{
+  color: #b7bdc4;
+}
 @media screen and (max-width: 1600px) {
   .navbar .navlogo img {
     width: 360px;
   }
-  .common-ho .navbar .container-fluid {
-    padding: 12px 12px;
+  .common-ho .navbar .container{
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .com-anc li .nav-link {
     width: 150px;
@@ -409,9 +426,9 @@ a {
     width: 80%;
   }
   .banner-sec .container {
-    padding-top: 73px;
+    padding-top: 200px;
     padding-bottom: 100px;
-  }
+}
   .solution-title h2 {
     font-size: 45px;
     margin-bottom: 0;
@@ -444,7 +461,6 @@ a {
     line-height: 30px;
   }
   .pay-less hr {
-    border: solid 3px #62a1c5;
     margin: 12px 0;
   }
   .debt-settle {
@@ -511,10 +527,28 @@ a {
     padding-bottom: 203px;
   }
   .contact-details ul li a span {
-    padding-left: 20px;
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 30px;
   }
   .contact-details-one ul li a span {
-    padding-left: 20px;
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .contact-details ul li a img {
+    width: 22px;
+    height: 22px;
+  }
+  .contact-details-one ul li a img {
+    width: 22px;
+    height: 22px;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.owl-nav {
+    left: -3%;
+  }
+  #customers-testimonials2 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.owl-nav {
+    right: -6%;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -551,6 +585,8 @@ a {
   .contact-footer {
     padding-top: 40px;
   }
+}
+@media screen and (max-width: 1400px) {
   .client-main-para {
     padding-bottom: 143px;
   }
@@ -569,6 +605,7 @@ a {
   }
   .banner-sec .container {
     padding-bottom: 80px;
+    padding-top: 170px;
   }
   .solution-title h2 {
     font-size: 40px;
@@ -621,7 +658,7 @@ a {
   .owl-carousel .owl-nav button.owl-next i,
   .owl-carousel .owl-nav button.owl-prev i,
   .owl-carousel button.owl-dot {
-    padding: 6px;
+    padding: 4px;
   }
   .our-client {
     padding-bottom: 100px;
@@ -629,14 +666,17 @@ a {
   .contact-us-one h4 {
     padding-bottom: 25px;
   }
-  .contact-details {
+  .contact-details-one ul li a {
+    padding-bottom: 20px;
+  }
+  .contact-details ul li a {
     padding-bottom: 20px;
   }
   .contact-us h4 {
     padding-bottom: 25px;
   }
   .contact-footer {
-    padding-top: 0px;
+    padding-top: 20px;
   }
   .steps-to-debt p {
     padding-top: 15px;
@@ -651,31 +691,18 @@ a {
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel button.owl-dot.owl-nav {
-    border: 3px solid #092349 !important;
+    border: 2px solid #092349 !important;
+    font-size: smaller !important;
+    bottom: -14%;
+    left: 1%;
   }
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot.owl-nav {
-    border: 3px solid #092349 !important;
-  }
-  .footer-logo img {
-    width: 220px;
-  }
-  .contact-details-one ul li a span {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .contact-details-one ul li a img {
-    width: 22px;
-    height: 22px;
-  }
-  .contact-details ul li a img {
-    width: 22px;
-    height: 22px;
-  }
-  .contact-details ul li a span {
-    font-size: 18px;
-    line-height: 30px;
+    border: 2px solid #092349 !important;
+    font-size: smaller !important;
+    right: -1%;
+    bottom: -14%;
   }
   .contact-us {
     padding-left: 70px;
@@ -693,6 +720,22 @@ a {
   }
   .clients-full-view .clients-id h3 {
     font-size: 18px;
+  }
+  .contact-us-one {
+    padding: 0px 50px 0px 50px;
+  }
+  .contact-us h4 {
+    padding-bottom: 20px;
+    font-size: 21px;
+  }
+  .contact-us-one h4 {
+    padding-bottom: 20px;
+    font-size: 21px;
+  }
+  .debt-before::before {
+    top: 33%;
+    left: 0%;
+    height: 65%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -714,8 +757,8 @@ a {
   }
   .banner-sec .container {
     padding-bottom: 70px;
-    padding-top: 70px;
-  }
+    padding-top: 150px;
+}
   .solution-title {
     padding-top: 70px;
   }
@@ -759,6 +802,7 @@ a {
   .debt-before::before {
     top: 15%;
     left: 0%;
+    height: 85%;
   }
   .debt-settle {
     padding-top: 70px;
@@ -784,18 +828,18 @@ a {
     padding-left: 40px;
   }
   .contact-us-one h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .contact-us h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .contact-details-one ul li a span {
+    padding-left: 12px;
     font-size: 16px;
-    line-height: 28px;
-    padding-left: 16px;
+    line-height: 25px;
   }
   .contact-details-one ul li a {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
   .contact-details-one ul li a img {
     width: 20px;
@@ -806,15 +850,18 @@ a {
     height: 20px;
   }
   .contact-details ul li a span {
+    padding-left: 12px;
     font-size: 16px;
-    line-height: 28px;
-    padding-left: 16px;
+    line-height: 25px;
   }
   .contact-footer p {
     font-size: 18px;
   }
   .footer {
     padding: 40px 0px 30px 0px;
+  }
+  .contact-details ul li a {
+    padding-bottom: 15px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -834,10 +881,6 @@ a {
   }
   .common-ho nav .navbar-nav li {
     padding-top: 10px;
-  }
-  .banner-sec .container {
-    padding-bottom: 70px;
-    padding-top: 50px;
   }
   .banner-content {
     padding-bottom: 30px;
@@ -882,12 +925,14 @@ a {
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel button.owl-dot.owl-nav {
-    bottom: -15%;
+    bottom: -11%;
+    left: 2%;
   }
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot.owl-nav {
-    bottom: -15%;
+    right: -1%;
+    bottom: -11%;
   }
   .contact-us-one {
     padding: 30px 0px 0px 0px;
@@ -896,19 +941,8 @@ a {
   .contact-us {
     padding: 30px 0px 0px 40px;
   }
-  .contact-details ul li a {
-    padding-bottom: 20px;
-  }
   .contact-footer p {
     font-size: 16px;
-  }
-  .contact-us h4 {
-    font-size: 18px;
-    padding-bottom: 20px;
-  }
-  .contact-us-one h4 {
-    font-size: 18px;
-    padding-bottom: 20px;
   }
   .client-images {
     display: flex;
@@ -940,6 +974,7 @@ a {
   }
   .banner-sec .container {
     padding-bottom: 60px;
+    padding-top: 130px;
   }
   .solution-title {
     padding-top: 60px;
@@ -1002,37 +1037,32 @@ a {
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel button.owl-dot.owl-nav {
-    bottom: -10%;
+    bottom: -8%;
     left: 3%;
   }
   #customers-testimonials2 .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot.owl-nav {
-    bottom: -10%;
-    right: -2%;
+    bottom: -8%;
+    right: -1%;
   }
   .contact-us {
     padding: 30px 0px 0px 60px;
   }
   .contact-us-one h4 {
     font-size: 17px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
   }
   .contact-us h4 {
     font-size: 17px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
   }
   .contact-details ul li a span {
     font-size: 15px;
-    padding-left: 14px;
-  }
-  .contact-details ul li a {
-    padding-bottom: 15px;
   }
   .contact-details-one ul li a span {
     font-size: 15px;
-    line-height: 24px;
-    padding-left: 14px;
+    line-height: 22px;
   }
   .contact-details-one ul li a img {
     width: 18px;
@@ -1048,8 +1078,8 @@ a {
   .footer {
     padding: 20px 0px 20px 0px;
   }
-  .contact-details-one ul li a {
-    padding-bottom: 15px;
+  .contact-footer {
+    padding-top: 15px;
   }
   .clients-full-view {
     padding: 5px 10px 5px 10px;
@@ -1069,8 +1099,9 @@ a {
   .navbar .navlogo img {
     width: 250px;
   }
-  .common-ho .navbar .container-fluid {
-    padding: 10px 10px;
+  .common-ho .navbar .container {
+   padding-top: 10px;
+   padding-bottom: 10px;
   }
   .com-anc li .nav-link {
     font-size: 16px;
@@ -1098,8 +1129,8 @@ a {
   }
   .banner-sec .container {
     padding-bottom: 50px;
-    padding-top: 40px;
-  }
+    padding-top: 100px;
+}
   .solution-title {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -1186,16 +1217,10 @@ a {
     padding-bottom: 15px;
   }
   .contact-us {
-    padding: 20px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
   }
   .contact-details {
     padding-bottom: 0px;
-  }
-  .contact-details ul li a span {
-    padding-left: 12px;
-  }
-  .contact-details-one ul li a span {
-    padding-left: 12px;
   }
   .clients-full-view .clients-id h2 {
     font-size: 22px;
@@ -1224,6 +1249,25 @@ a {
   .clients-close-icon .close {
     font-size: 44px;
   }
+  .contact-footer {
+    padding-top: 0px;
+  }
+  .contact-us-one {
+    padding: 20px 0px 0px 0px;
+  }
+  .footer-logo img {
+    width: 200px;
+  }
+  .contact-details-one ul li a img {
+    width: 16px;
+    height: 16px;
+  }
+  .contact-details ul li a img {
+    width: 16px;
+    height: 16px;
+  }
+
+
 }
 @media screen and (max-width: 480px) {
   .navbar .navlogo img {
@@ -1303,7 +1347,6 @@ a {
   }
   .contact-details-one ul li a span {
     font-size: 14px;
-    line-height: 22px;
   }
   .contact-us-one h4 {
     font-size: 15px;
