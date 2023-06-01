@@ -81,10 +81,6 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
     justify-content: space-between;
     height: 100vh;
 }
-
-.loginpage{
-    /* padding-top: 100px; */
-}
 .loginpage-one{
     padding-right: 60px;
     position: relative;
@@ -117,7 +113,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
 .loginpage .row{
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 .loginpage-one h2{
     font-weight: 500;
@@ -188,6 +184,10 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
 .loginpage-one .logintwo-para a{
     color: #FF6C1A;
     text-decoration: underline !important;
+    font-weight: bold;
+}
+.loginpage-one .logintwo-para a:hover{
+    color: #192A44;
 }
 .formtype .form-label{
     padding-bottom: 11px;
@@ -200,6 +200,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
 .formtype .form-control{
     padding: 14px 19px 15px 19px;
     border-color: #E8E8E8;
+    border-radius: 8px;
 }
 .formtype .form-control::placeholder{
     font-family: 'Rubik';
@@ -251,6 +252,9 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
     line-height: 18px;
     color: #231F1B;
 }
+.form-forgot a:hover{
+    color: #FF6C1A;
+}
 .formlog button{
     font-weight: 700;
     font-size: 18px;
@@ -284,8 +288,50 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
     font-weight: bold;
 }
 .formcondition{
-    /* padding-top: 165px; */
     padding-bottom: 25px;
+}
+.formcondition p a:hover {
+    color: #FF6C1A;
+}
+/* REGISTER */
+.formtype .input-group .btn{
+    padding: 14px 19px 15px 19px;
+    border-color: #E8E8E8;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #192A44;
+}
+.formtype .input-group .btn i{
+    font-size: small;
+    padding-left: 12px;
+    color: #7C7C7C;
+}
+.formtype .input-group .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    border-color: #E8E8E8 !important;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}
+.formregbt button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #FF6C1A;
+    opacity: 0.4;
+    border-radius: 10px;
+    margin-top: 18px;
+    padding: 14px 0 15px 0;
+    border: none;
+}
+.formregbt button:hover {
+    background: #FF6C1A;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1280px){
@@ -294,15 +340,6 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
     }
     .navend .navregister {
         margin-left: 25px;
-    }
-    .banner-common {
-        height: 100%;
-    }
-    .loginpage {
-        padding-top: 80px;
-    }
-    .formcondition {
-        padding-top: 100px;
     }
     .loginpage-one h1 {
         font-size: 40px;
@@ -409,6 +446,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
     .loginpage-one {
         padding-right: 0px;
         padding-bottom: 30px;
+        padding-top: 30px;
     }
     .loginpage-two {
         padding-left: 0;
@@ -421,17 +459,22 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
         width: 280px;
         height: 280px;
     }
-    .loginpage {
-        padding-top: 40px;
-    }
-    .formcondition {
-        padding-top: 50px;
-    }
     .loginpage-one .loginone-para {
         padding-bottom: 20px;
     }
     .loginpage-two .field-icon {
         top: 40%;
+    }
+    .formcondition {
+        padding-top: 50px;
+    }    
+    .navend{
+        padding-bottom: 30px;
+        box-shadow: 0 5px 3px -4px #bcaaaa;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 256 108 26 var(--bs-navbar-toggler-focus-width) !important;
+        border-color: #FF6C1A;
     }
 }
 @media screen and (max-width: 767px){
@@ -442,9 +485,6 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
         font-size: 28px;
         line-height: 38px;
         padding-bottom: 12px;
-    }
-    .loginpage {
-        padding-top: 30px;
     }
     .loginpage-one h2 {
         font-size: 22px;
@@ -510,12 +550,6 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
         font-size: 16px;
         padding: 9px 0 9px 0;
     }
-    .formcondition {
-        padding-top: 40px;
-    }
-    .loginpage {
-        padding-top: 20px;
-    }
     .loginpage-two .field-icon {
         top: 45%;
         right: 12px;
@@ -528,6 +562,12 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
         width: 0;
         height: 0;
     }
+    .formcondition {
+        padding-top: 40px;
+    }
+    .navend {
+        padding-bottom: 25px;
+    }
 }
 @media screen and (max-width: 480px){
     header .navbar .navbar-brand img {
@@ -537,30 +577,19 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover{
         padding: 2px 6px 2px 6px !important;
     }
     .loginpage-one h2 {
-        padding-bottom: 10px;
         line-height: 25px;
     }
     .loginpage-one .loginone-para {
-        padding-bottom: 12px;
         font-size: 14px;
     }
     .loginpage-one .logintwo-para {
         font-size: 15px;
     }
-    .loginpage-one {
-        padding-bottom: 8px;
-    }
-    .formtype .form-label {
-        padding-bottom: 8px;
-    }
-    .loginpage-two form .formtype {
-        padding-bottom: 12px;
-    }
-    .formlog button {
-        margin-top: 20px;
-    }
     .formcondition {
         padding-top: 30px;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 2.5rem !important;
     }
 }
 
