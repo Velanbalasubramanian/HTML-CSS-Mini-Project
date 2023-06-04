@@ -15,12 +15,14 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
@@ -68,7 +70,9 @@
               </ul>
               <div class="navend">
                 <a href="/index.html" class="rubik-fonts navlogin">Login</a>
-                <a href="/register.html" class="rubik-fonts active navregister">Register</a>
+                <a href="/register.html" class="rubik-fonts active navregister"
+                  >Register</a
+                >
               </div>
             </div>
           </div>
@@ -90,15 +94,14 @@
                   towards learning:
                 </p>
                 <p class="rubik-fonts logintwo-para">
-                  Already have Account? <a href="#">Login</a>  
+                  Already have Account? <a href="#">Login</a>
                 </p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="loginpage-two">
-                <form action="#">
-
-                  <!-- Continue to Educational Info -->
+                <!-- Continue to Educational Info -->
+                <!-- <form action="#">
                   <div class="formtype">
                     <label for="emailAddress" class="form-label rubik-fonts"
                       >Full Name</label
@@ -159,10 +162,181 @@
                       Continue to Educational Info
                     </button>
                   </div>
+                </form> -->
 
-                  
+                <!-- Create Your New Account -->
+                <form action="#">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="formtype">
+                        <label for="text" class="form-label rubik-fonts"
+                          >College Name</label
+                        >
+                        <div>
+                          <input
+                            type="text"
+                            id="emailAddress"
+                            placeholder="Enter your College Name"
+                            autocomplete="off"
+                            class="form-control comhov"
+                          />
+                        </div>
+                      </div>
+                    </div>
 
+                    <!-- <div class="col-lg-12">
+                      <div class="formtype">
+                        <label for="text" class="form-label rubik-fonts"
+                          >College Name</label
+                        >
+                        <div class="input-group comho">
 
+                          <input
+                            type="text"
+                            class="form-control comhovr t-dropdown-input"
+                            autocomplete="off"
+                            placeholder="Enter your study"
+                            aria-label="Text input with dropdown button"
+                          />
+                        </div>
+                        <ul class="t-dropdown-list">
+                          <li class="t-dropdown-item">
+                            <div class="d-flex justify-content-between align-items-center clg-detail">
+                              <img src="/assets/images/kpr.png" alt="">
+                              <div class="">
+                                <h4>KPR Institution of Engineering and Technology</h4>
+                                <p>Uthupalayam, Coimbatore</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="t-dropdown-item">Civil Engineering</li>
+                          <li class="t-dropdown-item">Chemical Engineering</li>
+                        </ul>
+                      </div>
+                    </div> -->
+
+                    <div class="col-lg-12">
+                      <div class="formtype">
+                        <label
+                          for="phonenumber"
+                          class="form-label rubik-fonts phonenumber"
+                        >
+                          Department</label
+                        >
+                        <div class="input-group comho">
+                          <select
+                            id="department"
+                            name="department"
+                            class="comhovr"
+                          >
+                            <option value="B.E.">B.E.</option>
+                            <option value="BSc">BSc</option>
+                            <option value="BA">BA</option>
+                            <option value="BCA">BCA</option>
+                          </select>
+
+                          <input
+                            type="text"
+                            class="form-control comhovr t-dropdown-input"
+                            autocomplete="off"
+                            placeholder="Enter your study"
+                            aria-label="Text input with dropdown button"
+                          />
+                        </div>
+                        <ul class="t-dropdown-list">
+                          <li class="t-dropdown-item">
+                            Computer Science Engineering
+                          </li>
+                          <li class="t-dropdown-item">Civil Engineering</li>
+                          <li class="t-dropdown-item">Chemical Engineering</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="formtype formgender">
+                            <label for="Gender" class="form-label rubik-fonts"
+                              >Batch</label
+                            >
+
+                            <select
+                              id="Gender"
+                              class="comhov"
+                              name="department"
+                            >
+                              <option value="Select Batch">Select Batch</option>
+                              <option value="2022">2022</option>
+                              <option value="2023">2023</option>
+                              <option value="2024">2024</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="formtype formgender">
+                            <label for="Gender" class="form-label rubik-fonts"
+                              >Gender</label
+                            >
+
+                            <select id="Gender" class="" name="department">
+                              <option value="Gender">Select Gender</option>
+                              <option value="Male" selected>Male</option>
+                              <option value="Female">Female</option>
+                              <option value="Others">Others</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="formtype formpassword">
+                        <label for="text" class="form-label rubik-fonts"
+                          >Technology Interest</label
+                        >
+                        <input
+                          type="text"
+                          id="text"
+                          placeholder="Enter your Technology Interest"
+                          class="form-control comhov"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="formregbt">
+                        <button type="submit" class="rubik-fonts w-100" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                          Create Your New Account
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-dialog-centered" >
+                            <div class="modal-content">
+                              
+                              <div class="model-body">
+                                <img src="/assets/images/email-modal.png" alt="email-modal">
+                                <h3 class="rubik-fonts">Verify Your Email Address</h3>
+                                <p>
+                                  You’ve Entered <a href="#">lokeshm@sparkouttech.com</a> as the email address for your account. Please verify this email address by clicking below button.
+                                </p>
+                                <a href="#" class="rubik-fonts model-mail">Verify your Email</a>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
