@@ -56,12 +56,27 @@ $(document).ready(function(){
   $('.two-dropdown-list').width($('.t-dropdown-select').width());
   
   $('.two-dropdown-input').val('');
+
   
-  $('li.t-dropdown-item').on('click', function() {
+  
+  $('li.two-dropdown-item').on('click', function() {
     var text = $(this).html();
     $(this).parent().prev().find('.two-dropdown-input').val(text);
     $('.two-dropdown-list').slideUp('fast');
   });
+//   $('li.two-dropdown-item').on('click', function() {
+//     var text = $(this).html();
+//     var imageSrc = $(this).find('img').attr('src');
+//     var inputField = $(this).parent().prev().find('.two-dropdown-input');
+    
+//     inputField.val(text);
+//     inputField.next('.image-preview').attr('src', imageSrc);
+//     inputField.show();
+//     $('.two-dropdown-list').slideUp('fast');
+// });
+
+  // const img = document.querySelector("#kprclg"); 
+  // img.src = "//assets/images/kpr.png";
   
   $(document).on('click', function(event) {
     if ($(event.target).closest(".two-dropdown-input, .t-select-btn").length)
@@ -72,3 +87,6 @@ $(document).ready(function(){
   // END //
   
   });
+
+
+ 
