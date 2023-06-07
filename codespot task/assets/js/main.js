@@ -59,21 +59,21 @@ $(document).ready(function(){
 
   
   
+  // $('li.two-dropdown-item').on('click', function() {
+  //   var text = $(this).html();
+  //   $(this).parent().prev().find('.two-dropdown-input').val(text);
+  //   $('.two-dropdown-list').slideUp('fast');
+  // });
   $('li.two-dropdown-item').on('click', function() {
     var text = $(this).html();
-    $(this).parent().prev().find('.two-dropdown-input').val(text);
-    $('.two-dropdown-list').slideUp('fast');
-  });
-//   $('li.two-dropdown-item').on('click', function() {
-//     var text = $(this).html();
-//     var imageSrc = $(this).find('img').attr('src');
-//     var inputField = $(this).parent().prev().find('.two-dropdown-input');
+    var imageSrc = $(this).find('img').attr('src');
+    var inputField = $(this).parent().prev().find('.two-dropdown-input');
     
-//     inputField.val(text);
-//     inputField.next('.image-preview').attr('src', imageSrc);
-//     inputField.show();
-//     $('.two-dropdown-list').slideUp('fast');
-// });
+    inputField.val(text);
+    inputField.next('.image-preview').attr('src', imageSrc);
+    inputField.show();
+    $('.two-dropdown-list').slideUp('fast');
+});
 
   // const img = document.querySelector("#kprclg"); 
   // img.src = "//assets/images/kpr.png";

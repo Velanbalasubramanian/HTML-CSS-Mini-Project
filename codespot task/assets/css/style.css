@@ -38,6 +38,7 @@ header .navbar-expand-lg .navbar-nav .nav-link {
   font-size: 16px;
   color: #192a44;
   line-height: 160%;
+  font-family: var(--rubik-fonts);
 }
 header .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: #ff6c1a;
@@ -230,6 +231,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 }
 .loginpage-two form .formtype {
   padding-bottom: 26px;
+  position: relative;
 }
 .loginpage-two .formpassword {
   position: relative;
@@ -325,9 +327,10 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 .formgender{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .formgender select{
-    padding: 14px 19px 15px 19px;
+    padding: 17px 19px 17px 19px;
     border-color: #e8e8e8;
     border-radius: 8px;
     font-size: 16px;
@@ -339,9 +342,13 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     appearance: none;
     background-image: url("/assets/images/arrow.svg");
     background-repeat: no-repeat;
-    background-position: 95%;
+    background-position: right;
     background-size: 18px;
 }
+.formgender select option{
+  
+}
+
 .formgender select:hover{
     border: 1px solid #192A44;
 }
@@ -386,19 +393,20 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   display: none;
   z-index: 10;
   list-style: none;
-  margin: 0 0 0 -1px;
+  margin: 0;
   padding: 10px 0;
-  height: 30%;
-  width: 63.5%;
-  overflow: visible;
+  width: calc(100% - 92.6px);
+  left: 92.6px;
+  overflow: auto;
   position: absolute;
   background-color: #FFFFFF;
-  transform: translate(23%, 0);
   border: 1px solid #E8E8E8;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 8px 8px;
 }
-
+.formtype .input-group .comho .t-dropdown-input{
+  position: relative;
+}
 .t-dropdown-item {
   padding: 10px 20px;
   margin: 0;
@@ -414,17 +422,15 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   display: none;
   z-index: 10;
   list-style: none;
-  margin: 0 0 0 0px;
+  margin: 0;
   padding: 10px 0;
-  height: 41%;
-  width: 78%;
-  overflow: visible;
+  width: 100%;
   position: absolute;
   background-color: #FFFFFF;
-  transform: translate(0%, 0);
   border: 1px solid #E8E8E8;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 8px 8px;
+  min-height: 140px;
 }
 
 .two-dropdown-item {
@@ -463,6 +469,9 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   padding: 0 !important;
   overflow: visible !important;
 }
+/* .bootstrap-select .dropdown-menu ul li{
+  padding: 10px 0px;
+} */
 
 /* .bs-searchbox{
   display: none;
@@ -534,8 +543,8 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 }
 .modal {
   --bs-modal-width: 658px !important;
-  
 }
+
 
 @media screen and (max-width: 1280px) {
   header .navbar-expand-lg .navbar-nav .nav-link {
@@ -562,6 +571,18 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .loginpage-two::before {
     right: -4%;
   }
+  .banner-common-one {
+    height: 110vh;
+  }
+  .two-dropdown-item .two-dropdown-com h5 {
+    font-size: 15px;
+  }
+  .t-dropdown-item {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+
+ 
 }
 @media screen and (max-width: 1198px) {
   header .navbar-expand-lg .navbar-nav .nav-link {
@@ -587,6 +608,9 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   }
   .loginpage-one .logintwo-para::before {
     right: 14%;
+  }
+  .banner-common-one {
+    height: 105vh;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -620,6 +644,18 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   }
   .formtype .form-control {
     padding: 12px 12px 12px 12px;
+  }
+  .formtype .input-group select {
+    padding: 12px 40px 12px 19px;
+  }
+  .bootstrap-select button{
+    padding: 12px 40px 12px 19px;
+  }
+  .filter-option-inner-inner{
+    font-size: 16px;
+  }
+  .formgender select {
+    padding: 14px 19px 15px 19px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -745,7 +781,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     padding-bottom: 15px;
   }
   .formtype .form-control {
-    padding: 8px;
+    padding: 8px 8px 8px 15px;
   }
   .formlog button {
     margin-top: 25px;
@@ -770,6 +806,52 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .navend {
     padding-bottom: 25px;
   }
+  .formregbt button {
+    font-size: 15px;
+    padding: 10px 0 10px 0;
+}
+.formtype .input-group select {
+  padding: 11px 30px 8px 15px;
+  background-position: 50px;
+  background-size: 17px;
+  font-size: 14px;
+}
+.formgender select {
+  padding: 10px 19px 11px 15px;
+  font-size: 14px;
+}
+.filter-option-inner-inner {
+  font-size: 14px;
+}
+.bootstrap-select .dropdown-item {
+  font-size: 14px;
+}
+.bootstrap-select button {
+  padding: 9px 40px 10px 15px;
+}
+.t-dropdown-list {
+  width: calc(100% - 74.6px);
+  left: 74.6px;
+}
+.two-dropdown-item img {
+  margin-right: 12px;
+}
+.two-dropdown-list {
+  min-height: 0px;
+  max-height: 140px;
+  overflow: overlay;
+}
+.two-dropdown-item .two-dropdown-com h5 {
+  font-size: 14px;
+}
+.t-dropdown-input{
+  font-size: 14px !important;
+}
+.t-dropdown-item {
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
 }
 @media screen and (max-width: 480px) {
   header .navbar .navbar-brand img {
