@@ -242,6 +242,8 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   top: 36%;
   color: #a8a8a8;
   font-size: 25px;
+  background: none;
+  border: none;
 }
 .loginpage-two .form-check .form-check-input {
   width: 18px;
@@ -342,13 +344,9 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     appearance: none;
     background-image: url("/assets/images/arrow.svg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 95%;
     background-size: 18px;
 }
-.formgender select option{
-  
-}
-
 .formgender select:hover{
     border: 1px solid #192A44;
 }
@@ -657,6 +655,9 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .formgender select {
     padding: 14px 19px 15px 19px;
   }
+  .model-body {
+    padding: 30px 30px 40px 30px;
+  }
 }
 @media screen and (max-width: 991px) {
   header .navbar-expand-lg .navbar-nav .nav-link {
@@ -811,7 +812,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     padding: 10px 0 10px 0;
 }
 .formtype .input-group select {
-  padding: 11px 30px 8px 15px;
+  padding: 13px 30px 8px 15px;
   background-position: 50px;
   background-size: 17px;
   font-size: 14px;
@@ -850,6 +851,30 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 .t-dropdown-item {
   padding: 8px 10px;
   font-size: 14px;
+}
+.model-body {
+  padding: 15px 15px 20px 15px;
+}
+.model-body h3 {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 0 4px 0;
+}
+.model-body p {
+  font-size: 14px;
+  line-height: 145%;
+  margin-bottom: 10px;
+}
+.model-body .model-mail {
+  font-size: 14px;
+  line-height: 0px;
+  padding: 6px;
+}
+.model-body img{
+  width: 120px;
+}
+.modal-content {
+  margin: 20px;
 }
 
 }

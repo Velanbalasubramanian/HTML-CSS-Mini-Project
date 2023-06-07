@@ -89,4 +89,14 @@ $(document).ready(function(){
   });
 
 
+
+  $("#formend").hide();
+  $("#btncontinue").click(function () {
+    $("#formend").show("1000");
+    $("#formstart").hide();
+  });
+ 
+
+
+
  
