@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link href="assets/css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -26,12 +25,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    
   </head>
   <body>
-    <div class="banner-common-one">
+    <div class="banner-common">
       <header class="header-common">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
@@ -80,11 +78,11 @@
         </nav>
       </header>
 
-      <div class="loginpage">
+      <div class="registerpage"> 
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
-              <div class="loginpage-one">
+            <div class="col-lg-6 my-auto">
+              <div class="registerpage-one">
                 <h2 class="rubik-fonts">Create an Account</h2>
                 <h1 class="rubik-fonts">
                   Make your learning strides <span>today!</span>
@@ -95,12 +93,12 @@
                   towards learning:
                 </p>
                 <p class="rubik-fonts logintwo-para">
-                  Already have Account? <a href="#">Login</a>
+                  Already have Account? <a href="/index.html">Login</a>
                 </p>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="loginpage-two">
+              <div class="registerpage-two">
                 <!-- Continue to Educational Info -->
                 <form action="#">
                   <div id="formstart">
@@ -116,6 +114,7 @@
                         required
                         maxlength="30"
                         pattern="/^[A-Za-z]+$/"
+                        autocomplete="off"
                       />
                     </div>
 
@@ -129,6 +128,7 @@
                         placeholder="Enter email address"
                         class="form-control comhov"
                         required
+                        autocomplete="off"
                       />
                     </div>
 
@@ -416,10 +416,15 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
   </body>
 
-  <script src="assets/js/main.js"></script>
-  <!-- <script class="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+
 </html>

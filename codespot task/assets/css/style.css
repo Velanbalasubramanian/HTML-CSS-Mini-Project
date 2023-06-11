@@ -56,8 +56,8 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: #192a44;
 }
 .navend .navregister {
-  background: #ff6c1a;
-  border: 1px solid #ff6c1a;
+  background-color: rgb(255, 108, 26);
+  border: 1px solid rgb(255, 108, 26);
   color: #ffffff;
   margin-left: 33px;
   padding: 10px 19px 10px 20px;
@@ -65,8 +65,8 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 }
 .navend .navregister:hover {
   background-color: transparent;
-  border: 1px solid #ff6c1a;
-  color: #ff6c1a;
+  border: 1px solid rgb(255, 108, 26);
+  color: rgb(255, 108, 26);
 }
 .header-common {
   position: relative;
@@ -74,24 +74,19 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 .header-common::before {
   content: "";
   position: absolute;
-  background: url(/assets/images/banner-vector.png) no-repeat left top;
-  left: 0;
-  top: 0;
+  left: -60px;
+  top: -60px;
   width: 480px;
   height: 446px;
-  background-size: cover;
+  background: rgba(255, 108, 26, 0.26);
+  filter: blur(200px);
+  transform: rotate(79.85deg);
 }
 .banner-common {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-}
-.banner-common-one {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 120vh;
 }
 .loginpage-one {
   padding-right: 60px;
@@ -107,10 +102,24 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   height: 34px;
   background-size: cover;
 }
-.loginpage-two {
-  padding-left: 100px;
+.registerpage-one {
+  padding-right: 60px;
   position: relative;
-  padding-right: 40px;
+}
+.registerpage-one::before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/star.png) no-repeat;
+  left: 10px;
+  top: -100px;
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+}
+.loginpage-two {
+  padding-left: 115px;
+  position: relative;
+  padding-right: 25px;
 }
 .loginpage-two::before {
   content: "";
@@ -118,6 +127,21 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   background: url(/assets/images/star.png) no-repeat;
   right: -6%;
   top: -15%;
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+}
+.registerpage-two {
+  padding-left: 115px;
+  position: relative;
+  padding-right: 25px;
+}
+.registerpage-two::before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/star.png) no-repeat;
+  right: -6%;
+  top: 0;
   width: 34px;
   height: 34px;
   background-size: cover;
@@ -188,7 +212,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   position: absolute;
   background: url(/assets/images/star.png) no-repeat;
   right: 30%;
-  top: 35px;
+  top: 20px;
   width: 34px;
   height: 34px;
   background-size: cover;
@@ -199,6 +223,80 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   font-weight: bold;
 }
 .loginpage-one .logintwo-para a:hover {
+  color: #192a44;
+}
+.registerpage-one h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #252525;
+  padding-bottom: 44px;
+  position: relative;
+}
+.registerpage-one h2::before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/login-bimg.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  left: -8px;
+  top: 26px;
+  z-index: -1;
+}
+.registerpage-one h1 {
+  padding-bottom: 21px;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 55px;
+  color: #192a44;
+  position: relative;
+}
+.registerpage-one h1::before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/star.png) no-repeat;
+  right: -10%;
+  top: 0px;
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+}
+.registerpage-one h1 span {
+  color: #ff6c1a;
+}
+.registerpage-one .loginone-para {
+  padding-bottom: 49px;
+  margin-bottom: 0;
+  color: #7c7c7c;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 154%;
+}
+.registerpage-one .logintwo-para {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 155%;
+  color: #252525;
+  position: relative;
+}
+.registerpage-one .logintwo-para::before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/star.png) no-repeat;
+  right: 30%;
+  top: 20px;
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+}
+.registerpage-one .logintwo-para a {
+  color: #ff6c1a;
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+.registerpage-one .logintwo-para a:hover {
   color: #192a44;
 }
 .formtype .form-label {
@@ -260,6 +358,38 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: #231f1b;
   padding-left: 6px;
 }
+.registerpage-two form .formtype {
+  padding-bottom: 26px;
+  position: relative;
+}
+.registerpage-two .formpassword {
+  position: relative;
+}
+.registerpage-two .field-icon {
+  position: absolute;
+  right: 20px;
+  top: 36%;
+  color: #a8a8a8;
+  font-size: 25px;
+  background: none;
+  border: none;
+}
+.registerpage-two .form-check .form-check-input {
+  width: 18px;
+  height: 18px;
+  border-color: #a7a7a7;
+}
+.registerpage-two .form-check .form-check-input:focus {
+  box-shadow: unset;
+}
+.registerpage-two .form-check label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #231f1b;
+  padding-left: 6px;
+}
+
 .form-forgot a {
   text-decoration: underline !important;
   font-weight: 500;
@@ -275,17 +405,15 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
-  background: #ff6c1a;
-  opacity: 0.4;
+  background-color: rgba(255, 108, 26, 0.4);
   border-radius: 10px;
   margin-top: 45px;
   padding: 14px 0 15px 0;
   border: none;
 }
 .formlog button:hover {
-  background: #ff6c1a;
+  background-color: rgba(255, 108, 26, 1);
   color: #ffffff;
-  opacity: 1;
 }
 .formcondition p {
   text-align: right;
@@ -326,29 +454,29 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   background-position: 60px;
   background-size: 18px;
 }
-.formgender{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.formgender {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-.formgender select{
-    padding: 17px 19px 17px 19px;
-    border-color: #e8e8e8;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: "Rubik";
-    font-weight: 400;
-    line-height: 19px;
-    color: #192a44;
-    outline: none;
-    appearance: none;
-    background-image: url("/assets/images/arrow.svg");
-    background-repeat: no-repeat;
-    background-position: 95%;
-    background-size: 18px;
+.formgender select {
+  padding: 17px 19px 17px 19px;
+  border-color: #e8e8e8;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Rubik";
+  font-weight: 400;
+  line-height: 19px;
+  color: #192a44;
+  outline: none;
+  appearance: none;
+  background-image: url("/assets/images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 18px;
 }
-.formgender select:hover{
-    border: 1px solid #192A44;
+.formgender select:hover {
+  border: 1px solid #192a44;
 }
 .formregbt button {
   font-weight: 700;
@@ -358,7 +486,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   background: #ff6c1a;
   opacity: 0.4;
   border-radius: 10px;
-  margin-top: 18px;
+  margin-top: 25px;
   padding: 14px 0 15px 0;
   border: none;
 }
@@ -373,19 +501,17 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: #7c7c7c;
 }
 
-.formtype .comho:hover .comhovr{
-    border: 1px solid #192A44;
+.formtype .comho:hover .comhovr {
+  border: 1px solid #192a44;
 }
-.formtype .comhov:hover{
-  border: 1px solid #192A44;
+.formtype .comhov:hover {
+  border: 1px solid #192a44;
 }
-.formtype .comho{
+.formtype .comho {
   border-radius: 8px;
 }
 
-
 /* DEPARTMENT INPUT */
-
 
 .t-dropdown-list {
   display: none;
@@ -397,23 +523,23 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   left: 92.6px;
   overflow: auto;
   position: absolute;
-  background-color: #FFFFFF;
-  border: 1px solid #E8E8E8;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 8px 8px;
 }
-.formtype .input-group .comho .t-dropdown-input{
+.formtype .input-group .comho .t-dropdown-input {
   position: relative;
 }
 .t-dropdown-item {
   padding: 10px 20px;
   margin: 0;
   cursor: pointer;
-  color: #192A44;
+  color: #192a44;
 }
 
 .t-dropdown-item:pxhover {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .two-dropdown-list {
@@ -424,8 +550,8 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   padding: 10px 0;
   width: 100%;
   position: absolute;
-  background-color: #FFFFFF;
-  border: 1px solid #E8E8E8;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 8px 8px;
   min-height: 140px;
@@ -435,31 +561,31 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   padding: 10px 17px;
   margin: 0;
   cursor: pointer;
-  color: #192A44;
+  color: #192a44;
 }
 
 .two-dropdown-item:hover {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
-.two-dropdown-item img{
+.two-dropdown-item img {
   width: 40px;
   height: 40px;
-  margin-right:19px;
+  margin-right: 19px;
 }
-.two-dropdown-item .two-dropdown-com h5{
+.two-dropdown-item .two-dropdown-com h5 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #192A44;
+  color: #192a44;
 }
-.two-dropdown-item .two-dropdown-com span{
+.two-dropdown-item .two-dropdown-com span {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
-.selectpicker{
+.selectpicker {
   display: none;
 }
 .bootstrap-select .dropdown-menu {
@@ -474,7 +600,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 /* .bs-searchbox{
   display: none;
 } */
-.bootstrap-select button{
+.bootstrap-select button {
   width: 100% !important;
   padding: 14px 19px 15px 19px;
   background-color: white;
@@ -482,67 +608,69 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   border-radius: 8px;
   text-align: left;
 }
-.bootstrap-select button:hover{
-  border: 1px solid #192A44;
+.bootstrap-select button:hover {
+  border: 1px solid #192a44;
   background-color: white;
 }
-.bootstrap-select button:focus{
-  border: 1px solid #192A44;
+.bootstrap-select button:focus {
+  border: 1px solid #192a44;
   background-color: white;
-  box-shadow: 0 0 0 0 rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
 }
 .bootstrap-select .dropdown-toggle::after {
-  display:none !important;
+  display: none !important;
 }
 
-
-.bootstrap-select .bs-searchbox input{
+.bootstrap-select .bs-searchbox input {
   display: none;
 }
 
-.model-body{
+.model-body {
   padding: 38px 48px 46px 49px;
   text-align: center;
 }
-.model-body h3{
+.model-body h3 {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #192A44;
-  padding: 30px 0 12px 0; 
+  color: #192a44;
+  padding: 30px 0 12px 0;
 }
-.model-body p{
-  font-family: 'Plus Jakarta Sans';
+.model-body p {
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 154%;
-  color: #7C7C7C;
+  color: #7c7c7c;
   margin-bottom: 29px;
 }
-.model-body p a{
+.model-body p a {
   font-weight: 600;
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
-.model-body .model-mail{
+.model-body .model-mail {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 12px 28px;
-  background: #FF6C1A;
+  background: #ff6c1a;
   border-radius: 8px;
   border: 1px solid transparent;
 }
-.model-body .model-mail:hover{
+.model-body .model-mail:hover {
   background-color: transparent;
-  border: 1px solid #FF6C1A;
-  color: #FF6C1A;
+  border: 1px solid #ff6c1a;
+  color: #ff6c1a;
 }
 .modal {
   --bs-modal-width: 658px !important;
 }
-
+.registerpage{
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
 
 @media screen and (max-width: 1280px) {
   header .navbar-expand-lg .navbar-nav .nav-link {
@@ -563,15 +691,32 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .loginpage-one .logintwo-para::before {
     right: 20%;
   }
+  .registerpage-one h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .registerpage-one h2 {
+    font-size: 30px;
+  }
+  .registerpage-one {
+    padding-right: 45px;
+  }
+  .registerpage-one .logintwo-para::before {
+    right: 20%;
+  }
   .loginpage-two {
     padding-left: 70px;
   }
   .loginpage-two::before {
     right: -4%;
   }
-  .banner-common-one {
-    height: 110vh;
+  .register-two {
+    padding-left: 70px;
   }
+  .register-two::before {
+    right: -4%;
+  }
+
   .two-dropdown-item .two-dropdown-com h5 {
     font-size: 15px;
   }
@@ -579,8 +724,17 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     padding: 8px 20px;
     font-size: 15px;
   }
-
- 
+  .registerpage-two {
+    padding-left: 60px;
+  }
+  .registerpage {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .header-common::before {
+    width: 380px;
+    height: 380px;
+  }
 }
 @media screen and (max-width: 1198px) {
   header .navbar-expand-lg .navbar-nav .nav-link {
@@ -592,6 +746,10 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .loginpage-two {
     padding-left: 50px;
     padding-right: 30px;
+  }
+  .registerpage-two {
+    padding-left: 40px;
+    padding-right: 20px;
   }
   .formcondition p {
     text-align: center;
@@ -607,8 +765,19 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .loginpage-one .logintwo-para::before {
     right: 14%;
   }
-  .banner-common-one {
-    height: 105vh;
+  .registerpage-one .loginone-para {
+    padding-bottom: 30px;
+    font-size: 17px;
+    line-height: 150%;
+  }
+  .registerpage-one .logintwo-para {
+    font-size: 18px;
+  }
+  .registerpage-one .logintwo-para::before {
+    right: 14%;
+  }
+  .registerpage {
+    padding-top: 60px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -619,11 +788,25 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .loginpage-one {
     padding-right: 15px;
   }
+  .registerpage-one h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .registerpage-one {
+    padding-right: 15px;
+  }
   .loginpage-two {
     padding-left: 40px;
     padding-right: 20px;
   }
+  .registerpage-two {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
   .loginpage-one .logintwo-para::before {
+    right: 20%;
+  }
+  .registerpage-one .logintwo-para::before {
     right: 20%;
   }
   header .navbar .navbar-brand {
@@ -633,23 +816,27 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     font-size: 26px;
     padding-bottom: 30px;
   }
+  .registerpage-one h2 {
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
   .loginpage-two form .formtype {
+    padding-bottom: 20px;
+  }
+  .registerpage-two form .formtype {
     padding-bottom: 20px;
   }
   .formlog button {
     margin-top: 35px;
     padding: 12px 0 12px 0;
   }
-  .formtype .form-control {
-    padding: 12px 12px 12px 12px;
-  }
   .formtype .input-group select {
     padding: 12px 40px 12px 19px;
   }
-  .bootstrap-select button{
+  .bootstrap-select button {
     padding: 12px 40px 12px 19px;
   }
-  .filter-option-inner-inner{
+  .filter-option-inner-inner {
     font-size: 16px;
   }
   .formgender select {
@@ -674,7 +861,19 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     background: none;
     width: 0;
   }
+  .registerpage-one::before {
+    background: none;
+    width: 0;
+  }
+  .registerpage-one h1::before {
+    background: none;
+    width: 0;
+  }
   .loginpage-two::before {
+    background: none;
+    width: 0;
+  }
+  .registerpage-two::before {
     background: none;
     width: 0;
   }
@@ -687,7 +886,20 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     padding-bottom: 30px;
     padding-top: 30px;
   }
+  .registerpage-one .logintwo-para::before {
+    background: none;
+    width: 0;
+  }
+  .registerpage-one {
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
   .loginpage-two {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .registerpage-two {
     padding-left: 0;
     padding-right: 0;
   }
@@ -701,7 +913,13 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .loginpage-one .loginone-para {
     padding-bottom: 20px;
   }
+  .registerpage-one .loginone-para {
+    padding-bottom: 20px;
+  }
   .loginpage-two .field-icon {
+    top: 40%;
+  }
+  .registerpage-two .field-icon {
     top: 40%;
   }
   .formcondition {
@@ -714,6 +932,10 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .navbar-toggler:focus {
     box-shadow: 256 108 26 var(--bs-navbar-toggler-focus-width) !important;
     border-color: #ff6c1a;
+  }
+  .registerpage {
+    padding-top: 25px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -743,13 +965,44 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .loginpage-one {
     padding-bottom: 20px;
   }
+  .loginpage-one .logintwo-para {
+    font-size: 17px;
+  }
+  .registerpage-one h1 {
+    font-size: 28px;
+    line-height: 38px;
+    padding-bottom: 12px;
+  }
+  .registerpage-one h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+    line-height: 28px;
+  }
+  .registerpage-one h2::before {
+    width: 23%;
+    height: 34%;
+    left: -10px;
+    top: 20px;
+  }
+  .registerpage-one .loginone-para {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  .registerpage-one {
+    padding-bottom: 20px;
+  }
+  .registerpage-one .logintwo-para {
+    font-size: 17px;
+  }
   .formlog button {
     margin-top: 28px;
     font-size: 17px;
   }
-  .loginpage-one .logintwo-para {
-    font-size: 17px;
+  .registerpage {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
+  
 }
 @media screen and (max-width: 575px) {
   .navend a {
@@ -778,7 +1031,29 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .loginpage-one .logintwo-para {
     font-size: 16px;
   }
+  .registerpage-one h1 {
+    line-height: 30px;
+    font-size: 24px;
+  }
+  .registerpage-one .loginone-para {
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+  .registerpage-one {
+    padding-bottom: 12px;
+  }
+  .registerpage-one h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+    line-height: 28px;
+  }
+  .registerpage-one .logintwo-para {
+    font-size: 16px;
+  }
   .loginpage-two form .formtype {
+    padding-bottom: 15px;
+  }
+  .registerpage-two form .formtype {
     padding-bottom: 15px;
   }
   .formtype .form-control {
@@ -794,10 +1069,19 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     right: 12px;
     font-size: 18px;
   }
+  .registerpage-two .field-icon {
+    top: 45%;
+    right: 12px;
+    font-size: 18px;
+  }
   .formtype .form-control::placeholder {
     font-size: 14px;
   }
   .loginpage-one h2::before {
+    width: 0;
+    height: 0;
+  }
+  .registerpage-one h2::before {
     width: 0;
     height: 0;
   }
@@ -810,73 +1094,72 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   .formregbt button {
     font-size: 15px;
     padding: 10px 0 10px 0;
-}
-.formtype .input-group select {
-  padding: 13px 30px 8px 15px;
-  background-position: 50px;
-  background-size: 17px;
-  font-size: 14px;
-}
-.formgender select {
-  padding: 10px 19px 11px 15px;
-  font-size: 14px;
-}
-.filter-option-inner-inner {
-  font-size: 14px;
-}
-.bootstrap-select .dropdown-item {
-  font-size: 14px;
-}
-.bootstrap-select button {
-  padding: 9px 40px 10px 15px;
-}
-.t-dropdown-list {
-  width: calc(100% - 74.6px);
-  left: 74.6px;
-}
-.two-dropdown-item img {
-  margin-right: 12px;
-}
-.two-dropdown-list {
-  min-height: 0px;
-  max-height: 140px;
-  overflow: overlay;
-}
-.two-dropdown-item .two-dropdown-com h5 {
-  font-size: 14px;
-}
-.t-dropdown-input{
-  font-size: 14px !important;
-}
-.t-dropdown-item {
-  padding: 8px 10px;
-  font-size: 14px;
-}
-.model-body {
-  padding: 15px 15px 20px 15px;
-}
-.model-body h3 {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 12px 0 4px 0;
-}
-.model-body p {
-  font-size: 14px;
-  line-height: 145%;
-  margin-bottom: 10px;
-}
-.model-body .model-mail {
-  font-size: 14px;
-  line-height: 0px;
-  padding: 6px;
-}
-.model-body img{
-  width: 120px;
-}
-.modal-content {
-  margin: 20px;
-}
-
+  }
+  .formtype .input-group select {
+    padding: 13px 30px 8px 15px;
+    background-position: 50px;
+    background-size: 17px;
+    font-size: 14px;
+  }
+  .formgender select {
+    padding: 10px 19px 11px 15px;
+    font-size: 14px;
+  }
+  .filter-option-inner-inner {
+    font-size: 14px;
+  }
+  .bootstrap-select .dropdown-item {
+    font-size: 14px;
+  }
+  .bootstrap-select button {
+    padding: 9px 40px 10px 15px;
+  }
+  .t-dropdown-list {
+    width: calc(100% - 74.6px);
+    left: 74.6px;
+  }
+  .two-dropdown-item img {
+    margin-right: 12px;
+  }
+  .two-dropdown-list {
+    min-height: 0px;
+    max-height: 140px;
+    overflow: overlay;
+  }
+  .two-dropdown-item .two-dropdown-com h5 {
+    font-size: 14px;
+  }
+  .t-dropdown-input {
+    font-size: 14px !important;
+  }
+  .t-dropdown-item {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  .model-body {
+    padding: 15px 15px 20px 15px;
+  }
+  .model-body h3 {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 0 4px 0;
+  }
+  .model-body p {
+    font-size: 14px;
+    line-height: 145%;
+    margin-bottom: 10px;
+  }
+  .model-body .model-mail {
+    font-size: 14px;
+    line-height: 0px;
+    padding: 6px;
+  }
+  .model-body img {
+    width: 120px;
+  }
+  .modal-content {
+    margin: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   header .navbar .navbar-brand img {
@@ -892,6 +1175,15 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     font-size: 14px;
   }
   .loginpage-one .logintwo-para {
+    font-size: 15px;
+  }
+  .registerpage-one h2 {
+    line-height: 25px;
+  }
+  .registerpage-one .loginone-para {
+    font-size: 14px;
+  }
+  .registerpage-one .logintwo-para {
     font-size: 15px;
   }
   .formcondition {
