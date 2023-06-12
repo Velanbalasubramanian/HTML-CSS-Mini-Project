@@ -1,0 +1,67 @@
+
+@font-face {
+    font-family: 'StyreneALC';
+    src: url('../fonts/StyreneALCRegular.eot');
+    src: url('../fonts/StyreneALCRegular.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCRegular.woff2') format('woff2'),
+         url('../fonts/StyreneALCRegular.woff') format('woff'),
+         url('../fonts/StyreneALCRegular.ttf') format('truetype'),
+         url('../fonts/StyreneALCRegular.svg#StyreneALCRegular') format('svg');
+}
+/*
+@font-face {
+    font-family: 'StyreneALC';
+    src: url('../fonts/StyreneALCBlack.eot');
+    src: url('../fonts/StyreneALCBlack.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCBlack.woff2') format('woff2'),
+         url('../fonts/StyreneALCBlack.woff') format('woff'),
+         url('../fonts/StyreneALCBlack.ttf') format('truetype'),
+         url('../fonts/StyreneALCBlack.svg#StyreneALCBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'StyreneALCBold';
+    src: url('../fonts/StyreneALCBold.eot');
+    src: url('../fonts/StyreneALCBold.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCBold.woff2') format('woff2'),
+         url('../fonts/StyreneALCBold.woff') format('woff'),
+         url('../fonts/StyreneALCBold.ttf') format('truetype'),
+         url('../fonts/StyreneALCBold.svg#StyreneALCBold') format('svg');
+}
+@font-face {
+    font-family: 'StyreneALCLight';
+    src: url('../fonts/StyreneALCLight.eot');
+    src: url('../fonts/StyreneALCLight.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCLight.woff2') format('woff2'),
+         url('../fonts/StyreneALCLight.woff') format('woff'),
+         url('../fonts/StyreneALCLight.ttf') format('truetype'),
+         url('../fonts/StyreneALCLight.svg#StyreneALCLight') format('svg');
+}
+@font-face {
+    font-family: 'StyreneALCMedium';
+    src: url('../fonts/StyreneALCMedium.eot');
+    src: url('../fonts/StyreneALCMedium.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCMedium.woff2') format('woff2'),
+         url('../fonts/StyreneALCMedium.woff') format('woff'),
+         url('../fonts/StyreneALCMedium.ttf') format('truetype'),
+         url('../fonts/StyreneALCMedium.svg#StyreneALCMedium') format('svg');
+}
+@font-face {
+    font-family: 'StyreneALCRegular';
+    src: url('../fonts/StyreneALCRegular.eot');
+    src: url('../fonts/StyreneALCRegular.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCRegular.woff2') format('woff2'),
+         url('../fonts/StyreneALCRegular.woff') format('woff'),
+         url('../fonts/StyreneALCRegular.ttf') format('truetype'),
+         url('../fonts/StyreneALCRegular.svg#StyreneALCRegular') format('svg');
+}
+@font-face {
+    font-family: 'StyreneALCThin';
+    src: url('../fonts/StyreneALCThin.eot');
+    src: url('../fonts/StyreneALCThin.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCThin.woff2') format('woff2'),
+         url('../fonts/StyreneALCThin.woff') format('woff'),
+         url('../fonts/StyreneALCThin.ttf') format('truetype'),
+         url('../fonts/StyreneALCThin.svg#StyreneALCThin') format('svg');
+}
+ */
