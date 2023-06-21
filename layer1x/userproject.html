@@ -96,19 +96,35 @@
                   <input placeholder="Quick Search..." />
                 </div>
                 <div class="find-events">
-                    <label for="text">Find events near</label>
-                    <div class="dropdown">
-                        <img src="/assets/images/find-events.svg" alt="find-events" class="eventsimg img-fluid">
-                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            California, USA
-                        </a>
-                      
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">California, USA</a></li>
-                          <li><a class="dropdown-item" href="#">California, USA</a></li>
-                          <li><a class="dropdown-item" href="#">California, USA</a></li>
-                        </ul>
-                      </div>
+                  <label for="text">Find events near</label>
+                  <div class="dropdown">
+                    <img
+                      src="/assets/images/find-events.svg"
+                      alt="find-events"
+                      class="eventsimg img-fluid"
+                    />
+                    <a
+                      class="btn dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      California, USA
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">California, USA</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">California, USA</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">California, USA</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </form>
 
@@ -189,59 +205,118 @@
         <section class="view-myproject">
           <div class="">
             <div class="view-input">
-            <div class="row">
-              <div class="col-lg-4">
-                <h5 class="view-pro-title">Projects</h5>
-              </div>
-              
-              <div class="col-lg-8">
+              <div class="row gy-md-0 gy-sm-3">
+                <div class="col-lg-4 col-md-3">
+                  <h5 class="view-pro-title">Projects</h5>
+                </div>
 
-                <div class="project-input">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Project Duration
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <div class="col-lg-8 col-md-9">
+                  <div class="row projectro">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
+                      <button
+                        id="selectedDBXP"
+                        aria-expanded="false"
+                        aria-labelledby="lblDBXP DBXPList"
+                        onclick="return DBXPclick();"
+                      >
+                        <span id="DBXPList"></span>
+                        <i
+                          class="fa fa-magnifying-glass"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+                      <fieldset aria-labelledby="lblDBXP">
+                        <div id="choicelist">
+                          <div>
+                            <input name="DBXP" type="checkbox" id="mySQL" />
+                            <label for="mySQL" aria-label="my SQL"
+                              >HTML/CSS</label
+                            >
+                          </div>
+                          <div>
+                            <input
+                              name="DBXP"
+                              type="checkbox"
+                              id="MicrosoftSQL"
+                            />
+                            <label for="MicrosoftSQL">HTML</label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Job Type
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Project Type
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Project Duration
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Job Type
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
                 </div>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Project Type
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Project Duration
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-              </div>
-
               </div>
             </div>
-          </div>
 
             <div class="breadcrumb-common" aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -249,104 +324,214 @@
                 <li class="breadcrumb-item active" aria-current="page">
                   <a href="#">Projects</a>
                 </li>
-               
               </ol>
             </div>
-
-            <div class="back">
-              <div class="back-up">
-                <h3 class="btnstyleone">Upcoming Projects</h3>
-                <h5>HTML/CSS <img src="/assets/images/remove-circle.svg" alt="remove-circle"></h5>
-                <h5>Java <img src="/assets/images/remove-circle.svg" alt="remove-circle"></h5>
-                <h5>JavaScript <img src="/assets/images/remove-circle.svg" alt="remove-circle"></h5>
-                <h5>Clear all <img src="/assets/images/remove-circle.svg" alt="remove-circle"></h5>
+            <div class="row back">
+              <div class="col-lg-9 col-md-9 col-sm-8 col-10">
+                <div class="back-up">
+                  <h3 class="btnstyleone">Upcoming Projects</h3>
+                  <h5>
+                    HTML/CSS
+                    <img
+                      src="/assets/images/remove-circle.svg"
+                      alt="remove-circle"
+                    />
+                  </h5>
+                  <h5>
+                    Java
+                    <img
+                      src="/assets/images/remove-circle.svg"
+                      alt="remove-circle"
+                    />
+                  </h5>
+                  <h5>
+                    JavaScript
+                    <img
+                      src="/assets/images/remove-circle.svg"
+                      alt="remove-circle"
+                    />
+                  </h5>
+                  <h5>
+                    Clear all
+                    <img
+                      src="/assets/images/remove-circle.svg"
+                      alt="remove-circle"
+                    />
+                  </h5>
+                </div>
               </div>
-              <a href="#" class="btnstyletwo">View My Projects</a>
+              <div
+                class="col-lg-3 col-md-3 col-sm-4 d-flex justify-content-end align-items-center"
+              >
+                <a href="#" class="btnstyletwo">View My Projects</a>
+              </div>
             </div>
-
-
             <div class="row justify-content-center gy-lg-0 gy-sm-5 gy-4">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="page-creation">
-                        <img src="/assets/images/project-one.png" alt="project-one" class="projectimgs img-fluid">
-                        <a href="#" class="archive-ad">
-                            <img src="/assets/images/archive-add.png" alt="archive-add" class="img-fluid">
-                        </a>
-                        
-                        <h3>California Art Festival: 2023 Dana Point Webpage creation</h3>
-                        <ul>
-                            <li><img src="/assets/images/location-create.svg" alt="location-create">California, USA</li>
-                            <li>On Site</li>
-                            <li><img src="/assets/images/briefcase-create.svg" alt="briefcase-create">Full-time</li>
-                        </ul>
-                        <p class="page-para">
-                            The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.
-                        </p>
-                        <div class="domain-name">
-                            <h5>HTML/CSS</h5>
-                            <h5>Java</h5>
-                            <h5>JavaScript</h5>
-                        </div>
-                        <div class="duration-btn">
-                            <p><img src="/assets/images/calendar-create.svg" alt="calendar-create">Duration: 2 Months</p>
-                            <a href="#">View Project</a>
-                        </div>
-                    </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="page-creation">
+                  <img
+                    src="/assets/images/project-one.png"
+                    alt="project-one"
+                    class="projectimgs img-fluid"
+                  />
+                  <a href="#" class="archive-ad">
+                    <img
+                      src="/assets/images/archive-add.png"
+                      alt="archive-add"
+                      class="img-fluid"
+                    />
+                  </a>
+
+                  <h3>
+                    California Art Festival: 2023 Dana Point Webpage creation
+                  </h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="/assets/images/location-create.svg"
+                        alt="location-create"
+                      />California, USA
+                    </li>
+                    <li>On Site</li>
+                    <li>
+                      <img
+                        src="/assets/images/briefcase-create.svg"
+                        alt="briefcase-create"
+                      />Full-time
+                    </li>
+                  </ul>
+                  <p class="page-para">
+                    The California Art Festival is a showcase of the best and
+                    brightest artists from across the state. From painters to
+                    sculptors, photographers to performance artists, this
+                    festival has it all.
+                  </p>
+                  <div class="domain-name">
+                    <h5>HTML/CSS</h5>
+                    <h5>Java</h5>
+                    <h5>JavaScript</h5>
+                  </div>
+                  <div class="duration-btn">
+                    <p>
+                      <img
+                        src="/assets/images/calendar-create.svg"
+                        alt="calendar-create"
+                      />Duration: 2 Months
+                    </p>
+                    <a href="#">View Project</a>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="page-creation">
-                        <img src="/assets/images/project-two.png" alt="project-two" class="projectimgs img-fluid">
-                        <a href="#" class="archive-ad-two">
-                            <img src="/assets/images/archive-tick.png" alt="archive-tick" class="img-fluid">
-                        </a>
-                        
-                        <h3>California Art Festival: 2023 Dana Point Webpage creation</h3>
-                        <ul>
-                            <li><img src="/assets/images/location-create.svg" alt="location-create">California, USA</li>
-                            <li>On Site</li>
-                            <li><img src="/assets/images/briefcase-create.svg" alt="briefcase-create">Full-time</li>
-                        </ul>
-                        <p class="page-para">
-                            The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.
-                        </p>
-                        <div class="domain-name">
-                            <h5>HTML/CSS</h5>
-                            <h5>Java</h5>
-                            <h5>JavaScript</h5>
-                        </div>
-                        <div class="duration-btn">
-                            <p><img src="/assets/images/calendar-create.svg" alt="calendar-create">Duration: 2 Months</p>
-                            <a href="#">View Project</a>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="page-creation">
+                  <img
+                    src="/assets/images/project-two.png"
+                    alt="project-two"
+                    class="projectimgs img-fluid"
+                  />
+                  <a href="#" class="archive-ad-two">
+                    <img
+                      src="/assets/images/archive-tick.png"
+                      alt="archive-tick"
+                      class="img-fluid"
+                    />
+                  </a>
+
+                  <h3>
+                    California Art Festival: 2023 Dana Point Webpage creation
+                  </h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="/assets/images/location-create.svg"
+                        alt="location-create"
+                      />California, USA
+                    </li>
+                    <li>On Site</li>
+                    <li>
+                      <img
+                        src="/assets/images/briefcase-create.svg"
+                        alt="briefcase-create"
+                      />Full-time
+                    </li>
+                  </ul>
+                  <p class="page-para">
+                    The California Art Festival is a showcase of the best and
+                    brightest artists from across the state. From painters to
+                    sculptors, photographers to performance artists, this
+                    festival has it all.
+                  </p>
+                  <div class="domain-name">
+                    <h5>HTML/CSS</h5>
+                    <h5>Java</h5>
+                    <h5>JavaScript</h5>
+                  </div>
+                  <div class="duration-btn">
+                    <p>
+                      <img
+                        src="/assets/images/calendar-create.svg"
+                        alt="calendar-create"
+                      />Duration: 2 Months
+                    </p>
+                    <a href="#">View Project</a>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="page-creation">
-                        <img src="/assets/images/project-three.png" alt="project-three" class="projectimgs img-fluid">
-                        <a href="#" class="archive-ad">
-                            <img src="/assets/images/archive-add.png" alt="archive-add" class="img-fluid">
-                        </a>
-                        
-                        <h3>California Art Festival: 2023 Dana Point Webpage creation</h3>
-                        <ul>
-                            <li><img src="/assets/images/location-create.svg" alt="location-create">California, USA</li>
-                            <li>On Site</li>
-                            <li><img src="/assets/images/briefcase-create.svg" alt="briefcase-create">Full-time</li>
-                        </ul>
-                        <p class="page-para">
-                            The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.
-                        </p>
-                        <div class="domain-name">
-                            <h5>HTML/CSS</h5>
-                            <h5>Java</h5>
-                            <h5>JavaScript</h5>
-                        </div>
-                        <div class="duration-btn">
-                            <p><img src="/assets/images/calendar-create.svg" alt="calendar-create">Duration: 2 Months</p>
-                            <a href="#">View Project</a>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="page-creation">
+                  <img
+                    src="/assets/images/project-three.png"
+                    alt="project-three"
+                    class="projectimgs img-fluid"
+                  />
+                  <a href="#" class="archive-ad">
+                    <img
+                      src="/assets/images/archive-add.png"
+                      alt="archive-add"
+                      class="img-fluid"
+                    />
+                  </a>
+
+                  <h3>
+                    California Art Festival: 2023 Dana Point Webpage creation
+                  </h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="/assets/images/location-create.svg"
+                        alt="location-create"
+                      />California, USA
+                    </li>
+                    <li>On Site</li>
+                    <li>
+                      <img
+                        src="/assets/images/briefcase-create.svg"
+                        alt="briefcase-create"
+                      />Full-time
+                    </li>
+                  </ul>
+                  <p class="page-para">
+                    The California Art Festival is a showcase of the best and
+                    brightest artists from across the state. From painters to
+                    sculptors, photographers to performance artists, this
+                    festival has it all.
+                  </p>
+                  <div class="domain-name">
+                    <h5>HTML/CSS</h5>
+                    <h5>Java</h5>
+                    <h5>JavaScript</h5>
+                  </div>
+                  <div class="duration-btn">
+                    <p>
+                      <img
+                        src="/assets/images/calendar-create.svg"
+                        alt="calendar-create"
+                      />Duration: 2 Months
+                    </p>
+                    <a href="#">View Project</a>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </section>

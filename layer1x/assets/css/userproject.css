@@ -159,29 +159,30 @@ header {
 .back {
   padding: 33px 0 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
   flex-wrap: wrap;
 }
-.back-up{
+.back-up {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
 }
-.back-up h5 img{
+.back-up h5 img {
   padding-left: 10px;
 }
-.back-up h5{
+.back-up h5 {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #4E1FA3;
+  color: #4e1fa3;
   padding: 4px 10px;
   background: rgba(78, 31, 163, 0.05);
-border-radius: 4px;
-margin-left: 8px;
+  border-radius: 4px;
+  margin-left: 8px;
 }
 .btnstyleone {
   font-family: "StyreneALC";
@@ -200,12 +201,10 @@ margin-left: 8px;
 }
 
 /* BUTTON START */
-.btnstyletwo a {
+.btnstyletwo {
   font-family: "StyreneALC";
   font-size: 16px;
   line-height: 21px;
-}
-.btnstyletwo {
   color: #4e1fa3;
   background: rgba(78, 31, 163, 0.05);
   border-radius: 8px;
@@ -460,26 +459,25 @@ margin-left: 8px;
   border: 0;
   outline: 0;
 }
-.dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
+.project-input .dropdown-toggle::after {
   content: "";
   border-top: 0.3em solid #808095;
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
+  position: absolute;
+  right: 12%;
+  top: 45%;
 }
+
 .find-events .dropdown .dropdown-menu {
   min-width: 100%;
 }
 .project-input {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  position: relative;
 }
-.project-input .dropdown .btn{
+
+.project-input .dropdown .btn {
   background-color: white;
   font-weight: 400;
   font-size: 14px;
@@ -488,20 +486,76 @@ margin-left: 8px;
   color: #808095;
   --bs-btn-padding-x: 18px;
   --bs-btn-padding-y: 9.5px;
+  border: 0;
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
 }
 .view-input {
   padding: 25px 0 12px 0;
 }
-.view-pro-title{
-  font-family: 'StyreneALC';
+.view-pro-title {
+  font-family: "StyreneALC";
   font-size: 26px;
   line-height: 34px;
   letter-spacing: -0.04em;
-  color: #0E0E2C;
+  color: #0e0e2c;
 }
-.project-input .dropdown-toggle::after {
-  margin-left: 1.255em;
+
+fieldset {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  top: 100%;
+  border-radius: 0px 0px 8px 8px;
+  width: calc(100% - 12%);
 }
+
+#choicelist {
+  border-radius: 2px;
+  display: none;
+  padding: 9px;
+  border-top: 1px solid #d9d9de;
+}
+
+#selectedDBXP {
+  border: 0;
+  width: 100%;
+  border-radius: 8px;
+  height: 38px;
+  background-color: #fff;
+  position: relative;
+  text-align: left;
+  padding: 9.5px 18px;
+  font-size: 14px;
+}
+
+#choicelist > div {
+  padding: 9px;
+}
+#choicelist > div input[type="checkbox"] {
+  accent-color: #4e1fa3;
+}
+#choicelist > div label {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #0e0e2c;
+}
+#choicelist > div:hover {
+  background: rgba(78, 31, 163, 0.1);
+  border-radius: 8px;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  right: 1em;
+  top: 0.9em;
+  color: #808095;
+}
+
 @media screen and (max-width: 1340px) {
   .find-events {
     padding-left: 25px;
@@ -510,9 +564,6 @@ margin-left: 8px;
     font-size: 13px;
     --bs-btn-padding-x: 15px;
   }
-  .project-input .dropdown-toggle::after {
-    margin-left: 0.255em;
-}
 }
 @media screen and (max-width: 1280px) {
   .search input {
@@ -540,16 +591,17 @@ margin-left: 8px;
   .nav-unorder .dropdown-toggle .profile {
     width: 60px;
   }
-  .btnstyleone {
+  .btnstyleone,
+  .view-pro-title {
     font-size: 20px;
   }
   /* BUTTON START */
   .btnstyletwo {
-    padding: 12px 12px;
+    padding: 8px 10px;
   }
   .btnstyletwo,
   .web-applynow a {
-    font-size: 15px;
+    font-size: 14px;
   }
   .web-applynow a {
     padding: 12px 22px;
@@ -614,7 +666,18 @@ margin-left: 8px;
   .find-events .dropdown .eventsimg {
     width: 22px;
   }
-  
+  .back-up h5 {
+    padding: 4px 6px;
+  }
+  .view-input .projectro {
+    --bs-gutter-x: 0.5rem;
+  }
+  fieldset {
+    width: calc(100% - 6%);
+  }
+  .project-input .dropdown .btn {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .common-vertical {
@@ -653,10 +716,38 @@ margin-left: 8px;
   .find-events label {
     font-size: 13px;
   }
-  .project-input .dropdown .btn {
+  #choicelist {
+    padding: 6px;
+  }
+  #choicelist > div label {
+    padding-left: 4px;
     font-size: 13px;
+  }
+  #choicelist > div {
+    padding: 5px;
+    display: flex;
+  }
+  fieldset {
+    top: 95%;
+  }
+  #selectedDBXP {
+    height: 38px;
+  }
+  .project-input .dropdown .btn {
+    font-size: 11px;
     --bs-btn-padding-x: 10px;
-}
+  }
+  .project-input .dropdown-toggle::after {
+    right: 10%;
+  }
+  .btnstyleone,
+  .view-pro-title {
+    font-size: 19px;
+    padding-right: 0px;
+  }
+  .back-up h5 img {
+    padding-left: 5px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .search .search-img {
@@ -687,12 +778,21 @@ margin-left: 8px;
     font-weight: 500;
   }
   .project-input .dropdown .btn {
-    font-size: 13px;
     --bs-btn-padding-x: 6px;
-}
+  }
+  #choicelist > div label {
+    font-size: 11px;
+  }
+  #choicelist > div input[type="checkbox"] {
+    width: 10px;
+  }
+  .back-up h5 {
+    font-size: 11px;
+  }
 }
 @media screen and (max-width: 991px) {
-  .btnstyleone {
+  .btnstyleone,
+  .view-pro-title {
     font-size: 18px;
   }
   .btnstyleone img {
@@ -700,9 +800,8 @@ margin-left: 8px;
   }
   .btnstyletwo,
   .web-applynow a {
-    font-size: 14px;
+    white-space: nowrap;
   }
-
   .common-vertical {
     width: 100px;
   }
@@ -765,10 +864,6 @@ margin-left: 8px;
   .duration-btn a {
     margin-top: 0px;
   }
-  .project-input {
-    justify-content: space-evenly;
-    padding-top: 12px;
-}
 }
 @media screen and (max-width: 767px) {
   .search input {
@@ -828,7 +923,7 @@ margin-left: 8px;
     font-size: 12px;
   }
   .back {
-    padding: 15px 0 5px 0;
+    padding: 15px 0 20px 0;
   }
   .breadcrumb-common:before {
     height: 0.7px;
@@ -902,13 +997,16 @@ margin-left: 8px;
   .duration-btn a {
     margin-top: 10px;
   }
+  .view-input {
+    padding: 12px 0 12px 0;
+  }
 }
 @media screen and (max-width: 575px) {
   .search input {
     padding: 5px 30px 5px 7px;
     font-size: 11px;
     width: 115px;
-}
+  }
   .nav-unorder .mail,
   .nav-unorder .notification {
     width: 20px;
@@ -917,10 +1015,10 @@ margin-left: 8px;
   .project-input {
     justify-content: space-between;
     padding-top: 12px;
-}
+  }
   .find-events .dropdown .eventsimg {
     width: 18px;
-}
+  }
   .nav-unorder li:nth-child(2)::before {
     width: 7px;
     height: 7px;
@@ -934,7 +1032,7 @@ margin-left: 8px;
   }
   .nav-unorder > li {
     padding-left: 10px;
-}
+  }
   .navbar {
     padding-top: 15px;
   }
@@ -994,27 +1092,40 @@ margin-left: 8px;
   .breadcrumb-common:before {
     width: 0;
   }
-  .back {
-    padding: 12px 0 0px 0;
-  }
   .btnstyleone img {
     padding: 6px;
     width: 18%;
     margin-right: 8px;
   }
-  .btnstyleone {
+  .btnstyleone,
+  .view-pro-title {
     font-size: 15px;
   }
   .btnstyletwo {
     font-size: 12px;
   }
-  .duration-btn a {
-    margin-top: 0px;
+  #selectedDBXP {
+    height: 33.5px;
+    font-size: 12px;
+  }
+  .project-input .dropdown .btn {
+    --bs-btn-padding-y: 8px;
+  }
+  .find-events label {
+    font-size: 11px;
+  }
+
+  .find-events .dropdown .dropdown-toggle {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 @media screen and (max-width: 480px) {
   .nav-unorder > li {
-    padding-left: 8px;
+    padding-left: 6px;
+  }
+  .navbar {
+    align-items: start;
   }
   .nav-unorder .mail,
   .nav-unorder .notification {
@@ -1030,16 +1141,16 @@ margin-left: 8px;
     margin-right: 6px;
     border-radius: 6px;
   }
-  .btnstyleone {
+  .btnstyleone,
+  .view-pro-title {
     font-size: 13px;
   }
-  .btnstyletwo {
-    padding: 6px;
-    margin-top: 8px;
-    border-radius: 4px;
+  .view-pro-title {
+    line-height: 30px;
   }
-  .back {
-    padding: 18px 0 8px 0;
+  .btnstyletwo {
+    padding: 3px 6px;
+    border-radius: 4px;
   }
   .breadcrumb-item a {
     font-size: 11px;
@@ -1050,25 +1161,32 @@ margin-left: 8px;
     right: 2px;
     top: 6px;
   }
-  .navbar {
-    justify-content: center;
-}
-.navbar form {
-  justify-content: center;
-}
-.search {
-  padding-bottom: 10px;
-}
-.find-events {
-  padding-bottom: 10px;
-}
-.find-events label {
-  font-size: 12px;
-}
-.find-events .dropdown .dropdown-toggle {
-  font-size: 12px;
-}
-.nav-unorder .dropdown-menu {
-  transform: translate(20%, 0%);
-}
+  .search {
+    padding-bottom: 10px;
+  }
+  .find-events {
+    padding-left: 0px;
+  }
+  .nav-unorder .dropdown-menu {
+    transform: translate(20%, 0%);
+  }
+  .back-up h5 {
+    margin: 0 8px 8px 0;
+  }
+  .back {
+    padding: 0px 0 20px 0;
+  }
+  .btnstyletwo {
+    font-size: 11px;
+  }
+  .duration-btn a {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  .navbar form {
+    flex-direction: column;
+  }
+  .search input {
+    width: 130px;
+  }
 }
