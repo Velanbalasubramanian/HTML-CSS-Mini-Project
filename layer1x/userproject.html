@@ -21,7 +21,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
     <link href="assets/css/userproject.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/styrenealc.css" />
   </head>
@@ -103,31 +102,14 @@
                       alt="find-events"
                       class="eventsimg img-fluid"
                     />
-                    <a
-                      class="btn dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      California, USA
-                    </a>
-
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">California, USA</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">California, USA</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">California, USA</a>
-                      </li>
-                    </ul>
+                    <select class="" aria-label="Default select example">
+                      <option selected>California, USA</option>
+                      <option value="1">California, USA</option>
+                      <option value="2">California, USA</option>
+                    </select>
                   </div>
                 </div>
               </form>
-
               <ul class="nav-unorder">
                 <li>
                   <a href="#"
@@ -155,7 +137,6 @@
                         class="img-fluid profile"
                       />
                     </button>
-
                     <ul class="dropdown-menu">
                       <li>
                         <h4>Jessica Hanson</h4>
@@ -205,113 +186,67 @@
         <section class="view-myproject">
           <div class="">
             <div class="view-input">
-              <div class="row gy-md-0 gy-sm-3">
+              <div class="row gy-md-0 gy-sm-2">
                 <div class="col-lg-4 col-md-3">
                   <h5 class="view-pro-title">Projects</h5>
                 </div>
-
                 <div class="col-lg-8 col-md-9">
                   <div class="row projectro">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
-                      <button
-                        id="selectedDBXP"
-                        aria-expanded="false"
-                        aria-labelledby="lblDBXP DBXPList"
-                        onclick="return DBXPclick();"
-                      >
-                        <span id="DBXPList"></span>
-                        <i
-                          class="fa fa-magnifying-glass"
-                          aria-hidden="true"
-                        ></i>
-                      </button>
-                      <fieldset aria-labelledby="lblDBXP">
-                        <div id="choicelist">
-                          <div>
-                            <input name="DBXP" type="checkbox" id="mySQL" />
-                            <label for="mySQL" aria-label="my SQL"
-                              >HTML/CSS</label
-                            >
+                      <div class="project-in">
+                        <button
+                          id="selectedDBXP"
+                          aria-expanded="false"
+                          aria-labelledby="lblDBXP DBXPList"
+                          onclick="return DBXPclick();"
+                        >
+                          <span id="DBXPList"></span>
+                          <i
+                            class="fa fa-magnifying-glass"
+                            aria-hidden="true"
+                          ></i>
+                          <span class="placeholder">HTML</span>
+                        </button>
+                        <fieldset aria-labelledby="lblDBXP">
+                          <div id="choicelist">
+                            <div>
+                              <input name="DBXP" type="checkbox" id="mySQL" />
+                              <label for="mySQL" aria-label="my SQL"
+                                >HTML/CSS</label
+                              >
+                            </div>
+                            <div>
+                              <input
+                                name="DBXP"
+                                type="checkbox"
+                                id="MicrosoftSQL"
+                              />
+                              <label for="MicrosoftSQL">HTML</label>
+                            </div>
                           </div>
-                          <div>
-                            <input
-                              name="DBXP"
-                              type="checkbox"
-                              id="MicrosoftSQL"
-                            />
-                            <label for="MicrosoftSQL">HTML</label>
-                          </div>
-                        </div>
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Job Type
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
+                        </fieldset>
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Project Type
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
+                      <select class="" aria-label="Default select example">
+                        <option selected>Job Type</option>
+                        <option value="1">Job Type One</option>
+                        <option value="2">Job Type Two</option>
+                      </select>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Project Duration
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
+                      <select class="" aria-label="Default select example">
+                        <option selected>Project Type</option>
+                        <option value="1">Project Type One</option>
+                        <option value="2">Project Type Two</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 project-input">
+                      <select class="" aria-label="Default select example">
+                        <option selected>Project Duration</option>
+                        <option value="1">Project One</option>
+                        <option value="2">Project Two</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -330,38 +265,40 @@
               <div class="col-lg-9 col-md-9 col-sm-8 col-10">
                 <div class="back-up">
                   <h3 class="btnstyleone">Upcoming Projects</h3>
-                  <h5>
-                    HTML/CSS
-                    <img
-                      src="/assets/images/remove-circle.svg"
-                      alt="remove-circle"
-                    />
-                  </h5>
-                  <h5>
-                    Java
-                    <img
-                      src="/assets/images/remove-circle.svg"
-                      alt="remove-circle"
-                    />
-                  </h5>
-                  <h5>
-                    JavaScript
-                    <img
-                      src="/assets/images/remove-circle.svg"
-                      alt="remove-circle"
-                    />
-                  </h5>
-                  <h5>
-                    Clear all
-                    <img
-                      src="/assets/images/remove-circle.svg"
-                      alt="remove-circle"
-                    />
-                  </h5>
+                  <div class="in-tab">
+                    <h5>
+                      HTML/CSS
+                      <img
+                        src="/assets/images/remove-circle.svg"
+                        alt="remove-circle"
+                      />
+                    </h5>
+                    <h5>
+                      Java
+                      <img
+                        src="/assets/images/remove-circle.svg"
+                        alt="remove-circle"
+                      />
+                    </h5>
+                    <h5>
+                      JavaScript
+                      <img
+                        src="/assets/images/remove-circle.svg"
+                        alt="remove-circle"
+                      />
+                    </h5>
+                    <h5>
+                      Clear all
+                      <img
+                        src="/assets/images/remove-circle.svg"
+                        alt="remove-circle"
+                      />
+                    </h5>
+                  </div>
                 </div>
               </div>
               <div
-                class="col-lg-3 col-md-3 col-sm-4 d-flex justify-content-end align-items-center"
+                class="col-lg-3 col-md-3 col-sm-4 d-flex justify-content-sm-end justify-content-start align-items-center"
               >
                 <a href="#" class="btnstyletwo">View My Projects</a>
               </div>

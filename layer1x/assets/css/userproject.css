@@ -378,6 +378,7 @@ header {
 }
 .domain-name {
   display: flex;
+  flex-wrap: wrap;
   padding: 16px 0;
 }
 .domain-name h5 {
@@ -437,29 +438,45 @@ header {
   letter-spacing: 0.02em;
   color: #9ca3af;
 }
-.find-events .dropdown .dropdown-toggle {
+.find-events .dropdown {
+  display: flex;
+}
+.find-events .dropdown select {
   font-family: "StyreneALC";
   font-size: 26px;
   line-height: 34px;
   letter-spacing: -0.04em;
   color: #111827;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+  background-image: url("/assets/images/ic-dropdown.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 10px;
+  padding-right: 25px;
 }
-.find-events .dropdown .btn {
+.find-events .dropdown select option {
+  font-size: 16px;
+}
+/* .find-events .dropdown .btn {
   --bs-btn-padding-x: 0;
   --bs-btn-padding-y: 0;
   border: 0;
   outline: 0;
   padding-left: 10px;
-}
-.find-events .dropdown .btn-check:checked + .btn,
+} */
+/* .find-events .dropdown .btn-check:checked + .btn,
 .btn.active,
 .btn.show,
 .btn:first-child:active,
 :not(.btn-check) + .btn:active {
   border: 0;
   outline: 0;
-}
-.project-input .dropdown-toggle::after {
+} */
+/* .project-input .dropdown-toggle::after {
   content: "";
   border-top: 0.3em solid #808095;
   border-right: 0.3em solid transparent;
@@ -468,7 +485,7 @@ header {
   position: absolute;
   right: 12%;
   top: 45%;
-}
+} */
 
 .find-events .dropdown .dropdown-menu {
   min-width: 100%;
@@ -477,19 +494,24 @@ header {
   position: relative;
 }
 
-.project-input .dropdown .btn {
+.project-input select {
   background-color: white;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.02em;
   color: #808095;
-  --bs-btn-padding-x: 18px;
-  --bs-btn-padding-y: 9.5px;
+  padding: 9.5px 12px;
   border: 0;
+  outline: 0;
   width: 100%;
-  text-align: left;
-  margin-left: 0;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("/assets/images/ic-dropdown.svg");
+  background-repeat: no-repeat;
+  background-position-x: 92%;
+  background-position-y: 10px;
 }
 .view-input {
   padding: 25px 0 12px 0;
@@ -506,9 +528,8 @@ fieldset {
   position: absolute;
   z-index: 1;
   background-color: white;
-  top: 100%;
   border-radius: 0px 0px 8px 8px;
-  width: calc(100% - 12%);
+  width: 100%;
 }
 
 #choicelist {
@@ -517,17 +538,24 @@ fieldset {
   padding: 9px;
   border-top: 1px solid #d9d9de;
 }
-
-#selectedDBXP {
-  border: 0;
-  width: 100%;
-  border-radius: 8px;
+.project-in {
   height: 38px;
   background-color: #fff;
   position: relative;
+  border-radius: 8px;
+}
+#selectedDBXP {
+  border: 0;
+  width: 100%;
+  height: 38px;
+
+  border-radius: 8px;
+  background-color: #fff;
   text-align: left;
-  padding: 9.5px 18px;
+  padding: 9.5px 12px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 #choicelist > div {
@@ -548,21 +576,38 @@ fieldset {
   background: rgba(78, 31, 163, 0.1);
   border-radius: 8px;
 }
-
+#selectedDBXP .placeholder {
+  background-color: white;
+  cursor: pointer;
+}
 .fa-magnifying-glass {
   position: absolute;
   right: 1em;
   top: 0.9em;
   color: #808095;
 }
+.in-tab {
+  display: flex;
+}
 
 @media screen and (max-width: 1340px) {
   .find-events {
     padding-left: 25px;
   }
-  .project-input .dropdown .btn {
+  .project-input select {
     font-size: 13px;
-    --bs-btn-padding-x: 15px;
+  }
+  #selectedDBXP {
+    font-size: 12px;
+  }
+  #choicelist > div label {
+    font-size: 12px;
+  }
+  #choicelist > div {
+    display: flex;
+  }
+  .fa-magnifying-glass {
+    top: 1em;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -656,15 +701,24 @@ fieldset {
     padding: 6px 8px;
     white-space: nowrap;
   }
-  .find-events .dropdown .dropdown-toggle {
+  .find-events .dropdown select {
     font-size: 18px;
     letter-spacing: 0;
+    padding-right: 15px;
+    background-size: 14px;
   }
-  .find-events .dropdown .btn {
+  .find-events .dropdown select option {
+    font-size: 14px;
+  }
+  /* .find-events .dropdown .btn {
     padding-left: 4px;
-  }
+  } */
   .find-events .dropdown .eventsimg {
     width: 22px;
+  }
+  .page-creation .archive-ad img,
+  .archive-ad-two img {
+    padding: 3px;
   }
   .back-up h5 {
     padding: 4px 6px;
@@ -672,12 +726,20 @@ fieldset {
   .view-input .projectro {
     --bs-gutter-x: 0.5rem;
   }
-  fieldset {
-    width: calc(100% - 6%);
-  }
-  .project-input .dropdown .btn {
+  .project-input select {
     font-size: 12px;
+    background-position-y: 13px;
+    background-size: 13px;
   }
+  /* .project-input .dropdown-menu {
+    width: 100%;
+    --bs-dropdown-min-width: 0rem;
+  }
+  .project-input .dropdown-menu .dropdown-item {
+    --bs-dropdown-item-padding-x: 9px;
+    --bs-dropdown-item-padding-y: 4px;
+    font-size: 12px;
+  } */
 }
 @media screen and (max-width: 1199px) {
   .common-vertical {
@@ -707,39 +769,42 @@ fieldset {
   .nav-unorder > li {
     padding-left: 20px;
   }
-  .find-events .dropdown .dropdown-toggle {
+  .find-events .dropdown select {
     font-size: 17px;
+    line-height: 22px;
+    background-size: 13px;
+    background-position-y: 5px;
   }
-  .find-events .dropdown .btn {
+  /* .find-events .dropdown .btn {
     padding-left: 2px;
-  }
+  } */
   .find-events label {
-    font-size: 13px;
+    font-size: 12px;
   }
   #choicelist {
     padding: 6px;
   }
   #choicelist > div label {
     padding-left: 4px;
-    font-size: 13px;
+    font-size: 11px;
   }
   #choicelist > div {
     padding: 5px;
-    display: flex;
-  }
-  fieldset {
-    top: 95%;
   }
   #selectedDBXP {
-    height: 38px;
-  }
-  .project-input .dropdown .btn {
     font-size: 11px;
-    --bs-btn-padding-x: 10px;
   }
-  .project-input .dropdown-toggle::after {
+  .fa-magnifying-glass {
+    top: 1.3em;
+  }
+  .project-input select {
+    font-size: 11px;
+    padding: 9.5px 10px;
+    background-size: 10px;
+  }
+  /* .project-input .dropdown-toggle::after {
     right: 10%;
-  }
+  } */
   .btnstyleone,
   .view-pro-title {
     font-size: 19px;
@@ -777,17 +842,29 @@ fieldset {
   body {
     font-weight: 500;
   }
-  .project-input .dropdown .btn {
-    --bs-btn-padding-x: 6px;
+  .project-input select {
+    padding: 6.5px 10px;
+    font-size: 10px;
+    background-position-y: 11px;
   }
-  #choicelist > div label {
-    font-size: 11px;
+  #selectedDBXP {
+    height: 32px;
+    padding: 0 10px;
+  }
+  .project-in {
+    height: 32px;
+  }
+  .view-input .projectro {
+    align-items: center;
   }
   #choicelist > div input[type="checkbox"] {
     width: 10px;
   }
   .back-up h5 {
     font-size: 11px;
+  }
+  .fa-magnifying-glass {
+    top: 1em;
   }
 }
 @media screen and (max-width: 991px) {
@@ -864,6 +941,14 @@ fieldset {
   .duration-btn a {
     margin-top: 0px;
   }
+  /* .project-input .dropdown-menu .dropdown-item {
+    --bs-dropdown-item-padding-x: 7px;
+    --bs-dropdown-item-padding-y: 3px;
+    font-size: 10px;
+  } */
+  .find-events .dropdown select option {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 767px) {
   .search input {
@@ -874,12 +959,12 @@ fieldset {
   .find-events {
     padding-left: 15px;
   }
-  .find-events .dropdown .dropdown-toggle {
+  .find-events .dropdown select {
     font-size: 13px;
   }
-  .find-events .dropdown .btn {
+  /* .find-events .dropdown .btn {
     padding-left: 0px;
-  }
+  } */
   .find-events .dropdown .eventsimg {
     width: 20px;
   }
@@ -892,9 +977,6 @@ fieldset {
   .nav-unorder .notification {
     width: 22px;
     height: 22px;
-  }
-  .nav-unorder > li {
-    padding-left: 23px;
   }
   .nav-unorder .dropdown-toggle .profile {
     width: 35px;
@@ -1000,6 +1082,25 @@ fieldset {
   .view-input {
     padding: 12px 0 12px 0;
   }
+  .find-events label {
+    font-size: 11px;
+  }
+  .back-up {
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .back-up h5 img {
+    padding-left: 2px;
+  }
+  .back-up h5 {
+    margin: 0 6px 0 0;
+    white-space: nowrap;
+    padding: 4px 4px 4px 6px;
+  }
+  .in-tab {
+    padding-top: 5px;
+  }
 }
 @media screen and (max-width: 575px) {
   .search input {
@@ -1103,21 +1204,21 @@ fieldset {
   }
   .btnstyletwo {
     font-size: 12px;
+    margin-top: 12px;
   }
-  #selectedDBXP {
-    height: 33.5px;
-    font-size: 12px;
-  }
-  .project-input .dropdown .btn {
-    --bs-btn-padding-y: 8px;
-  }
-  .find-events label {
-    font-size: 11px;
-  }
-
-  .find-events .dropdown .dropdown-toggle {
+  .find-events .dropdown select {
     font-size: 12px;
     line-height: 20px;
+    padding-left: 5px;
+    background-size: 11px;
+    background-position-y: 4px;
+  }
+  .back {
+    padding: 3px 0 20px 0;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    font-size: 13px;
+    display: contents;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1148,10 +1249,6 @@ fieldset {
   .view-pro-title {
     line-height: 30px;
   }
-  .btnstyletwo {
-    padding: 3px 6px;
-    border-radius: 4px;
-  }
   .breadcrumb-item a {
     font-size: 11px;
   }
@@ -1168,16 +1265,19 @@ fieldset {
     padding-left: 0px;
   }
   .nav-unorder .dropdown-menu {
-    transform: translate(20%, 0%);
+    transform: translate(0%, 0%);
   }
   .back-up h5 {
-    margin: 0 8px 8px 0;
+    margin: 0 6px 6px 0;
   }
   .back {
     padding: 0px 0 20px 0;
   }
   .btnstyletwo {
     font-size: 11px;
+    margin-top: 6px;
+    padding: 3px 6px;
+    border-radius: 4px;
   }
   .duration-btn a {
     font-size: 11px;
@@ -1185,8 +1285,24 @@ fieldset {
   }
   .navbar form {
     flex-direction: column;
+    align-items: start;
   }
   .search input {
     width: 130px;
+  }
+  .nav-unorder .dropdown-toggle::after {
+    margin-left: 0;
+    border-top: 0.2em solid;
+    border-right: 0.2em solid transparent;
+    border-left: 0.2em solid transparent;
+  }
+  #selectedDBXP {
+    font-size: 10px;
+  }
+  .fa-magnifying-glass {
+    top: 1.3em;
+  }
+  .in-tab {
+    flex-wrap: wrap;
   }
 }
