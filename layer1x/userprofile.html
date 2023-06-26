@@ -1,290 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L1X User-Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <link href="assets/css/userprofile.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/styrenealc.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="user-project-details">
-        <div class="common-vertical">
-            <div class="common-details">
-                <div class="l1x-labs-link text-center">
-                    <a href="#" class=""><img src="/assets/images/l1x-labs.png" alt="l1x-labs" class="img-fluid" /></a>
-                    <hr />
+      <div class="common-vertical">
+        <div class="common-details">
+          <div class="l1x-labs-link text-center">
+            <a href="#" class=""
+              ><img
+                src="/assets/images/l1x-labs.png"
+                alt="l1x-labs"
+                class="img-fluid"
+            /></a>
+            <hr />
+          </div>
+          <ul class="vertical-unorder">
+            <li class="active">
+              <a href="#"><i class="bi bi-grid"></i> <span>Dashboard</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-file-text"></i> <span>Events</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-lock"></i> <span>Hackathon</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-folder"></i> <span>Projects</span></a>
+            </li>
+            <hr />
+          </ul>
+          <ul class="vertical-unorder">
+            <li>
+              <a href="#"
+                ><i class="bi bi-bell"></i> <span>Notifications</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-envelope"></i> <span>Messages</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-gear"></i> <span>Settings</span></a>
+            </li>
+            <hr />
+          </ul>
+          <ul class="vertical-unorder">
+            <li>
+              <a href="#"
+                ><i class="bi bi-shield-exclamation"></i>
+                <span>Knowledge Base</span></a
+              >
+            </li>
+            <hr />
+          </ul>
+        </div>
+      </div>
+      <div class="common-user">
+        <header>
+          <nav class="">
+            <div class="navbar">
+              <form class="" role="search">
+                <div class="search">
+                  <img
+                    src="/assets/images/search.svg"
+                    class="search-img"
+                    alt="search"
+                  />
+                  <input placeholder="Quick Search..." />
                 </div>
-                <ul class="vertical-unorder">
-                    <li class="active">
-                        <a href="#"><i class="bi bi-grid"></i> <span>Dashboard</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-file-text"></i> <span>Events</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-lock"></i> <span>Hackathon</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-folder"></i> <span>Projects</span></a>
-                    </li>
-                    <hr />
-                </ul>
-                <ul class="vertical-unorder">
-                    <li>
-                        <a href="#"><i class="bi bi-bell"></i> <span>Notifications</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-envelope"></i> <span>Messages</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-gear"></i> <span>Settings</span></a>
-                    </li>
-                    <hr />
-                </ul>
-                <ul class="vertical-unorder">
-                    <li>
-                        <a href="#"><i class="bi bi-shield-exclamation"></i>
-                            <span>Knowledge Base</span></a>
-                    </li>
-                    <hr />
-                </ul>
+              </form>
+
+              <ul class="nav-unorder">
+                <li>
+                  <a href="#"
+                    ><img src="/assets/images/mail.svg" alt="mail" class="mail"
+                  /></a>
+                </li>
+                <li>
+                  <img
+                    src="/assets/images/notification-one.svg"
+                    alt="notification"
+                    class="notification img-fluid"
+                  />
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="/assets/images/profile.png"
+                        alt="profile"
+                        class="img-fluid profile"
+                      />
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <h4>Jessica Hanson</h4>
+                        <a class="client-mail" href="#"
+                          >jessica.hanson@blockchain.com</a
+                        >
+                      </li>
+                      <hr />
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-person-circle"></i> View Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-file-text"></i> My Events</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-lock"></i> My Hackathon</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-folder"></i> My Projects</a
+                        >
+                      </li>
+                      <hr />
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-journal-text"></i>FAQ</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-box-arrow-right"></i> Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </div>
-        <div class="common-user">
-            <header>
-                <nav class="">
-                    <div class="navbar">
-                        <form class="" role="search">
-                            <div class="search">
-                                <img src="/assets/images/search.svg" class="search-img" alt="search" />
-                                <input placeholder="Quick Search..." />
-                            </div>
-                        </form>
+          </nav>
+        </header>
+        <section class="view-myproject">
+          <div class="back">
+            <a href="#" class="btnstyleone"
+              ><img src="/assets/images/backtoproject.svg" alt="" />Back to
+              Dashboard</a
+            >
+          </div>
 
-                        <ul class="nav-unorder">
-                            <li>
-                                <a href="#"><img src="/assets/images/mail.svg" alt="mail" class="mail" /></a>
-                            </li>
-                            <li>
-                                <img src="/assets/images/notification-one.svg" alt="notification"
-                                    class="notification img-fluid" />
-                            </li>
-                            <li>
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <img src="/assets/images/profile.png" alt="profile" class="img-fluid profile" />
-                                    </button>
+          <div class="breadcrumb-common" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="#">Settings</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">Profile</a>
+              </li>
+            </ol>
+          </div>
 
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <h4>Jessica Hanson</h4>
-                                            <a class="client-mail" href="#">jessica.hanson@blockchain.com</a>
-                                        </li>
-                                        <hr />
-                                        <li>
-                                            <a class="dropdownterm" href="#"><i class="bi bi-person-circle"></i> View
-                                                Profile</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdownterm" href="#"><i class="bi bi-file-text"></i> My
-                                                Events</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdownterm" href="#"><i class="bi bi-lock"></i> My Hackathon</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdownterm" href="#"><i class="bi bi-folder"></i> My
-                                                Projects</a>
-                                        </li>
-                                        <hr />
-                                        <li>
-                                            <a class="dropdownterm" href="#"><i class="bi bi-journal-text"></i>FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdownterm" href="#"><i class="bi bi-box-arrow-right"></i>
-                                                Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+          <div class="contact-details">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-6">
+                <div class="contact-com">
+                  <img
+                    src="/assets/images/profile.png"
+                    alt="profile"
+                    class="img-fluid"
+                  />
+                  <div class="contact-comone">
+                    <h2>Jessica Hanson <span>( Open to work )</span></h2>
+
+                    <div class="row user-progres">
+                      <div class="col-lg-12 d-flex align-items-center gap-3">
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                        <span>75%</span>
+                      </div>
                     </div>
-                </nav>
-            </header>
-            <section class="view-myproject">
-                <div class="back">
-                    <a href="#" class="btnstyleone"><img src="/assets/images/backtoproject.svg" alt="" />Back to
-                        Dashboard</a>
+                  </div>
                 </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="contact-share">
+                  <div class="dropdown">
+                    <a
+                      class=""
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="/assets/images/share-icon.svg"
+                        alt="share-icon"
+                      />
+                      Share Resume
+                    </a>
 
-                <div class="breadcrumb-common" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                            <a href="#">Settings</a>
-                        </li>
-                        <li class="breadcrumb-item" aria-current="page">
-                            <a href="#">Profile</a>
-                        </li>
-                    </ol>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-facebook"></i> Facebook</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="bi bi-instagram"></i> Instagram</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="bi bi-twitter"></i> Twitter</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="btn-download">Download Resume</a>
                 </div>
-
-                <div class="contact-details">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-6">
-                            <div class="contact-com">
-                                <img src="/assets/images/profile.png" alt="profile" class="img-fluid" />
-                                <div class="contact-comone">
-                                    <h2>Jessica Hanson <span>( Open to work )</span></h2>
-
-                                    <div class="row user-progres">
-                                        <div class="col-lg-12 d-flex align-items-center gap-3">
-                                            <div class="progress" role="progressbar" aria-label="Basic example"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar" style="width: 75%;"></div>
-                                            </div>
-                                            <span>75%</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="contact-share">
-                                <div class="dropdown">
-                                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="/assets/images/share-icon.svg" alt="share-icon"> Share Resume
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"> <i class="bi bi-facebook"></i>
-                                                Facebook</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="bi bi-instagram"></i>
-                                                Instagram</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="bi bi-twitter"></i> Twitter</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a href="#" class="btn-download">Download Resume</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-view">
-                        <div class="contact-vone">
-                            <div class="contact-view-in">
-                                <span>Email Address</span>
-                                <h5>jessica.hanson@blockchain.com</h5>
-                            </div>
-                            <div class="vr"></div>
-                            <div class="contact-view-in">
-                                <span>Phone Number</span>
-                                <h5>(307) 555-0133</h5>
-                            </div>
-                            <div class="vr"></div>
-                            <div class="contact-view-in">
-                                <span>Location</span>
-                                <h5>California, USA</h5>
-                            </div>
-                            <div class="vr"></div>
-                            <div class="contact-view-in">
-                                <span>Job title</span>
-                                <h5>User Interface Designer</h5>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="contact-view">
+              <div class="contact-vone">
+                <div class="contact-view-in">
+                  <span>Email Address</span>
+                  <h5>jessica.hanson@blockchain.com</h5>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="v-tabs">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                                aria-orientation="vertical">
-                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                    aria-selected="true">Basic Information</button>
-                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-profile" type="button" role="tab"
-                                    aria-controls="v-pills-profile" aria-selected="false">Contact Information</button>
-                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-messages" type="button" role="tab"
-                                    aria-controls="v-pills-messages" aria-selected="false">Skills</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">Work Experience</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">Projects and
-                                    Portfolio</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">Education</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">Awards</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">Publications and
-                                    Talks</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">Volunteer Experience</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">Testimonials</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">Call-to-Action</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                aria-labelledby="v-pills-home-tab" tabindex="0">
-                                <div class="basic-info">
-                                    <h3>Basic Information</h3>
-                                    <div class="basic-info-in">
-                                        <form action="">
-                                            <div class="form-floating mb-3">
-                                                <input type="email" class="form-control" id="floatingInput" placeholder="Enter Developer’s Name ">
-                                                <label for="floatingInput">Developer's Full Name</label>
-                                              </div>
-                                              
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
-                                aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
-                        </div>
-                    </div>
+                <div class="vr"></div>
+                <div class="contact-view-in">
+                  <span>Phone Number</span>
+                  <h5>(307) 555-0133</h5>
                 </div>
-            </section>
-        </div>
+                <div class="vr"></div>
+                <div class="contact-view-in">
+                  <span>Location</span>
+                  <h5>California, USA</h5>
+                </div>
+                <div class="vr"></div>
+                <div class="contact-view-in">
+                  <span>Job title</span>
+                  <h5>User Interface Designer</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="v-tabs">
+                <div
+                  class="nav flex-column nav-pills"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link active"
+                    id="v-pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-home"
+                    aria-selected="true"
+                  >
+                    Basic Information
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-profile"
+                    aria-selected="false"
+                  >
+                    Contact Information
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-skill-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-skill"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-skill"
+                    aria-selected="false"
+                  >
+                    Skills
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-work-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-work"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-work"
+                    aria-selected="false"
+                  >
+                    Work Experience
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    Projects and Portfolio
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    Education
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    Awards
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    Publications and Talks
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    Volunteer Experience
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    Testimonials
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    Call-to-Action
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <!-- TAB 1 -->
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                  <div class="basic-info">
+                    <h3>Basic Information</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-floating form-com">
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="floatingInput"
+                                placeholder="Enter Developer’s Name"
+                              />
+                              <label for="floatingInput"
+                                >Developer's Full Name</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com form-file">
+                              <img src="/assets/images/profile.png" alt="" />
+                              <div class="form-ingroup">
+                                <label for="file" class=""
+                                  >Profile Picture</label
+                                >
+
+                                <div class="input-group custom-file-uploader">
+                                  <input
+                                    type="text"
+                                    name="filename"
+                                    class="form-control"
+                                    placeholder="No file selected"
+                                    readonly
+                                  />
+                                  <input
+                                    type="file"
+                                    name="file"
+                                    onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''"
+                                  />
+                                  <img
+                                    src="/assets/images/attachment.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Job title</label
+                              >
+                              <input class="form-control" type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Location</label
+                              >
+                              <input class="form-control" type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Open to Work Status</label
+                              >
+
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>Visible to everyone</option>
+                                <option value="1">Storybook</option>
+                                <option value="2">GitHub</option>
+                                <option value="3">Jira</option>
+                              </select>
+                              <img
+                                src="/assets/images/select-icon.png"
+                                alt=""
+                                class="select-icon"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Short bio</label
+                              >
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="2"
+                              >
+The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.</textarea
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="update-clear">
+                    <a href="#" class="update-link">Update</a>
+                    <a href="#" class="clear-link">Clear</a>
+                </div>
+                  </div>
+                </div>
+                <!-- TAB 2 -->
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                <div class="basic-info">
+                    <h3>Contact Information</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                                <label for="text" class="form-label"
+                                  >Email address</label
+                                >
+                                <input class="form-control" type="email" placeholder="jessica.hanson@blockchain.com" />
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Phone number</label
+                              >
+                              <input class="form-control" type="tel" placeholder="(307) 555-0133" />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Personal website or blog</label
+                              >
+                              <input class="form-control" type="text" placeholder="github.com/jessica.hanson"/>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                                <h2 class="web-name-git"><img src="/assets/images/github.svg" alt="github">GitHub</h2>
+                            <div class="form-com">
+                                <label for="url" class="form-label"
+                                  >Profile link</label
+                                >
+                                <input class="form-control" type="url" placeholder="github.com/jessica.hanson" />
+                              </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <h2 class="web-name-stack"><img src="/assets/images/stack-overflow.svg" alt="Stack Overflow">Stack Overflow</h2>
+                            <div class="form-com">
+                                <label for="url" class="form-label"
+                                  >Profile link</label
+                                >
+                                <input class="form-control" type="url" placeholder="github.com/jessica.hanson" />
+                              </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <h2 class="web-name-linked"><img src="/assets/images/linkedin.svg" alt="LinkedIn">LinkedIn</h2>
+                            <div class="form-com">
+                                <label for="url" class="form-label"
+                                  >Profile link</label
+                                >
+                                <input class="form-control" type="url" placeholder="linkedin.com/jessica.hanson" />
+                              </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <h2 class="web-name-facebook"><img src="/assets/images/facebook.svg" alt="Facebook">Facebook</h2>
+                            <div class="form-com">
+                                <label for="url" class="form-label"
+                                  >Profile link</label
+                                >
+                                <input class="form-control" type="url" placeholder="facebook.com/in/jessica.hanson" />
+                              </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <h2 class="web-name-insta"><img src="/assets/images/instagram.svg" alt="Instagram">Instagram</h2>
+                            <div class="form-com">
+                                <label for="url" class="form-label"
+                                  >Profile link</label
+                                >
+                                <input class="form-control" type="url" placeholder="instagram.com/jessica.hanson" />
+                              </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="update-clear">
+                    <a href="#" class="update-link">Update</a>
+                    <a href="#" class="clear-link">Clear</a>
+                </div>
+                  </div>
+                </div>
+                <!-- TAB 3 -->
+                <div class="tab-pane fade" id="v-pills-skill" role="tabpanel" aria-labelledby="v-pills-skill-tab" tabindex="0">
+                <div class="basic-info">
+                    <h3>Skills</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Programming languages</label
+                              >
+                              <input class="form-control" type="text" />
+                              <div class="study-chips">
+                                <h5>HTML<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>CSS<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>Java<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>JavaScript<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Frameworks and libraries</label
+                              >
+                              <input class="form-control" type="text" />
+                              <div class="study-chips">
+                                <h5>HTML<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>CSS<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>Java<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>JavaScript<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Tools and platforms</label
+                              >
+                              <input class="form-control" type="text" />
+                              <div class="study-chips">
+                                <h5>HTML<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>CSS<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>Java<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>JavaScript<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Soft skills</label
+                              >
+                              <input class="form-control" type="text" placeholder="Communication, teamwork, problem-solving, etc." />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="update-clear">
+                    <a href="#" class="update-link">Update</a>
+                    <a href="#" class="clear-link">Clear</a>
+                </div>
+                  </div>
+                </div>
+                <!-- TAB 4 -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-work"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-work-tab"
+                  tabindex="0"
+                >
+                <div class="basic-info">
+                    <h3>Basic Information</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-com">
+                                  <label for="text" class="form-label"
+                                    >Job title</label
+                                  >
+                                  <input class="form-control" type="text" placeholder="Enter Your Job Title" />
+                                </div>
+                              </div>
+                          <div class="col-lg-6">
+                            <div class="form-com form-file">
+                              <img src="/assets/images/blank-img.png" alt="" />
+                              <div class="form-ingroup">
+                                <label for="file" class=""
+                                  >Company Logo</label
+                                >
+
+                                <div class="input-group custom-file-uploader">
+                                  <input
+                                    type="text"
+                                    name="filename"
+                                    class="form-control"
+                                    placeholder="Format: Jpg, png"
+                                    readonly
+                                  />
+                                  <input
+                                    type="file"
+                                    name="file"
+                                    onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''"
+                                  />
+                                  <img
+                                    src="/assets/images/attachment.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Company name</label
+                              >
+                              <input class="form-control" type="text" placeholder="Enter your company name" />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Company name</label
+                              >
+                              <input class="form-control" type="text" placeholder="Enter your company name"/>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="trip-start" class="form-label"
+                                >Employment start date</label
+                              >
+                              <input class="form-control" type="date" name="trip-start" value="28 March 2009"/>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="trip-end" class="form-label"
+                                >Employment end date</label
+                              >
+                              <input class="form-control" type="date" name="trip-end" value="28 March 2020"/>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Key responsibilities and achievements</label
+                              >
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="2"
+                              >The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.</textarea
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <a href="#" class="add-more" >+ Add More Fields</a>
+                    </div>
+                    <div class="update-clear">
+                    <a href="#" class="update-link">Update</a>
+                    <a href="#" class="clear-link">Clear</a>
+                </div>
+                  </div>
+                </div>
+                <!-- TAB 5 -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-settings"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab"
+                  tabindex="0"
+                >
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="assets/js/userprofile.js"></script>
-</body>
-
+  </body>
 </html>
