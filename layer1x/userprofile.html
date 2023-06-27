@@ -344,72 +344,72 @@
                   </button>
                   <button
                     class="nav-link"
-                    id="v-pills-settings-tab"
+                    id="v-pills-project-tab"
                     data-bs-toggle="pill"
-                    data-bs-target="#v-pills-settings"
+                    data-bs-target="#v-pills-project"
                     type="button"
                     role="tab"
-                    aria-controls="v-pills-settings"
+                    aria-controls="v-pills-project"
                     aria-selected="false"
                   >
                     Projects and Portfolio
                   </button>
                   <button
                     class="nav-link"
-                    id="v-pills-settings-tab"
+                    id="v-pills-education-tab"
                     data-bs-toggle="pill"
-                    data-bs-target="#v-pills-settings"
+                    data-bs-target="#v-pills-education"
                     type="button"
                     role="tab"
-                    aria-controls="v-pills-settings"
+                    aria-controls="v-pills-education"
                     aria-selected="false"
                   >
                     Education
                   </button>
                   <button
                     class="nav-link"
-                    id="v-pills-settings-tab"
+                    id="v-pills-award-tab"
                     data-bs-toggle="pill"
-                    data-bs-target="#v-pills-settings"
+                    data-bs-target="#v-pills-award"
                     type="button"
                     role="tab"
-                    aria-controls="v-pills-settings"
+                    aria-controls="v-pills-award"
                     aria-selected="false"
                   >
                     Awards
                   </button>
                   <button
                     class="nav-link"
-                    id="v-pills-settings-tab"
+                    id="v-pills-publication-tab"
                     data-bs-toggle="pill"
-                    data-bs-target="#v-pills-settings"
+                    data-bs-target="#v-pills-publication"
                     type="button"
                     role="tab"
-                    aria-controls="v-pills-settings"
+                    aria-controls="v-pills-publication"
                     aria-selected="false"
                   >
                     Publications and Talks
                   </button>
                   <button
                     class="nav-link"
-                    id="v-pills-settings-tab"
+                    id="v-pills-volunteer-tab"
                     data-bs-toggle="pill"
-                    data-bs-target="#v-pills-settings"
+                    data-bs-target="#v-pills-volunteer"
                     type="button"
                     role="tab"
-                    aria-controls="v-pills-settings"
+                    aria-controls="v-pills-volunteer"
                     aria-selected="false"
                   >
                     Volunteer Experience
                   </button>
                   <button
                     class="nav-link"
-                    id="v-pills-settings-tab"
+                    id="v-pills-testi-tab"
                     data-bs-toggle="pill"
-                    data-bs-target="#v-pills-settings"
+                    data-bs-target="#v-pills-testi"
                     type="button"
                     role="tab"
-                    aria-controls="v-pills-settings"
+                    aria-controls="v-pills-testi"
                     aria-selected="false"
                   >
                     Testimonials
@@ -432,7 +432,13 @@
             <div class="col-lg-9">
               <div class="tab-content" id="v-pills-tabContent">
                 <!-- TAB 1 -->
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                  tabindex="0"
+                >
                   <div class="basic-info">
                     <h3>Basic Information</h3>
                     <div class="basic-info-in">
@@ -444,7 +450,8 @@
                                 type="email"
                                 class="form-control"
                                 id="floatingInput"
-                                placeholder="Enter Developer’s Name"
+                                placeholder=" "
+                                value="Enter Developer’s Name"
                               />
                               <label for="floatingInput"
                                 >Developer's Full Name</label
@@ -453,9 +460,15 @@
                           </div>
                           <div class="col-lg-6">
                             <div class="form-com form-file">
-                              <img src="/assets/images/profile.png" alt="" />
+                              <div id="preview">
+                                <img
+                                  id="preview-image"
+                                  src="/assets/images/blank-img.png"
+                                  alt="Preview"
+                                />
+                              </div>
                               <div class="form-ingroup">
-                                <label for="file" class=""
+                                <label for="file" id="file"
                                   >Profile Picture</label
                                 >
 
@@ -463,14 +476,15 @@
                                   <input
                                     type="text"
                                     name="filename"
+                                    id="filename-input"
                                     class="form-control"
-                                    placeholder="No file selected"
+                                    placeholder="photo.jpg"
                                     readonly
                                   />
                                   <input
                                     type="file"
                                     name="file"
-                                    onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''"
+                                    id="file-input"
                                   />
                                   <img
                                     src="/assets/images/attachment.svg"
@@ -536,32 +550,46 @@ The California Art Festival is a showcase of the best and brightest artists from
                       </form>
                     </div>
                     <div class="update-clear">
-                    <a href="#" class="update-link">Update</a>
-                    <a href="#" class="clear-link">Clear</a>
-                </div>
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
                   </div>
                 </div>
                 <!-- TAB 2 -->
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-                <div class="basic-info">
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="basic-info">
                     <h3>Contact Information</h3>
                     <div class="basic-info-in">
                       <form action="">
                         <div class="row">
                           <div class="col-lg-12">
                             <div class="form-com">
-                                <label for="text" class="form-label"
-                                  >Email address</label
-                                >
-                                <input class="form-control" type="email" placeholder="jessica.hanson@blockchain.com" />
-                              </div>
+                              <label for="text" class="form-label"
+                                >Email address</label
+                              >
+                              <input
+                                class="form-control"
+                                type="email"
+                                value="jessica.hanson@blockchain.com"
+                              />
+                            </div>
                           </div>
                           <div class="col-lg-6">
                             <div class="form-com">
                               <label for="text" class="form-label"
                                 >Phone number</label
                               >
-                              <input class="form-control" type="tel" placeholder="(307) 555-0133" />
+                              <input
+                                class="form-control"
+                                type="tel"
+                                value="(307) 555-0133"
+                              />
                             </div>
                           </div>
                           <div class="col-lg-6">
@@ -569,66 +597,121 @@ The California Art Festival is a showcase of the best and brightest artists from
                               <label for="text" class="form-label"
                                 >Personal website or blog</label
                               >
-                              <input class="form-control" type="text" placeholder="github.com/jessica.hanson"/>
+                              <input
+                                class="form-control"
+                                type="text"
+                                value="github.com/jessica.hanson"
+                              />
                             </div>
                           </div>
                           <div class="col-lg-12">
-                                <h2 class="web-name-git"><img src="/assets/images/github.svg" alt="github">GitHub</h2>
+                            <h2 class="web-name-git">
+                              <img
+                                src="/assets/images/github.svg"
+                                alt="github"
+                              />GitHub
+                            </h2>
                             <div class="form-com">
-                                <label for="url" class="form-label"
-                                  >Profile link</label
-                                >
-                                <input class="form-control" type="url" placeholder="github.com/jessica.hanson" />
-                              </div>
+                              <label for="url" class="form-label"
+                                >Profile link</label
+                              >
+                              <input
+                                class="form-control"
+                                type="url"
+                                value="github.com/jessica.hanson"
+                              />
+                            </div>
                           </div>
                           <div class="col-lg-12">
-                            <h2 class="web-name-stack"><img src="/assets/images/stack-overflow.svg" alt="Stack Overflow">Stack Overflow</h2>
+                            <h2 class="web-name-stack">
+                              <img
+                                src="/assets/images/stack-overflow.svg"
+                                alt="Stack Overflow"
+                              />Stack Overflow
+                            </h2>
                             <div class="form-com">
-                                <label for="url" class="form-label"
-                                  >Profile link</label
-                                >
-                                <input class="form-control" type="url" placeholder="github.com/jessica.hanson" />
-                              </div>
+                              <label for="url" class="form-label"
+                                >Profile link</label
+                              >
+                              <input
+                                class="form-control"
+                                type="url"
+                                value="github.com/jessica.hanson"
+                              />
+                            </div>
                           </div>
                           <div class="col-lg-12">
-                            <h2 class="web-name-linked"><img src="/assets/images/linkedin.svg" alt="LinkedIn">LinkedIn</h2>
+                            <h2 class="web-name-linked">
+                              <img
+                                src="/assets/images/linkedin.svg"
+                                alt="LinkedIn"
+                              />LinkedIn
+                            </h2>
                             <div class="form-com">
-                                <label for="url" class="form-label"
-                                  >Profile link</label
-                                >
-                                <input class="form-control" type="url" placeholder="linkedin.com/jessica.hanson" />
-                              </div>
+                              <label for="url" class="form-label"
+                                >Profile link</label
+                              >
+                              <input
+                                class="form-control"
+                                type="url"
+                                value="linkedin.com/jessica.hanson"
+                              />
+                            </div>
                           </div>
                           <div class="col-lg-12">
-                            <h2 class="web-name-facebook"><img src="/assets/images/facebook.svg" alt="Facebook">Facebook</h2>
+                            <h2 class="web-name-facebook">
+                              <img
+                                src="/assets/images/facebook.svg"
+                                alt="Facebook"
+                              />Facebook
+                            </h2>
                             <div class="form-com">
-                                <label for="url" class="form-label"
-                                  >Profile link</label
-                                >
-                                <input class="form-control" type="url" placeholder="facebook.com/in/jessica.hanson" />
-                              </div>
+                              <label for="url" class="form-label"
+                                >Profile link</label
+                              >
+                              <input
+                                class="form-control"
+                                type="url"
+                                value="facebook.com/in/jessica.hanson"
+                              />
+                            </div>
                           </div>
                           <div class="col-lg-12">
-                            <h2 class="web-name-insta"><img src="/assets/images/instagram.svg" alt="Instagram">Instagram</h2>
+                            <h2 class="web-name-insta">
+                              <img
+                                src="/assets/images/instagram.svg"
+                                alt="Instagram"
+                              />Instagram
+                            </h2>
                             <div class="form-com">
-                                <label for="url" class="form-label"
-                                  >Profile link</label
-                                >
-                                <input class="form-control" type="url" placeholder="instagram.com/jessica.hanson" />
-                              </div>
+                              <label for="url" class="form-label"
+                                >Profile link</label
+                              >
+                              <input
+                                class="form-control"
+                                type="url"
+                                value="instagram.com/jessica.hanson"
+                              />
+                            </div>
                           </div>
                         </div>
                       </form>
                     </div>
                     <div class="update-clear">
-                    <a href="#" class="update-link">Update</a>
-                    <a href="#" class="clear-link">Clear</a>
-                </div>
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
                   </div>
                 </div>
                 <!-- TAB 3 -->
-                <div class="tab-pane fade" id="v-pills-skill" role="tabpanel" aria-labelledby="v-pills-skill-tab" tabindex="0">
-                <div class="basic-info">
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-skill"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-skill-tab"
+                  tabindex="0"
+                >
+                  <div class="basic-info">
                     <h3>Skills</h3>
                     <div class="basic-info-in">
                       <form action="">
@@ -640,10 +723,30 @@ The California Art Festival is a showcase of the best and brightest artists from
                               >
                               <input class="form-control" type="text" />
                               <div class="study-chips">
-                                <h5>HTML<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>CSS<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>Java<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>JavaScript<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>
+                                  HTML<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  CSS<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  Java<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  JavaScript<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
                               </div>
                             </div>
                           </div>
@@ -654,10 +757,30 @@ The California Art Festival is a showcase of the best and brightest artists from
                               >
                               <input class="form-control" type="text" />
                               <div class="study-chips">
-                                <h5>HTML<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>CSS<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>Java<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>JavaScript<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>
+                                  HTML<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  CSS<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  Java<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  JavaScript<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
                               </div>
                             </div>
                           </div>
@@ -668,10 +791,30 @@ The California Art Festival is a showcase of the best and brightest artists from
                               >
                               <input class="form-control" type="text" />
                               <div class="study-chips">
-                                <h5>HTML<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>CSS<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>Java<img src="/assets/images/remove-circle.svg" alt=""></h5>
-                                <h5>JavaScript<img src="/assets/images/remove-circle.svg" alt=""></h5>
+                                <h5>
+                                  HTML<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  CSS<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  Java<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  JavaScript<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
                               </div>
                             </div>
                           </div>
@@ -680,16 +823,20 @@ The California Art Festival is a showcase of the best and brightest artists from
                               <label for="text" class="form-label"
                                 >Soft skills</label
                               >
-                              <input class="form-control" type="text" placeholder="Communication, teamwork, problem-solving, etc." />
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Communication, teamwork, problem-solving, etc."
+                              />
                             </div>
                           </div>
                         </div>
                       </form>
                     </div>
                     <div class="update-clear">
-                    <a href="#" class="update-link">Update</a>
-                    <a href="#" class="clear-link">Clear</a>
-                </div>
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
                   </div>
                 </div>
                 <!-- TAB 4 -->
@@ -700,31 +847,40 @@ The California Art Festival is a showcase of the best and brightest artists from
                   aria-labelledby="v-pills-work-tab"
                   tabindex="0"
                 >
-                <div class="basic-info">
-                    <h3>Basic Information</h3>
+                  <div class="basic-info">
+                    <h3>Work Experience</h3>
                     <div class="basic-info-in">
                       <form action="">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-com">
-                                  <label for="text" class="form-label"
-                                    >Job title</label
-                                  >
-                                  <input class="form-control" type="text" placeholder="Enter Your Job Title" />
-                                </div>
-                              </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Job title</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter Your Job Title"
+                              />
+                            </div>
+                          </div>
                           <div class="col-lg-6">
                             <div class="form-com form-file">
-                              <img src="/assets/images/blank-img.png" alt="" />
+                              <div id="preview">
+                                <img
+                                  id="preview-image"
+                                  src="/assets/images/blank-img.png"
+                                  alt="Preview"
+                                />
+                              </div>
                               <div class="form-ingroup">
-                                <label for="file" class=""
-                                  >Company Logo</label
-                                >
+                                <label for="file" id="file">Company Logo</label>
 
                                 <div class="input-group custom-file-uploader">
                                   <input
                                     type="text"
                                     name="filename"
+                                    id="filename-input"
                                     class="form-control"
                                     placeholder="Format: Jpg, png"
                                     readonly
@@ -732,7 +888,7 @@ The California Art Festival is a showcase of the best and brightest artists from
                                   <input
                                     type="file"
                                     name="file"
-                                    onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''"
+                                    id="file-input"
                                   />
                                   <img
                                     src="/assets/images/attachment.svg"
@@ -747,7 +903,11 @@ The California Art Festival is a showcase of the best and brightest artists from
                               <label for="text" class="form-label"
                                 >Company name</label
                               >
-                              <input class="form-control" type="text" placeholder="Enter your company name" />
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your company name"
+                              />
                             </div>
                           </div>
                           <div class="col-lg-12">
@@ -755,7 +915,11 @@ The California Art Festival is a showcase of the best and brightest artists from
                               <label for="text" class="form-label"
                                 >Company name</label
                               >
-                              <input class="form-control" type="text" placeholder="Enter your company name"/>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your company name"
+                              />
                             </div>
                           </div>
                           <div class="col-lg-6">
@@ -763,7 +927,12 @@ The California Art Festival is a showcase of the best and brightest artists from
                               <label for="trip-start" class="form-label"
                                 >Employment start date</label
                               >
-                              <input class="form-control" type="date" name="trip-start" value="28 March 2009"/>
+                              <input
+                                class="form-control"
+                                type="date"
+                                name="trip-start"
+                                value="28 March 2009"
+                              />
                             </div>
                           </div>
                           <div class="col-lg-6">
@@ -771,7 +940,12 @@ The California Art Festival is a showcase of the best and brightest artists from
                               <label for="trip-end" class="form-label"
                                 >Employment end date</label
                               >
-                              <input class="form-control" type="date" name="trip-end" value="28 March 2020"/>
+                              <input
+                                class="form-control"
+                                type="date"
+                                name="trip-end"
+                                value="28 March 2020"
+                              />
                             </div>
                           </div>
                           <div class="col-lg-12">
@@ -783,29 +957,578 @@ The California Art Festival is a showcase of the best and brightest artists from
                                 class="form-control"
                                 id="exampleFormControlTextarea1"
                                 rows="2"
-                              >The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.</textarea
+                              >
+The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.</textarea
                               >
                             </div>
                           </div>
                         </div>
                       </form>
-                      <a href="#" class="add-more" >+ Add More Fields</a>
+                      <a href="#" class="add-more">+ Add More Fields</a>
                     </div>
                     <div class="update-clear">
-                    <a href="#" class="update-link">Update</a>
-                    <a href="#" class="clear-link">Clear</a>
-                </div>
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
                   </div>
                 </div>
                 <!-- TAB 5 -->
                 <div
                   class="tab-pane fade"
-                  id="v-pills-settings"
+                  id="v-pills-project"
                   role="tabpanel"
-                  aria-labelledby="v-pills-settings-tab"
+                  aria-labelledby="v-pills-project-tab"
                   tabindex="0"
                 >
-                  ...
+                  <div class="basic-info">
+                    <h3>Projects</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Project name</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter Your Project name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Short description</label
+                              >
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="2"
+                              >
+The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.</textarea
+                              >
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Technologies used</label
+                              >
+                              <input class="form-control" type="text" />
+                              <div class="study-chips">
+                                <h5>
+                                  HTML<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  CSS<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  Java<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  JavaScript<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Link to live project or GitHub
+                                repository</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Link"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Project name</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter Your Project name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Short description</label
+                              >
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="2"
+                              >
+The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.</textarea
+                              >
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Technologies used</label
+                              >
+                              <input class="form-control" type="text" />
+                              <div class="study-chips">
+                                <h5>
+                                  HTML<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  CSS<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  Java<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                                <h5>
+                                  JavaScript<img
+                                    src="/assets/images/remove-circle.svg"
+                                    alt=""
+                                  />
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Link to live project or GitHub
+                                repository</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Link"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <a href="#" class="add-more">+ Add More Fields</a>
+                    </div>
+                    <div class="update-clear">
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- TAB 6 -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-education"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-education-tab"
+                  tabindex="0"
+                >
+                  <div class="basic-info">
+                    <h3>Education</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Degree or certification</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Degree or certification"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Institution name</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Institution name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="trip-start" class="form-label"
+                                >Graduation date</label
+                              >
+                              <input
+                                class="form-control"
+                                type="date"
+                                name="trip-start"
+                                value="28 March 2009"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Relevant coursework (optional)</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Relevant coursework"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <a href="#" class="add-more">+ Add More Fields</a>
+                    </div>
+                    <div class="update-clear">
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- TAB 7 -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-award"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-award-tab"
+                  tabindex="0"
+                >
+                  <div class="basic-info">
+                    <h3>Awards and Recognitions</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Award title</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Award title"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Granting organization</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Granting organization"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="trip-start" class="form-label"
+                                >Date received</label
+                              >
+                              <input
+                                class="form-control"
+                                type="date"
+                                name="trip-start"
+                                value="28 March 2009"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Brief description</label
+                              >
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="2"
+                              >
+The California Art Festival is a showcase of the best and brightest artists from across the state. From painters to sculptors, photographers to performance artists, this festival has it all.</textarea
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="update-clear">
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- TAB 8 -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-publication"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-publication-tab"
+                  tabindex="0"
+                >
+                  <div class="basic-info">
+                    <h3>Publications and Talks</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Publication or talk title</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Publication or talk title"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Event or journal name</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Event or journal name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="trip-start" class="form-label"
+                                >Date</label
+                              >
+                              <input
+                                class="form-control"
+                                type="date"
+                                name="trip-start"
+                                value="28 March 2009"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Link to publication or presentation</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Link to publication or presentation"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="update-clear">
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- TAB 9 -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-volunteer"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-volunteer-tab"
+                  tabindex="0"
+                >
+                  <div class="basic-info">
+                    <h3>Volunteer Experience</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Organization name</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Organization name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Volunteer role</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Volunteer role"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="trip-start" class="form-label"
+                                >Period of involvement</label
+                              >
+                              <input
+                                class="form-control"
+                                type="date"
+                                name="trip-start"
+                                value="28 March 2009"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Key activities and contributions</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Key activities and contributions"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <a href="#" class="add-more">+ Add More Fields</a>
+                    </div>
+                    <div class="update-clear">
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- TAB 10 -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-testi"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-testi-tab"
+                  tabindex="0"
+                >
+                  <div class="basic-info">
+                    <h3>Testimonials</h3>
+                    <div class="basic-info-in">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Name of the person</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter Name of the person providing the testimonial"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Role of the person</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter  role of the person providing the testimonial"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-com form-file">
+                              <div id="preview">
+                                <img
+                                  id="preview-image"
+                                  src="/assets/images/blank-img.png"
+                                  alt="Preview"
+                                />
+                              </div>
+                              <div class="form-ingroup">
+                                <label for="file" id="file"
+                                  >Photo or avatar (optional)</label
+                                >
+
+                                <div class="input-group custom-file-uploader">
+                                  <input
+                                    type="text"
+                                    name="filename"
+                                    id="filename-input"
+                                    class="form-control"
+                                    placeholder="Format: Jpg, png"
+                                    readonly
+                                  />
+                                  <input
+                                    type="file"
+                                    name="file"
+                                    id="file-input"
+                                  />
+                                  <img
+                                    src="/assets/images/attachment.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-com">
+                              <label for="text" class="form-label"
+                                >Quotes from clients, managers, or
+                                colleagues</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your Quotes from clients, managers, or colleagues"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="update-clear">
+                      <a href="#" class="update-link">Update</a>
+                      <a href="#" class="clear-link">Clear</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

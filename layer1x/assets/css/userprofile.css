@@ -225,7 +225,7 @@ header {
   background-size: contain;
   width: 245px;
   height: 288px;
-  top: 35%;
+  bottom: 0;
 }
 .common-user {
   width: calc(100% - 245px);
@@ -448,6 +448,11 @@ form .form-select:focus {
   outline: 0;
   box-shadow: 0 0 0 0;
 }
+.custom-file-uploader > .form-control:focus,
+.custom-file-uploader > .form-floating:focus-within,
+.custom-file-uploader > .form-select:focus {
+  z-index: auto;
+}
 
 .form-floating > .form-control-plaintext ~ label::after,
 .form-floating > .form-control:focus ~ label::after,
@@ -458,6 +463,10 @@ form .form-select:focus {
 .form-floating > label {
   padding: 12px 0;
 }
+/* .custom-label {
+  background-color: #f1f1f1; 
+  padding: 5px;
+} */
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select {
@@ -466,11 +475,10 @@ form .form-select:focus {
 }
 .form-com label,
 .form-group label {
-  font-size: 14px;
-  font-family: Manrope;
-  font-weight: 500;
-  color: #d9d9de;
-  letter-spacing: 0.28px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #808095;
+  letter-spacing: 0.24px;
   margin-bottom: 0;
 }
 .form-floating > .form-control-plaintext:focus,
@@ -493,6 +501,23 @@ form .form-select:focus {
   align-items: center;
   gap: 12px;
 }
+
+#preview {
+  position: relative;
+  height: 60px;
+  width: 60px;
+}
+#preview img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  min-height: 100%;
+}
+
 .form-ingroup .input-group .fileicon {
   position: absolute;
   right: 0;
@@ -503,20 +528,17 @@ form .form-select:focus {
 }
 .custom-file-uploader img {
   position: absolute;
-  position: absolute;
   right: 15px;
   top: 15px;
 }
 .custom-file-uploader input[type="file"] {
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 30%;
+  right: 16px;
   z-index: 5;
-  width: 100%;
-  height: 100%;
+  width: 16px;
+  height: 16px;
   opacity: 0;
   cursor: default;
 }
@@ -548,9 +570,13 @@ form .form-select:focus {
   display: flex;
   gap: 10px;
 }
-/* .form input::placeholder{
-  color: rgba(217, 217, 222, 0.5);
-} */
+::placeholder {
+  color: rgba(217, 217, 222, 1) !important;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+}
+
 
 /* TAB 2 */
 .web-name-git,
@@ -608,16 +634,15 @@ form .form-select:focus {
 }
 
 /* TAB 3 */
-
- .study-chips{
+.study-chips {
   position: absolute;
   display: flex;
   bottom: 12px;
   gap: 10px;
 }
-.study-chips h5{
+.study-chips h5 {
   font-size: 12px;
-  color:  #4E1FA3;
+  color: #4e1fa3;
   letter-spacing: 0.24px;
   display: flex;
   gap: 10px;
@@ -627,15 +652,11 @@ form .form-select:focus {
 }
 
 /* TAB 4   */
-.basic-info-in .add-more{
-  color: #4E1FA3;
+.basic-info-in .add-more {
+  color: #4e1fa3;
   font-size: 12px;
   letter-spacing: 0.24px;
 }
-
-
-
-
 
 @media screen and (max-width: 1280px) {
   .search input {
