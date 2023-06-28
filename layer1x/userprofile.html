@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="path/to/flatpickr.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,6 +25,7 @@
 
     <link href="assets/css/userprofile.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/styrenealc.css" />
+    
   </head>
 
   <body>
@@ -193,8 +195,8 @@
           </div>
 
           <div class="contact-details">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-6">
+            <div class="row d-flex align-items-center gy-md-0 gy-3">
+              <div class="col-lg-6 col-md-6">
                 <div class="contact-com">
                   <img
                     src="/assets/images/profile.png"
@@ -204,8 +206,7 @@
                   <div class="contact-comone">
                     <h2>Jessica Hanson <span>( Open to work )</span></h2>
 
-                    <div class="row user-progres">
-                      <div class="col-lg-12 d-flex align-items-center gap-3">
+                      <div class="user-progres d-flex align-items-center gap-3">
                         <div
                           class="progress"
                           role="progressbar"
@@ -218,11 +219,10 @@
                         </div>
                         <span>75%</span>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-md-6">
                 <div class="contact-share">
                   <div class="dropdown">
                     <a
@@ -236,7 +236,7 @@
                         src="/assets/images/share-icon.svg"
                         alt="share-icon"
                       />
-                      Share Resume
+                      <span>Share Resume</span>
                     </a>
 
                     <ul class="dropdown-menu">
@@ -286,7 +286,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3">
               <div class="v-tabs">
                 <div
                   class="nav flex-column nav-pills"
@@ -429,7 +429,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-9">
               <div class="tab-content" id="v-pills-tabContent">
                 <!-- TAB 1 -->
                 <div
@@ -721,32 +721,12 @@ The California Art Festival is a showcase of the best and brightest artists from
                               <label for="text" class="form-label"
                                 >Programming languages</label
                               >
-                              <input class="form-control" type="text" />
-                              <div class="study-chips">
-                                <h5>
-                                  HTML<img
-                                    src="/assets/images/remove-circle.svg"
-                                    alt=""
-                                  />
-                                </h5>
-                                <h5>
-                                  CSS<img
-                                    src="/assets/images/remove-circle.svg"
-                                    alt=""
-                                  />
-                                </h5>
-                                <h5>
-                                  Java<img
-                                    src="/assets/images/remove-circle.svg"
-                                    alt=""
-                                  />
-                                </h5>
-                                <h5>
-                                  JavaScript<img
-                                    src="/assets/images/remove-circle.svg"
-                                    alt=""
-                                  />
-                                </h5>
+                              <input class="form-control" type="text" id="txt"/>
+                              <div class="study-chips" id="list">
+                                <h5>HTML</h5>
+                                <h5>CSS</h5>
+                                <h5>Java</h5>
+                                <h5>JavaScript</h5>
                               </div>
                             </div>
                           </div>
@@ -931,7 +911,7 @@ The California Art Festival is a showcase of the best and brightest artists from
                                 class="form-control"
                                 type="date"
                                 name="trip-start"
-                                value="28 March 2009"
+                                value="2009-03-28"
                               />
                             </div>
                           </div>
@@ -944,7 +924,7 @@ The California Art Festival is a showcase of the best and brightest artists from
                                 class="form-control"
                                 type="date"
                                 name="trip-end"
-                                value="28 March 2020"
+                                value="2020-03-28"
                               />
                             </div>
                           </div>
@@ -1538,7 +1518,9 @@ The California Art Festival is a showcase of the best and brightest artists from
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+ 
     <script src="assets/js/userprofile.js"></script>
   </body>
 </html>
