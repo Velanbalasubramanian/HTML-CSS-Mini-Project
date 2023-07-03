@@ -32,23 +32,63 @@ $(document).ready(function(){
 
   // INPUT CHIPS - SKILL
 
-  function togglePlaceholderAndLabel() {
-    var input = document.getElementById("floatingInput");
-    var label = document.getElementById("developerLabel");
+  // function togglePlaceholderAndLabel() {
+  //   var input = document.getElementById("floatingInput");
+  //   var label = document.getElementById("developerLabel");
     
-    if (input.checked) {
-      input.classList.add("hide-placeholder");
-      label.classList.add("hide-label");
-    } else {
-      input.classList.remove("hide-placeholder");
-      label.classList.remove("hide-label");
-    }
-  }
+  //   if (input.checked) {
+  //     input.classList.add("hide-placeholder");
+  //     label.classList.add("hide-label");
+  //   } else {
+  //     input.classList.remove("hide-placeholder");
+  //     label.classList.remove("hide-label");
+  //   }
+  // }
+
+
+  // var txt = document.getElementById('txt');
+  // var list = document.getElementById('list');
+  // var items = ['HTML', 'CSS', 'Java', 'Javascript'];
+  
+  // txt.addEventListener('keypress', function(e) {
+  //   if (e.key === 'Enter') {
+  //     let val = txt.value;
+  //     if (val !== '') {
+  //       if (items.indexOf(val) >= 0) {
+  //         alert('Tag name is a duplicate');
+  //       } else {
+  //         items.push(val);
+  //         render();
+  //         txt.value = '';
+  //         txt.focus();
+  //       }
+  //     } else {
+  //       alert('Please type a tag Name');
+  //     }
+  //   }
+  // });
+  
+  // function render() {
+  //   list.innerHTML = '';
+  //   items.map((item, index) => {
+  //     list.innerHTML += `<h5><span>${item}</span><a href="javascript: remove(${index})"><img src="/assets/images/remove-circle.svg"/></a></h5>`;
+  //   });
+  // }
+  
+  // function remove(i) {
+  //   items = items.filter(item => items.indexOf(item) != i);
+  //   render();
+  // }
+  
+  // window.onload = function() {
+  //   render();
+  //   txt.focus();
+  // }
 
 
   var txt = document.getElementById('txt');
   var list = document.getElementById('list');
-  var items = ['HTML', 'CSS', 'Java', 'Javascript'];
+  var items = ['HTML', 'HTML/CSS','Javascript'];
   
   txt.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
@@ -71,7 +111,7 @@ $(document).ready(function(){
   function render() {
     list.innerHTML = '';
     items.map((item, index) => {
-      list.innerHTML += `<h5><span>${item}</span><a href="javascript: remove(${index})"><img src="/assets/images/remove-circle.svg"/></a></h5>`;
+      list.innerHTML += `<li><span>${item}</span><a href="javascript: remove(${index})"><img src="/assets/images/remove-circle.svg"/></a></li>`;
     });
   }
   
@@ -86,3 +126,11 @@ $(document).ready(function(){
   }
 
 
+  // $(function () {
+  //   $('.datepicker').datepicker({
+  //     language: "es",
+  //     autoclose: true,
+  //     format: "dd/MM/yyyy"
+  //   });
+  // });
+  
