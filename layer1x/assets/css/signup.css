@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin-bottom: 0;
+  }
+  body {
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .signup{
+    position: relative;
+    /* background: url("/assets/images/signup-bg.png"), rgba(14, 14, 44, 1); */
+    background-image: url("/assets/images/vertical-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 72px;
+    padding-left: 72px;
+  }   
+  .signup::before{
+    content: " ";
+    background-image: url(/assets/images/signup-curve.png);
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    height: 466px;
+    right: -70px;
+  }
+  .signup img{
+    width: 125px;
+  }
+  .signup h1{
+    color:  #FFF;
+    font-size: 60px;
+    font-family: "StyreneALC";
+    font-style: italic;
+    letter-spacing: -2.4px;
+    padding-top: 96px;
+    padding-bottom: 13px;
+    font-weight: normal;
+    width: 70%;
+  }
+  .form-head{
+    padding-top: 100px;
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  .form-head h2{
+    font-size: 40px;
+    font-family: "StyreneALC";
+    font-weight: 500;
+    letter-spacing: -1.6px;
+    text-align: center;
+  }
+  .form-head p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color:  #808095;
+    padding-top: 10px;
+    text-align: center;
+  }
+  form{
+    padding-top: 60px;
+    padding-bottom: 89px;
+  }
+  .form-com{
+    position: relative;
+  }
+  .form-com label{
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #808095;
+    letter-spacing: 0.28px;
+    padding-bottom: 9.5px;
+  }
+  .form-com label::after{
+    content: "*";
+    position: absolute;
+    color: #E11900;
+  }
+  .form-com input{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+    color: #0E0E2C;
+    padding: 14.5px 19.5px 12.5px 19.5px;
+    margin-bottom: 24.5px;
+  }
+  .formlog button{
+    background-color: rgba(14, 14, 44, 1);
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    padding: 13px 0 12px 0;
+    border: 0;
+    border-radius: 12px;
+  }
+  .formlog button:hover{
+    background-color: rgba(121, 0, 255, 1);
+  }
+  .form-control:focus {
+    border-color: rgba(121, 0, 255, 1);
+    box-shadow: 0 0 0 0rem;
+    }
+  .formlog{
+    padding-top: 60px;
+  }
+  .form-condition{
+    padding-top: 24px;
+  }
+  .form-condition p{
+    color: #808095;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+  }
+  .form-condition p a{
+    color: rgba(14, 14, 44, 1);
+    font-weight: 600;
+  }
+  .form-condition p a:hover{
+    color: rgba(121, 0, 255, 1);
+  }
+  .form-check-input:checked {
+    background-color: rgba(121, 0, 255, 1);
+    border-color: rgba(121, 0, 255, 1);
+    }
+    .form-eye{
+        position: relative;
+    }
+    .eye-imgs{
+        position: absolute;
+        bottom: 34px;
+        right: 24px;
+        font-size: 20px;
+        color: rgba(128, 128, 149, 1);
+        z-index: 2;
+    }
+
