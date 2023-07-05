@@ -1,168 +1,463 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin-bottom: 0;
+}
+body {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.signup {
+  position: relative;
+  /* background: url("/assets/images/signup-bg.png"), rgba(14, 14, 44, 1); */
+  background-image: url("/assets/images/vertical-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 72px;
+  padding-left: 72px;
+}
+/* .signup::before {
+  content: " ";
+  background-image: url(/assets/images/signup-curve.png);
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  height: 466px;
+  right: -70px;
+} */
+.bg-img1 {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+}
+.signup h1 {
+  color: #fff;
+  font-size: 60px;
+  font-family: "StyreneALC";
+  font-style: italic;
+  letter-spacing: -2.4px;
+  padding-top: 96px;
+  padding-bottom: 13px;
+  font-weight: normal;
+}
+.form-head {
+  padding-top: 100px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 89px;
+}
+.form-head h2 {
+  font-size: 40px;
+  font-family: "StyreneALC";
+  font-weight: 600;
+  letter-spacing: -1.6px;
+  text-align: center;
+}
+.form-head > p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: #808095;
+  padding-top: 10px;
+  text-align: center;
+}
+form {
+  padding-top: 60px;
+}
+.form-com {
+  position: relative;
+}
+.form-com label {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #808095;
+  letter-spacing: 0.28px;
+  padding-bottom: 9.5px;
+}
+.form-com label::after {
+  content: "*";
+  position: absolute;
+  color: #e11900;
+}
+.form-com .form-control {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  color: #0e0e2c;
+  padding: 14.5px 19.5px 12.5px 19.5px;
+  /* margin-bottom: 24.5px; */
+}
+.formlog button {
+  background-color: rgba(14, 14, 44, 1);
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+  padding: 13px 0 12px 0;
+  border: 0;
+  border-radius: 12px;
+}
+.formlog button:hover {
+  background-color: rgba(121, 0, 255, 1);
+}
+.form-control:focus {
+  border-color: rgba(121, 0, 255, 1);
+  box-shadow: 0 0 0 0rem;
+}
+.formlog {
+  padding-top: 60px;
+}
+.form-condition {
+  padding-top: 24px;
+}
+.form-condition p {
+  color: rgba(14, 14, 44, 1);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+.form-condition p a {
+  color: rgba(14, 14, 44, 1);
+  font-weight: 600;
+}
+.form-condition p a:hover {
+  color: rgba(121, 0, 255, 1);
+}
+.form-check-input:checked {
+  background-color: rgba(121, 0, 255, 1);
+  border-color: rgba(121, 0, 255, 1);
+}
+.form-eye {
+  position: relative;
+}
+.eye-imgs {
+  position: absolute;
+  bottom: 10px;
+  right: 24px;
+  font-size: 20px;
+  color: rgba(128, 128, 149, 1);
+  z-index: 2;
+}
+.filecom {
+  position: relative;
+  display: flex;
+  gap: 12px;
+}
+.fileupload {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid rgba(121, 0, 255, 0.25);
+  top: -10px;
+  display: flex;
+  background: rgba(121, 0, 255, 0.05);
+}
+.fileupload:hover {
+  border: 1px solid #dee2e6;
+}
+.fileupload #file-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  top: 0;
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: rgba(121, 0, 255, 1);
+}
+.close-file-btn {
+  margin-left: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+input::placeholder {
+  color: #bfbfbf;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+.form-check label {
+  color: #231f1b;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  padding-left: 9px;
+}
+.form-check input {
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+}
+.l1x-imgs {
+  width: 125px;
+}
+@media screen and (max-width: 1340px) {
+  .form-head {
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
-  a {
-    text-decoration: none;
-  }
-  a {
-    text-decoration: none;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    padding: 0;
-  }
-  ul {
-    margin-bottom: 0;
-  }
-  body {
-    font-family: "Manrope", Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-  }
-  p {
-    padding: 0;
-    margin: 0;
-  }
-  .signup{
-    position: relative;
-    /* background: url("/assets/images/signup-bg.png"), rgba(14, 14, 44, 1); */
-    background-image: url("/assets/images/vertical-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 72px;
-    padding-left: 72px;
-  }   
-  .signup::before{
-    content: " ";
-    background-image: url(/assets/images/signup-curve.png);
-    position: absolute;
-    bottom: 0;
-    width: 600px;
-    height: 466px;
-    right: -70px;
-  }
-  .signup img{
-    width: 125px;
-  }
-  .signup h1{
-    color:  #FFF;
-    font-size: 60px;
-    font-family: "StyreneALC";
-    font-style: italic;
-    letter-spacing: -2.4px;
-    padding-top: 96px;
-    padding-bottom: 13px;
-    font-weight: normal;
-    width: 70%;
-  }
-  .form-head{
-    padding-top: 100px;
-    padding-left: 15rem;
-    padding-right: 15rem;
-  }
-  .form-head h2{
-    font-size: 40px;
-    font-family: "StyreneALC";
-    font-weight: 500;
-    letter-spacing: -1.6px;
-    text-align: center;
-  }
-  .form-head p{
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-    color:  #808095;
-    padding-top: 10px;
-    text-align: center;
-  }
-  form{
-    padding-top: 60px;
-    padding-bottom: 89px;
-  }
-  .form-com{
-    position: relative;
-  }
-  .form-com label{
-    position: relative;
-    font-size: 14px;
-    font-weight: 400;
-    color: #808095;
-    letter-spacing: 0.28px;
-    padding-bottom: 9.5px;
-  }
-  .form-com label::after{
-    content: "*";
-    position: absolute;
-    color: #E11900;
-  }
-  .form-com input{
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.32px;
-    color: #0E0E2C;
-    padding: 14.5px 19.5px 12.5px 19.5px;
-    margin-bottom: 24.5px;
-  }
-  .formlog button{
-    background-color: rgba(14, 14, 44, 1);
-    color: #FFF;
-    text-align: center;
+  .form-head > p {
     font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0.36px;
-    padding: 13px 0 12px 0;
-    border: 0;
-    border-radius: 12px;
   }
-  .formlog button:hover{
-    background-color: rgba(121, 0, 255, 1);
+  .signup h1 {
+    font-size: 50px;
   }
-  .form-control:focus {
-    border-color: rgba(121, 0, 255, 1);
-    box-shadow: 0 0 0 0rem;
-    }
-  .formlog{
-    padding-top: 60px;
+  .form-head h2 {
+    font-size: 35px;
   }
-  .form-condition{
-    padding-top: 24px;
+  .bg-img1 img {
+    max-width: 450px;
   }
-  .form-condition p{
-    color: #808095;
-    text-align: center;
+}
+@media screen and (max-width: 1280px) {
+  .form-head {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .form-head > p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .form-head {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 80px;
+  }
+  form {
+    padding-top: 40px;
+  }
+  .formlog {
+    padding-top: 40px;
+  }
+  .signup {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  .form-com .form-control {
+    font-size: 13px;
+    padding: 12.5px 19.5px 12.5px 14.5px;
+  }
+  input::placeholder {
+    font-size: 13px;
+  }
+  .form-com label {
+    font-size: 12px;
+    padding-bottom: 7.5px;
+  }
+  .form-check label {
+    font-size: 14px;
+    padding-left: 6px;
+  }
+  .formlog button {
     font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.32px;
+    padding: 10px 0 10px 0;
+    border-radius: 8px;
   }
-  .form-condition p a{
-    color: rgba(14, 14, 44, 1);
-    font-weight: 600;
+  .form-condition p {
+    font-size: 14px;
   }
-  .form-condition p a:hover{
-    color: rgba(121, 0, 255, 1);
+  .eye-imgs {
+    font-size: 16px;
   }
-  .form-check-input:checked {
-    background-color: rgba(121, 0, 255, 1);
-    border-color: rgba(121, 0, 255, 1);
-    }
-    .form-eye{
-        position: relative;
-    }
-    .eye-imgs{
-        position: absolute;
-        bottom: 34px;
-        right: 24px;
-        font-size: 20px;
-        color: rgba(128, 128, 149, 1);
-        z-index: 2;
-    }
-
+  .form-head > p {
+    font-size: 15px;
+  }
+  .form-check input {
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+  }
+  .l1x-imgs {
+    width: 105px;
+  }
+  .bg-img1 img {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .signup h1 {
+    font-size: 40px;
+  }
+  .signup {
+    padding-left: 35px;
+  }
+  .form-head {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .form-head h2 {
+    font-size: 30px;
+  }
+  .l1x-imgs {
+    width: 95px;
+  }
+  .bg-img1 img {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l1x-imgs {
+    width: 80px;
+  }
+  .bg-img1 {
+    right: 0%;
+  }
+  .bg-img1 img {
+    max-width: 250px;
+  }
+  .signup h1 {
+    font-size: 35px;
+    padding-top: 70px;
+  }
+  .form-head {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .form-head h2 {
+    font-size: 25px;
+  }
+  form {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .l1x-imgs {
+    width: 70px;
+  }
+  .signup {
+    padding-top: 30px;
+  }
+  .signup h1 {
+    font-size: 25px;
+    padding-top: 50px;
+  }
+  .bg-img1 img {
+    max-width: 200px;
+  }
+  .form-head {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .form-head h2 {
+    font-size: 20px;
+  }
+  .form-head > p {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  form {
+    padding-top: 20px;
+  }
+  .form-com .form-control {
+    font-size: 13px;
+    padding: 10.5px 18.5px 10.5px 12.5px;
+    border-radius: 6px;
+  }
+  .form-com label {
+    font-size: 11px;
+    padding-bottom: 6.5px;
+  }
+  input::placeholder {
+    font-size: 13px;
+  }
+  .form-check label {
+    font-size: 13px;
+    padding-left: 3px;
+  }
+  .fileupload {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .formlog button {
+    font-size: 15px;
+    padding: 9px 0 9px 0;
+    border-radius: 6px;
+  }
+  .formlog {
+    padding-top: 30px;
+  }
+  .form-condition {
+    padding-top: 12px;
+  }
+  .form-condition p {
+    font-size: 13px;
+  }
+  .fileupload img {
+    width: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .l1x-imgs {
+    width: 60px;
+  }
+  .signup {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .bg-img1 img {
+    max-width: 150px;
+  }
+  .signup h1 {
+    font-size: 22px;
+    padding-top: 40px;
+  }
+  .form-head {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .fileupload {
+    top: -8px;
+  }
+  .form-head > p {
+    font-size: 13px;
+  }
+  form {
+    padding-top: 15px;
+  }
+  .formlog button {
+    font-size: 14px;
+  }
+}
