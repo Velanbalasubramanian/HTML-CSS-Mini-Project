@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L1X Event-ticket</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="assets/css/event-ticket.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/styrenealc.css" />
+  </head>
+
+  <body>
+    <div class="user-project-details">
+      <div class="common-vertical">
+        <div class="common-details">
+          <div class="l1x-labs-link text-center">
+            <a href="#" class=""
+              ><img
+                src="/assets/images/l1x-labs.png"
+                alt="l1x-labs"
+                class="img-fluid"
+            /></a>
+            <hr />
+          </div>
+          <ul class="vertical-unorder">
+            <li class="active">
+              <a href="#"><i class="bi bi-grid"></i> <span>Dashboard</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-file-text"></i> <span>Events</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-lock"></i> <span>Hackathon</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-folder"></i> <span>Projects</span></a>
+            </li>
+            <hr />
+          </ul>
+          <ul class="vertical-unorder">
+            <li>
+              <a href="#"
+                ><i class="bi bi-bell"></i> <span>Notifications</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-envelope"></i> <span>Messages</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-gear"></i> <span>Settings</span></a>
+            </li>
+            <hr />
+          </ul>
+          <ul class="vertical-unorder">
+            <li>
+              <a href="#"
+                ><i class="bi bi-shield-exclamation"></i>
+                <span>Knowledge Base</span></a
+              >
+            </li>
+            <hr />
+          </ul>
+        </div>
+      </div>
+      <div class="common-user">
+        <header>
+          <nav class="">
+            <div class="navbar">
+              <form class="" role="search">
+                <div class="search">
+                  <img
+                    src="/assets/images/search.svg"
+                    class="search-img"
+                    alt="search"
+                  />
+                  <input placeholder="Quick Search..." />
+                </div>
+              </form>
+
+              <ul class="nav-unorder">
+                <li>
+                  <a href="#"
+                    ><img src="/assets/images/mail.svg" alt="mail" class="mail"
+                  /></a>
+                </li>
+                <li>
+                  <img
+                    src="/assets/images/notification-one.svg"
+                    alt="notification"
+                    class="notification img-fluid"
+                  />
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="/assets/images/profile.png"
+                        alt="profile"
+                        class="img-fluid profile"
+                      />
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <h4>Jessica Hanson</h4>
+                        <a class="client-mail" href="#"
+                          >jessica.hanson@blockchain.com</a
+                        >
+                      </li>
+                      <hr />
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-person-circle"></i> View Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-file-text"></i> My Events</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-lock"></i> My Hackathon</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-folder"></i> My Projects</a
+                        >
+                      </li>
+                      <hr />
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-journal-text"></i>FAQ</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-box-arrow-right"></i> Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <section class="view-myproject">
+          <div class="back">
+            <a href="#" class="btnstyleone"
+              ><img src="/assets/images/backtoproject.svg" alt="" />Back to
+              Events</a
+            >
+            <a href="#" class="btnview">View My Events</a>
+          </div>
+
+          <div class="breadcrumb-common" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="#">Events</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#">#23145</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="event-one">
+                <img
+                  src="/assets/images/events-imgs.png"
+                  alt="events-imgs"
+                  class="img-fluid events-img"
+                />
+                <h1 class="common-space">
+                  California Art Festival: 2023 Dana Point 29-30 May one hour
+                  online session
+                </h1>
+                <div class="event-vone common-space">
+                  <div class="event-view-in">
+                    <span
+                      ><img
+                        src="/assets/images/calendar-create.svg"
+                        alt="calendar-create"
+                      />Event Date</span
+                    >
+                    <h5>May 29, 2023</h5>
+                  </div>
+                  <div class="vr"></div>
+                  <div class="event-view-in">
+                    <span
+                      ><img
+                        src="/assets/images/location-create.svg"
+                        alt="location-create"
+                      />
+                      Location</span
+                    >
+                    <h5>California, USA</h5>
+                  </div>
+                  <div class="vr"></div>
+                  <div class="event-view-in">
+                    <span
+                      ><img
+                        src="/assets/images/location-create.svg"
+                        alt="location-create"
+                      />
+                      Event Type</span
+                    >
+                    <h5>Online Event</h5>
+                  </div>
+                </div>
+                <div class="event-desciption">
+                  <h4>Event Description</h4>
+                  <p class="common-space">
+                    The California Art Festival is a showcase of the best and
+                    brightest artists from across the state. From painters to
+                    sculptors, photographers to performance artists, this
+                    festival has it all. It's a chance for artists to come
+                    together and share their work with the world, and for art
+                    lovers to experience the beauty and diversity of
+                    California's art scene.
+                    <span>
+                      One of the things that makes the California Art Festival
+                      so special is the incredible range of styles and mediums
+                      on display. You'll see everything from traditional oil
+                      paintings to cutting-edge digital art, from abstract
+                      sculptures to intricate installations.</span
+                    >
+                  </p>
+                </div>
+                <div class="event-desciption">
+                  <h4>Event Agenda</h4>
+                  <div class="common-space agenda-pad">
+                    <ul class="agenda-unorder">
+                      <li>29-May-2023</li>
+                      <li>09.00 - 09.30 PM</li>
+                      <li>Introduction of arts</li>
+                    </ul>
+                    <ul class="agenda-unorder">
+                      <li>29-May-2023</li>
+                      <li>09.30 - 10.30 PM</li>
+                      <li>Tips to improve arts</li>
+                    </ul>
+                    <ul class="agenda-unorder">
+                      <li>30-May-2023</li>
+                      <li>09.00 - 10.30 PM</li>
+                      <li>Digital arts skills</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="event-desciption">
+                  <h4>Speakers</h4>
+                  <div class="common-space event-speakers">
+                    <img src="/assets/images/speaker1.png" alt="" />
+                    <img src="/assets/images/speaker2.png" alt="" />
+                    <img src="/assets/images/speaker3.png" alt="" />
+                    <img src="/assets/images/speaker4.png" alt="" />
+                    <img src="/assets/images/speaker5.png" alt="" />
+                  </div>
+                </div>
+                <div class="contact-vone common-space">
+                  <div class="contact-view-in">
+                    <img src="/assets/images/speakers-imgs1.png" alt="" />
+                    <div class="speaker-name">
+                      <span
+                        ><img
+                          src="/assets/images/calendar-create.svg"
+                          alt="calendar-create"
+                        />Speaker</span
+                      >
+                      <h5>Jessica Hanson</h5>
+                    </div>
+                  </div>
+                  <div class="vr"></div>
+                  <div class="contact-view-in">
+                    <div class="speaker-name">
+                      <span
+                        ><img
+                          src="/assets/images/location-create.svg"
+                          alt="location-create"
+                        />LinkedIn</span
+                      >
+                      <h5>jessica.hanson</h5>
+                    </div>
+                  </div>
+                  <div class="vr"></div>
+                  <div class="contact-view-in">
+                    <div class="speaker-name">
+                      <span
+                        ><img
+                          src="/assets/images/location-create.svg"
+                          alt="location-create"
+                        />Designation</span
+                      >
+                      <h5>Creative Art Director</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="event-desciption">
+                  <h4>Tags</h4>
+                  <div class="common-space event-speakers">
+                    <h5>Online Events</h5>
+                    <h5>Online Seminars</h5>
+                    <h5>Art Events</h5>
+                    <h5>Art Festival</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="event-vtwo common-space1">
+                <div class="event-view1">
+                  <span
+                    ><img
+                      src="/assets/images/calendar-create.svg"
+                      alt="calendar-create"
+                    />Start Date</span
+                  >
+                  <h3>Thu, May 29</h3>
+                </div>
+                <div class="event-view1">
+                  <span
+                    ><img
+                      src="/assets/images/calendar-create.svg"
+                      alt="calendar-create"
+                    />End Date</span
+                  >
+                  <h3>Fri, May 30</h3>
+                </div>
+              </div>
+              <div class="event-vtwo common-space1">
+                <div class="event-view1">
+                  <span
+                    ><img
+                      src="/assets/images/alarm-check.svg"
+                      alt="alarm-check"
+                    />Starts At</span
+                  >
+                  <h3>9:30 PM IST</h3>
+                </div>
+                <div class="event-view1">
+                  <span
+                    ><img
+                      src="/assets/images/alarm-check.svg"
+                      alt="alarm-check"
+                    />Ends At</span
+                  >
+                  <h3>10:30 PM IST</h3>
+                </div>
+              </div>
+              <div class="event-vtwo common-space1">
+                <div class="event-view1">
+                  <span
+                    ><img
+                      src="/assets/images/available-users.svg"
+                      alt="available-users"
+                    />Registered</span
+                  >
+                  <h3>44 Seats</h3>
+                </div>
+                <div class="event-view1">
+                  <span
+                    ><img
+                      src="/assets/images/available-users.svg"
+                      alt="available-users"
+                    />Available</span
+                  >
+                  <h3>66 Seats</h3>
+                </div>
+              </div>
+              <div class="event-vtwo common-space1">
+                <div class="event-view1">
+                  <span
+                    ><img
+                      src="/assets/images/available-users.svg"
+                      alt="available-users"
+                    />Location</span
+                  >
+                  <h3>10115 5th St, Delhi, CA 95315, United States</h3>
+                  <a href="#" class="see-location">See Location on map</a>
+                </div>
+              </div>
+              <div class="event-v common-space1">
+                <div class="event-viewbtn">
+                  <a href="#" class="approve-btn">Approved</a>
+                  <a href="#" class="ticket-btn">Download Ticket</a>
+                </div>
+              </div>
+
+              <div class="common-space1">
+                <div class="dropdown contact-share">
+                  <a
+                    class=""
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="/assets/images/share-icon.svg" alt="share-icon" />
+                    <span>Share Resume</span>
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="bi bi-instagram"></i> Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="bi bi-twitter"></i> Twitter</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 upcoming-events">
+              <div class="upcoming-title">
+                <h4>Upcoming Events</h4>
+                <a href="#">See All</a>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="up-events">
+                    <img
+                      src="/assets/images/upcoming-img1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="events-calendar">
+                      <h5>29</h5>
+                      <span>Mar</span>
+                    </div>
+
+                    <div class="events-content">
+                      <div class="events-content1">
+                        <h3>
+                          Creative self care: Guide to Intuitive 3D Course
+                        </h3>
+                        <div class="events-timebtn">
+                          <p>
+                            New York<img
+                              src="/assets/images/events-dot.svg"
+                              alt="events-dot"
+                              class="img-fluid"
+                            />
+                            07:00 PM
+                          </p>
+                          <a href="#" class="btn"> View</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="up-events">
+                    <img
+                      src="/assets/images/upcoming-img2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="events-calendar">
+                      <h5>29</h5>
+                      <span>Mar</span>
+                    </div>
+                    <div class="events-content">
+                      <div class="events-content1">
+                        <h3>
+                          Creative self care: Guide to Intuitive 3D Course
+                        </h3>
+                        <div class="events-timebtn">
+                          <p>
+                            New York<img
+                              src="/assets/images/events-dot.svg"
+                              alt="events-dot"
+                              class="img-fluid"
+                            />
+                            07:00 PM
+                          </p>
+                          <a href="#" class="btn"> View</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="up-events">
+                    <img
+                      src="/assets/images/upcoming-img3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="events-calendar">
+                      <h5>29</h5>
+                      <span>Mar</span>
+                    </div>
+                    <div class="events-content">
+                      <div class="events-content1">
+                        <h3>
+                          Creative self care: Guide to Intuitive illustration
+                        </h3>
+                        <div class="events-timebtn">
+                          <p>
+                            New York<img
+                              src="/assets/images/events-dot.svg"
+                              alt="events-dot"
+                              class="img-fluid"
+                            />
+                            07:00 PM
+                          </p>
+                          <a href="#" class="btn"> View</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="up-events">
+                    <img
+                      src="/assets/images/upcoming-img4.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="events-calendar">
+                      <h5>29</h5>
+                      <span>Mar</span>
+                    </div>
+                    <div class="events-content">
+                      <div class="events-content1">
+                        <h3>
+                          Creative self care: Guide to Intuitive illustration
+                        </h3>
+                        <div class="events-timebtn">
+                          <p>
+                            New York<img
+                              src="/assets/images/events-dot.svg"
+                              alt="events-dot"
+                              class="img-fluid"
+                            />
+                            07:00 PM
+                          </p>
+                          <a href="#" class="btn"> View</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script src="assets/js/userprofile.js"></script>
+  </body>
+</html>
