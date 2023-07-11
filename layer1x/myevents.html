@@ -177,12 +177,12 @@
               ><img src="/assets/images/backtoproject.svg" alt="" />Back to
               Events</a
             >
-            <div class="d-flex gap-3">
+            <div class="d-flex gap-3 md:flex-nowrap flex-wrap">
               <div class="select">
                 <select class="sel-one">
                   <option value="1">Any Date</option>
                   <option value="2">Any Date1</option>
-                  <option value="3">Any Date<2/option>
+                  <option value="3">Any Date2</option>
                 </select>
               </div>
               <div class="select">
@@ -192,15 +192,15 @@
                   <option value="3">Any Category2</option>
                 </select>
               </div>
-              <div class="select">
-                <h5>Sort by:</h5>
-                <select class="sel-three">
+              <div class="select input-group">
+                <label class="input-group-text" for="inputGroupSelect01">Sort by:</label>
+                <select class="sel-three" id="inputGroupSelect01">
                   <option value="1">Upcoming Events</option>
-                  <option value="2">Upcoming events</option>
+                  <option value="2">Upcoming events1</option>
                   <option value="3">Past Events</option>
                 </select>
               </div>
-              
+
               <!-- <select class="form-select sel-one" aria-label="Default select example">
                 <option selected>Any Date</option>
                 <option value="1">One</option>
@@ -235,10 +235,20 @@
           </div>
           <div class="row gy-5 myevents-ro">
             <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
-              <img src="/assets/images/myevents-img.png" alt="myevents-img" class="myevents-img img-fluid" />
+              <img
+                src="/assets/images/myevents-img.png"
+                alt="myevents-img"
+                class="myevents-img img-fluid"
+              />
               <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
               <h2>California Art Festival: 2023 Dana Point 29-30</h2>
-              <p><img src="/assets/images/location-create.svg" alt="location-create">10115 5th St, Delhi, CA 95315, United States 10115 5th St, Delhi, CA 95315, United States</p>
+              <p>
+                <img
+                  src="/assets/images/location-create.svg"
+                  alt="location-create"
+                />10115 5th St, Delhi, CA 95315, United States 10115 5th St,
+                Delhi, CA 95315, United States
+              </p>
               <div class="myeventsbtn">
                 <a href="#">Download Ticket</a>
                 <a href="#">Approved</a>
@@ -246,61 +256,109 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
-                <img src="/assets/images/myevents-img1.png" alt="myevents-img" class="myevents-img img-fluid" />
-                <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
-                <h2>California Art Festival: 2023 Dana Point 29-30</h2>
-                <p><img src="/assets/images/location-create.svg" alt="location-create">10115 5th St, Delhi, CA 95315, United States 10115 5th St, Delhi, CA 95315, United States</p>
-                <div class="myeventsbtn1">
-                  <h4>44 Attendance</h4>
-                  <a href="#">Pending</a>
-                </div>
+              <img
+                src="/assets/images/myevents-img1.png"
+                alt="myevents-img"
+                class="myevents-img img-fluid"
+              />
+              <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
+              <h2>California Art Festival: 2023 Dana Point 29-30</h2>
+              <p>
+                <img
+                  src="/assets/images/location-create.svg"
+                  alt="location-create"
+                />10115 5th St, Delhi, CA 95315, United States 10115 5th St,
+                Delhi, CA 95315, United States
+              </p>
+              <div class="myeventsbtn1">
+                <h4>44 Attendance</h4>
+                <a href="#">Pending</a>
               </div>
+            </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
-                <img src="/assets/images/myevents-img2.png" alt="myevents-img" class="myevents-img img-fluid" />
-                <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
-                <h2>California Art Festival: 2023 Dana Point 29-30</h2>
-                <p><img src="/assets/images/location-create.svg" alt="location-create">10115 5th St, Delhi, CA 95315, United States 10115 5th St, Delhi, CA 95315, United States</p>
-                <div class="myeventsbtn1">
-                  <h4>44 Attendance</h4>
-                  <a href="#">Pending</a>
-                </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
+              <img
+                src="/assets/images/myevents-img2.png"
+                alt="myevents-img"
+                class="myevents-img img-fluid"
+              />
+              <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
+              <h2>California Art Festival: 2023 Dana Point 29-30</h2>
+              <p>
+                <img
+                  src="/assets/images/location-create.svg"
+                  alt="location-create"
+                />10115 5th St, Delhi, CA 95315, United States 10115 5th St,
+                Delhi, CA 95315, United States
+              </p>
+              <div class="myeventsbtn1">
+                <h4>44 Attendance</h4>
+                <a href="#">Pending</a>
               </div>
+            </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
-                <img src="/assets/images/myevents-img3.png" alt="myevents-img" class="myevents-img img-fluid" />
-                <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
-                <h2>California Art Festival: 2023 Dana Point 29-30</h2>
-                <p><img src="/assets/images/location-create.svg" alt="location-create">10115 5th St, Delhi, CA 95315, United States 10115 5th St, Delhi, CA 95315, United States</p>
-                <div class="myeventsbtn1">
-                  <h4>44 Attendance</h4>
-                  <a href="#">Pending</a>
-                </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
+              <img
+                src="/assets/images/myevents-img3.png"
+                alt="myevents-img"
+                class="myevents-img img-fluid"
+              />
+              <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
+              <h2>California Art Festival: 2023 Dana Point 29-30</h2>
+              <p>
+                <img
+                  src="/assets/images/location-create.svg"
+                  alt="location-create"
+                />10115 5th St, Delhi, CA 95315, United States 10115 5th St,
+                Delhi, CA 95315, United States
+              </p>
+              <div class="myeventsbtn1">
+                <h4>44 Attendance</h4>
+                <a href="#">Pending</a>
               </div>
+            </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
-                <img src="/assets/images/myevents-img3.png" alt="myevents-img" class="myevents-img img-fluid" />
-                <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
-                <h2>California Art Festival: 2023 Dana Point 29-30</h2>
-                <p><img src="/assets/images/location-create.svg" alt="location-create">10115 5th St, Delhi, CA 95315, United States 10115 5th St, Delhi, CA 95315, United States</p>
-                <div class="myeventsbtn1">
-                  <h4>44 Attendance</h4>
-                  <a href="#">Pending</a>
-                </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
+              <img
+                src="/assets/images/myevents-img3.png"
+                alt="myevents-img"
+                class="myevents-img img-fluid"
+              />
+              <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
+              <h2>California Art Festival: 2023 Dana Point 29-30</h2>
+              <p>
+                <img
+                  src="/assets/images/location-create.svg"
+                  alt="location-create"
+                />10115 5th St, Delhi, CA 95315, United States 10115 5th St,
+                Delhi, CA 95315, United States
+              </p>
+              <div class="myeventsbtn1">
+                <h4>44 Attendance</h4>
+                <a href="#">Pending</a>
               </div>
+            </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
-                <img src="/assets/images/myevents-img2.png" alt="myevents-img" class="myevents-img img-fluid" />
-                <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
-                <h2>California Art Festival: 2023 Dana Point 29-30</h2>
-                <p><img src="/assets/images/location-create.svg" alt="location-create">10115 5th St, Delhi, CA 95315, United States 10115 5th St, Delhi, CA 95315, United States</p>
-                <div class="myeventsbtn2">
-                  <h4>44 Attendance</h4>
-                  <a href="#">Rejected</a>
-                </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 myevents-card">
+              <img
+                src="/assets/images/myevents-img2.png"
+                alt="myevents-img"
+                class="myevents-img img-fluid"
+              />
+              <h5>Fri, May 30, 9:30 - 10:30 PM IST</h5>
+              <h2>California Art Festival: 2023 Dana Point 29-30</h2>
+              <p>
+                <img
+                  src="/assets/images/location-create.svg"
+                  alt="location-create"
+                />10115 5th St, Delhi, CA 95315, United States 10115 5th St,
+                Delhi, CA 95315, United States
+              </p>
+              <div class="myeventsbtn2">
+                <h4>44 Attendance</h4>
+                <a href="#">Rejected</a>
               </div>
-              
-
+            </div>
           </div>
         </section>
       </div>
