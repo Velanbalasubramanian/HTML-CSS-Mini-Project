@@ -193,7 +193,7 @@
               </ol>
             </div>
             <div class="row">
-              <div class="col-lg-8">
+              <div class="col-lg-8 col-md-8">
                 <img
                   src="/assets/images/hackathon-bg.png"
                   alt="user-project-imgs"
@@ -264,11 +264,9 @@
                         <div class="filecom">
                           <input
                             type="text"
-                            name="filename"
-                            id="filename-input"
                             class="form-control frst-filename"
-                            readonly
                             required
+                            value="https://github.com/jessica/awesome-deep-vision-web-demo"
                           />
                           <div class="fileupload">
                             <h5>
@@ -283,12 +281,20 @@
                           </div>
                         </div>
                         <div class="file-zip">
-                          <a href="#"
+                          <div class="file-zip1"
                             ><img
                               src="/assets/images/fileupload.svg"
                               alt="fileupload"
-                            />code.zip <span>1.5mb</span></a
+                            /><input
+                            type="text"
+                            name="filename"
+                            id="filename-input"
+                            class="form-control frst-filename"
+                            required readonly
+                           placeholder="code.zip 1.5mb"
+                          /> </div
                           >
+                          
                           <p>Last update on 26.05.2023</p>
                         </div>
                       </div>
@@ -296,7 +302,7 @@
                   </form>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="contact-us">
                   <div class="contact-usone">
                     <img

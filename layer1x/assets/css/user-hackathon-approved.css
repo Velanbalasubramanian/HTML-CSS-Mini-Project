@@ -266,6 +266,10 @@ header {
   padding-top: 4px;
 }
 .about h3,
+.tools h3{
+  padding: 32px 0;
+}
+.about h3,
 .tools h3,
 .attach-files h3 {
   font-family: "StyreneALC";
@@ -273,6 +277,8 @@ header {
   font-weight: 600;
   line-height: 26px;
   color: #111827;
+}
+.attach-files h3 {
   padding: 32px 0;
 }
 .about p {
@@ -308,14 +314,19 @@ header {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  padding: 14px 14px 14px 0;
+  padding: 10px 14px 10px 0;
+  font-weight: 500;
+}
+.files-link .filecom .frst-filename:focus{
+  box-shadow: 0 0 0 0;
+  border-color: #4e1fa3;
 }
 .filecom .fileupload {
   position: relative;
   padding: 45px 0px;
   border-radius: 8px;
-  border: 1px dashed #4e1fa3;
-  background: rgba(78, 31, 163, 0.03);
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%234E1FA3FF' stroke-width='1' stroke-dasharray='7' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-color: rgba(78, 31, 163, 0.03);
   margin-top: 32px;
 }
 .filecom .fileupload #file-input {
@@ -347,21 +358,20 @@ header {
   justify-content: space-between;
   padding-top: 32px;
 }
-.file-zip a {
-  color: #4e1fa3;
-  font-family: "StyreneALC";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
+.file-zip1 {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.file-zip a span {
-  color: #808095;
-  font-weight: 300;
+.file-zip1 input::placeholder{
+  font-family: "StyreneALC";
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  color: #4e1fa3;
+  font-weight: 400;
 }
+
 .file-zip p {
   color: #808095;
   font-family: "StyreneALC";
@@ -370,7 +380,26 @@ header {
   line-height: normal;
   letter-spacing: -0.64px;
 }
+.file-zip1 input{
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: auto;
+  color: #4e1fa3;
+  font-weight: 400;
+  font-family: "StyreneALC";
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  padding: 8px 8px 8px 0;
+}
 
+.file-zip1 input:focus{
+  background: transparent;
+  border: 0;
+  padding: 0;
+  box-shadow: 0 0 0 0;
+}
 .tools a {
   font-weight: 400;
   font-size: 14px;
@@ -583,22 +612,25 @@ header {
     padding-right: 6px;
   }
   .web-creation {
-    padding: 24px 24px 24px 0;
-  }
-  .web-creation {
     font-size: 22px;
     line-height: 28px;
-  }
-  .web-creation {
+    padding: 24px 24px 24px 0;
     margin-top: 30px;
   }
   .developer-details {
     padding: 24px 0;
   }
   .developer-view h3 {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 0px;
   }
+  .developer-view h5 {
+    font-size: 11px;
+}
+.developer-view a {
+  font-size: 15px;
+  padding: 10px 16px;
+}
   .about h3,
   .tools h3 {
     font-size: 18px;
@@ -607,9 +639,6 @@ header {
   .about p {
     font-size: 16px;
     line-height: 28px;
-  }
-  .tools {
-    margin: 24px 0 50px 0;
   }
   .tools a {
     font-size: 13px;
@@ -654,6 +683,17 @@ header {
     width: 9px;
     height: 9px;
   }
+  .fileupload h5 {
+    font-size: 18px;
+  }
+  .file-zip1 input {
+    font-size: 14px;
+}
+.file-zip p {
+  font-size: 14px;
+}
+
+
 }
 @media screen and (max-width: 1199px) {
   .common-vertical {
@@ -674,6 +714,19 @@ header {
   .common-vertical::before {
     width: 230px;
   }
+  .btnstyleone {
+    font-size: 18px;
+  }
+  .publisher-details h5, .publisher-location h5 {
+    font-size: 16px;
+}
+.publisher-details {
+  padding-top: 15px;
+}
+.publisher-location {
+  margin-top: 15px;
+}
+
 }
 @media screen and (max-width: 1024px) {
   .search .search-img {
@@ -706,6 +759,45 @@ header {
   body {
     font-weight: 500;
   }
+  .web-creation {
+    font-size: 20px;
+    padding: 20px 20px 20px 0;
+    margin-top: 24px;
+  }
+  .developer-view img {
+    padding-right: 5px;
+  } 
+  .developer-view h3 {
+    font-size: 15px;
+  }
+  .developer-details {
+    padding: 20px 0;
+  }
+  .about h3, .tools h3, .attach-files h3 {
+    font-size: 18px;
+    padding: 20px 0 14px 0;
+  }
+  .about p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .files-link .filecom .frst-filename {
+    font-size: 14px;
+}
+.fileupload h5 {
+  font-size: 16px;
+}
+.file-zip {
+  padding-top: 24px;
+}
+.attach-files {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.publisher-details h5, .publisher-location h5 {
+  font-size: 15px;
+}
+
 }
 @media screen and (max-width: 991px) {
   .btnstyleone {
@@ -721,8 +813,8 @@ header {
     margin-bottom: 30px;
   }
   .web-creation {
-    font-size: 20px;
-  }
+    font-size: 19px;
+}
   .about p {
     font-size: 15px;
   }
@@ -777,6 +869,27 @@ header {
   .breadcrumb {
     padding-right: 20px;
   }
+  .contact-usone > img{
+    width: 30px;
+  }
+  .publisher-details h5, .publisher-location h5 {
+    font-size: 14px;
+  }
+  .tools a {
+    font-size: 12px;
+}
+.filecom .fileupload {
+  padding: 30px 0px;
+}
+.fileupload h5 {
+  font-size: 15px;
+}
+.file-zip1 input {
+  font-size: 13px;
+}
+.file-zip {
+  padding-top: 20px;
+}
 }
 @media screen and (max-width: 767px) {
   .search input {
@@ -860,7 +973,6 @@ header {
     padding: 15px 0 15px 0;
   }
   .developer-view h3 {
-    font-size: 16px;
     line-height: 24px;
   }
   .developer-view h5 {
@@ -878,7 +990,7 @@ header {
     line-height: 26px;
   }
   .tools {
-    margin: 15px 0 35px 0;
+    margin: 15px 0 0 0;
     padding-bottom: 25px;
   }
   .tools a {
@@ -1022,9 +1134,6 @@ header {
   .contact-usone {
     padding-bottom: 15px;
   }
-  .publisher-details {
-    padding-top: 15px;
-  }
   .publisher-location {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1093,13 +1202,48 @@ header {
   }
   .btnstyleone {
     font-size: 15px;
+    white-space: nowrap;
   }
   .btnstyletwo {
     font-size: 12px;
   }
   .web-creation {
     font-size: 17px;
+    font-weight: 600;
   }
+  .developer-details .vr {
+    display: none;
+}
+.files-link .filecom .frst-filename {
+  font-size: 13px;
+}
+.fileupload h5 {
+  font-size: 14px;
+}
+.file-zip1 input::placeholder{
+  font-size: 13px;
+}
+.file-zip p {
+  font-size: 13px;
+}
+.attach-files {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+.publisher h5 {
+  font-size: 16px;
+}
+.publisher-details h5, .publisher-location h5 {
+  font-size: 14px;
+}
+.user-date > h5 {
+  padding-bottom: 8px;
+}
+.developer-view a {
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
 }
 @media screen and (max-width: 480px) {
   .nav-unorder > li {
@@ -1128,12 +1272,9 @@ header {
     font-size: 13px;
   }
   .btnstyletwo {
-    padding: 6px;
-    margin-top: 8px;
+    padding: 4px 6px 4px 6px;
+    margin-top: 5px;
     border-radius: 4px;
-  }
-  .back {
-    padding: 18px 0 8px 0;
   }
   .breadcrumb-item a {
     font-size: 11px;
@@ -1145,14 +1286,11 @@ header {
     margin-top: 20px;
   }
   .developer-view {
-    padding-right: 20px;
+    padding-right: 0px;
   }
   .about p {
     line-height: 22px;
     font-size: 13px;
-  }
-  .tools {
-    margin: 15px 0 30px 0;
   }
   .tools a {
     font-size: 11px;
@@ -1188,4 +1326,45 @@ header {
     right: 2px;
     top: 6px;
   }
+  .about h3, .tools h3, .attach-files h3 {
+    font-size: 16px;
+}
+.file-zip1 input::placeholder{
+  font-size: 12px;
+}
+.files-link .filecom .frst-filename {
+  padding: 10px 0px 10px 0;
+}
+.fileupload h5 {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.filecom .fileupload {
+  padding: 24px 0px;
+  margin-top: 24px;
+}
+.file-zip {
+  padding-top: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.fileupload h5 img {
+  padding-right: 0;
+  padding-bottom: 5px;
+}
+.file-zip p {
+  font-size: 12px;
+}
+.publisher-details {
+  padding-top: 10px;
+}
+.developer-view a {
+  font-size: 13px;
+  padding: 6px 8px;
+  letter-spacing: 0;
+}
+
 }

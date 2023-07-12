@@ -19,3 +19,4 @@ document.getElementById("file-input").addEventListener("change", function () {
       fileReader.readAsDataURL(this.files[0]);
     }
   });
+
