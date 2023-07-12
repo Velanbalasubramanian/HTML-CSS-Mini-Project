@@ -689,6 +689,9 @@ form .form-select:focus {
   font-size: 12px;
   letter-spacing: 0.24px;
 }
+.customer_records_dynamic {
+  margin-top: 20px;
+}
 
 /* body {
   cursor: url('/assets/images/in-vector.svg'),auto;
