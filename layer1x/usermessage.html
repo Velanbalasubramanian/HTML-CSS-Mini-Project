@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-Message</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link href="assets/css/usermessage.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/styrenealc.css" />
+  </head>
+  <body>
+    <div class="user-project-details">
+      <div class="common-vertical">
+        <div class="common-details">
+          <div class="l1x-labs-link text-center">
+            <a href="#" class=""
+              ><img
+                src="/assets/images/l1x-labs.png"
+                alt="l1x-labs"
+                class="img-fluid"
+            /></a>
+            <hr />
+          </div>
+          <ul class="vertical-unorder">
+            <li class="active">
+              <a href="#"><i class="bi bi-grid"></i> <span>Dashboard</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-file-text"></i> <span>Events</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-lock"></i> <span>Hackathon</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-folder"></i> <span>Projects</span></a>
+            </li>
+            <hr />
+          </ul>
+          <ul class="vertical-unorder">
+            <li>
+              <a href="#"
+                ><i class="bi bi-bell"></i> <span>Notifications</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-envelope"></i> <span>Messages</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-gear"></i> <span>Settings</span></a>
+            </li>
+            <hr />
+          </ul>
+          <ul class="vertical-unorder">
+            <li>
+              <a href="#"
+                ><i class="bi bi-shield-exclamation"></i>
+                <span>Knowledge Base</span></a
+              >
+            </li>
+            <hr />
+          </ul>
+        </div>
+      </div>
+      <div class="common-user">
+        <header>
+          <nav class="">
+            <div class="navbar">
+              <form class="" role="search">
+                <div class="search">
+                  <img
+                    src="/assets/images/search.svg"
+                    class="search-img"
+                    alt="search"
+                  />
+                  <input placeholder="Quick Search..." />
+                </div>
+              </form>
+
+              <ul class="nav-unorder">
+                <li>
+                  <a href="#"
+                    ><img src="/assets/images/mail.svg" alt="mail" class="mail"
+                  /></a>
+                </li>
+                <li>
+                  <img
+                    src="/assets/images/notification-one.svg"
+                    alt="notification"
+                    class="notification img-fluid"
+                  />
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="/assets/images/profile.png"
+                        alt="profile"
+                        class="img-fluid profile"
+                      />
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <h4>Jessica Hanson</h4>
+                        <a class="client-mail" href="#"
+                          >jessica.hanson@blockchain.com</a
+                        >
+                      </li>
+                      <hr />
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-person-circle"></i> View Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-file-text"></i> My Events</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-lock"></i> My Hackathon</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-folder"></i> My Projects</a
+                        >
+                      </li>
+                      <hr />
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-journal-text"></i>FAQ</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-box-arrow-right"></i> Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="row user-common">
+          <div class="col-lg-3">
+            <div class="nav flex-column nav-pills chat-title" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+              <h5 class="tab-channels">CHANNELS</h5>
+              <button
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-home"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+              >
+                <h2># tech</h2>
+                <span>3</span>
+              </button>
+
+              <button
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <h2># events</h2>
+              <span>6</span>
+              </button>
+
+              <button
+                class="nav-link"
+                id="v-pills-messages-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-messages"
+                aria-selected="false"
+              >
+                # jobs
+              </button>
+
+              <button
+                class="nav-link"
+                id="v-pills-settings-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+              >
+                # Support
+              </button>
+
+              <h5 class="tab-channels">DIRECT MESSAGE</h5>
+              <button
+                class="nav-link"
+                id="v-pills-dm-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-dm"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-dm"
+                aria-selected="true"
+              >
+              Jerome Bell
+              </button>
+
+              <button
+                class="nav-link"
+                id="v-pills-dm1-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-dm1"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-dm1"
+                aria-selected="false"
+              >
+              <h2>Marvin McKinney</h2>
+              <span>6</span>
+              </button>
+
+              <button
+                class="nav-link"
+                id="v-pills-dm2-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-dm2"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-dm2"
+                aria-selected="false"
+              >
+              Jane Cooper
+              </button>
+
+            </div>
+          </div>
+          <div class="col-lg-9 tabs-column2">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+               <div class="tabs-common">
+                <div class="title-head">
+                    <div class="title-head1">
+                        <h2># Tech</h2>
+                        <p>Profile Web Page Development</p>
+                    </div>
+                    <div class="title-head2">
+                        <img src="/assets/images/user-search.svg" alt="user-search">
+                        <img src="/assets/images/user-imgs.png" alt="user-imgs" class="user-imgs">
+                        <span>21+</span>
+                        <a href="#" class="tab-btn-details">Details</a>
+                    </div>
+                </div>  
+                <div class="chat-type-common">
+                    <div class="chat-type1">
+                        <input type="text" name="text" placeholder="Enter Message here">
+                        <img src="/assets/images/clock-circle.svg" alt="clock-circle">
+                        <a href="#" class="send-link"><img src="/assets/images/send.svg" alt="send" class="send"> Send</a>
+                    </div>
+                    <div class="chat-type2">
+                        <img src="/assets/images/image-01.svg" alt="">
+                        <img src="/assets/images/attachment-01.svg" alt="">
+
+                        <img src="/assets/images/bold.svg" alt="">
+                        <img src="/assets/images/italic.svg" alt="">
+                        <img src="/assets/images/underline.svg" alt="">
+                        <img src="/assets/images/strikethrough.svg" alt="">
+                        <img src="/assets/images/list-number.svg" alt="">
+                    </div>
+                </div>
+            </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                Events
+              </div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                Jobs
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                Support
+              </div>
+              <div class="tab-pane fade" id="v-pills-dm" role="tabpanel" aria-labelledby="v-pills-dm-tab" tabindex="0">
+                Jerome Bell
+              </div>
+              <div class="tab-pane fade" id="v-pills-dm1" role="tabpanel" aria-labelledby="v-pills-dm1-tab" tabindex="0">
+                Marvin McKinney
+              </div>
+              <div class="tab-pane fade" id="v-pills-dm2" role="tabpanel" aria-labelledby="v-pills-dm2-tab" tabindex="0">
+                Jane Cooper
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="assets/js/usermessage.js"></script>
+  </body>
+</html>
