@@ -160,7 +160,7 @@
     background-size: contain;
     width: 245px;
     height: 288px;
-    top: 40%;
+    bottom: 0;
   }
   .common-user {
     width: calc(100% - 245px);
@@ -273,12 +273,12 @@
 .tab-content .tab-pane{
   position: relative;
 }
-.tabs-common{
+/* .tabs-common{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-}
+} */
 .tabs-column2{
   border-left: 1px solid #D9D9DE;
   background-color: #fff;
@@ -320,7 +320,10 @@
   border-radius: 8px;
   background: rgba(78, 31, 163, 0.10);
   margin-left: 28px;
-
+}
+.title-head2 .tab-btn-details:hover{
+    background-color: #4E1FA3;
+    color: #fff;
 }
 .title-head2 .user-imgs{
   margin-left: 24px;
@@ -348,10 +351,14 @@
   line-height: normal;
   letter-spacing: -0.56px;
 }
-.chat-type-common{
+.chat-type-common .chat-type1 .send-link:hover{
+  background-color: #dadada;
+  color: #4E1FA3;
+}
+/* .chat-type-common{
   padding: 0 40px;
   margin-bottom: 11px;
-}
+} */
 .chat-type-common .chat-type1 input{
   width: 100%;
   border: 0;
@@ -361,7 +368,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 10px;
+  padding: 14px;
   border-radius: 8px 8px 0px 0px;
   border: 1px solid  #D9D9DE;
 }
@@ -370,8 +377,138 @@
 border: 1px solid  #D9D9DE;
 background:  #F5F5F6;
 padding: 14px;
+display: flex;
+gap: 16px;
 }
-  
+.chat-type2 img{
+  cursor: pointer;
+}
+
+.channel-chat {
+  padding: 40px 40px;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+.msg_chat_section {
+  height: calc(100% - 71px);
+  position: relative;
+}
+.chat-type-common{
+  position: absolute;
+    bottom: 11px;
+    opacity: 1;
+    left: 40px;
+    right: 40px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 2rem;
+    z-index: 11;
+}
+.tabs-common{
+  height: 100%;
+  display: flex;
+}
+.msg-fullview{
+  width: 100%;
+}
+.msg-userview{
+  background: #F9F9F9;
+  border-left: 1px solid #D9D9DE;
+}
+
+.btnstyleone {
+  font-family: "StyreneALC";
+  font-size: 18px;
+  line-height: 34px;
+  color: #0e0e2c;
+  display: flex;
+  align-items: center;
+  padding: 16px 25px;
+  border-bottom: 1px solid #D9D9DE;
+}
+.btnstyleone img {
+  border: 1px solid #d9d9de;
+  border-radius: 8px;
+  padding: 11px;
+  margin-right: 12px;
+}
+
+.custom-accordian .accordion-item {
+  color: #192A44;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #D9D9DE;
+  padding: 24px 26px;
+}
+.custom-accordian .accordion-button {
+  padding: 0;
+  font-size: 1rem;
+  color: #192A44;
+  background-color: transparent;
+  font-family: "StyreneALC";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.72px;
+}
+.custom-accordian .accordion-body {
+  color: #192A44;
+  padding: 0 0 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.custom-accordian .accordion-body .about-para{
+  padding: 16px 0 0 0;
+}
+.custom-accordian .accordion-button:focus {
+  box-shadow: 0 0 0 0rem;
+}
+.custom-accordian .accordion-button:not(.collapsed) {
+  box-shadow: 0 0 0 0;
+}
+.custom-accordian .accordion {
+  --bs-accordion-btn-icon-width: 1rem;
+  --bs-accordion-btn-icon-transform: rotate(0deg);
+}
+.custom-accordian .accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.custom-accordian .accordion-button::after {
+  background-image: url(/assets/images/accordian-right.svg);
+}
+
+.custom-accordian .member-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-accordian .member-detail h4{
+  color:  #4E1FA3;
+  font-family: "StyreneALC";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.custom-accordian .member-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+}
+.custom-accordian .member-name h5{
+  color: #192A44;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.custom-accordian .member-name img{
+  cursor: pointer;
+}
+
   @media screen and (max-width: 1280px) {
     .search input {
       padding: 12px 55px 12px 15px;
@@ -426,6 +563,9 @@ padding: 14px;
   }
   .file-zip p {
     font-size: 14px;
+  }
+  .btnstyleone {
+    font-size: 16px;
   }
   
   
@@ -532,6 +672,11 @@ padding: 14px;
     .vertical-unorder hr {
       margin: 8px 14px 0 14px;
     }
+
+    
+    .btnstyleone img {
+      padding: 9px;
+    }
   }
   @media screen and (max-width: 767px) {
     .search input {
@@ -617,6 +762,13 @@ padding: 14px;
       top: 3px;
       width: 8px;
       height: 8px;
+    }
+    .btnstyleone img {
+      padding: 6px;
+    }
+    .btnstyleone {
+      font-size: 15px;
+      white-space: nowrap;
     }
   }
   @media screen and (max-width: 575px) {
@@ -722,6 +874,14 @@ padding: 14px;
       height: 6px;
       right: 2px;
       top: 6px;
+    }
+    .btnstyleone img {
+      padding: 6px;
+      margin-right: 6px;
+      border-radius: 6px;
+    }
+    .btnstyleone {
+      font-size: 13px;
     }
   
   }
