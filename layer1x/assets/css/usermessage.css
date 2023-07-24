@@ -145,25 +145,22 @@
 
   .user-project-details {
     position: relative;
-    height: 100%;
+    height: 100vh;
+    min-height: 875px;
     display: flex;
   }
   .common-vertical {
     width: 245px;
     background-image: url(/assets/images/vertical-bg.png);
     position: relative;
+    height: 100%;
   }
-  /* .common-vertical::before {
-    content: "";
+  /* .common-vertical1{
     position: absolute;
-    background: url(/assets/images/curve-bg.png) no-repeat;
-    background-size: contain;
-    width: 245px;
-    height: 288px;
     bottom: 0;
   } */
   .common-vertical1 {
-    padding-top: 50px;
+    padding-top: 30px;
 }
   .common-user {
     width: calc(100% - 245px);
@@ -228,6 +225,7 @@
   }
   .user-common{
     --bs-gutter-x: 0;
+    height: calc(100% - 118px);
   }
   .chat-title{
     padding-left: 10px;
@@ -387,39 +385,50 @@ gap: 16px;
 .chat-type2 img{
   cursor: pointer;
 }
-
 .channel-chat {
-  padding: 40px 40px;
-  /* height: calc(100% - 200px); */
+  padding: 40px 40px 150px;
   overflow-y: auto;
-  min-height: 680px;
+  height: 100%;
 }
 .msg_chat_section {
-  height: calc(100% - 71px);
   position: relative;
+  height: calc(100% - 70px);
 }
-/* .chat-type-common{
+.chat-type-common{
   position: absolute;
-    bottom: 11px;
-    opacity: 1;
+    bottom: 0px;
     left: 40px;
     right: 40px;
     background: #fff;
     border-radius: 8px;
     z-index: 11;
-} */
-.chat-type-common {
+}
+
+.tabs-column2{
+  height: 100%;
+}
+.tabs-column2 .tab-content {
+  height: 100%;
+}
+.tabs-column2 .tab-pane {
+  height: 100%;
+}
+.tabs-column2 .tabs-common {
+  height: 100%;
+}
+
+/* .chat-type-common {
   opacity: 1;
   background: #fff;
   border-radius: 8px;
   padding: 0 40px 11px;
-}
-.tabs-common{
-  height: 100%;
+} */
+.show-hidetab{
   display: flex;
 }
 .msg-fullview{
   width: 100%;
+  height: 100%;
 }
 .msg-userview{
   background: #F9F9F9;
@@ -596,6 +605,26 @@ gap: 16px;
   background: #F5F5FA;
   margin-bottom: 5px;
 }
+.lineusertype{
+  position: relative;
+}
+.lineusertype p{
+ text-align: center;
+ background: #FFF;
+ max-width: 260px;
+ width: 100%;
+ margin: auto;
+ color: #808095;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+}
+.lineusertype-para{
+  position: absolute;
+  bottom: -8px;
+  left: 0%;
+  right: 0%;
+}
 
   @media screen and (max-width: 1280px) {
     .search input {
@@ -655,6 +684,59 @@ gap: 16px;
   .btnstyleone {
     font-size: 16px;
   }
+  
+  /* CHATBOX START*/
+  .title-head {
+    padding: 11px 20px;
+}
+.user-viewright .user-time-name h5, .user-type-left .user-time-name h5 {
+    font-size: 13px;
+}
+.user-viewright .user-time-name span, .user-type-left .user-time-name span {
+    font-size: 10px;
+}
+.title-head1 p {
+    font-size: 13px;
+}
+.hashtag-left p {
+    font-size: 13px;
+}
+.user-viewright h3, .user-type-left h3 {
+    font-size: 13px;
+    padding: 4px 10px 4px 10px;
+}
+.lineusertype p {
+    max-width: 230px;
+    font-size: 13px;
+}
+.channel-chat {
+    padding: 30px 20px 140px;
+}
+.chat-type-common {
+    left: 20px;
+    right: 20px;
+}
+.chat-type-common .chat-type1 {
+    gap: 12px;
+    padding: 10px;
+}
+.chat-type-common .chat-type1 input {
+    font-size: 14px;
+}
+.chat-type-common .chat-type1 .send-link {
+    padding: 5px 10px;
+    gap: 8px;
+    font-size: 13px;
+}
+.chat-type-common .chat-type2 {
+    padding: 10px;
+    gap: 12px;
+}
+.title-head2 .tab-btn-details {
+  font-size: 13px;
+  padding: 8px 16px;
+}
+/* CHATBOX END*/
   
   
   }
