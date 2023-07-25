@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-Message2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link href="assets/css/usermessage2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/styrenealc.css" />
+  </head>
+  <body>
+    <div class="user-project-details">
+      <div class="common-vertical">
+        <div class="common-details">
+          <div class="l1x-labs-link text-center">
+            <a href="#" class=""
+              ><img
+                src="/assets/images/l1x-labs.png"
+                alt="l1x-labs"
+                class="img-fluid"
+            /></a>
+            <hr />
+          </div>
+          <ul class="vertical-unorder">
+            <li class="active">
+              <a href="#"><i class="bi bi-grid"></i> <span>Dashboard</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-file-text"></i> <span>Events</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-lock"></i> <span>Hackathon</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-folder"></i> <span>Projects</span></a>
+            </li>
+            <hr />
+          </ul>
+          <ul class="vertical-unorder">
+            <li>
+              <a href="#"
+                ><i class="bi bi-envelope"></i> <span>Messages</span></a
+              >
+            </li>
+            <hr />
+          </ul>
+          <ul class="vertical-unorder">
+            <li>
+              <a href="#"
+                ><i class="bi bi-shield-exclamation"></i>
+                <span>Knowledge Base</span></a
+              >
+            </li>
+            <hr />
+          </ul>
+          <div class="common-vertical1">
+            <img src="/assets/images/curve-bg.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="common-user">
+        <header>
+          <nav class="">
+            <div class="navbar">
+              <form class="" role="search">
+                <div class="search">
+                  <img
+                    src="/assets/images/search.svg"
+                    class="search-img"
+                    alt="search"
+                  />
+                  <input placeholder="Quick Search..." />
+                </div>
+              </form>
+
+              <ul class="nav-unorder">
+                <li>
+                  <a href="#"
+                    ><img src="/assets/images/mail.svg" alt="mail" class="mail"
+                  /></a>
+                </li>
+                <li>
+                  <img
+                    src="/assets/images/notification-one.svg"
+                    alt="notification"
+                    class="notification img-fluid"
+                  />
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="/assets/images/profile.png"
+                        alt="profile"
+                        class="img-fluid profile"
+                      />
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <h4>Jessica Hanson</h4>
+                        <a class="client-mail" href="#"
+                          >jessica.hanson@blockchain.com</a
+                        >
+                      </li>
+                      <hr />
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-person-circle"></i> View Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-file-text"></i> My Events</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-lock"></i> My Hackathon</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-folder"></i> My Projects</a
+                        >
+                      </li>
+                      <hr />
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-journal-text"></i>FAQ</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdownterm" href="#"
+                          ><i class="bi bi-box-arrow-right"></i> Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="user-chat">
+            <div class="row user-chat-main">
+                <div class="col-lg-3">
+                    <div class="nav flex-column nav-pills chat-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        
+                        <h3 class="tabs-head">CHANNELS</h3>
+                        <button class="nav-link active" id="v-pills-tech-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tech" type="button" role="tab" aria-controls="v-pills-tech" aria-selected="true"> # tech <span>3</span></button>
+
+                        <button class="nav-link" id="v-pills-events-tab" data-bs-toggle="pill" data-bs-target="#v-pills-events" type="button" role="tab" aria-controls="v-pills-events" aria-selected="false"> # events <span>6</span></button>
+                        
+                        <button class="nav-link" id="v-pills-jobs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-jobs" type="button" role="tab" aria-controls="v-pills-jobs" aria-selected="false"> # jobs</button>
+
+                        <button class="nav-link" id="v-pills-support-tab" data-bs-toggle="pill" data-bs-target="#v-pills-support" type="button" role="tab" aria-controls="v-pills-support" aria-selected="false"> # Support</button>
+
+                        <h3 class="tabs-head">DIRECT MESSAGE</h3>
+                        <button class="nav-link" id="v-pills-bell-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bell" type="button" role="tab" aria-controls="v-pills-bell" aria-selected="true">Jerome Bell</button>
+
+                        <button class="nav-link" id="v-pills-marvin-tab" data-bs-toggle="pill" data-bs-target="#v-pills-marvin" type="button" role="tab" aria-controls="v-pills-marvin" aria-selected="false">Marvin McKinney <span>6</span></button>
+                        
+                        <button class="nav-link" id="v-pills-jane-tab" data-bs-toggle="pill" data-bs-target="#v-pills-jane" type="button" role="tab" aria-controls="v-pills-jane" aria-selected="false">Jane Cooper</button>
+                  
+                      </div>
+                </div>
+                <div class="col-lg-9 user-sidemain">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!-- TECH STARTS-->
+                        <div class="tab-pane fade show active" id="v-pills-tech" role="tabpanel" aria-labelledby="v-pills-tech-tab">
+                        <div class="chat-commmon">
+                            <!-- CHAT HEADER START -->
+                            <div class="chat-header">
+                                <div class="chat-header-one">
+                                    <h3># Tech</h3>
+                                    <p>Profile Web Page Development</p>
+                                </div>
+                                <div class="chat-header-two">
+                                    <a href="#" class="user-search">
+                                        <img src="/assets/images/user-search.svg" alt="user-search" class="img-fluid">
+                                    </a>
+                                    <a href="#" class="user-imgs">
+                                        <img src="/assets/images/user-imgs.png" alt="user-imgs" class="img-fluid">
+                                        <span>21+</span>
+                                    </a>
+                                    <a href="#" class="user-detailbtn">Details</a>
+                                </div>
+                            </div>
+                            <!-- CHAT HEADER END -->
+
+                            <div class="usertype-common">
+                                <div class="usertype-view">
+                                    <div class="usertype-describe">
+                                        <h3># Tech</h3>
+                                        <p><a href="#">@layer1Xadmin</a> created this channel on July 20th, 2023. This is the very beginning of <a href="#"># Teach</a></p>
+                                    </div>
+                                    <div class="usertype-right">
+                                        <div class="username-text">
+                                            <div class="usertime">
+                                            <span>8:20 PM</span>
+                                            <h5>Jessica Hanson</h5>
+                                        </div>
+                                            <p>Freelance Design Tricks</p>
+                                        </div>
+                                        <img src="/assets/images/user-chat-img.png" alt="user-chat-img">
+                                    </div>
+                                    <div class="usertype-left">
+                                        <img src="/assets/images/user-chat-img1.png" alt="user-chat-img1">
+                                        <div class="username-textlft">
+                                            <div class="usertime">
+                                            <h5>Sallie Wade</h5>
+                                            <span>8:25 PM</span>
+                                        </div>
+                                            <p>Some graphic designers always manage to produce</p>
+                                            <img src="/assets/images/rectangle-img0.png" alt="rectangle-img0">
+                                            <img src="/assets/images/rectangle-img1.png" alt="rectangle-img1">
+                                        </div>
+                                    </div>
+                                    <div class="usertype-right">
+                                        <div class="username-text">
+                                            <div class="usertime">
+                                            <span>8:40 PM</span>
+                                            <h5>Jessica Hanson</h5>
+                                        </div>
+                                            <p>Attending a trade show can be a very effective method</p>
+                                        </div>
+                                        <img src="/assets/images/user-chat-img.png" alt="user-chat-img">
+                                    </div>
+                                    <div class="usertype-left">
+                                        <img src="/assets/images/user-chat-img1.png" alt="user-chat-img1">
+                                        <div class="username-textlft">
+                                            <div class="usertime">
+                                            <h5>Sallie Wade</h5>
+                                            <span>8:50 PM</span>
+                                        </div>
+                                            <p>Advertising on a budget part</p>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="usertype-right">
+                                        <div class="username-text">
+                                            <div class="usertime">
+                                            <span>8:20 PM</span>
+                                            <h5>Jessica Hanson</h5>
+                                        </div>
+                                            <p>Freelance Design Tricks</p>
+                                        </div>
+                                        <img src="/assets/images/user-chat-img.png" alt="user-chat-img">
+                                    </div>
+                                    <div class="usertype-left">
+                                        <img src="/assets/images/user-chat-img1.png" alt="user-chat-img1">
+                                        <div class="username-textlft">
+                                            <div class="usertime">
+                                            <h5>Sallie Wade</h5>
+                                            <span>8:25 PM</span>
+                                        </div>
+                                            <p>Some graphic designers always manage to produce</p>
+                                            <img src="/assets/images/rectangle-img0.png" alt="rectangle-img0">
+                                            <img src="/assets/images/rectangle-img1.png" alt="rectangle-img1">
+                                        </div>
+                                    </div>
+                                    <div class="usertype-right">
+                                        <div class="username-text">
+                                            <div class="usertime">
+                                            <span>8:40 PM</span>
+                                            <h5>Jessica Hanson</h5>
+                                        </div>
+                                            <p>Attending a trade show can be a very effective method</p>
+                                        </div>
+                                        <img src="/assets/images/user-chat-img.png" alt="user-chat-img">
+                                    </div>
+                                    <div class="usertype-left">
+                                        <img src="/assets/images/user-chat-img1.png" alt="user-chat-img1">
+                                        <div class="username-textlft">
+                                            <div class="usertime">
+                                            <h5>Sallie Wade</h5>
+                                            <span>8:50 PM</span>
+                                        </div>
+                                            <p>Advertising on a budget part</p>
+                                        </div>
+                                    </div>
+
+
+                                    
+                                </div>
+                                <div class="btm-common">
+                                    <div class="btm-type-one">
+                                        <input type="text" placeholder="Enter message here">
+                                        <a href="#"><img src="/assets/images/clock-circle.svg" alt="clock-circle"></a>
+                                        <a href="#" class="btm-send-btn"><img src="/assets/images/send.svg" alt="btm-send-btn"> Send</a>
+                                    </div>
+                                    <div class="btm-type-two">
+                                        <a href="#"><img src="/assets/images/image-01.svg" alt=""></a>
+                                        <div class="vr"></div>
+                                        <a href="#"><img src="/assets/images/attachment-01.svg" alt=""></a>
+                                        <div class="vr"></div>
+                                        <a href="#"><img src="/assets/images/bold.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/images/italic.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/images/underline.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/images/strikethrough.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/images/list-number.svg" alt=""></a>
+                                        <div class="vr"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        </div>
+                        <!-- TECH END-->
+
+                        <!-- EVENTS -->
+                        <div class="tab-pane fade" id="v-pills-events" role="tabpanel" aria-labelledby="v-pills-events-tab"># events</div>
+
+                        <!-- JOBS -->
+                        <div class="tab-pane fade" id="v-pills-jobs" role="tabpanel" aria-labelledby="v-pills-jobs-tab"># jobs</div>
+
+                        <!-- SUPPORT -->
+                        <div class="tab-pane fade" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab"># Support</div>
+
+                        <!-- Jerome Bell -->
+                        <div class="tab-pane fade" id="v-pills-bell" role="tabpanel" aria-labelledby="v-pills-bell-tab">Jerome Bell</div>
+
+                        <!-- Marvin McKinney -->
+                        <div class="tab-pane fade" id="v-pills-marvin" role="tabpanel" aria-labelledby="v-pills-marvin-tab">Marvin McKinney</div>
+
+                        <!--JANE COOPER -->
+                        <div class="tab-pane fade" id="v-pills-jane" role="tabpanel" aria-labelledby="v-pills-jane-tab">Jane Cooper</div>
+                      </div>
+                </div>
+            </div>
+              
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="assets/js/usermessage2.js"></script>
+  </body>
+</html>

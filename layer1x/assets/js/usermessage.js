@@ -1,14 +1,14 @@
 $(".msg-userview").hide();
 
 $(".tab-btn-details").click(function () {
-    $(".msg-userview").css("width", "50%");
+    $(".msg-userview").css("width", "100%");
   $(".msg-userview").show("1000");
-  $(".tab-btn-details").hide();
+  $(".msg-fullview").hide();
 });
 $(".back").click(function () {
-    $(".tab-btn-details").css("width", "50%");
+    $(".msg-fullview").css("width", "100%");
   $(".msg-userview").hide();
-  $(".tab-btn-details").show("1000");
+  $(".msg-fullview").show("1000");
 });
 
 
