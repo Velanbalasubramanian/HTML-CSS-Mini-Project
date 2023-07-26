@@ -215,6 +215,9 @@
   }
   .user-chat-main .chat-nav{
     padding: 0 11px;
+    height: 100%;
+    overflow-y: auto;
+    flex-wrap: nowrap;
   }
   .user-chat-main .chat-nav .tabs-head{
     padding: 25px 0 5px;
@@ -267,7 +270,11 @@
     border-left: 1px solid #D9D9DE;
     background-color: #FFF;
     height: 100%;
+    padding-bottom: 11px;
    }
+   .user-sidemain0{
+    height:100%;
+  }
    .chat-header-one h3{
     font-family: "StyreneALC";
     font-size: 18px;
@@ -295,6 +302,7 @@
     background: rgba(78, 31, 163, 0.10);
     padding: 8px 24px;
     margin-left: 28px;
+    display: inline-flex;
    }
    .chat-header-two .user-detailbtn:hover{
     background-color: #4E1FA3;
@@ -320,7 +328,7 @@
    }
    .usertype-common .usertype-view{
     height: 100%;
-    padding: 0px 40px;
+    padding: 40px 40px 150px;
     overflow-y: auto;
     }
     .user-sidemain .tab-content, 
@@ -331,7 +339,7 @@
    /* BTM-COMMON-START */
    .btm-common{
     position: absolute;
-    bottom: 11px;
+    bottom: 0;
     left:40px;
     right: 40px;
    }
@@ -383,6 +391,10 @@
     gap: 10px;
     display: inline-flex;
     align-items: center;
+   }
+   .btm-common .btm-send-btn:hover{
+    background-color: #D9D9DE;
+    color: #4E1FA3;
    }
     /* BTM-COMMON-END */
 
@@ -446,6 +458,7 @@
         align-items: center;
         justify-content: flex-start;
         gap: 5px;
+        padding-bottom: 2px;
     }
     .usertype-view .username-text p, 
     .usertype-view .username-textlft p{
@@ -471,6 +484,24 @@
         justify-content: start;
         gap: 8px;
         padding-bottom: 20px;
+    }
+    .usertype-view .joingrp-i-lyt{
+      position: relative;
+      border-bottom: 1px solid #D9D9DE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 25px;
+    }
+    .usertype-view .joingrp-i-lyt p{
+      background-color: #fff;
+      padding: 6px 12px;
+      color: #808095;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      position: absolute;
+      top: 7px;
     }
     /* USERTYPE END */
 
@@ -524,7 +555,19 @@
     }
   
       /* TAB and CHAT BOX START */
-
+      .user-chat {
+        height: calc(100% - 100px);
+      }
+      .usertype-common .usertype-view {
+        padding: 40px 30px 150px;
+      }
+      .btm-common {
+        left: 30px;
+        right: 30px;
+      }
+    .chat-header {
+      padding: 11px 30px;
+    }
       /* TAB and CHAT BOX END */
   }
   @media screen and (max-width: 1199px) {
@@ -542,7 +585,44 @@
     }
 
     /* TAB and CHAT BOX START */
-
+    .usertype-view .username-text p, 
+    .usertype-view .username-textlft p, 
+    .usertype-view .username-text h5, 
+    .usertype-view .username-textlft h5,
+    .usertype-view .joingrp-i-lyt p,
+    .btm-common .btm-send-btn,
+    .chat-header-one p,
+    .chat-header-two .user-detailbtn,
+    .usertype-view .usertype-describe p {
+        font-size: 13px;
+    }
+    .usertype-view .username-text span, 
+    .usertype-view .username-textlft span {
+        font-size: 11px;
+    }
+    .btm-common .btm-send-btn img{
+        width:20px;
+    }
+    .btm-common .btm-send-btn {
+      padding: 6px 10px;
+    }
+    .chat-nav .nav-link {
+      padding: 6px 9px;
+    }  
+    .chat-nav .nav-link span {
+      padding: 0px 6px 1px;
+      font-size: 11px;
+    }
+    .chat-header-two .user-detailbtn {
+      padding: 6px 14px;
+      margin-left: 12px;
+    }
+    .chat-header-two .user-imgs span {
+      font-size: 14px;
+    }
+    .chat-header-two .user-imgs {
+      margin-left: 12px;
+    }
   /* TAB and CHAT BOX END */
   }
   @media screen and (max-width: 1024px) {
@@ -627,7 +707,46 @@
     }
 
    /* TAB and CHAT BOX START */
-
+   .user-chat {
+    height: calc(100% - 90px);
+    }
+    .chat-header {
+      padding: 11px 20px;
+    }
+    .usertype-common .usertype-view {
+      padding: 40px 20px 150px;
+    }
+    .btm-common {
+      left: 20px;
+      right: 20px;
+    }
+    .chat-nav .nav-link,
+    .user-chat-main .chat-nav .tabs-head {
+      font-size: 11px;
+    }
+    .user-chat-main .chat-nav {
+      padding: 0 8px;
+    }
+    .btm-common .btm-type-one input {
+      font-size: 13px;
+    }
+    .btm-type-two a img{
+      width: 20px;
+    }
+    .btm-common .btm-type-one {
+      padding: 8px 12px;
+    }
+    .btm-common .btm-type-two {
+      padding: 8px 12px;
+      gap: 14px;
+    }
+    .chat-header-one h3,
+    .usertype-view .usertype-describe h3 {
+      font-size: 17px;
+  }  
+  .chat-header .chat-header-two .user-search img{
+    width:20px;
+ }
   /* TAB and CHAT BOX END */
   }
   @media screen and (max-width: 767px) {
@@ -717,7 +836,35 @@
     }
 
    /* TAB and CHAT BOX START */
-
+  .chat-header {
+    padding: 8px 14px;
+  }
+  .usertype-common .usertype-view {
+    padding: 30px 14px 150px;
+  }
+  .user-chat-main .chat-nav .tabs-head {
+    padding: 15px 0 5px;
+  }
+  .btm-common {
+    left: 14px;
+    right: 14px;
+  }
+  .user-chat {
+    height: calc(100% - 64px);
+  }
+  .chat-header {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .chat-header .chat-header-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .chat-commmon .usertype-common {
+    height: calc(100% - 102px);
+  }
   /* TAB and CHAT BOX END */
   }
   @media screen and (max-width: 575px) {
@@ -800,7 +947,55 @@
     }
 
    /* TAB and CHAT BOX START */
-
+   .user-sidemain0 {
+    height: auto;
+  }
+  .user-sidemain {
+    height: calc(100% - 264px);
+    padding-bottom: 0px;
+  }
+.user-chat-main .chat-nav {
+  padding: 0 8px 8px;
+}
+.usertype-view .username-text p, 
+.usertype-view .username-textlft p, 
+.usertype-view .username-text h5, 
+.usertype-view .username-textlft h5, 
+.usertype-view .joingrp-i-lyt p, 
+.btm-common .btm-send-btn, 
+.chat-header-one p, 
+.chat-header-two 
+.user-detailbtn, 
+.usertype-view .usertype-describe p,
+.usertype-view .usertype-describe p a {
+  font-size: 12px;
+}
+.usertype-view .joingrp-i-lyt p {
+  padding: 4px 6px;
+  top: 1px;
+}
+.usertype-view .usertype-describe {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.usertype-view .usertype-right {
+  padding-bottom: 15px;
+}
+.usertype-view .usertype-left {
+  padding-bottom: 15px;
+}
+.btm-common .btm-type-one input {
+  font-size: 12px;
+}
+.btm-common .btm-type-one input::placeholder{
+  font-size: 12px;
+ }
+ .usertype-view .joingrp-i-lyt {
+  padding-top: 15px;
+}
+.btm-common .btm-type-one a .clock-circle{
+  width: 20px;
+}
   /* TAB and CHAT BOX END */
   
   }
@@ -830,7 +1025,28 @@
     }
 
   /* TAB and CHAT BOX START */
-
+  .btm-common .btm-type-two,
+  .btm-common .btm-type-one {
+    padding: 6px 10px;
+    gap: 8px;
+  }
+  .usertype-common .usertype-view {
+    padding: 15px 14px 120px;
+}
+.btm-common .btm-send-btn span{
+  display: none;
+}
+.btm-common .btm-send-btn {
+  padding: 4px 6px;
+}
+.username-textlft{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.usertype-view .username-textlft p {
+  margin-bottom: 0px;
+}
   /* TAB and CHAT BOX END */
   }
   
