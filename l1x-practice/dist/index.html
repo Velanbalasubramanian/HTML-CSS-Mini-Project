@@ -4,57 +4,298 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>l1x practice</title>
+    <title>l1x practice tailwind</title>
     <link rel="stylesheet" href="output.css" />
     <script src="main.js"></script>
   </head>
-  <body class="font-pop">
+  <body class="font-man">
 
-   
-    <section class="relative">
-      
-
-      <div class="2xl:pt-56 xl:pt-44 lg:pt-36 sm:pt-28 pt-24 lg:px-44 md:px-36 sm:px-24 px-6 mx-auto z-0">
-        <div class="container mx-auto">
-          <div class="grid lg:grid-cols-12 grid-cols-1 mx-auto lg:gap-8 gap-10">
-            <div class="my-auto col-span-3">
-
-              <!-- CHANNELS START-->
-              <div class="pt-6">
-             <h3>CHANNELS</h3>
-             <ul>
-              <li class="bg-bg-channel text-txt-channel text-xs px-[18px] py-[9px] font-bold rounded flex justify-between items-center"># tech <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">3</span></li>
-              <li class="text-txt-channel text-xs px-[18px] py-[9px] font-bold rounded flex justify-between items-center"># events <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">6</span></li>
-              <li class="text-txt-channel text-xs px-[18px] py-[9px] font-bold rounded flex justify-between items-center"># jobs</li>
-              <li class="text-txt-channel text-xs px-[18px] py-[9px] font-bold rounded flex justify-between items-center"># Support</li>
-             </ul>
+    <section class="relative h-screen min-h-1/7 bg-common-bl">
+      <div class="w-full h-full flex">
+        <div class="bg-how-to-acc bg-no-repeat bg-cover w-60 h-full">
+          <div class="flex justify-center items-center pt-29 pb-27 border-b border-opacity-40 border-white mx-3.5">
+          <img src="/images/l1x-labs.png" alt="l1x-labs">
+        </div>
+        <ul class="list-none space-y-8 pl-7 py-7 border-b border-opacity-30 border-white mx-3.5">
+          <li><a href="#" class="flex items-center text-white font-normal text-sm gap-3.5"><img src="/images/events.png" alt="events"><span>Events</span></a></li>
+          <li><a href="#" class="flex items-center text-white font-normal text-sm gap-3.5"><img src="/images/hackathon.png" alt="hackathon"><span>Hackathon</span></a></li>
+          <li><a href="#" class="flex items-center text-white font-normal text-sm gap-3.5"><img src="/images/projects.png" alt=""><span>Projects</span></a></li>
+          <li><a href="#" class="flex items-center text-white font-normal text-sm gap-3.5"><img src="/images/dashboard.png" alt="dashboard"><span>Dashboard</span></a></li>
+        </ul>
+        <ul class="list-none space-y-8 pl-7 py-7 border-b border-opacity-30 border-white mx-3.5">
+          <li><a href="#" class="flex items-center text-white font-normal text-sm gap-3.5"><img src="/images/messages.png" alt="Messages"><span>Messages</span></a></li>
+        </ul>
+        <ul class="list-none space-y-8 pl-7 py-7 border-b border-opacity-30 border-white mx-3.5">
+          <li><a href="#" class="flex items-center text-white font-normal text-sm gap-3.5"><img src="/images/knowledge-base.png" alt="knowledge-base"><span>Knowledge Base</span></a></li>
+        </ul>
+        <div class="pt-12">
+          <img src="/images/curve-bg.png" alt="curve-bg">
+        </div>
+        </div>
+          <div class="grid lg:grid-cols-12 grid-cols-1 w-[calc(100%-240px)] h-full">
+            <div class="col-span-3 px-11">
+              <div class="">
+             <!-- CHANNELS START-->
+             <div class="tab overflow-hidden">
+              <h3 class="text-xs text-h-lyt font-bold pt-6 pb-1">CHANNELS</h3>
+              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'tech')" id="defaultOpen"> # tech 
+              <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">3</span></button>
+              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'events')"> # events <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">6</span></button>
+              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'jobs')"> # jobs</button>
+              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'support')"> # Support</button>
             </div>
             <!-- CHANNELS END-->
-
-            <!-- DIRECT MESSAGE START-->
-            <div class="pt-6">
-             <h3>DIRECT MESSAGE</h3>
-             <ul>
-              <li class="text-txt-channel text-xs px-[18px] py-[9px] font-bold rounded flex justify-between items-center">Jerome Bell</li>
-              <li class="text-txt-channel text-xs px-[18px] py-[9px] font-bold rounded flex justify-between items-center">Marvin McKinney <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">6</span></li>
-              <li class="text-txt-channel text-xs px-[18px] py-[9px] font-bold rounded flex justify-between items-center">Jane Cooper</li>
-             </ul>
+            
+             <!-- DIRECT MESSAGE START-->
+            <div class="tab overflow-hidden">
+              <h3 class="text-xs text-h-lyt font-bold pt-6 pb-1">DIRECT MESSAGE</h3>
+              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'bell')" id="defaultOpen"> Jerome Bell<span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">3</span></button>
+              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'marvin')"> Marvin McKinney <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">6</span></button>
+              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'jane')"> Jane Cooper</button>
             </div>
             <!-- DIRECT MESSAGE END-->
+            </div>
+            </div>
 
+            <!-- TAB CONTENT -->
+            <div class="col-span-9">
+              
+              <div id="tech" class="tabcontent h-full border-l border-line-btm">
+                <div>
+                  <input type="text" placeholder="Quick Search...">
+                  <a href="#"><img src="/images/search.svg" alt="search"></a>
+                  <div>
+                    <a href=""></a>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center py-11 px-10 border-b border-line-btm">
+                  <div>
+                    <h3 class="text-tech-title text-lg font-semibold font-styr" >#Tech</h3>
+                  <p class="text-tech-title text-sm font-normal">Profile Web Page Development</p>
+                  </div>
+                  <div class="flex items-center justify-center">
+                  <a href="#"><img src="/images/search.svg" alt="search"></a>
+                  <a href="#" class="ml-6"><img src="/images/user-imgs.png" alt="user-imgs"></a>
+                  <a href="#" class="ml-7">Details</a>
+                </div>
+                </div>
+                <div class="bg-white h-[calc(100%-71px)] relative mb-11 px-10 py-10">
+                  <div class="h-full overflow-y-scroll">
+                  <div class="pb-26 mb-26 border-b border-line-btm">
+                    <h3 class="text-tech-title text-lg font-styr font-semibold" >#Tech</h3>
+                    <p class="text-tech-title text-sm font-normal"><a href="#" class="text-txt-channel font-bold">@layer1Xadmin</a> created this channel on July 20th, 2023. This is the very beginning of <a href="#" class="text-txt-channel font-bold"># Teach</a> </p>
+                  </div>
+                  <!-- RIGHT SIDE start -->
+                  <div class="flex items-start justify-end gap-2">
+                    <div class="">
+                    <div class="flex items-center justify-end gap-1">
+                      <span class="text-user-spn text-xs font-styr font-normal mt-1">8:20 PM</span>
+                      <h5 class="font-styr font-semibold text-sm">Jessica Hanson</h5>
+                    </div>
+                    <p class="font-robo font-normal text-white text-sm bg-txt-channel py-1.5 pr-3 pl-18 rounded-l-bordr rounded-br-bordr">Freelance Design Tricks</p>
+                  </div>
+                  <img src="/images/user-chat-img.png" alt="">
+                  </div>
+                  <!-- RIGHT SIDE END -->
+
+                  <!-- LEFT SIDE start -->
+                  <div class="flex items-start justify-start gap-2">
+                    <img src="/images/user-chat-img1.png" alt="">
+                    <div class="flex flex-col gap-1">
+                    <div class="flex items-center justify-start gap-1">
+                      <h5 class="font-styr font-semibold text-sm">Sallie Wade</h5>
+                      <span class="text-user-spn text-xs font-styr font-normal mt-1">8:25 PM</span>
+                    </div>
+                      <p class="font-robo font-normal text-sm bg-user-bg py-1.5 pl-3 pr-18 rounded-r-bordr rounded-bl-bordr">Some graphic designers always manage to produce</p>
+                      <div class="flex gap-1 pt-1">
+                        <img src="/images/rectangle-img0.png" alt="">
+                      <img src="/images/rectangle-img1.png" alt="">
+                      </div>
+                    
+                  </div>
+                  </div>
+                  <!-- LEFT SIDE END -->
+
+                  <!-- RIGHT SIDE start -->
+                  <div class="flex items-start justify-end gap-2">
+                    <div class="">
+                    <div class="flex items-center justify-end gap-1">
+                      <span class="text-user-spn text-xs font-styr font-normal mt-1">8:40 PM</span>
+                      <h5 class="font-styr font-semibold text-sm">Jessica Hanson</h5>
+                    </div>
+                    <p class="font-robo font-normal text-white text-sm bg-txt-channel py-1.5 pr-3 pl-18 rounded-l-bordr rounded-br-bordr">Attending a trade show can be a very effective method</p>
+                  </div>
+                  <img src="/images/user-chat-img.png" alt="">
+                  </div>
+                  <!-- RIGHT SIDE END -->
+
+                  <!-- LEFT SIDE start -->
+                  <div class="flex items-start justify-start gap-2">
+                    <img src="/images/user-chat-img1.png" alt="">
+                    <div class="flex flex-col gap-1">
+                    <div class="flex items-center justify-start gap-1">
+                      <h5 class="font-styr font-semibold text-sm">Sallie Wade</h5>
+                      <span class="text-user-spn text-xs font-styr font-normal mt-1">8:50 PM</span>
+                    </div>
+                      <p class="font-robo font-normal text-sm bg-user-bg py-1.5 pl-3 pr-18 rounded-r-bordr rounded-bl-bordr">Advertising on a budget part</p>
+                  </div>
+                  </div>
+                  <!-- LEFT SIDE END -->
+
+                  <!-- horizontal line START -->
+                  <div class="relative border-b border-line-btm flex items-center justify-center pt-12">
+                    <p class="absolute bg-white text-line-btm1 text-sm font-robo py-1.5 px-3">Cameron Williamson joined the group</p>
+                  </div>
+                  <!-- horizontal line END -->
+
+
+
+
+                  <!-- RIGHT SIDE start -->
+                  <div class="flex items-start justify-end gap-2">
+                    <div class="">
+                    <div class="flex items-center justify-end gap-1">
+                      <span class="text-user-spn text-xs font-styr font-normal mt-1">8:20 PM</span>
+                      <h5 class="font-styr font-semibold text-sm">Jessica Hanson</h5>
+                    </div>
+                    <p class="font-robo font-normal text-white text-sm bg-txt-channel py-1.5 pr-3 pl-18 rounded-l-bordr rounded-br-bordr">Freelance Design Tricks</p>
+                  </div>
+                  <img src="/images/user-chat-img.png" alt="">
+                  </div>
+                  <!-- RIGHT SIDE END -->
+
+                  <!-- LEFT SIDE start -->
+                  <div class="flex items-start justify-start gap-2">
+                    <img src="/images/user-chat-img1.png" alt="">
+                    <div class="flex flex-col gap-1">
+                    <div class="flex items-center justify-start gap-1">
+                      <h5 class="font-styr font-semibold text-sm">Sallie Wade</h5>
+                      <span class="text-user-spn text-xs font-styr font-normal mt-1">8:25 PM</span>
+                    </div>
+                      <p class="font-robo font-normal text-sm bg-user-bg py-1.5 pl-3 pr-18 rounded-r-bordr rounded-bl-bordr">Some graphic designers always manage to produce</p>
+                      <div class="flex gap-1 pt-1">
+                        <img src="/images/rectangle-img0.png" alt="">
+                      <img src="/images/rectangle-img1.png" alt="">
+                      </div>
+                    
+                  </div>
+                  </div>
+                  <!-- LEFT SIDE END -->
+
+                  <!-- RIGHT SIDE start -->
+                  <div class="flex items-start justify-end gap-2">
+                    <div class="">
+                    <div class="flex items-center justify-end gap-1">
+                      <span class="text-user-spn text-xs font-styr font-normal mt-1">8:40 PM</span>
+                      <h5 class="font-styr font-semibold text-sm">Jessica Hanson</h5>
+                    </div>
+                    <p class="font-robo font-normal text-white text-sm bg-txt-channel py-1.5 pr-3 pl-18 rounded-l-bordr rounded-br-bordr">Attending a trade show can be a very effective method</p>
+                  </div>
+                  <img src="/images/user-chat-img.png" alt="">
+                  </div>
+                  <!-- RIGHT SIDE END -->
+
+                  <!-- LEFT SIDE start -->
+                  <div class="flex items-start justify-start gap-2">
+                    <img src="/images/user-chat-img1.png" alt="">
+                    <div class="flex flex-col gap-1">
+                    <div class="flex items-center justify-start gap-1">
+                      <h5 class="font-styr font-semibold text-sm">Sallie Wade</h5>
+                      <span class="text-user-spn text-xs font-styr font-normal mt-1">8:50 PM</span>
+                    </div>
+                      <p class="font-robo font-normal text-sm bg-user-bg py-1.5 pl-3 pr-18 rounded-r-bordr rounded-bl-bordr">Advertising on a budget part</p>
+                  </div>
+                  </div>
+                  <!-- LEFT SIDE END -->
+                  
+                  <!-- horizontal line START -->
+                  <div class="relative border-b border-line-btm flex items-center justify-center pt-12">
+                    <p class="absolute bg-white text-line-btm1 text-sm font-robo py-1.5 px-3">Cameron Williamson joined the group</p>
+                  </div>
+                  <!-- horizontal line END -->
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- FIXED BOTTOM START -->
+                  <div class="absolute bottom-2.5 left-10 right-10">
+                  <div class="flex items-center justify-between gap-4 py-2.5 px-3.5 border border-line-btm bg-white rounded-t-lg">
+                    <form action="#" class="w-full">
+                      <input type="text" placeholder="Enter message here" class="w-full placeholder-in-place text-sm">
+                    </form>
+                    <a href="#"><img src="/images/clock-circle.svg" alt="clock-circle"></a>
+                    <a href="#" class="flex items-center justify-center gap-2.5 bg-txt-channel text-white text-xs font-bold rounded-lg py-2 px-6"><img src="/images/send.svg" alt="send"><span>Send</span></a>
+                  </div>
+                  <div class="border border-line-btm bg-btm-back rounded-b-lg flex items-center justify-start gap-4 py-2.5 px-3.5">
+                    <a href="#"><img src="/images/image-01.svg" alt="gallery"></a>
+                    <a href="#"><img src="/images/attachment-01.svg" alt="attachment"></a>
+                    <a href="#"><img src="/images/bold.svg" alt="bold"></a>
+                    <a href="#"><img src="/images/italic.svg" alt="italic"></a>
+                    <a href="#"><img src="/images/underline.svg" alt="underline"></a>
+                    <a href="#"><img src="/images/strikethrough.svg" alt="strikethrough"></a>
+                    <a href="#"><img src="/images/list-number.svg" alt="list-number"></a>
+                  </div>
+                </div>
+                <!-- FIXED BOTTOM END -->
+
+                </div>
+              </div>
+              
+              <div id="events" class="tabcontent">
+                <h3>EVENTS</h3> 
+              </div>
+              <div id="jobs" class="tabcontent">
+                <h3>JOBS</h3>
+              </div>
+              <div id="support" class="tabcontent">
+                <h3>SUPPORT</h3>
+              </div>
+              <div id="bell" class="tabcontent">
+                <h3>JEROME BELL</h3>
+              </div>
+              <div id="marvin" class="tabcontent">
+                <h3>Marvin McKinney</h3>
+              </div>
+              <div id="jane" class="tabcontent">
+                <h3>Jane Cooper</h3>
+              </div>
             </div>
-            <div class="">
-             
-            </div>
+
           </div>
-        </div>
+        
       </div>
     </section>
 
-
-
-
-    
+   
+    <script>
+      function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+    </script>
 
   </body>
 </html>
