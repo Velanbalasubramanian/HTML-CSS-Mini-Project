@@ -50,10 +50,17 @@ module.exports = {
         // '12': '10px',
       },
       minHeight: {
-        '1/7': '860px',
+        '1/7': '1130px',
+      },
+      maxHeight: {
+        '3/7': '920px',
       },
       width: {
         '60': '15rem',
+        '23':'358px',
+      },
+      transitionDuration: {
+        '0.4': '0.4s',
       },
       padding: {
         '29': '29px',
@@ -61,6 +68,11 @@ module.exports = {
         '11': '11px',
         '26': '26px',
         '18': '18px',
+        '19': '19px',
+        '31': '31px',
+        '17':'17px',
+        '55':'55px',
+        '9.5' : '9px'
       },
       margin: {
         '26': '26px',
@@ -71,7 +83,7 @@ module.exports = {
     
   },
   plugins: [
-   
+    
   ],
 }
 }

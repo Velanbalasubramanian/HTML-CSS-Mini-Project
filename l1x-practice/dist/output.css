@@ -518,6 +518,96 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.tabcontent{
+  display: none;
+}
+
+.tab button.active{
+  border-radius: 0.25rem;
+  background-color: rgba(78, 31, 163, 0.15);
+  --tw-text-opacity: 1;
+  color: rgb(78 31 163 / var(--tw-text-opacity));
+  outline-width: 0px;
+}
+
+.accordion{
+  width: 100%;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: left;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: 0.4s;
+}
+
+.accordion::after{
+  position: absolute;
+  right: 1.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  --tw-content: '';
+  content: var(--tw-content);
+  background-image:url('/images/chevron-right.svg');
+}
+
+.accordion:active::after{
+  position: absolute;
+  right: 1.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  --tw-content: '';
+  content: var(--tw-content);
+  background-image:url('/images/chevron-down.svg');
+}
+
+@media (min-width: 640px){
+  .accordion{
+    width: auto;
+    background-color: transparent;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition-property: none;
+  }
+
+  .accordion::after{
+    position: relative;
+    right: 0px;
+    height: auto;
+    width: auto;
+    background-image: none;
+    --tw-content: none;
+    content: var(--tw-content);
+  }
+
+  .accordion:active::after{
+    position: relative;
+    height: auto;
+    width: auto;
+    background-image: none;
+    --tw-content: none;
+    content: var(--tw-content);
+  }
+}
+
+.panel{
+  max-height: 0px;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (min-width: 640px){
+  .panel{
+    max-height: none;
+    transition-property: none;
+  }
+}
+
 .absolute{
   position: absolute !important;
 }
@@ -560,10 +650,6 @@ video {
   margin-right: 0.875rem !important;
 }
 
-.mb-11{
-  margin-bottom: 2.75rem !important;
-}
-
 .mb-26{
   margin-bottom: 26px !important;
 }
@@ -592,6 +678,10 @@ video {
   display: grid !important;
 }
 
+.h-\[calc\(100\%-122px\)\]{
+  height: calc(100% - 122px) !important;
+}
+
 .h-\[calc\(100\%-71px\)\]{
   height: calc(100% - 71px) !important;
 }
@@ -604,8 +694,16 @@ video {
   height: 100vh !important;
 }
 
+.max-h-3\/7{
+  max-height: 920px !important;
+}
+
 .min-h-1\/7{
-  min-height: 860px !important;
+  min-height: 1130px !important;
+}
+
+.w-23{
+  width: 358px !important;
 }
 
 .w-60{
@@ -688,10 +786,6 @@ video {
 
 .overflow-hidden{
   overflow: hidden !important;
-}
-
-.overflow-y-auto{
-  overflow-y: auto !important;
 }
 
 .overflow-y-scroll{
@@ -850,14 +944,14 @@ video {
   padding-bottom: 0.375rem !important;
 }
 
-.py-10{
-  padding-top: 2.5rem !important;
-  padding-bottom: 2.5rem !important;
-}
-
 .py-11{
   padding-top: 11px !important;
   padding-bottom: 11px !important;
+}
+
+.py-17{
+  padding-top: 17px !important;
+  padding-bottom: 17px !important;
 }
 
 .py-2{
@@ -868,6 +962,11 @@ video {
 .py-2\.5{
   padding-top: 0.625rem !important;
   padding-bottom: 0.625rem !important;
+}
+
+.py-31{
+  padding-top: 31px !important;
+  padding-bottom: 31px !important;
 }
 
 .py-7{
@@ -892,6 +991,10 @@ video {
   padding-bottom: 27px !important;
 }
 
+.pb-32{
+  padding-bottom: 8rem !important;
+}
+
 .pb-\[2px\]{
   padding-bottom: 2px !important;
 }
@@ -902,6 +1005,10 @@ video {
 
 .pl-3{
   padding-left: 0.75rem !important;
+}
+
+.pl-5{
+  padding-left: 1.25rem !important;
 }
 
 .pl-7{
@@ -916,12 +1023,24 @@ video {
   padding-right: 0.75rem !important;
 }
 
+.pr-5{
+  padding-right: 1.25rem !important;
+}
+
 .pt-1{
   padding-top: 0.25rem !important;
 }
 
+.pt-10{
+  padding-top: 2.5rem !important;
+}
+
 .pt-12{
   padding-top: 3rem !important;
+}
+
+.pt-14{
+  padding-top: 3.5rem !important;
 }
 
 .pt-29{
@@ -984,6 +1103,11 @@ video {
   color: rgb(146 146 157 / var(--tw-text-opacity)) !important;
 }
 
+.text-line-btm1{
+  --tw-text-opacity: 1 !important;
+  color: rgb(128 128 149 / var(--tw-text-opacity)) !important;
+}
+
 .text-tech-title{
   --tw-text-opacity: 1 !important;
   color: rgb(25 42 68 / var(--tw-text-opacity)) !important;
@@ -1004,11 +1128,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.text-line-btm1{
-  --tw-text-opacity: 1 !important;
-  color: rgb(128 128 149 / var(--tw-text-opacity)) !important;
-}
-
 .underline{
   text-decoration-line: underline !important;
 }
@@ -1023,6 +1142,11 @@ video {
   color: rgb(160 174 192 / var(--tw-placeholder-opacity)) !important;
 }
 
+.outline-none{
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+}
+
 @font-face {
   font-family: 'StyreneALC';
 
@@ -1035,15 +1159,35 @@ video {
        url('../fonts/StyreneALCRegular.svg#StyreneALCRegular') format('svg');
 }
 
-.tabcontent {
-  display: none;
-}
-
-.tab button.active{
-  background-color: rgba(78, 31, 163, 0.15);
-  border-radius: 4px;
-  color: #4E1FA3;
-}
+/* @media screen and (max-width: 575px){
+  .accordion {
+    width: 100%;
+text-align: left;
+outline: none;
+transition: 0.4s;
+background-color: white;
+padding: 9px 18px;
+border-radius: 4px;
+  }
+  .accordion:after {
+    content: '';
+    float: right;
+    background: url(/images/chevron-right.svg) no-repeat;
+    width: 20px;
+    height:20px;   
+  }
+   .active.accordion:after {
+    content: "";
+    background: url(/images/chevron-down.svg) no-repeat;
+    width: 20px;
+    height:20px;
+  }
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}  */
 
 @media (min-width: 1024px){
   .lg\:grid-cols-12{

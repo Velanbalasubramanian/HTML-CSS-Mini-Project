@@ -14,11 +14,72 @@
        url('../fonts/StyreneALCRegular.svg#StyreneALCRegular') format('svg');
 }
 
-.tabcontent {
-    display: none;
+@layer components {
+  .tabcontent {
+    @apply hidden;
   }
-  .tab button.active{
-    background-color: rgba(78, 31, 163, 0.15);
-    border-radius: 4px;
-    color: #4E1FA3;
+  .tab button.active {
+    @apply bg-bg-channel rounded text-txt-channel outline-0;
+  }
+  .accordion {
+    @apply sm:w-auto w-full text-left outline-none sm:transition-none trans-four sm:bg-transparent bg-white sm:py-0 py-2 sm:px-0 px-4 rounded sm:after:content-none after:content-[''] sm:after:relative after:absolute sm:after:bg-none after:chev-right sm:after:w-auto after:w-5 sm:after:h-auto after:h-5 sm:after:right-0 after:right-6 sm:active:after:content-none active:after:content-[''] sm:active:after:bg-none sm:active:after:relative active:after:absolute active:after:chev-down active:after:right-6 sm:active:after:w-auto active:after:w-5 sm:active:after:h-auto active:after:h-5;
+  }
+  .panel {
+    @apply sm:max-h-none max-h-0 sm:transition-none trans;
+  }
+  
+
 }
+
+@layer utilities {
+ .chev-right{
+  background-image:url('/images/chevron-right.svg');
+ }
+ .chev-down{
+  background-image:url('/images/chevron-down.svg');
+ }
+ .bg-channel {
+  background-color: rgba(78, 31, 163, 0.15);
+ }
+ .txt-channel{
+  color: #4E1FA3;
+}
+.trans {
+  transition: max-height 0.2s ease-out;
+}
+.trans-four{
+  transition: 0.4s;
+}
+
+
+}
+
+/* @media screen and (max-width: 575px){
+  .accordion {
+    width: 100%;
+text-align: left;
+outline: none;
+transition: 0.4s;
+background-color: white;
+padding: 9px 18px;
+border-radius: 4px;
+  }
+  .accordion:after {
+    content: '';
+    float: right;
+    background: url(/images/chevron-right.svg) no-repeat;
+    width: 20px;
+    height:20px;   
+  }
+   .active.accordion:after {
+    content: "";
+    background: url(/images/chevron-down.svg) no-repeat;
+    width: 20px;
+    height:20px;
+  }
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}  */

@@ -32,28 +32,47 @@
           <img src="/images/curve-bg.png" alt="curve-bg">
         </div>
         </div>
-          <div class="grid lg:grid-cols-12 grid-cols-1 w-[calc(100%-240px)] h-full">
+
+        <div class="w-[calc(100%-240px)] h-full">
+        <header class="px-10 bg-white">
+          <nav>
+            <div class="flex items-center justify-between py-31">
+              <div class="flex justify-between items-center bg-white w-23 border border-line-btm rounded-lg py-17 pl-5 pr-5 gap-3">
+              <input type="text" placeholder="Quick Search..." class="w-full">
+              <a href="#"><img src="/images/search.svg" alt="search"></a>
+            </div>
+              <div>
+                <a href=""><img src="/images/notification-one.svg" alt="notification"></a>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="h-[calc(100%-122px)]">
+          <div class="grid lg:grid-cols-12 grid-cols-1 h-full">
             <div class="col-span-3 px-11">
               <div class="">
              <!-- CHANNELS START-->
-             <div class="tab overflow-hidden">
-              <h3 class="text-xs text-h-lyt font-bold pt-6 pb-1">CHANNELS</h3>
+             <div class="tab overflow-hidden pt-6">
+              <h3 class="text-xs text-h-lyt font-bold accordion">CHANNELS</h3>
+              <div class="panel pt-1">
               <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'tech')" id="defaultOpen"> # tech 
               <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">3</span></button>
               <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'events')"> # events <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">6</span></button>
               <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'jobs')"> # jobs</button>
               <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'support')"> # Support</button>
             </div>
+            </div>
             <!-- CHANNELS END-->
-            
+
              <!-- DIRECT MESSAGE START-->
             <div class="tab overflow-hidden">
-              <h3 class="text-xs text-h-lyt font-bold pt-6 pb-1">DIRECT MESSAGE</h3>
-              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'bell')" id="defaultOpen"> Jerome Bell<span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">3</span></button>
-              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'marvin')"> Marvin McKinney <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">6</span></button>
-              <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'jane')"> Jane Cooper</button>
+             <h3 class="text-xs text-h-lyt font-bold pt-6 pb-1">DIRECT MESSAGE</h3>
+             <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'bell')" id="defaultOpen"> Jerome Bell<span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">3</span></button>
+             <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'marvin')"> Marvin McKinney <span class="text-white bg-txt-channel text-xs px-[9px] pt-[1px] pb-[2px] rounded-full">6</span></button>
+             <button class="text-xs px-[18px] py-[9px] font-styr font-semibold rounded flex justify-between items-center tablinks w-full" onclick="openCity(event, 'jane')"> Jane Cooper</button>
             </div>
             <!-- DIRECT MESSAGE END-->
+
             </div>
             </div>
 
@@ -61,13 +80,6 @@
             <div class="col-span-9">
               
               <div id="tech" class="tabcontent h-full border-l border-line-btm">
-                <div>
-                  <input type="text" placeholder="Quick Search...">
-                  <a href="#"><img src="/images/search.svg" alt="search"></a>
-                  <div>
-                    <a href=""></a>
-                  </div>
-                </div>
                 <div class="flex justify-between items-center py-11 px-10 border-b border-line-btm">
                   <div>
                     <h3 class="text-tech-title text-lg font-semibold font-styr" >#Tech</h3>
@@ -79,8 +91,9 @@
                   <a href="#" class="ml-7">Details</a>
                 </div>
                 </div>
-                <div class="bg-white h-[calc(100%-71px)] relative mb-11 px-10 py-10">
-                  <div class="h-full overflow-y-scroll">
+                <div class="bg-white h-[calc(100%-71px)] relative">
+                  <div class="h-full overflow-y-scroll max-h-3/7">
+                    <div class="px-10 pt-14 pb-32">
                   <div class="pb-26 mb-26 border-b border-line-btm">
                     <h3 class="text-tech-title text-lg font-styr font-semibold" >#Tech</h3>
                     <p class="text-tech-title text-sm font-normal"><a href="#" class="text-txt-channel font-bold">@layer1Xadmin</a> created this channel on July 20th, 2023. This is the very beginning of <a href="#" class="text-txt-channel font-bold"># Teach</a> </p>
@@ -152,7 +165,7 @@
 
 
                   <!-- RIGHT SIDE start -->
-                  <div class="flex items-start justify-end gap-2">
+                  <div class="flex items-start justify-end gap-2 pt-10">
                     <div class="">
                     <div class="flex items-center justify-end gap-1">
                       <span class="text-user-spn text-xs font-styr font-normal mt-1">8:20 PM</span>
@@ -214,25 +227,14 @@
                   </div>
                   <!-- horizontal line END -->
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
+              </div>
 
 
                 <!-- FIXED BOTTOM START -->
                   <div class="absolute bottom-2.5 left-10 right-10">
                   <div class="flex items-center justify-between gap-4 py-2.5 px-3.5 border border-line-btm bg-white rounded-t-lg">
                     <form action="#" class="w-full">
-                      <input type="text" placeholder="Enter message here" class="w-full placeholder-in-place text-sm">
+                      <input type="text" placeholder="Enter message here" class="w-full placeholder-in-place text-sm outline-none">
                     </form>
                     <a href="#"><img src="/images/clock-circle.svg" alt="clock-circle"></a>
                     <a href="#" class="flex items-center justify-center gap-2.5 bg-txt-channel text-white text-xs font-bold rounded-lg py-2 px-6"><img src="/images/send.svg" alt="send"><span>Send</span></a>
@@ -251,7 +253,6 @@
 
                 </div>
               </div>
-              
               <div id="events" class="tabcontent">
                 <h3>EVENTS</h3> 
               </div>
@@ -270,15 +271,17 @@
               <div id="jane" class="tabcontent">
                 <h3>Jane Cooper</h3>
               </div>
-            </div>
 
+            </div>
           </div>
-        
+        </div>
+        </div>
       </div>
     </section>
 
    
     <script>
+      // VERTICAL TAB START
       function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -295,7 +298,42 @@
   
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+// VERTICAL TAB END
+
+  // ACCORDION START
+var acc = document.getElementsByClassName("accordion");
+var panels = document.getElementsByClassName("panel");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var currentPanel = this.nextElementSibling;
+    var isActive = this.classList.contains("active");
+    
+    // Close all panels first
+    for (var j = 0; j < panels.length; j++) {
+      panels[j].style.maxHeight = null;
+    }
+    // Remove "active" class from all accordions
+    for (var k = 0; k < acc.length; k++) {
+      acc[k].classList.remove("active");
+    }
+    
+    // If the clicked tab was not already active, open its panel
+    if (!isActive) {
+      this.classList.toggle("active");
+      currentPanel.style.maxHeight = currentPanel.scrollHeight + "px";
+    }
+  });
+}
+
     </script>
 
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </body>
 </html>
+
+
+
+
