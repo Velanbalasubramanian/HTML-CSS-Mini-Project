@@ -8,9 +8,13 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        '2xl': '1340px'
+      },
       colors: {
         'zblue': '#002d61',
         'bg-channel' : 'rgba(78, 31, 163, 0.15)', 
+         'btn-det' : 'rgba(78, 31, 163, 0.10)',
         'txt-channel' : '#4E1FA3',
         'h-lyt' : '#92929D',
         'common-bl' : '#F5F5F6',
@@ -32,6 +36,8 @@ module.exports = {
       },
       fontSize: {
         // '40l' : ["2.5rem"]
+        '13' : ["13px"],
+        'xxs' : ['10px']
       },
       boxShadow: {
         // '3xl': '0 0 20px 0 rgba(0, 0, 0, 0.1)',
@@ -50,10 +56,14 @@ module.exports = {
         // '12': '10px',
       },
       minHeight: {
-        '1/7': '1130px',
+        '1/7': '855px',
+        '1/77': '750px',
+        '11/77': '720px',
       },
       maxHeight: {
-        '3/7': '920px',
+        '3/7': '815px',
+        '3/77': '490px',
+        '33/77': '355px',
       },
       width: {
         '60': '15rem',
@@ -65,6 +75,7 @@ module.exports = {
       padding: {
         '29': '29px',
         '27': '27px',
+        '22': '22px',
         '11': '11px',
         '26': '26px',
         '18': '18px',
@@ -72,7 +83,8 @@ module.exports = {
         '31': '31px',
         '17':'17px',
         '55':'55px',
-        '9.5' : '9px'
+        '9.5' : '9px',
+        '26' : '26px'
       },
       margin: {
         '26': '26px',

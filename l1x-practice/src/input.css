@@ -22,14 +22,32 @@
     @apply bg-bg-channel rounded text-txt-channel outline-0;
   }
   .accordion {
-    @apply sm:w-auto w-full text-left outline-none sm:transition-none trans-four sm:bg-transparent bg-white sm:py-0 py-2 sm:px-0 px-4 rounded sm:after:content-none after:content-[''] sm:after:relative after:absolute sm:after:bg-none after:chev-right sm:after:w-auto after:w-5 sm:after:h-auto after:h-5 sm:after:right-0 after:right-6 sm:active:after:content-none active:after:content-[''] sm:active:after:bg-none sm:active:after:relative active:after:absolute active:after:chev-down active:after:right-6 sm:active:after:w-auto active:after:w-5 sm:active:after:h-auto active:after:h-5;
+    @apply sm:w-auto w-full text-left outline-none sm:transition-none trans-four sm:bg-transparent bg-white sm:py-0 py-2 sm:px-0 px-4 rounded sm:after:content-none after:content-[''] sm:after:relative after:absolute sm:after:bg-none after:chev-right sm:after:w-auto after:w-5 sm:after:h-auto after:h-5 sm:after:right-0 after:right-6 sm:active:after:content-none active:after:content-[''] sm:active:after:bg-none sm:active:after:relative active:after:absolute active:after:chev-down sm:active:after:w-auto active:after:w-5 sm:active:after:h-auto active:after:h-5;
   }
   .panel {
     @apply sm:max-h-none max-h-0 sm:transition-none trans;
   }
-  
+  .notify{
+    @apply relative before:content-[''] before:absolute before:dott before:w-2.5 before:h-2.5 before:right-0.5;
+  }
+  .tablinks{
+    @apply md:text-xs sm:xxs 2xl:px-[18px] sm:px-[8px] 2xl:py-[9px] sm:py-[4px] font-styr font-semibold rounded flex justify-between items-center w-full
+  }
+  .dropbtn{
+    @apply text-base border-none outline-none m-0 flex justify-center items-center gap-3.5
+  }
+  .dropdown-content{
+    @apply hidden absolute bg-content bg-cont shadow-lg z-[1] right-10
+  }
+  .drpdown-lynk{
+    @apply float-none text-black block text-left no-underline hover:lynk-bg
+  }
+
 
 }
+
+
+
 
 @layer utilities {
  .chev-right{
@@ -50,36 +68,32 @@
 .trans-four{
   transition: 0.4s;
 }
-
+.dott{
+  background-image: url('/images/dot.png');
+  background-size: cover;
+}
+.styr{
+  font-family: 'StyreneALC' ;
+}
+.bg-content{
+  background-color: #f9f9f9;
+}
+.bg-cont{
+  min-width: 160px;
+}
+.lynk-bg{
+  background-color: #ddd;
+}
+.xxs{
+  font-size: 11px;
+}
 
 }
 
-/* @media screen and (max-width: 575px){
-  .accordion {
-    width: 100%;
-text-align: left;
-outline: none;
-transition: 0.4s;
-background-color: white;
-padding: 9px 18px;
-border-radius: 4px;
-  }
-  .accordion:after {
-    content: '';
-    float: right;
-    background: url(/images/chevron-right.svg) no-repeat;
-    width: 20px;
-    height:20px;   
-  }
-   .active.accordion:after {
-    content: "";
-    background: url(/images/chevron-down.svg) no-repeat;
-    width: 20px;
-    height:20px;
-  }
-  .panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-}  */
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
