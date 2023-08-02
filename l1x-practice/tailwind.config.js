@@ -9,7 +9,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        '2xl': '1340px'
+        'xxsm': '320px',
+        'xsm': '400px',
+        '2xl': '1340px',
       },
       colors: {
         'zblue': '#002d61',
@@ -37,7 +39,8 @@ module.exports = {
       fontSize: {
         // '40l' : ["2.5rem"]
         '13' : ["13px"],
-        'xxs' : ['10px']
+        'xxs' : ['10px'],
+        'elvn': ['11px'],
       },
       boxShadow: {
         // '3xl': '0 0 20px 0 rgba(0, 0, 0, 0.1)',
@@ -56,7 +59,7 @@ module.exports = {
         // '12': '10px',
       },
       minHeight: {
-        '1/7': '855px',
+        '1/7': '740px',
         '1/77': '750px',
         '11/77': '720px',
       },

@@ -28,13 +28,13 @@
     @apply sm:max-h-none max-h-0 sm:transition-none trans;
   }
   .notify{
-    @apply relative before:content-[''] before:absolute before:dott before:w-2.5 before:h-2.5 before:right-0.5;
+    @apply relative before:content-[''] before:absolute md:before:dott before:dotte before:w-2.5 before:h-2.5 md:before:right-0.5 before:right-0;
   }
   .tablinks{
-    @apply md:text-xs sm:xxs 2xl:px-[18px] sm:px-[8px] 2xl:py-[9px] sm:py-[4px] font-styr font-semibold rounded flex justify-between items-center w-full
+    @apply md:text-xs sm:xxs xxs 2xl:px-[18px] sm:px-[8px] px-[8px] 2xl:py-[9px] sm:py-[4px] py-[4px] font-styr font-semibold rounded flex justify-between items-center w-full
   }
   .dropbtn{
-    @apply text-base border-none outline-none m-0 flex justify-center items-center gap-3.5
+    @apply text-base border-none outline-none m-0 flex justify-center items-center md:gap-3.5 sm:gap-0.5 gap-0.5
   }
   .dropdown-content{
     @apply hidden absolute bg-content bg-cont shadow-lg z-[1] right-10
@@ -42,6 +42,16 @@
   .drpdown-lynk{
     @apply float-none text-black block text-left no-underline hover:lynk-bg
   }
+  .heighth{
+    @apply heighthh
+  }
+  .heights-view{
+    @apply sm:heights-vieww hi-vieww
+  }
+  .minmum{
+    @apply 2xl:minimum md:minim sm:minium miniumm
+  }
+  
 
 
 }
@@ -71,6 +81,12 @@
 .dott{
   background-image: url('/images/dot.png');
   background-size: cover;
+  width: 10px;
+}
+.dotte{
+  background-image: url('/images/dot.png');
+  background-size: cover;
+  width: 8px;
 }
 .styr{
   font-family: 'StyreneALC' ;
@@ -87,6 +103,29 @@
 .xxs{
   font-size: 11px;
 }
+.minimum{
+  min-height:680px;
+}
+.minim{
+  min-height:695px;
+}
+.minium{
+  min-height: 600px;
+}
+.miniumm{
+  min-height: 350px;
+}
+.heighthh{
+  height: calc(100% - 116px);
+}
+.heights-vieww{
+  height: calc(100vh - 190px);
+  overflow-y: auto;
+}
+.hi-vieww{
+  height: calc(100vh - 225px);
+  overflow-y: auto;
+}
 
 }
 
@@ -95,5 +134,3 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
