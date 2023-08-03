@@ -27,13 +27,15 @@ module.exports = {
         'user-spn' : '#5F646D',
         'user-bg' : '#F5F5FA',
         'line-btm1': '#808095',
+        'bn-det': '#0e0e2c',
+        'fnine': '#F9F9F9',
       },
       opacity: {
         // '06': '.06',
       },
       fontFamily: {
       man : ["manrope"],
-      styr : ["StyreneALC"],
+      styr : ["StyreneALC, sans-serif"],
       robo : ["Roboto Flex"]
       },
       fontSize: {
@@ -53,7 +55,7 @@ module.exports = {
         // 'xs': '1.5rem',
       },
       backgroundImage: {
-        'how-to-acc': "url('/images/vertical-bg.png')",
+        'how-to-acc': "url('/assets/images/vertical-bg.png')",
       },
       borderWidth: {
         // '12': '10px',
@@ -71,6 +73,7 @@ module.exports = {
       width: {
         '60': '15rem',
         '23':'358px',
+        '8.5':'34px',
       },
       transitionDuration: {
         '0.4': '0.4s',
@@ -87,7 +90,10 @@ module.exports = {
         '17':'17px',
         '55':'55px',
         '9.5' : '9px',
-        '26' : '26px'
+        '26' : '26px',
+        '25': '25px',
+        '13': '13px',
+        '15': '15px'
       },
       margin: {
         '26': '26px',

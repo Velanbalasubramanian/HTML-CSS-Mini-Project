@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: 'StyreneALC';
-  src: url('../fonts/StyreneALCRegular.eot');
-  src: url('../fonts/StyreneALCRegular.eot') format('embedded-opentype'),
-       url('../fonts/StyreneALCRegular.woff2') format('woff2'),
-       url('../fonts/StyreneALCRegular.woff') format('woff'),
-       url('../fonts/StyreneALCRegular.ttf') format('truetype'),
-       url('../fonts/StyreneALCRegular.svg#StyreneALCRegular') format('svg');
+  src: url('/assets/fonts/StyreneALCRegular.eot');
+  src: url('/assets/fonts/StyreneALCRegular.eot') format('embedded-opentype'),
+       url('/assets/fonts/StyreneALCRegular.woff2') format('woff2'),
+       url('/assets/fonts/StyreneALCRegular.woff') format('woff'),
+       url('/assets/fonts/StyreneALCRegular.ttf') format('truetype'),
+       url('/assets/fonts/StyreneALCRegular.svg#StyreneALCRegular') format('svg');
 }
 
 @layer components {
@@ -27,8 +27,14 @@
   .panel {
     @apply sm:max-h-none max-h-0 sm:transition-none trans;
   }
+  .accordion-one {
+    @apply w-full text-left outline-none trans-four bg-transparent rounded relative;
+  }
+  .panel-one {
+    @apply  max-h-0 trans;
+  }
   .notify{
-    @apply relative before:content-[''] before:absolute md:before:dott before:dotte before:w-2.5 before:h-2.5 md:before:right-0.5 before:right-0;
+    @apply relative before:content-[''] before:absolute md:before:dott before:dotte before:w-2.5 before:h-2.5 md:before:right-0.5 before:right-0 before:animate-ping;
   }
   .tablinks{
     @apply md:text-xs sm:xxs xxs 2xl:px-[18px] sm:px-[8px] px-[8px] 2xl:py-[9px] sm:py-[4px] py-[4px] font-styr font-semibold rounded flex justify-between items-center w-full
@@ -51,7 +57,9 @@
   .minmum{
     @apply 2xl:minimum md:minim sm:minium miniumm
   }
-  
+  /* .deta{
+   @apply det-wi
+  } */
 
 
 }
@@ -61,10 +69,10 @@
 
 @layer utilities {
  .chev-right{
-  background-image:url('/images/chevron-right.svg');
+  background-image:url('/assets/images/chevron-right.svg');
  }
  .chev-down{
-  background-image:url('/images/chevron-down.svg');
+  background-image:url('/assets/images/chevron-down.svg');
  }
  .bg-channel {
   background-color: rgba(78, 31, 163, 0.15);
@@ -79,12 +87,12 @@
   transition: 0.4s;
 }
 .dott{
-  background-image: url('/images/dot.png');
+  background-image: url('/assets/images/dot.png');
   background-size: cover;
   width: 10px;
 }
 .dotte{
-  background-image: url('/images/dot.png');
+  background-image: url('/assets/images/dot.png');
   background-size: cover;
   width: 8px;
 }
@@ -126,6 +134,9 @@
   height: calc(100vh - 225px);
   overflow-y: auto;
 }
+/* .det-wi{
+width: calc(100% - 600px);
+} */
 
 }
 
@@ -134,3 +145,14 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* DETAILS START*/
+.accordion-one .chev-down, 
+.accordion-one.active .chev-right{
+  display: none;
+}
+.accordion-one .chev-right, 
+.accordion-one.active .chev-down{
+  display: block;
+}
+/* DETAILS END*/
