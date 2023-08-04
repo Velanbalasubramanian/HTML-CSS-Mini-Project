@@ -12,60 +12,58 @@ $(document).ready(function(){
   });
   })
 
+  document.addEventListener("DOMContentLoaded", function() {
+    
 
+// ACCORDION START
+var acc = document.getElementsByClassName("accordion");
+var panels = document.getElementsByClassName("panel");
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var currentPanel = this.nextElementSibling;
+    var isActive = this.classList.contains("active");
 
+    // Close all panels first
+    for (var j = 0; j < panels.length; j++) {
+      panels[j].style.maxHeight = null;
+    }
 
-  // ACCORDION START
-  var acc = document.getElementsByClassName("accordion");
-  var panels = document.getElementsByClassName("panel");
-  var i;
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      var currentPanel = this.nextElementSibling;
-      var isActive = this.classList.contains("active");
+    // Remove "active" class from all accordions
+    for (var k = 0; k < acc.length; k++) {
+      acc[k].classList.remove("active");
+    }
 
-      // Close all panels first
-      for (var j = 0; j < panels.length; j++) {
-        panels[j].style.maxHeight = null;
-      }
-
-      // Remove "active" class from all accordions
-      for (var k = 0; k < acc.length; k++) {
-        acc[k].classList.remove("active");
-      }
-
-      // If the clicked tab was not already active, open its panel
-      if (!isActive) {
-        this.classList.toggle("active");
-        currentPanel.style.maxHeight = currentPanel.scrollHeight + "px";
-      }
-    });
-  }
+    // If the clicked tab was not already active, open its panel
+    if (!isActive) {
+      this.classList.toggle("active");
+      currentPanel.style.maxHeight = currentPanel.scrollHeight + "px";
+    }
+  });
+}
 
 // DETAILS ACCORDION START
-  var acc = document.getElementsByClassName("accordion-one");
-  var panels = document.getElementsByClassName("panel-one");
-  var i;
+var accDetails = document.getElementById("accordion-one");
+var panelsDetails = document.getElementById("panel-one");
+if (accDetails && panelsDetails) {
+  accDetails.addEventListener("click", function() {
+    var currentPanel = panelsDetails; // Use the correct panel element
+    var isActive = this.classList.contains("active");
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      var currentPanel = this.nextElementSibling;
-      var isActive = this.classList.contains("active");
+    // Close all panels first
+    panelsDetails.style.maxHeight = null;
 
-      // Close all panels first
-      for (var j = 0; j < panels.length; j++) {
-        panels[j].style.maxHeight = null;
-      }
-      // Remove "active" class from all accordions
-      for (var k = 0; k < acc.length; k++) {
-        acc[k].classList.remove("active");
-      }
+    // Remove "active" class from the accordion
+    accDetails.classList.remove("active");
 
-      // If the clicked tab was not already active, open its panel
-      if (!isActive) {
-        this.classList.toggle("active");
-        currentPanel.style.maxHeight = currentPanel.scrollHeight + "px";
-      }
-    });
-  }
+    // If the clicked tab was not already active, open its panel
+    if (!isActive) {
+      accDetails.classList.add("active");
+      currentPanel.style.maxHeight = currentPanel.scrollHeight + "px";
+    }
+  });
+}
 // DETAILS ACCORDION END
+
+
+  });
+  

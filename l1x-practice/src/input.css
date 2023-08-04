@@ -27,10 +27,10 @@
   .panel {
     @apply sm:max-h-none max-h-0 sm:transition-none trans;
   }
-  .accordion-one {
+  #accordion-one {
     @apply w-full text-left outline-none trans-four bg-transparent rounded relative;
   }
-  .panel-one {
+  #panel-one {
     @apply  max-h-0 trans;
   }
   .notify{
@@ -147,12 +147,15 @@ width: calc(100% - 600px);
 }
 
 /* DETAILS START*/
-.accordion-one .chev-down, 
-.accordion-one.active .chev-right{
+#accordion-one .chev-down, 
+#accordion-one.active .chev-right{
   display: none;
 }
-.accordion-one .chev-right, 
-.accordion-one.active .chev-down{
+#accordion-one .chev-right, 
+#accordion-one.active .chev-down{
   display: block;
 }
 /* DETAILS END*/
+
+
+
