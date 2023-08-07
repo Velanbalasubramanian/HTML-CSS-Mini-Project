@@ -27,7 +27,63 @@
   padding: 11px;
   margin-right: 12px;
 }
-
+.back .modal{
+  --bs-modal-width: 707px;
+}
+.back-viewproject .btn-close{
+  padding: 6px;
+  border-radius: 8px;
+border: 1px solid #D9D9DE;
+width: 24px ;
+height: 24px;
+}
+.back .modal .modal-header{
+    border-bottom: 0px solid transparent;
+}
+.back .modal .modal-footer{
+    border-top: 0px solid transparent;
+}
+.back-viewproject .modal-header h1{
+  color: #0E0E2C;
+font-family: "StyreneALC";
+font-size: 20px;
+line-height: normal;
+letter-spacing: -0.8px;
+}
+.type-mail-common{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.type-mail{
+  width: 100%;
+}
+.type-lab{
+  color:  #808095;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+.type-in{
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-radius: 0px;
+  padding: 12px 12px 12px 0;
+}
+.type-in:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0;
+}
+.type-in::placeholder{
+  color:  #0E0E2C;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  
+}
 /* BUTTON START */
 .btnstyletwo {
   font-family: "StyreneALC";
