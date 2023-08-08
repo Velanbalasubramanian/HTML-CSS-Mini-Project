@@ -29,6 +29,28 @@
 }
 .back .modal{
   --bs-modal-width: 707px;
+  --bs-modal-padding: 0.25rem 20px 20px 20px;
+}
+.back .modal .modal-body{
+  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+.back .modal .modal-footer .btm-btn{
+  border-radius: 8px;
+  background-color: #4E1FA3;
+  padding: 8px 24px;
+  color: #FFF;
+  font-family: "StyreneALC";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.back .modal .modal-footer .btm-btn:hover{
+  background-color: #FAFBFC;
+  color: #4E1FA3;
 }
 .back-viewproject .btn-close{
   padding: 6px;
@@ -39,9 +61,12 @@ height: 24px;
 }
 .back .modal .modal-header{
     border-bottom: 0px solid transparent;
+    padding: 30px 20px 20px;
 }
 .back .modal .modal-footer{
     border-top: 0px solid transparent;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 .back-viewproject .modal-header h1{
   color: #0E0E2C;
@@ -65,25 +90,91 @@ letter-spacing: -0.8px;
   line-height: normal;
   letter-spacing: 0.24px;
 }
-.type-in{
+.type-in, .type-in-file{
   border-top: 0px solid transparent;
   border-left: 0px solid transparent;
   border-right: 0px solid transparent;
   border-radius: 0px;
-  padding: 12px 12px 12px 0;
-}
-.type-in:focus {
-  border-color: #86b7fe;
-  box-shadow: 0 0 0 0;
-}
-.type-in::placeholder{
-  color:  #0E0E2C;
+  background-color: transparent;
+  color: #0E0E2C;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  
 }
+.type-in{
+  padding: 12px 12px 12px 0;
+}
+.type-in-file{
+  padding: 12px 35px 12px 0;
+}
+.type-in:focus, .type-in-file:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0;
+  background-color: transparent;
+}
+.type-in::placeholder, .type-in-file::placeholder{
+  color:  #D9D9DE;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.modal-one{
+  background-color: #FAFBFC;
+  padding: 16px 27px;
+  border-radius: 16px;
+}
+.modal-two{
+  background-color: #FAFBFC;
+  padding: 16px 27px;
+  border-radius: 16px;
+}
+.back .modal-content{
+  padding-bottom: 20px;
+}
+.add-details{
+  color:  #4E1FA3;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+
+
+/* MODAL FORM INPUT FILE UPLOAD START*/
+.custom-file-uploader {
+  position: relative;
+}
+.custom-file-uploader img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.custom-file-uploader input[type="file"] {
+  display: block;
+  position: absolute;
+  top: 30%;
+  right: 16px;
+  z-index: 5;
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  cursor: default;
+}
+.custom-file-uploader > .form-control:focus,
+.custom-file-uploader > .form-floating:focus-within,
+.custom-file-uploader > .form-select:focus {
+  z-index: auto;
+}
+/* MODAL FORM INPUT FILE UPLOAD END*/
+
+
+
+
+
+
+
 /* BUTTON START */
 .btnstyletwo {
   font-family: "StyreneALC";
@@ -537,7 +628,18 @@ letter-spacing: -0.8px;
 .file-zip p {
   font-size: 14px;
 }
-
+.back .modal {
+  --bs-modal-width: 600px;
+}
+.modal-one, .modal-two  {
+  padding: 16px 16px;
+}
+.type-in::placeholder, .type-in-file::placeholder{
+  font-size: 12px;
+}
+.type-in {
+  padding: 12px 5px 12px 0;
+}
 
 }
 @media screen and (max-width: 1199px) {
@@ -735,6 +837,12 @@ letter-spacing: -0.8px;
 .file-zip {
   padding-top: 20px;
 }
+.custom-file-uploader img {
+  right: 10px;
+}
+.custom-file-uploader input[type="file"] {
+  right: 10px;
+}
 }
 @media screen and (max-width: 767px) {
   .search input {
@@ -901,6 +1009,21 @@ letter-spacing: -0.8px;
   .breadcrumb {
     padding-right: 15px;
   }
+  .back .modal {
+    --bs-modal-width: 350px;
+  }
+  .back-viewproject .modal-header h1 {
+    font-size: 18px;
+  }
+  .back .modal .modal-footer .btm-btn {
+    padding: 8px 16px;
+  }
+  .back .modal .modal-footer {
+    padding-top: 15px;
+  }
+  .back .modal-content {
+    padding-bottom: 15px;
+}
 }
 @media screen and (max-width: 575px) {
   .search input {
@@ -1210,6 +1333,33 @@ letter-spacing: -0.8px;
   font-size: 13px;
   padding: 6px 8px;
   letter-spacing: 0;
+}
+.custom-file-uploader img {
+  right: 0px;
+  top: 10px;
+}
+.custom-file-uploader input[type="file"] {
+  right: 0px;
+}
+.back-viewproject .modal-header h1 {
+  font-size: 16px;
+}
+.back-viewproject .btn-close {
+  padding: 3px;
+  width: 22px;
+  height: 22px;
+}
+.type-in::placeholder, .type-in-file::placeholder{
+  font-size: 11px;
+}
+.type-in {
+  padding: 8px 2px 8px 0;
+}
+.back .modal .modal-footer .btm-btn {
+  font-size: 13px;
+}
+.back .modal .modal-footer .btm-btn {
+  padding: 8px 10px;
 }
 
 }

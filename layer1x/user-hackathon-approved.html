@@ -186,18 +186,18 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Team / Project Information</h1>
+                      <h1 class="modal-title" id="exampleModalLabel">Team / Project Information</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <div>
+                      <div class="modal-one">
                         <form action="#">
                         <div class="row gy-3">
-                          <div class="col-lg-6">
+                          <div class="col-lg-6 col-md-6">
                             <label for="text" class="type-lab">1. Name</label>
                             <input type="text" class="form-control type-in" placeholder="Jessica Hanson">
                           </div>
-                          <div class="col-lg-6 type-mail-common">
+                          <div class="col-lg-6 col-md-6 type-mail-common">
                            <div class="type-mail">
                             <label for="text" class="type-lab">Enter Participant Email</label>
                             <input type="text" class="form-control type-in" placeholder="jessica.hanson@blockchain.com">
@@ -206,11 +206,11 @@
                           </div>
 
                           <!-- 2 NAME -->
-                          <div class="col-lg-6">
+                          <div class="col-lg-6 col-md-6">
                             <label for="text" class="type-lab">2. Name</label>
                             <input type="text" class="form-control type-in" placeholder="Willie Jennings">
                           </div>
-                          <div class="col-lg-6 type-mail-common">
+                          <div class="col-lg-6 col-md-6 type-mail-common">
                            <div class="type-mail">
                             <label for="text" class="type-lab">Enter Participant Email</label>
                             <input type="text" class="form-control type-in" placeholder="willie.jennings@blockchain.com">
@@ -219,11 +219,11 @@
                           </div>
 
                           <!-- 3 NAME -->
-                          <div class="col-lg-6">
+                          <div class="col-lg-6 col-md-6 col-6">
                             <label for="text" class="type-lab">3. Name</label>
                             <input type="text" class="form-control type-in" placeholder="Kenzi Lawson">
                           </div>
-                          <div class="col-lg-6 type-mail-common">
+                          <div class="col-lg-6 col-md-6 type-mail-common">
                            <div class="type-mail">
                             <label for="text" class="type-lab">Enter Participant Email</label>
                             <input type="text" class="form-control type-in" placeholder="kenzi.lawson@blockchain.com">
@@ -232,16 +232,83 @@
                           </div>
 
                           <!-- 4 NAME -->
-                          <div class="col-lg-6">
-                            <label for="text" class="type-lab">1. Name</label>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="text" class="type-lab">4. Name</label>
                             <input type="text" class="form-control type-in" placeholder="Dolores Chambers">
                           </div>
-                          <div class="col-lg-6 type-mail-common">
+                          <div class="col-lg-6 col-md-6 type-mail-common">
                            <div class="type-mail">
                             <label for="text" class="type-lab">Enter Participant Email</label>
                             <input type="text" class="form-control type-in" placeholder="dolores.chambers@blockchain.com">
                            </div>
                            <img src="/assets/images/trash.svg" alt="trash" class="img-fluid">
+                          </div>
+                          <div class="col-12">
+                            <a href="#" class="add-details">+ Add More Members</a>
+                          </div>
+                        </div>
+                      </form>
+                      </div>
+                      <div class="modal-two">
+                        <form action="#">
+                        <div class="row gy-3">
+                          <div class="col-12">
+                            <label for="text" class="type-lab">Project Brief</label>
+                            <textarea name="" id="" cols="1" rows="1" class="form-control type-in"></textarea>
+                          </div>
+
+                          <!-- 2 NAME -->
+                          <div class="col-lg-6 col-md-6">
+                            <label for="text" class="type-lab">Project Video</label>
+                            <div class="input-group custom-file-uploader">
+                              <input
+                                type="text"
+                                name="filename"
+                                id="filename-input"
+                                class="form-control type-in-file"
+                                placeholder="Project Video"
+                                readonly
+                              />
+                              <input
+                                type="file"
+                                name="file"
+                                id="file-input"
+                              />
+                              <img
+                                src="/assets/images/attachment.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 type-mail-common">
+                           <div class="type-mail">
+                            <label for="text" class="type-lab">Upload Your Code</label>
+                            <div class="input-group custom-file-uploader">
+                              <input
+                                type="text"
+                                name="filename"
+                                id="filename-input"
+                                class="form-control type-in-file"
+                                placeholder="Optional : zip, rar"
+                                readonly
+                              />
+                              <input
+                                type="file"
+                                name="file"
+                                id="file-input"
+                              />
+                              <img
+                                src="/assets/images/attachment.svg"
+                                alt=""
+                              />
+                            </div>
+                           </div>
+                          </div>
+
+                          <!-- 3 NAME -->
+                          <div class="col-12">
+                            <label for="text" class="type-lab">Link to the project</label>
+                            <input type="text" class="form-control type-in" placeholder="https://github.com/jessica/awesome-deep-vision-web-demo">
                           </div>
 
                         </div>
@@ -252,11 +319,9 @@
 
 
 
-
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btm-btn">Apply Now</button>
                     </div>
                   </div>
                 </div>
