@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin-bottom: 0;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+header{
+    background: #fff;
+    box-shadow: 0 0 6px #0000004d;
+}
+
+.navbar-brand img {
+    width: 168px;
+    height: 37px;
+}
+
+header .about-us {
+    color: #ff6c1a;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    border: 0;
+}
+.nav-item.dropdown.dropdown-mega .dropdown-menu {
+  width: 100%;
+  border: 0px solid transparent;
+}
+.drop-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+.drop-title h2 {
+  color: #ff6c1a;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -.5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.drop-title h2 i{
+  font-size: 34px;
+}
+.drop-title .close i{
+  font-size: 30px;
+}
+.content-drpdown{
+  padding-top: 27px;
+}
