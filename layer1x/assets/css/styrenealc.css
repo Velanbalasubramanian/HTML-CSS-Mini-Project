@@ -8,6 +8,25 @@
          url('../fonts/StyreneALCRegular.ttf') format('truetype'),
          url('../fonts/StyreneALCRegular.svg#StyreneALCRegular') format('svg');
 }
+@font-face {
+    font-family: 'StyreneALCLight';
+    src: url('../fonts/StyreneALCLight.eot');
+    src: url('../fonts/StyreneALCLight.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCLight.woff2') format('woff2'),
+         url('../fonts/StyreneALCLight.woff') format('woff'),
+         url('../fonts/StyreneALCLight.ttf') format('truetype'),
+         url('../fonts/StyreneALCLight.svg#StyreneALCLight') format('svg');
+}
+@font-face {
+    font-family: 'StyreneALCBold';
+    src: url('../fonts/StyreneALCBold.eot');
+    src: url('../fonts/StyreneALCBold.eot') format('embedded-opentype'),
+         url('../fonts/StyreneALCBold.woff2') format('woff2'),
+         url('../fonts/StyreneALCBold.woff') format('woff'),
+         url('../fonts/StyreneALCBold.ttf') format('truetype'),
+         url('../fonts/StyreneALCBold.svg#StyreneALCBold') format('svg');
+}
+
 /*
 @font-face {
     font-family: 'StyreneALC';
@@ -19,24 +38,7 @@
          url('../fonts/StyreneALCBlack.svg#StyreneALCBlack') format('svg');
 }
 
-@font-face {
-    font-family: 'StyreneALCBold';
-    src: url('../fonts/StyreneALCBold.eot');
-    src: url('../fonts/StyreneALCBold.eot') format('embedded-opentype'),
-         url('../fonts/StyreneALCBold.woff2') format('woff2'),
-         url('../fonts/StyreneALCBold.woff') format('woff'),
-         url('../fonts/StyreneALCBold.ttf') format('truetype'),
-         url('../fonts/StyreneALCBold.svg#StyreneALCBold') format('svg');
-}
-@font-face {
-    font-family: 'StyreneALCLight';
-    src: url('../fonts/StyreneALCLight.eot');
-    src: url('../fonts/StyreneALCLight.eot') format('embedded-opentype'),
-         url('../fonts/StyreneALCLight.woff2') format('woff2'),
-         url('../fonts/StyreneALCLight.woff') format('woff'),
-         url('../fonts/StyreneALCLight.ttf') format('truetype'),
-         url('../fonts/StyreneALCLight.svg#StyreneALCLight') format('svg');
-}
+
 @font-face {
     font-family: 'StyreneALCMedium';
     src: url('../fonts/StyreneALCMedium.eot');
