@@ -1,0 +1,278 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.cryptopunks {
+  padding-bottom: 54px;
+}
+.cryptopunks .arrow-back img {
+  width: 16px;
+  height: 16px;
+}
+.cryptopunks h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #23273b;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding-bottom: 11px;
+}
+.cryptopunks p {
+  font-family: "Syne", sans-serif;
+  color: rgba(35, 39, 59, 0.7);
+  line-height: 22px;
+  padding-bottom: 26px;
+}
+
+/* BUTTON START*/
+.cryptopunks-btn {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+.opensea-btn {
+  color: #fff;
+  background-color: #2081e2;
+}
+.opensea-btn:hover {
+  color: #1b2336;
+  background-color: #f6d103;
+}
+/* BUTTON END*/
+/* TAB START */
+.staking-title .nav .nav-item .nav-link {
+  padding: 0;
+}
+.staking-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+}
+.staking-title h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #23273b;
+}
+.staking-title .nav {
+  gap: 34px;
+}
+.staking-title .nav .nav-item .nav-link.active {
+  border-bottom: 3px solid #1b2336;
+  color: #1b2336;
+}
+.staking-title .nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23.52px;
+  color: #8e8e8e;
+  padding: 0 2px;
+  border-bottom: 3px solid transparent;
+}
+.staking-live-common {
+  background-color: #f7f9ff;
+  border-radius: 13px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  padding: 25px 40px;
+}
+/* TAB END */
+
+/* ACCORDION START */
+.pool-live-header {
+  width: 100%;
+  border: 0px solid transparent;
+}
+.pool-live-header .ac-bttn {
+  background-color: transparent;
+  box-shadow: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pool-live-one .accordion .accordion-item {
+  background-color: transparent;
+  border: 0 solid transparent;
+}
+.pool-live-one .accordion .accordion-body {
+  background-color: #fff;
+  border-radius: 13px;
+  border: 1px solid #fff;
+  padding: 28px 40px;
+  margin-top: 11px;
+}
+.pool-live-header .ac-bttn td h5,
+.stack-pool-detail h5 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: -0.675px;
+  color: #8e8e8e;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0px;
+}
+.pool-live-header .ac-bttn td h4,
+.stack-pool-detail h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+  padding: 0px;
+}
+.pool-live-header .ac-bttn td {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.2rem 0.2rem;
+}
+.pool-live-header .ac-bttn th {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  padding: 0.2rem 0.2rem;
+}
+.pool-live-one .stak-detail-common .row {
+  row-gap: 23px;
+  width: 100%;
+}
+.pool-live-one .stak-detail-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.staking-pool-common {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.staking-pool-common .divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+/* ACCORDION END */
+
+@media (max-width: 1199px) {
+  .cryptopunks h3 {
+    gap: 12px;
+    padding-bottom: 5px;
+  }
+  .cryptopunks p {
+    padding-bottom: 18px;
+  }
+  .cryptopunks {
+    padding-bottom: 40px;
+  }
+  .staking-title {
+    padding-bottom: 18px;
+  }
+  .staking-live-common {
+    padding: 20px 30px;
+  }
+  .pool-live-one .accordion .accordion-body {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 991px) {
+  .cryptopunks h3 {
+    font-size: 22px;
+  }
+  .staking-title h3 {
+    font-size: 22px;
+  }
+  .pool-live-header .ac-bttn th {
+    font-size: 16px;
+  }
+  .pool-live-header .ac-bttn td h5,
+  .stack-pool-detail h5 {
+    font-size: 12px;
+  }
+  .staking-title .nav .nav-item .nav-link {
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+  }
+  .staking-title .nav .nav-item .nav-link.active {
+    border-bottom: 2px solid #1b2336;
+  }
+  .pool-live-header .ac-bttn td h4,
+  .stack-pool-detail h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .pool-live-header {
+    width: 636px;
+  }
+  .pool-live-one .accordion .accordion-item .accordion-collapse {
+    width: 636px;
+  }
+  .pool-live-header .ac-bttn th {
+    font-size: 15px;
+  }
+  .pool-live-one .accordion .accordion-body {
+    padding: 20px;
+    margin-top: 8px;
+  }
+  .staking-live-common {
+    padding: 20px 20px;
+  }
+  .pool-live-one .stak-detail-common .row {
+    row-gap: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .pool-live-header .ac-bttn td img {
+    width: 20px;
+    height: 20px;
+  }
+  .staking-title .nav {
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .staking-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .cryptopunks-btn {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+  .cryptopunks {
+    padding-bottom: 35px;
+  }
+  .staking-live-common {
+    padding: 15px 15px;
+  }
+  .pool-live-header .ac-bttn th {
+    font-size: 14px;
+  }
+  .pool-live-header .ac-bttn td h5, .stack-pool-detail h5 {
+    font-size: 11px;
+    letter-spacing: normal;
+  }
+}
