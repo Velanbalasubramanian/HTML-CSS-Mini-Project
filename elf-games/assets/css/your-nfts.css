@@ -1,0 +1,318 @@
+* {
+  font-family: 'Syne', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.your-nfts-common {
+  border: 1px solid #e0e0e0;
+  border-radius: 13px;
+  background-color: #f7f9ff;
+  padding: 25px 31px 30px 25px;
+}
+.your-nfts-common > .row{
+  --bs-gutter-x: 21px;
+}
+.your-nft-user {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 30px 25px 23px;
+}
+.your-nfts-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 21px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  margin-bottom: 24px;
+}
+.your-nfts-title h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #23273b;
+  line-height: normal;
+}
+.your-nfts-title p {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(35, 39, 59, 0.7);
+  line-height: normal;
+}
+.nfts-card .nfts-card-name h5, .your-nfts-view h5 {
+  font-size: 12px;
+  color: rgba(35, 39, 59, 0.7);
+  font-weight: 400;
+  padding-bottom: 2px;
+  line-height: normal;
+}
+.nfts-card .nfts-card-name h4, .your-nfts-view h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #23273b;
+  line-height: normal;
+}
+.nfts-card .nfts-card-name {
+  padding: 8px 8px 9px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #f7f9ff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+.nfts-card img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.your-nft-user .row {
+  --bs-gutter-x: 12px;
+  --bs-gutter-y: 12px;
+  justify-content: center;
+}
+.nfts-card {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.nfts-card.selected {
+  border: 2px solid #f6d103;
+}
+
+/* SECOND-COLUMN */
+.nft-user-detail{
+    border-radius: 12px;
+    background-color: #FFF;
+    padding: 25px;
+    margin-top: 5px;
+}
+
+/* COLLAPSE START */
+.nft-user-detail .user-detail-collapse{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    color: #23273B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+.nft-user-detail .user-detail-view .detail-view-in{
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 29px 0 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.detail-view-in .user-month-view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail-view-in .user-month-view .your-nfts-view{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.detail-view-in .user-month-view .detail-view-close{
+    width: 9px;
+    height: 9px;
+}
+/* COLLAPSE END */
+
+/* START/END DATE */
+.nft-user-detail .nft-user-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+.nft-user-detail .nft-user-date .nft-user-date1{
+    padding: 12px 12px 11px 12px;
+    background-color: #F7F9FF;
+    border-radius: 5px;
+    width: 100%;
+}
+.nft-user-detail .nft-user-date .nft-user-date1 h4{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: -0.5px;
+    color: #8E8E8E;
+}
+.nft-user-detail .nft-user-date .nft-user-date1 h5{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #1B2336;
+}
+
+/* SHARE START*/
+.nft-user-detail .user-share-percentage, .user-lock-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nft-user-detail .user-share-percentage{
+    padding-bottom: 13px;
+}
+.nft-user-detail .user-lock-time{
+    padding-bottom: 29px;
+}
+.nft-user-detail .user-share-percentage h4, .user-lock-time h4{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(35, 39, 59, 0.70);
+}
+.nft-user-detail .user-share-percentage h5, .user-lock-time h5{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    color: #23273B;
+}
+/* SHARE END*/
+.nft-user-detail .user-detail-btn{
+    text-align: center;
+}
+.nft-user-detail .user-detail-btn .btn-style-one{
+    display: block;
+}
+.nft-user-detail .user-detail-btn p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(35, 39, 59, 0.70);
+    padding-top: 11px;
+}
+.nft-user-detail .user-detail-btn p a{
+    font-weight: 600;
+    color: rgba(35, 39, 59, 0.70);
+    text-decoration: underline!important;
+}
+
+@media (max-width: 1199px){
+  .your-nfts-common {
+    padding: 20px 26px 25px 20px;
+  }
+  .nft-user-detail {
+      padding: 20px;
+  }
+  .nft-user-detail .nft-user-date .nft-user-date1 h5 {
+      font-size: 13px;
+  }
+  .nft-user-detail .nft-user-date .nft-user-date1 h4 {
+      font-size: 11px;
+  }
+  .nft-user-detail .user-detail-view .detail-view-in {
+      padding: 23px 0 23px;
+  }
+  .detail-view-in .user-month-view .your-nfts-view {
+      gap: 10px;
+  }
+  .nft-user-detail .nft-user-date .nft-user-date1 {
+    padding: 8px 8px 7px 8px;
+  }
+  .your-nft-user {
+    padding: 25px 20px 20px;
+  }
+  .nft-user-detail .user-lock-time {
+    padding-bottom: 25px;
+  }
+  .nft-user-detail .user-detail-collapse {
+    font-size: 16px;
+  }
+  .your-nfts-title {
+    padding-bottom: 15px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 991px){
+  .your-nfts-common {
+    padding: 20px;
+  }
+  .your-nfts-common > .row {
+    --bs-gutter-y: 18px;
+  }
+}
+@media (max-width: 767px){
+  .nfts-card .nfts-card-name h5, .your-nfts-view h5 {
+    font-size: 11px;
+  }
+  .nfts-card .nfts-card-name h4, .your-nfts-view h4 {
+    font-size: 12px;
+  }
+  .nft-user-detail .user-share-percentage h4, .user-lock-time h4 {
+    font-size: 13px;
+  }
+  .nft-user-detail .user-share-percentage h5, .user-lock-time h5 {
+      font-size: 13px;
+  }
+  .your-nfts-title p {
+    font-size: 13px;
+  }
+  .nft-user-detail .user-detail-view .detail-view-in {
+    padding: 18px 0 18px;
+  }
+  .your-nft-user {
+    padding: 20px;
+  }
+}
+@media (max-width: 575px){
+
+}
+@media (max-width: 480px){
+  .your-nfts-title h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .your-nft-user {
+    padding: 20px 15px;
+  }
+  .your-nfts-common {
+    padding: 15px;
+  }
+  .nft-user-detail .user-share-percentage h4, .user-lock-time h4 {
+    font-size: 12px;
+  }
+  .nft-user-detail .user-share-percentage h5, .user-lock-time h5 {
+    font-size: 12px;
+  }
+  .nft-user-detail {
+    padding: 15px;
+  }
+  .nft-user-detail .user-detail-collapse > img {
+    width: 12px;
+  }
+  .nft-user-detail .user-lock-time {
+    padding-bottom: 20px;
+  }
+  .nft-user-detail .user-share-percentage {
+    padding-bottom: 10px;
+  }
+  .nft-user-detail .nft-user-date {
+    padding-bottom: 15px;
+  }
+}

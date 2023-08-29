@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primaryfont);
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+  font-family: var(--primaryfont);
+}
+p {
+  font-family: var(--secondryfont);
+}
+a {
+  text-decoration: none;
+}
