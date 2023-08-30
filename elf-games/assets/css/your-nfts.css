@@ -186,6 +186,9 @@ ul {
     font-weight: 400;
     line-height: normal;
     color: rgba(35, 39, 59, 0.70);
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 .nft-user-detail .user-share-percentage h5, .user-lock-time h5{
     font-size: 14px;
@@ -296,6 +299,7 @@ ul {
   }
   .nft-user-detail .user-share-percentage h4, .user-lock-time h4 {
     font-size: 12px;
+    gap: 4px;
   }
   .nft-user-detail .user-share-percentage h5, .user-lock-time h5 {
     font-size: 12px;
