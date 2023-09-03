@@ -1,0 +1,192 @@
+* {
+  font-family: "Syne", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* MODAL */
+.nft-staked-modal {
+  --bs-modal-border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  --bs-modal-box-shadow: 0 0 0;
+  --bs-modal-bg: #fff;
+}
+.nft-staked-modal .modal-header {
+  padding: 25px 34px 17px 23px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.nft-staked-modal .modal-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 26px;
+  right: 34px;
+  height: 1px;
+  background-color: #e5e5ea;
+}
+.nft-staked-modal .modal-header h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.24px;
+}
+.nft-staked-modal .modal-header .btnclosed {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+.nft-staked-modal .modal-header .btnclosed > img {
+  width: 14px;
+  height: 14px;
+}
+.nft-staked-modal .staked-body {
+  position: relative;
+}
+.nft-staked-modal .staked-body::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 26px;
+  right: 26px;
+  height: 1px;
+  background-color: #e5e5ea;
+}
+.nft-staked-modal .modal-body {
+  padding: 10px 26px 20px;
+  margin: 20px 0px 10px;
+  height: 365px;
+}
+.nft-staked-modal .modal-body > .row {
+  row-gap: 16px;
+}
+.nft-staked-modal .modal-body > .row .col {
+  padding: 0 8px;
+  width: 12.5%;
+}
+.nft-staked-modal .modal-footer {
+  border: 0px;
+}
+/* SCROLLBAR START */
+.nft-staked-modal .modal-body::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: #f2f2f2;
+}
+.nft-staked-modal .modal-body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+.nft-staked-modal .modal-body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #f6d103;
+}
+/* SCROLLBAR END */
+
+.nft-staked-modal .modal-body .staked-card {
+  display: flex;
+ flex-direction: column;
+ height: 100%;
+}
+.nft-staked-modal .modal-body .staked-card > img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.nft-staked-modal .modal-body .staked-card .staked-card-name {
+ padding: 8px 8px 9px 8px;
+ border-radius: 0px 0px 5px 5px;
+ background-color: #f7f9ff;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ height: 100%;
+ justify-content: center;
+}
+.nft-staked-modal .modal-body .staked-card .staked-card-name h5 {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(35, 39, 59, 0.7);
+  padding-bottom: 2px;
+}
+.nft-staked-modal .modal-body .staked-card .staked-card-name h4 {
+  font-size: 10px;
+  font-weight: 600;
+  color: #23273b;
+  line-height: normal;
+}
+
+
+/* MODAL FOOTER START */
+.nft-staked-modal .staked-modal-footer {
+  padding: 16px 32px 26px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.nft-staked-modal .staked-modal-footer .modal-footer-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.nft-staked-modal .staked-modal-footer .modal-footer-detail h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 13.492px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: -0.675px;
+  color: #8e8e8e;
+}
+.nft-staked-modal .staked-modal-footer .modal-footer-detail h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #1b2336;
+}
+.nft-staked-modal .staked-modal-footer .modal-footer-btn {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+/* MODAL FOOTER END */
+
+@media (max-width: 1199px) {
+  .nft-staked-modal .modal-body > .row .col {
+    width: 16.666667%;
+  }
+
+
+
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 480px) {
+}
