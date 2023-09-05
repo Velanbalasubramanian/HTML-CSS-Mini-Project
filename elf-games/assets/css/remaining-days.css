@@ -62,18 +62,6 @@ ul {
   width: 14px;
   height: 14px;
 }
-.nft-staked-modal .staked-body {
-  position: relative;
-}
-.nft-staked-modal .staked-body::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 26px;
-  right: 26px;
-  height: 1px;
-  background-color: #e5e5ea;
-}
 .nft-staked-modal .modal-body {
   padding: 10px 26px 20px;
   margin: 20px 0px 10px;
@@ -86,9 +74,7 @@ ul {
   padding: 0 8px;
   width: 12.5%;
 }
-.nft-staked-modal .modal-footer {
-  border: 0px;
-}
+
 /* SCROLLBAR START */
 .nft-staked-modal .modal-body::-webkit-scrollbar-track {
   border-radius: 6px;
@@ -139,6 +125,18 @@ ul {
 }
 
 /* MODAL FOOTER START */
+.nft-staked-modal .modal-footer {
+  border: 0px;
+}
+.nft-staked-modal .staked-modal-footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 26px;
+  right: 26px;
+  height: 1px;
+  background-color: #e5e5ea;
+}
 .nft-staked-modal .staked-modal-footer {
   padding: 16px 32px 26px 32px;
   display: flex;
@@ -282,7 +280,7 @@ ul {
     right: 22px;
     left: 22px;
   }
-  .nft-staked-modal .staked-body::after {
+  .nft-staked-modal .staked-modal-footer::after {
     left: 20px;
     right: 22px;
   }
@@ -321,6 +319,7 @@ ul {
   }
   .nft-staked-modal .staked-modal-footer .modal-footer-btn {
     gap: 10px;
+    flex-wrap: wrap;
   }
   /* .nft-staked-modal .staked-modal-footer .modal-footer-detail {    
   width: 40%;

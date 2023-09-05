@@ -1,0 +1,201 @@
+* {
+    font-family: "Syne", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  a {
+    text-decoration: none;
+  }
+  .marketplace h2{
+    font-size: 48px;
+    color: #23273B;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    padding-bottom: 32px;
+  }
+  .marketplace p{
+    color: rgba(35, 39, 59, 0.70);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-bottom: 42px;
+  }
+  .marketplace a{
+    color: #23273B;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #F6D103;
+  }
+  header .navbar-expand-lg .navbar-nav .nav-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap:4px;
+    color: rgba(35, 39, 59, 0.7);
+}
+header .navbar-expand-lg .navbar-nav .nav-link::before{
+  position: absolute;
+  content: " ";
+  height: 4px;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  border-radius: 4px 4px 0px 0px;
+}
+header .navbar-expand-lg .navbar-nav .nav-link:hover:before,
+header .navbar-expand-lg .navbar-nav .nav-link:focus:before,
+header .navbar-expand-lg .navbar-nav .nav-link.show:before{
+  background: #F6D103;
+}
+header .navbar-expand-lg .navbar-nav .nav-link:hover,
+header .navbar-expand-lg .navbar-nav .nav-link:focus{
+  color:#23273B;
+}
+header .navbar-nav {
+  --bs-nav-link-padding-y: 27px;
+}
+header .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+header  .navbar-expand-lg {
+  padding: 0px 75px;
+  border-bottom: 1px solid #E5E5EA;
+  background:#FFF;
+}
+.btn-style-one{
+  padding: 8px 25px;
+  border-radius: 8px;
+  background-color: #F6D103;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color:#23273B;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+}
+.btn-style-one:hover{
+  color: #F6D103;
+  background-color: #23273B;
+}
+header .navbar-expand-lg > .container-fluid{
+  --bs-gutter-x: 0;
+}
+
+.banner{
+  padding-top: 170px;
+  padding-bottom: 49px;
+}
+.banner-content, .gaming-limit-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+}
+.banner-content {
+  padding-bottom: 58px;
+}
+.banner-content h1, .gaming-limit-content h1{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  color: #23273B;
+}
+.banner-content p, .gaming-limit-content p{
+  color: rgba(35, 39, 59, 0.70);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-indent: 35px;
+}
+.banner-content .btn-style-one, .gaming-limit-content .btn-style-one{
+  display: inline-block;
+  padding: 12px 25px;
+}
+.banner-content-end{
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  padding-bottom: 50px;
+}
+.banner-img{
+  padding-bottom: 50px;
+}
+.banner-btm-card{
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 16px 24px 0px rgba(0, 0, 0, 0.04), 0px 24px 32px 0px rgba(0, 0, 0, 0.04);
+  padding: 18px 14px;
+}
+.banner-btm-card > img, .nolimits-card > img{
+  width: 65px;
+  height: 70px;
+}
+.banner-btm{
+  background: #F0F5FF;
+  padding: 54px 0;
+}
+.gaming-nolimits{
+  padding: 150px 0;
+}
+.gaming-nolimits .cb11{
+  padding-bottom: 72px;
+}
+.nolimits-card{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  padding: 32px 25px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  background: #F7FAFF;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 16px 24px 0px rgba(0, 0, 0, 0.04), 0px 24px 32px 0px rgba(0, 0, 0, 0.04);
+}
+.nolimits-card:hover{
+  border: 1px solid #F6D103;
+}
+.nolimits-card-content{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.nolimits-card-content h4{
+  color: #23273B;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+}
+.nolimits-card-content p{
+  color: rgba(35, 39, 59, 0.70);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
