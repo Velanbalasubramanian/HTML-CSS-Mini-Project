@@ -1,0 +1,76 @@
+#app-screens-slide .owl-item.center > div .app-screen-image{
+    position: relative;
+  }
+  #app-screens-slide .owl-item.center > div .app-screen-image img{
+    padding: 15px 15px;
+    height: 100%;
+    border-radius: 11%;
+
+  }
+  #app-screens-slide .owl-item.center > div, .owl-item.center > div .mockup-bg {
+    transform: scale(1);
+  }
+  #app-screens-slide .owl-item > div {
+    transform: scale(0.8);
+  }
+  #app-screens-slide .owl-item.center > div .mockup-bg{
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+  }
+  #app-screens-slide .owl-item > div .mockup-bg{
+    display: none;
+  }
+
+
+  @media screen and (max-width: 1700px) {
+    #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 15px 16px;
+    }
+  }
+  @media screen and (max-width: 1600px) {
+    #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 10px 15px;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 10px 14px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 10px 12px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 15px 12px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+     #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 11px 12px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 8px 10px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 22px 25px;
+    }
+    #app-screens-slide .owl-item.center > div, .owl-item.center > div.mockup-bg {
+        transform: scale(0.8);
+    }
+  }
+  @media screen and (max-width:480px){
+    #app-screens-slide .owl-item.center > div .app-screen-image img {
+        padding: 14px 12px;
+    }
+  }
+  
