@@ -47,8 +47,51 @@
                 </div>
             </form>
         </div>
+        
     </section>
 
+    <script>
+
+let points = [];
+let position = { x: 0, y: 0 };
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+  background(0, 0, 0);
+
+  noFill();
+  stroke(237, 188, 215);
+  strokeWeight(2);
+
+  let dx = mouseX - position.x;
+  let dy = mouseY - position.y;
+
+  if (dx || dy) {
+    position = { x: mouseX, y: mouseY };
+
+    if (points.length >= 50) {
+      points.splice(0, 1);
+    }
+
+    points.push(position);
+  }
+
+  beginShape();
+  for (let i = 0; i < points.length; i++) {
+    vertex(points[i].x, points[i].y);
+  }
+  endShape();
+
+  // Check if the mouse is outside the canvas
+  if (mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height) {
+    points = []; // Clear points array when cursor is out of canvas
+  }
+}
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>l
