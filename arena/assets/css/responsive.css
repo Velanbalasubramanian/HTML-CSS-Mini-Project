@@ -1,0 +1,712 @@
+@media (max-width: 1400px) {
+  .banner-main h1 {
+    width: 150%;
+  }
+  h1,
+  h2 {
+    font-size: 46px;
+  }
+  .followers h4 {
+    font-size: 26px;
+  }
+  .social-links a {
+    margin-left: 12px;
+  }
+  .intergrated-section {
+    padding: 150px 40px 150px;
+  }
+  .integrate-with-elfin-card img {
+    width: 125px;
+  }
+  .social-links img {
+    width: 28px;
+  }
+  .banner-main-image img {
+    width: 115%;
+    left: -10%;
+  }
+}
+@media (max-width: 1350px) {
+  .banner-main-image img {
+    width: 106%;
+    left: -13%;
+  }
+}
+@media (max-width: 1199px) {
+  h1,
+  h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .btn-style-one {
+    font-size: 16px;
+  }
+  .users-count span {
+    font-size: 18px;
+  }
+  .followers h4 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .intergrated-section h5,
+  .gaming-boosted-section h5,
+  .gamming-cards h5,
+  .experience-gaming-section h5 {
+    font-size: 20px;
+  }
+  .partners-section,
+  .ifo-platform-section,
+  .counting-section,
+  .gaming-boosted-section,
+  .experience-gaming-section {
+    padding: 100px 0px;
+  }
+  .social-links a {
+    margin-left: 9px;
+  }
+  .elfin-arcade-section {
+    padding-bottom: 100px;
+  }
+  .ball-icon-image1 img {
+    width: 100px;
+    height: auto;
+  }
+  .gaming-boosted-section .ball-icon-image2 {
+    top: -5%;
+  }
+  .partners-section h2 {
+    padding-bottom: 40px;
+  }
+  .intergrated-section {
+    padding: 100px 10px 150px;
+  }
+  .integrate-with-elfin-card {
+    padding: 42px 25px 38px 25px;
+  }
+  .integrate-with-elfin-card img {
+    width: 100px;
+  }
+  .integrate-with-elfin-card .btn-style-one {
+    padding: 10px 20px;
+  }
+  .get-elfin-card img {
+    width: 120px;
+  }
+  .social-links a img {
+    width: 25px;
+  }
+  .navbar-expand-lg {
+    padding: 0px 30px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 26px 30px;
+  }
+  .banner-main p br {
+    display: none;
+  }
+  .banner-main {
+    padding: 80px 0;
+  }
+  .sub-banner-section {
+    padding: 45px 0px;
+  }
+  .gamming-cards img {
+    margin-bottom: 20px;
+  }
+  .gamming-cards {
+    padding: 20px;
+  }
+  .counting-cards {
+    padding: 20px;
+  }
+  .counting-cards img {
+    margin-bottom: 15px;
+    width: 20px;
+  }
+  .contact-section .ball-icon-image1 {
+    top: -13%;
+  }
+  .contact-pr-100 {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    /* gap: 20px; */
+    padding: 10px 0;
+  }
+  /* .navbar-expand-lg  {
+      padding-bottom: 25px;
+    } */
+  .wallet-btn {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .nav-link:before {
+    left: 0;
+    right: 0;
+  }
+  .banner-main {
+    padding: 70px 0px;
+  }
+  .banner-main-image {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-main-image img {
+    width: 80%;
+  }
+  .btn-style-one {
+    font-size: 15px;
+    padding: 10px 20px;
+    line-height: 20px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  .sub-banner-card img {
+    margin-right: 15px;
+    width: 40px;
+  }
+  .users-count {
+    padding-top: 40px;
+  }
+  .user-logo img {
+    width: 50px;
+    height: auto;
+  }
+  .followers h4 {
+    font-size: 18px;
+  }
+  .sub-banner-card {
+    padding: 14px 10px;
+  }
+  .partners-section,
+  .ifo-platform-section,
+  .counting-section,
+  .gaming-boosted-section,
+  .experience-gaming-section {
+    padding: 70px 0px;
+  }
+  .gamming-cards {
+    padding: 25px 20px;
+  }
+  .gamming-cards img {
+    margin-bottom: 20px;
+    width: 50px;
+  }
+  .gamming-cards h5,
+  .experience-gaming-section h5 {
+    padding-bottom: 10px;
+  }
+  .elfin-arcade-card {
+    padding-top: 50px;
+  }
+  .ball-icon-image1 img {
+    width: 80px;
+  }
+  p {
+    padding-bottom: 20px;
+  }
+  .gaming-boosted-section h5 {
+    padding-bottom: 10px;
+  }
+  .gaming-boosted {
+    padding-top: 50px;
+  }
+  .user-profile img {
+    width: 40px;
+  }
+  .counting-cards {
+    padding: 18px;
+  }
+  .intergrated-section {
+    padding: 70px 10px 100px;
+  }
+  .contact-section .ball-icon-image1 {
+    top: -6%;
+  }
+  .social-network-main {
+    margin-top: 5%;
+  }
+  .intergrated-section h5,
+  .gaming-boosted-section h5,
+  .gamming-cards h5,
+  .experience-gaming-section h5 {
+    font-size: 17px;
+  }
+  .integrate-with-elfin-card img {
+    width: 60px;
+  }
+  .join-community,
+  .integrate-with-elfin-card {
+    padding: 20px 15px 25px 15px;
+  }
+  /* .integrate-with-elfin-card p {
+      padding-bottom: 60px;
+    } */
+  .join-community h5 {
+    padding-top: 0px;
+  }
+  .join-community p {
+    padding-bottom: 20px;
+  }
+  .integrate-with-elfin-card .btn-style-one {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .social-network-main .tree-logo {
+    width: 70%;
+  }
+  .sub-banner-section .row {
+    row-gap: 15px;
+  }
+  .banner-main h1 {
+    width: auto;
+  }
+  .navbar-toggler {
+    background: #f6d103;
+    padding: 4px 10px;
+    color: #23273b;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 15px 0px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    z-index: 99;
+    padding: 0 30px;
+    left: -15px;
+    right: -15px;
+    border-bottom: 1px solid #e5e5ea;
+    border-top: 1px solid #e5e5ea;
+  }
+  .navbar-expand-lg {
+    padding: 0;
+  }
+  .experience-gaming-section .blur,
+  .ifo-platform-section .ifo-platform-blur {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .elfin-arcade-card p {
+    text-indent: 20px;
+  }
+  .elfin-arcade-card h5 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .ball-icon-image1,
+  .gaming-boosted-section .ball-icon-image2 {
+    top: -40px;
+  }
+  .counting-cards p {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .integrate-with-elfin-card .title-wrap,
+  .join-community .title-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .contact-pr-100 {
+    padding-right: 15px;
+  }
+  header {
+    height: 69px;
+  }
+  .marquee-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .marketplace-section .title-wrap {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 34px;
+  }
+  .users-count {
+    padding-top: 30px;
+  }
+  .users-count span {
+    font-size: 16px;
+  }
+  .banner-main-image {
+    padding-top: 40px;
+  }
+  .banner-main {
+    padding: 50px 0px;
+  }
+  .experience-gaming,
+  .ifo-platform-blur {
+    padding-bottom: 50px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .gamming-cards-main {
+    text-align: center;
+  }
+  .gamming-cards {
+    padding: 15px 10px;
+  }
+  .gamming-cards img {
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .elfin-arcade-section {
+    padding-bottom: 70px;
+  }
+  .partners-section,
+  .ifo-platform-section,
+  .counting-section,
+  .gaming-boosted-section,
+  .experience-gaming-section {
+    padding: 60px 0px;
+  }
+  .gaming-boosted-section .ball-icon-image2 {
+    top: -2%;
+  }
+  .gaming-boosted-section h2 {
+    padding-bottom: 30px;
+  }
+  .marketplace-section {
+    padding-top: 55px;
+    padding-bottom: 30px;
+  }
+  .marketplace-section .gallery {
+    padding-top: 0px;
+  }
+  .gallery {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  .marquee-wrapper .marquee-block {
+    height: 1000px;
+  }
+  .counting-section h2 {
+    padding-bottom: 40px;
+  }
+  .intergrated-section .row {
+    row-gap: 26px;
+  }
+  .contact-list a,
+  .footer-main p,
+  .footer-main p a {
+    font-size: 14px;
+  }
+  .contact-list {
+    gap: 10px;
+  }
+  .contact-detailes {
+    padding: 30px 0px;
+  }
+  .social-network {
+    padding-top: 30px;
+  }
+  .contact-header {
+    padding: 20px 0px;
+  }
+  .contact-section .ball-icon-image1 {
+    top: -40px;
+    left: 50%;
+  }
+  .desktop-testimonials {
+    display: none;
+  }
+  .mobile-testimonials {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 370px;
+  }
+  .marketplace-section .title-wrap {
+    padding: 0px 0 30px;
+  }
+  .block-33 {
+    width: 100%;
+  }
+  .mobile-testimonials {
+    height: 700px;
+  }
+  .join-community-bg {
+    height: 150px;
+  }
+  .box1 .contact-list a {
+    width: 150px;
+  }
+  #button {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    padding: 9px;
+  }
+  .sticky-container {
+    top: 20%;
+    width: 32px;
+  }
+  .sticky li {
+    height: 25px;
+  }
+  .sticky li img {
+    margin: 3px 0px;
+    width: 25px;
+  }
+  .banner-main-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .banner-main h1 {
+    width: 100% !important;
+  }
+  .contact-list h6 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-list {
+    margin-bottom: 30px;
+  }
+  h1,
+  h2 {
+    font-size: 28px;
+  }
+  .btn-style-one {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+  .gamming-cards {
+    margin-bottom: 30px;
+    height: auto;
+  }
+  .single-logo img {
+    width: auto;
+    height: 40px;
+  }
+  .blur .img-blur {
+    filter: blur(30px);
+  }
+  .ball-icon-image1 .img-blur,
+  .ball-icon-image1 .img-blur {
+    top: 10px;
+    left: -10px;
+  }
+  .banner-main-image img {
+    width: 100%;
+  }
+  .bg-2 {
+    width: 325px;
+    height: 300px;
+  }
+  .bg-1 {
+    width: 200px;
+    height: 300px;
+  }
+  .banner-main-image img {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .footer-main {
+    flex-direction: column-reverse;
+    row-gap: 10px;
+  }
+  .contact-header img {
+    height: 50px;
+  }
+  .contact-detailes {
+    padding: 20px 0px;
+  }
+  /* .contact-list a, .footer-main p, .footer-main p a {
+        font-size: 12px;
+    } */
+  .ball-icon-image1 img {
+    width: 60px;
+  }
+  /* .contact-section .ball-icon-image1 {
+        top: -7%;
+    } */
+  .social-network p,
+  .contact-list h6 {
+    font-size: 14px;
+  }
+  h1,
+  h2 {
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  .banner-main {
+    padding: 30px 0px;
+  }
+  .user-logo img {
+    width: 35px;
+    height: auto;
+  }
+  .users-count span {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .gaming-boosted-section h5 {
+    padding: 10px 0px;
+  }
+  .gallery-image {
+    padding-bottom: 15px;
+  }
+  .marketplace-section .gallery .block-34 {
+    width: 50%;
+    padding: 0 10px;
+  }
+  .counting-cards h4 {
+    font-size: 16px;
+  }
+  .contact-section .ball-icon-image1 {
+    top: -40px;
+    left: auto;
+    right: 40px;
+  }
+  .contact-detailes .col-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .social-network {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .join-community p {
+    padding-bottom: 10px;
+    padding-right: 25%;
+  }
+  .join-community .col-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .intergrated-section .join-community .row {
+    row-gap: 0;
+  }
+  .join-community-bg {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+  }
+  .owl-nav button img {
+    width: 40px;
+  }
+  .sub-banner-card p {
+    font-size: 15px;
+  }
+  #button {
+    width: 34px;
+    height: 34px;
+    bottom: 35px;
+    right: 10px;
+    padding: 6px;
+  }
+  .navbar-toggler {
+    padding: 2px 7px;
+    color: #23273b;
+  }
+  .navbar-toggler-icon {
+    width: 1.3em;
+    height: 1.3em;
+  }
+  .navbar-brand img {
+    width: 180px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 0px;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+  .navbar-nav .dropdown-menu a {
+    padding: 7px 10px;
+  }
+  .navbar-nav .dropdown-menu {
+    padding: 6px;
+  }
+  .community-links {
+    gap: 10px;
+    margin: 0;
+  }
+  .community-links img {
+    width: 22px;
+  }
+  header {
+    height: 63px;
+  }
+  .sticky li img {
+    margin: 3px 0px;
+    width: 22px;
+  }
+}
+@media (max-width: 400px) {
+  .social-links a img {
+    width: 20px;
+  }
+  .contact-header {
+    padding: 10px 0px;
+  }
+  .bg-2 {
+    width: 280px;
+    height: 250px;
+    left: 20px;
+  }
+  h1,
+  h2 {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+  .contact-pr-100 .d-flex {
+    flex-direction: column;
+  }
+  .box1 .contact-list a {
+    width: auto;
+  }
+  .join-community h5,
+  .join-community p {
+    padding-right: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu.show {
+    display: none;
+  }
+  .dropdown:hover .dropdown-menu,
+  .dropdown:hover .dropdown-menu.show {
+    display: block;
+  }
+}
