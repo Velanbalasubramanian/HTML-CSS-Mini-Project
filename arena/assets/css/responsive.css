@@ -1,7 +1,7 @@
 @media (max-width: 1400px) {
-  .banner-main h1 {
+  /* .banner-main h1 {
     width: 150%;
-  }
+  } */
   h1,
   h2 {
     font-size: 46px;
@@ -21,16 +21,17 @@
   .social-links img {
     width: 28px;
   }
-  .banner-main-image img {
+  /* .banner-main-image img {
     width: 115%;
     left: -10%;
-  }
+  } */
 }
 @media (max-width: 1350px) {
-  .banner-main-image img {
+  /* .banner-main-image img {
     width: 106%;
     left: -13%;
-  }
+  } */
+
 }
 @media (max-width: 1199px) {
   h1,
@@ -44,6 +45,9 @@
   }
   .btn-style-one {
     font-size: 16px;
+  }
+  .wallet-btn .btn-style-one {
+    padding: 8px 20px;
   }
   .users-count span {
     font-size: 18px;
@@ -75,6 +79,18 @@
     width: 100px;
     height: auto;
   }
+  .contact-section .ball-icon-image1 img {
+    width: 100px;
+    height: auto;
+  }
+  .partners-section .ball-icon-image2 {
+    position: absolute;
+    top: -15%;
+    right: 15%;
+  }
+  .ball-icon3-image {
+    top: -5%;
+  }
   .gaming-boosted-section .ball-icon-image2 {
     top: -5%;
   }
@@ -103,7 +119,7 @@
     padding: 0px 30px;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 26px 30px;
+    padding: 26px 26px;
   }
   .banner-main p br {
     display: none;
@@ -114,9 +130,9 @@
   .sub-banner-section {
     padding: 45px 0px;
   }
-  .gamming-cards img {
+  /* .gamming-cards img {
     margin-bottom: 20px;
-  }
+  } */
   .gamming-cards {
     padding: 20px;
   }
@@ -133,6 +149,19 @@
   .contact-pr-100 {
     padding-right: 30px;
   }
+  .user-logo img {
+    width: 60px;
+}
+.banner-section .title-wrap br{
+  display: none;
+}
+.contact-header > img {
+  width: 200px;
+  height: 32px;
+}
+.contact-detailes {
+  padding: 42px 0px;
+}
 }
 @media (max-width: 991px) {
   .navbar-expand-lg .navbar-nav {
@@ -155,15 +184,15 @@
   .banner-main {
     padding: 70px 0px;
   }
-  .banner-main-image {
+  /* .banner-main-image {
     padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .banner-main-image img {
+  } */
+  /* .banner-main-image img {
     width: 80%;
-  }
+  } */
   .btn-style-one {
     font-size: 15px;
     padding: 10px 20px;
@@ -204,8 +233,8 @@
     padding: 25px 20px;
   }
   .gamming-cards img {
-    margin-bottom: 20px;
     width: 50px;
+    margin-top: -50px;
   }
   .gamming-cards h5,
   .experience-gaming-section h5 {
@@ -216,6 +245,10 @@
   }
   .ball-icon-image1 img {
     width: 80px;
+  }
+  .contact-section .ball-icon-image1 img {
+    width: 80px;
+    height: auto;
   }
   p {
     padding-bottom: 20px;
@@ -236,7 +269,7 @@
     padding: 70px 10px 100px;
   }
   .contact-section .ball-icon-image1 {
-    top: -6%;
+    top: -5%;
   }
   .social-network-main {
     margin-top: 5%;
@@ -273,11 +306,11 @@
   .sub-banner-section .row {
     row-gap: 15px;
   }
-  .banner-main h1 {
+  /* .banner-main h1 {
     width: auto;
-  }
+  } */
   .navbar-toggler {
-    background: #f6d103;
+    background: #FF8047;
     padding: 4px 10px;
     color: #23273b;
   }
@@ -290,16 +323,16 @@
   .navbar-collapse {
     position: absolute;
     top: 100%;
-    background: #fff;
+    background: #161823;
     z-index: 99;
     padding: 0 30px;
     left: -15px;
     right: -15px;
-    border-bottom: 1px solid #e5e5ea;
-    border-top: 1px solid #e5e5ea;
+    border-bottom: 1px solid #3E435D;
+    border-top: 1px solid #3E435D;
   }
   .navbar-expand-lg {
-    padding: 0;
+    padding: 14px 0;
   }
   .experience-gaming-section .blur,
   .ifo-platform-section .ifo-platform-blur {
@@ -343,6 +376,12 @@
   .marketplace-section .title-wrap {
     padding: 60px 0;
   }
+  .banner-main-image img {
+    display: none;
+  }
+  .elfin-arcade-section {
+    padding-bottom: 80px;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -354,33 +393,35 @@
   .users-count span {
     font-size: 16px;
   }
-  .banner-main-image {
+  /* .banner-main-image {
     padding-top: 40px;
-  }
+  } */
   .banner-main {
     padding: 50px 0px;
   }
-  .experience-gaming,
+  /* .experience-gaming,
   .ifo-platform-blur {
     padding-bottom: 50px;
-  }
+  } */
   h2 {
     font-size: 28px;
   }
   .gamming-cards-main {
     text-align: center;
+    padding-top: 70px;
   }
   .gamming-cards {
     padding: 15px 10px;
   }
   .gamming-cards img {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: -35px;
   }
   p {
     font-size: 15px;
   }
   .elfin-arcade-section {
-    padding-bottom: 70px;
+    padding-bottom: 60px;
   }
   .partners-section,
   .ifo-platform-section,
@@ -479,17 +520,36 @@
     margin: 3px 0px;
     width: 25px;
   }
-  .banner-main-image img {
+  /* .banner-main-image img {
     width: 100%;
+  } */
+  .navbar-expand-lg {
+    padding: 10px 0;
+  }
+  .social-network-main {
+    margin-top: 0%;
   }
 }
 @media (max-width: 640px) {
-  .banner-main h1 {
+  /* .banner-main h1 {
     width: 100% !important;
-  }
+  } */
   .contact-list h6 {
     font-size: 16px;
   }
+  .elfin-arcade-section p br{
+    display: none;
+  }
+  .navbar-brand img {
+    width: 140px;
+  }
+  .navbar-toggler {
+    padding: 4px 8px;
+    font-size: 16px;
+}
+.contact-header > img {
+  width: 140px;
+}
 }
 @media (max-width: 576px) {
   .contact-list {
@@ -504,7 +564,7 @@
     padding: 7px 15px;
   }
   .gamming-cards {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     height: auto;
   }
   .single-logo img {
@@ -519,9 +579,9 @@
     top: 10px;
     left: -10px;
   }
-  .banner-main-image img {
+  /* .banner-main-image img {
     width: 100%;
-  }
+  } */
   .bg-2 {
     width: 325px;
     height: 300px;
@@ -530,11 +590,11 @@
     width: 200px;
     height: 300px;
   }
-  .banner-main-image img {
+  /* .banner-main-image img {
     width: 100%;
     max-width: 100%;
     left: 0;
-  }
+  } */
 }
 @media (max-width: 480px) {
   .footer-main {
@@ -542,7 +602,7 @@
     row-gap: 10px;
   }
   .contact-header img {
-    height: 50px;
+    width: 130px;
   }
   .contact-detailes {
     padding: 20px 0px;
@@ -550,7 +610,7 @@
   /* .contact-list a, .footer-main p, .footer-main p a {
         font-size: 12px;
     } */
-  .ball-icon-image1 img {
+  .ball-icon-image1 img, .contact-section .ball-icon-image1 img {
     width: 60px;
   }
   /* .contact-section .ball-icon-image1 {
@@ -634,16 +694,16 @@
     right: 10px;
     padding: 6px;
   }
-  .navbar-toggler {
+  /* .navbar-toggler {
     padding: 2px 7px;
     color: #23273b;
-  }
+  } */
   .navbar-toggler-icon {
     width: 1.3em;
     height: 1.3em;
   }
   .navbar-brand img {
-    width: 180px;
+    width: 130px;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 10px 0px;

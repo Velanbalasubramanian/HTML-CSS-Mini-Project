@@ -128,6 +128,9 @@ header {
 .nav-link:focus:before {
   border-top: 4px solid #EB5B1B;
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #fff;
+}
 .bi-chevron-down::before {
   width: 14px;
   height: 14px;
@@ -140,14 +143,15 @@ header {
   margin: 0;
   border-radius: 8px;
   padding: 10px;
-  border: 1px solid #e9e9e9;
+  border: 1px solid #3E435D;
+  background: #161823;
 }
 .navbar-nav .dropdown-menu a {
   padding: 10px 15px;
   border-radius: 8px;
   transition: 0.3s ease-in-out;
   font-weight: 500;
-  color: #1B2336;
+  color: #A0A5BF;
 }
 .navbar-nav .dropdown-menu a:hover,
 .navbar-nav .dropdown-menu a:focus,
@@ -273,7 +277,7 @@ header {
 }
 /* sub-banner-section-style */
 .sub-banner-section {
-  padding: 54px 0px;
+  padding: 59px 0px;
   background: #1D1F2C;
 }
 .sub-banner-card {
@@ -288,6 +292,10 @@ header {
 }
 .sub-banner-card img {
   margin-right: 20px;
+  /* width: 96px;
+  position: relative;
+  top: -20px;
+  left: 5px; */
 }
 .sub-banner-card p {
   padding-bottom: 0;
@@ -307,11 +315,13 @@ header {
 
 /* experience-gaming-section style */
 .gamming-cards-main {
-  padding-top: 72px;
+  /* padding-top: 72px; */
+  padding-top: 146px;
 }
 .experience-gaming-section {
   position: relative;
-  padding: 150px 0px;
+  /* padding: 150px 0px; */
+  padding: 150px 0px 97px;
 }
 .gamming-cards p {
   padding: 0px;
@@ -332,7 +342,8 @@ header {
     0px 24px 32px 0px rgba(0, 0, 0, 0.04);
 }
 .gamming-cards img {
-  margin-bottom: 32px;
+  margin-bottom: 21px;
+  margin-top: -80px;
 }
 .gamming-cards h5,
 .experience-gaming-section h5 {
@@ -353,7 +364,8 @@ header {
 }
 .blur .img-blur {
   border-radius: 8px;
-  opacity: 0.75;
+  /* opacity: 0.75; */
+  opacity: 0;
   /* background: url(/assets/images/experience-gaming.png), lightgray -543.789px -7.494px / 218.521% 102.305% no-repeat; */
   filter: blur(60px);
   position: absolute;
@@ -424,7 +436,8 @@ header {
   background: none;
 }
 .elfin-arcade-section {
-  padding-bottom: 150px;
+  /* padding-bottom: 150px; */
+  padding-bottom: 113px;
 }
 .elfin-arcade-card img {
   height: 192px;
@@ -604,8 +617,8 @@ header {
 }
 .ball-icon3-image {
   position: absolute;
-  top: -5%;
-  left: 15%;
+  top: -8%;
+  left: 25%;
 }
 .counting-section h2 {
   text-align: center;
@@ -693,9 +706,10 @@ header {
 }
 .partners-section .ball-icon-image2 {
   position: absolute;
-  top: -10%;
+  top: -22%;
   right: 15%;
-  /* left: 15%; */
+  /* top: -10%;
+  left: 15%; */
 }
 /* Integrate with Elfin style */
 .intergrated-section {
@@ -788,13 +802,21 @@ header {
 }
 .contact-section .ball-icon-image1 {
   position: absolute;
-  top: -18%;
+  /* top: -18%; */
+  top: -23%;
   left: 40%;
   right: 0;
 }
+.contact-section .ball-icon-image1 img{
+  width: 162px;
+}
 .contact-header {
   position: relative;
-  padding: 25px 0px;
+  padding: 40px 0px;
+}
+.contact-header > img{
+  width: 261px;
+  height: 41px;
 }
 .contact-list {
   display: flex;
@@ -824,11 +846,11 @@ header {
   padding-right: 100px;
 }
 .contact-list a:hover {
-  color: #f6d103;
+  color: #FF8047;
 }
 .contact-detailes {
   position: relative;
-  padding: 42px 0px;
+  padding: 42px 0px 75px;
   background: #1D1F2C;
   /* mix-blend-mode: multiply; */
   border-top: 1px solid #323C58;
@@ -851,7 +873,7 @@ header {
 }
 .social-network-main {
   position: relative;
-  margin-top: -48%;
+  margin-top: -50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -883,7 +905,7 @@ header {
   line-height: 135%;
 }
 .footer-main p a:hover {
-  color: #f6d103;
+  color: #FF8047;
 }
 
 @keyframes fade-in {
@@ -1070,10 +1092,16 @@ header {
   background: currentColor;
 }
 .banner-main-image img {
-  width: 115%;
+  /* width: 115%;
   max-width: inherit;
   position: relative;
-  left: -10%;
+  left: -10%; */
+  position: absolute;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+  right: 0;
+  width: 45%;
 }
 .integrate-with-elfin-card .title-wrap,
 .join-community .title-wrap {
