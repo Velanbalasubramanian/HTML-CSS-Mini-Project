@@ -1,0 +1,16 @@
+body {
+    background-color: #7fffd42e;
+}
+ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+ li{
+    /* background-image: url(/image/ad-bg.svg);
+    background-repeat: no-repeat; */
+    list-style: none;
+    /* width: 500px;
+    height: 500px; */
+    
+}
