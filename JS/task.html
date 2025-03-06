@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <p>Find a given value inside an array</p>
+    <p id="demo"></p>
+    <p id="ascending"></p>
+    <p id="descending"></p>
+    <!-- 1.Find a given value inside an array -->
+    <script>
+        const numbers = [4, 9, 10, 25, 29];
+
+document.getElementById("demo").innerHTML = "The Index value " + numbers.findIndex(myFunction);
+
+function myFunction(value, num, array) {
+  return value == 10;
+}
+
+        // 2. Sort an array ascending
+
+        const points = [100,40,11,25,10,33];
+points.sort(
+function(a,b){
+console.log(a,b);
+return a-b;
+}
+)
+
+document.getElementById("ascending").innerHTML="Ascending value" + " " + points;
+
+// 2. Sort an array descending
+
+const point = [100,40,11,25,10,33];
+point.sort(function(a,b){
+console.log(a,b);
+return b-a;
+}
+)
+
+document.getElementById("descending").innerHTML="Descending value" + " " + point;
+    </script>
+</body>
+</html>

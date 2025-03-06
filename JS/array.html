@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <button onclick="myFunction()">Try it</button>
+    <button onclick="myFunction1()">Pop</button>
+    <button onclick="myFunction2()">Shift</button>
+    <button onclick="myFunction3()">UnShift</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+
+    // push method add the last array element  & Length Method
+    const animals = ["Cow","Horse",'Elephant'];
+    let nos = animals.length;
+    
+    document.getElementById('demo1').innerHTML = nos;
+    document.getElementById('demo').innerHTML = animals;
+    
+    function myFunction() {
+        animals.push("Mammals");
+        console.log(animals);
+        document.getElementById('demo').innerHTML = animals;
+        document.getElementById('demo2').innerHTML = animals.length;
+    }
+
+    // pop Method remove the last array element
+    function myFunction1() {
+        animals.pop();
+        console.log(animals);
+        document.getElementById('demo3').innerHTML = animals;
+    }
+
+    // shift() method removes the first array element
+
+    function myFunction2() {
+        animals.shift();
+        console.log(animals);
+        document.getElementById('demo4').innerHTML = animals;
+    }
+
+    // Unshift() method removes the first array element
+    function myFunction3() {
+        animals.unshift("Tiger");
+        console.log(animals)
+        document.getElementById('demo5').innerHTML = animals;
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
